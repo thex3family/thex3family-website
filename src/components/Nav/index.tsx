@@ -20,12 +20,12 @@ export interface IProps {
 // TODO display page title on mobile
 const Nav: FC<IProps> = ({ path }) => {
   const {
-    ednLinks,
+    primaryNav,
+    UnlockYourPotentialSubNav,
+    shouldShowUnlockYourPotentialSubNav,
     fromPageParameter,
     isDarkTheme,
-    shouldShowSubNav,
     toggleColorMode,
-    linkSections,
     mobileNavProps,
   } = useNav({ path })
   const { locale } = useRouter()
@@ -68,7 +68,7 @@ const Nav: FC<IProps> = ({ path }) => {
             justifyContent={{ base: "flex-end", lg: "space-between" }}
             ms={{ base: 3, xl: 8 }}
           >
-            <Menu hideBelow="lg" path={path} sections={linkSections} />
+            <Menu hideBelow="lg" path={path} sections={primaryNav} />
             <Flex
               alignItems="center"
               justifyContent="space-between"
@@ -122,7 +122,7 @@ const Nav: FC<IProps> = ({ path }) => {
           </Flex>
         </Flex>
       </Flex>
-      {shouldShowSubNav && (
+      {shouldShowUnlockYourPotentialSubNav && (
         <Flex
           as="nav"
           aria-label={t("nav-developers")}
@@ -134,7 +134,7 @@ const Nav: FC<IProps> = ({ path }) => {
           py={4}
           px={8}
         >
-          {ednLinks.map((link, idx) => (
+          {UnlockYourPotentialSubNav.map((link, idx) => (
             <BaseLink
               key={idx}
               to={link.to}
