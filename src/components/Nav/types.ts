@@ -1,9 +1,8 @@
 export type SectionKey =
-  | "useEthereum"
-  | "learn"
-  | "developers"
-  | "enterprise"
-  | "community"
+  | "understand_yourself"
+  | "unlock_your_potential"
+  | "make_positive_impact"
+  | "live_your_best_life"
 
 export interface IItem {
   text: string
