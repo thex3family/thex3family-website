@@ -23,7 +23,7 @@ const CURRENT_CONTENT_DIR = join(process.cwd(), CONTENT_DIR)
 const getPostSlugs = (dir: string, files: string[] = []) => {
   const contentDir = join(CURRENT_CONTENT_DIR, dir)
   // Temporal list of content pages allowed to be compiled
-  // When a content page is migrated (and he components being used), should be added to this list
+  // When a content page is migrated (and the components being used), should be added to this list
   const temporalAllowedPages = [
     // Use cases (7/7) ✅
     "/dao",

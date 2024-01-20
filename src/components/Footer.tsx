@@ -92,7 +92,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
         },
         {
           text: t("test-your-understanding-title"),
-          to: "/understand-yourself/test-your-understanding/",
+          to: "/understand-yourself/quizzes/",
         }
       ],
     },

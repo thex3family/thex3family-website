@@ -153,7 +153,7 @@ export const getStaticProps = (async (context) => {
       layout = "docs"
     }
 
-    if (params.slug.includes("tutorials")) {
+    if (params.slug.includes("knowledge")) {
       layout = "tutorial"
       if ("published" in frontmatter) {
         frontmatter.published = dateToString(frontmatter.published)
@@ -161,7 +161,7 @@ export const getStaticProps = (async (context) => {
     }
   }
 
-  const crowdinContributors = ["docs", "tutorial"].includes(layout)
+  const crowdinContributors = ["docs", "knowledge"].includes(layout)
     ? getCrowdinContributors(mdPath, locale as Lang)
     : []
 
