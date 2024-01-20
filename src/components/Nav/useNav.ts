@@ -31,7 +31,7 @@ export const useNav = ({ path }: { path: string }) => {
         },
         {
           text: t("test-your-understanding-title"),
-          to: "/understand-yourself/test-your-understanding/",
+          to: "/understand-yourself/quizzes/",
         }
       ],
     },
@@ -108,7 +108,7 @@ export const useNav = ({ path }: { path: string }) => {
     setIsMenuOpen((prev) => !prev)
   }
 
-  const shouldShowUnlockYourPotentialSubNav = path.includes("/unlock-your-potential/")
+  const shouldShowUnlockYourPotentialSubNav = path.includes("/unlock-your-potential")
   const splitPath = path.split("/")
   const fromPageParameter =
     splitPath.length > 1 && splitPath[1] !== "languages"
