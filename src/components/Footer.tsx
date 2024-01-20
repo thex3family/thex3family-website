@@ -147,7 +147,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
       title: t("info-title"),
       links: [
         {
-          to: "/info/glossary/",
+          to: "/glossary/",
           text: t("glossary-title"),
         },
         {
@@ -155,15 +155,15 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           text: t("languages-title"),
         },
         {
-          to: "/info/privacy-policy/",
+          to: "/privacy-policy/",
           text: t("privacy-policy-title"),
         },
         {
-          to: "/info/terms-of-use/",
+          to: "/terms-of-use/",
           text: t("terms-of-use-title"),
         },
         {
-          to: "/info/cookie-policy/",
+          to: "/cookie-policy/",
           text: t("cookie-policy-title"),
         },
         {

@@ -48,7 +48,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/roadmap/beacon-chain",
     "/roadmap/merge",
     // Developer docs (0/95)
-    "/developers/docs/",
+    "/unlock-your-potential/docs/",
     "/developers/docs/accounts",
     "/developers/docs/apis/backend",
     "/developers/docs/apis/javascript",
@@ -144,7 +144,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/developers/docs/transactions",
     "/developers/docs/web2-vs-web3",
     // Developer tutorials (53/53) ✅
-    "/developers/tutorials/a-developers-guide-to-ethereum-part-one",
+    "/unlock-your-potential/knowledge/a-developers-guide-to-ethereum-part-one",
     "/developers/tutorials/all-you-can-cache",
     "/developers/tutorials/calling-a-smart-contract-from-javascript",
     "/developers/tutorials/create-and-deploy-a-defi-app",
@@ -208,7 +208,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/community/online",
     "/community/research",
     "/community/support",
-    "/contributing",
+    "/make-positive-impact/contribute",
     "/contributing/adding-desci-projects",
     "/contributing/adding-developer-tools",
     "/contributing/adding-exchanges",
