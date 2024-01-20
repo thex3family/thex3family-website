@@ -65,7 +65,7 @@ export const layoutMapping = {
   roadmap: RoadmapLayout,
   upgrade: UpgradeLayout,
   docs: DocsLayout,
-  tutorial: TutorialLayout,
+  knowledge: TutorialLayout,
 }
 
 const componentsMapping = {
@@ -75,7 +75,7 @@ const componentsMapping = {
   roadmap: roadmapComponents,
   upgrade: upgradeComponents,
   docs: docsComponents,
-  tutorial: tutorialsComponents,
+  knowledge: tutorialsComponents,
 } as const
 
 export const getStaticPaths = (({ locales }) => {
@@ -154,7 +154,7 @@ export const getStaticProps = (async (context) => {
     }
 
     if (params.slug.includes("knowledge")) {
-      layout = "tutorial"
+      layout = "knowledge"
       if ("published" in frontmatter) {
         frontmatter.published = dateToString(frontmatter.published)
       }
