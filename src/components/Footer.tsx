@@ -2,7 +2,7 @@
 import React from "react"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaYoutube, FaTwitter, FaInstagram, FaTiktok, FaCircle } from "react-icons/fa"
 import {
   Box,
   Flex,
@@ -23,22 +23,40 @@ import { getLocaleTimestamp } from "@/lib/utils/time"
 
 const socialLinks = [
   {
+    icon: FaCircle,
+    to: "https://our.co-x3.com/",
+    ariaLabel: "Community",
+    color: "#7289da",
+  },
+  {
+    icon: FaYoutube,
+    to: "https://www.youtube.com/c/thex3family",
+    ariaLabel: "Twitter",
+    color: "#1DA1F2",
+  },
+  {
+    icon: FaInstagram,
+    to: "https://www.instagram.com/thex3family",
+    ariaLabel: "Instagram",
+    color: "#833AB4",
+  },
+  {
+    icon: FaTiktok,
+    to: "https://www.tiktok.com/@thex3family",
+    ariaLabel: "TikTok",
+    color: "#ff0050",
+  },
+  {
     icon: FaGithub,
-    to: "https://github.com/ethereum/ethereum-org-website",
+    to: "https://github.com/thex3family",
     ariaLabel: "GitHub",
     color: "#333",
   },
   {
     icon: FaTwitter,
-    to: "https://twitter.com/ethdotorg",
+    to: "https://twitter.com/thex3family",
     ariaLabel: "Twitter",
     color: "#1DA1F2",
-  },
-  {
-    icon: FaDiscord,
-    to: "https://discord.gg/ethereum-org",
-    ariaLabel: "Discord",
-    color: "#7289da",
   },
 ]
 export interface LinkSection {
@@ -62,229 +80,95 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
   const [medBp] = useToken("breakpoints", ["md"])
   const linkSections: Array<LinkSection> = [
     {
-      title: t("use-ethereum"),
+      title: t("understand-yourself-title"),
       links: [
         {
-          to: "/wallets/find-wallet/",
-          text: t("find-wallet"),
+          text: t("levels-theory-title"),
+          to: "/understand-yourself/",
         },
         {
-          to: `/get-eth/`,
-          text: t("get-eth"),
+          text: t("understanding-levels-title"),
+          to: "/understand-yourself/understanding-levels/",
         },
         {
-          to: `/dapps/`,
-          text: t("decentralized-applications-dapps"),
+          text: t("test-your-understanding-title"),
+          to: "/understand-yourself/test-your-understanding/",
+        }
+      ],
+    },
+    {
+      title: t("unlock-your-potential-title"),
+      links: [
+        {
+          text: t("be-your-best-self-title"),
+          to: "/unlock-your-potential/",
         },
         {
-          to: "/layer-2/",
-          text: t("layer-2"),
+          text: t("programs-title"),
+          to: "/unlock-your-potential/programs/",
         },
         {
-          to: "/run-a-node/",
-          text: t("run-a-node"),
-        },
-        {
-          to: `/stablecoins/`,
-          text: t("stablecoins"),
-        },
-        {
-          to: `/staking/`,
-          text: t("stake-eth"),
+          text: t("docs-title"),
+          to: "/unlock-your-potential/docs/",
         },
       ],
     },
     {
-      title: t("learn"),
+      title: t("make-positive-impact-title"),
       links: [
         {
-          to: `/learn/`,
-          text: t("learn-hub"),
+          text: t("contribute-title"),
+          to: "/make-positive-impact/contribute/",
         },
         {
-          to: `/what-is-ethereum/`,
-          text: t("what-is-ethereum"),
+          text: t("collaborate-title"),
+          to: "/make-positive-impact/collaborate/",
         },
         {
-          to: `/eth/`,
-          text: t("what-is-ether"),
+          text: t("co-create-title"),
+          to: "/make-positive-impact/co-create/",
+        }
+      ],
+    },
+    {
+      title: t("live-your-best-life-title"),
+      links: [
+        {
+          text: t("about-us-title"),
+          to: "/live-your-best-life/about-us/",
         },
         {
-          to: `/wallets/`,
-          text: t("ethereum-wallets"),
-        },
-        {
-          to: "/gas/",
-          text: "Gas fees",
-        },
-        {
-          to: "/security/",
-          text: t("ethereum-security"),
-        },
-        {
-          to: "/web3/",
-          text: t("web3"),
-        },
-        {
-          to: "/smart-contracts/",
-          text: t("smart-contracts"),
-        },
-        {
-          to: "/energy-consumption/",
-          text: t("energy-consumption"),
-        },
-        {
-          to: "/roadmap/",
-          text: t("ethereum-roadmap"),
-        },
-        {
-          to: "/eips/",
-          text: t("eips"),
-        },
-        {
-          to: "/history/",
-          text: t("history-of-ethereum"),
-        },
-        {
-          to: "/whitepaper/",
-          text: t("ethereum-whitepaper"),
-        },
-        {
-          to: `/glossary/`,
-          text: t("ethereum-glossary"),
-        },
-        {
-          to: "/governance/",
-          text: t("ethereum-governance"),
-        },
-        {
-          to: "/bridges/",
-          text: t("bridges"),
-        },
-        {
-          to: "/zero-knowledge-proofs/",
-          text: t("zero-knowledge-proofs"),
-        },
-        {
-          to: "/quizzes/",
-          text: t("quizzes-title"),
+          text: t("careers-title"),
+          to: "https://thex3family.notion.site/Co-x3-Job-Portal-604c3ce23aac4cf394094e0fc0c7692f?pvs=4",
         },
       ],
     },
     {
-      title: t("developers"),
+      title: t("info-title"),
       links: [
         {
-          to: `/developers/`,
-          text: t("get-started"),
-          isPartiallyActive: false,
-        },
-        {
-          to: `/developers/docs/`,
-          text: t("documentation"),
-        },
-        {
-          to: `/developers/tutorials/`,
-          text: t("tutorials"),
-        },
-        {
-          to: `/developers/learning-tools/`,
-          text: t("learn-by-coding"),
-        },
-        {
-          to: `/developers/local-environment/`,
-          text: t("set-up-local-env"),
-        },
-      ],
-    },
-    {
-      title: t("ecosystem"),
-      links: [
-        {
-          to: `/community/`,
-          text: t("community-hub"),
-        },
-        {
-          to: "/foundation/",
-          text: t("ethereum-foundation"),
-        },
-        {
-          to: "https://blog.ethereum.org/",
-          text: t("ef-blog"),
-        },
-        {
-          to: "https://esp.ethereum.foundation",
-          text: t("esp"),
-        },
-        {
-          to: "/bug-bounty/",
-          text: t("ethereum-bug-bounty"),
-        },
-        {
-          to: "/community/grants",
-          text: t("grant-programs"),
-        },
-        {
-          to: "/assets/",
-          text: t("ethereum-brand-assets"),
-        },
-        {
-          to: "https://devcon.org/",
-          text: t("devcon"),
-        },
-      ],
-    },
-    {
-      title: t("enterprise"),
-      links: [
-        {
-          to: "/enterprise/",
-          text: t("mainnet-ethereum"),
-        },
-        {
-          to: "/enterprise/private-ethereum/",
-          text: t("private-ethereum"),
-        },
-        {
-          to: "/enterprise/",
-          text: t("enterprise"),
-        },
-      ],
-    },
-    {
-      title: t("about-ethereum-org"),
-      links: [
-        {
-          to: "/about/",
-          text: t("about-us"),
-        },
-        {
-          to: "/about/#open-jobs",
-          text: t("jobs"),
-        },
-        {
-          to: "/contributing/",
-          text: t("contributing"),
+          to: "/info/glossary/",
+          text: t("glossary-title"),
         },
         {
           to: "/languages/",
-          text: t("language-support"),
+          text: t("languages-title"),
         },
         {
-          to: "/privacy-policy/",
-          text: t("privacy-policy"),
+          to: "/info/privacy-policy/",
+          text: t("privacy-policy-title"),
         },
         {
-          to: "/terms-of-use/",
-          text: t("terms-of-use"),
+          to: "/info/terms-of-use/",
+          text: t("terms-of-use-title"),
         },
         {
-          to: "/cookie-policy/",
-          text: t("cookie-policy"),
+          to: "/info/cookie-policy/",
+          text: t("cookie-policy-title"),
         },
         {
-          to: "mailto:press@ethereum.org",
-          text: t("contact"),
+          to: "mailto:support@co-x3.com",
+          text: t("contact-title"),
         },
       ],
     },
