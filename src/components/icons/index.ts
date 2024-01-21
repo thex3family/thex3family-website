@@ -1,12 +1,12 @@
 // General Icons
-import { EthHomeIcon } from "./EthHomeIcon"
+import { HomeIcon } from "./HomeIcon"
 import { FeedbackGlyphIcon } from "./FeedbackGlyphIcon"
 import { FeedbackThumbsUpIcon } from "./FeedbackThumbsUpIcon"
 import { HighlightDarkIcon } from "./HighlightDarkIcon"
 import { HighlightIcon } from "./HighlightIcon"
 
 export {
-  EthHomeIcon,
+  HomeIcon,
   FeedbackGlyphIcon,
   FeedbackThumbsUpIcon,
   HighlightDarkIcon,
