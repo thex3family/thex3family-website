@@ -69,6 +69,27 @@ import merge from "@/public/upgrades/merge.png"
 import robotfixed from "@/public/wallet-cropped.png"
 import ethereum from "@/public/what-is-ethereum.png"
 
+
+import understand_yourself from "@/public/understand_yourself.png"
+import unlock_your_potential from "@/public/unlock_your_potential.png"
+import make_positive_impact from "@/public/make_positive_impact.png"
+import live_your_best_life from "@/public/live_your_best_life.png"
+
+import students from "@/public/students.png"
+import creatives from "@/public/creatives.png"
+import retirees from "@/public/retirees.png"
+
+import community_gathering from "@/public/community_gathering.png"
+
+import contribute from "@/public/contribute.png"
+
+import understanding_levels from "@/public/understanding_levels.png"
+import knowledge from "@/public/knowledge.png"
+import tools from "@/public/tools.png"
+import community from "@/public/community.png"
+
+
+
 const SectionHeading = (props: HeadingProps) => (
   <Heading
     lineHeight={1.4}
@@ -239,56 +260,56 @@ const HomePage = ({
 
   const cards = [
     {
-      image: robotfixed,
-      title: t("page-index:page-index-get-started-wallet-title"),
-      description: t("page-index:page-index-get-started-wallet-description"),
-      alt: t("page-index:page-index-get-started-wallet-image-alt"),
-      to: "/wallets/find-wallet/",
+      image: understand_yourself,
+      title: t("understand-yourself-title"),
+      description: t("understand-yourself-description"),
+      alt: t("understand-yourself-image-alt"),
+      to: "/understand-yourself/",
     },
     {
-      image: ethfixed,
-      title: t("page-index:page-index-get-started-eth-title"),
-      description: t("page-index:page-index-get-started-eth-description"),
-      alt: t("page-index:page-index-get-started-eth-image-alt"),
-      to: "/get-eth/",
+      image: unlock_your_potential,
+      title: t("unlock-your-potential-title"),
+      description: t("unlock-your-potential-description"),
+      alt: t("unlock-your-potential-image-alt"),
+      to: "/unlock-your-potential/",
     },
     {
-      image: dogefixed,
-      title: t("page-index:page-index-get-started-dapps-title"),
-      description: t("page-index:page-index-get-started-dapps-description"),
-      alt: t("page-index:page-index-get-started-dapps-image-alt"),
-      to: "/dapps/",
+      image: make_positive_impact,
+      title: t("make-positive-impact-title"),
+      description: t("make-positive-impact-description"),
+      alt: t("make-positive-impact-image-alt"),
+      to: "/make-positive-impact/",
     },
     {
-      image: devfixed,
-      title: t("page-index:page-index-get-started-devs-title"),
-      description: t("page-index:page-index-get-started-devs-description"),
-      alt: t("page-index:page-index-get-started-devs-image-alt"),
-      to: "/developers/",
+      image: live_your_best_life,
+      title: t("live-your-best-life-title"),
+      description: t("live-your-best-life-description"),
+      alt: t("live-your-best-life-image-alt"),
+      to: "/live-your-best-life/about-us/",
     },
   ]
 
   const touts = [
     {
-      image: merge,
-      alt: t("page-index:page-index-tout-upgrades-image-alt"),
-      title: t("page-index:page-index-tout-upgrades-title"),
-      description: t("page-index:page-index-tout-upgrades-description"),
-      to: "/roadmap/",
+      image: students,
+      alt: t("students-image-alt"),
+      title: t("students-title"),
+      description: t("students-description"),
+      to: "/for/students/",
     },
     {
-      image: infrastructurefixed,
-      alt: t("page-index:page-index-tout-enterprise-image-alt"),
-      title: t("page-index:page-index-tout-enterprise-title"),
-      description: t("page-index:page-index-tout-enterprise-description"),
-      to: "/enterprise/",
+      image: creatives,
+      alt: t("creatives-image-alt"),
+      title: t("creatives-title"),
+      description: t("creatives-description"),
+      to: "/for/creatives/",
     },
     {
-      image: enterprise,
-      alt: t("page-index:page-index-tout-community-image-alt"),
-      title: t("page-index:page-index-tout-community-title"),
-      description: t("page-index:page-index-tout-community-description"),
-      to: "/community/",
+      image: retirees,
+      alt: t("retirees-image-alt"),
+      title: t("retirees-title"),
+      description: t("retirees-description"),
+      to: "/for/second-winders/",
     },
   ]
 
@@ -299,34 +320,26 @@ const HomePage = ({
 
   const codeExamples: Array<CodeExample> = [
     {
-      title: t("page-index:page-index-developers-code-example-title-0"),
-      description: t(
-        "page-index:page-index-developers-code-example-description-0"
-      ),
+      title: t("page-index:page-index-banner-5-code-example-title-0"),
+      description: t("page-index:page-index-banner-5-code-example-description-0"),
       codeLanguage: "language-solidity",
       code: SimpleWalletContent,
     },
     {
-      title: t("page-index:page-index-developers-code-example-title-1"),
-      description: t(
-        "page-index:page-index-developers-code-example-description-1"
-      ),
+      title: t("page-index:page-index-banner-5-code-example-title-1"),
+      description: t("page-index:page-index-banner-5-code-example-description-1"),
       codeLanguage: "language-solidity",
       code: SimpleTokenContent,
     },
     {
-      title: t("page-index:page-index-developers-code-example-title-2"),
-      description: t(
-        "page-index:page-index-developers-code-example-description-2"
-      ),
+      title: t("page-index:page-index-banner-5-code-example-title-2"),
+      description: t("page-index:page-index-banner-5-code-example-description-2"),
       codeLanguage: "language-javascript",
       code: CreateWalletContent,
     },
     {
-      title: t("page-index:page-index-developers-code-example-title-3"),
-      description: t(
-        "page-index:page-index-developers-code-example-description-3"
-      ),
+      title: t("page-index:page-index-banner-5-code-example-title-3"),
+      description: t("page-index:page-index-banner-5-code-example-description-3"),
       codeLanguage: "language-solidity",
       code: SimpleDomainRegistryContent,
     },
@@ -373,7 +386,7 @@ const HomePage = ({
             </Box>
             <ImageContainer>
               <Image
-                src={hackathon}
+                src={community_gathering}
                 alt={t("page-index:page-index-get-started-image-alt")}
                 width={720}
                 backgroundSize="cover"
@@ -381,6 +394,11 @@ const HomePage = ({
               />
             </ImageContainer>
           </Flex>
+          <Box pb={4} textAlign="center">
+            <SectionHeading mt={12} mb={8} fontFamily="heading">
+              <Translation id="page-index:page-index-cards-header" />
+            </SectionHeading>
+          </Box>
           <CardContainer minChildWidth={{ lg: "480px" }}>
             {cards.map((card, idx) => (
               <StyledActionCard
@@ -397,123 +415,145 @@ const HomePage = ({
             ))}
           </CardContainer>
         </ContentBox>
+
+        {/* Explore Section */}
+        <ContentBox>
+          <Box pb={4}>
+            <SectionHeading mt={12} mb={8} fontFamily="heading" textAlign="center">
+              <Translation id="page-index:page-index-touts-header" />
+            </SectionHeading>
+          </Box>
+          <CardContainer minChildWidth={{ lg: "400px" }}>
+            {touts.map((tout, idx) => {
+              return (
+                <StyledActionCard
+                  key={idx}
+                  title={tout.title}
+                  description={tout.description}
+                  alt={tout.alt}
+                  to={tout.to}
+                  image={tout.image}
+                  imageWidth={320}
+                  boxShadow={cardBoxShadow}
+                />
+              )
+            })}
+          </CardContainer>
+        </ContentBox>
       </GrayContainer>
-      {/* What is Eth Section */}
+      {/* Banner 1 */}
       <MainSectionContainer containerBg="homeBoxTurquoise">
         <Row isReversed>
           <FeatureContent>
             <SectionHeading>
-              <Translation id="page-index:page-index-what-is-ethereum" />
+              <Translation id="page-index:page-index-banner-1-title" />
             </SectionHeading>
             <SectionDecription>
-              <Translation id="page-index:page-index-what-is-ethereum-description" />
+              <Translation id="page-index:page-index-banner-1-description" />
             </SectionDecription>
             <ButtonLinkRow>
-              <ButtonLink to="/what-is-ethereum/">
-                <Translation id="page-index:page-index-what-is-ethereum-button" />
+              <ButtonLink to="/understand-yourself/">
+                <Translation id="page-index:page-index-banner-1-button" />
               </ButtonLink>
-              <ButtonLink to="/eth/" variant="outline">
-                <Translation id="page-index:page-index-what-is-ethereum-secondary-button" />
+              <ButtonLink to="/understand-yourself/test-your-understanding/" variant="outline">
+                <Translation id="page-index:page-index-banner-1-secondary-button" />
               </ButtonLink>
             </ButtonLinkRow>
           </FeatureContent>
           <ImageContainer ps={{ lg: 8 }}>
             <Image
-              src={ethereum}
-              alt={t("page-index:page-index-what-is-ethereum-image-alt")}
+              src={understanding_levels}
+              alt={t("common:levels-theory-image-alt")}
               width={700}
             />
           </ImageContainer>
         </Row>
       </MainSectionContainer>
-      {/* Finance Section */}
+      {/* Banner 2 */}
       <MainSectionContainer containerBg="homeBoxOrange">
         <Row>
           <FeatureContent>
             <SectionHeading>
-              <Translation id="page-index:page-index-defi" />
+              <Translation id="common:knowledge-header" />
             </SectionHeading>
             <SectionDecription>
-              <Translation id="page-index:page-index-defi-description" />
+              <Translation id="common:knowledge-description" />
             </SectionDecription>
             <ButtonLinkRow>
-              <ButtonLink to="/defi/">
-                <Translation id="page-index:page-index-defi-button" />
+              <ButtonLink to="/unlock-your-potential/knowledge/">
+                <Translation id="common:knowledge-button" />
               </ButtonLink>
             </ButtonLinkRow>
           </FeatureContent>
           <ImageContainer>
             <Image
-              src={impact}
-              alt={t("page-index:page-index-defi-image-alt")}
+              src={knowledge}
+              alt={t("common:knowledge-image-alt")}
               width={700}
             />
           </ImageContainer>
         </Row>
       </MainSectionContainer>
-      {/* NFT Section */}
+      {/* Banner 3 */}
       <MainSectionContainer containerBg="homeBoxMint">
         <Row isReversed>
           <FeatureContent>
             <SectionHeading>
-              <Translation id="page-index:page-index-nft" />
+              <Translation id="common:tools-header" />
             </SectionHeading>
             <SectionDecription>
-              <Translation id="page-index:page-index-nft-description" />
+              <Translation id="common:tools-description" />
             </SectionDecription>
             <ButtonLinkRow>
-              <ButtonLink to="/nft/">
-                <Translation id="page-index:page-index-nft-button" />
+              <ButtonLink to="/unlock-your-potential/tools/">
+                <Translation id="common:tools-button" />
               </ButtonLink>
             </ButtonLinkRow>
           </FeatureContent>
           <ImageContainer>
             <Image
-              src={infrastructure}
-              alt={t("page-index:page-index-nft-alt")}
+              src={tools}
+              alt={t("common:tools-image-alt")}
               width={700}
             />
           </ImageContainer>
         </Row>
       </MainSectionContainer>
-      {/* Internet Section */}
+      {/* Banner 4 */}
       <MainSectionContainer containerBg="homeBoxPink">
         <Box ps={{ lg: 8 }}>
           <Row>
             <FeatureContent>
               <SectionHeading>
-                <Translation id="page-index:page-index-internet" />
+                <Translation id="common:community-header" />
               </SectionHeading>
               <SectionDecription>
-                <Translation id="page-index:page-index-internet-description" />
+                <Translation id="common:community-description" />
               </SectionDecription>
               <ButtonLinkRow>
-                <ButtonLink to="/dapps/?category=technology">
-                  <Translation id="page-index:page-index-internet-button" />
-                </ButtonLink>
-                <ButtonLink to="/wallets/" variant="outline">
-                  <Translation id="page-index:page-index-internet-secondary-button" />
+                <ButtonLink to="/unlock-your-potential/community/">
+                  <Translation id="common:community-button" />
                 </ButtonLink>
               </ButtonLinkRow>
             </FeatureContent>
             <ImageContainer>
               <Image
-                src={future}
-                alt={t("page-index:page-index-internet-image-alt")}
+                src={community}
+                alt={t("common:community-image-alt")}
                 width={700}
               />
             </ImageContainer>
           </Row>
         </Box>
       </MainSectionContainer>
-      {/* Developer Section */}
+      {/* Banner 5 */}
       <MainSectionContainer containerBg="homeBoxPurple">
         <Row>
           <Box py={4} px={{ base: 4, sm: 8 }} width="full">
             <StyledTitleCardList
               content={codeExamples}
               clickHandler={toggleCodeExample}
-              headerKey="page-index:page-index-developers-code-examples"
+              headerKey="page-index:page-index-banner-5-code-examples"
               isCode
               border="1px"
               borderColor="text"
@@ -524,14 +564,14 @@ const HomePage = ({
           </Box>
           <FeatureContent>
             <SectionHeading>
-              <Translation id="page-index:page-index-developers" />
+              <Translation id="page-index:page-index-banner-5-title" />
             </SectionHeading>
             <SectionDecription>
-              <Translation id="page-index:page-index-developers-description" />
+              <Translation id="page-index:page-index-banner-5-description" />
             </SectionDecription>
             <ButtonLinkRow>
-              <ButtonLink to="/dapps/?category=technology">
-                <Translation id="page-index:page-index-developers-button" />
+              <ButtonLink to="/make-positive-impact/">
+                <Translation id="common:make-positive-impact-button" />
               </ButtonLink>
             </ButtonLinkRow>
           </FeatureContent>
@@ -569,61 +609,39 @@ const HomePage = ({
           </StyledCodeModal>
         </Row>
       </MainSectionContainer>
-      {/* Eth Today Section */}
+      {/* Stats Section */}
       <GrayContainer>
         <ContentBox>
           <SectionHeading mt={12} mb={8} fontFamily="heading">
-            <Translation id="page-index:page-index-network-stats-title" />
+            <Translation id="page-index:page-index-stats-title" />
           </SectionHeading>
           <SectionDecription>
-            <Translation id="page-index:page-index-network-stats-subtitle" />
+            <Translation id="page-index:page-index-stats-subtitle" />
           </SectionDecription>
         </ContentBox>
         <StatsBoxGrid data={metricResults} />
       </GrayContainer>
       <Divider mb={16} mt={16} w="10%" height="0.25rem" bgColor="homeDivider" />
       <CommunityEvents events={communityEvents} />
-      {/* Explore Section */}
       <ContentBox>
-        <Box pb={4}>
-          <SectionHeading mt={12} mb={8} fontFamily="heading">
-            <Translation id="page-index:page-index-touts-header" />
-          </SectionHeading>
-        </Box>
-        <CardContainer minChildWidth={{ lg: "400px" }}>
-          {touts.map((tout, idx) => {
-            return (
-              <StyledActionCard
-                key={idx}
-                title={tout.title}
-                description={tout.description}
-                alt={tout.alt}
-                to={tout.to}
-                image={tout.image}
-                imageWidth={320}
-                boxShadow={cardBoxShadow}
-              />
-            )
-          })}
-        </CardContainer>
         <CalloutBanner
           titleKey={"page-index:page-index-contribution-banner-title"}
           descriptionKey={
             "page-index:page-index-contribution-banner-description"
           }
-          image={finance}
+          image={contribute}
           imageWidth={600}
-          alt={t("page-index:page-index-contribution-banner-image-alt")}
+          alt={t("contribute-image-alt")}
           mt={32}
           mb={16}
           mx={0}
         >
           <ButtonLinkRow>
-            <ButtonLink to="/contributing/">
+            <ButtonLink to="/make-positive-impact/contribute/">
               <Translation id="page-index:page-index-contribution-banner-button" />
             </ButtonLink>
             <ButtonLink
-              to="https://github.com/ethereum/ethereum-org-website"
+              to="https://github.com/thex3family/thex3family-website"
               leftIcon={<Icon as={FaGithub} fontSize="2xl" />}
               variant="outline"
             >
