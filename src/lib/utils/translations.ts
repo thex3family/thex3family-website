@@ -123,7 +123,7 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-developers-learning-tools"
   }
 
-  if (path.startsWith("/developers/tutorials")) {
+  if (path.startsWith("/unlock-your-potential/knowledge")) {
     primaryNamespace = "page-developers-tutorials"
   }
 
