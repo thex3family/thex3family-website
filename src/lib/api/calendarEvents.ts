@@ -37,13 +37,15 @@ export async function fetchCommunityEvents(): Promise<CommunityEventsReturnType>
       .filter((event) => event.start)
       .reverse()
       .map((event) => {
+        // Check if event.start.dateTime is defined, if not, set it to null or filter out the event
         return {
-          date: event.start.dateTime,
+          date: event.start.dateTime || "", // Set to null if undefined (full day event)
           title: event.summary,
           calendarLink: event.htmlLink,
           pastEventLink: event.location,
         }
       })
+      .filter((event) => event.date !== ""); // Filter out events with null dates if needed
 
     return {
       pastEventData,
