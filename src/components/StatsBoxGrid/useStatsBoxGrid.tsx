@@ -98,8 +98,8 @@ export const useStatsBoxGrid = ({
     {
       apiProvider: "Beaconcha.in",
       apiUrl: "https://beaconcha.in/",
-      title: t("page-index-network-stats-total-eth-staked"),
-      description: t("page-index-network-stats-total-eth-staked-explainer"),
+      title: t("page-index-stats-1-title"),
+      description: t("page-index-stats-1-description"),
       buttonContainer: (
         <RangeSelector
           state={selectedRangeTotalStaked}
@@ -117,8 +117,8 @@ export const useStatsBoxGrid = ({
     {
       apiProvider: "Etherscan",
       apiUrl: "https://etherscan.io/",
-      title: t("page-index-network-stats-tx-day-description"),
-      description: t("page-index-network-stats-tx-day-explainer"),
+      title: t("page-index-stats-2-title"),
+      description: t("page-index-stats-2-description"),
       buttonContainer: (
         <RangeSelector
           state={selectedRangeTxs}
@@ -136,8 +136,8 @@ export const useStatsBoxGrid = ({
     {
       apiProvider: "DeFi Llama",
       apiUrl: "https://defillama.com/",
-      title: t("page-index-network-stats-value-defi-description"),
-      description: t("page-index-network-stats-value-defi-explainer"),
+      title: t("page-index-stats-3-title"),
+      description: t("page-index-stats-3-description"),
       buttonContainer: (
         <RangeSelector
           state={selectedRangeTvl}
@@ -155,8 +155,8 @@ export const useStatsBoxGrid = ({
     {
       apiProvider: "Etherscan",
       apiUrl: "https://etherscan.io/nodetracker",
-      title: t("page-index-network-stats-nodes-description"),
-      description: t("page-index-network-stats-nodes-explainer"),
+      title: t("page-index-stats-4-title"),
+      description: t("page-index-stats-4-description"),
       buttonContainer: (
         <RangeSelector
           state={selectedRangeNodes}
