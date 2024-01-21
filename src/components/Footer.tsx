@@ -100,7 +100,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
       title: t("unlock-your-potential-title"),
       links: [
         {
-          text: t("be-your-best-self-title"),
+          text: t("unlock-your-potential-secondary-title"),
           to: "/unlock-your-potential/",
         },
         {
@@ -116,6 +116,10 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
     {
       title: t("make-positive-impact-title"),
       links: [
+        {
+          text: t("make-positive-impact-secondary-title"),
+          to: "/make-positive-impact/",
+        },
         {
           text: t("contribute-title"),
           to: "/make-positive-impact/contribute/",

@@ -229,7 +229,7 @@ const getRequiredNamespacesForLayout = (layout?: string) => {
     ]
   }
 
-  if (layout === "tutorial") {
+  if (layout === "knowledge") {
     requiredNamespaces = [...requiredNamespaces, "page-developers-tutorials"]
   }
 
