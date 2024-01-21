@@ -40,7 +40,7 @@ export const useNav = ({ path }: { path: string }) => {
       ariaLabel: t("unlock-your-potential-menu"),
       items: [
         {
-          text: t("be-your-best-self-title"),
+          text: t("unlock-your-potential-secondary-title"),
           to: "/unlock-your-potential/",
         },
         {
@@ -57,6 +57,10 @@ export const useNav = ({ path }: { path: string }) => {
       text: t("make-positive-impact-title"),
       ariaLabel: t("make-positive-impact-menu"),
       items: [
+        {
+          text: t("make-positive-impact-secondary-title"),
+          to: "/make-positive-impact/",
+        },
         {
           text: t("contribute-title"),
           to: "/make-positive-impact/contribute/",
