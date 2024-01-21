@@ -1,7 +1,7 @@
 import { DateTime, DateTimeFormatOptions } from "luxon"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { FaDiscord } from "react-icons/fa"
+import { FaDiscord, FaRegCalendar } from "react-icons/fa"
 import {
   Box,
   Center,
@@ -84,7 +84,7 @@ type CommunityEventsProps = {
 
 const CommunityEvents = ({ events }: CommunityEventsProps) => {
   const { locale } = useRouter()
-  const { t } = useTranslation("page-index")
+  const { t } = useTranslation("page-index, common")
   const { pastEventData, upcomingEventData } = events
 
   const reversedUpcomingEventData = upcomingEventData.slice().reverse()
@@ -103,12 +103,12 @@ const CommunityEvents = ({ events }: CommunityEventsProps) => {
       <Center w={{ base: "100%", lg: "40%" }}>
         <Box pe={8} ps={{ base: 8, lg: 0 }}>
           <OldHeading>
-            {t("page-index:community-events-content-heading")}
+            {t("common:community-events-content-heading")}
           </OldHeading>
           <Text>
-            <Translation id="page-index:community-events-content-1" />
+            <Translation id="common:community-events-content-1" />
           </Text>
-          <Text>{t("page-index:community-events-content-2")}</Text>
+          <Text>{t("common:community-events-content-2")}</Text>
         </Box>
       </Center>
       <Flex
@@ -141,17 +141,17 @@ const CommunityEvents = ({ events }: CommunityEventsProps) => {
               </Box>
             ) : (
               <Text fontSize="3xl" fontWeight="bold" mb={8}>
-                {t("page-index:community-events-no-events-planned")}
+                {t("common:community-events-no-events-planned")}
               </Text>
             )}
             <Flex flexDirection="column" gap={2}>
               <ButtonLink
-                to="/discord/"
+                to="https://our.x3.family"
                 gap={2}
-                onClick={() => matomoEvent("discord")}
+                onClick={() => matomoEvent("community")}
               >
-                <Icon as={FaDiscord} fontSize={25} />
-                Join Discord
+                <Icon as={FaRegCalendar} fontSize={25} />
+                Join The Community
               </ButtonLink>
               {reversedUpcomingEventData[0] && (
                 <InlineLink
@@ -159,7 +159,7 @@ const CommunityEvents = ({ events }: CommunityEventsProps) => {
                   onClick={() => matomoEvent("Add to calendar")}
                   fontWeight={700}
                 >
-                  {t("community-events-add-to-calendar")}
+                  {t("common:community-events-add-to-calendar")}
                 </InlineLink>
               )}
             </Flex>
@@ -172,7 +172,7 @@ const CommunityEvents = ({ events }: CommunityEventsProps) => {
           flexDir="column"
         >
           <Text fontSize="lg" fontWeight="bold" mb={2}>
-            {t("page-index:community-events-upcoming-calls")}
+            {t("common:community-events-upcoming-events")}
           </Text>
           <Divider mb={4} />
           {reversedUpcomingEventData.slice(1).length ? (
@@ -188,11 +188,11 @@ const CommunityEvents = ({ events }: CommunityEventsProps) => {
             })
           ) : (
             <Text mx="auto">
-              {t("page-index:community-events-no-upcoming-calls")}
+              {t("common:community-events-no-upcoming-events")}
             </Text>
           )}
           <Text fontSize="lg" fontWeight="bold" mb={2} mt={4}>
-            {t("page-index:community-events-previous-calls")}
+            {t("common:community-events-previous-events")}
           </Text>
           <Divider mb={4} />
           {reversedPastEventData.length ? (
@@ -203,7 +203,7 @@ const CommunityEvents = ({ events }: CommunityEventsProps) => {
             })
           ) : (
             <Text mx="auto">
-              {t("page-index:community-events-there-are-no-past-calls")}
+              {t("common:community-events-there-are-no-past-events")}
             </Text>
           )}
         </Flex>
