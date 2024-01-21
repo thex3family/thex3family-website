@@ -5,7 +5,7 @@ import { MdBrightness2, MdLanguage, MdWbSunny } from "react-icons/md"
 import { Box, Flex, HStack, Icon, useDisclosure } from "@chakra-ui/react"
 
 import { ButtonLink, IconButton } from "../Buttons"
-import { EthHomeIcon } from "../icons"
+import { HomeIcon } from "../icons"
 import { BaseLink } from "../Link"
 import Search from "../Search"
 
@@ -60,7 +60,7 @@ const Nav: FC<IProps> = ({ path }) => {
             alignItems="center"
             textDecor="none"
           >
-            <EthHomeIcon opacity={0.85} _hover={{ opacity: 1 }} />
+            <HomeIcon opacity={0.85} _hover={{ opacity: 1 }} />
           </BaseLink>
           {/* Desktop */}
           <Flex
