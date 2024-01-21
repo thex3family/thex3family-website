@@ -13,6 +13,7 @@ const getGitLogFromPath = (path: string): string => {
 
 const extractDateFromGitLogInfo = (logInfo: string): string => {
   // Filter commit date in log and return date using ISOString format (same that GH API uses)
+  return new Date().toISOString()
   const lastCommitDate = logInfo
     .split("\n")
     .filter((x) => x.startsWith("Date: "))[0]
