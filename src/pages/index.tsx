@@ -83,7 +83,7 @@ import community_gathering from "@/public/community_gathering.png"
 
 import contribute from "@/public/contribute.png"
 
-import understanding_levels from "@/public/understanding_levels.png"
+import understand_the_framework from "@/public/understand_the_framework.png"
 import knowledge from "@/public/knowledge.png"
 import tools from "@/public/tools.png"
 import community from "@/public/community.png"
@@ -462,8 +462,8 @@ const HomePage = ({
           </FeatureContent>
           <ImageContainer ps={{ lg: 8 }}>
             <Image
-              src={understanding_levels}
-              alt={t("common:levels-theory-image-alt")}
+              src={understand_the_framework}
+              alt={t("common:understand-the-framework-image-alt")}
               width={700}
             />
           </ImageContainer>

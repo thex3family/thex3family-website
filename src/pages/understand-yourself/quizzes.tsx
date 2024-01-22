@@ -58,7 +58,7 @@ export const getStaticProps = (async ({ locale }) => {
 const QuizzesHubPage: NextPage<
   InferGetStaticPropsType<typeof getStaticProps>
 > = () => {
-  const { t } = useTranslation("quizzes", "common")
+  const { t } = useTranslation(["quizzes", "common"])
 
   const [userStats, updateUserStats] = useLocalQuizData()
   const [quizStatus, setQuizStatus] = useState<QuizStatus>("neutral")
