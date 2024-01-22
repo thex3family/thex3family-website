@@ -67,7 +67,10 @@ const Breadcrumbs = ({
   return (
     <Breadcrumb {...props}>
       {crumbs.map(({ fullPath, text }) => {
-        const isCurrentPage = slug === fullPath
+        const normalizedSlug = slug.endsWith('/') ? slug : `${slug}/`;
+        const normalizedFullPath = fullPath.endsWith('/') ? fullPath : `${fullPath}/`;
+        const isCurrentPage = normalizedSlug === normalizedFullPath;
+        
         return (
           <BreadcrumbItem key={fullPath} isCurrentPage={isCurrentPage}>
             <BreadcrumbLink
