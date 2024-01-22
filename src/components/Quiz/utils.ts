@@ -3,8 +3,8 @@ import { CompletedQuizzes, type Lang, QuizShareStats } from "@/lib/types"
 import { getLocaleForNumberFormat } from "@/lib/utils/translations"
 
 import allQuizzesData, {
-  ethereumBasicsQuizzes,
-  usingEthereumQuizzes,
+  understand_yourself_quizzes,
+  live_your_best_life_quizzes,
 } from "@/data/quizzes"
 
 import {
@@ -26,7 +26,7 @@ export const getNumberOfCompletedQuizzes = (quizzes: CompletedQuizzes) =>
     .filter((v) => v).length
 
 export const getNextQuiz = (currentQuiz?: string) => {
-  const allQuizzes = [...ethereumBasicsQuizzes, ...usingEthereumQuizzes]
+  const allQuizzes = [...understand_yourself_quizzes, ...live_your_best_life_quizzes]
   const nextQuiz = allQuizzes.find((quiz) => quiz.id === currentQuiz)
 
   return nextQuiz ? nextQuiz.next : undefined
