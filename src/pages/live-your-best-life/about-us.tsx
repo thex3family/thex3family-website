@@ -393,7 +393,7 @@ const WhatIsEthereumPage = ({
           <br />
           <br /> */}
 
-          <Content id="start">
+          <Content>
             {/* <Column>
               <H2>{t("page-what-is-ethereum-explore")}</H2>
             </Column> */}
@@ -428,6 +428,9 @@ const WhatIsEthereumPage = ({
               </Callout>
             </CardContainer>
           </Content>
+          
+        </Section>
+        <Section>
 
           {/* <TwoColumnContent>
             <Width50>
@@ -442,7 +445,7 @@ const WhatIsEthereumPage = ({
             </Width50>
           </TwoColumnContent> */}
 
-          <Section>
+          <Content>
             <H2>{t("page-about-us:page-about-us-breakdown-title")}</H2>
             <CardContainer>
               {cards.map((card, idx) => (
@@ -458,7 +461,7 @@ const WhatIsEthereumPage = ({
                 />
               ))}
             </CardContainer>
-          </Section>
+          </Content>
         </Section>
 
         <Section>
