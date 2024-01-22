@@ -38,16 +38,16 @@ const semanticTokens = {
     // Main Set
     primary: {
       base: { _light: "green.500", _dark: "red.500" },
-      highContrast: { _light: "blue.800", _dark: "orange.100" },
-      lowContrast: { _light: "blue.100", _dark: "orange.800" },
+      highContrast: { _light: "green.800", _dark: "red.100" },
+      lowContrast: { _light: "green.100", _dark: "red.800" },
       hover: { _light: "green.400", _dark: "red.400" },
-      visited: { _light: "blue.700", _dark: "orange.550" },
+      visited: { _light: "green.700", _dark: "red.550" },
       // ! Deprecating primary.light
-      light: { _light: "blue.100", _dark: "orange.100" },
+      light: { _light: "green.100", _dark: "red.100" },
       // ! Deprecating primary.dark
-      dark: { _light: "blue.700", _dark: "orange.800" },
+      dark: { _light: "green.700", _dark: "red.800" },
       // ! Deprecating primary.pressed
-      pressed: { _light: "blue.400", _dark: "orange.800" },
+      pressed: { _light: "green.400", _dark: "red.800" },
     },
     body: {
       base: { _light: "gray.800", _dark: "gray.100" },
