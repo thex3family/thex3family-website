@@ -124,7 +124,7 @@ const LastUpdated = (props: ChildOnlyProp) => (
   />
 )
 
-// Upgrade layout components
+// Main layout components
 export const mainComponents = {
   MergeArticleList,
   MergeInfographic,
@@ -145,7 +145,7 @@ export const MainLayout: React.FC<IProps> = ({
   lastUpdatedDate,
 }) => {
   const { asPath: relativePath } = useRouter()
-  const { t } = useTranslation("page-upgrades")
+  const { t } = useTranslation("common")
   const { locale } = useRouter()
 
   const summaryPoints = getSummaryPoints(frontmatter)
