@@ -3,7 +3,7 @@ title: The Better Life Framework
 description: Our comprehensive framework deepens your self-awareness and understanding of the world and is designed to ease frustrations and cultivate empathy towards oneself and others - leading you to impactful actions that help you live a better life.
 lang: en
 template: main
-image: /contribute.png
+image: /understand_yourself.png
 alt: 
 summaryPoint1: Deepen your self-awareness and understanding of the world.
 summaryPoint2: Ease frustrations and cultivate empathy towards oneself and others.
