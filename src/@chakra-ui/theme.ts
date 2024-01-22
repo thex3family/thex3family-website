@@ -6,7 +6,7 @@ import semanticTokens from "./semanticTokens"
 import styles from "./styles"
 
 const config: ThemeConfig = {
-  cssVarPrefix: "eth",
+  cssVarPrefix: "x3",
   initialColorMode: "system",
   useSystemColorMode: true,
 }

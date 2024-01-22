@@ -70,7 +70,7 @@ const ActionCard = ({
     >
       <Flex
         h="260px"
-        bg="cardGradient"
+        bg="mainGradient"
         direction="row"
         justify={isRight ? "flex-end" : "center"}
         align={isBottom ? "flex-end" : "center"}

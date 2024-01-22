@@ -33,7 +33,7 @@ const CalloutBanner = ({
     <Flex
       as="aside"
       direction={{ base: "column", lg: "row-reverse" }}
-      bg="layer2Gradient"
+      bg="mainGradient"
       p={{ base: 8, sm: 12 }}
       borderRadius="base"
       {...props}

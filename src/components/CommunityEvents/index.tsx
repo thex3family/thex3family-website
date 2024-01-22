@@ -117,7 +117,7 @@ const CommunityEvents = ({ events }: CommunityEventsProps) => {
       >
         <Flex
           w={{ base: "100%", lg: "50%" }}
-          bg="layer2Gradient"
+          bg="mainGradient"
           px={8}
           py={16}
           textAlign="center"
