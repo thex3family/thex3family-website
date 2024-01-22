@@ -24,15 +24,9 @@ import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { trackCustomEvent } from "@/lib/utils/matomo"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import { ethereumBasicsQuizzes, usingEthereumQuizzes } from "@/data/quizzes"
+import { understand_yourself_quizzes, live_your_best_life_quizzes } from "@/data/quizzes"
 
 import { INITIAL_QUIZ } from "@/lib/constants"
-
-import HeroImage from "@/public/heroes/quizzes-hub-hero.png"
-import { Container, HeroContainer, LastUpdated, MoreContent, SummaryPoint, Title, TitleCard } from "@/layouts"
-import Breadcrumbs from "@/components/Breadcrumbs"
-import { Image } from "@/components/Image"
-import { MdExpandMore } from "react-icons/md"
 
 import { useRouter } from "next/router"
 import understand_yourself from "@/public/understand_yourself.png"
@@ -156,15 +150,15 @@ const QuizzesHubPage: NextPage<
           <Stack spacing="10" flex="1">
             <Box>
               <QuizzesList
-                content={ethereumBasicsQuizzes}
-                headingId={t("quizzes:basics")}
-                descriptionId={t("quizzes:basics-description")}
+                content={understand_yourself_quizzes}
+                headingId={t("common:unlock-your-potential-title")}
+                descriptionId={t("common:unlock-your-potential-description")}
                 {...commonQuizListProps}
               />
               <QuizzesList
-                content={usingEthereumQuizzes}
-                headingId={t("quizzes:using-ethereum")}
-                descriptionId={t("quizzes:using-ethereum-description")}
+                content={live_your_best_life_quizzes}
+                headingId={t("common:live-your-best-life-title")}
+                descriptionId={t("common:live-your-best-life-description")}
                 {...commonQuizListProps}
               />
             </Box>
@@ -183,11 +177,11 @@ const QuizzesHubPage: NextPage<
                 </Text>
 
                 <Text align={{ base: "center", xl: "left" }}>
-                  <Translation id="quizzes:contribute" />
+                  <Translation id="quizzes:quiz-contribute" />
                 </Text>
               </Box>
               <ButtonLink
-                href="/contributing/quizzes/"
+                href="/make-positive-impact/contribute/quizzes/"
                 variant="outline"
                 hideArrow
                 onClick={handleGHAdd}

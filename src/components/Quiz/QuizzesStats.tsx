@@ -20,7 +20,7 @@ import { CompletedQuizzes, QuizShareStats } from "@/lib/types"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import { ethereumBasicsQuizzes, usingEthereumQuizzes } from "../../data/quizzes"
+import { understand_yourself_quizzes, live_your_best_life_quizzes } from "../../data/quizzes"
 import { Button } from "../Buttons"
 import { TrophyIcon } from "../icons/quiz"
 import Translation from "../Translation"
@@ -62,7 +62,7 @@ const QuizzesStats = ({
 
   // These values are not fixed but calculated each time, can't be moved to /constants
   const totalQuizzesNumber =
-    ethereumBasicsQuizzes.length + usingEthereumQuizzes.length
+    understand_yourself_quizzes.length + live_your_best_life_quizzes.length
   const totalQuizzesPoints = getTotalQuizzesPoints()
 
   const {
