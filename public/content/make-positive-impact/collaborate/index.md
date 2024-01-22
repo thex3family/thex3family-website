@@ -1,13 +1,13 @@
 ---
-title: Help Yourself By Helping Others
-description: Uplift yourself and your commuity by contributing your insights, collaborating on our existing programs, and co-creating new programs together with us.
+title: Collaborate
+description: We enable our community to make use of their skills and commit regular time towards supporting programs that have benefited their growth journeys.
 lang: en
 template: main
 image: /contribute.png
 alt: 
-summaryPoint1: Uplift yourself and your commuity by contributing your insights.
-summaryPoint2: Pay it forward by collaborating on our existing programs. 
-summaryPoint3: Unlock your creativity by co-creating new programs together with us.
+summaryPoint1: Doing good is often associated to doing menial, unskilled labour.
+summaryPoint2: We enable you to make use of their skills and give back.
+summaryPoint3: Commit time towards supporting programs that have benefited you.
 ---
 
 ## Why Contribute? {#why-contribute}

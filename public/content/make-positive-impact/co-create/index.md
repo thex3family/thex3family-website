@@ -1,13 +1,13 @@
 ---
-title: Help Yourself By Helping Others
-description: Uplift yourself and your commuity by contributing your insights, collaborating on our existing programs, and co-creating new programs together with us.
+title: Co-Create
+description: We support the innovation and development of new programs by providing resources and support to creators who want to build solutions for the community.
 lang: en
 template: main
 image: /contribute.png
 alt: 
-summaryPoint1: Uplift yourself and your commuity by contributing your insights.
-summaryPoint2: Pay it forward by collaborating on our existing programs. 
-summaryPoint3: Unlock your creativity by co-creating new programs together with us.
+summaryPoint1: Everyone is building their own solutions to live a better life in isolation.
+summaryPoint2: Innovation and development of new programs can be done together.
+summaryPoint3: We love providing resources and support to creators who want to build solutions for the community.
 ---
 
 ## Why Contribute? {#why-contribute}
