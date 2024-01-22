@@ -107,8 +107,8 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-staking-deposit-contract"
   }
 
-  if (path.startsWith("/developers")) {
-    primaryNamespace = "page-developers-index"
+  if (path.startsWith("/unlock-your-potential")) {
+    primaryNamespace = "page-unlock-your-potential"
   }
 
   if (path.startsWith("/learn")) {

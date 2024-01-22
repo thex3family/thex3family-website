@@ -70,7 +70,7 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 ## How Do I Use The Framework?
 
-1. First, dive into our resources in the sidebar to gain a deep understanding of the life stages that are most relevant to you.
+1. First, dive into our resources in the sidebar to gain a deep understanding of the growth stages that are most relevant to you.
 2. Next, use your understanding of your life stge to get access to the most relevant resources precisely when you need them, optimizing your journey towards unlocking your potential and avoiding unnecessary delays and detours. We maintain a comprehensive repository of knowledge, tools, and community programs, each carefully categorized by level.
 3. As you progress towards your best self, give back! As a community of givers, we find that the most joy in life comes from supporting others. We offer many ways to contribute, collaborate, and co-create with us in ways relevant to your level - helping you master your understanding and enabling you to support others effectively.
 

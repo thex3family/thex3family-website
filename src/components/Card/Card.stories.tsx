@@ -18,7 +18,7 @@ export default {
 } as Meta<typeof Card>
 
 export const Default: StoryFn<typeof Card> = (args) => {
-  const { t } = useTranslation("page-developers-index")
+  const { t } = useTranslation("page-unlock-your-potential")
 
   const defaultProps: IProps = {
     emoji: ":woman_student:",
