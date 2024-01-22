@@ -10,38 +10,18 @@ summaryPoint2: Pay it forward by collaborating on our existing programs.
 summaryPoint3: Unlock your creativity by co-creating new programs together with us.
 ---
 
-## Why Contribute? {#why-contribute}
+## Why Help Others?
 
-Your contributions, regardless of their size, are immensely valuable to us. Whether you have a few minutes or several hours, there's a place for you here. Participation in even small, one-off tasks can make a significant impact.
+The philosophy that underpins our belief in helping others is simple yet profound: the best way to deepen your understanding and mastery of a subject is to share that knowledge with others. This process of teaching and guiding not only solidifies your own competence but also fosters a culture of mutual growth and learning within the community.
 
-We are in the process of developing a user-friendly platform to effortlessly match you with tasks that align with your skills and interests. Meanwhile, please explore the list of standard tasks below to find something that resonates with you.
+## Make Impact At Every Life Stage
 
-## What Can I Do? {#what-contribute}
+When you have achieved a certain level of expertise or understanding, it's not just an opportunity but a privilege to pay it forward. Giving doesn't have to be grandiose; it can be as straightforward as sharing a recent learning experience. This simple act, often requiring minimal effort, can have immense value to others. What might seem like a small insight to you could be the missing puzzle piece someone else is seeking.
 
-| Level        | Task                               | Description                                           | Difficulty        |
-|--------------|------------------------------------|-------------------------------------------------------|-------------------|
-| All Levels   | Get A Co-x3 Subscription           | Access exclusive content.                             | ⭐               |
-|              | Share Feedback                     | Provide your thoughts and suggestions.                | ⭐                |
-|              | Like and Subscribe                 | Support us on social platforms.                       | ⭐               |
-| Level 3+     | Post In Community Channels         | Engage in community discussions.                      | ⭐               |
-|              | Bug Identification                 | Identify and report website issues.                   | ⭐               |
-|              | Translation Services               | Help translate our content.                           | ⭐⭐             |
-|              | Guests On LVL-UP Podcast           | Join our podcast for a 1-on-1 consulting session.     | ⭐⭐             |
-| Level 4+     | [Suggest Knowledge](/make-positive-impact/contribute/knowledge)                  | Add insights to our knowledge base.                   | ⭐               |
-|              | [Improve Glossary Terms](/make-positive-impact/contribute/glossary)             | Add or edit glossary terms.                            | ⭐               |
-|              | Share On Social Media              | Promote us on social media.                           | ⭐               |
-|              | Website Design Contributions       | Improve our website design.                           | ⭐⭐⭐           |
-|              | Host Local Meetups                 | Organize meetups for comrades.                        | ⭐⭐             |
-| Level 5+     | Suggest Tools                      | Recommend personal growth tools.                      | ⭐               |
-|              | Better Life Framework Research             | Enhance our Better Life Framework research.                   | ⭐⭐             |
-|              | [Quiz Creation / Improvement](/make-positive-impact/contribute/quizzes)                      | Create quizzes for the Co-x3 Foundation.              | ⭐⭐             |
-| Level 6+     | Suggest Community Experiences      | Lead community initiatives.                           | ⭐⭐⭐           |
-| Level 7+     | Scholarship Sponsorship            | Sponsor member access to resources.                   | ⭐                |
-| Level 8+     | Submit Research                    | Contribute to community research papers.              | ⭐⭐⭐           |
-| Level 9+     | Ambassador Program                 | Be our ambassador at events and social gatherings.    | ⭐⭐⭐           |
+## What Can I Do?
 
-_Any questions?_ 🤔 Reach out in our [community](https://our.x3.family/)
-
-## Who Are Our Contributors? {#our-contributors}
-
-<Contributors />
+| Action                                                       | Description                                                                                                                   |
+|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Contribute](/make-positive-impact/contribute)               | We've created fun, engaging ways for our community to complete meaningful one-off or occasional tasks to support our programs and earn life points. |
+| [Collaborate](/make-positive-impact/collaborate)             | We enable our community to make use of their skills and commit regular time towards supporting programs that have benefited their growth journeys. |
+| [Co-Create](/make-positive-impact/co-create)                 | We support the innovation and development of new programs by providing resources and support to creators who want to build solutions for the community. |
