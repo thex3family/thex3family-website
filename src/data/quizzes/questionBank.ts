@@ -3,7 +3,7 @@ import type { QuestionBank } from "@/lib/interfaces"
 
 // Declare hash map of question bank
 const questionBank: QuestionBank = {
-  // What is Ethereum?
+  // About Us
   a001: {
     prompt: "a001-prompt",
     answers: [
@@ -80,7 +80,7 @@ const questionBank: QuestionBank = {
         explanation: "a003-d-explanation",
       },
     ],
-    correctAnswerId: "a003-d",
+    correctAnswerId: "a003-b",
   },
   a004: {
     prompt: "a004-prompt",
@@ -106,7 +106,7 @@ const questionBank: QuestionBank = {
         explanation: "a004-explanation",
       },
     ],
-    correctAnswerId: "a004-a",
+    correctAnswerId: "a004-d",
   },
   a005: {
     prompt: "a005-prompt",
@@ -132,7 +132,7 @@ const questionBank: QuestionBank = {
         explanation: "a005-d-explanation",
       },
     ],
-    correctAnswerId: "a005-d",
+    correctAnswerId: "a005-c",
   },
   // What is ether?
   b001: {
