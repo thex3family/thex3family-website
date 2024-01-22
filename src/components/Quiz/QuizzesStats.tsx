@@ -79,7 +79,7 @@ const QuizzesStats = ({
         <SimpleGrid
           columns={{ base: 1, lg: 2 }}
           gap={{ base: "6", lg: "4" }}
-          bg="background.highlight"
+          bg="mainGradient"
           borderRadius={{ base: "none", lg: "lg" }}
           border="none"
           p="8"
@@ -153,7 +153,7 @@ const QuizzesStats = ({
         {/* community stats */}
         <Stack
           gap="6"
-          bg="background.highlight"
+          bg="mainGradient"
           borderRadius={{ lg: "lg" }}
           border="none"
           p="8"
