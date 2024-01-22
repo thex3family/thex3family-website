@@ -58,7 +58,7 @@ const Breadcrumbs = ({
     ,
     ...sliced.map((path, idx) => ({
       fullPath: slugChunk.slice(0, idx + 2).join("/") + "/",
-      text: t(path),
+      text: t(path+"-title"),
     })),
   ]
     .filter((item): item is Crumb => !!item)
