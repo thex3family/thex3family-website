@@ -206,7 +206,7 @@ const getRequiredNamespacesForLayout = (layout?: string) => {
 
   // namespaces required for all layouts
   if (layout) {
-    requiredNamespaces = [...requiredNamespaces, "glossary"]
+    requiredNamespaces = [...requiredNamespaces, "glossary", "common"]
   }
 
   if (layout === "docs") {

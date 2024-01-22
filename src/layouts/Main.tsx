@@ -63,11 +63,12 @@ const HeroContainer = (props: ChildOnlyProp) => (
   <Flex
     justify="flex-end"
     direction={{ base: "column-reverse", lg: "row" }}
-    bg="cardGradient"
+    bg="mainGradient"
     boxShadow="inset 0px -1px 0px rgba(0, 0, 0, 0.1)"
     minH="608px"
     maxH={{ base: "full", lg: "608px" }}
     w="full"
+    overflow="hidden"
     {...props}
   />
 )
@@ -195,11 +196,11 @@ export const MainLayout: React.FC<IProps> = ({
         {frontmatter.image && (
           <Image
             src={frontmatter.image}
-            blurDataURL={frontmatter.blurDataURL}
+            // blurDataURL={frontmatter.blurDataURL}
             alt={frontmatter.alt}
             width={816}
             height={525}
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", overflow: "visible" }}
             priority
             flex={{ base: "1 1 100%", md: "none" }}
             alignSelf={{ base: "center", md: "flex-end" }}

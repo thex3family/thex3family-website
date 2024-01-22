@@ -5,6 +5,7 @@ import InlineLink from "@/components/Link"
 import Text from "@/components/OldText"
 
 import data from "!!raw-loader!@/../.all-contributorsrc"
+import { useEffect, useState } from "react"
 
 export interface Contributor {
   login: string
@@ -15,13 +16,28 @@ export interface Contributor {
 }
 
 const Contributors = () => {
-  const contributorsList = shuffle(JSON.parse(data).contributors)
+  const [contributorsList, setContributorsList] = useState<Contributor[]>([]);
+
+  useEffect(() => {
+    // Shuffle the contributors only on the client side, after mounting
+    setContributorsList(shuffle(JSON.parse(data).contributors));
+  }, []); // Empty dependency array ensures this runs once on mount
+
+  if (contributorsList.length === 0) {
+    // Optionally, render a placeholder or nothing while waiting for the shuffle
+    // Render a placeholder message
+    return (
+      <Box textAlign="center" padding="4">
+        <Text>Loading contributors...</Text>
+      </Box>
+    );
+    return null;
+  }
 
   return (
     <>
       <p>
-        Thanks to our {contributorsList.length} Ethereum community members who
-        have contributed so far!
+        This is possible thanks to our <strong>{contributorsList.length} comrades</strong> who have contributed so far!
       </p>
 
       <Flex flexWrap="wrap">
