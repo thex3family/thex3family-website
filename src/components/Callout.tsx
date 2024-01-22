@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next"
-import { Center, Flex, type FlexProps } from "@chakra-ui/react"
+import { useColorMode, Center, Flex, type FlexProps } from "@chakra-ui/react"
 
 import type { TranslationKey } from "@/lib/types"
 
@@ -34,12 +34,10 @@ const Callout: React.FC<IProps> = ({
     <Flex
       as="aside"
       direction="column"
-      bgGradient="linear-gradient(
-        49.21deg,
-        rgba(127, 127, 213, 0.2) 19.87%,
-        rgba(134, 168, 231, 0.2) 58.46%,
-        rgba(145, 234, 228, 0.2) 97.05%
-      )"
+      bgGradient={{
+        light: "linear-gradient(0deg, #FFFEFF 0%, #cfeee4 100%)",
+        dark: "linear-gradient(0deg, #2E2E2E 0%, #1B1B1B 100%)"
+      }[useColorMode().colorMode]}
       p={6}
       m={4}
       mt={32}

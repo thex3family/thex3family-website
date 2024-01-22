@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next"
 import { Box, type BoxProps, Flex, useColorMode } from "@chakra-ui/react"
+import Translation from "@/components/Translation"
 
 import type { ChildOnlyProp } from "@/lib/types"
 
@@ -47,57 +48,72 @@ const ColumnName = ({ children }: ChildOnlyProp) => (
 )
 
 const AdoptionChart = () => {
-  const { t } = useTranslation("page-what-is-ethereum")
+  const { t } = useTranslation("page-about-us")
   const { colorMode } = useColorMode()
   const isDark = colorMode === "dark"
 
   return (
     <Flex>
       <Column>
-        <ColumnName>2010</ColumnName>
+        <ColumnName>{t("page-about-us-history-chart-section-1-title")}</ColumnName>
         <Cell color={isDark ? "#FBF9A5" : "#95935B"}>
-          {t("adoption-chart-investors-label")}
+          {t("page-about-us-history-chart-card-1")}
+        </Cell>
+        <Cell color={isDark ? "#9EC885" : "#67954C"}>
+          {t("page-about-us-history-chart-card-2")}
+        </Cell>
+        <Cell color={isDark ? "#E78F6E" : "#CB7C5E"}>
+          {t("page-about-us-history-chart-card-3")}
         </Cell>
       </Column>
 
       <Column>
-        <ColumnName>2014</ColumnName>
+        <ColumnName>{t("page-about-us-history-chart-section-2-title")}</ColumnName>
         <Cell color={isDark ? "#FBF9A5" : "#95935B"}>
-          {t("adoption-chart-investors-label")}
+          {t("page-about-us-history-chart-card-1")}
         </Cell>
         <Cell color={isDark ? "#9EC885" : "#67954C"}>
-          {t("adoption-chart-developers-label")}
+          {t("page-about-us-history-chart-card-2")}
         </Cell>
         <Cell color={isDark ? "#E78F6E" : "#CB7C5E"}>
-          {t("adoption-chart-companies-label")}
-        </Cell>
-      </Column>
-
-      <Column>
-        <ColumnName>{t("adoption-chart-column-now-label")}</ColumnName>
-        <Cell color={isDark ? "#FBF9A5" : "#95935B"}>
-          {t("adoption-chart-investors-label")}
-        </Cell>
-        <Cell color={isDark ? "#9EC885" : "#67954C"}>
-          {t("adoption-chart-developers-label")}
-        </Cell>
-        <Cell color={isDark ? "#E78F6E" : "#CB7C5E"}>
-          {t("adoption-chart-companies-label")}
+          {t("page-about-us-history-chart-card-3")}
         </Cell>
         <Cell color={isDark ? "#8EA8CA" : "#5E7492"}>
-          {t("adoption-chart-artists-label")}
+          {t("page-about-us-history-chart-card-4")}
         </Cell>
         <Cell color={isDark ? "#AC85C2" : "#88669B"}>
-          {t("adoption-chart-musicians-label")}
+          {t("page-about-us-history-chart-card-5")}
         </Cell>
         <Cell color={isDark ? "#CA928E" : "#985955"}>
-          {t("adoption-chart-writers-label")}
+          {t("page-about-us-history-chart-card-6")}
+        </Cell>
+      </Column>
+
+      <Column>
+        <ColumnName>{t("page-about-us-history-chart-section-3-title")}</ColumnName>
+        <Cell color={isDark ? "#FBF9A5" : "#95935B"}>
+          {t("page-about-us-history-chart-card-1")}
+        </Cell>
+        <Cell color={isDark ? "#9EC885" : "#67954C"}>
+          {t("page-about-us-history-chart-card-2")}
+        </Cell>
+        <Cell color={isDark ? "#E78F6E" : "#CB7C5E"}>
+          {t("page-about-us-history-chart-card-3")}
+        </Cell>
+        <Cell color={isDark ? "#8EA8CA" : "#5E7492"}>
+          {t("page-about-us-history-chart-card-4")}
+        </Cell>
+        <Cell color={isDark ? "#AC85C2" : "#88669B"}>
+          {t("page-about-us-history-chart-card-5")}
+        </Cell>
+        <Cell color={isDark ? "#CA928E" : "#985955"}>
+          {t("page-about-us-history-chart-card-6")}
         </Cell>
         <Cell color={isDark ? "#B9B9B9" : "#9E9E9E"}>
-          {t("adoption-chart-gamers-label")}
+          {t("page-about-us-history-chart-card-7")}
         </Cell>
         <Cell color={isDark ? "#E2B79E" : "#E78A54"}>
-          {t("adoption-chart-refugees-label")}
+          {t("page-about-us-history-chart-card-8")}
         </Cell>
       </Column>
     </Flex>

@@ -11,6 +11,12 @@
   
   "about-website": "About x3.family",
 
+  "vision-title": "Our Vision",
+  "vision-description": "To build a global self-actualized community of co-creators and collaborators tackling global challenges and unleashing breakthroughs together.",
+  
+  "mission-title": "Our Mission",
+  "mission-description": "To equip students, creatives, and retirees with knowledge to level up every day, tools to put their learning into action, and a community to never struggle alone.",
+
   "adding-glossary-terms": "Adding Glossary Terms",
   "adding-products": "Adding Products",
   "acknowledgements": "Acknowledgements",
@@ -142,7 +148,7 @@
   "docs-title": "Documentation",
 
   "about-us-title": "About The Co-x3 Family Foundation",
-  "about-us-description": "Family Is Our Answer",
+  "about-us-description": "Co-x3 stands for co-creation, collaboration, and community. We're an inclusive family of like-minded forward thinkers from 150+ countries that want to effect positive change in the world.",
   "about-us-image-alt": "",
 
   "understand-yourself-title": "Understand Yourself",

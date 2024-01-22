@@ -69,6 +69,10 @@ import whatAreSmartContracts from "@/public/infrastructure_transparent.png"
 import whoRunsEthereum from "@/public/run-a-node/ethereum-inside.png"
 import stats from "@/public/upgrades/newrings.png"
 import hero from "@/public/what-is-ethereum.png"
+import MainHero from "@/components/MainHero"
+
+import comrades from "@/public/comrades.png"
+import community_gathering from "@/public/community_gathering.png"
 
 const Slogan = (props: ChildOnlyProp) => (
   <Text
@@ -113,13 +117,13 @@ const Summary = (props: BoxProps) => (
 )
 
 const Content = (props: ChildOnlyProp) => (
-  <Box w="full" px={8} py={4} {...props} />
+  <Box w="full" px={0} py={4} {...props} />
 )
 
 const TwoColumnContent = (props: FlexProps) => (
   <Flex
     w="full"
-    gap={{ base: 8, lg: 0 }}
+    gap={{ base: 8, lg: 4 }}
     align={{ base: "flex-start", lg: "center" }}
     direction={{ base: "column", lg: "row" }}
     {...props}
@@ -127,6 +131,10 @@ const TwoColumnContent = (props: FlexProps) => (
 )
 
 const Section = (props: BoxProps) => <Box w="full" py={12} px={8} {...props} />
+
+export const Width50 = (props: ChildOnlyProp) => (
+  <Box w="full" flex={1} {...props} />
+)
 
 export const Width60 = (props: ChildOnlyProp) => (
   <Box w="full" flex={3} {...props} />
@@ -152,6 +160,7 @@ const H3 = (props: ChildOnlyProp) => (
     fontSize={{ base: "xl", md: "2xl" }}
     lineHeight={1.4}
     fontWeight={600}
+    mb={0}
     {...props}
   />
 )
@@ -193,7 +202,7 @@ type Props = BasePageProps & {
 export const getStaticProps = (async ({ locale }) => {
   const lastDeployDate = getLastDeployDate()
 
-  const requiredNamespaces = getRequiredNamespacesForPage("/what-is-ethereum")
+  const requiredNamespaces = getRequiredNamespacesForPage("/live-your-best-life/about-us")
 
   const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[1])
 
@@ -212,7 +221,7 @@ export const getStaticProps = (async ({ locale }) => {
 const WhatIsEthereumPage = ({
   data,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const { t } = useTranslation(["page-what-is-ethereum", "quizzes"])
+  const { t } = useTranslation(["page-about-us", "quizzes"])
 
   const { locale } = useRouter()
   const localeForNumberFormat = getLocaleForNumberFormat(locale! as Lang)
@@ -228,68 +237,65 @@ const WhatIsEthereumPage = ({
 
   const cards = [
     {
-      emoji: ":bank:",
-      title: t("page-what-is-ethereum-banking-card"),
-      description: t("page-what-is-ethereum-banking-card-desc"),
+      emoji: ":book:",
+      title: t("common:knowledge-title"),
+      description: t("common:knowledge-description"),
     },
 
     {
-      emoji: ":detective:",
-      title: t("page-what-is-ethereum-internet-card"),
-      description: t("page-what-is-ethereum-internet-card-desc"),
+      emoji: ":toolbox:",
+      title: t("common:tools-title"),
+      description: t("common:tools-description"),
     },
     {
-      emoji: ":busts_in_silhouette:",
-      title: t("page-what-is-ethereum-p2p-card"),
-      description: t("page-what-is-ethereum-p2p-card-desc"),
+      emoji: ":hug:",
+      title: t("common:community-title"),
+      description: t("common:community-description"),
     },
     {
-      emoji: ":shield:",
-      title: t("page-what-is-ethereum-censorless-card"),
-      description: t("page-what-is-ethereum-censorless-card-desc"),
+      emoji: ":crossed_swords:",
+      title: t("common:contribute-title"),
+      description: t("common:contribute-description"),
     },
     {
-      emoji: ":shopping_bags:",
-      title: t("page-what-is-ethereum-commerce-card"),
-      description: t("page-what-is-ethereum-commerce-card-desc"),
+      emoji: ":watch:",
+      title: t("common:collaborate-title"),
+      description: t("common:collaborate-description"),
     },
     {
       emoji: ":handshake:",
-      title: t("page-what-is-ethereum-composable-card"),
-      description: t("page-what-is-ethereum-composable-card-desc"),
+      title: t("common:co-create-title"),
+      description: t("common:co-create-description"),
     },
   ]
 
-  const tabs = [
-    {
-      title: t("page-what-is-ethereum-blockchain-tab-title"),
-      eventName: "Blockchain tab",
-      content: (
-        <Text mb="0">
-          <Translation id="page-what-is-ethereum:page-what-is-ethereum-blockchain-tab-content" />
-        </Text>
-      ),
-    },
-    {
-      title: t("page-what-is-ethereum-cryptocurrency-tab-title"),
-      eventName: "Cryptocurrency tab",
-      content: (
-        <>
-          <Text>{t("page-what-is-ethereum-cryptocurrency-tab-content-1")}</Text>
-          <Text>{t("page-what-is-ethereum-cryptocurrency-tab-content-2")}</Text>
-          <Text mb="0">
-            {t("page-what-is-ethereum-cryptocurrency-tab-content-3")}
-          </Text>
-        </>
-      ),
-    },
-  ]
+  // const tabs1 = [
+  //   {
+  //     title: t("common:vision-title"),
+  //     eventName: "Vision Tab",
+  //     content: (
+  //       <Text mb="0">
+  //         <Translation id="common:vision-description" />
+  //       </Text>
+  //     ),
+  //   },
+  // ]
+  // const tabs2 = [
+  //   {
+  //     title: t("common:mission-title"),
+  //     eventName: "Mission Tab",
+  //     content: (
+  //       <Text mb="0">
+  //         <Translation id="common:mission-description" />
+  //       </Text>
+  //     ),
+  //   },
+  // ]
 
   const slides = [
-    { eventName: "Payments slide" },
-    { eventName: "Time of crisis slide" },
-    { eventName: "Creators slide" },
-    { eventName: "Gamers slide" },
+    { eventName: "History - Slide 1" },
+    { eventName: "History - Slide 2" },
+    { eventName: "History - Slide 3" },
   ]
 
   const tooltipContent = ({ apiUrl, apiProvider, ariaLabel }) => (
@@ -301,6 +307,20 @@ const WhatIsEthereumPage = ({
     </div>
   )
 
+  const { pathname } = useRouter()
+
+  const heroProps = {
+    pathname,
+    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
+    title: t("common:about-us-title"),
+    description: t("common:about-us-description")
+      .split('.')
+      .filter(sentence => sentence.trim() !== '')
+      .map(sentence => `${sentence.trim()}.`),
+    imageSrc: comrades.src, // Assuming understand_yourself is an imported image module
+    imageAlt: t("common:about-us-image-alt"),
+  };
+
   return (
     <Flex
       as={MainArticle}
@@ -310,35 +330,38 @@ const WhatIsEthereumPage = ({
       m="0 auto"
     >
       <PageMetadata
-        title={t("page-what-is-ethereum-meta-title")}
-        description={t("page-what-is-ethereum-meta-description")}
-        image="what-is-ethereum.png"
+        title={t("common:about-us-title")}
+        description={t("common:about-us-description")}
+        image="comrades.png"
       />
-      <Content>
-        <Flex
-          align="center"
-          justify="space-between"
-          direction={{ base: "column-reverse", md: "row" }}
-        >
-          <Box as="header">
-            <Title>{t("page-what-is-ethereum-title")}</Title>
-            <Slogan>{t("page-what-is-ethereum-desc")}</Slogan>
-            <Subtitle>{t("page-what-is-ethereum-subtitle")}</Subtitle>
-            <ButtonRow>
-              <Button toId="summary">
-                {t("page-what-is-ethereum-button-lets-start")}
-              </Button>
-            </ButtonRow>
-          </Box>
-          <Hero>
-            <Image
-              src={hero}
-              alt={t("page-what-is-ethereum-alt-img-bazaar")}
-              priority
-            />
-          </Hero>
-        </Flex>
-      </Content>
+
+      {/* Main Hero */}
+      <MainHero {...heroProps} />
+
+      {/* <Flex
+        align="center"
+        justify="space-between"
+        direction={{ base: "column-reverse", md: "row" }}
+      >
+        <Box as="header">
+          <Title>{t("page-what-is-ethereum-title")}</Title>
+          <Slogan>{t("page-what-is-ethereum-desc")}</Slogan>
+          <Subtitle>{t("page-what-is-ethereum-subtitle")}</Subtitle>
+          <ButtonRow>
+            <Button toId="summary">
+              {t("page-what-is-ethereum-button-lets-start")}
+            </Button>
+          </ButtonRow>
+        </Box>
+        <Hero>
+          <Image
+            src={hero}
+            alt={t("page-what-is-ethereum-alt-img-bazaar")}
+            priority
+          />
+        </Hero>
+      </Flex> */}
+
       <Box
         w="full"
         bg="grayBackground"
@@ -347,8 +370,8 @@ const WhatIsEthereumPage = ({
           md: "inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)",
         }}
       >
-        <Section>
-          <TwoColumnContent id="summary">
+        <Section id="start">
+          {/* <TwoColumnContent id="summary">
             <Width60>
               <Summary>
                 <Heading
@@ -368,10 +391,59 @@ const WhatIsEthereumPage = ({
           </TwoColumnContent>
 
           <br />
-          <br />
+          <br /> */}
+
+          <Content id="start">
+            {/* <Column>
+              <H2>{t("page-what-is-ethereum-explore")}</H2>
+            </Column> */}
+            <CardContainer>
+              <Callout
+                flex="1 1 416px"
+                minH="full"
+                image={developers}
+                titleKey="common:vision-title"
+                alt={t("common:vision-image-alt")}
+                descriptionKey="common:vision-description"
+              >
+                {/* <Box>
+                  <ButtonLink to="/developers/">
+                    {t("page-what-is-ethereum-start-building-btn")}
+                  </ButtonLink>
+                </Box> */}
+              </Callout>
+              <Callout
+                flex="1 1 416px"
+                minH="full"
+                image={community}
+                titleKey="common:mission-title"
+                alt={t("common:mission-image-alt")}
+                descriptionKey="common:mission-description"
+              >
+                {/* <Box>
+                  <ButtonLink to="/community/">
+                    {t("page-what-is-ethereum-meet-comm")}
+                  </ButtonLink>
+                </Box> */}
+              </Callout>
+            </CardContainer>
+          </Content>
+
+          {/* <TwoColumnContent>
+            <Width50>
+              <Tabs
+                tabs={tabs2}
+              />
+            </Width50>
+            <Width50>
+              <Tabs
+                tabs={tabs1}
+              />
+            </Width50>
+          </TwoColumnContent> */}
 
           <Section>
-            <H2>{t("page-what-is-ethereum-what-can-eth-do-title")}</H2>
+            <H2>{t("page-about-us:page-about-us-breakdown-title")}</H2>
             <CardContainer>
               {cards.map((card, idx) => (
                 <Card
@@ -387,70 +459,53 @@ const WhatIsEthereumPage = ({
               ))}
             </CardContainer>
           </Section>
-
-          <TwoColumnContent>
-            <Width60>
-              <Tabs
-                onTabClick={(index) => {
-                  trackCustomEvent({
-                    eventCategory: `Blockchain/crypto tab`,
-                    eventAction: `Clicked`,
-                    eventName: tabs[index].eventName,
-                  })
-                }}
-                tabs={tabs}
-              />
-            </Width60>
-            <Width40 />
-          </TwoColumnContent>
         </Section>
 
         <Section>
           <TwoColumnContent>
             <Width60>
               <H2>
-                {t("page-what-is-ethereum-why-would-i-use-ethereum-title")}
+                {t("page-about-us:page-about-us-history-title")}
               </H2>
               <Text>
-                {t("page-what-is-ethereum-why-would-i-use-ethereum-1")}
-              </Text>
-              <Text>
-                {t("page-what-is-ethereum-why-would-i-use-ethereum-2")}
+                {t("page-about-us:page-about-us-history-description")}
               </Text>
 
               <Slider
                 onSlideChange={(index) => {
                   trackCustomEvent({
-                    eventCategory: `What is Ethereum - Slider`,
+                    eventCategory: `History Slider`,
                     eventAction: `Clicked`,
                     eventName: slides[index].eventName,
                   })
                 }}
               >
                 <EmblaSlide>
-                  <H3>{t("page-what-is-ethereum-slide-1-title")}</H3>
+                  <H3>{t("page-about-us:page-about-us-history-slide-1-title")}</H3>
                   <Text>
-                    <Translation id="page-what-is-ethereum:page-what-is-ethereum-slide-1-desc-1" />
-                  </Text>
-                  <Text>{t("page-what-is-ethereum-slide-1-desc-2")}</Text>
-                </EmblaSlide>
-                <EmblaSlide>
-                  <H3>{t("page-what-is-ethereum-slide-2-title")}</H3>
-                  <Text>{t("page-what-is-ethereum-slide-2-desc-1")}</Text>
-                  <Text>
-                    <Translation id="page-what-is-ethereum:page-what-is-ethereum-slide-2-desc-2" />
+                    <Translation id="page-about-us:page-about-us-history-slide-1-description-1" />
+                    <br />
+                    <br />
+                    <Translation id="page-about-us:page-about-us-history-slide-1-description-2" />
                   </Text>
                 </EmblaSlide>
                 <EmblaSlide>
-                  <H3>{t("page-what-is-ethereum-slide-3-title")}</H3>
+                  <H3>{t("page-about-us:page-about-us-history-slide-2-title")}</H3>
                   <Text>
-                    <Translation id="page-what-is-ethereum:page-what-is-ethereum-slide-3-desc-1" />
+                    <Translation id="page-about-us:page-about-us-history-slide-2-description-1" />
+                    <br />
+                    <br />
+                    <Translation id="page-about-us:page-about-us-history-slide-2-description-2" />
                   </Text>
                 </EmblaSlide>
                 <EmblaSlide>
-                  <H3>{t("page-what-is-ethereum-slide-4-title")}</H3>
-                  <Text>{t("page-what-is-ethereum-slide-4-desc-1")}</Text>
-                  <Text>{t("page-what-is-ethereum-slide-4-desc-2")}</Text>
+                  <H3>{t("page-about-us:page-about-us-history-slide-3-title")}</H3>
+                  <Text>
+                    <Translation id="page-about-us:page-about-us-history-slide-3-description-1" />
+                    <br />
+                    <br />
+                    <Translation id="page-about-us:page-about-us-history-slide-3-description-2" />
+                  </Text>
                 </EmblaSlide>
               </Slider>
             </Width60>
@@ -463,332 +518,58 @@ const WhatIsEthereumPage = ({
         <Section>
           <Banner>
             <BannerBody>
-              <H2>{t("page-what-is-ethereum-ethereum-in-numbers-title")}</H2>
+              <H2>{t("page-about-us:page-about-us-stats-title")}</H2>
               <BannerGrid>
                 <BannerGridCell>
-                  <StatPrimary>4k+</StatPrimary>
+                  <StatPrimary>1B+</StatPrimary>
                   <StatDescription>
-                    Projects built on{" "}
-                    <NoWrapText>
-                      Ethereum{" "}
-                      <Tooltip
-                        content={tooltipContent({
-                          apiUrl:
-                            "https://dappradar.com/rankings/protocol/ethereum",
-                          apiProvider: "State of the dapps",
-                          ariaLabel: "Read more about Ethereum projects stats",
-                        })}
-                      >
-                        <Icon as={MdInfoOutline} fontSize="md" />
-                      </Tooltip>
-                    </NoWrapText>
+                    <Translation id="page-about-us:page-about-us-stats-stat-1-title" />
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
-                  <StatPrimary>96M+</StatPrimary>
+                  <StatPrimary>90M+</StatPrimary>
                   <StatDescription>
-                    Accounts (wallets) with an ETH{" "}
-                    <NoWrapText>
-                      balance{" "}
-                      <Tooltip
-                        content={tooltipContent({
-                          apiUrl:
-                            "https://messari.io/asset/ethereum/metrics/all",
-                          apiProvider: "Messari",
-                          ariaLabel: "Read more about wallets stats",
-                        })}
-                      >
-                        <Icon as={MdInfoOutline} fontSize="md" />
-                      </Tooltip>
-                    </NoWrapText>
+                    <Translation id="page-about-us:page-about-us-stats-stat-2-title" />
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
-                  <StatPrimary>53.3M+</StatPrimary>
+                  <StatPrimary>10M+</StatPrimary>
                   <StatDescription>
-                    Smart contracts on{" "}
-                    <NoWrapText>
-                      Ethereum{" "}
-                      <Tooltip
-                        content={tooltipContent({
-                          apiUrl:
-                            "https://dune.com/sawmon_and_natalie/smart-contracts-on-ethereum",
-                          apiProvider: "Dune",
-                          ariaLabel: "Read more about smart contracts stats",
-                        })}
-                      >
-                        <Icon as={MdInfoOutline} fontSize="md" />
-                      </Tooltip>
-                    </NoWrapText>
+                    <Translation id="page-about-us:page-about-us-stats-stat-3-title" />
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
-                  <StatPrimary>$410B</StatPrimary>
+                  <StatPrimary>9M+</StatPrimary>
                   <StatDescription>
-                    Value secured on{" "}
-                    <NoWrapText>
-                      Ethereum{" "}
-                      <Tooltip
-                        content={tooltipContent({
-                          apiUrl: "https://ultrasound.money/#tvs",
-                          apiProvider: "Ultrasound Money",
-                          ariaLabel: "Read more about about Ethereum as money",
-                        })}
-                      >
-                        <Icon as={MdInfoOutline} fontSize="md" />
-                      </Tooltip>
-                    </NoWrapText>
+                    <Translation id="page-about-us:page-about-us-stats-stat-4-title" />
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
-                  <StatPrimary>$3.5B</StatPrimary>
+                  <StatPrimary>900k+</StatPrimary>
                   <StatDescription>
-                    Creator earnings on Ethereum in{" "}
-                    <NoWrapText>
-                      2021{" "}
-                      <Tooltip
-                        content={tooltipContent({
-                          apiUrl:
-                            "https://stark.mirror.xyz/q3OnsK7mvfGtTQ72nfoxLyEV5lfYOqUfJIoKBx7BG1I",
-                          apiProvider: "Josh Stark",
-                          ariaLabel:
-                            "Read more about 2021 Ethereum earnings stats",
-                        })}
-                      >
-                        <Icon as={MdInfoOutline} fontSize="md" />
-                      </Tooltip>
-                    </NoWrapText>
+                    <Translation id="page-about-us:page-about-us-stats-stat-5-title" />
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
                   <StatPrimary>
-                    {txStat || <StatErrorMessage fontSize="1rem" />}
+                    100k+
                   </StatPrimary>
-                  {/* TODO: Extract strings for translation */}
                   <StatDescription>
-                    Number of transactions{" "}
-                    <NoWrapText>
-                      today{" "}
-                      <Tooltip
-                        content={tooltipContent({
-                          apiUrl: "https://etherscan.io/",
-                          apiProvider: "Etherscan",
-                          ariaLabel:
-                            "Read more about number of transactions stats",
-                        })}
-                      >
-                        <Icon as={MdInfoOutline} fontSize="md" />
-                      </Tooltip>
-                    </NoWrapText>
+                    <Translation id="page-about-us:page-about-us-stats-stat-6-title" />
                   </StatDescription>
                 </BannerGridCell>
               </BannerGrid>
             </BannerBody>
             <BannerImage>
-              <Image400 src={stats} />
+              <Image400 src={community_gathering} />
             </BannerImage>
           </Banner>
         </Section>
-
-        <Section bgColor="homeBoxPurple">
-          <TwoColumnContent>
-            <Width40>
-              <Image400 src={whoRunsEthereum} />
-            </Width40>
-            <Width60>
-              <H2>{t("page-what-is-ethereum-who-runs-ethereum-title")}</H2>
-              <Text>{t("page-what-is-ethereum-who-runs-ethereum-desc-1")}</Text>
-              <Text>{t("page-what-is-ethereum-who-runs-ethereum-desc-2")}</Text>
-              <ButtonRow>
-                <ButtonLink to="/run-a-node/">
-                  {t("page-what-is-ethereum-run-a-node")}
-                </ButtonLink>
-              </ButtonRow>
-            </Width60>
-          </TwoColumnContent>
-        </Section>
-
-        <Section>
-          <TwoColumnContent direction={{ base: "column", lg: "row-reverse" }}>
-            <Width40>
-              <Image400 src={whatAreSmartContracts} />
-            </Width40>
-            <Width60>
-              <H2>{t("page-what-is-ethereum-smart-contract-title")}</H2>
-              <Text>
-                <Translation id="page-what-is-ethereum:page-what-is-ethereum-smart-contract-desc-1" />
-              </Text>
-              <Text>{t("page-what-is-ethereum-smart-contract-desc-2")}</Text>
-              <Text>{t("page-what-is-ethereum-smart-contract-desc-3")}</Text>
-              <ButtonRow>
-                <ButtonLink to="/smart-contracts/">
-                  {t("page-what-is-ethereum-more-on-smart-contracts")}
-                </ButtonLink>
-                <ButtonLink to="/dapps/" variant="outline">
-                  {t("page-what-is-ethereum-explore-dapps")}
-                </ButtonLink>
-              </ButtonRow>
-            </Width60>
-          </TwoColumnContent>
-        </Section>
-
-        <Section bgColor="homeBoxTurquoise">
-          <TwoColumnContent>
-            <Width40>
-              <Image400 src={ethCoin} />
-            </Width40>
-            <Width60>
-              <H2>{t("page-what-is-ethereum-meet-ether-title")}</H2>
-              <Text>{t("page-what-is-ethereum-meet-ether-desc-1")}</Text>
-              <Text>{t("page-what-is-ethereum-meet-ether-desc-2")}</Text>
-              <ButtonRow>
-                <ButtonLink to="/eth/">
-                  {t("page-what-is-ethereum-what-is-ether")}
-                </ButtonLink>
-                <ButtonLink to="/get-eth/" variant="outline">
-                  {t("page-what-is-ethereum-get-eth")}
-                </ButtonLink>
-              </ButtonRow>
-            </Width60>
-          </TwoColumnContent>
-        </Section>
-
-        <Section>
-          <TwoColumnContent direction={{ base: "column", lg: "row-reverse" }}>
-            <Width40>
-              <EnergyConsumptionChart />
-            </Width40>
-            <Width60>
-              <H2>{t("page-what-is-ethereum-energy-title")}</H2>
-              <Text>{t("page-what-is-ethereum-energy-desc-1")}</Text>
-              <Text>
-                <Translation id="page-what-is-ethereum:page-what-is-ethereum-energy-desc-2" />
-              </Text>
-              <ButtonRow>
-                <ButtonLink to="/energy-consumption/">
-                  {t("page-what-is-ethereum-more-on-energy-consumption")}
-                </ButtonLink>
-                <ButtonLink to="/roadmap/merge/" variant="outline">
-                  {t("page-what-is-ethereum-the-merge-update")}
-                </ButtonLink>
-              </ButtonRow>
-            </Width60>
-          </TwoColumnContent>
-        </Section>
-
-        <Section>
-          <TwoColumnContent>
-            <Width40>
-              <Image400 src={criminalActivity} />
-            </Width40>
-            <Width60>
-              <H2>{t("page-what-is-ethereum-criminal-activity-title")}</H2>
-              <Text>{t("page-what-is-ethereum-criminal-activity-desc-1")}</Text>
-              <Text>{t("page-what-is-ethereum-criminal-activity-desc-2")}</Text>
-              <Text>
-                <Text as="em">
-                  {t("page-what-is-ethereum-criminal-activity-desc-3")}
-                </Text>
-              </Text>
-              <UnorderedList>
-                <ListItem>
-                  <InlineLink to="https://www.europol.europa.eu/publications-events/publications/cryptocurrencies-tracing-evolution-of-criminal-finances#downloads">
-                    Europol Spotlight - Cryptocurrencies - Tracing the evolution
-                    of criminal finances.pdf
-                  </InlineLink>{" "}
-                  EN (1.4 MB)
-                </ListItem>
-                <ListItem>
-                  <InlineLink to="https://go.chainalysis.com/2021-CryptoCrime-Report.html">
-                    Chainalysis (2021), The 2021 Crypto Crime report
-                  </InlineLink>{" "}
-                  EN
-                </ListItem>
-              </UnorderedList>
-            </Width60>
-          </TwoColumnContent>
-        </Section>
-
-        <Section>
-          <TwoColumnContent>
-            <Width40>
-              <Image400 src={diffEthAndBtc} />
-            </Width40>
-            <Width60>
-              <H2>{t("page-what-is-ethereum-btc-eth-diff-title")}</H2>
-              <Text>{t("page-what-is-ethereum-btc-eth-diff-1")}</Text>
-              <Text>
-                <Translation id="page-what-is-ethereum:page-what-is-ethereum-btc-eth-diff-2" />
-              </Text>
-              <Text>{t("page-what-is-ethereum-btc-eth-diff-3")}</Text>
-              <Text>{t("page-what-is-ethereum-btc-eth-diff-4")}</Text>
-            </Width60>
-          </TwoColumnContent>
-        </Section>
+      <Content>
+        <StandaloneQuizWidget quizKey="quiz-about-us" />
+      </Content>
       </Box>
-
-      <Content>
-        <H2>{t("page-what-is-ethereum-additional-reading")}</H2>
-        <Text>
-          <InlineLink to="https://weekinethereumnews.com/">
-            {t("page-what-is-ethereum-week-in-ethereum")}
-          </InlineLink>{" "}
-          {t("page-what-is-ethereum-week-in-ethereum-desc")}
-        </Text>
-        <Text>
-          <InlineLink to="https://stark.mirror.xyz/n2UpRqwdf7yjuiPKVICPpGoUNeDhlWxGqjulrlpyYi0">
-            {t("page-what-is-ethereum-atoms-institutions-blockchains")}
-          </InlineLink>{" "}
-          {t("page-what-is-ethereum-atoms-institutions-blockchains-desc")}
-        </Text>
-
-        <Text>
-          <InlineLink to="https://www.kernel.community/en/learn/module-1/dreamers">
-            {t("page-what-is-ethereum-kernel-dreamers")}
-          </InlineLink>{" "}
-          {t("page-what-is-ethereum-kernel-dreamers-desc")}
-        </Text>
-      </Content>
-
-      <Content>
-        <Column>
-          <H2>{t("page-what-is-ethereum-explore")}</H2>
-        </Column>
-        <CardContainer>
-          <Callout
-            flex="1 1 416px"
-            minH="full"
-            image={developers}
-            titleKey="page-what-is-ethereum:page-what-is-ethereum-build"
-            alt={t("page-what-is-ethereum-alt-img-lego")}
-            descriptionKey="page-what-is-ethereum:page-what-is-ethereum-build-desc"
-          >
-            <Box>
-              <ButtonLink to="/developers/">
-                {t("page-what-is-ethereum-start-building-btn")}
-              </ButtonLink>
-            </Box>
-          </Callout>
-          <Callout
-            flex="1 1 416px"
-            minH="full"
-            image={community}
-            titleKey="page-what-is-ethereum:page-what-is-ethereum-community"
-            alt={t("page-what-is-ethereum-alt-img-comm")}
-            descriptionKey="page-what-is-ethereum:page-what-is-ethereum-comm-desc"
-          >
-            <Box>
-              <ButtonLink to="/community/">
-                {t("page-what-is-ethereum-meet-comm")}
-              </ButtonLink>
-            </Box>
-          </Callout>
-        </CardContainer>
-      </Content>
-
-      <Content>
-        <StandaloneQuizWidget quizKey="what-is-ethereum" />
-      </Content>
+      
 
       <Content>
         <FeedbackCard />
