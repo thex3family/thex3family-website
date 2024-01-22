@@ -59,7 +59,7 @@ const FeedbackCard = ({ prompt, isArticle, ...props }: FeedbackCardProps) => {
     <Flex
       border="1px"
       borderColor="border"
-      bg="feedbackGradient"
+      bg="mainGradient"
       borderRadius="base"
       p="6"
       direction="column"
