@@ -25,6 +25,8 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
   // Temporal list of content pages allowed to be compiled
   // When a content page is migrated (and the components being used), should be added to this list
   const temporalAllowedPages = [
+    // Understand Yourself
+    "/understand-yourself",
     // Use cases (7/7) ✅
     "/dao",
     "/decentralized-identity",

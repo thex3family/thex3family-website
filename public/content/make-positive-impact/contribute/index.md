@@ -33,7 +33,7 @@ We are in the process of developing a user-friendly platform to effortlessly mat
 |              | Website Design Contributions       | Improve our website design.                           | ⭐⭐⭐           |
 |              | Host Local Meetups                 | Organize meetups for comrades.                        | ⭐⭐             |
 | Level 5+     | Suggest Tools                      | Recommend personal growth tools.                      | ⭐               |
-|              | Levels Theory Research             | Enhance our levels theory research.                   | ⭐⭐             |
+|              | Better Life Framework Research             | Enhance our Better Life Framework research.                   | ⭐⭐             |
 |              | [Quiz Creation / Improvement](/make-positive-impact/contribute/quizzes)                      | Create quizzes for the Co-x3 Foundation.              | ⭐⭐             |
 | Level 6+     | Suggest Community Experiences      | Lead community initiatives.                           | ⭐⭐⭐           |
 | Level 7+     | Scholarship Sponsorship            | Sponsor member access to resources.                   | ⭐                |
