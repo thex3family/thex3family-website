@@ -455,7 +455,7 @@ const HomePage = ({
               <ButtonLink to="/understand-yourself/">
                 <Translation id="page-index:page-index-banner-1-button" />
               </ButtonLink>
-              <ButtonLink to="/understand-yourself/test-your-understanding/" variant="outline">
+              <ButtonLink to="/understand-yourself/understand-the-framework/" variant="outline">
                 <Translation id="page-index:page-index-banner-1-secondary-button" />
               </ButtonLink>
             </ButtonLinkRow>
