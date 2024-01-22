@@ -442,7 +442,7 @@ const HomePage = ({
         </ContentBox>
       </GrayContainer>
       {/* Banner 1 */}
-      <MainSectionContainer containerBg="homeBoxTurquoise">
+      <MainSectionContainer containerBg="homeBoxGreen">
         <Row isReversed>
           <FeatureContent>
             <SectionHeading>
@@ -470,7 +470,7 @@ const HomePage = ({
         </Row>
       </MainSectionContainer>
       {/* Banner 2 */}
-      <MainSectionContainer containerBg="homeBoxOrange">
+      <MainSectionContainer containerBg="homeBoxBlue">
         <Row>
           <FeatureContent>
             <SectionHeading>
@@ -495,7 +495,7 @@ const HomePage = ({
         </Row>
       </MainSectionContainer>
       {/* Banner 3 */}
-      <MainSectionContainer containerBg="homeBoxMint">
+      <MainSectionContainer containerBg="homeBoxRed">
         <Row isReversed>
           <FeatureContent>
             <SectionHeading>
@@ -520,7 +520,7 @@ const HomePage = ({
         </Row>
       </MainSectionContainer>
       {/* Banner 4 */}
-      <MainSectionContainer containerBg="homeBoxPink">
+      <MainSectionContainer containerBg="homeBoxYellow">
         <Box ps={{ lg: 8 }}>
           <Row>
             <FeatureContent>
@@ -547,7 +547,7 @@ const HomePage = ({
         </Box>
       </MainSectionContainer>
       {/* Banner 5 */}
-      <MainSectionContainer containerBg="homeBoxPurple">
+      <MainSectionContainer containerBg="homeBoxGreen">
         <Row>
           <Box py={4} px={{ base: 4, sm: 8 }} width="full">
             <StyledTitleCardList

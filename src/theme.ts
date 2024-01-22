@@ -2,13 +2,18 @@ import { mix } from "polished"
 
 const white = "#ffffff"
 const black = "#000000"
-const primaryLight = "#1c1cff"
-const primaryDark = "#ff7324"
+const green = "#13AA78"
+const blue = "#6FAAC3"
+const red = "#E03D3E"
+const yellow = "#EDBE00"
+const primaryLight = green
+const primaryDark = red
 const success = "#109e62"
 const fail = "#b80000"
+
+// old
 const turquoise = "#ccfcff"
 const turquoiseDark = "#293233"
-const yellow = "#fff8df"
 const mint = "#e1fefa"
 const mintDark = "#2d3332"
 const codeBoxDark = "#2a2734"
@@ -146,6 +151,12 @@ const baseColors = {
 
 // TODO replace random variables w/ baseColor variables
 const lightColors = {
+  homeBoxGreen: mix(0.2, green, white),
+  homeBoxBlue: mix(0.2, blue, white),
+  homeBoxRed: mix(0.2, red, white),
+  homeBoxYellow: mix(0.2, yellow, white),
+  mainGradient: "linear-gradient(-225deg, #FFFEFF 0%, #cfeee4 100%)",
+  // old
   buttonColor: white,
   upgradesGradient:
     "linear-gradient(285.24deg, #F7CBC0 0%, #F4B1AB 29.8%, #8476D9 49.78%, #85ACF9 54.14%, #1C1CE1 61.77%, #000000 69.77%)",
@@ -265,6 +276,12 @@ const lightColors = {
 
 // TODO replace random variables w/ baseColor variables
 const darkColors = {
+  homeBoxGreen: mix(0.2, green, black),
+  homeBoxBlue: mix(0.2, blue, black),
+  homeBoxRed: mix(0.2, red, black),
+  homeBoxYellow: mix(0.2, yellow, black),
+  mainGradient: "linear-gradient(-225deg, #2E2E2E 0%, #1B1B1B 100%)",
+  // old
   buttonColor: black300,
   upgradesGradient:
     "linear-gradient(285.24deg, #f7cbc0 0%, #fbeae3 17.81%, #f4b1ab 29.8%, #8476d9 49.78%, #8db4ff 69.77%);",
