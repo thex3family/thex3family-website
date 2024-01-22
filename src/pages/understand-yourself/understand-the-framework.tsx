@@ -44,6 +44,9 @@ import walletData from "@/data/wallets/wallet-data"
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 import FindWalletHeroImage from "@/public/wallets/find-wallet-hero.png"
+import MainHero from "@/components/MainHero"
+
+import understand_the_framework from "@/public/understand_the_framework.png"
 
 const Subtitle = ({ children }: ChildOnlyProp) => (
   <Text
@@ -110,7 +113,7 @@ const FindWalletPage = () => {
   const randomizedWalletData = shuffle(walletData)
   const { pathname } = useRouter()
   const theme = useTheme()
-  const { t } = useTranslation("page-wallets-find-wallet")
+  const { t } = useTranslation(["page-wallets-find-wallet", "common"])
   const resetWalletFilter = useRef(() => {})
   const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure()
   const [filters, setFilters] = useState(filterDefault)
@@ -136,19 +139,33 @@ const FindWalletPage = () => {
     setSelectedPersona(NaN)
     setFilters(filterDefault)
   }
+  
+  const heroProps = {
+    pathname,
+    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
+    title: t("common:understand-the-framework-title"),
+    description: t("common:understand-the-framework-description")
+      .split('.')
+      .filter(sentence => sentence.trim() !== '')
+      .map(sentence => `${sentence.trim()}.`),
+    imageSrc: understand_the_framework.src, // Assuming understand_yourself is an imported image module
+    imageAlt: t("common:understand-the-framework-image-alt"),
+  };
 
   return (
     <Flex as={MainArticle} direction="column" position="relative" w="full">
       <PageMetadata
-        title={t("page-find-wallet-meta-title")}
-        description={t("page-find-wallet-meta-description")}
+        title={t("common:understand-the-framework-title")}
+        description={t("common:understand-the-framework-description")}
       />
 
       <BannerNotification shouldShow={true}>
-        {t("page-find-wallet-footnote-1")}
+        {t("common:understand-the-framework-alert")}
       </BannerNotification>
 
-      <Flex
+      <MainHero {...heroProps} />
+
+      {/* <Flex
         direction={{ base: "column-reverse", sm: "row" }}
         position="relative"
         w="full"
@@ -179,7 +196,7 @@ const FindWalletPage = () => {
             }}
           />
         </Center>
-      </Flex>
+      </Flex> */}
 
       <Hide above="lg">
         <Box
@@ -257,7 +274,7 @@ const FindWalletPage = () => {
         </Drawer>
       </Hide>
 
-      <Flex px={{ base: 0, md: 8 }} pt={4} pb={6} gap={6}>
+      <Flex px={{ base: 0, md: 8 }} pt={4} pb={6} gap={6} mt={6} id="start"> 
         <Show above="lg">
           <WalletFilterSidebar
             maxW="330px"
