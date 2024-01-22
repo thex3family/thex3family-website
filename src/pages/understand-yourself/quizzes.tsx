@@ -32,9 +32,11 @@ import HeroImage from "@/public/heroes/quizzes-hub-hero.png"
 import { Container, HeroContainer, LastUpdated, MoreContent, SummaryPoint, Title, TitleCard } from "@/layouts"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import { Image } from "@/components/Image"
-import understand_yourself from "@/public/understand_yourself.png"
-import { useRouter } from "next/router"
 import { MdExpandMore } from "react-icons/md"
+
+import { useRouter } from "next/router"
+import understand_yourself from "@/public/understand_yourself.png"
+import MainHero from "@/components/MainHero"
 
 const handleGHAdd = () =>
   trackCustomEvent({
@@ -80,14 +82,27 @@ const QuizzesHubPage: NextPage<
 
   const { pathname } = useRouter()
 
+  const heroProps = {
+    pathname,
+    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
+    title: t("common:test-your-understanding-title"),
+    description: t("common:test-your-understanding-description")
+      .split('.')
+      .filter(sentence => sentence.trim() !== '')
+      .map(sentence => `${sentence.trim()}.`),
+    imageSrc: understand_yourself.src, // Assuming understand_yourself is an imported image module
+    imageAlt: t("common:understand-yourself-image-alt"),
+  };
+  
   return (
     <Box as={MainArticle}>
       <PageMetadata
-        title={t("quizzes-title")}
-        description={t("quizzes-subtitle")}
+        title={t("common:test-your-understanding-title")}
+        description={t("common:test-your-understanding-description")}
       />
-      <Container>
-        {/* Main Hero */}
+      {/* Main Hero */}
+      <MainHero {...heroProps} />
+      {/* <Container>
         <HeroContainer>
           <TitleCard>
             <Breadcrumbs slug={pathname} startDepth={1} mt={2} mb="8" />
@@ -121,7 +136,7 @@ const QuizzesHubPage: NextPage<
         <MoreContent to="#start">
           <Icon as={MdExpandMore} fontSize="2xl" color="secondary" />
         </MoreContent>
-      </Container>
+      </Container> */}
       {/* <HubHero
         title={t("quizzes-title")}
         description={t("quizzes:quizzes-subtitle")}

@@ -233,7 +233,7 @@ export const MainLayout: React.FC<IProps> = ({
     <Container>
       <HeroContainer>
         <TitleCard>
-          <Breadcrumbs slug={slug} startDepth={1} mt={2} mb="8" />
+          <Breadcrumbs slug={slug} startDepth={0} mt={2} mb="8" />
           <Title>{frontmatter.title}</Title>
           <Box>
             <List listStyleType="disc">
