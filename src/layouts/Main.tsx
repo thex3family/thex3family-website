@@ -57,7 +57,7 @@ export const SummaryPoint = (props: ChildOnlyProp) => (
 )
 
 export const Container = (props: ChildOnlyProp) => (
-  <Box position="relative" {...props} />
+  <Box position="relative" w="full" {...props} />
 )
 
 export const HeroContainer = (props: ChildOnlyProp) => (

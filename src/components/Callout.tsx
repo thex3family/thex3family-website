@@ -35,11 +35,11 @@ const Callout: React.FC<IProps> = ({
       as="aside"
       direction="column"
       bgGradient="linear-gradient(
-    49.21deg,
-    rgba(127, 127, 213, 0.2) 19.87%,
-    rgba(134, 168, 231, 0.2) 58.46%,
-    rgba(145, 234, 228, 0.2) 97.05%
-  )"
+        49.21deg,
+        rgba(127, 127, 213, 0.2) 19.87%,
+        rgba(134, 168, 231, 0.2) 58.46%,
+        rgba(145, 234, 228, 0.2) 97.05%
+      )"
       p={6}
       m={4}
       mt={32}

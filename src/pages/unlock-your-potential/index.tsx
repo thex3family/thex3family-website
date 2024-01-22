@@ -33,6 +33,10 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import DevelopersImage from "@/public/developers-eth-blocks.png"
 import DogeImage from "@/public/doge-computer.png"
 import HeroImage from "@/public/heroes/developers-hub-hero.jpg"
+import { useRouter } from "next/router"
+import MainHero from "@/components/MainHero"
+import unlock_your_potential from "@/public/unlock_your_potential.png"
+import make_positive_impact from "@/public/make_positive_impact.png"
 
 const Page = (props: ChildOnlyProp) => (
   <Flex
@@ -137,7 +141,7 @@ const StyledCallout = chakra(Callout, {
 })
 
 export const getStaticProps = (async ({ locale }) => {
-  const requiredNamespaces = getRequiredNamespacesForPage("/developers")
+  const requiredNamespaces = getRequiredNamespacesForPage("/unlock-your-potential")
 
   const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[1])
 
@@ -162,74 +166,81 @@ interface IDevelopersPath {
 
 const paths: Array<IDevelopersPath> = [
   {
-    emoji: ":woman_student:",
-    title: <Translation id="page-developers-index:page-developers-learn" />,
-    description: (
-      <Translation id="page-developers-index:page-developers-learn-desc" />
-    ),
-    url: "/developers/docs/",
-    button: (
-      <Translation id="page-developers-index:page-developers-read-docs" />
-    ),
+    emoji: ":scroll:",
+    title: <Translation id="common:understand-the-framework-title" />,
+    description: <Translation id="common:understand-the-framework-description" />,
+    url: "/understand-yourself/understand-the-framework/",
+    button: <Translation id="common:get-started" />,
   },
   {
-    emoji: ":woman_teacher:",
-    title: (
-      <Translation id="page-developers-index:page-developers-learn-tutorials" />
-    ),
-    description: (
-      <Translation id="page-developers-index:page-developers-learn-tutorials-desc" />
-    ),
-    url: "/developers/tutorials/",
-    button: (
-      <Translation id="page-developers-index:page-developers-learn-tutorials-cta" />
-    ),
+    emoji: ":book:",
+    title: <Translation id="common:knowledge-title" />,
+    description: <Translation id="common:knowledge-description" />,
+    url: "/unlock-your-potential/knowledge/",
+    button: <Translation id="common:knowledge-button" />,
   },
   {
-    emoji: ":woman_scientist:",
-    title: <Translation id="page-developers-index:page-developers-start" />,
-    description: (
-      <Translation id="page-developers-index:page-developers-start-desc" />
-    ),
-    url: "/developers/learning-tools/",
-    button: (
-      <Translation id="page-developers-index:page-developers-play-code" />
-    ),
+    emoji: ":toolbox:",
+    title: <Translation id="common:tools-title" />,
+    description: <Translation id="tools-description" />,
+    url: "/unlock-your-potential/tools/",
+    button: <Translation id="tools-button" />,
   },
   {
-    emoji: ":construction_worker:",
-    title: <Translation id="page-developers-index:page-developers-set-up" />,
-    description: (
-      <Translation id="page-developers-index:page-developers-setup-desc" />
-    ),
-    url: "/developers/local-environment/",
-    button: (
-      <Translation id="page-developers-index:page-developers-choose-stack" />
-    ),
+    emoji: ":hug:",
+    title: <Translation id="common:community-title" />,
+    description: <Translation id="common:community-description" />,
+    url: "/unlock-your-potential/community/",
+    button: <Translation id="common:community-button" />,
   },
 ]
 
+
+
 const DevelopersPage = () => {
-  const { t } = useTranslation("page-developers-index")
+  const { t } = useTranslation(["page-unlock-your-potential", "common"])
+
+  const { pathname } = useRouter()
+
+  const heroProps = {
+    pathname,
+    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
+    title: t("common:unlock-your-potential-title"),
+    description: t("common:unlock-your-potential-description")
+      .split('.')
+      .filter(sentence => sentence.trim() !== '')
+      .map(sentence => `${sentence.trim()}.`),
+    imageSrc: unlock_your_potential.src, // Assuming understand_yourself is an imported image module
+    imageAlt: t("common:unlock-your-potential-image-alt"),
+  };
 
   return (
     <Page>
       <PageMetadata
-        title={t("page-developers-index:page-developer-meta-title")}
-        description={t("page-developers-index:page-developers-meta-desc")}
+        title={t("common:unlock-your-potential-title")}
+        description={t("common:unlock-your-potential-description")}
       />
-      <HubHero
+      
+
+      {/* Main Hero */}
+      <MainHero {...heroProps} />
+
+      {/* <HubHero
         heroImg={HeroImage}
-        header={`${t("page-developers-index:page-developers-title-1")} ${t(
-          "page-developers-index:page-developers-title-2"
-        )} ${t("page-developers-index:page-developers-title-3")}`}
+        header={`${t("page-unlock-your-potential:page-developers-title-1")} ${t(
+          "page-unlock-your-potential:page-developers-title-2"
+        )} ${t("page-unlock-your-potential:page-developers-title-3")}`}
         title={t("developers")}
-        description={t("page-developers-index:page-developers-subtitle")}
-      />
-      <Content>
+        description={t("page-unlock-your-potential:page-developers-subtitle")}
+      /> */}
+
+      <Content id="start">
         <MonoSubtitle>
-          <Translation id="page-developers-index:page-developers-get-started" />
+          <Translation id="page-unlock-your-potential:page-unlock-your-potential-get-started-title" />
         </MonoSubtitle>
+        <Subtitle my={6}>
+          <Translation id="page-unlock-your-potential:page-unlock-your-potential-get-started-description" />
+        </Subtitle>
         <StyledCardContainer>
           {paths.map((path, idx) => (
             <StyledCard
@@ -245,31 +256,25 @@ const DevelopersPage = () => {
         <TwoColumnContent>
           <IntroColumn>
             <OldHeading>
-              <Translation id="page-developers-index:page-developers-about" />
+              <Translation id="page-unlock-your-potential:page-unlock-your-potential-about-title" />
             </OldHeading>
             <Subtitle mb={6}>
-              <Translation id="page-developers-index:page-developers-about-desc" />
+              <Translation id="page-unlock-your-potential:page-unlock-your-potential-about-description-1" />
             </Subtitle>
-            <Text>
-              <Translation id="page-developers-index:page-developers-about-desc-2" />
-            </Text>
-            <Text>
-              <Translation id="page-developers-index:page-developers-feedback" />{" "}
-              <InlineLink to="https://discord.gg/ethereum-org">
-                <Translation id="page-developers-index:page-developers-discord" />
-              </InlineLink>
-            </Text>
+            <Subtitle mb={6}>
+              <Translation id="page-unlock-your-potential:page-unlock-your-potential-about-description-2" />
+            </Subtitle>
           </IntroColumn>
           <StyledCallout
-            image={DevelopersImage}
-            titleKey="page-developers-index:page-developers-improve-ethereum"
-            descriptionKey="page-developers-index:page-developers-improve-ethereum-desc"
-            alt={t("page-developers-index:alt-eth-blocks")}
+            image={make_positive_impact}
+            titleKey="common:make-positive-impact-title"
+            descriptionKey="common:make-positive-impact-description"
+            alt={t("common:make-positive-impact-image-alt")}
           >
-            <div>
-              <ButtonLink to="https://github.com/ethereum/ethereum-org-website">
-                <Translation id="page-developers-index:page-developers-contribute" />
-              </ButtonLink>
+          <div>
+            <ButtonLink to="/make-positive-impact/">
+              <Translation id="make-positive-impact-button" />
+            </ButtonLink>
             </div>
           </StyledCallout>
         </TwoColumnContent>
@@ -277,55 +282,58 @@ const DevelopersPage = () => {
       <GrayContainer>
         <Content>
           <OldHeading>
-            <Translation id="page-developers-index:page-developers-explore-documentation" />
+            <Translation id="page-unlock-your-potential:page-unlock-your-potential-documentation-title" />
           </OldHeading>
+            <Subtitle mb={6}>
+              <Translation id="page-unlock-your-potential:page-unlock-your-potential-documentation-description" />
+            </Subtitle>
         </Content>
 
         <ThreeColumnContent>
           <Column>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-developers-index:page-developers-docs-introductions" />
+              <Translation id="page-unlock-your-potential:page-developers-docs-introductions" />
             </OldHeading>
             <InlineLink to="/developers/docs/intro-to-ethereum/">
-              <Translation id="page-developers-index:page-developers-intro-eth-link" />
+              <Translation id="page-unlock-your-potential:page-developers-intro-eth-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-into-eth-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-into-eth-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/intro-to-ether/">
-              <Translation id="page-developers-index:page-developers-intro-ether-link" />
+              <Translation id="page-unlock-your-potential:page-developers-intro-ether-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-intro-ether-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-intro-ether-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/dapps/">
-              <Translation id="page-developers-index:page-developers-intro-dapps-link" />
+              <Translation id="page-unlock-your-potential:page-developers-intro-dapps-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-intro-dapps-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-intro-dapps-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/ethereum-stack/">
-              <Translation id="page-developers-index:page-developers-intro-stack" />
+              <Translation id="page-unlock-your-potential:page-developers-intro-stack" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-intro-stack-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-intro-stack-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/web2-vs-web3/">
-              <Translation id="page-developers-index:page-developers-web3-link" />
+              <Translation id="page-unlock-your-potential:page-developers-web3-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-web3-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-web3-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/programming-languages/">
-              <Translation id="page-developers-index:page-developers-languages" />
+              <Translation id="page-unlock-your-potential:page-developers-languages" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-language-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-language-desc" />
             </Text>
             <Image
               hideBelow="lg"
@@ -337,161 +345,161 @@ const DevelopersPage = () => {
           </Column>
           <Column>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-developers-index:page-developers-fundamentals" />
+              <Translation id="page-unlock-your-potential:page-developers-fundamentals" />
             </OldHeading>
             <InlineLink to="/developers/docs/accounts/">
-              <Translation id="page-developers-index:page-developers-accounts-link" />
+              <Translation id="page-unlock-your-potential:page-developers-accounts-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-account-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-account-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/transactions/">
-              <Translation id="page-developers-index:page-developers-transactions-link" />
+              <Translation id="page-unlock-your-potential:page-developers-transactions-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-transactions-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-transactions-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/blocks/">
-              <Translation id="page-developers-index:page-developers-blocks-link" />
+              <Translation id="page-unlock-your-potential:page-developers-blocks-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-block-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-block-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/evm/">
-              <Translation id="page-developers-index:page-developers-evm-link" />
+              <Translation id="page-unlock-your-potential:page-developers-evm-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-evm-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-evm-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/gas/">
-              <Translation id="page-developers-index:page-developers-gas-link" />
+              <Translation id="page-unlock-your-potential:page-developers-gas-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-gas-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-gas-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/nodes-and-clients/">
-              <Translation id="page-developers-index:page-developers-node-clients-link" />
+              <Translation id="page-unlock-your-potential:page-developers-node-clients-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-node-clients-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-node-clients-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/networks/">
-              <Translation id="page-developers-index:page-developers-networks-link" />
+              <Translation id="page-unlock-your-potential:page-developers-networks-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-networks-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-networks-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/consensus-mechanisms/pow/mining/">
-              <Translation id="page-developers-index:page-developers-mining-link" />
+              <Translation id="page-unlock-your-potential:page-developers-mining-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-mining-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-mining-desc" />
             </Text>
 
             <InlineLink to="/developers/docs/consensus-mechanisms/pow/mining-algorithms/">
-              <Translation id="page-developers-index:page-developers-mining-algorithms-link" />
+              <Translation id="page-unlock-your-potential:page-developers-mining-algorithms-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-mining-algorithms-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-mining-algorithms-desc" />
             </Text>
           </Column>
           <RightColumn>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-developers-index:page-developers-stack" />
+              <Translation id="page-unlock-your-potential:page-developers-stack" />
             </OldHeading>
             <InlineLink to="/developers/docs/smart-contracts/">
-              <Translation id="page-developers-index:page-developers-smart-contracts-link" />
+              <Translation id="page-unlock-your-potential:page-developers-smart-contracts-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-smart-contracts-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-smart-contracts-desc" />
             </Text>
             <InlineLink to="/developers/docs/frameworks/">
-              <Translation id="page-developers-index:page-developers-frameworks-link" />
+              <Translation id="page-unlock-your-potential:page-developers-frameworks-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-frameworks-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-frameworks-desc" />
             </Text>
             <InlineLink to="/developers/docs/apis/javascript/">
-              <Translation id="page-developers-index:page-developers-js-libraries-link" />
+              <Translation id="page-unlock-your-potential:page-developers-js-libraries-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-js-libraries-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-js-libraries-desc" />
             </Text>
             <InlineLink to="/developers/docs/apis/backend/">
-              <Translation id="page-developers-index:page-developers-api-link" />
+              <Translation id="page-unlock-your-potential:page-developers-api-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-api-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-api-desc" />
             </Text>
             <InlineLink to="/developers/docs/data-and-analytics/block-explorers/">
-              <Translation id="page-developers-index:page-developers-block-explorers-link" />
+              <Translation id="page-unlock-your-potential:page-developers-block-explorers-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-block-explorers-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-block-explorers-desc" />
             </Text>
             <InlineLink to="/developers/docs/smart-contracts/security/">
-              <Translation id="page-developers-index:page-developers-smart-contract-security-link" />
+              <Translation id="page-unlock-your-potential:page-developers-smart-contract-security-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-smart-contract-security-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-smart-contract-security-desc" />
             </Text>
             <InlineLink to="/developers/docs/storage/">
-              <Translation id="page-developers-index:page-developers-storage-link" />
+              <Translation id="page-unlock-your-potential:page-developers-storage-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-storage-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-storage-desc" />
             </Text>
             <InlineLink to="/developers/docs/ides/">
-              <Translation id="page-developers-index:page-developers-dev-env-link" />
+              <Translation id="page-unlock-your-potential:page-developers-dev-env-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-dev-env-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-dev-env-desc" />
             </Text>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-developers-index:page-developers-advanced" />
+              <Translation id="page-unlock-your-potential:page-developers-advanced" />
             </OldHeading>
             <InlineLink to="/developers/docs/standards/tokens/">
-              <Translation id="page-developers-index:page-developers-token-standards-link" />
+              <Translation id="page-unlock-your-potential:page-developers-token-standards-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-token-standards-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-token-standards-desc" />
             </Text>
             <InlineLink to="/developers/docs/mev/">
-              <Translation id="page-developers-index:page-developers-mev-link" />
+              <Translation id="page-unlock-your-potential:page-developers-mev-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-mev-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-mev-desc" />
             </Text>
             <InlineLink to="/developers/docs/oracles/">
-              <Translation id="page-developers-index:page-developers-oracles-link" />
+              <Translation id="page-unlock-your-potential:page-developers-oracles-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-oracle-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-oracle-desc" />
             </Text>
             <InlineLink to="/developers/docs/scaling/">
-              <Translation id="page-developers-index:page-developers-scaling-link" />
+              <Translation id="page-unlock-your-potential:page-developers-scaling-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-scaling-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-scaling-desc" />
             </Text>
             <InlineLink to="/developers/docs/networking-layer/">
-              <Translation id="page-developers-index:page-developers-networking-layer-link" />
+              <Translation id="page-unlock-your-potential:page-developers-networking-layer-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-networking-layer-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-networking-layer-desc" />
             </Text>
             <InlineLink to="/developers/docs/data-structures-and-encoding/">
-              <Translation id="page-developers-index:page-developers-data-structures-and-encoding-link" />
+              <Translation id="page-unlock-your-potential:page-developers-data-structures-and-encoding-link" />
             </InlineLink>
             <Text>
-              <Translation id="page-developers-index:page-developers-data-structures-and-encoding-desc" />
+              <Translation id="page-unlock-your-potential:page-developers-data-structures-and-encoding-desc" />
             </Text>
           </RightColumn>
         </ThreeColumnContent>
