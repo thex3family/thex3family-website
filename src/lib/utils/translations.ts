@@ -228,6 +228,14 @@ const getRequiredNamespacesForLayout = (layout?: string) => {
       "page-upgrades-index",
     ]
   }
+  
+  if (layout === "main") {
+    requiredNamespaces = [
+      ...requiredNamespaces,
+      "page-upgrades",
+      "page-upgrades-index",
+    ]
+  }
 
   if (layout === "knowledge") {
     requiredNamespaces = [...requiredNamespaces, "page-developers-tutorials"]

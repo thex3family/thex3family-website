@@ -47,6 +47,8 @@ import {
   tutorialsComponents,
   upgradeComponents,
   UpgradeLayout,
+  mainComponents,
+  MainLayout,
   useCasesComponents,
   UseCasesLayout,
 } from "@/layouts"
@@ -64,6 +66,7 @@ export const layoutMapping = {
   staking: StakingLayout,
   roadmap: RoadmapLayout,
   upgrade: UpgradeLayout,
+  main: MainLayout,
   docs: DocsLayout,
   knowledge: TutorialLayout,
 }
@@ -74,6 +77,7 @@ const componentsMapping = {
   staking: stakingComponents,
   roadmap: roadmapComponents,
   upgrade: upgradeComponents,
+  main: mainComponents,
   docs: docsComponents,
   knowledge: tutorialsComponents,
 } as const
