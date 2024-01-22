@@ -115,7 +115,7 @@ const Nav: FC<IProps> = ({ path }) => {
                     },
                   }}
                 >
-                  {t("languages")} {locale!.toUpperCase()}
+                  {t("languages-title")} {locale!.toUpperCase()}
                 </ButtonLink>
               </HStack>
             </Flex>

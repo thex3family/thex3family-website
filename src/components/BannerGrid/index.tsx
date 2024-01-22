@@ -9,7 +9,7 @@ export const Banner: React.FC<Props> = ({ children }) => {
   return (
     <Flex
       w="full"
-      background="bannerGridGradient"
+      background="mainGradient"
       direction={{ base: "column", lg: "row" }}
       wrap="nowrap"
       sx={{

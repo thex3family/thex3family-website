@@ -152,8 +152,8 @@ const getRequiredNamespacesForPath = (path: string) => {
     requiredNamespaces = [...requiredNamespaces, "page-gas"]
   }
 
-  if (path.startsWith("/what-is-ethereum")) {
-    primaryNamespace = "page-what-is-ethereum"
+  if (path.startsWith("/live-your-best-life/about-us")) {
+    primaryNamespace = "page-about-us"
   }
 
   if (path === "bug-bounty") {
@@ -191,7 +191,7 @@ const getRequiredNamespacesForPath = (path: string) => {
     path.startsWith("/security") ||
     path.startsWith("/wallets") ||
     path.startsWith("/web3") ||
-    path.startsWith("/what-is-ethereum") ||
+    path.startsWith("/live-your-best-life/about-us") ||
     path.startsWith("/quizzes")
   ) {
     requiredNamespaces = [...requiredNamespaces, "quizzes"]

@@ -280,7 +280,7 @@ const MobileNavMenu: React.FC<IProps> = ({
                 }}
               >
                 <Icon as={MdLanguage} />
-                <FooterItemText>{t("languages")}</FooterItemText>
+                <FooterItemText>{t("languages-title")}</FooterItemText>
               </Flex>
             </FooterItem>
           </DrawerFooter>
