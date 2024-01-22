@@ -93,7 +93,7 @@ export const useNav = ({ path }: { path: string }) => {
 
   const UnlockYourPotentialSubNav: Array<IItem> = [
     {
-      text: t("be-your-best-self-title"),
+      text: t("unlock-your-potential-secondary-title"),
       to: "/unlock-your-potential/",
       isPartiallyActive: false,
     },
@@ -102,7 +102,7 @@ export const useNav = ({ path }: { path: string }) => {
       to: "/unlock-your-potential/programs/",
     },
     {
-      text: t("docs"),
+      text: t("docs-title"),
       to: "/unlock-your-potential/docs/",
     },
   ]
