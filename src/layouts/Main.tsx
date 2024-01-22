@@ -33,6 +33,7 @@ import MergeInfographic from "@/components/MergeInfographic"
 import OldHeading from "@/components/OldHeading"
 import UpgradeStatus from "@/components/UpgradeStatus"
 
+import { getEditPath } from "@/lib/utils/editPath"
 import { getSummaryPoints } from "@/lib/utils/getSummaryPoints"
 import { getLocaleTimestamp } from "@/lib/utils/time"
 
@@ -143,34 +144,64 @@ export const MainLayout: React.FC<IProps> = ({
   tocItems,
   lastUpdatedDate,
 }) => {
+  const { asPath: relativePath } = useRouter()
   const { t } = useTranslation("page-upgrades")
   const { locale } = useRouter()
 
   const summaryPoints = getSummaryPoints(frontmatter)
 
-  const dropdownLinks: ButtonDropdownList = {
-    text: t("page-upgrades-upgrades-guide"),
-    ariaLabel: t("page-upgrades-upgrades-aria-label"),
-    items: [
-      {
-        text: t("page-upgrades-upgrades-beacon-chain"),
-        to: "/roadmap/beacon-chain/",
-        matomo: {
-          eventCategory: "upgrade menu",
-          eventAction: "click",
-          eventName: "/roadmap/beacon-chain/",
+  const absoluteEditPath = getEditPath(relativePath)
+
+  // Assign different styling, default
+  let root = "default"
+  if (slug.includes("make-positive-impact")) {
+    root = "make-positive-impact"
+  }
+
+  let dropdownLinks: ButtonDropdownList | null = null;
+  if (root === "make-positive-impact") {
+    dropdownLinks = {
+      text: t("make-positive-impact-title"),
+      ariaLabel: t("make-positive-impact-menu"),
+      items: [
+        {
+          text: t("make-positive-impact-secondary-title"),
+          to: "/make-positive-impact",
+          matomo: {
+            eventCategory: "make positive impact menu",
+            eventAction: "click",
+            eventName: "make-positive-impact",
+          },
         },
-      },
-      {
-        text: t("page-upgrades-upgrades-docking"),
-        to: "/roadmap/merge/",
-        matomo: {
-          eventCategory: "upgrade menu",
-          eventAction: "click",
-          eventName: "/roadmap/merge/",
+        {
+          text: t("contribute-title"),
+          to: "/make-positive-impact/contribute/",
+          matomo: {
+            eventCategory: "make positive impact menu",
+            eventAction: "click",
+            eventName: "contribute",
+          },
         },
-      },
-    ],
+        {
+          text: t("collaborate-title"),
+          to: "/make-positive-impact/collaborate/",
+          matomo: {
+            eventCategory: "make positive impact menu",
+            eventAction: "click",
+            eventName: "collaborate",
+          },
+        },
+        {
+          text: t("co-create-title"),
+          to: "/make-positive-impact/co-create/",
+          matomo: {
+            eventCategory: "make positive impact menu",
+            eventAction: "click",
+            eventName: "co-create",
+          },
+        },
+      ],
+    };
   }
 
   const lgBreakpoint = useToken("breakpoints", "lg")
