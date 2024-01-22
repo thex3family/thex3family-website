@@ -41,7 +41,7 @@ import { MAIN_CONTENT_ID } from "@/lib/constants"
 
 // const Page = (props: FlexProps) => <MdPage sx={{}} {...props} />
 
-const Title = (props: ChildOnlyProp) => (
+export const Title = (props: ChildOnlyProp) => (
   <OldHeading
     as="h1"
     fontSize="2.5rem"
@@ -52,15 +52,15 @@ const Title = (props: ChildOnlyProp) => (
   />
 )
 
-const SummaryPoint = (props: ChildOnlyProp) => (
+export const SummaryPoint = (props: ChildOnlyProp) => (
   <ListItem color="text300" mb={0} {...props} />
 )
 
-const Container = (props: ChildOnlyProp) => (
+export const Container = (props: ChildOnlyProp) => (
   <Box position="relative" {...props} />
 )
 
-const HeroContainer = (props: ChildOnlyProp) => (
+export const HeroContainer = (props: ChildOnlyProp) => (
   <Flex
     justify="flex-end"
     direction={{ base: "column-reverse", lg: "row" }}
@@ -74,7 +74,7 @@ const HeroContainer = (props: ChildOnlyProp) => (
   />
 )
 
-const MoreContent = (props: ChildOnlyProp & { to: string }) => (
+export const MoreContent = (props: ChildOnlyProp & { to: string }) => (
   <Flex
     hideBelow="lg"
     as={BaseLink}
@@ -89,7 +89,7 @@ const MoreContent = (props: ChildOnlyProp & { to: string }) => (
   />
 )
 
-const TitleCard = (props: ChildOnlyProp) => {
+export const TitleCard = (props: ChildOnlyProp) => {
   const cardBoxShadow = useToken("colors", "cardBoxShadow")
 
   return (
@@ -112,7 +112,7 @@ const TitleCard = (props: ChildOnlyProp) => {
   )
 }
 
-const LastUpdated = (props: ChildOnlyProp) => (
+export const LastUpdated = (props: ChildOnlyProp) => (
   <Text
     color="text200"
     fontStyle="italic"

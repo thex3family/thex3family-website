@@ -22,7 +22,7 @@ const QuizItem = ({
   numberOfQuestions,
   handleStart,
 }: QuizzesListItemProps) => {
-  const { t } = useTranslation("learn-quizzes")
+  const { t } = useTranslation("quizzes")
 
   return (
     <ListItem
@@ -75,7 +75,7 @@ const QuizItem = ({
             w={{ base: "full", lg: "auto" }}
             onClick={handleStart}
           >
-            <Translation id="learn-quizzes:start" />
+            <Translation id="quizzes:start" />
           </Button>
         </Box>
       </Flex>

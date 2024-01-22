@@ -23,7 +23,7 @@ export const QuizSummary = () => {
     useQuizWidgetContext()
 
   const { locale } = useRouter()
-  const { t } = useTranslation("learn-quizzes")
+  const { t } = useTranslation("quizzes")
 
   const smBp = useToken("breakpoints", "sm")
 

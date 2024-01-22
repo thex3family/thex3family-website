@@ -57,7 +57,7 @@ const QuizzesStats = ({
   completedQuizzes,
 }: QuizzesStatsProps) => {
   const { locale } = useRouter()
-  const { t } = useTranslation("learn-quizzes")
+  const { t } = useTranslation("quizzes")
   const numberOfCompletedQuizzes = getNumberOfCompletedQuizzes(completedQuizzes)
 
   // These values are not fixed but calculated each time, can't be moved to /constants
@@ -187,7 +187,7 @@ const QuizzesStats = ({
             ).map(({ labelId, value }) => (
               <Stack as={ListItem} key={labelId} spacing={0} m={0}>
                 <Text as="span" color="body.medium">
-                  <Translation id={labelId} options={{ ns: "learn-quizzes" }} />
+                  <Translation id={labelId} options={{ ns: "quizzes" }} />
                 </Text>
                 {/* Data from Matomo, manually updated */}
                 <Text as="span">{value}</Text>

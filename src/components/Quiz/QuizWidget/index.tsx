@@ -196,7 +196,7 @@ export const StandaloneQuizWidget = (
         scrollMarginTop="24"
         id="quiz"
       >
-        <Translation id="learn-quizzes:test-your-knowledge" />
+        <Translation id="quizzes:test-your-knowledge" />
       </Heading>
       <QuizWidget
         {...props}

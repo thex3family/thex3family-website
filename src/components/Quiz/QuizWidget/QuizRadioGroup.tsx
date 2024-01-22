@@ -26,7 +26,7 @@ export const QuizRadioGroup = () => {
     answerStatus,
     setCurrentQuestionAnswerChoice,
   } = useQuizWidgetContext()
-  const { t } = useTranslation("learn-quizzes")
+  const { t } = useTranslation("quizzes")
 
   const handleSelection = (answerId: string) => {
     const isCorrect =

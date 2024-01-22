@@ -3,7 +3,7 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { FaGithub } from "react-icons/fa"
-import { Box, Flex, Icon, Stack, Text, useDisclosure } from "@chakra-ui/react"
+import { Box, Flex, Icon, List, Stack, Text, useDisclosure } from "@chakra-ui/react"
 
 import { BasePageProps, QuizStatus } from "@/lib/types"
 
@@ -29,6 +29,12 @@ import { ethereumBasicsQuizzes, usingEthereumQuizzes } from "@/data/quizzes"
 import { INITIAL_QUIZ } from "@/lib/constants"
 
 import HeroImage from "@/public/heroes/quizzes-hub-hero.png"
+import { Container, HeroContainer, LastUpdated, MoreContent, SummaryPoint, Title, TitleCard } from "@/layouts"
+import Breadcrumbs from "@/components/Breadcrumbs"
+import { Image } from "@/components/Image"
+import understand_yourself from "@/public/understand_yourself.png"
+import { useRouter } from "next/router"
+import { MdExpandMore } from "react-icons/md"
 
 const handleGHAdd = () =>
   trackCustomEvent({
@@ -56,7 +62,7 @@ export const getStaticProps = (async ({ locale }) => {
 const QuizzesHubPage: NextPage<
   InferGetStaticPropsType<typeof getStaticProps>
 > = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation("quizzes", "common")
 
   const [userStats, updateUserStats] = useLocalQuizData()
   const [quizStatus, setQuizStatus] = useState<QuizStatus>("neutral")
@@ -72,18 +78,56 @@ const QuizzesHubPage: NextPage<
     [onOpen, userStats]
   )
 
+  const { pathname } = useRouter()
+
   return (
     <Box as={MainArticle}>
       <PageMetadata
         title={t("quizzes-title")}
         description={t("quizzes-subtitle")}
       />
-      <HubHero
+      <Container>
+        {/* Main Hero */}
+        <HeroContainer>
+          <TitleCard>
+            <Breadcrumbs slug={pathname} startDepth={1} mt={2} mb="8" />
+            <Title>{t("common:test-your-understanding-title")}</Title>
+            <Box>
+              <List listStyleType="disc">
+                {t("common:test-your-understanding-description")
+                  .split('.')
+                  .filter(sentence => sentence.trim() !== '')
+                  .map((sentence, index) => (
+                    <SummaryPoint key={index}>{`${sentence.trim()}.`}</SummaryPoint>
+                  ))}
+              </List>
+            </Box>
+          <LastUpdated>
+            {t("common:page-last-updated")}:{" "}January 22, 2024
+          </LastUpdated>
+          </TitleCard>
+          <Image
+            src={understand_yourself}
+            alt={t("common:understand-yourself-image-alt")}
+            width={816}
+            height={525}
+            style={{ objectFit: "cover", overflow: "visible" }}
+            priority
+            flex={{ base: "1 1 100%", md: "none" }}
+            alignSelf={{ base: "center", md: "flex-end" }}
+          />
+          )
+        </HeroContainer>
+        <MoreContent to="#start">
+          <Icon as={MdExpandMore} fontSize="2xl" color="secondary" />
+        </MoreContent>
+      </Container>
+      {/* <HubHero
         title={t("quizzes-title")}
-        description={t("learn-quizzes:quizzes-subtitle")}
-        header={t("learn-quizzes:test-your-knowledge")}
+        description={t("quizzes:quizzes-subtitle")}
+        header={t("quizzes:test-your-knowledge")}
         heroImg={HeroImage}
-      />
+      /> */}
       <QuizzesModal isOpen={isOpen} onClose={onClose} quizStatus={quizStatus}>
         <QuizWidget
           quizKey={currentQuiz}
@@ -92,20 +136,20 @@ const QuizzesHubPage: NextPage<
           updateUserStats={updateUserStats}
         />
       </QuizzesModal>
-      <Box px={{ base: 0, lg: "8" }} py={{ base: 0, lg: "4" }} mb="12">
+      <Box px={{ base: 0, lg: "8" }} py={{ base: 0, lg: "4" }} mb="12" id="start">
         <Flex direction={{ base: "column-reverse", lg: "row" }} columnGap="20">
           <Stack spacing="10" flex="1">
             <Box>
               <QuizzesList
                 content={ethereumBasicsQuizzes}
-                headingId={t("learn-quizzes:basics")}
-                descriptionId={t("learn-quizzes:basics-description")}
+                headingId={t("quizzes:basics")}
+                descriptionId={t("quizzes:basics-description")}
                 {...commonQuizListProps}
               />
               <QuizzesList
                 content={usingEthereumQuizzes}
-                headingId={t("learn-quizzes:using-ethereum")}
-                descriptionId={t("learn-quizzes:using-ethereum-description")}
+                headingId={t("quizzes:using-ethereum")}
+                descriptionId={t("quizzes:using-ethereum-description")}
                 {...commonQuizListProps}
               />
             </Box>
@@ -120,11 +164,11 @@ const QuizzesHubPage: NextPage<
             >
               <Box>
                 <Text align={{ base: "center", xl: "left" }} fontWeight="bold">
-                  <Translation id="learn-quizzes:want-more-quizzes" />
+                  <Translation id="quizzes:want-more-quizzes" />
                 </Text>
 
                 <Text align={{ base: "center", xl: "left" }}>
-                  <Translation id="learn-quizzes:contribute" />
+                  <Translation id="quizzes:contribute" />
                 </Text>
               </Box>
               <ButtonLink
@@ -135,7 +179,7 @@ const QuizzesHubPage: NextPage<
               >
                 <Flex alignItems="center">
                   <Icon as={FaGithub} color="text" boxSize={6} me={2} />
-                  <Translation id="learn-quizzes:add-quiz" />
+                  <Translation id="quizzes:add-quiz" />
                 </Flex>
               </ButtonLink>
             </Flex>
