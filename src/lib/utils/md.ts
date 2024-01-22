@@ -25,8 +25,14 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
   // Temporal list of content pages allowed to be compiled
   // When a content page is migrated (and the components being used), should be added to this list
   const temporalAllowedPages = [
-    // Understand Yourself
+    // understand-yourself
     "/understand-yourself",
+    // make-positive-impact
+    "/make-positive-impact",
+    "/make-positive-impact/contribute",
+    "/make-positive-impact/collaborate",
+    "/make-positive-impact/co-create",
+
     // Use cases (7/7) ✅
     "/dao",
     "/decentralized-identity",
@@ -65,8 +71,6 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/community/research",
     "/community/support",
     //
-    "/make-positive-impact",
-    "/make-positive-impact/contribute",
     "/contributing/adding-desci-projects",
     "/contributing/adding-developer-tools",
     "/contributing/adding-exchanges",
