@@ -48,7 +48,7 @@ export const useNav = ({ path }: { path: string }) => {
           to: "/unlock-your-potential/programs/",
         },
         {
-          text: t("docs"),
+          text: t("docs-title"),
           to: "/unlock-your-potential/docs/",
         },
       ],
