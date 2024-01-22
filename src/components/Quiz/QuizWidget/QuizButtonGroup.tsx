@@ -129,7 +129,7 @@ export const QuizButtonGroup = () => {
               leftIcon={<Icon as={FaTwitter} />}
               onClick={handleShare}
             >
-              <Translation id="learn-quizzes:share-results" />
+              <Translation id="quizzes:share-results" />
             </Button>
 
             {/* Show `Next Quiz` button if quiz is opened from hub page */}
@@ -139,7 +139,7 @@ export const QuizButtonGroup = () => {
                   quizPageProps.currentHandler(quizPageProps.nextQuiz!)
                 }}
               >
-                <Translation id="learn-quizzes:next-quiz" />
+                <Translation id="quizzes:next-quiz" />
               </Button>
             )}
           </Center>
@@ -151,7 +151,7 @@ export const QuizButtonGroup = () => {
               fontWeight="bold"
               textDecoration="underline"
             >
-              <Translation id="learn-quizzes:try-again" />
+              <Translation id="quizzes:try-again" />
             </Button>
           ) : null}
         </>
@@ -163,15 +163,15 @@ export const QuizButtonGroup = () => {
         <>
           {answerStatus === "incorrect" && (
             <Button onClick={handleRetryQuestion} variant="outline">
-              <Translation id="learn-quizzes:try-again" />
+              <Translation id="quizzes:try-again" />
             </Button>
           )}
           <Button onClick={handleContinue}>
             <Translation
               id={
                 finishedQuiz
-                  ? "learn-quizzes:see-results"
-                  : "learn-quizzes:next-question"
+                  ? "quizzes:see-results"
+                  : "quizzes:next-question"
               }
             />
           </Button>
@@ -184,7 +184,7 @@ export const QuizButtonGroup = () => {
         onClick={handleSubmitAnswer}
         isDisabled={!currentQuestionAnswerChoice}
       >
-        <Translation id="learn-quizzes:submit-answer" />
+        <Translation id="quizzes:submit-answer" />
       </Button>
     )
   }

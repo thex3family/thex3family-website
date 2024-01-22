@@ -212,7 +212,7 @@ export const getStaticProps = (async ({ locale }) => {
 const WhatIsEthereumPage = ({
   data,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const { t } = useTranslation(["page-what-is-ethereum", "learn-quizzes"])
+  const { t } = useTranslation(["page-what-is-ethereum", "quizzes"])
 
   const { locale } = useRouter()
   const localeForNumberFormat = getLocaleForNumberFormat(locale! as Lang)

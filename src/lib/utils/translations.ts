@@ -194,7 +194,7 @@ const getRequiredNamespacesForPath = (path: string) => {
     path.startsWith("/what-is-ethereum") ||
     path.startsWith("/quizzes")
   ) {
-    requiredNamespaces = [...requiredNamespaces, "learn-quizzes"]
+    requiredNamespaces = [...requiredNamespaces, "quizzes"]
   }
 
   // Ensures that the primary namespace is always the first item in the array
@@ -217,7 +217,7 @@ const getRequiredNamespacesForLayout = (layout?: string) => {
     requiredNamespaces = [
       ...requiredNamespaces,
       "template-usecase",
-      "learn-quizzes",
+      "quizzes",
     ]
   }
 
