@@ -157,6 +157,9 @@ export const MainLayout: React.FC<IProps> = ({
   if (slug.includes("make-positive-impact")) {
     root = "make-positive-impact"
   }
+  if (slug.includes("understand-yourself")) {
+    root = "understand-yourself"
+  }
 
   let dropdownLinks: ButtonDropdownList | null = null;
   if (root === "make-positive-impact") {
@@ -202,6 +205,26 @@ export const MainLayout: React.FC<IProps> = ({
         },
       ],
     };
+  }
+  if (root === "understand-yourself") {
+    dropdownLinks = {
+      text: t("understand-yourself-title"),
+      ariaLabel: t("understand-yourself-menu"),
+      items: [
+        {
+          text: t("better-life-framework-title"),
+          to: "/understand-yourself/",
+        },
+        {
+          text: t("understand-the-framework-title"),
+          to: "/understand-yourself/understand-the-framework/",
+        },
+        {
+          text: t("test-your-understanding-title"),
+          to: "/understand-yourself/quizzes/",
+        }
+      ],
+    }
   }
 
   const lgBreakpoint = useToken("breakpoints", "lg")
