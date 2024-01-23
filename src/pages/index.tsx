@@ -201,11 +201,12 @@ const ButtonLinkRow = (props: ChildOnlyProp) => (
   />
 )
 
+
 const cachedFetchCommunityEvents = runOnlyOnce(fetchCommunityEvents)
-const cachedFetchTotalEthStaked = runOnlyOnce(fetchTotalEthStaked)
-const cachedFetchNodes = runOnlyOnce(fetchNodes)
-const cachedFetchTotalValueLocked = runOnlyOnce(fetchTotalValueLocked)
-const cachedFetchTxCount = runOnlyOnce(fetchTxCount)
+// const cachedFetchTotalEthStaked = runOnlyOnce(fetchTotalEthStaked)
+// const cachedFetchNodes = runOnlyOnce(fetchNodes)
+// const cachedFetchTotalValueLocked = runOnlyOnce(fetchTotalValueLocked)
+// const cachedFetchTxCount = runOnlyOnce(fetchTxCount)
 
 type Props = BasePageProps & {
   communityEvents: CommunityEventsReturnType
@@ -214,10 +215,10 @@ type Props = BasePageProps & {
 
 export const getStaticProps = (async ({ locale }) => {
   const metricResults: AllMetricData = {
-    totalEthStaked: await cachedFetchTotalEthStaked(),
-    nodeCount: await cachedFetchNodes(),
-    totalValueLocked: await cachedFetchTotalValueLocked(),
-    txCount: await cachedFetchTxCount(),
+    totalEthStaked: { data: [], value: 0 },
+    nodeCount: { data: [], value: 0 },
+    totalValueLocked: { data: [], value: 0 },
+    txCount: { data: [], value: 0 },
   }
 
   const communityEvents = await cachedFetchCommunityEvents()
@@ -346,7 +347,7 @@ const HomePage = ({
   ]
 
   const cardBoxShadow = useToken("colors", "cardBoxShadow")
-
+  
   return (
     <Flex
       as={MainArticle}

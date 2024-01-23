@@ -62,37 +62,66 @@ export const useStatsBoxGrid = ({
 
   const localeForNumberFormat = getLocaleForNumberFormat(locale! as Lang)
 
-  const totalEtherStaked =
-    "error" in totalEthStaked
-      ? { error: totalEthStaked.error }
-      : {
-          data: totalEthStaked.data,
-          value: formatTotalStaked(totalEthStaked.value, localeForNumberFormat),
-        }
+  // handing hard coding
 
-  const valueLocked =
-    "error" in totalValueLocked
-      ? { error: totalValueLocked.error }
-      : {
-          data: totalValueLocked.data,
-          value: formatTVL(totalValueLocked.value, localeForNumberFormat),
-        }
+  type State = {
+    value: string
+    data: Array<{ timestamp: number; value: number }>
+    hasError: boolean
+  }
 
-  const txs =
-    "error" in txCount
-      ? { error: txCount.error }
-      : {
-          data: txCount.data,
-          value: formatTxs(txCount.value, localeForNumberFormat),
-        }
+  const [totalEtherStaked, setTotalEtherStaked] = useState<State>({
+    data: [],
+    value: "100,000+",
+    hasError: false,
+  })
+  const [txs, setTxs] = useState<State>({
+    data: [],
+    value: "50,000+",
+    hasError: false,
+  })
+  const [valueLocked, setValueLocked] = useState<State>({
+    data: [],
+    value: "1,000+",
+    hasError: false,
+  })
+  const [nodes, setNodes] = useState<State>({
+    data: [],
+    value: "500+",
+    hasError: false,
+  })
 
-  const nodes =
-    "error" in nodeCount
-      ? { error: nodeCount.error }
-      : {
-          data: nodeCount.data,
-          value: formatNodes(nodeCount.value, localeForNumberFormat),
-        }
+  // const totalEtherStaked =
+  //   "error" in totalEthStaked
+  //     ? { error: totalEthStaked.error }
+  //     : {
+  //         data: totalEthStaked.data,
+  //         value: formatTotalStaked(totalEthStaked.value, localeForNumberFormat),
+  //       }
+
+  // const valueLocked =
+  //   "error" in totalValueLocked
+  //     ? { error: totalValueLocked.error }
+  //     : {
+  //         data: totalValueLocked.data,
+  //         value: formatTVL(totalValueLocked.value, localeForNumberFormat),
+  //       }
+
+  // const txs =
+  //   "error" in txCount
+  //     ? { error: txCount.error }
+  //     : {
+  //         data: txCount.data,
+  //         value: formatTxs(txCount.value, localeForNumberFormat),
+  //       }
+
+  // const nodes =
+  //   "error" in nodeCount
+  //     ? { error: nodeCount.error }
+  //     : {
+  //         data: nodeCount.data,
+  //         value: formatNodes(nodeCount.value, localeForNumberFormat),
+  //       }
 
   const metrics: StatsBoxMetric[] = [
     {
