@@ -210,7 +210,7 @@ const getRequiredNamespacesForLayout = (layout?: string) => {
   }
 
   if (layout === "docs") {
-    requiredNamespaces = [...requiredNamespaces, "page-developers-docs"]
+    requiredNamespaces = [...requiredNamespaces, "page-docs"]
   }
 
   if (layout === "use-cases") {

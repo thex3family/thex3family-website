@@ -70,7 +70,7 @@ export interface IPropsNavLink {
 }
 
 const NavLink: React.FC<IPropsNavLink> = ({ item, path, isTopLevel }) => {
-  const { t } = useTranslation("page-developers-docs")
+  const { t } = useTranslation("page-docs")
   const isLinkInPath =
     isTopLevel || path.includes(item.to) || path.includes(item.path)
   const [isOpen, setIsOpen] = useState<boolean>(isLinkInPath)
@@ -145,7 +145,7 @@ export interface SideNavProps {
 // of the given parent. Currently all `path` items default to open
 // and they only collapse when clicked on.
 const SideNav = ({ path }: SideNavProps) => {
-  const { t } = useTranslation("page-developers-docs")
+  const { t } = useTranslation("page-docs")
 
   return (
     <Box

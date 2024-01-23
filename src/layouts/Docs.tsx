@@ -234,13 +234,14 @@ export const DocsLayout = ({
       <SideNavMobile path={relativePath} />
       {isPageIncomplete && (
         <BannerNotification shouldShow={isPageIncomplete}>
-          <Translation id="page-developers-docs:banner-page-incomplete" />
+          <Translation id="page-docs:banner-page-incomplete" />
         </BannerNotification>
       )}
       <ContentContainer>
         <SideNav path={relativePath} />
         <Content>
           <H1 id="top">{frontmatter.title}</H1>
+          <text>{frontmatter.description}</text>
           {useGitHubContributors ? (
             <GitHubContributors
               relativePath={relativePath}

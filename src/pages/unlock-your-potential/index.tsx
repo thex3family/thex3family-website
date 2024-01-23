@@ -292,7 +292,7 @@ const DevelopersPage = () => {
         <ThreeColumnContent>
           <Column>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-unlock-your-potential:page-developers-docs-introductions" />
+              <Translation id="page-unlock-your-potential:page-docs-introductions" />
             </OldHeading>
             <InlineLink to="/developers/docs/intro-to-ethereum/">
               <Translation id="page-unlock-your-potential:page-developers-intro-eth-link" />

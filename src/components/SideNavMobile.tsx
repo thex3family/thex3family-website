@@ -88,7 +88,7 @@ export interface IPropsNavLink extends INavLinkProps {
 }
 
 const NavLink: React.FC<IPropsNavLink> = ({ item, path, toggle }) => {
-  const { t } = useTranslation("page-developers-docs")
+  const { t } = useTranslation("page-docs")
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   if (item.items) {
@@ -150,7 +150,7 @@ export interface IProps {
 
 // TODO consolidate into SideNav
 const SideNavMobile: React.FC<IProps> = ({ path }) => {
-  const { t } = useTranslation("page-developers-docs")
+  const { t } = useTranslation("page-docs")
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
