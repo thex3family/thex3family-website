@@ -255,7 +255,7 @@ export const MobileButtonDropdown = (
   props: ComponentProps<typeof StyledButtonDropdown>
 ) => <StyledButtonDropdown mb={0} {...props} />
 
-export const Divider = () => <Box my={16} w="10%" h={1} bgColor="homeDivider" />
+export const Divider = () => <Box my={16} w="10%" h={1} bgColor="primary100" />
 
 // All custom React components
 export const reactComponents = {

@@ -1,4 +1,4 @@
-import { calc, Flex, type FlexProps, type HeadingProps } from "@chakra-ui/react"
+import { calc, Flex, Icon, type FlexProps, type HeadingProps } from "@chakra-ui/react"
 
 import type { ToCItem } from "@/lib/types"
 
@@ -9,6 +9,8 @@ import ButtonDropdown, {
 import OldHeading from "@/components/OldHeading"
 import Translation from "@/components/Translation"
 import UpgradeTableOfContents from "@/components/UpgradeTableOfContents"
+import { ButtonLink } from "../Buttons"
+import { FaGithub } from "react-icons/fa"
 
 export const H2 = (props: HeadingProps) => (
   <OldHeading
@@ -25,7 +27,7 @@ export const StyledButtonDropdown = ({
   list,
   ...rest
 }: FlexProps & Pick<ButtonDropdownProps, "list">) => (
-  <Flex align="flex-end" justify="flex-end" mb={8} {...rest} pos="relative">
+  <Flex align="flex-end" justify="flex-end" mb={0} {...rest} pos="relative">
     <ButtonDropdown list={list} w="full" minW="240px" />
   </Flex>
 )
@@ -34,12 +36,14 @@ type LeftNavBarProps = FlexProps & {
   dropdownLinks?: ButtonDropdownList
   maxDepth?: number
   tocItems: ToCItem[]
+  editPath: string
 }
 
 const LeftNavBar: React.FC<LeftNavBarProps> = ({
   dropdownLinks,
   maxDepth = 1,
   tocItems,
+  editPath,
   ...props
 }) => {
   return (
@@ -55,7 +59,16 @@ const LeftNavBar: React.FC<LeftNavBarProps> = ({
       zIndex={99}
       {...props}
     >
+    <Flex align="center" gap={2} mb={8}>
       {dropdownLinks && <StyledButtonDropdown list={dropdownLinks} />}
+      <ButtonLink
+        leftIcon={<Icon as={FaGithub} />}
+        href={editPath}
+        variant="outline"
+      >
+        Edit
+      </ButtonLink>
+  </Flex>
       <H2>
         <Translation id="on-this-page" />
       </H2>
