@@ -1,6 +1,6 @@
 ---
 title: Documentation Template
-description: Structure for documentation.
+description: Our preferred documentation structure.
 lang: en
 ---
 
