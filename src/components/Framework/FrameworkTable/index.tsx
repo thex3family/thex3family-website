@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 import { useTranslation } from "next-i18next"
-import { FaDiscord, FaGlobe, FaTwitter } from "react-icons/fa"
+import { FaBook, FaDiscord, FaGlobe, FaTools, FaTwitter, FaUsers } from "react-icons/fa"
 import { MdExpandLess, MdExpandMore } from "react-icons/md"
 import Select from "react-select"
 import {
@@ -38,6 +38,7 @@ import { trackCustomEvent } from "@/lib/utils/matomo"
 import { FrameworkData } from "@/data/framework/framework-data"
 
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
+import Tooltip from "@/components/Tooltip"
 
 const Container = (props: TableProps) => (
   <Table
@@ -275,6 +276,11 @@ const FlexInfoCenter = (props: { children: ReactNode; className?: string }) => (
       "&.fade": {
         animation: `${fadeOut} 0.375s`,
       },
+      fontSize: "16px",
+      wordWrap: "break-word",
+      margin: "auto",
+      width: "0px",
+      textAlign: "center",
     }}
     {...props}
   />
@@ -315,7 +321,7 @@ export interface FrameworkTableProps {
 }
 
 const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
-  const { t } = useTranslation("page-find-wallet")
+  const { t } = useTranslation("page-understand-the-framework")
   const {
     featureDropdownItems,
     filteredFeatureDropdownItems,
@@ -337,29 +343,29 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
         <Th>
           {filteredFrameworks.length === frameworkCardData.length ? (
             <Text as="span">
-              {t("page-find-wallet-showing-all-frameworks")} (
+              {t("page-understanding-the-framework-showing-all")} (
               <strong>{frameworkCardData.length}</strong>)
             </Text>
           ) : (
             <Text as="span">
-              {t("page-find-wallet-showing")}{" "}
+              {t("page-understanding-the-framework-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkCardData.length}
               </strong>{" "}
-              {t("page-find-wallet-frameworks")}
+              {t("page-understanding-the-framework-frameworks")}
             </Text>
           )}
         </Th>
         <Th>
           <Text as="span" hideFrom="sm" fontSize="md" whiteSpace="nowrap">
-            {t("page-find-wallet-choose-features")}
+            {t("page-understanding-the-framework-choose-perspectives")}
           </Text>
           <StyledSelect
             className="react-select-container"
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-find-choose-to-compare"),
+                label: t("page-understanding-the-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -376,7 +382,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-find-choose-to-compare"),
+                label: t("page-understanding-the-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -393,7 +399,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-find-choose-to-compare"),
+                label: t("page-understanding-the-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -406,16 +412,23 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
         </Th>
       </FrameworkContentHeader>
       {filteredFrameworks.map((framework, idx) => {
-        const deviceLabels: Array<string> = []
 
-        framework.ios && deviceLabels.push(t("page-find-wallet-iOS"))
-        framework.android && deviceLabels.push(t("page-find-wallet-android"))
-        framework.linux && deviceLabels.push(t("page-find-wallet-linux"))
-        framework.windows && deviceLabels.push(t("page-find-wallet-windows"))
-        framework.macOS && deviceLabels.push(t("page-find-wallet-macOS"))
-        framework.chromium && deviceLabels.push(t("page-find-wallet-chromium"))
-        framework.firefox && deviceLabels.push(t("page-find-wallet-firefox"))
-        framework.hardware && deviceLabels.push(t("page-find-wallet-hardware"))
+        // Assuming featureDropdownItems is an array of DropdownOption objects
+        // and wallet is an object representing the wallet properties
+
+        function findLastTrueLabel(items, filterKey, wallet) {
+          const matchingLabels = items
+            .filter(item => item.category === filterKey)
+            .map(item => ({ label: item.label, filterKey: item.filterKey, description: item.description }))
+            .filter(item => wallet[item.filterKey]);
+
+          return matchingLabels[matchingLabels.length - 1];
+        }
+
+        // Usage
+        const firstLastTrueLabel = findLastTrueLabel(featureDropdownItems, firstFeatureSelect.filterKey, framework);
+        const secondLastTrueLabel = findLastTrueLabel(featureDropdownItems, secondFeatureSelect.filterKey, framework);
+        const thirdLastTrueLabel = findLastTrueLabel(featureDropdownItems, thirdFeatureSelect.filterKey, framework);
 
         return (
           <FrameworkContainer key={framework.key}>
@@ -449,99 +462,100 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                       fontSize="0.7rem"
                       lineHeight="0.85rem"
                     >
-                      {deviceLabels.join(" | ")}
+                      {framework.description}
                     </Text>
-                    {deviceLabels.map((label) => (
-                      <Text
-                        key={label}
-                        hideFrom="md"
-                        fontSize="0.7rem"
-                        lineHeight="0.85rem"
-                        color="text200"
-                      >
-                        {label}
-                      </Text>
-                    ))}
-                    <Box mt={4}>
+                    {/* <Box mt={4}>
                       <Flex gap="0.8rem">
-                        <SocialLink
-                          to={framework.url}
+                        <SocialLink // knowledge
+                          to={framework.knowledge}
                           hideArrow
                           customEventOptions={{
                             eventCategory: "FrameworkExternalLinkList",
-                            eventAction: `Go to framework`,
-                            eventName: `Website: ${framework.name} ${idx}`,
+                            eventAction: `Go to level`,
+                            eventName: `Knowledge: ${framework.name} ${idx}`,
                             eventValue: JSON.stringify(filters),
                           }}
                         >
-                          <Icon as={FaGlobe} fontSize="2xl" />
+                          <Icon
+                            as={FaBook}
+                            color="#6FAAC3"
+                            fontSize="2xl"
+                          />
                         </SocialLink>
-                        {framework.twitter && (
-                          <SocialLink
-                            to={framework.twitter}
-                            hideArrow
-                            customEventOptions={{
-                              eventCategory: "FrameworkExternalLinkList",
-                              eventAction: `Go to framework`,
-                              eventName: `Twitter: ${framework.name} ${idx}`,
-                              eventValue: JSON.stringify(filters),
-                            }}
-                          >
-                            <Icon
-                              as={FaTwitter}
-                              color="#1da1f2"
-                              fontSize="2xl"
-                            />
-                          </SocialLink>
-                        )}
-                        {framework.discord && (
-                          <SocialLink
-                            to={framework.discord}
-                            hideArrow
-                            customEventOptions={{
-                              eventCategory: "FrameworkExternalLinkList",
-                              eventAction: `Go to framework`,
-                              eventName: `Discord: ${framework.name} ${idx}`,
-                              eventValue: JSON.stringify(filters),
-                            }}
-                          >
-                            <Icon
-                              as={FaDiscord}
-                              color="#7289da"
-                              fontSize="2xl"
-                            />
-                          </SocialLink>
-                        )}
+                        <SocialLink // tools
+                          to={framework.tools}
+                          hideArrow
+                          customEventOptions={{
+                            eventCategory: "FrameworkExternalLinkList",
+                            eventAction: `Go to level`,
+                            eventName: `Tools: ${framework.name} ${idx}`,
+                            eventValue: JSON.stringify(filters),
+                          }}
+                        >
+                          <Icon
+                            as={FaTools}
+                            color="#E03D3E"
+                            fontSize="2xl"
+                          />
+                        </SocialLink>
+                        <SocialLink // community
+                          to={framework.community}
+                          hideArrow
+                          customEventOptions={{
+                            eventCategory: "FrameworkExternalLinkList",
+                            eventAction: `Go to level`,
+                            eventName: `Community: ${framework.name} ${idx}`,
+                            eventValue: JSON.stringify(filters),
+                          }}
+                        >
+                          <Icon
+                            as={FaUsers}
+                            color="#EDBE00"
+                            fontSize="2xl"
+                          />
+                        </SocialLink>
                       </Flex>
-                    </Box>
+                    </Box> */}
                   </Box>
                 </FlexInfo>
               </Td>
               <Td>
                 <FlexInfoCenter className={firstCol}>
-                  {framework[firstFeatureSelect.filterKey!] ? (
-                    <GreenCheckProductGlyphIcon />
-                  ) : (
-                    <WarningProductGlyphIcon />
-                  )}
+                  <Tooltip
+                    content={
+                      <Text lineHeight={1.2}>
+                        {firstLastTrueLabel.description}
+                      </Text>
+                    }
+                  >
+                    {firstLastTrueLabel ? firstLastTrueLabel.label : "N/A"}
+                  </Tooltip>
                 </FlexInfoCenter>
               </Td>
               <Td>
                 <FlexInfoCenter className={secondCol}>
-                  {framework[secondFeatureSelect.filterKey!] ? (
-                    <GreenCheckProductGlyphIcon />
-                  ) : (
-                    <WarningProductGlyphIcon />
-                  )}
+                  <Tooltip
+                    content={
+                      <Text lineHeight={1.2}>
+                        {secondLastTrueLabel.description}
+                      </Text>
+                    }
+                  >
+                    {secondLastTrueLabel ? secondLastTrueLabel.label : "N/A"}
+                  </Tooltip>
                 </FlexInfoCenter>
               </Td>
               <Td>
                 <FlexInfoCenter className={thirdCol}>
-                  {framework[thirdFeatureSelect.filterKey!] ? (
-                    <GreenCheckProductGlyphIcon />
-                  ) : (
-                    <WarningProductGlyphIcon />
-                  )}
+                  <Tooltip
+                    content={
+                      <Text lineHeight={1.2}>
+                        {thirdLastTrueLabel.description}
+                      </Text>
+                    }
+                  >
+                    {thirdLastTrueLabel ? thirdLastTrueLabel.label : "N/A"}
+                  </Tooltip>
                 </FlexInfoCenter>
               </Td>
               <Td>
@@ -556,14 +570,14 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                 </FlexInfoCenter>
               </Td>
             </Framework>
-            {framework.moreInfo && (
+            {/* {framework.moreInfo && (
               <FrameworkMoreInfo
                 framework={framework}
                 filters={filters}
                 idx={idx}
                 featureDropdownItems={featureDropdownItems}
               />
-            )}
+            )} */}
           </FrameworkContainer>
         )
       })}

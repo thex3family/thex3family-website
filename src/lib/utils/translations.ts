@@ -173,12 +173,8 @@ const getRequiredNamespacesForPath = (path: string) => {
     requiredNamespaces = [...requiredNamespaces, "glossary"]
   }
 
-  if (path.startsWith("/wallets/find-wallet")) {
-    primaryNamespace = "page-wallets-find-wallet"
-    requiredNamespaces = [
-      ...requiredNamespaces,
-      "page-wallets",
-    ]
+  if (path.startsWith("/understand-yourself/understand-the-framework")) {
+    primaryNamespace = "page-understand-the-framework"
   }
 
   if (path.startsWith("/layer-2")) {

@@ -99,7 +99,7 @@ export const getStaticProps = (async ({ locale }) => {
   const lastDeployDate = getLastDeployDate()
 
   const requiredNamespaces = getRequiredNamespacesForPage(
-    "/wallets/find-wallet"
+    "/understand-yourself/understand-the-framework"
   )
 
   const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[1])
