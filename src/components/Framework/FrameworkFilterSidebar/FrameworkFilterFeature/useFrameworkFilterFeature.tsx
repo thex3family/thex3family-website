@@ -55,10 +55,10 @@ export const useFrameworkFilterFeature = ({
   filters,
   updateFilterOptions,
 }: Omit<FrameworkFilterFeatureProps, "updateFilterOption">) => {
-  const { t } = useTranslation("page-frameworks-find-framework")
+  const { t } = useTranslation("page-find-wallet")
   const [filterOptions, setFilterOptions] = useState<FilterOptionType[]>([
     {
-      title: t("page-find-framework-device"),
+      title: t("page-find-wallet-device"),
       items: [
         {
           title: t(frameworkFilterData.mobile.title),
@@ -134,7 +134,7 @@ export const useFrameworkFilterFeature = ({
       ],
     },
     {
-      title: t("page-find-framework-security"),
+      title: t("page-find-wallet-security"),
       items: [
         {
           title: t(frameworkFilterData.open_source.title),
@@ -155,7 +155,7 @@ export const useFrameworkFilterFeature = ({
       ],
     },
     {
-      title: t("page-find-framework-features"),
+      title: t("page-find-wallet-features"),
       items: [
         {
           title: t(frameworkFilterData.hardware_support.title),
@@ -256,8 +256,8 @@ export const useFrameworkFilterFeature = ({
       ],
     },
     {
-      title: `${t("page-find-framework-buy-crypto")} / ${t(
-        "page-find-framework-sell-for-fiat"
+      title: `${t("page-find-wallet-buy-crypto")} / ${t(
+        "page-find-wallet-sell-for-fiat"
       )}`,
       items: [
         {
@@ -279,7 +279,7 @@ export const useFrameworkFilterFeature = ({
       ],
     },
     {
-      title: t("page-find-framework-smart-contract"),
+      title: t("page-find-wallet-smart-contract"),
       items: [
         {
           title: t(frameworkFilterData.multisig.title),

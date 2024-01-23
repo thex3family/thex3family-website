@@ -315,7 +315,7 @@ export interface FrameworkTableProps {
 }
 
 const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
-  const { t } = useTranslation("page-frameworks-find-framework")
+  const { t } = useTranslation("page-find-wallet")
   const {
     featureDropdownItems,
     filteredFeatureDropdownItems,
@@ -337,22 +337,22 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
         <Th>
           {filteredFrameworks.length === frameworkCardData.length ? (
             <Text as="span">
-              {t("page-find-framework-showing-all-frameworks")} (
+              {t("page-find-wallet-showing-all-frameworks")} (
               <strong>{frameworkCardData.length}</strong>)
             </Text>
           ) : (
             <Text as="span">
-              {t("page-find-framework-showing")}{" "}
+              {t("page-find-wallet-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkCardData.length}
               </strong>{" "}
-              {t("page-find-framework-frameworks")}
+              {t("page-find-wallet-frameworks")}
             </Text>
           )}
         </Th>
         <Th>
           <Text as="span" hideFrom="sm" fontSize="md" whiteSpace="nowrap">
-            {t("page-find-framework-choose-features")}
+            {t("page-find-wallet-choose-features")}
           </Text>
           <StyledSelect
             className="react-select-container"
@@ -408,14 +408,14 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
       {filteredFrameworks.map((framework, idx) => {
         const deviceLabels: Array<string> = []
 
-        framework.ios && deviceLabels.push(t("page-find-framework-iOS"))
-        framework.android && deviceLabels.push(t("page-find-framework-android"))
-        framework.linux && deviceLabels.push(t("page-find-framework-linux"))
-        framework.windows && deviceLabels.push(t("page-find-framework-windows"))
-        framework.macOS && deviceLabels.push(t("page-find-framework-macOS"))
-        framework.chromium && deviceLabels.push(t("page-find-framework-chromium"))
-        framework.firefox && deviceLabels.push(t("page-find-framework-firefox"))
-        framework.hardware && deviceLabels.push(t("page-find-framework-hardware"))
+        framework.ios && deviceLabels.push(t("page-find-wallet-iOS"))
+        framework.android && deviceLabels.push(t("page-find-wallet-android"))
+        framework.linux && deviceLabels.push(t("page-find-wallet-linux"))
+        framework.windows && deviceLabels.push(t("page-find-wallet-windows"))
+        framework.macOS && deviceLabels.push(t("page-find-wallet-macOS"))
+        framework.chromium && deviceLabels.push(t("page-find-wallet-chromium"))
+        framework.firefox && deviceLabels.push(t("page-find-wallet-firefox"))
+        framework.hardware && deviceLabels.push(t("page-find-wallet-hardware"))
 
         return (
           <FrameworkContainer key={framework.key}>

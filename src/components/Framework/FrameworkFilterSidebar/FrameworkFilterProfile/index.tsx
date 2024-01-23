@@ -49,7 +49,7 @@ const FrameworkFilterProfile = ({
         textAlign="center"
         color="secondary"
       >
-        <Translation id="page-frameworks-find-framework:page-find-framework-persona-desc" />
+        <Translation id="page-wallets-find-wallet:page-find-wallet-persona-desc" />
       </Box>
       {personas.map((persona, idx) => {
         return (

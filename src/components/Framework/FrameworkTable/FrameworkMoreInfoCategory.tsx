@@ -21,7 +21,7 @@ export const FrameworkMoreInfoCategory = ({
   headingLabel,
   sectionName,
 }: FrameworkMoreInfoCategoryProps) => {
-  const { t } = useTranslation("page-frameworks-find-framework")
+  const { t } = useTranslation("page-find-wallet")
 
   return (
     <Box width="full" mt={12} _first={{ mt: 2 }}>
