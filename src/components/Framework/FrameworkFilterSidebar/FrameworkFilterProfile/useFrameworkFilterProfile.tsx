@@ -59,90 +59,90 @@ interface Personas {
 }
 
 export const useFrameworkFilterProfile = () => {
-  const { t } = useTranslation("page-frameworks-find-framework")
+  const { t } = useTranslation("page-find-wallet")
 
   const filterLabels = {
     hardware: {
-      label: t("page-find-framework-hardware"),
+      label: t("page-find-wallet-hardware"),
       icon: <HardwareIcon />,
     },
     open_source: {
-      label: t("page-find-framework-open-source"),
+      label: t("page-find-wallet-open-source"),
       icon: <OpenSourceWalletIcon />,
     },
     non_custodial: {
-      label: t("page-find-framework-non-custodial"),
+      label: t("page-find-wallet-non-custodial"),
       icon: <NonCustodialIcon />,
     },
     hardware_support: {
-      label: t("page-find-framework-hardware-framework-support"),
+      label: t("page-find-wallet-hardware-framework-support"),
       icon: <HardwareSupportIcon />,
     },
     walletconnect: {
-      label: t("page-find-framework-walletconnect"),
+      label: t("page-find-wallet-walletconnect"),
       icon: <WalletConnectIcon />,
     },
     rpc_importing: {
-      label: t("page-find-framework-rpc-importing"),
+      label: t("page-find-wallet-rpc-importing"),
       icon: <RPCImportingIcon />,
     },
     nft_support: {
-      label: t("page-find-framework-nft-support"),
+      label: t("page-find-wallet-nft-support"),
       icon: <NFTSupportIcon />,
     },
     connect_to_dapps: {
-      label: t("page-find-framework-connect-to-dapps"),
+      label: t("page-find-wallet-connect-to-dapps"),
       icon: <ConnectDappsIcon />,
     },
     staking: {
-      label: t("page-find-framework-staking"),
+      label: t("page-find-wallet-staking"),
       icon: <StakingIcon />,
     },
     swaps: {
-      label: t("page-find-framework-swaps"),
+      label: t("page-find-wallet-swaps"),
       icon: <SwapIcon />,
     },
     layer_2: {
-      label: t("page-find-framework-layer-2"),
+      label: t("page-find-wallet-layer-2"),
       icon: <Layer2Icon />,
     },
     gas_fee_customization: {
-      label: t("page-find-framework-gas-fee-customization"),
+      label: t("page-find-wallet-gas-fee-customization"),
       icon: <GasFeeCustomizationIcon />,
     },
     ens_support: {
-      label: t("page-find-framework-ens-support"),
+      label: t("page-find-wallet-ens-support"),
       icon: <ENSSupportIcon />,
     },
     buy_crypto: {
-      label: t("page-find-framework-buy-crypto"),
+      label: t("page-find-wallet-buy-crypto"),
       icon: <BuyCryptoIcon />,
     },
     withdraw_crypto: {
-      label: t("page-find-framework-sell-for-fiat"),
+      label: t("page-find-wallet-sell-for-fiat"),
       icon: <WithdrawCryptoIcon />,
     },
     multisig: {
-      label: t("page-find-framework-multisig"),
+      label: t("page-find-wallet-multisig"),
       icon: <MultisigIcon />,
     },
     social_recovery: {
-      label: t("page-find-framework-social-recovery"),
+      label: t("page-find-wallet-social-recovery"),
       icon: <SocialRecoverIcon />,
     },
     erc_20_support: {
-      label: t("page-find-framework-token-support"),
+      label: t("page-find-wallet-token-support"),
       icon: <ERC20SupportIcon />,
     },
     eip_1559_support: {
-      label: t("page-find-framework-fee-optimization"),
+      label: t("page-find-wallet-fee-optimization"),
       icon: <EIP1559Icon />,
     },
   }
   const personas: Personas[] = [
     {
-      title: t("page-find-framework-new-to-crypto-title"),
-      description: t("page-find-framework-new-to-crypto-desc"),
+      title: t("page-find-wallet-new-to-crypto-title"),
+      description: t("page-find-wallet-new-to-crypto-desc"),
       featureHighlight: [
         filterLabels.connect_to_dapps,
         filterLabels.layer_2,
@@ -181,8 +181,8 @@ export const useFrameworkFilterProfile = () => {
       },
     },
     {
-      title: t("page-find-framework-nfts-title"),
-      description: t("page-find-framework-nfts-desc"),
+      title: t("page-find-wallet-nfts-title"),
+      description: t("page-find-wallet-nfts-desc"),
       featureHighlight: [
         filterLabels.nft_support,
         filterLabels.layer_2,
@@ -218,8 +218,8 @@ export const useFrameworkFilterProfile = () => {
       },
     },
     {
-      title: t("page-find-framework-hodler-title"),
-      description: t("page-find-framework-hodler-desc"),
+      title: t("page-find-wallet-hodler-title"),
+      description: t("page-find-wallet-hodler-desc"),
       featureHighlight: [filterLabels.hardware, filterLabels.non_custodial],
       presetFilters: {
         android: false,
@@ -251,8 +251,8 @@ export const useFrameworkFilterProfile = () => {
       },
     },
     {
-      title: t("page-find-framework-finance-title"),
-      description: t("page-find-framework-finance-desc"),
+      title: t("page-find-wallet-finance-title"),
+      description: t("page-find-wallet-finance-desc"),
       featureHighlight: [
         filterLabels.hardware_support,
         filterLabels.connect_to_dapps,
@@ -290,8 +290,8 @@ export const useFrameworkFilterProfile = () => {
       },
     },
     {
-      title: t("page-find-framework-developer-title"),
-      description: t("page-find-framework-developer-desc"),
+      title: t("page-find-wallet-developer-title"),
+      description: t("page-find-wallet-developer-desc"),
       featureHighlight: [
         filterLabels.open_source,
         filterLabels.walletconnect,

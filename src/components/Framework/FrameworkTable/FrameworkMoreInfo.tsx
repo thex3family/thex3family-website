@@ -19,7 +19,7 @@ export const FrameworkMoreInfo = ({
   idx,
   featureDropdownItems,
 }: FrameworkMoreInfoProps) => {
-  const { t } = useTranslation("page-frameworks-find-framework")
+  const { t } = useTranslation("page-find-wallet")
   const frameworkHasFilter = (filterKey) => {
     return framework[filterKey] === true
   }
@@ -31,17 +31,17 @@ export const FrameworkMoreInfo = ({
   )
 
   const frameworkInfoSections = [
-    { headingLabel: t("page-find-framework-features"), sectionName: "feature" },
-    { headingLabel: t("page-find-framework-security"), sectionName: "security" },
+    { headingLabel: t("page-find-wallet-features"), sectionName: "feature" },
+    { headingLabel: t("page-find-wallet-security"), sectionName: "security" },
     {
       headingLabel:
-        t("page-find-framework-buy-crypto") +
+        t("page-find-wallet-buy-crypto") +
         " / " +
-        t("page-find-framework-sell-for-fiat"),
+        t("page-find-wallet-sell-for-fiat"),
       sectionName: "trade_and_buy",
     },
     {
-      headingLabel: t("page-find-framework-smart-contract"),
+      headingLabel: t("page-find-wallet-smart-contract"),
       sectionName: "smart_contract",
     },
   ]
@@ -85,10 +85,10 @@ export const FrameworkMoreInfo = ({
                 eventValue: JSON.stringify(filters),
               }}
             >
-              {`${t("page-find-framework-check-out")} ${framework.name}`}
+              {`${t("page-find-wallet-check-out")} ${framework.name}`}
             </ButtonLink>
             <Text as="i">
-              {`${framework.name} ${t("page-find-framework-info-updated-on")} ${
+              {`${framework.name} ${t("page-find-wallet-info-updated-on")} ${
                 framework.last_updated
               }`}
             </Text>
