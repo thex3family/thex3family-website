@@ -29,6 +29,8 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/understand-yourself",
     "/understand-yourself/the-4a-model",
 
+    // unlock-your-potential
+
       // tutorials
       "/unlock-your-potential/knowledge/scam-token-tricks",
 
@@ -36,6 +38,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/unlock-your-potential/docs",
       "/unlock-your-potential/docs/template",
       "/unlock-your-potential/docs/flow-state",
+
 
     // make-positive-impact
     "/make-positive-impact",
@@ -54,6 +57,12 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/terms-of-use",
     "/cookie-policy",
 
+    // for
+
+    "/for",
+    // "/for/students",
+    // "/for/creatives",
+    // "/for/retirees",
   ]
 
   // Get an array of all files and directories in the passed directory using `fs.readdirSync`
