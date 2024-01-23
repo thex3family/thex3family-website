@@ -153,7 +153,6 @@ export const MainLayout: React.FC<IProps> = ({
   const summaryPoints = getSummaryPoints(frontmatter)
 
   const absoluteEditPath = getEditPath(relativePath)
-  console.log(absoluteEditPath);
 
   // Assign different styling, default
   let root = "default"

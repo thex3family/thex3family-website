@@ -30,6 +30,10 @@ export const useNav = ({ path }: { path: string }) => {
           to: "/understand-yourself/understand-the-framework/",
         },
         {
+          text: t("the-4a-model-title"),
+          to: "/understand-yourself/the-4a-model/",
+        },
+        {
           text: t("test-your-understanding-title"),
           to: "/understand-yourself/quizzes/",
         }

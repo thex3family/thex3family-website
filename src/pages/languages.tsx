@@ -103,7 +103,7 @@ const LanguagesPage = () => {
           <Text>{t("page-languages-p1")}</Text>
           {/* <Text>
             {t("page-languages-interested")}{" "}
-            <InlineLink to="/contributing/translation-program/">
+            <InlineLink to="/make-positive-impact/contribute/translations/">
               {t("page-languages-learn-more")}
             </InlineLink>
             .

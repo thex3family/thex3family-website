@@ -55,11 +55,11 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-index"
   }
 
-  if (path === "/contributing/translation-program/acknowledgements") {
+  if (path === "/contribute/translation-program/acknowledgements") {
     primaryNamespace = "page-contributing-translation-program-acknowledgements"
   }
 
-  if (path === "/contributing/translation-program/contributors") {
+  if (path === "/contribute/translation-program/contributors") {
     primaryNamespace = "page-contributing-translation-program-contributors"
     requiredNamespaces = [
       ...requiredNamespaces,
@@ -87,24 +87,12 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-eth"
   }
 
-  if (path.startsWith("/glossary") || path.startsWith("/dapps")) {
+  if (path.startsWith("/glossary")) {
     requiredNamespaces = [...requiredNamespaces, "glossary"]
   }
 
   if (path.startsWith("/history")) {
     primaryNamespace = "page-history"
-  }
-
-  if (path.startsWith("/stablecoins")) {
-    primaryNamespace = "page-stablecoins"
-  }
-
-  if (path.startsWith("/staking")) {
-    primaryNamespace = "page-staking"
-  }
-
-  if (path.startsWith("/staking/deposit-contract")) {
-    primaryNamespace = "page-staking-deposit-contract"
   }
 
   if (path.startsWith("/unlock-your-potential")) {
@@ -115,29 +103,10 @@ const getRequiredNamespacesForPath = (path: string) => {
     ]
   }
 
-  if (path.startsWith("/learn")) {
-    primaryNamespace = "page-learn"
-  }
-
-  if (path.startsWith("/developers/local-environment")) {
-    primaryNamespace = "page-developers-local-environment"
-  }
-
-  if (path.startsWith("/developers/learning-tools")) {
-    primaryNamespace = "page-developers-learning-tools"
-  }
-
   if (path.startsWith("/unlock-your-potential/knowledge")) {
-    primaryNamespace = "page-developers-tutorials"
+    primaryNamespace = "page-knowledge"
   }
 
-  if (path.startsWith("/developers/docs/scaling")) {
-    requiredNamespaces = [...requiredNamespaces, "page-layer-2"]
-  }
-
-  if (path === "get-eth") {
-    primaryNamespace = "page-get-eth"
-  }
 
   if (path.startsWith("/languages")) {
     primaryNamespace = "page-languages"
@@ -149,11 +118,6 @@ const getRequiredNamespacesForPath = (path: string) => {
       ...requiredNamespaces,
       "page-upgrades-index",
     ]
-  }
-
-  if (path.startsWith("/gas")) {
-    primaryNamespace = "page-gas"
-    requiredNamespaces = [...requiredNamespaces, "page-gas"]
   }
 
   if (path.startsWith("/live-your-best-life/about-us")) {
@@ -238,7 +202,7 @@ const getRequiredNamespacesForLayout = (layout?: string) => {
   }
 
   if (layout === "knowledge") {
-    requiredNamespaces = [...requiredNamespaces, "page-developers-tutorials"]
+    requiredNamespaces = [...requiredNamespaces, "page-knowledge"]
   }
 
   return requiredNamespaces

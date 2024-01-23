@@ -208,9 +208,9 @@ const TutorialPage = ({
       mt={16}
     >
       <PageMetadata
-        title={t("page-developers-tutorials:page-tutorials-meta-title")}
+        title={t("page-knowledge:page-tutorials-meta-title")}
         description={t(
-          "page-developers-tutorials:page-tutorials-meta-description"
+          "page-knowledge:page-tutorials-meta-description"
         )}
       />
       <Heading
@@ -225,7 +225,7 @@ const TutorialPage = ({
         mx={{ base: 4, sm: 0 }}
         mb={{ base: 4, sm: "1.625rem" }}
       >
-        <Translation id="page-developers-tutorials:page-tutorial-title" />
+        <Translation id="page-knowledge:page-tutorial-title" />
       </Heading>
       <Text
         fontSize="xl"
@@ -234,21 +234,21 @@ const TutorialPage = ({
         mb={4}
         textAlign="center"
       >
-        <Translation id="page-developers-tutorials:page-tutorial-subtitle" />
+        <Translation id="page-knowledge:page-tutorial-subtitle" />
       </Text>
 
       <Modal isOpen={isModalOpen} setIsOpen={setModalOpen}>
         <Heading fontSize="2rem" lineHeight="1.4" mb={4}>
-          <Translation id="page-developers-tutorials:page-tutorial-submit-btn" />
+          <Translation id="page-knowledge:page-tutorial-submit-btn" />
         </Heading>
         <Text>
-          <Translation id="page-developers-tutorials:page-tutorial-listing-policy-intro" />{" "}
+          <Translation id="page-knowledge:page-tutorial-listing-policy-intro" />{" "}
           <InlineLink to="/contributing/content-resources/">
-            <Translation id="page-developers-tutorials:page-tutorial-listing-policy" />
+            <Translation id="page-knowledge:page-tutorial-listing-policy" />
           </InlineLink>
         </Text>
         <Text>
-          <Translation id="page-developers-tutorials:page-tutorial-submit-tutorial" />
+          <Translation id="page-knowledge:page-tutorial-submit-tutorial" />
         </Text>
         <Flex
           flexDirection={{ base: "column", md: "initial" }}
@@ -270,17 +270,17 @@ const TutorialPage = ({
             me={{ base: 0, md: 2 }}
           >
             <Text as="b">
-              <Translation id="page-developers-tutorials:page-tutorial-new-github" />
+              <Translation id="page-knowledge:page-tutorial-new-github" />
             </Text>
             <Text>
-              <Translation id="page-developers-tutorials:page-tutorial-new-github-desc" />
+              <Translation id="page-knowledge:page-tutorial-new-github-desc" />
             </Text>
             <ButtonLink
               leftIcon={<FaGithub />}
               variant="outline"
               to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.yaml&title="
             >
-              <Translation id="page-developers-tutorials:page-tutorial-raise-issue-btn" />
+              <Translation id="page-knowledge:page-tutorial-raise-issue-btn" />
             </ButtonLink>
           </Flex>
           <Flex
@@ -298,21 +298,21 @@ const TutorialPage = ({
             me={{ base: 0, md: 2 }}
           >
             <Text as="b">
-              <Translation id="page-developers-tutorials:page-tutorial-pull-request" />
+              <Translation id="page-knowledge:page-tutorial-pull-request" />
             </Text>
             <Text>
-              <Translation id="page-developers-tutorials:page-tutorial-pull-request-desc-1" />{" "}
+              <Translation id="page-knowledge:page-tutorial-pull-request-desc-1" />{" "}
               <code>
-                <Translation id="page-developers-tutorials:page-tutorial-pull-request-desc-2" />
+                <Translation id="page-knowledge:page-tutorial-pull-request-desc-2" />
               </code>{" "}
-              <Translation id="page-developers-tutorials:page-tutorial-pull-request-desc-3" />
+              <Translation id="page-knowledge:page-tutorial-pull-request-desc-3" />
             </Text>
             <ButtonLink
               leftIcon={<FaGithub />}
               variant="outline"
               to="https://github.com/ethereum/ethereum-org-website/new/dev/src/content/developers/tutorials"
             >
-              <Translation id="page-developers-tutorials:page-tutorial-pull-request-btn" />
+              <Translation id="page-knowledge:page-tutorial-pull-request-btn" />
             </ButtonLink>
           </Flex>
         </Flex>
@@ -341,7 +341,7 @@ const TutorialPage = ({
           })
         }}
       >
-        <Translation id="page-developers-tutorials:page-tutorial-submit-btn" />
+        <Translation id="page-knowledge:page-tutorial-submit-btn" />
       </Button>
 
       <Box
@@ -399,7 +399,7 @@ const TutorialPage = ({
                   })
                 }}
               >
-                <Translation id="page-developers-tutorials:page-find-wallet-clear" />
+                <Translation id="page-knowledge:page-find-wallet-clear" />
               </Button>
             )}
           </Flex>
@@ -408,10 +408,10 @@ const TutorialPage = ({
           <Box mt={0} textAlign="center" padding={12}>
             <Emoji text=":crying_face:" fontSize="5xl" mb={8} mt={8} />
             <OldHeading>
-              <Translation id="page-developers-tutorials:page-tutorial-tags-error" />
+              <Translation id="page-knowledge:page-tutorial-tags-error" />
             </OldHeading>
             <Text>
-              <Translation id="page-developers-tutorials:page-find-wallet-try-removing" />
+              <Translation id="page-knowledge:page-find-wallet-try-removing" />
             </Text>
           </Box>
         )}
@@ -477,7 +477,7 @@ const TutorialPage = ({
                     •
                     <Emoji text=":stopwatch:" fontSize="sm" mx={2} />
                     {tutorial.timeToRead}{" "}
-                    <Translation id="page-developers-tutorials:page-tutorial-read-time" />
+                    <Translation id="page-knowledge:page-tutorial-read-time" />
                   </>
                 )}
                 {tutorial.isExternal && (
@@ -485,7 +485,7 @@ const TutorialPage = ({
                     {" "}
                     •<Emoji text=":link:" fontSize="sm" mx={2} />
                     <Box as="span" color="primary.base" cursor="pointer">
-                      <Translation id="page-developers-tutorials:page-tutorial-external-link" />
+                      <Translation id="page-knowledge:page-tutorial-external-link" />
                     </Box>
                   </>
                 )}

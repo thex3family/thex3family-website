@@ -27,7 +27,7 @@ We are in the process of developing a user-friendly platform to effortlessly mat
 |              | Bug Identification                 | Identify and report website issues.                   | ⭐               |
 |              | Translation Services               | Help translate our content.                           | ⭐⭐             |
 |              | Guests On LVL-UP Podcast           | Join our podcast for a 1-on-1 consulting session.     | ⭐⭐             |
-| Level 4+     | [Suggest Knowledge](/make-positive-impact/contribute/knowledge)                  | Add insights to our knowledge base.                   | ⭐               |
+| Level 4+     | Suggest Knowledge                  | Add insights to our knowledge base.                   | ⭐               |
 |              | [Improve Glossary Terms](/make-positive-impact/contribute/glossary)             | Add or edit glossary terms.                            | ⭐               |
 |              | Share On Social Media              | Promote us on social media.                           | ⭐               |
 |              | Website Design Contributions       | Improve our website design.                           | ⭐⭐⭐           |
