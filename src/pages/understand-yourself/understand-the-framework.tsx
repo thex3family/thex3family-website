@@ -240,7 +240,7 @@ const FindWalletPage = () => {
                   (acc, filter) => (filter ? acc + 1 : acc),
                   0
                 )}{" "}
-                {t("page-find-wallet-active")}
+                {t("page-understand-the-framework-active")}
               </Text>
             </Box>
           </Button>
