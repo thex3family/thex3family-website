@@ -27,6 +27,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
   const temporalAllowedPages = [
     // understand-yourself
     "/understand-yourself",
+    "/understand-yourself/the-4a-model",
 
       // tutorials
       "/unlock-your-potential/knowledge/scam-token-tricks",
@@ -38,9 +39,20 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
 
     // make-positive-impact
     "/make-positive-impact",
+
     "/make-positive-impact/contribute",
+    "/make-positive-impact/contribute/glossary",
+    "/make-positive-impact/contribute/quizzes",
+    //"/make-positive-impact/contribute/translations",
+
     "/make-positive-impact/collaborate",
     "/make-positive-impact/co-create",
+
+    // info
+    "/glossary",
+    "/privacy-policy",
+    "/terms-of-use",
+    "/cookie-policy",
 
   ]
 

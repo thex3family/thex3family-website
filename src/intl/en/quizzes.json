@@ -1,7 +1,9 @@
 {
   "quiz-better-life-framework": "What Is The Better Life Framework?",
   "quiz-understanding-the-framework": "How Well Do You Know The Framework?",
+  "quiz-the-4a-model": "What Is The 4A Model Of Understanding?",
   "quiz-about-us": "What Is The Co-x3 Family Foundation?",
+
   "test-your-knowledge": "Quiz Time",
   "add-quiz": "Add A Question/Quiz",
   "average-score": "Average Score:",
@@ -25,6 +27,7 @@
   "want-more-quizzes": "Want To See More Quizzes Here?",
   "your-results": "Your Results",
   "your-total": "Your Total Points",
+
   "a001-prompt": "Co-x3 Stands For...",
   "a001-a-label": "Competition, control, and constraint",
   "a001-a-explanation": "Co-x3 does not stand for competition, control, or constraint. Instead, it emphasizes co-creation, collaboration, and community.",

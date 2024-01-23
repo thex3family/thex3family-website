@@ -1,62 +1,51 @@
 ---
-title: Adding a quiz
-description: The policy we use when adding quizzes to ethereum.org
+title: Contribute To Our Quizzes
+description: Contribute to our quiz repository to enhance understanding of our content.
 lang: en
+template: main
+image: /contribute.png
+alt: 
+summaryPoint1: Quizzes enable users to assess their understanding of our content.
+summaryPoint2: Join us in expanding our quiz offerings to enrich the learning experience.
 ---
 
-# Quizzes {#quizzes}
+## Why Create Quizzes?
 
-Quizzes are an opportunity for users to test themselves to see if they understood the content on the page they just read. The questions should only be based on the content provided on the page and should not ask about information that is not mentioned on the page.
+Quizzes allow users to gauge their comprehension of the content they've just explored. Each quiz question is directly based on the specific content of a page, ensuring relevance and targeted learning.
 
-Questions are structured as follows. The question prompt, 1 correct answer with an explanation of why it is correct, 3 incorrect answers with an explanation of why they are incorrect.
+## Structure of Quiz Questions
 
-Some examples of current quizzes can be found here:
+- Each question includes a prompt, one correct answer, and three incorrect answers.
+- After completing the quiz, the user will be scored and their results totalled up.
+- Examples can be found at: [Test Your Understanding](/understand-yourself/quizzes/)
 
-- [Layer 2](/layer-2)
-- [NFT](/nft/)
-- [What is Ethereum?](/what-is-ethereum/)
-- [What is ETH?](/eth/)
+## Adding a New Quiz
 
-## Adding a learn quiz
+To suggest a quiz for a page that lacks one, [open an issue](https://github.com/thex3family/thex3family-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) with the following details:
 
-If there is a page that hasn't had a learn quiz created for it, please [open an issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) for it.
-
-Please provide the following information:
-
-- The page you want to add a quiz on
-- 5 questions with the following information:
-  - The section of the page the question is based on
+- Page for the quiz
+- Five questions, each including:
+  - Relevant section of the page
   - Question prompt
-  - 1 correct answer with an explanation for why it is correct
-  - 3 incorrect answers, each with an explanation for why they are incorrect
+  - Correct answer with explanation
+  - Three incorrect answers with explanations
 
-## Adding a quiz question
+## Adding or Updating Quiz Questions
 
-If there is a question you want to add to the question bank for a quiz, please [open an issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) and provide the following information:
+To add or update questions in our existing quizzes:
 
-- The page you want to add a quiz question on
-- For each question provide the following information:
-  - The section of the page the question is based on
-  - Question prompt
-  - 1 correct answer with an explanation for why it is correct
-  - 3 incorrect answers, each with an explanation for why they are incorrect
+1. [Open an issue](https://github.com/thex3family/thex3family-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+2. Provide the following for each question:
+   - Page and section related to the question
+   - Current (and updated) question prompt
+   - Correct answer with explanation
+   - Three incorrect answers with explanations
 
-## Updating a quiz question
+## Removing Quiz Questions
 
-If there is a question you want to update in a question bank for a quiz, please [open an issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) and provide the following information:
+To remove an outdated question:
 
-- The page you want to update a quiz question on
-- For each question being updated, provide the following information:
-  - The section of the page the question is based on
-  - Question prompt of the question you want to update
-  - Updated question prompt
-  - 1 correct answer with an explanation for why it is correct
-  - 3 incorrect answers, each with an explanation for why they are incorrect
-
-## Removing a quiz question
-
-If the content no longer exists on the page for a question and it needs to be removed, please [open an issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) to remove the question and provide the following information:
-
-- The page you want to delete a quiz question on
-- The question that you want to delete
-- Explanation if necessary for why the question should be removed
+1. [Open an issue](https://github.com/thex3family/thex3family-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+2. Include the following:
+   - Page and specific question to be removed
+   - Justification for removal, if applicable

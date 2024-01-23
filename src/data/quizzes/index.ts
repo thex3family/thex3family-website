@@ -16,6 +16,10 @@ const quizzes: RawQuizzes = {
     title: "quizzes:quiz-understanding-the-framework",
     questions: ["c001", "c002", "c003", "c004", "c005"],
   },
+  "quiz-the-4a-model": {
+    title: "quizzes:quiz-the-4a-model",
+    questions: ["d001", "d002", "d003", "d004", "d005"],
+  },
 }
 
 export const understand_yourself_quizzes: QuizzesSection[] = [
@@ -26,6 +30,11 @@ export const understand_yourself_quizzes: QuizzesSection[] = [
   },
   {
     id: "quiz-understanding-the-framework",
+    level: "intermediate",
+    next: "quiz-the-4a-model",
+  },
+  {
+    id: "quiz-the-4a-model",
     level: "intermediate",
   },
 ]

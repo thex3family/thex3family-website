@@ -234,7 +234,7 @@ const FindWalletPage = () => {
             }}
           >
             <Box>
-              <Text>{t("page-find-wallet-filters")}</Text>
+              <Text>{t("page-understand-the-framework-filters")}</Text>
               <Text fontSize="sm" lineHeight="14px" color="body.medium">
                 {Object.values(filters).reduce(
                   (acc, filter) => (filter ? acc + 1 : acc),

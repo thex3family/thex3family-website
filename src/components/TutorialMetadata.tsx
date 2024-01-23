@@ -25,7 +25,7 @@ export enum Skill {
 }
 
 export const getSkillTranslationId = (skill: Skill): TranslationKey =>
-  `page-developers-tutorials:page-tutorial-${
+  `page-knowledge:page-tutorial-${
     Skill[skill.toUpperCase() as keyof typeof Skill]
   }`
 
@@ -34,7 +34,7 @@ const TutorialMetadata = ({
   timeToRead,
 }: TutorialMetadataProps) => {
   const { locale } = useRouter()
-  const { t } = useTranslation("page-developers-tutorials")
+  const { t } = useTranslation("page-knowledge")
 
   const hasSource = frontmatter.source && frontmatter.sourceUrl
   const published = frontmatter.published
