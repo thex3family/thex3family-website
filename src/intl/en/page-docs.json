@@ -1,9 +1,12 @@
 {
   "page-docs-nav-overview-title": "Overview",
+  "page-docs-nav-overview-description": "Your guide to the principles behind our programs.",
   "page-docs-nav-principles-title": "Principles",
   "page-docs-nav-flow-state-title": "Flow State",
+  "page-docs-nav-flow-state-description": "How does flow state actually work?",
   "page-docs-nav-resources-title": "Resources",
   "page-docs-nav-template-title": "Template",
+  "page-docs-nav-template-description": "Our preferred documentation structure.",
 
   "page-docs-calltocontribute-desc-1": "If you're an expert on the topic and want to contribute, edit this page and sprinkle it with your wisdom.",
   "page-docs-calltocontribute-desc-2": "You'll be credited and you'll be helping comrades who are interested in this topic!",

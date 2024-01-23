@@ -198,7 +198,7 @@ const paths: Array<IDevelopersPath> = [
 
 
 const DevelopersPage = () => {
-  const { t } = useTranslation(["page-unlock-your-potential", "common"])
+  const { t } = useTranslation(["page-unlock-your-potential", "common", "page-docs"])
 
   const { pathname } = useRouter()
 
@@ -220,7 +220,7 @@ const DevelopersPage = () => {
         title={t("common:unlock-your-potential-title")}
         description={t("common:unlock-your-potential-description")}
       />
-      
+
 
       {/* Main Hero */}
       <MainHero {...heroProps} />
@@ -271,10 +271,10 @@ const DevelopersPage = () => {
             descriptionKey="common:make-positive-impact-description"
             alt={t("common:make-positive-impact-image-alt")}
           >
-          <div>
-            <ButtonLink to="/make-positive-impact/">
-              <Translation id="make-positive-impact-button" />
-            </ButtonLink>
+            <div>
+              <ButtonLink to="/make-positive-impact/">
+                <Translation id="make-positive-impact-button" />
+              </ButtonLink>
             </div>
           </StyledCallout>
         </TwoColumnContent>
@@ -284,222 +284,43 @@ const DevelopersPage = () => {
           <OldHeading>
             <Translation id="page-unlock-your-potential:page-unlock-your-potential-documentation-title" />
           </OldHeading>
-            <Subtitle mb={6}>
-              <Translation id="page-unlock-your-potential:page-unlock-your-potential-documentation-description" />
-            </Subtitle>
+          <Subtitle mb={6}>
+            <Translation id="page-unlock-your-potential:page-unlock-your-potential-documentation-description" />
+          </Subtitle>
         </Content>
 
         <ThreeColumnContent>
           <Column>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-unlock-your-potential:page-docs-introductions" />
+              <Translation id="page-docs:page-docs-nav-overview-title" />
             </OldHeading>
-            <InlineLink to="/developers/docs/intro-to-ethereum/">
-              <Translation id="page-unlock-your-potential:page-developers-intro-eth-link" />
+            <InlineLink to="/unlock-your-potential/docs/">
+              <Translation id="page-docs:page-docs-nav-overview-title" />
             </InlineLink>
             <Text>
-              <Translation id="page-unlock-your-potential:page-developers-into-eth-desc" />
+              <Translation id="page-docs:page-docs-nav-overview-description" />
             </Text>
-
-            <InlineLink to="/developers/docs/intro-to-ether/">
-              <Translation id="page-unlock-your-potential:page-developers-intro-ether-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-intro-ether-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/dapps/">
-              <Translation id="page-unlock-your-potential:page-developers-intro-dapps-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-intro-dapps-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/ethereum-stack/">
-              <Translation id="page-unlock-your-potential:page-developers-intro-stack" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-intro-stack-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/web2-vs-web3/">
-              <Translation id="page-unlock-your-potential:page-developers-web3-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-web3-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/programming-languages/">
-              <Translation id="page-unlock-your-potential:page-developers-languages" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-language-desc" />
-            </Text>
-            <Image
-              hideBelow="lg"
-              src={DogeImage}
-              alt={t("page-assets-doge")}
-              maxW="400px"
-              mt={16}
-            />
           </Column>
           <Column>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-unlock-your-potential:page-developers-fundamentals" />
+              <Translation id="page-docs:page-docs-nav-principles-title" />
             </OldHeading>
-            <InlineLink to="/developers/docs/accounts/">
-              <Translation id="page-unlock-your-potential:page-developers-accounts-link" />
+            <InlineLink to="/unlock-your-potential/docs/flow-state">
+              <Translation id="page-docs:page-docs-nav-flow-state-title" />
             </InlineLink>
             <Text>
-              <Translation id="page-unlock-your-potential:page-developers-account-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/transactions/">
-              <Translation id="page-unlock-your-potential:page-developers-transactions-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-transactions-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/blocks/">
-              <Translation id="page-unlock-your-potential:page-developers-blocks-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-block-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/evm/">
-              <Translation id="page-unlock-your-potential:page-developers-evm-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-evm-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/gas/">
-              <Translation id="page-unlock-your-potential:page-developers-gas-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-gas-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/nodes-and-clients/">
-              <Translation id="page-unlock-your-potential:page-developers-node-clients-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-node-clients-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/networks/">
-              <Translation id="page-unlock-your-potential:page-developers-networks-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-networks-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/consensus-mechanisms/pow/mining/">
-              <Translation id="page-unlock-your-potential:page-developers-mining-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-mining-desc" />
-            </Text>
-
-            <InlineLink to="/developers/docs/consensus-mechanisms/pow/mining-algorithms/">
-              <Translation id="page-unlock-your-potential:page-developers-mining-algorithms-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-mining-algorithms-desc" />
+              <Translation id="page-docs:page-docs-nav-flow-state-description" />
             </Text>
           </Column>
           <RightColumn>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-unlock-your-potential:page-developers-stack" />
+              <Translation id="page-docs:page-docs-nav-resources-title" />
             </OldHeading>
-            <InlineLink to="/developers/docs/smart-contracts/">
-              <Translation id="page-unlock-your-potential:page-developers-smart-contracts-link" />
+            <InlineLink to="/unlock-your-potential/docs/template">
+              <Translation id="page-docs:page-docs-nav-template-title" />
             </InlineLink>
             <Text>
-              <Translation id="page-unlock-your-potential:page-developers-smart-contracts-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/frameworks/">
-              <Translation id="page-unlock-your-potential:page-developers-frameworks-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-frameworks-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/apis/javascript/">
-              <Translation id="page-unlock-your-potential:page-developers-js-libraries-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-js-libraries-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/apis/backend/">
-              <Translation id="page-unlock-your-potential:page-developers-api-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-api-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/data-and-analytics/block-explorers/">
-              <Translation id="page-unlock-your-potential:page-developers-block-explorers-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-block-explorers-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/smart-contracts/security/">
-              <Translation id="page-unlock-your-potential:page-developers-smart-contract-security-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-smart-contract-security-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/storage/">
-              <Translation id="page-unlock-your-potential:page-developers-storage-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-storage-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/ides/">
-              <Translation id="page-unlock-your-potential:page-developers-dev-env-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-dev-env-desc" />
-            </Text>
-            <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-unlock-your-potential:page-developers-advanced" />
-            </OldHeading>
-            <InlineLink to="/developers/docs/standards/tokens/">
-              <Translation id="page-unlock-your-potential:page-developers-token-standards-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-token-standards-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/mev/">
-              <Translation id="page-unlock-your-potential:page-developers-mev-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-mev-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/oracles/">
-              <Translation id="page-unlock-your-potential:page-developers-oracles-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-oracle-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/scaling/">
-              <Translation id="page-unlock-your-potential:page-developers-scaling-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-scaling-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/networking-layer/">
-              <Translation id="page-unlock-your-potential:page-developers-networking-layer-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-networking-layer-desc" />
-            </Text>
-            <InlineLink to="/developers/docs/data-structures-and-encoding/">
-              <Translation id="page-unlock-your-potential:page-developers-data-structures-and-encoding-link" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-unlock-your-potential:page-developers-data-structures-and-encoding-desc" />
+              <Translation id="page-docs:page-docs-nav-template-description" />
             </Text>
           </RightColumn>
         </ThreeColumnContent>
