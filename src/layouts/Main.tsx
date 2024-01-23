@@ -38,6 +38,8 @@ import { getSummaryPoints } from "@/lib/utils/getSummaryPoints"
 import { getLocaleTimestamp } from "@/lib/utils/time"
 
 import { MAIN_CONTENT_ID } from "@/lib/constants"
+import { ButtonLink } from "@/components/Buttons"
+import { FaGithub } from "react-icons/fa"
 
 // const Page = (props: FlexProps) => <MdPage sx={{}} {...props} />
 
@@ -134,7 +136,7 @@ export const mainComponents = {
 
 interface IProps
   extends ChildOnlyProp,
-    Pick<MdPageContent, "slug" | "tocItems" | "lastUpdatedDate"> {
+  Pick<MdPageContent, "slug" | "tocItems" | "lastUpdatedDate"> {
   frontmatter: UpgradeFrontmatter
 }
 export const MainLayout: React.FC<IProps> = ({
@@ -151,6 +153,7 @@ export const MainLayout: React.FC<IProps> = ({
   const summaryPoints = getSummaryPoints(frontmatter)
 
   const absoluteEditPath = getEditPath(relativePath)
+  console.log(absoluteEditPath);
 
   // Assign different styling, default
   let root = "default"
@@ -258,6 +261,10 @@ export const MainLayout: React.FC<IProps> = ({
             priority
             flex={{ base: "1 1 100%", md: "none" }}
             alignSelf={{ base: "center", md: "flex-end" }}
+            maxH={{
+              base: "340px",
+              lg: "full",
+            }}
           />
         )}
       </HeroContainer>
@@ -267,6 +274,7 @@ export const MainLayout: React.FC<IProps> = ({
       <Page>
         {/* TODO: Switch to `above="lg"` after completion of Chakra Migration */}
         <LeftNavBar
+          editPath={absoluteEditPath}
           hideBelow={lgBreakpoint}
           dropdownLinks={dropdownLinks}
           tocItems={tocItems}
@@ -277,7 +285,16 @@ export const MainLayout: React.FC<IProps> = ({
           <FeedbackCard />
         </ContentContainer>
         <MobileButton>
-          <MobileButtonDropdown list={dropdownLinks} />
+          <Flex align="center" gap={2} w="full">
+            <MobileButtonDropdown list={dropdownLinks} flex="1" />
+            <ButtonLink
+              leftIcon={<Icon as={FaGithub} />}
+              href={absoluteEditPath}
+              variant="outline"
+            >
+              Edit
+            </ButtonLink>
+          </Flex>
         </MobileButton>
       </Page>
     </Container>
