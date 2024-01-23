@@ -21,14 +21,14 @@ const DeveloperDocsLinks: React.FC<IProps> = ({ headerId }) => (
               <ListItem key={id}>
                 {to || path ? (
                   <InlineLink to={to || path}>
-                    <Translation id={`page-developers-docs:${id}`} />
+                    <Translation id={`page-docs:${id}`} />
                   </InlineLink>
                 ) : (
-                  <Translation id={`page-developers-docs:${id}`} />
+                  <Translation id={`page-docs:${id}`} />
                 )}
                 <i>
                   {" – "}
-                  <Translation id={`page-developers-docs:${description}`} />
+                  <Translation id={`page-docs:${description}`} />
                 </i>
                 <UnorderedList
                   ms={6}
@@ -40,7 +40,7 @@ const DeveloperDocsLinks: React.FC<IProps> = ({ headerId }) => (
                     items.map(({ id, to, path }) => (
                       <ListItem key={id}>
                         <InlineLink to={to || path}>
-                          <Translation id={`page-developers-docs:${id}`} />
+                          <Translation id={`page-docs:${id}`} />
                         </InlineLink>
                       </ListItem>
                     ))}

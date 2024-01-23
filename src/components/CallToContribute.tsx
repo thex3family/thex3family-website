@@ -57,7 +57,7 @@ const CallToContribute: React.FC<IProps> = ({ editPath }) => {
       borderRadius="base"
       boxShadow="inset 0 -2px 0 0 var(--x3-colors-primary400)"
     >
-      <ContentColumn hideBelow={largeBp}>
+      {/* <ContentColumn hideBelow={largeBp}>
         ░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░ ░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░
         ░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░ ░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐░░░
         ░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐░░░ ░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌░░░
@@ -68,9 +68,9 @@ const CallToContribute: React.FC<IProps> = ({ editPath }) => {
         ░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐░░ ░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌░░
         ░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀░░░ ░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀░░░░░
         ░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀░░░░░░░░
-      </ContentColumn>
+      </ContentColumn> */}
       <ContentColumn>
-        <OldHeading
+        {/* <OldHeading
           as="h2"
           fontFamily="monospace"
           textTransform="uppercase"
@@ -79,24 +79,24 @@ const CallToContribute: React.FC<IProps> = ({ editPath }) => {
           fontSize="2rem"
           lineHeight={1.4}
         >
-          <Translation id="page-developers-docs:page-calltocontribute-title" />
-        </OldHeading>
+          <Translation id="page-docs:page-calltocontribute-title" />
+        </OldHeading> */}
         <DescriptionParagraph>
-          <Translation id="page-developers-docs:page-calltocontribute-desc-1" />
+          <Translation id="page-docs:page-docs-calltocontribute-desc-1" />
         </DescriptionParagraph>
         <DescriptionParagraph>
-          <Translation id="page-developers-docs:page-calltocontribute-desc-2" />
+          <Translation id="page-docs:page-docs-calltocontribute-desc-2" />
         </DescriptionParagraph>
         <DescriptionParagraph>
-          <Translation id="page-developers-docs:page-calltocontribute-desc-3" />{" "}
-          <InlineLink to="https://www.notion.so/efdn/Writer-template-4b40d196cde7422ca6a2091de33550bd">
-            <Translation id="page-developers-docs:page-calltocontribute-link" />
+          <Translation id="page-docs:page-docs-calltocontribute-desc-3" />{" "}
+          <InlineLink to="/unlock-your-potential/docs/template/">
+            <Translation id="page-docs:page-docs-calltocontribute-link" />
           </InlineLink>
         </DescriptionParagraph>
         <DescriptionParagraph>
-          <Translation id="page-developers-docs:page-calltocontribute-desc-4" />{" "}
-          <InlineLink to="https://discord.gg/ethereum-org">
-            <Translation id="page-developers-docs:page-calltocontribute-link-2" />
+          <Translation id="page-docs:page-docs-calltocontribute-desc-4" />{" "}
+          <InlineLink to="https://our.x3.family">
+            <Translation id="page-docs:page-docs-calltocontribute-link-2" />
           </InlineLink>{" "}
         </DescriptionParagraph>
         <ButtonLink
@@ -111,7 +111,7 @@ const CallToContribute: React.FC<IProps> = ({ editPath }) => {
             />
           }
         >
-          <Translation id="page-developers-docs:page-calltocontribute-span" />
+          <Translation id="page-docs:page-docs-calltocontribute-span" />
         </ButtonLink>
       </ContentColumn>
     </Flex>

@@ -75,40 +75,40 @@ export const BannerGridCell: React.FC<Props> = ({ children }) => {
       borderInlineStart={{ base: 0, md: "1px solid" }}
       borderInlineStartColor={{ md: "searchBackground" }}
       sx={{
-        "&:first-child": {
+        "&:first-of-type": {
           borderTop: 0,
         },
         [`@media (min-width: ${medBp})`]: {
-          "&:nth-child(-n + 2)": {
+          "&:nth-of-type(-n + 2)": {
             borderTop: 0,
           },
-          "&:nth-child(2n + 1)": {
+          "&:nth-of-type(2n + 1)": {
             borderInlineStart: 0,
           },
         },
         [`@media (min-width: ${lgBp})`]: {
-          "&:first-child": {
+          "&:first-of-type": {
             ps: 0,
             borderInlineStart: 0,
           },
-          "&:nth-child(-n + 2)": {
+          "&:nth-of-type(-n + 2)": {
             borderTop: "1px solid",
             borderTopColor: "searchBackground",
           },
-          "&:nth-child(2n + 1)": {
+          "&:nth-of-type(2n + 1)": {
             borderInlineStart: "1px solid",
             borderInlineStartColor: "searchBackground",
           },
-          "&:nth-child(-n + 3)": {
+          "&:nth-of-type(-n + 3)": {
             borderTop: 0,
             justifyContent: "start",
             paddingTop: 0,
           },
-          "&:nth-child(3n + 1)": {
+          "&:nth-of-type(3n + 1)": {
             ps: 0,
             borderInlineStart: 0,
           },
-          "&:nth-child(n + 4)": {
+          "&:nth-of-type(n + 4)": {
             justifyContent: "start",
             paddingBottom: 0,
           },

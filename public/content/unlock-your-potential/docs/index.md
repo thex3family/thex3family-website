@@ -1,25 +1,12 @@
 ---
-title: Ethereum development documentation
-description: Introducing the ethereum.org developer documentation.
+title: Program Principles
+description: Introducing the documentation behind all of the programs supported by Co-x3.
 lang: en
+incomplete: true
 ---
 
-This documentation is designed to help you build with Ethereum. It covers Ethereum as a concept, explains the Ethereum tech stack, and documents advanced topics for more complex applications and use cases.
+Our documentation is an in-depth guide to understanding and leveraging the principles and methodologies that underpin the Co-x3 Family Foundation's programs. 
 
-This is an open-source community effort, so feel free to suggest new topics, add new content, and provide examples wherever you think it might be helpful. All documentation can be edited via GitHub – if you're unsure how, [follow these instructions](https://github.com/ethereum/ethereum-org-website/blob/dev/docs/editing-markdown.md).
+By offering a transparent view into our processes, we empower you to not only trust but also comprehend the mechanisms that will assist in your journey towards personal growth and development.
 
-## Development modules {#development-modules}
-
-If this is your first attempt at Ethereum development, we recommend starting at the beginning and working your way through like a book.
-
-### Foundational topics {#foundational-topics}
-
-<DeveloperDocsLinks headerId="foundational-topics" />
-
-### Ethereum stack {#ethereum-stack}
-
-<DeveloperDocsLinks headerId="ethereum-stack" />
-
-### Advanced {#advanced}
-
-<DeveloperDocsLinks headerId="advanced" />
+This is a collaborative effort that thrives on community input. We encourage you to suggest new topics, contribute content, and share examples that you find beneficial.

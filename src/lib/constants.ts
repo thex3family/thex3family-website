@@ -17,16 +17,16 @@ export const LOCALES_CODES = BUILD_LOCALES
   : i18nConfig.map(({ code }) => code)
 
 // Site urls
-export const SITE_URL = "https://ethereum.org"
+export const SITE_URL = "https://the.x3.family"
 export const DISCORD_PATH = "/discord/"
-export const EDIT_CONTENT_URL = `https://github.com/ethereum/ethereum-org-website/tree/dev/`
+export const EDIT_CONTENT_URL = `https://github.com/thex3family/thex3family-website/tree/dev/`
 export const MAIN_CONTENT_ID = "main-content"
 export const WEBSITE_EMAIL = "website@ethereum.org"
 
 // Config
 export const CONTENT_IMAGES_MAX_WIDTH = 800
 export const GITHUB_BASE_API =
-  "https://api.github.com/repos/ethereum/ethereum-org-website"
+  "https://api.github.com/repos/thex3family/thex3family-website"
 export const GITHUB_COMMITS_URL = GITHUB_BASE_API + "/commits"
 export const GITHUB_URL = `https://github.com/`
 export const COINGECKO_API_BASE_URL =
