@@ -463,7 +463,7 @@ const StablecoinsPage = ({ markets, marketsHasError }) => {
         mt={8}
         mb={8}
         background="cardGradient"
-        boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+        boxShadow="inset 0px 1px 0px var(--x3-colors-tableItemBoxShadow)"
       >
         <Box mb={-8} py={4} px={8} w="full">
           <H2 mt={0}>{t("page-stablecoins-find-stablecoin")}</H2>

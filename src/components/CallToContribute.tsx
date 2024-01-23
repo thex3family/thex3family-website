@@ -55,7 +55,7 @@ const CallToContribute: React.FC<IProps> = ({ editPath }) => {
       border="1px"
       borderColor="primary.base"
       borderRadius="base"
-      boxShadow="inset 0 -2px 0 0 var(--eth-colors-primary400)"
+      boxShadow="inset 0 -2px 0 0 var(--x3-colors-primary400)"
     >
       <ContentColumn hideBelow={largeBp}>
         ░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░ ░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░

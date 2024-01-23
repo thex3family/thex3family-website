@@ -44,7 +44,7 @@ export const outerListProps: ListProps = {
   pt: 0,
   sx: {
     // TODO: Flip to object syntax with `lg` token after completion of Chakra migration
-    "@media (max-width: var(--eth-breakpoints-lg))": {
+    "@media (max-width: var(--x3-breakpoints-lg))": {
       borderStart: 0,
       borderTop: "1px",
       borderTopColor: "primary300",

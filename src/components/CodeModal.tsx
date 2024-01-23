@@ -28,7 +28,7 @@ const CodeModal = ({ children, isOpen, setIsOpen, title }: CodeModalProps) => (
       <ModalCloseButton
         style={{
           right: "unset",
-          insetInlineEnd: "var(--eth-sizes-4)",
+          insetInlineEnd: "var(--x3-sizes-4)",
         }}
       />
       <ModalBody>{children}</ModalBody>

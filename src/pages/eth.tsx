@@ -68,7 +68,7 @@ const GrayContainer = (props: ChildOnlyProp) => (
     py={16}
     mt={8}
     background="grayBackground"
-    boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+    boxShadow="inset 0px 1px 0px var(--x3-colors-tableItemBoxShadow)"
     {...props}
   />
 )
