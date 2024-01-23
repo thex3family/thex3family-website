@@ -343,29 +343,29 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
         <Th>
           {filteredFrameworks.length === frameworkCardData.length ? (
             <Text as="span">
-              {t("page-understanding-the-framework-showing-all")} (
+              {t("page-understand-the-framework-showing-all")} (
               <strong>{frameworkCardData.length}</strong>)
             </Text>
           ) : (
             <Text as="span">
-              {t("page-understanding-the-framework-showing")}{" "}
+              {t("page-understand-the-framework-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkCardData.length}
               </strong>{" "}
-              {t("page-understanding-the-framework-frameworks")}
+              {t("page-understand-the-framework-frameworks")}
             </Text>
           )}
         </Th>
         <Th>
           <Text as="span" hideFrom="sm" fontSize="md" whiteSpace="nowrap">
-            {t("page-understanding-the-framework-choose-perspectives")}
+            {t("page-understand-the-framework-choose-perspectives")}
           </Text>
           <StyledSelect
             className="react-select-container"
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understanding-the-framework-choose-to-compare"),
+                label: t("page-understand-the-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -382,7 +382,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understanding-the-framework-choose-to-compare"),
+                label: t("page-understand-the-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -399,7 +399,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understanding-the-framework-choose-to-compare"),
+                label: t("page-understand-the-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
