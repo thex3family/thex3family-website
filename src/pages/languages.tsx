@@ -101,20 +101,20 @@ const LanguagesPage = () => {
             {t("page-languages-h1")}
           </OldHeading>
           <Text>{t("page-languages-p1")}</Text>
-          <Text>
+          {/* <Text>
             {t("page-languages-interested")}{" "}
             <InlineLink to="/contributing/translation-program/">
               {t("page-languages-learn-more")}
             </InlineLink>
             .
-          </Text>
-          <Text>
+          </Text> */}
+          {/* <Text>
             {t("page-languages-resources-paragraph")}{" "}
             <InlineLink to="/community/language-resources">
               {t("page-languages-resources-link")}
             </InlineLink>
             .
-          </Text>
+          </Text> */}
           <OldHeading lineHeight={1.4} fontSize={{ base: "2xl", md: "2rem" }}>
             {t("page-languages-translations-available")}:
           </OldHeading>
@@ -200,7 +200,7 @@ const LanguagesPage = () => {
               )
             })}
           </Flex>
-          <OldHeading lineHeight={1.4} fontSize={{ base: "2xl", md: "2rem" }}>
+          {/* <OldHeading lineHeight={1.4} fontSize={{ base: "2xl", md: "2rem" }}>
             {t("page-languages-want-more-header")}
           </OldHeading>
           <Text>
@@ -209,7 +209,7 @@ const LanguagesPage = () => {
               {t("page-languages-want-more-link")}
             </InlineLink>
             .
-          </Text>
+          </Text> */}
         </Box>
       </Flex>
     </>

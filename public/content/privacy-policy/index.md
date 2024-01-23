@@ -6,30 +6,25 @@ hideEditButton: true
 
 # Privacy Policy {#privacy-policy}
 
-**1. General information**
+**1. General Information**
 
-Stiftung Ethereum, a Swiss Stiftung, located at Zeughausgasse 7a, 6300 Zug, Switzerland (the “Foundation”, “we”, or “us”) is the operator of any Website published by the Foundation, including, but not limited to, ethereum.org, ethereum.foundation, esp.ethereum.foundation, devcon.org, devconnect.org, and blog.ethereum.org (the “Websites”).
+The Co-x3 Family Foundation, a 501(c)(3) non-profit organization located at 1111B S Governors Avenue, #6039, Dover, DE 19904, USA ("the Foundation", "we", or "us") is the operator of our websites, including, but not limited to, x3.family and co-x3.com (collectively referred to as the "Websites").
 
-As the operator of the Websites, we take the protection of your personal data very seriously. We collect, process, and use your personal data in accordance with this privacy policy and in compliance with the Swiss Federal Act on Data Protection (“FADP”), the Swiss Ordinance to the Federal Act on Data Protection (“OFADP”), and the General European Data Protection Regulation (“GDPR”).
+As the operator of the Websites, we take the protection of your personal data very seriously. We collect, process, and use your personal data in accordance with this privacy policy and in compliance with relevant data protection regulations, including but not limited to the General Data Protection Regulation ("GDPR") and applicable US privacy laws.
 
-This privacy policy (“Privacy Policy”) will provide you with information about the collection, processing and use of your personal data when using the Websites.
+This privacy policy (“Privacy Policy”) is intended to provide you with information about the collection, processing, and use of your personal data when using the Websites.
 
-In case you provide us with the personal data of third persons (such as family members or work colleagues) you should make sure that these persons are familiar with this Privacy Policy and you should only share their personal data if you have permission to do so and ensure that his personal data is correct.
+In case you provide us with personal data of third parties (such as family members, friends, or colleagues), please ensure that these individuals are aware of this Privacy Policy. You should only share their personal data with us if you have their permission to do so and are confident that the data provided is accurate.
 
 **2. Responsible Person**
 
-For any matters, relating to data protection you may contact <notices@ethereum.org> in writing by e-mail or letter to the following address:
+For any matters, relating to data protection you may contact <legal@co-x3.com> in writing by e-mail or letter to the following address:
 
-    Ethereum Foundation
-    Zeughausgasse 7A,
-    6302 Zug, Switzerland
-    Email: notices@ethereum.org
-
-Our representative in the EU according to article 27 GDPR is:
-
-    Ethereum Dev GmbH
-    Oranienstrasse 6, 10997 Berlin
-    Email: notices@ethereum.org
+    Co-x3 Family Foundation
+    1111B S Governors Avenue, #6039
+    Dover, DE 19904
+    United States
+    Email: legal@co-x3.com
 
 **3. Data processing in connection with the Websites**
 
@@ -79,15 +74,15 @@ Any processing of this technical personal data helps us to identify what is work
 
 <MatomoOptOut />
 
-**3.4 Opening an account for the Ethereum Web Forum**
+**3.4 Opening an account for the Co-x3 Family Community**
 
-To access our forums at <https://forum.ethereum.org/> you must set up an account and provide us with your username, e-mail address, skype name, and password.
+To access our community at <https://our.x3.family/> you must set up an account and provide us with your name, e-mail address, and password.
 
 The collected data, which you have voluntarily provided, is used for the purpose of providing your password-protected access to your base data we have stored. The legal basis for processing the data for this purpose lies in the consent you have provided in accordance with Art. 6 Par. 1 lit. a GDPR.
 
 **3.5 Contact possibility via the Websites**
 
-You may contact us via our Websites’ contact page or by e-mail to the following e-mail address: <support@ethereum.org>. For this, we require the following information: Name, Subject, E-Mail address, message.
+You may contact us via our Websites’ contact page or by e-mail to the following e-mail address: <support@co-x3.com>. For this, we require the following information: Name, Subject, E-Mail address, message.
 
 We use this data, which you may give voluntarily, only in order to answer your contact question or to reply to your e-mail in the best possible manner. Therefore, the processing of this data is in our legitimate interest in accordance with Art. 6 Par. 1 lit. f GDPR and you have provided consent in accordance with Art. 6 Par. 1 lit. a GDPR.
 
@@ -99,7 +94,7 @@ At the end of each newsletter a link is provided by means of which you can unsub
 
 **3.7 Social Media**
 
-We may use plug-ins from social networks such as Blog, GitHub, YouTube, Reddit, Gitter, Twitter, StackExchange, Facebook, or Meetups on our Websites. When you activate them by clicking on them, the operators of the respective social networks may record that you are on our Websites and may use this information. This processing of your personal data lays in the responsibility of these individual social media platforms and occurs according to their privacy policy. Please check with these individual social media platforms regarding their privacy policies. The Foundation is not responsible for data collected by these individual social media platforms. We only use these platforms to inform our community of updates and answer user questions.
+We may use plug-ins from social networks on our Websites. When you activate them by clicking on them, the operators of the respective social networks may record that you are on our Websites and may use this information. This processing of your personal data lays in the responsibility of these individual social media platforms and occurs according to their privacy policy. Please check with these individual social media platforms regarding their privacy policies. The Foundation is not responsible for data collected by these individual social media platforms. We only use these platforms to inform our community of updates and answer user questions.
 
 **3.8 Event Registration**
 
@@ -229,4 +224,4 @@ to:
   <https://www.admin.ch/opc/en/classified-compilation/19930159/index.html>
 
 Please do not hesitate to contact us if you have any questions regarding
-this Privacy Policy by contacting us at [support@ethereum.org](mailto:support@ethereum.org).
+this Privacy Policy by contacting us at [support@co-x3.com](mailto:support@co-x3.com).

@@ -141,5 +141,3 @@ Nothing Here Yet.
 ## Contribute to this page {#contribute-to-this-page}
 
 Did we miss something? Is something incorrect? Help us improve by contributing to this glossary!
-
-[Learn more about how to contribute](/make-positive-impact/contribute/glossary)

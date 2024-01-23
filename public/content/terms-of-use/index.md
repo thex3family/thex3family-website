@@ -10,7 +10,7 @@ hideEditButton: true
 
 **Acceptance of the Terms of Use**
 
-These terms of use are entered into by and between you and Stiftung Ethereum (the “Foundation”, “we”, or “us”). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these “Terms of Use”), govern your access to and use of any website published by the Foundation, including, but not limited to, any content, functionality, and services offered on or through ethereum.org, ethereum.foundation, esp.ethereum.foundation, devcon.org, devconnect.org, and blog.ethereum.org (the “Websites”).
+These terms of use are entered into by and between you and the Co-x3 Family Foundation (the “Foundation”, “we”, or “us”). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these “Terms of Use”), govern your access to and use of any website published by the Foundation, including, but not limited to, any content, functionality, and services offered on or through x3.family or co-x3.com (the “Websites”).
 
 Please read the Terms of Use carefully before you start to use the Websites. By using the Websites or by clicking to accept or agree to the Terms of Use when this option is made available to you, you accept and agree to be bound and abide by these Terms of Use in addition to:
 
@@ -52,7 +52,7 @@ Unless otherwise marked, (a) all material, data, and information on the Websites
 
 **Trademarks**
 
-The Foundation name, the terms Ethereum Switzerland, Ethereum Asia, the Foundation logo and all related names, logos, product and service names, designs and slogans are trademarks of the Foundation or its affiliates or licensors. You must not use such marks without the prior written permission of the Foundation. All other names, logos, product and service names, designs and slogans on this Websites are the trademarks of their respective owners.
+The Foundation name, the terms Co-x3 Family, Better Life Framework, the Foundation logo and all related names, logos, product and service names, designs and slogans are trademarks of the Foundation or its affiliates or licensors. You must not use such marks without the prior written permission of the Foundation. All other names, logos, product and service names, designs and slogans on this Websites are the trademarks of their respective owners.
 
 **Prohibited Uses**
 
@@ -105,7 +105,7 @@ If the Websites contain links to other sites and resources provided by third par
 
 **Geographic Restrictions**
 
-The owner of the Websites is based in Switzerland. We make no claims that the Websites or any of its content is accessible or appropriate outside of Switzerland. Access to the Websites may not be legal by certain persons or in certain countries. If you access the Websites from outside Switzerland, you do so on your own initiative and are responsible for compliance with local laws.
+The owner of the Websites is based in the United States Of America. We make no claims that the Websites or any of its content is accessible or appropriate outside of the United States Of America. Access to the Websites may not be legal by certain persons or in certain countries. If you access the Websites from outside the United States Of America, you do so on your own initiative and are responsible for compliance with local laws.
 
 **Disclaimer of Warranties**
 
@@ -127,9 +127,9 @@ You agree to defend, indemnify, and hold harmless the Foundation, its affiliates
 
 **Governing Law and Jurisdiction**
 
-All matters relating to the Websites and these Terms of Use and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of Switzerland without giving effect to any choice or conflict of law provision or rule (whether of Switzerland or any other jurisdiction).
+All matters relating to the Websites and these Terms of Use and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of the United States Of America without giving effect to any choice or conflict of law provision or rule (whether of the United States Of America or any other jurisdiction).
 
-Any legal suit, action or proceeding arising out of, or related to, these Terms of Use or the Websites shall be instituted exclusively in the Switzerland in the Kanton of Zug although we retain the right to bring any suit, action or proceeding against you for breach of these Terms of Use in your country of residence or any other relevant country. You waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts.
+Any legal suit, action or proceeding arising out of, or related to, these Terms of Use or the Websites shall be instituted exclusively in the the United States Of America in the Kanton of Zug although we retain the right to bring any suit, action or proceeding against you for breach of these Terms of Use in your country of residence or any other relevant country. You waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts.
 
 **Waiver and Severability**
 
@@ -143,4 +143,4 @@ The Terms of Use, our Privacy Policy and terms of conditions for the registratio
 
 **Your Comments and Concerns**
 
-The Websites are operated by the Foundation. All other feedback, comments, requests for technical support and other communications relating to the Websites should be directed to: [support@ethereum.org](mailto:support@ethereum.org).
+The Websites are operated by the Foundation. All other feedback, comments, requests for technical support and other communications relating to the Websites should be directed to: [support@co-x3.com](mailto:support@co-x3.com).
