@@ -296,21 +296,21 @@ const HomePage = ({
       alt: t("students-image-alt"),
       title: t("students-title"),
       description: t("students-description"),
-      to: "/for/students/",
+      to: "/for/",
     },
     {
       image: creatives,
       alt: t("creatives-image-alt"),
       title: t("creatives-title"),
       description: t("creatives-description"),
-      to: "/for/creatives/",
+      to: "/for/",
     },
     {
       image: retirees,
       alt: t("retirees-image-alt"),
       title: t("retirees-title"),
       description: t("retirees-description"),
-      to: "/for/second-winders/",
+      to: "/for/",
     },
   ]
 
@@ -421,7 +421,7 @@ const HomePage = ({
         <ContentBox>
           <Box pb={4}>
             <SectionHeading mt={12} mb={8} fontFamily="heading" textAlign="center">
-              <Translation id="page-index:page-index-touts-header" />
+              <Translation id="common:for-title" />
             </SectionHeading>
           </Box>
           <CardContainer minChildWidth={{ lg: "400px" }}>

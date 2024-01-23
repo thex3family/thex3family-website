@@ -196,7 +196,7 @@ const Image400 = ({ src }: Pick<ImageProps, "src">) => (
   <Image src={src} alt="" width={400} />
 )
 
-const cachedFetchTxCount = runOnlyOnce(fetchTxCount)
+// const cachedFetchTxCount = runOnlyOnce(fetchTxCount)
 
 type Props = BasePageProps & {
   data: MetricReturnData
@@ -209,7 +209,7 @@ export const getStaticProps = (async ({ locale }) => {
 
   const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[1])
 
-  const data = await cachedFetchTxCount()
+  const data = { data: [], value: 0 }
 
   return {
     props: {

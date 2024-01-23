@@ -162,6 +162,9 @@ export const MainLayout: React.FC<IProps> = ({
   if (slug.includes("understand-yourself")) {
     root = "understand-yourself"
   }
+  if (slug.includes("for")) {
+    root = "for"
+  }
 
   let dropdownLinks: ButtonDropdownList | null = null;
   if (root === "make-positive-impact") {
@@ -225,6 +228,18 @@ export const MainLayout: React.FC<IProps> = ({
           text: t("test-your-understanding-title"),
           to: "/understand-yourself/quizzes/",
         }
+      ],
+    }
+  }
+  if (root === "for") {
+    dropdownLinks = {
+      text: t("for-title"),
+      ariaLabel: t("for-menu"),
+      items: [
+        {
+          text: t("for-title"),
+          to: "/for/",
+        },
       ],
     }
   }

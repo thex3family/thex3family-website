@@ -30,7 +30,7 @@ const Cell = ({ children, color, ...props }: BoxProps) => (
       borderTopEndRadius: "2xl",
     }}
     sx={{
-      "&:nth-child(-n + 2)": {
+      "&:nth-of-type(-n + 2)": {
         borderBottomStartRadius: "2xl",
         borderBottomEndRadius: "2xl",
       },
