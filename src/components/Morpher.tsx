@@ -4,25 +4,11 @@ import { BaseLink } from "@/components/Link"
 
 const Morpher = () => {
   const [state, setState] = useState({
-    text: "Ethereum",
+    text: "Co-x3",
     words: [
-      "以太坊",
-      "イーサリアム",
-      "Etérium",
-      "이더리움",
-      "اتریوم",
-      "Αιθέριο",
-      "Eterijum",
-      "إثيريوم",
-      "อีเธอเรียม",
-      "Эфириум",
-      "इथीरियम",
-      "ಇಥೀರಿಯಮ್",
-      "אתריום",
-      "Ξ",
-      "ইথেরিয়াম",
-      "எதீரியம்",
-      "ఇథిరియూమ్",
+      "Contribute",
+      "Collaborate",
+      "Co-Create",
     ],
   })
 
