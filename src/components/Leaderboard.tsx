@@ -85,7 +85,7 @@ const Leaderboard = ({ content, limit = 100 }: LeaderboardProps) => {
                 _hover={{
                   textDecor: "none",
                   borderRadius: 0.5,
-                  boxShadow: "0 0 1px var(--eth-colors-primary-base)",
+                  boxShadow: "0 0 1px var(--x3-colors-primary-base)",
                   background: "tableBackgroundHover",
                 }}
               >

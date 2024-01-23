@@ -141,7 +141,7 @@ const GradientContainer = (props: ChildOnlyProp) => (
     px="0"
     mt="8"
     bg="cardGradient"
-    boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+    boxShadow="inset 0px 1px 0px var(--x3-colors-tableItemBoxShadow)"
     {...props}
   />
 )
@@ -274,7 +274,7 @@ const StyledGrayContainer = ({ children, ...props }) => (
     mt="8"
     mb="12"
     bg="grayBackground"
-    boxShadow="inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)"
+    boxShadow="inset 0px 1px 0px var(--x3-colors-tableItemBoxShadow)"
     {...props}
   >
     {children}

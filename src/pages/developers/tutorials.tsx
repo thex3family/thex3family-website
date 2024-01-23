@@ -424,14 +424,14 @@ const TutorialPage = ({
               justifyContent="space-between"
               fontWeight="normal"
               color="text"
-              boxShadow="0px 1px 1px var(--eth-colors-tableItemBoxShadow)"
+              boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
               mb="px"
               padding={8}
               w="full"
               _hover={{
                 textDecoration: "none",
                 borderRadius: "base",
-                boxShadow: "0 0 1px var(--eth-colors-primary-base)",
+                boxShadow: "0 0 1px var(--x3-colors-primary-base)",
                 bg: "tableBackgroundHover",
               }}
               key={tutorial.to}

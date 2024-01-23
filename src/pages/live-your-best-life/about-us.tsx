@@ -367,7 +367,7 @@ const WhatIsEthereumPage = ({
         bg="grayBackground"
         boxShadow={{
           base: "none",
-          md: "inset 0px 1px 0px var(--eth-colors-tableItemBoxShadow)",
+          md: "inset 0px 1px 0px var(--x3-colors-tableItemBoxShadow)",
         }}
       >
         <Section id="start">
@@ -568,11 +568,11 @@ const WhatIsEthereumPage = ({
             </BannerImage>
           </Banner>
         </Section>
+      </Box>
+      
       <Content>
         <StandaloneQuizWidget quizKey="quiz-about-us" />
       </Content>
-      </Box>
-      
 
       <Content>
         <FeedbackCard />

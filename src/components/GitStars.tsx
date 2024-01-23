@@ -39,7 +39,7 @@ const GitStars = ({ gitHubRepo, hideStars, ...props }: GitStarsProps) => {
         borderRadius="base"
         color="text"
         _hover={{
-          boxShadow: "0 0 1px var(--eth-colors-primary-base)",
+          boxShadow: "0 0 1px var(--x3-colors-primary-base)",
           path: { fill: "primary.base" },
         }}
       >
