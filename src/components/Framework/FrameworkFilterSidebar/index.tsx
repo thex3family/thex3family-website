@@ -13,8 +13,8 @@ import {
   useTheme,
 } from "@chakra-ui/react"
 
-import WalletFilterProfile from "@/components/FindWallet/WalletFilterSidebar/WalletFilterFeature"
-import WalletFilterPersonas from "@/components/FindWallet/WalletFilterSidebar/WalletFilterProfile"
+import FrameworkFilterProfile from "@/components/Framework/FrameworkFilterSidebar/FrameworkFilterFeature"
+import FrameworkFilterPersonas from "@/components/Framework/FrameworkFilterSidebar/FrameworkFilterProfile"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
@@ -30,8 +30,8 @@ const FilterTab = ({
   <Tab
     onClick={() => {
       trackCustomEvent({
-        eventCategory: "WalletFilterSidebar",
-        eventAction: `WalletFilterSidebar tab clicked`,
+        eventCategory: "FrameworkFilterSidebar",
+        eventAction: `FrameworkFilterSidebar tab clicked`,
         eventName,
       })
     }}
@@ -49,9 +49,9 @@ const FilterTab = ({
   />
 )
 
-interface WalletFilterSidebarProps extends Omit<TabsProps, "children"> {
+interface FrameworkFilterSidebarProps extends Omit<TabsProps, "children"> {
   filters: FiltersType
-  resetWalletFilter: React.MutableRefObject<() => void>
+  resetFrameworkFilter: React.MutableRefObject<() => void>
   resetFilters: () => void
   setFilters: React.Dispatch<React.SetStateAction<FiltersType>>
   selectedPersona: number
@@ -60,9 +60,9 @@ interface WalletFilterSidebarProps extends Omit<TabsProps, "children"> {
   updateFilterOptions: (keys: any, value: any) => void
 }
 
-const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({
+const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
   filters,
-  resetWalletFilter,
+  resetFrameworkFilter,
   resetFilters,
   setFilters,
   selectedPersona,
@@ -73,7 +73,7 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({
   ...tabsProps
 }) => {
   const theme = useTheme()
-  const { t } = useTranslation("page-wallets-find-wallet")
+  const { t } = useTranslation("page-frameworks-find-framework")
 
   return (
     <Tabs
@@ -119,10 +119,10 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({
           }}
         >
           <FilterTab eventName="show user personas">
-            {t("page-find-wallet-profile-filters")}
+            {t("page-find-framework-profile-filters")}
           </FilterTab>
           <FilterTab eventName="show feature filters">
-            {t("page-find-wallet-feature-filters")} (
+            {t("page-find-framework-feature-filters")} (
             {Object.values(filters).reduce((acc, filter) => {
               if (filter) {
                 acc += 1
@@ -148,16 +148,16 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({
         }}
         onClick={() => {
           resetFilters()
-          resetWalletFilter.current()
+          resetFrameworkFilter.current()
           trackCustomEvent({
-            eventCategory: "WalletFilterReset",
-            eventAction: `WalletFilterReset clicked`,
+            eventCategory: "FrameworkFilterReset",
+            eventAction: `FrameworkFilterReset clicked`,
             eventName: `reset filters`,
           })
         }}
       >
         <Icon as={BsArrowCounterclockwise} aria-hidden="true" fontSize="sm" />
-        {t("page-find-wallet-reset-filters").toUpperCase()}
+        {t("page-find-framework-reset-filters").toUpperCase()}
       </Center>
       <TabPanels
         m={0}
@@ -170,7 +170,7 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({
         }}
       >
         <TabPanel>
-          <WalletFilterPersonas
+          <FrameworkFilterPersonas
             resetFilters={resetFilters}
             setFilters={setFilters}
             selectedPersona={selectedPersona}
@@ -178,8 +178,8 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({
           />
         </TabPanel>
         <TabPanel>
-          <WalletFilterProfile
-            resetWalletFilter={resetWalletFilter}
+          <FrameworkFilterProfile
+            resetFrameworkFilter={resetFrameworkFilter}
             filters={filters}
             updateFilterOption={updateFilterOption}
             updateFilterOptions={updateFilterOptions}
@@ -190,6 +190,6 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({
   )
 }
 
-WalletFilterSidebar.displayName = "WalletFilterSidebar"
+FrameworkFilterSidebar.displayName = "FrameworkFilterSidebar"
 
-export default WalletFilterSidebar
+export default FrameworkFilterSidebar
