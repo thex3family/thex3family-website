@@ -74,6 +74,9 @@ import MainHero from "@/components/MainHero"
 import comrades from "@/public/comrades.png"
 import community_gathering from "@/public/community_gathering.png"
 
+import vision from "@/public/vision.png"
+import mission from "@/public/mission.png"
+
 const Slogan = (props: ChildOnlyProp) => (
   <Text
     textStyle="normal"
@@ -298,11 +301,11 @@ const WhatIsEthereumPage = ({
     { eventName: "History - Slide 3" },
   ]
 
-  const tooltipContent = ({ apiUrl, apiProvider, ariaLabel }) => (
+  const tooltipContent = ({ text, url, ariaLabel }) => (
     <div>
-      {t("common:data-provided-by")}{" "}
-      <InlineLink to={apiUrl} aria-label={ariaLabel}>
-        {apiProvider}
+      {text}{" "}
+      <InlineLink to={url} aria-label={ariaLabel}>
+        Learn More
       </InlineLink>
     </div>
   )
@@ -401,7 +404,7 @@ const WhatIsEthereumPage = ({
               <Callout
                 flex="1 1 416px"
                 minH="full"
-                image={developers}
+                image={vision}
                 titleKey="common:vision-title"
                 alt={t("common:vision-image-alt")}
                 descriptionKey="common:vision-description"
@@ -415,7 +418,7 @@ const WhatIsEthereumPage = ({
               <Callout
                 flex="1 1 416px"
                 minH="full"
-                image={community}
+                image={mission}
                 titleKey="common:mission-title"
                 alt={t("common:mission-image-alt")}
                 descriptionKey="common:mission-description"
@@ -526,31 +529,76 @@ const WhatIsEthereumPage = ({
                 <BannerGridCell>
                   <StatPrimary>1B+</StatPrimary>
                   <StatDescription>
-                    <Translation id="page-about-us:page-about-us-stats-stat-1-title" />
+                    <Translation id="page-about-us:page-about-us-stats-stat-1-title" />{" "}
+                    <Tooltip
+                        content={tooltipContent({
+                          text: t("page-about-us:page-about-us-stats-stat-1-tooltip"),
+                          url: "/unlock-your-potential/knowledge/",
+                          ariaLabel: "Learn More About Our Targets",
+                        })}
+                      >
+                        <Icon as={MdInfoOutline} fontSize="md" />
+                      </Tooltip>
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
                   <StatPrimary>90M+</StatPrimary>
                   <StatDescription>
-                    <Translation id="page-about-us:page-about-us-stats-stat-2-title" />
+                    <Translation id="page-about-us:page-about-us-stats-stat-2-title" />{" "}
+                    <Tooltip
+                        content={tooltipContent({
+                          text: t("page-about-us:page-about-us-stats-stat-2-tooltip"),
+                          url: "/unlock-your-potential/tools/",
+                          ariaLabel: "Learn More About Our Targets",
+                        })}
+                      >
+                        <Icon as={MdInfoOutline} fontSize="md" />
+                      </Tooltip>
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
                   <StatPrimary>10M+</StatPrimary>
                   <StatDescription>
-                    <Translation id="page-about-us:page-about-us-stats-stat-3-title" />
+                    <Translation id="page-about-us:page-about-us-stats-stat-3-title" />{" "}
+                    <Tooltip
+                        content={tooltipContent({
+                          text: t("page-about-us:page-about-us-stats-stat-3-tooltip"),
+                          url: "/unlock-your-potential/community/",
+                          ariaLabel: "Learn More About Our Targets",
+                        })}
+                      >
+                        <Icon as={MdInfoOutline} fontSize="md" />
+                      </Tooltip>
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
                   <StatPrimary>9M+</StatPrimary>
                   <StatDescription>
-                    <Translation id="page-about-us:page-about-us-stats-stat-4-title" />
+                    <Translation id="page-about-us:page-about-us-stats-stat-4-title" />{" "}
+                    <Tooltip
+                        content={tooltipContent({
+                          text: t("page-about-us:page-about-us-stats-stat-4-tooltip"),
+                          url: "/make-positive-impact/contribute/",
+                          ariaLabel: "Learn More About Our Targets",
+                        })}
+                      >
+                        <Icon as={MdInfoOutline} fontSize="md" />
+                      </Tooltip>
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
                   <StatPrimary>900k+</StatPrimary>
                   <StatDescription>
-                    <Translation id="page-about-us:page-about-us-stats-stat-5-title" />
+                    <Translation id="page-about-us:page-about-us-stats-stat-5-title" />{" "}
+                    <Tooltip
+                        content={tooltipContent({
+                          text: t("page-about-us:page-about-us-stats-stat-5-tooltip"),
+                          url: "/unlock-your-potential/collaborate/",
+                          ariaLabel: "Learn More About Our Targets",
+                        })}
+                      >
+                        <Icon as={MdInfoOutline} fontSize="md" />
+                      </Tooltip>
                   </StatDescription>
                 </BannerGridCell>
                 <BannerGridCell>
@@ -558,7 +606,16 @@ const WhatIsEthereumPage = ({
                     100k+
                   </StatPrimary>
                   <StatDescription>
-                    <Translation id="page-about-us:page-about-us-stats-stat-6-title" />
+                    <Translation id="page-about-us:page-about-us-stats-stat-6-title" />{" "}
+                    <Tooltip
+                        content={tooltipContent({
+                          text: t("page-about-us:page-about-us-stats-stat-6-tooltip"),
+                          url: "/unlock-your-potential/co-create/",
+                          ariaLabel: "Learn More About Our Targets",
+                        })}
+                      >
+                        <Icon as={MdInfoOutline} fontSize="md" />
+                      </Tooltip>
                   </StatDescription>
                 </BannerGridCell>
               </BannerGrid>
