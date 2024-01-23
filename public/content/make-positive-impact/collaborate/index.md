@@ -5,43 +5,34 @@ lang: en
 template: main
 image: /contribute.png
 alt: 
-summaryPoint1: Doing good is often associated to doing menial, unskilled labour.
-summaryPoint2: We enable you to make use of their skills and give back.
-summaryPoint3: Commit time towards supporting programs that have benefited you.
+summaryPoint1: We want to tranform your good intentions into meaningful work.
+summaryPoint2: Utilize your talents to give back to the community.
+summaryPoint3: Dedicate time to support programs that have aided your growth and development.
 ---
 
-## Why Contribute? {#why-contribute}
+## Why Collaborate?
 
-Your contributions, regardless of their size, are immensely valuable to us. Whether you have a few minutes or several hours, there's a place for you here. Participation in even small, one-off tasks can make a significant impact.
+Collaboration in the Co-x3 Family is not just about giving back; it's a journey of personal growth and skill enhancement. When you contribute to programs that have impacted your life, you do more than just pay it forward. You immerse yourself in an enriching experience that deepens your understanding and broadens your skill set.
 
-We are in the process of developing a user-friendly platform to effortlessly match you with tasks that align with your skills and interests. Meanwhile, please explore the list of standard tasks below to find something that resonates with you.
+As you engage in meaningful tasks and projects, you'll encounter opportunities to learn new skills and refine existing ones. Whether it's through leading a community initiative, managing events, or creating content, each role is a chance to challenge yourself and grow. This hands-on approach allows you to apply what you've learned in real-world scenarios, solidifying your knowledge and gaining invaluable experience.
 
-## What Can I Do? {#what-contribute}
+In the Co-x3 Family, every contribution is a step towards personal mastery. By collaborating, you're not only helping others but also fortifying your own path of lifelong learning and development.
 
-| Level        | Task                               | Description                                           | Difficulty        |
-|--------------|------------------------------------|-------------------------------------------------------|-------------------|
-| All Levels   | Get A Co-x3 Subscription           | Access exclusive content.                             | ⭐               |
-|              | Share Feedback                     | Provide your thoughts and suggestions.                | ⭐                |
-|              | Like and Subscribe                 | Support us on social platforms.                       | ⭐               |
-| Level 3+     | Post In Community Channels         | Engage in community discussions.                      | ⭐               |
-|              | Bug Identification                 | Identify and report website issues.                   | ⭐               |
-|              | Translation Services               | Help translate our content.                           | ⭐⭐             |
-|              | Guests On LVL-UP Podcast           | Join our podcast for a 1-on-1 consulting session.     | ⭐⭐             |
-| Level 4+     | [Suggest Knowledge](/make-positive-impact/contribute/knowledge)                  | Add insights to our knowledge base.                   | ⭐               |
-|              | [Improve Glossary Terms](/make-positive-impact/contribute/glossary)             | Add or edit glossary terms.                            | ⭐               |
-|              | Share On Social Media              | Promote us on social media.                           | ⭐               |
-|              | Website Design Contributions       | Improve our website design.                           | ⭐⭐⭐           |
-|              | Host Local Meetups                 | Organize meetups for comrades.                        | ⭐⭐             |
-| Level 5+     | Suggest Tools                      | Recommend personal growth tools.                      | ⭐               |
-|              | Better Life Framework Research             | Enhance our Better Life Framework research.                   | ⭐⭐             |
-|              | [Quiz Creation / Improvement](/make-positive-impact/contribute/quizzes)                      | Create quizzes for the Co-x3 Foundation.              | ⭐⭐             |
-| Level 6+     | Suggest Community Experiences      | Lead community initiatives.                           | ⭐⭐⭐           |
-| Level 7+     | Scholarship Sponsorship            | Sponsor member access to resources.                   | ⭐                |
-| Level 8+     | Submit Research                    | Contribute to community research papers.              | ⭐⭐⭐           |
-| Level 9+     | Ambassador Program                 | Be our ambassador at events and social gatherings.    | ⭐⭐⭐           |
+## What Can I Do?
+
+| Level        | Task                              | Description                                                 | Difficulty |
+|--------------|-----------------------------------|-------------------------------------------------------------|------------|
+| All Levels   | Career Opportunities              | Explore meaningful careers via our job board.               | ⭐          |
+|              | Co-x3 Guides                      | Coach, mentor, or consult within our community.             | ⭐          |
+| Level 3+     | App Developer                     | Develop and maintain features for our custom apps.          | ⭐⭐        |
+|              | Party Quest Manager               | Organize community events and challenges.                   | ⭐          |
+| Level 4+     | Community Managers                | Lead discussions and events in our community.               | ⭐          |
+|              | Content Manager                   | Curate educational and informative content.                 | ⭐⭐        |
+|              | Metaverse Managers                | Manage virtual spaces for community interaction.            | ⭐          |
+| Level 5+     | Program Managers                  | Oversee and improve community programs.                     | ⭐          |
+| Level 6+     | Retreat Managers                  | Organize retreats to foster deeper connections.             | ⭐⭐⭐      |
+| Level 7+     | Accountability Managers           | Manage accountability partnerships in the community.        | ⭐          |
+| Level 8+     | Research Managers                 | Direct research projects to enhance community knowledge.    | ⭐⭐⭐      |
+| Level 9+     | Host For LVL-UP Podcast           | Inspire members by hosting our podcast.                     | ⭐⭐⭐      |
 
 _Any questions?_ 🤔 Reach out in our [community](https://our.x3.family/)
-
-## Who Are Our Contributors? {#our-contributors}
-
-<Contributors />
