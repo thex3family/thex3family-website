@@ -3,31 +3,15 @@ import { Icon } from "@chakra-ui/react"
 
 import { FrameworkTableProps } from "@/components/Framework/FrameworkTable"
 import {
-  BuyCryptoIcon,
-  ConnectDappsIcon,
-  EIP1559Icon,
-  ENSSupportIcon,
-  ERC20SupportIcon,
-  GasFeeCustomizationIcon,
-  HardwareSupportIcon,
-  Layer2Icon,
-  MultisigIcon,
-  NFTSupportIcon,
-  NonCustodialIcon,
-  OpenSourceWalletIcon,
-  RPCImportingIcon,
-  SocialRecoverIcon,
-  StakingIcon,
-  SwapIcon,
-  WalletConnectIcon,
-  WithdrawCryptoIcon,
-} from "@/components/icons/wallets"
+  BulletPointIcon
+} from "@/components/icons"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
 export interface DropdownOption {
   label: string
   value: string
+  description: string
   filterKey: string
   category: string
   icon: typeof Icon
@@ -46,130 +30,327 @@ export const useFrameworkTable = ({
 }: UseFrameworkTableProps) => {
   const featureDropdownItems: Array<DropdownOption> = [
     {
-      label: t("page-find-wallet-open-source"),
-      value: t("page-find-wallet-open-source"),
-      filterKey: "open_source",
-      category: "security",
-      icon: OpenSourceWalletIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-1-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-1-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-1-description"),
+      filterKey: "perspective_1_option_1",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-self-custody"),
-      value: t("page-find-wallet-self-custody"),
-      filterKey: "non_custodial",
-      category: "security",
-      icon: NonCustodialIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-2-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-2-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-2-description"),
+      filterKey: "perspective_1_option_2",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-hardware-framework-support"),
-      value: t("page-find-wallet-hardware-framework-support"),
-      filterKey: "hardware_support",
-      category: "feature",
-      icon: HardwareSupportIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-3-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-3-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-3-description"),
+      filterKey: "perspective_1_option_3",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-walletconnect"),
-      value: t("page-find-wallet-walletconnect"),
-      filterKey: "walletconnect",
-      category: "feature",
-      icon: WalletConnectIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-4-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-4-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-4-description"),
+      filterKey: "perspective_1_option_4",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-rpc-importing"),
-      value: t("page-find-wallet-rpc-importing"),
-      filterKey: "rpc_importing",
-      category: "feature",
-      icon: RPCImportingIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-5-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-5-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-5-description"),
+      filterKey: "perspective_1_option_5",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-nft-support"),
-      value: t("page-find-wallet-nft-support"),
-      filterKey: "nft_support",
-      category: "feature",
-      icon: NFTSupportIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-6-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-6-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-6-description"),
+      filterKey: "perspective_1_option_6",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-connect-to-dapps"),
-      value: t("page-find-wallet-connect-to-dapps"),
-      filterKey: "connect_to_dapps",
-      category: "feature",
-      icon: ConnectDappsIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-7-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-7-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-7-description"),
+      filterKey: "perspective_1_option_7",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-staking"),
-      value: t("page-find-wallet-staking"),
-      filterKey: "staking",
-      category: "feature",
-      icon: StakingIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-8-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-8-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-8-description"),
+      filterKey: "perspective_1_option_8",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-swaps"),
-      value: t("page-find-wallet-swaps"),
-      filterKey: "swaps",
-      category: "feature",
-      icon: SwapIcon,
+      label: t("page-understanding-the-framework-perspective-1-option-9-title"),
+      value: t("page-understanding-the-framework-perspective-1-option-9-title"),
+      description: t("page-understanding-the-framework-perspective-1-option-9-description"),
+      filterKey: "perspective_1_option_9",
+      category: "1",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-layer-2"),
-      value: t("page-find-wallet-layer-2"),
-      filterKey: "layer_2",
-      category: "feature",
-      icon: Layer2Icon,
+      label: t("page-understanding-the-framework-perspective-2-option-1-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-1-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-1-description"),
+      filterKey: "perspective_2_option_1",
+      category: "2",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-gas-fee-customization"),
-      value: t("page-find-wallet-gas-fee-customization"),
-      filterKey: "gas_fee_customization",
-      category: "feature",
-      icon: GasFeeCustomizationIcon,
+      label: t("page-understanding-the-framework-perspective-2-option-2-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-2-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-2-description"),
+      filterKey: "perspective_2_option_2",
+      category: "2",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-ens-support"),
-      value: t("page-find-wallet-ens-support"),
-      filterKey: "ens_support",
-      category: "feature",
-      icon: ENSSupportIcon,
+      label: t("page-understanding-the-framework-perspective-2-option-3-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-3-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-3-description"),
+      filterKey: "perspective_2_option_3",
+      category: "2",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-token-importing"),
-      value: t("page-find-wallet-token-importing"),
-      filterKey: "erc_20_support",
-      category: "feature",
-      icon: ERC20SupportIcon,
+      label: t("page-understanding-the-framework-perspective-2-option-4-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-4-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-4-description"),
+      filterKey: "perspective_2_option_4",
+      category: "2",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-fee-optimization"),
-      value: t("page-find-wallet-fee-optimization"),
-      filterKey: "eip_1559_support",
-      category: "feature",
-      icon: EIP1559Icon,
+      label: t("page-understanding-the-framework-perspective-2-option-5-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-5-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-5-description"),
+      filterKey: "perspective_2_option_5",
+      category: "2",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-buy-crypto"),
-      value: t("page-find-wallet-buy-crypto"),
-      filterKey: "buy_crypto",
-      category: "trade_and_buy",
-      icon: BuyCryptoIcon,
+      label: t("page-understanding-the-framework-perspective-2-option-6-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-6-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-6-description"),
+      filterKey: "perspective_2_option_6",
+      category: "2",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-sell-for-fiat"),
-      value: t("page-find-wallet-sell-for-fiat"),
-      filterKey: "withdraw_crypto",
-      category: "trade_and_buy",
-      icon: WithdrawCryptoIcon,
+      label: t("page-understanding-the-framework-perspective-2-option-7-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-7-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-7-description"),
+      filterKey: "perspective_2_option_7",
+      category: "2",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-multisig"),
-      value: t("page-find-wallet-multisig"),
-      filterKey: "multisig",
-      category: "smart_contract",
-      icon: MultisigIcon,
+      label: t("page-understanding-the-framework-perspective-2-option-8-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-8-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-8-description"),
+      filterKey: "perspective_2_option_8",
+      category: "2",
+      icon: BulletPointIcon,
     },
     {
-      label: t("page-find-wallet-social-recovery"),
-      value: t("page-find-wallet-social-recovery"),
-      filterKey: "social_recovery",
-      category: "smart_contract",
-      icon: SocialRecoverIcon,
+      label: t("page-understanding-the-framework-perspective-2-option-9-title"),
+      value: t("page-understanding-the-framework-perspective-2-option-9-title"),
+      description: t("page-understanding-the-framework-perspective-2-option-9-description"),
+      filterKey: "perspective_2_option_9",
+      category: "2",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-1-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-1-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-1-description"),
+      filterKey: "perspective_3_option_1",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-2-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-2-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-2-description"),
+      filterKey: "perspective_3_option_2",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-3-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-3-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-3-description"),
+      filterKey: "perspective_3_option_3",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-4-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-4-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-4-description"),
+      filterKey: "perspective_3_option_4",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-5-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-5-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-5-description"),
+      filterKey: "perspective_3_option_5",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-6-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-6-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-6-description"),
+      filterKey: "perspective_3_option_6",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-7-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-7-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-7-description"),
+      filterKey: "perspective_3_option_7",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-8-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-8-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-8-description"),
+      filterKey: "perspective_3_option_8",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3-option-9-title"),
+      value: t("page-understanding-the-framework-perspective-3-option-9-title"),
+      description: t("page-understanding-the-framework-perspective-3-option-9-description"),
+      filterKey: "perspective_3_option_9",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-1-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-1-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-1-description"),
+      filterKey: "perspective_4_option_1",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-2-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-2-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-2-description"),
+      filterKey: "perspective_4_option_2",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-3-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-3-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-3-description"),
+      filterKey: "perspective_4_option_3",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-4-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-4-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-4-description"),
+      filterKey: "perspective_4_option_4",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-5-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-5-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-5-description"),
+      filterKey: "perspective_4_option_5",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-6-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-6-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-6-description"),
+      filterKey: "perspective_4_option_6",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-7-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-7-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-7-description"),
+      filterKey: "perspective_4_option_7",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-8-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-8-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-8-description"),
+      filterKey: "perspective_4_option_8",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4-option-9-title"),
+      value: t("page-understanding-the-framework-perspective-4-option-9-title"),
+      description: t("page-understanding-the-framework-perspective-4-option-9-description"),
+      filterKey: "perspective_4_option_9",
+      category: "4",
+      icon: BulletPointIcon,
+    },
+  ]
+
+  const perspectiveDropdownItems: Array<DropdownOption> = [
+    {
+      label: t("page-understanding-the-framework-perspective-1"),
+      value: t("page-understanding-the-framework-perspective-1"),
+      description: t("page-understanding-the-framework-perspective-1-description"),
+      filterKey: "1",
+      category: "1",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-2"),
+      value: t("page-understanding-the-framework-perspective-2"),
+      description: t("page-understanding-the-framework-perspective-2-description"),
+      filterKey: "2",
+      category: "2",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-3"),
+      value: t("page-understanding-the-framework-perspective-3"),
+      description: t("page-understanding-the-framework-perspective-3-description"),
+      filterKey: "3",
+      category: "3",
+      icon: BulletPointIcon,
+    },
+    {
+      label: t("page-understanding-the-framework-perspective-4"),
+      value: t("page-understanding-the-framework-perspective-4"),
+      description: t("page-understanding-the-framework-perspective-4-description"),
+      filterKey: "4",
+      category: "4",
+      icon: BulletPointIcon,
     },
   ]
 
@@ -179,13 +360,13 @@ export const useFrameworkTable = ({
     })
   )
   const [firstFeatureSelect, setFirstFeatureSelect] = useState(
-    featureDropdownItems[14]
+    perspectiveDropdownItems[0]
   )
   const [secondFeatureSelect, setSecondFeatureSelect] = useState(
-    featureDropdownItems[1]
+    perspectiveDropdownItems[1]
   )
   const [thirdFeatureSelect, setThirdFeatureSelect] = useState(
-    featureDropdownItems[9]
+    perspectiveDropdownItems[2]
   )
 
   const updateMoreInfo = (key) => {
@@ -202,83 +383,27 @@ export const useFrameworkTable = ({
 
   const filteredFrameworks = frameworkCardData.filter((framework) => {
     let showFramework = true
-    let mobileCheck = true
-    let desktopCheck = true
-    let browserCheck = true
-    let hardwareCheck = true
 
     const featureFilterKeys = featureDropdownItems.map((item) => item.filterKey)
-    const deviceFilters = Object.entries(filters).filter(
-      (item) => !featureFilterKeys.includes(item[0])
-    )
-    const mobileFiltersTrue = deviceFilters
-      .filter((item) => item[0] === "ios" || item[0] === "android")
-      .filter((item) => item[1])
-      .map((item) => item[0])
-    const desktopFiltersTrue = deviceFilters
-      .filter(
-        (item) =>
-          item[0] === "linux" || item[0] === "windows" || item[0] === "macOS"
-      )
-      .filter((item) => item[1])
-      .map((item) => item[0])
-    const browserFiltersTrue = deviceFilters
-      .filter((item) => item[0] === "firefox" || item[0] === "chromium")
-      .filter((item) => item[1])
-      .map((item) => item[0])
-    const hardwareFiltersTrue = deviceFilters
-      .filter((item) => item[0] === "hardware")
-      .filter((item) => item[1])
-      .map((item) => item[0])
 
-    for (let item of mobileFiltersTrue) {
-      if (framework[item]) {
-        mobileCheck = true
-        break
-      } else {
-        mobileCheck = false
-      }
+    // OR logic for filter
+
+    showFramework = featureFilterKeys.some(filter => {
+      return filters[filter] && filters[filter] === framework[filter];
+    });
+
+    // making sure if filters are reset all levels are shown
+
+    if (!featureFilterKeys.some(filter => filters[filter])) {
+      showFramework = true;
     }
-
-    for (let item of desktopFiltersTrue) {
-      if (framework[item]) {
-        desktopCheck = true
-        break
-      } else {
-        desktopCheck = false
-      }
-    }
-
-    for (let item of browserFiltersTrue) {
-      if (framework[item]) {
-        browserCheck = true
-        break
-      } else {
-        browserCheck = false
-      }
-    }
-
-    for (let item of hardwareFiltersTrue) {
-      if (framework[item]) {
-        hardwareCheck = true
-        break
-      } else {
-        hardwareCheck = false
-      }
-    }
-
-    featureFilterKeys.forEach((filter) => {
-      if (filters[filter] && showFramework === true) {
-        showFramework = filters[filter] === framework[filter]
-      }
-    })
 
     return (
-      mobileCheck && desktopCheck && browserCheck && hardwareCheck && showFramework
+      showFramework
     )
   })
 
-  const filteredFeatureDropdownItems = [...featureDropdownItems].filter(
+  const filteredFeatureDropdownItems = [...perspectiveDropdownItems].filter(
     (item) => {
       return (
         item.label !== firstFeatureSelect.label &&
@@ -324,6 +449,7 @@ export const useFrameworkTable = ({
 
   return {
     featureDropdownItems,
+    perspectiveDropdownItems,
     updateMoreInfo,
     filteredFrameworks,
     filteredFeatureDropdownItems,

@@ -4,6 +4,7 @@ import { FeedbackGlyphIcon } from "./FeedbackGlyphIcon"
 import { FeedbackThumbsUpIcon } from "./FeedbackThumbsUpIcon"
 import { HighlightDarkIcon } from "./HighlightDarkIcon"
 import { HighlightIcon } from "./HighlightIcon"
+import { BulletPointIcon } from "./BulletPointIcon"
 
 export {
   HomeIcon,
@@ -11,4 +12,5 @@ export {
   FeedbackThumbsUpIcon,
   HighlightDarkIcon,
   HighlightIcon,
+  BulletPointIcon,
 }
