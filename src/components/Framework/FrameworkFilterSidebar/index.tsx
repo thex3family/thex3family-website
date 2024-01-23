@@ -73,7 +73,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
   ...tabsProps
 }) => {
   const theme = useTheme()
-  const { t } = useTranslation("page-find-wallet")
+  const { t } = useTranslation("page-understand-the-framework")
 
   return (
     <Tabs
@@ -119,10 +119,10 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
           }}
         >
           <FilterTab eventName="show user personas">
-            {t("page-find-wallet-profile-filters")}
+            {t("page-understand-the-framework-profile-filters")}
           </FilterTab>
           <FilterTab eventName="show feature filters">
-            {t("page-find-wallet-feature-filters")} (
+            {t("page-understand-the-framework-perspective-filters")} (
             {Object.values(filters).reduce((acc, filter) => {
               if (filter) {
                 acc += 1
@@ -157,7 +157,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
         }}
       >
         <Icon as={BsArrowCounterclockwise} aria-hidden="true" fontSize="sm" />
-        {t("page-find-wallet-reset-filters").toUpperCase()}
+        {t("page-understand-the-framework-reset-filters").toUpperCase()}
       </Center>
       <TabPanels
         m={0}

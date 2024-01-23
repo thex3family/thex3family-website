@@ -23,6 +23,7 @@ import {
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
 import { useFrameworkFilterFeature } from "./useFrameworkFilterFeature"
+import Translation from "@/components/Translation"
 
 const FilterToggle = ({
   ariaLabel,
@@ -70,6 +71,18 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
       // Workaround to not having a dedicated prop to all items open by default
       defaultIndex={Object.keys(filterOptions).map((key) => +key)}
     >
+      <Box
+        as="span"
+        m={0}
+        fontWeight="normal"
+        fontSize="sm"
+        p="0 1.2rem"
+        lineHeight="1.3rem"
+        textAlign="center"
+        color="secondary"
+      >
+        <Translation id="page-understand-the-framework:page-understand-the-framework-filters-description" />
+      </Box>
       {filterOptions.map((filterOption, idx) => {
         return (
           <AccordionItem
@@ -135,28 +148,27 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                           onClick={
                             item.filterKey
                               ? () => {
-                                  trackCustomEvent({
-                                    eventCategory: "FrameworkFilterSidebar",
-                                    eventAction: `${filterOption.title}`,
-                                    eventName: `${item.filterKey} ${!restProps
-                                      .filters[item.filterKey!]}`,
-                                  })
-                                  updateFilterOption(item.filterKey)
-                                }
+                                trackCustomEvent({
+                                  eventCategory: "FrameworkFilterSidebar",
+                                  eventAction: `${filterOption.title}`,
+                                  eventName: `${item.filterKey} ${!restProps
+                                    .filters[item.filterKey!]}`,
+                                })
+                                updateFilterOption(item.filterKey)
+                              }
                               : () => {
-                                  setShowOptions(
-                                    idx,
-                                    itemIdx,
-                                    !item.showOptions
-                                  )
-                                  trackCustomEvent({
-                                    eventCategory: "FrameworkFilterSidebar",
-                                    eventAction: `${filterOption.title}`,
-                                    eventName: `Toggle ${
-                                      item.title
+                                setShowOptions(
+                                  idx,
+                                  itemIdx,
+                                  !item.showOptions
+                                )
+                                trackCustomEvent({
+                                  eventCategory: "FrameworkFilterSidebar",
+                                  eventAction: `${filterOption.title}`,
+                                  eventName: `Toggle ${item.title
                                     } ${!item.showOptions}`,
-                                  })
-                                }
+                                })
+                              }
                           }
                         >
                           <GridItem>
@@ -206,7 +218,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                                   if (filterOption.name === option.name) {
                                     if (
                                       !restProps.filters[
-                                        filterOption.filterKey!
+                                      filterOption.filterKey!
                                       ]
                                     ) {
                                       closeShowOptions = false
