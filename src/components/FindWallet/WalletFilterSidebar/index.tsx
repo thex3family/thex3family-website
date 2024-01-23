@@ -18,7 +18,7 @@ import WalletFilterPersonas from "@/components/FindWallet/WalletFilterSidebar/Wa
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import { FiltersType } from "@/pages/wallets/find-wallet"
+import { FiltersType } from "@/pages/understand-yourself/understand-the-framework"
 
 const FilterTab = ({
   eventName,

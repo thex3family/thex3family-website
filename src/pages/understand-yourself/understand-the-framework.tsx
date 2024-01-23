@@ -41,6 +41,10 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import walletData from "@/data/wallets/wallet-data"
 
+import frameworkData from "@/data/framework/framework-data"
+import FrameworkFilterSidebar from "@/components/Framework/FrameworkFilterSidebar"
+import FrameworkTable from "@/components/Framework/FrameworkTable"
+
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 import FindWalletHeroImage from "@/public/wallets/find-wallet-hero.png"
@@ -110,11 +114,10 @@ export const getStaticProps = (async ({ locale }) => {
 }) satisfies GetStaticProps<BasePageProps>
 
 const FindWalletPage = () => {
-  const randomizedWalletData = shuffle(walletData)
   const { pathname } = useRouter()
   const theme = useTheme()
   const { t } = useTranslation(["page-wallets-find-wallet", "common"])
-  const resetWalletFilter = useRef(() => {})
+  const resetFrameworkFilter = useRef(() => {})
   const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure()
   const [filters, setFilters] = useState(filterDefault)
   const [selectedPersona, setSelectedPersona] = useState(NaN)
@@ -254,13 +257,13 @@ const FindWalletPage = () => {
               <DrawerCloseButton />
             </DrawerHeader>
             <DrawerBody position="relative">
-              <WalletFilterSidebar
+              <FrameworkFilterSidebar
                 position="absolute"
                 inset={2}
                 overflow="auto"
                 {...{
                   filters,
-                  resetWalletFilter,
+                  resetFrameworkFilter,
                   updateFilterOption,
                   updateFilterOptions,
                   resetFilters,
@@ -276,12 +279,12 @@ const FindWalletPage = () => {
 
       <Flex px={{ base: 0, md: 8 }} pt={4} pb={6} gap={6} mt={6} id="start"> 
         <Show above="lg">
-          <WalletFilterSidebar
+          <FrameworkFilterSidebar
             maxW="330px"
             top={NAV_BAR_PX_HEIGHT}
             {...{
               filters,
-              resetWalletFilter,
+              resetFrameworkFilter,
               updateFilterOption,
               updateFilterOptions,
               resetFilters,
@@ -314,7 +317,7 @@ const FindWalletPage = () => {
             },
           }}
         >
-          <WalletTable filters={filters} walletData={randomizedWalletData} />
+          <FrameworkTable filters={filters} frameworkData={frameworkData} />
         </Box>
       </Flex>
     </Flex>
