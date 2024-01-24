@@ -502,7 +502,7 @@ const TutorialPage = ({
                         {tutorial.programType}
                       </Badge>
                       <Badge variant="secondary">
-                        <Translation id={getSkillTranslationId(tutorial.skill!)} />
+                        <Translation id={getSkillTranslationId(tutorial.skillLevel!)} />
                       </Badge>
                       </Flex>
                       <Text
