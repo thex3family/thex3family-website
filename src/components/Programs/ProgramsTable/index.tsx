@@ -403,28 +403,28 @@ const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, tr
           )}
         </Th>
         <Th>
-      <StyledSelect
-        className="react-select-container"
-        classNamePrefix="react-select"
-        options={[
-          {
-            label: t("page-programs:page-programs-sort-by"),
-            options: [
-              // Add an option for default sorting
-              { label: t("page-programs:page-programs-sort-default"), value: 'default' },
-              // Add an option for alphabetical sorting
-              { label: t("page-programs:page-programs-sort-alphabetical"), value: 'alphabetical' },
-            ],
-          },
-        ]}
-        placeholder={t("page-programs:page-programs-sort-by")}
-        onChange={(selectedOption) => {
-          updateSortOrder(selectedOption);
-        }}
-        defaultValue={{ label: t("page-programs:page-programs-sort-default"), value: 'default' }} // Set the default option
-        isSearchable={false}
-      />
-    </Th>
+          <StyledSelect
+            className="react-select-container"
+            classNamePrefix="react-select"
+            options={[
+              {
+                label: t("page-programs:page-programs-sort-by"),
+                options: [
+                  // Add an option for default sorting
+                  { label: t("page-programs:page-programs-sort-default"), value: 'default' },
+                  // Add an option for alphabetical sorting
+                  { label: t("page-programs:page-programs-sort-alphabetical"), value: 'alphabetical' },
+                ],
+              },
+            ]}
+            placeholder={t("page-programs:page-programs-sort-by")}
+            onChange={(selectedOption) => {
+              updateSortOrder(selectedOption);
+            }}
+            defaultValue={{ label: t("page-programs:page-programs-sort-default"), value: 'default' }} // Set the default option
+            isSearchable={false}
+          />
+        </Th>
         {/* <Th>
           <StyledSelect
             className="react-select-container"
@@ -532,21 +532,10 @@ const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, tr
                           <Emoji text=":wave:" fontSize="sm" me={2} />
                           {tutorial.author}
                         </Flex> */}
-                    <Flex align="center" mb={2}>
-                      <Emoji text=":star:" fontSize="sm" me={1} />
-                      <Emoji text=":star:" fontSize="sm" me={1} />
-                      <Emoji text=":star:" fontSize="sm" me={1} />
-                      <Emoji text=":star:" fontSize="sm" me={1} />
-                      <Emoji text=":star:" fontSize="sm" me={1} />
-                    </Flex>
                     {/* <Flex align="center" mb={1}>
                           <Emoji text=":heart:" fontSize="sm" me={2} />
                           10 Likes
                         </Flex> */}
-                    <Flex align="center" mb={1}>
-                      <Emoji text=":globe_showing_americas:" fontSize="sm" me={2} />
-                      {tutorial.location}
-                    </Flex>
                     {/* {tutorial.timeToRead && (
                           <Flex align="center" mb={1}>
                             <Emoji text=":stopwatch:" fontSize="sm" me={2} />
@@ -559,6 +548,25 @@ const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, tr
                             {published(locale!, tutorial.published ?? "")}
                           </Flex>
                         )} */}
+                    <Flex align="center" mb={2}>
+                      <Emoji
+                        text={
+                          tutorial.location === 'virtual' ? ":globe_with_meridians:" :
+                            tutorial.location === 'physical' ? ":round_pushpin:" :
+                              ":eyes:" // Default case for all other types of locations
+                        }
+                        fontSize="sm"
+                        me={2}
+                      />
+                      {tutorial.location}
+                    </Flex>
+                    <Flex align="center" mb={0}>
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                    </Flex>
                   </Flex>
                   <Flex flexWrap="wrap" w="full">
                     <TutorialTags tags={tutorial.tags?.slice(0, 2) ?? []} />
