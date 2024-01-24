@@ -166,103 +166,127 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                 </Heading>
                 <AccordionPanel as={List} p={0} m={0}>
 
-                {filterOption.title === "Perspectives" ? (
-                  <StyledSelect
+                  {filterOption.title === "Perspectives" ? (
+                    <StyledSelect
                     className="react-select-container"
                     classNamePrefix="react-select"
                     mt={6}
                     options={filterOption.items.map(item => ({
                       label: item.title,
-                      value: item.filterKey // Assuming you want to use the title as the value as well
+                      value: item.filterKey
                     }))}
-                    onChange={(selectedOption) => {
-                      // selectedOption now contains the filterKey as its value
-                      const filterKey = selectedOption.value;
+                    onChange={(selectedOptions) => {
+                      // When all selections are cleared, selectedOptions is null or an empty array
+                      if (!selectedOptions || selectedOptions.length === 0) {
+                        filterOption.items.forEach(item => {
+                          if (restProps.filters[item.filterKey]) {
+                            trackCustomEvent({
+                              eventCategory: "ProgramFilterSidebar",
+                              eventAction: `${filterOption.title} deselected`,
+                              eventName: item.filterKey,
+                            });
+                            updateFilterOption(item.filterKey);
+                          }
+                        });
+                      } else {
+                        // selectedOptions contains an array of selected option objects
+                        const filterKeys = selectedOptions.map(option => option.value);
                   
-                      trackCustomEvent({
-                        eventCategory: "ProgramFilterSidebar",
-                        eventAction: `${filterOption.title} selected`,
-                        eventName: `${filterKey} ${!restProps.filters[filterKey]}`,
-                      });
+                        filterKeys.forEach(filterKey => {
+                          trackCustomEvent({
+                            eventCategory: "ProgramFilterSidebar",
+                            eventAction: `${filterOption.title} selected`,
+                            eventName: `${filterKey} ${!restProps.filters[filterKey]}`,
+                          });
                   
-                      updateFilterOption(filterKey);
+                          updateFilterOption(filterKey);
+                        });
+                      }
                     }}
-                    placeholder="Select A Perspective"
+                    value={filterOption.items
+                      .filter(item => restProps.filters[item.filterKey])
+                      .map(item => ({
+                        label: item.title,
+                        value: item.filterKey
+                      }))
+                    }
+                    placeholder="Select Perspectives"
+                    isMulti
                     isSearchable={false}
                   />
-                  ) : 
-                  (filterOption.items.map((item, itemIdx) => {
-                    const LabelIcon = item.icon
-                    return (
-                      <Box
-                        key={itemIdx}
-                        borderBottom="1px"
-                        borderColor="lightBorder"
-                        pt="1.16rem"
-                        px={3}
-                        pb={3}
-                        _last={{ border: "none" }}
-                      >
-                        <SimpleGrid
-                          key={uniqueId("frameworkFilterSidebarItemPanel")}
-                          templateColumns="28px auto 34px"
-                          alignItems="center"
-                          columnGap={2.5}
-                          cursor="pointer"
-                          onClick={
-                            item.filterKey
-                              ? () => {
-                                trackCustomEvent({
-                                  eventCategory: "FrameworkFilterSidebar",
-                                  eventAction: `${filterOption.title}`,
-                                  eventName: `${item.filterKey} ${!restProps
-                                    .filters[item.filterKey!]}`,
-                                })
-                                updateFilterOption(item.filterKey)
-                              }
-                              : () => {
-                                setShowOptions(
-                                  idx,
-                                  itemIdx,
-                                  !item.showOptions
-                                )
-                                trackCustomEvent({
-                                  eventCategory: "FrameworkFilterSidebar",
-                                  eventAction: `${filterOption.title}`,
-                                  eventName: `Toggle ${item.title
-                                    } ${!item.showOptions}`,
-                                })
-                              }
-                          }
+                  ) :
+                    (filterOption.items.map((item, itemIdx) => {
+                      const LabelIcon = item.icon
+                      return (
+                        <Box
+                          key={itemIdx}
+                          borderBottom="1px"
+                          borderColor="lightBorder"
+                          pt="1.16rem"
+                          px={3}
+                          pb={3}
+                          _last={{ border: "none" }}
                         >
-                          <GridItem>
-                            <LabelIcon
-                              boxSize={7}
-                              mt={0.5}
-                              color="text"
-                              aria-hidden
-                            />
-                          </GridItem>
-                          <GridItem as="span" lineHeight="1.1rem">
-                            {item.title}
-                          </GridItem>
-                          <GridItem>
-                            {item.filterKey && (
-                              <FilterToggle
-                                ariaLabel={item.title}
-                                conditionItem={
-                                  restProps.filters[item.filterKey]
+                          <SimpleGrid
+                            key={uniqueId("frameworkFilterSidebarItemPanel")}
+                            templateColumns="28px auto 34px"
+                            alignItems="center"
+                            columnGap={2.5}
+                            cursor="pointer"
+                            onClick={
+                              item.filterKey
+                                ? () => {
+                                  trackCustomEvent({
+                                    eventCategory: "FrameworkFilterSidebar",
+                                    eventAction: `${filterOption.title}`,
+                                    eventName: `${item.filterKey} ${!restProps
+                                      .filters[item.filterKey!]}`,
+                                  })
+                                  updateFilterOption(item.filterKey)
                                 }
+                                : () => {
+                                  setShowOptions(
+                                    idx,
+                                    itemIdx,
+                                    !item.showOptions
+                                  )
+                                  trackCustomEvent({
+                                    eventCategory: "FrameworkFilterSidebar",
+                                    eventAction: `${filterOption.title}`,
+                                    eventName: `Toggle ${item.title
+                                      } ${!item.showOptions}`,
+                                  })
+                                }
+                            }
+                          >
+                            <GridItem>
+                              <LabelIcon
+                                boxSize={7}
+                                mt={0.5}
+                                color="text"
+                                aria-hidden
                               />
-                            )}
-                            {item.showOptions !== undefined && (
-                              <FilterToggle
-                                ariaLabel={item.title}
-                                conditionItem={item.showOptions}
-                              />
-                            )}
-                          </GridItem>
-                          {/* <GridItem
+                            </GridItem>
+                            <GridItem as="span" lineHeight="1.1rem">
+                              {item.title}
+                            </GridItem>
+                            <GridItem>
+                              {item.filterKey && (
+                                <FilterToggle
+                                  ariaLabel={item.title}
+                                  conditionItem={
+                                    restProps.filters[item.filterKey]
+                                  }
+                                />
+                              )}
+                              {item.showOptions !== undefined && (
+                                <FilterToggle
+                                  ariaLabel={item.title}
+                                  conditionItem={item.showOptions}
+                                />
+                              )}
+                            </GridItem>
+                            {/* <GridItem
                             as="span"
                             color="text200"
                             fontSize="0.9rem"
@@ -271,71 +295,71 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                           >
                             {item.description}
                           </GridItem> */}
-                        </SimpleGrid>
-                        {item.options.length > 0 && item.showOptions && (
-                          <HStack mt={3.5} spacing={2}>
-                            {item.options.map((option, optionIdx) => {
-                              const handleClick = () => {
-                                let closeShowOptions = true
+                          </SimpleGrid>
+                          {item.options.length > 0 && item.showOptions && (
+                            <HStack mt={3.5} spacing={2}>
+                              {item.options.map((option, optionIdx) => {
+                                const handleClick = () => {
+                                  let closeShowOptions = true
 
-                                for (let filterOption of item.options) {
-                                  if (filterOption.name === option.name) {
-                                    if (
-                                      !restProps.filters[
-                                      filterOption.filterKey!
-                                      ]
-                                    ) {
-                                      closeShowOptions = false
-                                      break
-                                    }
-                                  } else {
-                                    if (
-                                      restProps.filters[filterOption.filterKey!]
-                                    ) {
-                                      closeShowOptions = false
-                                      break
+                                  for (let filterOption of item.options) {
+                                    if (filterOption.name === option.name) {
+                                      if (
+                                        !restProps.filters[
+                                        filterOption.filterKey!
+                                        ]
+                                      ) {
+                                        closeShowOptions = false
+                                        break
+                                      }
+                                    } else {
+                                      if (
+                                        restProps.filters[filterOption.filterKey!]
+                                      ) {
+                                        closeShowOptions = false
+                                        break
+                                      }
                                     }
                                   }
-                                }
 
-                                if (closeShowOptions) {
-                                  setShowOptions(
-                                    idx,
-                                    itemIdx,
-                                    !item.showOptions
-                                  )
-                                }
-
-                                trackCustomEvent({
-                                  eventCategory: "FrameworkFilterSidebar",
-                                  eventAction: `${filterOption.title}`,
-                                  eventName: `${option.filterKey} ${!restProps
-                                    .filters[option.filterKey!]}`,
-                                })
-                                updateFilterOption(option.filterKey)
-                              }
-                              return (
-                                <Checkbox
-                                  key={optionIdx}
-                                  aria-label={option.name}
-                                  isChecked={
-                                    restProps.filters[option.filterKey!]
+                                  if (closeShowOptions) {
+                                    setShowOptions(
+                                      idx,
+                                      itemIdx,
+                                      !item.showOptions
+                                    )
                                   }
-                                  width="full"
-                                  onChange={handleClick}
-                                >
-                                  <Text as="p" aria-hidden="true">
-                                    {option.name}
-                                  </Text>
-                                </Checkbox>
-                              )
-                            })}
-                          </HStack>
-                        )}
-                      </Box>
-                   );
-                  })
-                )}
+
+                                  trackCustomEvent({
+                                    eventCategory: "FrameworkFilterSidebar",
+                                    eventAction: `${filterOption.title}`,
+                                    eventName: `${option.filterKey} ${!restProps
+                                      .filters[option.filterKey!]}`,
+                                  })
+                                  updateFilterOption(option.filterKey)
+                                }
+                                return (
+                                  <Checkbox
+                                    key={optionIdx}
+                                    aria-label={option.name}
+                                    isChecked={
+                                      restProps.filters[option.filterKey!]
+                                    }
+                                    width="full"
+                                    onChange={handleClick}
+                                  >
+                                    <Text as="p" aria-hidden="true">
+                                      {option.name}
+                                    </Text>
+                                  </Checkbox>
+                                )
+                              })}
+                            </HStack>
+                          )}
+                        </Box>
+                      );
+                    })
+                    )}
                 </AccordionPanel>
               </>
             )}
