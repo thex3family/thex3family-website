@@ -1,15 +1,80 @@
 [
   {
+    "url": "https://toolbox.co-x3.com/product/gamify-life",
+    "title": "Gamify Your Life",
+    "description": "Build the motivation and focus to get things done by making work fun. Leaderboards, to-do lists, daily quests, and more.",
+    "author": "Conrad Lin",
+    "authorURL": "https://www.conradlin.com",
+    "tags": ["gamification", "notion"],
+    "programType": "tool",
+    "frameworkLevel": "LEVEL_3",
+    "lang": "en",
+    "location": "virtual",
+    "publishDate": ""
+  },
+  {
+    "url": "https://www.makework.fun",
+    "title": "Make Work Fun App",
+    "description": "Gamify your productivity tools and unlock multiplayer for personal development.",
+    "author": "Conrad Lin",
+    "authorURL": "https://www.conradlin.com",
+    "tags": ["gamification", "web app"],
+    "programType": "tool",
+    "frameworkLevel": "LEVEL_3",
+    "lang": "en",
+    "location": "virtual",
+    "publishDate": ""
+  },
+  {
+    "url": "https://www.makework.fun/parties",
+    "title": "Party Quests",
+    "description": "Quest together with comrades and compete together to slay your dragons in the Make Work Fun app.",
+    "author": "Conrad Lin",
+    "authorURL": "https://www.conradlin.com",
+    "tags": ["gamification", "multiplayer"],
+    "programType": "tool",
+    "frameworkLevel": "LEVEL_3",
+    "lang": "en",
+    "location": "virtual",
+    "publishDate": ""
+  },
+  {
+    "url": "https://www.makework.fun/leaderboard",
+    "title": "Global Leaderboard",
+    "description": "You don’t have to adventure alone. Get motivated by how your comrades are improving themselves everyday.",
+    "author": "Conrad Lin",
+    "authorURL": "https://www.conradlin.com",
+    "tags": ["gamification", "multiplayer"],
+    "programType": "tool",
+    "frameworkLevel": "LEVEL_3",
+    "lang": "en",
+    "location": "virtual",
+    "publishDate": ""
+  },
+  {
+    "url": "",
+    "title": "Make Pawgress",
+    "description": "Help your furry friends level up and track their wins. Keep your data about your pets organized and in one place - while making it fun.",
+    "author": "Conrad Lin",
+    "authorURL": "https://www.conradlin.com",
+    "tags": ["gamification", "notion"],
+    "programType": "tool",
+    "frameworkLevel": "LEVEL_3",
+    "lang": "en",
+    "location": "virtual",
+    "publishDate": ""
+  },
+  {
     "url": "https://ourfamilywithoutborders.com",
     "title": "Family Without Borders",
     "description": "Grow, learn, live with amazing people around the world. We value having a space where we can do our best work and progress together on our growth journey. You are the average of the 5 people you spend the most time with. Who do you want to be?",
     "author": "Conrad Lin",
     "authorURL": "https://www.conradlin.com",
     "tags": ["co-living"],
-    "timeToRead": "100",
     "programType": "community",
     "frameworkLevel": "LEVEL_5",
     "lang": "en",
+    "location": "physical",
     "publishDate": "10/01/2019"
   }
 ]

@@ -140,6 +140,7 @@ export interface TutorialFrontmatter extends SharedFrontmatter {
   source?: string
   sourceUrl?: string
   programType: string
+  location: string
   frameworkLevel: string
   published: string
   address?: string

@@ -28,6 +28,7 @@ import { trackCustomEvent } from "@/lib/utils/matomo"
 
 import { useFrameworkFilterFeature } from "./useProgramsFilterFeature"
 import Translation from "@/components/Translation"
+import { StyledSelect } from "../../ProgramsTable"
 
 const FilterToggle = ({
   ariaLabel,
@@ -103,8 +104,8 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
       spacing={4}
       alignItems="normal"
       p={{ base: 4, sm: 0 }}
-      // Workaround to not having a dedicated prop to all items open by default
-      // defaultIndex={Object.keys(filterOptions).map((key) => +key)}
+    // Workaround to not having a dedicated prop to all items open by default
+    // defaultIndex={Object.keys(filterOptions).map((key) => +key)}
     >
       <Box
         as="span"
@@ -164,7 +165,33 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                   </AccordionButton>
                 </Heading>
                 <AccordionPanel as={List} p={0} m={0}>
-                  {filterOption.items.map((item, itemIdx) => {
+
+                {filterOption.title === "Perspectives" ? (
+                  <StyledSelect
+                    className="react-select-container"
+                    classNamePrefix="react-select"
+                    mt={6}
+                    options={filterOption.items.map(item => ({
+                      label: item.title,
+                      value: item.filterKey // Assuming you want to use the title as the value as well
+                    }))}
+                    onChange={(selectedOption) => {
+                      // selectedOption now contains the filterKey as its value
+                      const filterKey = selectedOption.value;
+                  
+                      trackCustomEvent({
+                        eventCategory: "ProgramFilterSidebar",
+                        eventAction: `${filterOption.title} selected`,
+                        eventName: `${filterKey} ${!restProps.filters[filterKey]}`,
+                      });
+                  
+                      updateFilterOption(filterKey);
+                    }}
+                    placeholder="Select A Perspective"
+                    isSearchable={false}
+                  />
+                  ) : 
+                  (filterOption.items.map((item, itemIdx) => {
                     const LabelIcon = item.icon
                     return (
                       <Box
@@ -306,8 +333,9 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                           </HStack>
                         )}
                       </Box>
-                    )
-                  })}
+                   );
+                  })
+                )}
                 </AccordionPanel>
               </>
             )}

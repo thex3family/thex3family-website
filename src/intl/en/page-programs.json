@@ -1,4 +1,9 @@
 {
+  "page-programs-showing-all": "Showing All Programs",
+  "page-programs-showing": "Showing",
+  "page-programs-programs": "Programs",
+  "page-programs-sort-by": "Sort By...",
+
   "comp-programs-metadata-minute-read": "minute read",
   "comp-programs-metadata-tip-author": "Tip author",
   "page-programs-read-time": "min",
@@ -28,7 +33,7 @@
   "page-programs-pull-request-button": "Pull Request",
   "page-programs-pull-request-description": "Please make changes on your local version and follow the naming structure for submission.",
 
-  "page-programs-filters-description": "Focus On The Relevant Programs You Need.",
+  "page-programs-filters-description": "What Are You Experiencing?",
   
   "page-programs-profile-1-title": "Lack Of Motivation",
   "page-programs-profile-1-description": "I can't seem to concentrate on the things I need to do.",

@@ -6,11 +6,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { FaGithub } from "react-icons/fa"
 import {
   Badge,
-  Box,
   chakra,
+  forwardRef,
+  Box,
   Flex,
   Hide,
-  forwardRef,
   Grid,
   Heading,
   useDisclosure,
@@ -100,6 +100,7 @@ export interface IExternalTutorial {
   authorURL: string
   tags: Array<string>
   programType: string
+  location: string
   frameworkLevel?: Skill
   timeToRead?: string
   lang: string
@@ -113,6 +114,7 @@ export interface ITutorial {
   author: string
   tags?: Array<string>
   programType: string
+  location: string
   frameworkLevel?: Skill
   timeToRead?: number | null
   published?: string | null
@@ -414,6 +416,7 @@ const TutorialPage = ({
       <Flex px={{ base: 0, md: 8 }} pt={4} pb={6} gap={6} mt={6} id="start">
         <Show above="lg">
           <FrameworkFilterSidebar
+            w="full"
             maxW="330px"
             top={SECONDARY_NAV_BAR_PX_HEIGHT}
             allTags={allTags}
@@ -456,125 +459,15 @@ const TutorialPage = ({
             },
           }}
         >
-          {filteredTutorials.length !== 0 && (
-            <CardGrid>
-              {filteredTutorials.map((tutorial) => {
-                return (
-                  <Flex
-                    as={BaseLink}
-                    textDecoration="none"
-                    flexDirection="column"
-                    justifyContent="space-between"
-                    fontWeight="normal"
-                    color="text"
-                    // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
-                    border="1px solid"
-                    padding={8}
-                    w="full"
-                    _hover={{
-                      textDecoration: "none",
-                      borderRadius: "base",
-                      boxShadow: "0 0 1px var(--x3-colors-primary-base)",
-                      bg: "tableBackgroundHover",
-                    }}
-                    key={tutorial.to}
-                    to={tutorial.to ?? undefined}
-                    hideArrow
-                  >
-                    <Flex
-                      justifyContent="space-between"
-                      alignItems="flex-start"
-                      flexDirection={{ base: "column" }}
-                      gap={6}
-                    >
-                      <Flex gap={2}>
-                      <Badge variant="secondary">
-                        {tutorial.programType}
-                      </Badge>
-                      <Badge variant="secondary">
-                        <Translation id={getSkillTranslationId(tutorial.frameworkLevel!)} />
-                      </Badge>
-                      </Flex>
-                      <Text
-                        noOfLines={2}
-                        color="text"
-                        fontWeight="semibold"
-                        fontSize="2xl"
-                      >
-                        {tutorial.title}
-                      </Text>
-                    </Flex>
-                    <Text noOfLines={3} color="text200">{tutorial.description}</Text>
-                    <div>
-                      <Flex direction="column" align="start" fontSize="sm" color="text200" textTransform="uppercase" mb={6}>
-                        <Flex align="center" mb={1}>
-                          <Emoji text=":writing_hand:" fontSize="sm" me={2} />
-                          {tutorial.author}
-                        </Flex>
-                        {published(locale!, tutorial.published ?? "") && (
-                          <Flex align="center" mb={1}>
-                            <Emoji text=":calendar:" fontSize="sm" me={2} />
-                            {published(locale!, tutorial.published ?? "")}
-                          </Flex>
-                        )}
-                        {tutorial.timeToRead && (
-                          <Flex align="center" mb={1}>
-                            <Emoji text=":stopwatch:" fontSize="sm" me={2} />
-                            {tutorial.timeToRead} <Translation id="page-programs:page-programs-read-time" />
-                          </Flex>
-                        )}
-                      </Flex>
-                      <Flex flexWrap="wrap" w="full">
-                        <TutorialTags tags={tutorial.tags?.slice(0, 2) ?? []} />
-                      </Flex>
-                    </div>
-                  </Flex>
-                )
-              })}
-              <Flex
-                textDecoration="none"
-                flexDirection="column"
-                justifyContent="center"
-                fontWeight="normal"
-                color="text"
-                // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
-                border="1px solid"
-                padding={8}
-                w="full"
-                _hover={{
-                  textDecoration: "none",
-                  borderRadius: "base",
-                  boxShadow: "0 0 1px var(--x3-colors-primary-base)",
-                  bg: "tableBackgroundHover",
-                }}
-              >
-                <Button
-                  variant="outline"
-                  color="text"
-                  borderColor="text"
-                  _hover={{
-                    color: "primary.base",
-                    borderColor: "primary.base",
-                    boxShadow: cardBoxShadow,
-                  }}
-                  _active={{
-                    bg: "secondaryButtonBackgroundActive",
-                  }}
-                  py={2}
-                  px={3}
-                  onClick={() => {
-                    setModalOpen(true)
-                    trackCustomEvent({
-                      eventCategory: "tutorials tags",
-                      eventAction: "click",
-                      eventName: "submit",
-                    })
-                  }}
-                >
-                  <Translation id="page-programs:page-programs-submit-button" />
-                </Button>
-              </Flex>
-            </CardGrid>)}
+
+          <FrameworkTable
+            filters={filters}
+            frameworkData={frameworkData}
+            filteredTutorials={filteredTutorials}
+            setModalOpen={setModalOpen}
+            trackCustomEvent={trackCustomEvent}
+            locale={locale}
+          />
 
           {filteredTutorials.length === 0 && (
             <Box
@@ -625,7 +518,6 @@ const TutorialPage = ({
               </Box>
             </Box>
           )}
-          {/* <FrameworkTable filters={filters} frameworkData={frameworkData} /> */}
         </Box>
       </Flex>
       <Box>
