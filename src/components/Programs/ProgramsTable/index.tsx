@@ -35,8 +35,8 @@ import { getLocaleTimestamp, INVALID_DATETIME } from "@/lib/utils/time"
 
 import { ChildOnlyProp, Lang } from "@/lib/types"
 
-import { useFrameworkTable } from "@/components/Framework/FrameworkTable/useFrameworkTable"
-import { FrameworkMoreInfo } from "@/components/Framework/FrameworkTable/FrameworkMoreInfo"
+import { useFrameworkTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
+import { FrameworkMoreInfo } from "@/components/Programs/ProgramsTable/ProgramsMoreInfo"
 import {
   GreenCheckProductGlyphIcon,
   WarningProductGlyphIcon,
@@ -335,14 +335,13 @@ const thirdCol = "thirdCol"
 
 export interface FrameworkTableProps {
   filters: Record<string, boolean>
-  frameworkData: FrameworkData[]
-  filteredTutorials: ITutorial[] // Add the type definition for Tutorial if not already defined
+  frameworkData: ITutorial[]
   setModalOpen: (open: boolean) => void
   trackCustomEvent: typeof trackCustomEvent;
   locale: string
 }
 
-const FrameworkTable = ({ filters, frameworkData, filteredTutorials, setModalOpen, trackCustomEvent, locale }: FrameworkTableProps) => {
+const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, trackCustomEvent, locale }) => {
   const { t } = useTranslation("page-programs")
   const {
     featureDropdownItems,
@@ -352,12 +351,15 @@ const FrameworkTable = ({ filters, frameworkData, filteredTutorials, setModalOpe
     setSecondFeatureSelect,
     setThirdFeatureSelect,
     updateDropdown,
-    updateMoreInfo,
     firstFeatureSelect,
     secondFeatureSelect,
     thirdFeatureSelect,
-    frameworkCardData,
-  } = useFrameworkTable({ filters, t, frameworkData })
+  } = useFrameworkTable({
+    filters,
+    selectedTags,
+    frameworkData,
+    t: t,
+  });
 
   const CardGrid = ({ children }: ChildOnlyProp) => (
     <Grid
@@ -384,16 +386,16 @@ const FrameworkTable = ({ filters, frameworkData, filteredTutorials, setModalOpe
     <Container>
       <FrameworkContentHeader>
         <Th>
-          {filteredFrameworks.length === frameworkCardData.length ? (
+          {filteredFrameworks.length === frameworkData.length ? (
             <Text as="span">
               {t("page-programs:page-programs-showing-all")} (
-              <strong>{frameworkCardData.length}</strong>)
+              <strong>{frameworkData.length}</strong>)
             </Text>
           ) : (
             <Text as="span">
               {t("page-programs:page-programs-showing")}{" "}
               <strong>
-                {filteredFrameworks.length} / {frameworkCardData.length}
+                {filteredFrameworks.length} / {frameworkData.length}
               </strong>{" "}
               {t("page-programs:page-programs-programs")}
             </Text>
@@ -454,9 +456,9 @@ const FrameworkTable = ({ filters, frameworkData, filteredTutorials, setModalOpe
           />
         </Th> */}
       </FrameworkContentHeader>
-      {frameworkData.length !== 0 && (
+      {filteredFrameworks.length !== 0 && (
         <CardGrid>
-          {frameworkData.map((tutorial) => {
+          {filteredFrameworks.map((tutorial) => {
             const comingSoon = !!tutorial.to;
             return (
               <Flex
