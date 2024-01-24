@@ -24,7 +24,7 @@ import { getLocaleTimestamp } from "@/lib/utils/time"
 const socialLinks = [
   {
     icon: FaCircle,
-    to: "https://our.co-x3.com/",
+    to: "https://our.x3.family/",
     ariaLabel: "Community",
     color: "#7289da",
   },

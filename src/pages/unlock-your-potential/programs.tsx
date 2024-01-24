@@ -59,7 +59,7 @@ import { useRtlFlip } from "@/hooks/useRtlFlip"
 
 import BannerNotification from "@/components/BannerNotification"
 import MainHero from "@/components/MainHero"
-import understand_the_framework from "@/public/understand_the_framework.png"
+import tools from "@/public/tools.png"
 
 import frameworkData from "@/data/framework/framework-data"
 import FrameworkFilterSidebar from "@/components/Programs/ProgramsFilterSidebar"
@@ -224,8 +224,8 @@ const TutorialPage = ({
       .split('.')
       .filter(sentence => sentence.trim() !== '')
       .map(sentence => `${sentence.trim()}.`),
-    imageSrc: understand_the_framework.src, // Assuming understand_yourself is an imported image module
-    imageAlt: t("common:understand-the-framework-image-alt"),
+    imageSrc: tools.src, // Assuming understand_yourself is an imported image module
+    imageAlt: t("common:tools-image-alt"),
   };
 
 
@@ -239,7 +239,7 @@ const TutorialPage = ({
       />
 
       <BannerNotification shouldShow={true}>
-        {t("common:understand-the-framework-alert")}
+        {t("common:programs-alert")}
       </BannerNotification>
       <MainHero {...heroProps} />
 
