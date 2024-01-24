@@ -213,6 +213,7 @@ const TutorialPage = ({
   const resetFilters = () => {
     setSelectedPersona(NaN)
     setFilters(filterDefault)
+    setSelectedTags([])
   }
 
   const heroProps = {
@@ -444,9 +445,7 @@ const TutorialPage = ({
           <FrameworkTable
             filters={filters}
             frameworkData={filteredTutorialsByLang}
-            programData={filteredTutorialsByLang}
             selectedTags={selectedTags}
-            filteredTutorials={filteredTutorials}
             setModalOpen={setModalOpen}
             trackCustomEvent={trackCustomEvent}
             locale={locale}
