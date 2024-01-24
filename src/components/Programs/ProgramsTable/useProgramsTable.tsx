@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { Icon } from "@chakra-ui/react"
 
-import { FrameworkTableProps } from "@/components/Framework/FrameworkTable"
+import { FrameworkTableProps } from "@/components/Programs/ProgramsTable"
 import {
   BulletPointIcon
 } from "@/components/icons"
@@ -21,45 +21,48 @@ export type ColumnClassName = "firstCol" | "secondCol" | "thirdCol"
 
 type UseFrameworkTableProps = Pick<FrameworkTableProps, "filters" | "frameworkData"> & {
   t: (x: string) => string
+  selectedTags: string[]
 }
 
 export const useFrameworkTable = ({
   filters,
+  selectedTags,
   t,
   frameworkData,
 }: UseFrameworkTableProps) => {
+
   const featureDropdownItems: Array<DropdownOption> = [
     // Repeat the pattern for subsequent items
     ...Array.from({ length: 9 }, (_, index) => ({
       label: t(`page-understand-the-framework:page-understand-the-framework-level-${index + 1}-title`),
       value: t(`page-understand-the-framework:page-understand-the-framework-level-${index + 1}-title`),
       description: t(`page-understand-the-framework:page-understand-the-framework-level-${index + 1}-description`),
-      filterKey: `perspective_1_option_${index + 1}`,
-      category: "1",
+      filterKey: `LEVEL_${index + 1}`,
+      category: "frameworkLevel",
       icon: BulletPointIcon,
     })),
     {
       label: t("common:knowledge-title"),
       value: t("common:knowledge-title"),
       description: t("common:knowledge-description"),
-      filterKey: "perspective_2_option_1",
-      category: "2",
+      filterKey: "knowledge",
+      category: "programType",
       icon: BulletPointIcon,
     },
     {
       label: t("common:tools-title"),
       value: t("common:tools-title"),
       description: t("common:tools-description"),
-      filterKey: "perspective_2_option_2",
-      category: "2",
+      filterKey: "tool",
+      category: "programType",
       icon: BulletPointIcon,
     },
     {
       label: t("common:community-title"),
       value: t("common:community-title"),
       description: t("common:community-description"),
-      filterKey: "perspective_2_option_3",
-      category: "2",
+      filterKey: "community",
+      category: "programType",
       icon: BulletPointIcon,
     },
   ]
@@ -69,25 +72,70 @@ export const useFrameworkTable = ({
       label: t("page-understand-the-framework:page-understand-the-framework-perspective-filters"),
       value: t("page-understand-the-framework:page-understand-the-framework-perspective-filters"),
       description: t("common:better-life-framework-description"),
-      filterKey: "1",
-      category: "1",
+      filterKey: "frameworkLevel",
+      category: "frameworkLevel",
       icon: BulletPointIcon,
     },
     {
       label: t("common:unlock-your-potential-title"),
       value: t("common:unlock-your-potential-title"),
       description: t("common:unlock-your-potential-description"),
-      filterKey: "2",
-      category: "2",
+      filterKey: "programType",
+      category: "programType",
       icon: BulletPointIcon,
     },
   ]
+  
+  const filteredFrameworks = useMemo(() => {
+  
+    return frameworkData.filter((framework) => {
+      console.log('Starting filter operation');
+      console.log('Current filters:', filters);
+      console.log('Selected tags:', selectedTags);
+      console.log('Evaluating framework:', framework.title);
+  
+      // Check if any feature filter is applied
+      const isAnyFeatureFilterApplied = featureDropdownItems.some(item => filters[item.filterKey]);
+      console.log('Any feature filter applied:', isAnyFeatureFilterApplied);
+  
+      // Check if any tag is selected
+      const isAnyTagSelected = selectedTags?.length > 0;
+      console.log('Any tag selected:', isAnyTagSelected);
+  
+      // If no filters are applied, all frameworks should be shown
+      if (!isAnyFeatureFilterApplied && !isAnyTagSelected) {
+        console.log('No filters applied, showing all frameworks.');
+        return true;
+      }
+  
+      // Check for feature filter match
+      const featureMatch = isAnyFeatureFilterApplied ? featureDropdownItems.some(dropdownItem => {
+        const filterKey = dropdownItem.filterKey;
+        const filterIsActive = filters[filterKey];
+        const frameworkCategoryMatchesFilter = framework[dropdownItem.category] === filterKey;
+        const isMatch = filterIsActive && frameworkCategoryMatchesFilter;
+        console.log(`Feature filter - Key: ${filterKey}, Framework Category: ${framework[dropdownItem.category]}, Filter Active: ${filterIsActive}, Match: ${isMatch}`);
+        return isMatch;
+      }) : true; // If no feature filters are applied, default to true
+      console.log('Feature filter match:', featureMatch);
+  
+      // Check for tag filter match
+      const tagsMatch = isAnyTagSelected ? selectedTags.every(tag => {
+        const doesIncludeTag = framework.tags?.includes(tag);
+        console.log(`Tag filter - Tag: ${tag}, Includes: ${doesIncludeTag}`);
+        return doesIncludeTag;
+      }) : true; // If no tags are selected, default to true
+      console.log('Tag filter match:', tagsMatch);
+  
+      // Framework must match both feature filters and tag filters to be included
+      const shouldIncludeFramework = featureMatch && tagsMatch;
+      console.log(`Should include framework '${framework.title}':`, shouldIncludeFramework);
+      return shouldIncludeFramework;
+    });
+  }, [frameworkData, selectedTags, filters, featureDropdownItems]);
+  
+  // ... rest of the hook ...
 
-  const [frameworkCardData, setFrameworkData] = useState(
-    frameworkData.map((framework) => {
-      return { ...framework, moreInfo: false, key: framework.name }
-    })
-  )
   const [firstFeatureSelect, setFirstFeatureSelect] = useState(
     perspectiveDropdownItems[0]
   )
@@ -97,41 +145,7 @@ export const useFrameworkTable = ({
   const [thirdFeatureSelect, setThirdFeatureSelect] = useState(
     perspectiveDropdownItems[1]
   )
-
-  const updateMoreInfo = (key) => {
-    const temp = [...frameworkCardData]
-
-    temp.forEach((framework, idx) => {
-      if (framework.key === key) {
-        temp[idx].moreInfo = !temp[idx].moreInfo
-      }
-    })
-
-    setFrameworkData(temp)
-  }
-
-  const filteredFrameworks = frameworkCardData.filter((framework) => {
-    let showFramework = true
-
-    const featureFilterKeys = featureDropdownItems.map((item) => item.filterKey)
-
-    // OR logic for filter
-
-    showFramework = featureFilterKeys.some(filter => {
-      return filters[filter] && filters[filter] === framework[filter];
-    });
-
-    // making sure if filters are reset all levels are shown
-
-    if (!featureFilterKeys.some(filter => filters[filter])) {
-      showFramework = true;
-    }
-
-    return (
-      showFramework
-    )
-  })
-
+  
   const filteredFeatureDropdownItems = [...perspectiveDropdownItems].filter(
     (item) => {
       return (
@@ -179,14 +193,12 @@ export const useFrameworkTable = ({
   return {
     featureDropdownItems,
     perspectiveDropdownItems,
-    updateMoreInfo,
     filteredFrameworks,
     filteredFeatureDropdownItems,
     updateDropdown,
     setFirstFeatureSelect,
     setSecondFeatureSelect,
     setThirdFeatureSelect,
-    frameworkCardData,
     firstFeatureSelect,
     secondFeatureSelect,
     thirdFeatureSelect,

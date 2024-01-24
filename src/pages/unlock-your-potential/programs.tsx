@@ -160,42 +160,23 @@ const TutorialPage = ({
   const [filteredTutorials, setFilteredTutorials] = useState(
     filteredTutorialsByLang
   )
-  const [selectedTags, setSelectedTags] = useState<Array<string>>([])
 
-  useEffect(() => {
-    let tutorials = filteredTutorialsByLang
+  // Add this state for tag selection
+  const [selectedTags, setSelectedTags] = useState<Array<string>>([]);
 
-    if (selectedTags.length) {
-      tutorials = tutorials.filter((tutorial) => {
-        return selectedTags.every((tag) => (tutorial.tags || []).includes(tag))
-      })
-    }
-
-    setFilteredTutorials(tutorials)
-  }, [filteredTutorialsByLang, selectedTags])
-
+  // Add this handler for tag selection
   const handleTagSelect = (tagName: string) => {
-    const tempSelectedTags = selectedTags
-
-    const index = tempSelectedTags.indexOf(tagName)
-    if (index > -1) {
-      tempSelectedTags.splice(index, 1)
-      trackCustomEvent({
-        eventCategory: "tutorial tags",
-        eventAction: "click",
-        eventName: `${tagName} remove`,
-      })
-    } else {
-      tempSelectedTags.push(tagName)
-      trackCustomEvent({
-        eventCategory: "tutorial tags",
-        eventAction: "click",
-        eventName: `${tagName} add`,
-      })
-    }
-
-    setSelectedTags([...tempSelectedTags])
-  }
+    setSelectedTags(prevSelectedTags => {
+      const tagIndex = prevSelectedTags.indexOf(tagName);
+      if (tagIndex > -1) {
+        // Tag is already selected, remove it
+        return prevSelectedTags.filter(tag => tag !== tagName);
+      } else {
+        // Tag is not selected, add it
+        return [...prevSelectedTags, tagName];
+      }
+    });
+  };
 
   const CardGrid = ({ children }: ChildOnlyProp) => (
     <Grid
@@ -462,7 +443,9 @@ const TutorialPage = ({
 
           <FrameworkTable
             filters={filters}
-            frameworkData={filteredTutorials}
+            frameworkData={filteredTutorialsByLang}
+            programData={filteredTutorialsByLang}
+            selectedTags={selectedTags}
             filteredTutorials={filteredTutorials}
             setModalOpen={setModalOpen}
             trackCustomEvent={trackCustomEvent}
