@@ -134,7 +134,7 @@ const getRequiredNamespacesForPath = (path: string) => {
 
   if (path.startsWith("/unlock-your-potential/programs")) {
     primaryNamespace = "page-programs"
-    requiredNamespaces = [...requiredNamespaces, "glossary"]
+    requiredNamespaces = [...requiredNamespaces, "page-understand-the-framework", "glossary"]
   }
 
   if (path.startsWith("/understand-yourself/understand-the-framework")) {

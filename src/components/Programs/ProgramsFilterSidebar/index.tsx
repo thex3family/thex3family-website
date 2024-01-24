@@ -83,7 +83,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
   ...tabsProps
 }) => {
   const theme = useTheme()
-  const { t } = useTranslation("page-understand-the-framework")
+  const { t } = useTranslation(["page-programs"])
 
   return (
     <Tabs
@@ -129,10 +129,10 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
           }}
         >
           <FilterTab eventName="show user personas">
-            {t("page-understand-the-framework-profile-filters")}
+            {t("page-programs-profile-filters")}
           </FilterTab>
           <FilterTab eventName="show feature filters">
-            {t("page-understand-the-framework-perspective-filters")} (
+            {t("page-programs-advanced-filters")} (
             {Object.values(filters).reduce((acc, filter) => {
               if (filter) {
                 acc += 1
@@ -167,7 +167,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
         }}
       >
         <Icon as={BsArrowCounterclockwise} aria-hidden="true" fontSize="sm" />
-        {t("page-understand-the-framework-reset-filters").toUpperCase()}
+        {t("page-programs-reset-filters").toUpperCase()}
       </Center>
       <TabPanels
         m={0}
