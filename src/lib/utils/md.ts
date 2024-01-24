@@ -32,7 +32,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     // unlock-your-potential
 
       // tutorials
-      "/unlock-your-potential/knowledge/scam-token-tricks",
+      "/unlock-your-potential/programs/scam-token-tricks",
 
       // docs
       "/unlock-your-potential/docs",
@@ -148,7 +148,7 @@ export const getTutorialsData = (locale: string): ITutorial[] => {
   const fullPath = join(
     CURRENT_CONTENT_DIR,
     locale !== "en" ? `translations/${locale!}` : "",
-    "developers/tutorials"
+    "unlock-your-potential/programs"
   )
   let tutorialData: ITutorial[] = []
 
@@ -159,7 +159,7 @@ export const getTutorialsData = (locale: string): ITutorial[] => {
       const filePath = join(
         CURRENT_CONTENT_DIR,
         locale !== "en" ? `translations/${locale!}` : "",
-        "developers/tutorials",
+        "unlock-your-potential/programs",
         dir,
         "index.md"
       )
@@ -168,7 +168,7 @@ export const getTutorialsData = (locale: string): ITutorial[] => {
       const frontmatter = data as Frontmatter
 
       return {
-        to: join(`/${locale}/developers/tutorials`, dir),
+        to: join(`/${locale}/unlock-your-potential/programs`, dir),
         title: frontmatter.title,
         description: frontmatter.description,
         author: frontmatter.author || "",

@@ -113,7 +113,7 @@ const FindWalletPage = () => {
   const randomizedWalletData = shuffle(walletData)
   const { pathname } = useRouter()
   const theme = useTheme()
-  const { t } = useTranslation(["page-wallets-find-wallet", "common"])
+  const { t } = useTranslation(["page-programs", "common"])
   const resetWalletFilter = useRef(() => {})
   const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure()
   const [filters, setFilters] = useState(filterDefault)
@@ -142,9 +142,9 @@ const FindWalletPage = () => {
   
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
-    title: t("common:understand-the-framework-title"),
-    description: t("common:understand-the-framework-description")
+    lastUpdated: t("common:page-last-updated") + ": January 24, 2024", // This should be dynamic based on your data
+    title: t("common:programs-title"),
+    description: t("common:programs-description")
       .split('.')
       .filter(sentence => sentence.trim() !== '')
       .map(sentence => `${sentence.trim()}.`),

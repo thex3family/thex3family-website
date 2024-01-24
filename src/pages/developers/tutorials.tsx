@@ -10,11 +10,12 @@ import {
   chakra,
   Flex,
   forwardRef,
+  Grid,
   Heading,
   useToken,
 } from "@chakra-ui/react"
 
-import { BasePageProps, Lang } from "@/lib/types"
+import { BasePageProps, ChildOnlyProp, Lang } from "@/lib/types"
 
 import { Button, ButtonLink } from "@/components/Buttons"
 import Emoji from "@/components/Emoji"
@@ -43,6 +44,10 @@ import {
 import externalTutorials from "@/data/externalTutorials.json"
 
 import { useRtlFlip } from "@/hooks/useRtlFlip"
+
+import OriginalCard, {
+  type IProps as OriginalCardProps,
+} from "@/components/Card"
 
 const FilterTag = forwardRef<{ isActive: boolean; name: string }, "button">(
   (props, ref) => {
@@ -128,7 +133,7 @@ const published = (locale: string, published: string) => {
   const localeTimestamp = getLocaleTimestamp(locale as Lang, published)
   return localeTimestamp !== INVALID_DATETIME ? (
     <span>
-      <Emoji text=":calendar:" fontSize="sm" ms={2} me={2} /> {localeTimestamp}
+      {localeTimestamp}
     </span>
   ) : null
 }
@@ -196,6 +201,15 @@ const TutorialPage = ({
 
     setSelectedTags([...tempSelectedTags])
   }
+
+  const CardGrid = ({ children }: ChildOnlyProp) => (
+    <Grid
+      templateColumns="repeat(auto-fill, minmax(min(100%, 280px), 1fr))"
+      gap={0}
+    >
+      {children}
+    </Grid>
+  )
 
   return (
     <Flex
@@ -415,88 +429,76 @@ const TutorialPage = ({
             </Text>
           </Box>
         )}
-        {filteredTutorials.map((tutorial) => {
-          return (
-            <Flex
-              as={BaseLink}
-              textDecoration="none"
-              flexDirection="column"
-              justifyContent="space-between"
-              fontWeight="normal"
-              color="text"
-              boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
-              mb="px"
-              padding={8}
-              w="full"
-              _hover={{
-                textDecoration: "none",
-                borderRadius: "base",
-                boxShadow: "0 0 1px var(--x3-colors-primary-base)",
-                bg: "tableBackgroundHover",
-              }}
-              key={tutorial.to}
-              to={tutorial.to ?? undefined}
-              hideArrow
-            >
+        <CardGrid>
+          {filteredTutorials.map((tutorial) => {
+            return (
               <Flex
+                as={BaseLink}
+                textDecoration="none"
+                flexDirection="column"
                 justifyContent="space-between"
-                mb={{ base: 8, md: -4 }}
-                alignItems="flex-start"
-                flexDirection={{ base: "column", md: "initial" }}
+                fontWeight="normal"
+                color="text"
+                // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
+                border="1px solid"
+                padding={8}
+                w="full"
+                _hover={{
+                  textDecoration: "none",
+                  borderRadius: "base",
+                  boxShadow: "0 0 1px var(--x3-colors-primary-base)",
+                  bg: "tableBackgroundHover",
+                }}
+                key={tutorial.to}
+                to={tutorial.to ?? undefined}
+                hideArrow
               >
-                <Text
-                  color="text"
-                  fontWeight="semibold"
-                  fontSize="2xl"
-                  me={{ base: 0, md: 24 }}
-                  _after={{
-                    ms: 0.5,
-                    me: "0.3rem",
-                    display: tutorial.isExternal ? "inline-block" : "none",
-                    content: `"↗"`,
-                    transform: flipForRtl,
-                    transitionProperty: "all",
-                    transitionDuration: "0.1s",
-                    transitionTimingFunction: "ease-in-out",
-                    fontStyle: "normal",
-                  }}
+                <Flex
+                  justifyContent="space-between"
+                  alignItems="flex-start"
+                  flexDirection={{ base: "column" }}
+                  gap={6}
                 >
-                  {tutorial.title}
-                </Text>
-                <Badge variant="secondary">
-                  <Translation id={getSkillTranslationId(tutorial.skill!)} />
-                </Badge>
+                  <Badge variant="secondary">
+                    <Translation id={getSkillTranslationId(tutorial.skill!)} />
+                  </Badge>
+                  <Text
+                    noOfLines={2}
+                    color="text"
+                    fontWeight="semibold"
+                    fontSize="2xl"
+                  >
+                    {tutorial.title}
+                  </Text>
+                </Flex>
+                <Text noOfLines={3} color="text200">{tutorial.description}</Text>
+                <div>
+                  <Flex direction="column" align="start" fontSize="sm" color="text200" textTransform="uppercase" mb={6}>
+                    <Flex align="center" mb={1}>
+                      <Emoji text=":writing_hand:" fontSize="sm" me={2} />
+                      {tutorial.author}
+                    </Flex>
+                    {published(locale!, tutorial.published ?? "") && (
+                      <Flex align="center" mb={1}>
+                        <Emoji text=":calendar:" fontSize="sm" me={2} />
+                        {published(locale!, tutorial.published ?? "")}
+                      </Flex>
+                    )}
+                    {tutorial.timeToRead && (
+                      <Flex align="center" mb={1}>
+                        <Emoji text=":stopwatch:" fontSize="sm" me={2} />
+                        {tutorial.timeToRead} <Translation id="read-time" />
+                      </Flex>
+                    )}
+                  </Flex>
+                  <Flex flexWrap="wrap" w="full">
+                    <TutorialTags tags={tutorial.tags?.slice(0, 2) ?? []} />
+                  </Flex>
+                </div>
               </Flex>
-              <Text color="text200" fontSize="sm" textTransform="uppercase">
-                <Emoji text=":writing_hand:" fontSize="sm" me={2} />
-                {tutorial.author} •
-                {published(locale!, tutorial.published ?? "")}
-                {tutorial.timeToRead && (
-                  <>
-                    {" "}
-                    •
-                    <Emoji text=":stopwatch:" fontSize="sm" mx={2} />
-                    {tutorial.timeToRead}{" "}
-                    <Translation id="page-knowledge:page-tutorial-read-time" />
-                  </>
-                )}
-                {tutorial.isExternal && (
-                  <>
-                    {" "}
-                    •<Emoji text=":link:" fontSize="sm" mx={2} />
-                    <Box as="span" color="primary.base" cursor="pointer">
-                      <Translation id="page-knowledge:page-tutorial-external-link" />
-                    </Box>
-                  </>
-                )}
-              </Text>
-              <Text color="text200">{tutorial.description}</Text>
-              <Flex flexWrap="wrap" w="full">
-                <TutorialTags tags={tutorial.tags ?? []} />
-              </Flex>
-            </Flex>
-          )
-        })}
+            )
+          })}
+        </CardGrid>
       </Box>
       <FeedbackCard />
     </Flex>

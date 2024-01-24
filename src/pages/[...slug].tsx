@@ -68,7 +68,7 @@ export const layoutMapping = {
   upgrade: UpgradeLayout,
   main: MainLayout,
   docs: DocsLayout,
-  knowledge: TutorialLayout,
+  programs: TutorialLayout,
 }
 
 const componentsMapping = {
@@ -79,7 +79,7 @@ const componentsMapping = {
   upgrade: upgradeComponents,
   main: mainComponents,
   docs: docsComponents,
-  knowledge: tutorialsComponents,
+  programs: tutorialsComponents,
 } as const
 
 export const getStaticPaths = (({ locales }) => {
@@ -157,15 +157,15 @@ export const getStaticProps = (async (context) => {
       layout = "docs"
     }
 
-    if (params.slug.includes("knowledge")) {
-      layout = "knowledge"
+    if (params.slug.includes("programs")) {
+      layout = "programs"
       if ("published" in frontmatter) {
         frontmatter.published = dateToString(frontmatter.published)
       }
     }
   }
 
-  const crowdinContributors = ["docs", "knowledge"].includes(layout)
+  const crowdinContributors = ["docs", "programs"].includes(layout)
     ? getCrowdinContributors(mdPath, locale as Lang)
     : []
 
