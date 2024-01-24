@@ -89,55 +89,51 @@ export const useFrameworkTable = ({
   ]
 
   const filteredFrameworks = useMemo(() => {
-    let sortedFrameworks = frameworkData.filter((framework) => {
-      // ... existing filter logic ...
-      return frameworkData.filter((framework) => {
-        console.log('Starting filter operation');
-        console.log('Current filters:', filters);
-        console.log('Selected tags:', selectedTags);
-        console.log('Evaluating framework:', framework.title);
-
-        // Group feature filters by category
-        const filtersByCategory = featureDropdownItems.reduce((acc, item) => {
-          const { category, filterKey } = item;
-          if (!acc[category]) {
-            acc[category] = [];
-          }
-          if (filters[filterKey]) {
-            acc[category].push(filterKey);
-          }
-          return acc;
-        }, {});
-
-        // Check for feature filter match within each category (OR relationship)
-        const featureMatchWithinCategories = Object.keys(filtersByCategory).every(category => {
-          return filtersByCategory[category].length === 0 || filtersByCategory[category].some(filterKey => {
-            return framework[category] === filterKey;
-          });
+    // Start with the full frameworkData array and apply the filter logic
+    let frameworksToProcess = frameworkData.filter((framework) => {
+      console.log('Starting filter operation');
+      console.log('Current filters:', filters);
+      console.log('Selected tags:', selectedTags);
+      console.log('Evaluating framework:', framework.title);
+  
+      // Group feature filters by category
+      const filtersByCategory = featureDropdownItems.reduce((acc, item) => {
+        const { category, filterKey } = item;
+        if (!acc[category]) {
+          acc[category] = [];
+        }
+        if (filters[filterKey]) {
+          acc[category].push(filterKey);
+        }
+        return acc;
+      }, {});
+  
+      // Check for feature filter match within each category (OR relationship)
+      const featureMatchWithinCategories = Object.keys(filtersByCategory).every(category => {
+        return filtersByCategory[category].length === 0 || filtersByCategory[category].some(filterKey => {
+          return framework[category] === filterKey;
         });
-
-        // Check if any tag is selected
-        const isAnyTagSelected = selectedTags?.length > 0;
-        console.log('Any tag selected:', isAnyTagSelected);
-
-        // Check for tag filter match
-        const tagsMatch = isAnyTagSelected ? selectedTags.every(tag => {
-          return framework.tags?.includes(tag);
-        }) : true;
-
-        // Framework must match feature filters across all categories (AND relationship) and tag filters
-        const shouldIncludeFramework = featureMatchWithinCategories && tagsMatch;
-        console.log(`Should include framework '${framework.title}':`, shouldIncludeFramework);
-        return shouldIncludeFramework;
       });
-
+  
+      // Check if any tag is selected
+      const isAnyTagSelected = selectedTags?.length > 0;
+      console.log('Any tag selected:', isAnyTagSelected);
+  
+      // Check for tag filter match
+      const tagsMatch = isAnyTagSelected ? selectedTags.every(tag => {
+        return framework.tags?.includes(tag);
+      }) : true;
+  
+      // Framework must match feature filters across all categories (AND relationship) and tag filters
+      return featureMatchWithinCategories && tagsMatch;
     });
+  
     // Sort the frameworks if sortOrder is set to 'alphabetical'
     if (sortOrder === 'alphabetical') {
-      sortedFrameworks = sortedFrameworks.sort((a, b) => a.title.localeCompare(b.title));
+      frameworksToProcess.sort((a, b) => a.title.localeCompare(b.title));
     }
-
-    return sortedFrameworks;
+  
+    return frameworksToProcess;
   }, [frameworkData, selectedTags, filters, featureDropdownItems, sortOrder]);
 
   // ... rest of the hook ...
