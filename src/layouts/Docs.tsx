@@ -121,7 +121,8 @@ const baseSubHeadingStyles: HeadingProps = {
 }
 
 const H3 = (props: HeadingProps) => (
-  <MdHeading3 {...baseSubHeadingStyles} mt={12} {...props} />
+  <MdHeading3 {...baseSubHeadingStyles} mt={12} 
+  fontSize="xl" {...props} />
 )
 
 const H4 = (props: HeadingProps) => (
