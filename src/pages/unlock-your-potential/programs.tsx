@@ -100,7 +100,7 @@ export interface IExternalTutorial {
   authorURL: string
   tags: Array<string>
   programType: string
-  skillLevel?: Skill
+  frameworkLevel?: Skill
   timeToRead?: string
   lang: string
   publishDate: string
@@ -113,7 +113,7 @@ export interface ITutorial {
   author: string
   tags?: Array<string>
   programType: string
-  skillLevel?: Skill
+  frameworkLevel?: Skill
   timeToRead?: number | null
   published?: string | null
   lang: string
@@ -264,13 +264,7 @@ const TutorialPage = ({
           <Translation id="page-programs:page-programs-submit-button" />
         </Heading>
         <Text>
-          <Translation id="page-knowledge:page-tutorial-listing-policy-intro" />{" "}
-          <InlineLink to="/contributing/content-resources/">
-            <Translation id="page-knowledge:page-tutorial-listing-policy" />
-          </InlineLink>
-        </Text>
-        <Text>
-          <Translation id="page-knowledge:page-tutorial-submit-tutorial" />
+          <Translation id="page-programs:page-programs-submit-description" />
         </Text>
         <Flex
           flexDirection={{ base: "column", md: "initial" }}
@@ -292,17 +286,17 @@ const TutorialPage = ({
             me={{ base: 0, md: 2 }}
           >
             <Text as="b">
-              <Translation id="page-knowledge:page-tutorial-new-github" />
+              <Translation id="page-programs:page-programs-new-github" />
             </Text>
             <Text>
-              <Translation id="page-knowledge:page-tutorial-new-github-desc" />
+              <Translation id="page-programs:page-programs-new-github-description" />
             </Text>
             <ButtonLink
               leftIcon={<FaGithub />}
               variant="outline"
-              to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.yaml&title="
+              to="https://github.com/thex3family/thex3family-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.yaml&title="
             >
-              <Translation id="page-knowledge:page-tutorial-raise-issue-btn" />
+              <Translation id="page-programs:page-programs-raise-issue-button" />
             </ButtonLink>
           </Flex>
           <Flex
@@ -320,21 +314,17 @@ const TutorialPage = ({
             me={{ base: 0, md: 2 }}
           >
             <Text as="b">
-              <Translation id="page-knowledge:page-tutorial-pull-request" />
+              <Translation id="page-programs:page-programs-pull-request" />
             </Text>
             <Text>
-              <Translation id="page-knowledge:page-tutorial-pull-request-desc-1" />{" "}
-              <code>
-                <Translation id="page-knowledge:page-tutorial-pull-request-desc-2" />
-              </code>{" "}
-              <Translation id="page-knowledge:page-tutorial-pull-request-desc-3" />
+              <Translation id="page-programs:page-programs-pull-request-description" />
             </Text>
             <ButtonLink
               leftIcon={<FaGithub />}
               variant="outline"
-              to="https://github.com/ethereum/ethereum-org-website/new/dev/src/content/developers/tutorials"
+              to="https://github.com/thex3family/thex3family-website/new/dev/src/content/developers/tutorials"
             >
-              <Translation id="page-knowledge:page-tutorial-pull-request-btn" />
+              <Translation id="page-programs:page-programs-pull-request-button" />
             </ButtonLink>
           </Flex>
         </Flex>
@@ -502,7 +492,7 @@ const TutorialPage = ({
                         {tutorial.programType}
                       </Badge>
                       <Badge variant="secondary">
-                        <Translation id={getSkillTranslationId(tutorial.skillLevel!)} />
+                        <Translation id={getSkillTranslationId(tutorial.frameworkLevel!)} />
                       </Badge>
                       </Flex>
                       <Text

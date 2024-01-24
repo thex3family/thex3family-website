@@ -7,7 +7,7 @@ import readingTime from "reading-time"
 import type { Frontmatter } from "@/lib/types"
 import type { MdPageContent } from "@/lib/interfaces"
 
-import { Program, Skill } from "@/components/TutorialMetadata"
+import { Skill } from "@/components/TutorialMetadata"
 
 import { dateToString } from "@/lib/utils/date"
 import { getFallbackEnglishPath, removeEnglishPrefix } from "@/lib/utils/i18n"
@@ -16,7 +16,7 @@ import { CONTENT_DIR, DEFAULT_LOCALE, LOCALES_CODES } from "@/lib/constants"
 
 import { toPosixPath } from "./relativePath"
 
-import { ITutorial } from "@/pages/developers/tutorials"
+import { ITutorial } from "@/pages/unlock-your-potential/programs"
 
 const CURRENT_CONTENT_DIR = join(process.cwd(), CONTENT_DIR)
 
@@ -31,8 +31,8 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
 
     // unlock-your-potential
 
-      // tutorials
-      "/unlock-your-potential/programs/scam-token-tricks",
+      // programs
+      "/unlock-your-potential/programs/template",
 
       // docs
       "/unlock-your-potential/docs",
@@ -174,7 +174,7 @@ export const getTutorialsData = (locale: string): ITutorial[] => {
         author: frontmatter.author || "",
         tags: frontmatter.tags,
         programType: frontmatter.programType as Program,
-        skillLevel: frontmatter.skillLevel as Skill,
+        frameworkLevel: frontmatter.frameworkLevel as Skill,
         timeToRead: Math.round(readingTime(content).minutes),
         published: dateToString(frontmatter.published),
         lang: frontmatter.lang,
