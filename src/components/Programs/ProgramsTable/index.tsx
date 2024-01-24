@@ -421,6 +421,7 @@ const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, tr
         onChange={(selectedOption) => {
           updateSortOrder(selectedOption);
         }}
+        defaultValue={{ label: t("page-programs:page-programs-sort-default"), value: 'default' }} // Set the default option
         isSearchable={false}
       />
     </Th>
