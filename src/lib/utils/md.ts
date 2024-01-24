@@ -7,7 +7,7 @@ import readingTime from "reading-time"
 import type { Frontmatter } from "@/lib/types"
 import type { MdPageContent } from "@/lib/interfaces"
 
-import { Skill } from "@/components/TutorialMetadata"
+import { Program, Skill } from "@/components/TutorialMetadata"
 
 import { dateToString } from "@/lib/utils/date"
 import { getFallbackEnglishPath, removeEnglishPrefix } from "@/lib/utils/i18n"
@@ -173,7 +173,8 @@ export const getTutorialsData = (locale: string): ITutorial[] => {
         description: frontmatter.description,
         author: frontmatter.author || "",
         tags: frontmatter.tags,
-        skill: frontmatter.skill as Skill,
+        programType: frontmatter.programType as Program,
+        skillLevel: frontmatter.skillLevel as Skill,
         timeToRead: Math.round(readingTime(content).minutes),
         published: dateToString(frontmatter.published),
         lang: frontmatter.lang,

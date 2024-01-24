@@ -1,6 +1,6 @@
 import { Lang } from "@/lib/types"
 
-import { Skill } from "@/components/TutorialMetadata"
+import { Program, Skill } from "@/components/TutorialMetadata"
 
 import { IExternalTutorial, ITutorial } from "@/pages/developers/tutorials"
 
@@ -19,7 +19,8 @@ export const filterTutorialsByLang = (
       description: tutorial?.description || "",
       author: tutorial?.author || "",
       tags: tutorial?.tags?.map((tag) => (tag || "").toLowerCase().trim()),
-      skill: tutorial?.skill as Skill,
+      programType: tutorial?.programType,
+      skill: tutorial?.skillLevel as Skill,
       timeToRead: tutorial?.timeToRead,
       published: tutorial?.published,
       lang: tutorial?.lang,
@@ -34,6 +35,7 @@ export const filterTutorialsByLang = (
       description: tutorial.description,
       author: tutorial.author,
       tags: tutorial.tags.map((tag) => tag.toLowerCase().trim()),
+      programType: tutorial.programType,
       skill: tutorial.skillLevel as Skill,
       timeToRead: Number(tutorial.timeToRead),
       published: new Date(tutorial.publishDate).toISOString(),

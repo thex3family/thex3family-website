@@ -139,7 +139,8 @@ export interface TutorialFrontmatter extends SharedFrontmatter {
   author: string
   source?: string
   sourceUrl?: string
-  skill: string
+  programType: string
+  skillLevel: string
   published: string
   address?: string
   postMergeBannerTranslation?: string
