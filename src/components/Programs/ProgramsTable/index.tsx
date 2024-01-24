@@ -354,6 +354,7 @@ const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, tr
     firstFeatureSelect,
     secondFeatureSelect,
     thirdFeatureSelect,
+    updateSortOrder,
   } = useFrameworkTable({
     filters,
     selectedTags,
@@ -402,25 +403,27 @@ const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, tr
           )}
         </Th>
         <Th>
-          <Text as="span" hideFrom="sm" fontSize="md" whiteSpace="nowrap">
-            {t("page-programs:page-programs-sort-by")}
-          </Text>
-          <StyledSelect
-            className="react-select-container"
-            classNamePrefix="react-select"
-            options={[
-              {
-                label: t("page-programs:page-programs-sort-by"),
-                options: [...filteredFeatureDropdownItems],
-              },
-            ]}
-            onChange={(selectedOption) => {
-              updateDropdown(selectedOption, setFirstFeatureSelect, firstCol)
-            }}
-            defaultValue={firstFeatureSelect}
-            isSearchable={false}
-          />
-        </Th>
+      <StyledSelect
+        className="react-select-container"
+        classNamePrefix="react-select"
+        options={[
+          {
+            label: t("page-programs:page-programs-sort-by"),
+            options: [
+              // Add an option for default sorting
+              { label: t("page-programs:page-programs-sort-default"), value: 'default' },
+              // Add an option for alphabetical sorting
+              { label: t("page-programs:page-programs-sort-alphabetical"), value: 'alphabetical' },
+            ],
+          },
+        ]}
+        placeholder={t("page-programs:page-programs-sort-by")}
+        onChange={(selectedOption) => {
+          updateSortOrder(selectedOption);
+        }}
+        isSearchable={false}
+      />
+    </Th>
         {/* <Th>
           <StyledSelect
             className="react-select-container"
