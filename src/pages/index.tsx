@@ -481,7 +481,7 @@ const HomePage = ({
               <Translation id="common:knowledge-description" />
             </SectionDecription>
             <ButtonLinkRow>
-              <ButtonLink to="/unlock-your-potential/knowledge/">
+              <ButtonLink to="/unlock-your-potential/programs?filters=knowledge">
                 <Translation id="common:knowledge-button" />
               </ButtonLink>
             </ButtonLinkRow>
@@ -506,7 +506,7 @@ const HomePage = ({
               <Translation id="common:tools-description" />
             </SectionDecription>
             <ButtonLinkRow>
-              <ButtonLink to="/unlock-your-potential/tools/">
+              <ButtonLink to="/unlock-your-potential/programs?filters=tools">
                 <Translation id="common:tools-button" />
               </ButtonLink>
             </ButtonLinkRow>
@@ -532,7 +532,7 @@ const HomePage = ({
                 <Translation id="common:community-description" />
               </SectionDecription>
               <ButtonLinkRow>
-                <ButtonLink to="/unlock-your-potential/community/">
+                <ButtonLink to="/unlock-your-potential/programs?filters=community">
                   <Translation id="common:community-button" />
                 </ButtonLink>
               </ButtonLinkRow>
