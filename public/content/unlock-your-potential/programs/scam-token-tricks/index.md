@@ -3,7 +3,8 @@ title: "Some tricks used by scam tokens and how to detect them"
 description: In this tutorial we dissect a scam token to see some of the tricks that scammers play, how they implement them, and how we can detect them.
 author: Ori Pomerantz
 tags: ["scam", "solidity", "erc-20", "javascript", "typescript"]
-skill: intermediate
+programType: knowledge
+skillLevel: intermediate
 published: 2023-09-15
 lang: en
 ---

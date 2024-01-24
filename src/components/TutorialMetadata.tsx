@@ -59,7 +59,7 @@ const TutorialMetadata = ({
           mb={2}
           whiteSpace="nowrap"
         >
-          {t(getSkillTranslationId(frontmatter.skill as Skill))}
+          {t(getSkillTranslationId(frontmatter.skillLevel as Skill))}
         </Flex>
       </Flex>
       <HStack

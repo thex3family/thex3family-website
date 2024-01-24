@@ -53,7 +53,7 @@ import {
   getSortedTutorialTagsForLang,
 } from "@/lib/utils/tutorial"
 
-import externalTutorials from "@/data/externalTutorials.json"
+import externalTutorials from "@/data/externalPrograms.json"
 
 import { useRtlFlip } from "@/hooks/useRtlFlip"
 
@@ -97,9 +97,10 @@ export interface IExternalTutorial {
   title: string
   description: string
   author: string
-  authorGithub: string
+  authorURL: string
   tags: Array<string>
-  skillLevel: string
+  programType: string
+  skillLevel?: Skill
   timeToRead?: string
   lang: string
   publishDate: string
@@ -111,7 +112,8 @@ export interface ITutorial {
   description: string
   author: string
   tags?: Array<string>
-  skill?: Skill
+  programType: string
+  skillLevel?: Skill
   timeToRead?: number | null
   published?: string | null
   lang: string
@@ -495,9 +497,14 @@ const TutorialPage = ({
                       flexDirection={{ base: "column" }}
                       gap={6}
                     >
+                      <Flex gap={2}>
+                      <Badge variant="secondary">
+                        {tutorial.programType}
+                      </Badge>
                       <Badge variant="secondary">
                         <Translation id={getSkillTranslationId(tutorial.skill!)} />
                       </Badge>
+                      </Flex>
                       <Text
                         noOfLines={2}
                         color="text"
@@ -523,7 +530,7 @@ const TutorialPage = ({
                         {tutorial.timeToRead && (
                           <Flex align="center" mb={1}>
                             <Emoji text=":stopwatch:" fontSize="sm" me={2} />
-                            {tutorial.timeToRead} <Translation id="read-time" />
+                            {tutorial.timeToRead} <Translation id="page-programs:page-programs-read-time" />
                           </Flex>
                         )}
                       </Flex>
