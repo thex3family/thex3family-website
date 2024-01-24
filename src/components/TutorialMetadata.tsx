@@ -19,14 +19,20 @@ export type TutorialMetadataProps = {
 }
 
 export enum Skill {
-  BEGINNER = "beginner",
-  INTERMEDIATE = "intermediate",
-  ADVANCED = "advanced",
+  LEVEL_1 = "1",
+  LEVEL_2 = "2",
+  LEVEL_3 = "3",
+  LEVEL_4 = "4",
+  LEVEL_5 = "5",
+  LEVEL_6 = "6",
+  LEVEL_7 = "7",
+  LEVEL_8 = "8",
+  LEVEL_9 = "9",
 }
 
 export const getSkillTranslationId = (skill: Skill): TranslationKey =>
-  `page-programs:page-programs-${
-    Skill[skill.toUpperCase() as keyof typeof Skill]
+  `page-understand-the-framework:page-understand-the-framework-level-${
+    Skill[skill.toUpperCase() as keyof typeof Skill]+'-title'
   }`
 
 const TutorialMetadata = ({
@@ -34,7 +40,7 @@ const TutorialMetadata = ({
   timeToRead,
 }: TutorialMetadataProps) => {
   const { locale } = useRouter()
-  const { t } = useTranslation("page-knowledge")
+  const { t } = useTranslation("page-programs")
 
   const hasSource = frontmatter.source && frontmatter.sourceUrl
   const published = frontmatter.published
@@ -59,7 +65,7 @@ const TutorialMetadata = ({
           mb={2}
           whiteSpace="nowrap"
         >
-          {t(getSkillTranslationId(frontmatter.skillLevel as Skill))}
+          {t(getSkillTranslationId(frontmatter.frameworkLevel as Skill))}
         </Flex>
       </Flex>
       <HStack
