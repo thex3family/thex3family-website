@@ -30,6 +30,8 @@ export const useFrameworkTable = ({
   t,
   frameworkData,
 }: UseFrameworkTableProps) => {
+  // Add a state to manage the sort order
+  const [sortOrder, setSortOrder] = useState('default');
 
   const featureDropdownItems: Array<DropdownOption> = [
     // Repeat the pattern for subsequent items
@@ -85,50 +87,66 @@ export const useFrameworkTable = ({
       icon: BulletPointIcon,
     },
   ]
-  
+
   const filteredFrameworks = useMemo(() => {
-    return frameworkData.filter((framework) => {
-      console.log('Starting filter operation');
-      console.log('Current filters:', filters);
-      console.log('Selected tags:', selectedTags);
-      console.log('Evaluating framework:', framework.title);
-  
-      // Group feature filters by category
-      const filtersByCategory = featureDropdownItems.reduce((acc, item) => {
-        const { category, filterKey } = item;
-        if (!acc[category]) {
-          acc[category] = [];
-        }
-        if (filters[filterKey]) {
-          acc[category].push(filterKey);
-        }
-        return acc;
-      }, {});
-  
-      // Check for feature filter match within each category (OR relationship)
-      const featureMatchWithinCategories = Object.keys(filtersByCategory).every(category => {
-        return filtersByCategory[category].length === 0 || filtersByCategory[category].some(filterKey => {
-          return framework[category] === filterKey;
+    let sortedFrameworks = frameworkData.filter((framework) => {
+      // ... existing filter logic ...
+      return frameworkData.filter((framework) => {
+        console.log('Starting filter operation');
+        console.log('Current filters:', filters);
+        console.log('Selected tags:', selectedTags);
+        console.log('Evaluating framework:', framework.title);
+
+        // Group feature filters by category
+        const filtersByCategory = featureDropdownItems.reduce((acc, item) => {
+          const { category, filterKey } = item;
+          if (!acc[category]) {
+            acc[category] = [];
+          }
+          if (filters[filterKey]) {
+            acc[category].push(filterKey);
+          }
+          return acc;
+        }, {});
+
+        // Check for feature filter match within each category (OR relationship)
+        const featureMatchWithinCategories = Object.keys(filtersByCategory).every(category => {
+          return filtersByCategory[category].length === 0 || filtersByCategory[category].some(filterKey => {
+            return framework[category] === filterKey;
+          });
         });
+
+        // Check if any tag is selected
+        const isAnyTagSelected = selectedTags?.length > 0;
+        console.log('Any tag selected:', isAnyTagSelected);
+
+        // Check for tag filter match
+        const tagsMatch = isAnyTagSelected ? selectedTags.every(tag => {
+          return framework.tags?.includes(tag);
+        }) : true;
+
+        // Framework must match feature filters across all categories (AND relationship) and tag filters
+        const shouldIncludeFramework = featureMatchWithinCategories && tagsMatch;
+        console.log(`Should include framework '${framework.title}':`, shouldIncludeFramework);
+        return shouldIncludeFramework;
       });
-  
-      // Check if any tag is selected
-      const isAnyTagSelected = selectedTags?.length > 0;
-      console.log('Any tag selected:', isAnyTagSelected);
-  
-      // Check for tag filter match
-      const tagsMatch = isAnyTagSelected ? selectedTags.every(tag => {
-        return framework.tags?.includes(tag);
-      }) : true;
-  
-      // Framework must match feature filters across all categories (AND relationship) and tag filters
-      const shouldIncludeFramework = featureMatchWithinCategories && tagsMatch;
-      console.log(`Should include framework '${framework.title}':`, shouldIncludeFramework);
-      return shouldIncludeFramework;
+
     });
-  }, [frameworkData, selectedTags, filters, featureDropdownItems]);
-  
+    // Sort the frameworks if sortOrder is set to 'alphabetical'
+    if (sortOrder === 'alphabetical') {
+      sortedFrameworks = sortedFrameworks.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    return sortedFrameworks;
+  }, [frameworkData, selectedTags, filters, featureDropdownItems, sortOrder]);
+
   // ... rest of the hook ...
+
+
+  // Add a function to update the sort order
+  const updateSortOrder = (selectedOption: DropdownOption) => {
+    setSortOrder(selectedOption.value);
+  };
 
   const [firstFeatureSelect, setFirstFeatureSelect] = useState(
     perspectiveDropdownItems[0]
@@ -139,7 +157,7 @@ export const useFrameworkTable = ({
   const [thirdFeatureSelect, setThirdFeatureSelect] = useState(
     perspectiveDropdownItems[1]
   )
-  
+
   const filteredFeatureDropdownItems = [...perspectiveDropdownItems].filter(
     (item) => {
       return (
@@ -196,5 +214,7 @@ export const useFrameworkTable = ({
     firstFeatureSelect,
     secondFeatureSelect,
     thirdFeatureSelect,
+    updateSortOrder,
+    sortOrder,
   }
 }

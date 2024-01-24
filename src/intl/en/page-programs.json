@@ -3,6 +3,8 @@
   "page-programs-showing": "Showing",
   "page-programs-programs": "Programs",
   "page-programs-sort-by": "Sort By...",
+  "page-programs-sort-default": "Default Sort",
+  "page-programs-sort-alphabetical": "Alphabetical Sort",
 
   "comp-programs-metadata-minute-read": "minute read",
   "comp-programs-metadata-tip-author": "Tip author",
