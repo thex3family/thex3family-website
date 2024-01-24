@@ -34,16 +34,16 @@ In this stage, its hard to be helped. We need to sit with our feelings, so try a
 
 During Awareness, we start recognizing our emotional responses to the situation, often focusing on self and accompanied by hurt feelings. Although there's an acknowledgment of our reactions, there's reluctance to change. "How do I feel about this?" is a helpful question in identifying and articulating emotions.
 
-In this stage, you're more likely to seek [knowledge](/unlock-your-potential/knowledge/) that helps you feel heard and understood. 
+In this stage, you're more likely to seek [knowledge](/unlock-your-potential/programs?filters=knowledge) that helps you feel heard and understood. 
 
 ## Acceptance
 
 Acceptance involves recognizing that our initial reactions might not be the most constructive and developing empathy for others involved. It's about willingness to change, though often with hesitancy. "How did we get to this situation?" helps in understanding the factors that led to the situation in the first place. We may hypothesize childhood traumas, or repeated behaviours that is causing us to react in such a way.
 
-In this stage, its useful to use [tools](/unlock-your-potential/tools/) to help you process the situation.
+In this stage, its useful to use [tools](/unlock-your-potential/programs?filters=tools) to help you process the situation.
 
 ## Action
 
 The Action stage is where we're ready to seek and accept advice, showing openness to solutions and different viewpoints. This stage is characterized by a preference for relatable advice and an active effort to apply learnings. The question "How have others solved this problem?" is crucial for moving forward with insights gained.
 
-In this stage, its useful to go to a [community](/unlock-your-potential/community/) to help you take action.
+In this stage, its useful to go to a [community](/unlock-your-potential/programs?filters=community) to help you take action.

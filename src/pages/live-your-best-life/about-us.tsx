@@ -533,7 +533,7 @@ const WhatIsEthereumPage = ({
                     <Tooltip
                         content={tooltipContent({
                           text: t("page-about-us:page-about-us-stats-stat-1-tooltip"),
-                          url: "/unlock-your-potential/knowledge/",
+                          url: "/unlock-your-potential/programs?filters=knowledge",
                           ariaLabel: "Learn More About Our Targets",
                         })}
                       >
@@ -548,7 +548,7 @@ const WhatIsEthereumPage = ({
                     <Tooltip
                         content={tooltipContent({
                           text: t("page-about-us:page-about-us-stats-stat-2-tooltip"),
-                          url: "/unlock-your-potential/tools/",
+                          url: "/unlock-your-potential/programs?filters=tools",
                           ariaLabel: "Learn More About Our Targets",
                         })}
                       >
@@ -563,7 +563,7 @@ const WhatIsEthereumPage = ({
                     <Tooltip
                         content={tooltipContent({
                           text: t("page-about-us:page-about-us-stats-stat-3-tooltip"),
-                          url: "/unlock-your-potential/community/",
+                          url: "/unlock-your-potential/programs?filters=community",
                           ariaLabel: "Learn More About Our Targets",
                         })}
                       >

@@ -55,7 +55,7 @@ export const useFrameworkTable = ({
       label: t("common:tools-title"),
       value: t("common:tools-title"),
       description: t("common:tools-description"),
-      filterKey: "tool",
+      filterKey: "tools",
       category: "programType",
       icon: BulletPointIcon,
     },

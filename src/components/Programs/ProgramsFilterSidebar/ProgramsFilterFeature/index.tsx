@@ -29,6 +29,7 @@ import { trackCustomEvent } from "@/lib/utils/matomo"
 import { useFrameworkFilterFeature } from "./useProgramsFilterFeature"
 import Translation from "@/components/Translation"
 import { StyledSelect } from "../../ProgramsTable"
+import { useRouter } from "next/router"
 
 const FilterToggle = ({
   ariaLabel,
@@ -91,8 +92,22 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
   setSelectedTags,
   trackCustomEvent,
   updateFilterOption,
+  updateFilterOptions,
   ...restProps
 }) => {
+  
+  const router = useRouter();
+  const { filters } = router.query;
+
+
+  React.useEffect(() => {
+    // Assuming 'filters' is a comma-separated string of filter keys
+    const filterKeys = typeof filters === 'string' ? filters.split(',') : [];
+  
+    // Update all filter options in one line
+    updateFilterOptions(filterKeys, true); // Assuming you want to set each filter to true
+  }, [filters]);
+
   const { filterOptions, setShowOptions } = useFrameworkFilterFeature(restProps)
 
   const filterPanelBg = useColorModeValue("chakra-subtle-bg", "black400")
