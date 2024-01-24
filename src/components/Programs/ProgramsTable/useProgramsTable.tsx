@@ -87,48 +87,42 @@ export const useFrameworkTable = ({
   ]
   
   const filteredFrameworks = useMemo(() => {
-  
     return frameworkData.filter((framework) => {
       console.log('Starting filter operation');
       console.log('Current filters:', filters);
       console.log('Selected tags:', selectedTags);
       console.log('Evaluating framework:', framework.title);
   
-      // Check if any feature filter is applied
-      const isAnyFeatureFilterApplied = featureDropdownItems.some(item => filters[item.filterKey]);
-      console.log('Any feature filter applied:', isAnyFeatureFilterApplied);
+      // Group feature filters by category
+      const filtersByCategory = featureDropdownItems.reduce((acc, item) => {
+        const { category, filterKey } = item;
+        if (!acc[category]) {
+          acc[category] = [];
+        }
+        if (filters[filterKey]) {
+          acc[category].push(filterKey);
+        }
+        return acc;
+      }, {});
+  
+      // Check for feature filter match within each category (OR relationship)
+      const featureMatchWithinCategories = Object.keys(filtersByCategory).every(category => {
+        return filtersByCategory[category].length === 0 || filtersByCategory[category].some(filterKey => {
+          return framework[category] === filterKey;
+        });
+      });
   
       // Check if any tag is selected
       const isAnyTagSelected = selectedTags?.length > 0;
       console.log('Any tag selected:', isAnyTagSelected);
   
-      // If no filters are applied, all frameworks should be shown
-      if (!isAnyFeatureFilterApplied && !isAnyTagSelected) {
-        console.log('No filters applied, showing all frameworks.');
-        return true;
-      }
-  
-      // Check for feature filter match
-      const featureMatch = isAnyFeatureFilterApplied ? featureDropdownItems.some(dropdownItem => {
-        const filterKey = dropdownItem.filterKey;
-        const filterIsActive = filters[filterKey];
-        const frameworkCategoryMatchesFilter = framework[dropdownItem.category] === filterKey;
-        const isMatch = filterIsActive && frameworkCategoryMatchesFilter;
-        console.log(`Feature filter - Key: ${filterKey}, Framework Category: ${framework[dropdownItem.category]}, Filter Active: ${filterIsActive}, Match: ${isMatch}`);
-        return isMatch;
-      }) : true; // If no feature filters are applied, default to true
-      console.log('Feature filter match:', featureMatch);
-  
       // Check for tag filter match
       const tagsMatch = isAnyTagSelected ? selectedTags.every(tag => {
-        const doesIncludeTag = framework.tags?.includes(tag);
-        console.log(`Tag filter - Tag: ${tag}, Includes: ${doesIncludeTag}`);
-        return doesIncludeTag;
-      }) : true; // If no tags are selected, default to true
-      console.log('Tag filter match:', tagsMatch);
+        return framework.tags?.includes(tag);
+      }) : true;
   
-      // Framework must match both feature filters and tag filters to be included
-      const shouldIncludeFramework = featureMatch && tagsMatch;
+      // Framework must match feature filters across all categories (AND relationship) and tag filters
+      const shouldIncludeFramework = featureMatchWithinCategories && tagsMatch;
       console.log(`Should include framework '${framework.title}':`, shouldIncludeFramework);
       return shouldIncludeFramework;
     });
