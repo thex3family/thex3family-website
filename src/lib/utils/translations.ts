@@ -132,8 +132,8 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-run-a-node"
   }
 
-  if (path.startsWith("/wallets")) {
-    primaryNamespace = "page-wallets"
+  if (path.startsWith("/unlock-your-potential/programs")) {
+    primaryNamespace = "page-programs"
     requiredNamespaces = [...requiredNamespaces, "glossary"]
   }
 
@@ -148,13 +148,6 @@ const getRequiredNamespacesForPath = (path: string) => {
   // Quizzes
   // Note: Add any URL paths that have quizzes here
   if (
-    path.startsWith("/eth") ||
-    path.startsWith("/layer-2") ||
-    path.startsWith("/nft") ||
-    path.startsWith("/roadmap/merge") ||
-    path.startsWith("/security") ||
-    path.startsWith("/wallets") ||
-    path.startsWith("/web3") ||
     path.startsWith("/live-your-best-life/about-us") ||
     path.startsWith("/quizzes")
   ) {
@@ -201,8 +194,8 @@ const getRequiredNamespacesForLayout = (layout?: string) => {
     ]
   }
 
-  if (layout === "knowledge") {
-    requiredNamespaces = [...requiredNamespaces, "page-knowledge"]
+  if (layout === "program") {
+    requiredNamespaces = [...requiredNamespaces, "page-programs"]
   }
 
   return requiredNamespaces

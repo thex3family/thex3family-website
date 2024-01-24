@@ -62,7 +62,7 @@ export interface FrameworkData {
 const frameworkData: FrameworkData[] = [
   {
     last_updated: "Jan 15 2024",
-    name: "Level 1: Survive",
+    name: "1: Survive",
     description: "Life is about dealing with my needs and feeling good by getting what I need.",
     est_population: 100,
     image: one,
@@ -112,7 +112,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "Level 2: Connect",
+    name: "2: Connect",
     description: "Life is about pleasing others (or the gods) so that they give us what we need.",
     est_population: 99.6,
     image: two,
@@ -162,7 +162,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "Level 3: Control",
+    name: "3: Control",
     description: "Life is about getting what I want by taking or creating advantages for myself. I'm the main character.",
     est_population: 92,
     image: three,
@@ -212,7 +212,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "Level 4: Belong",
+    name: "4: Belong",
     description: "Life is about knowing what's right and what's wrong and making sure others do the right thing, too.",
     est_population: 40,
     image: four,
@@ -262,7 +262,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "Level 5: Systems",
+    name: "5: Systems",
     description: "Life is about knowing how to make good things happen, keeping the benefits, and always improving.",
     est_population: 28,
     image: five,
@@ -312,7 +312,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "Level 6: Let Go",
+    name: "6: Let Go",
     description: "Life is about being free to be whoever we are. If we stopped telling others what to do, we would have peace.",
     est_population: 15,
     image: six,
@@ -362,7 +362,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "Level 7: Boundaries",
+    name: "7: Boundaries",
     description: "Life is about drawing boundaries, saying no is for the best. Who I am and what I want changes often.",
     est_population: 5,
     image: seven,
@@ -412,7 +412,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "Level 8: Curiosity",
+    name: "8: Curiosity",
     description: "Life is an experiment. All we can do is the best that we know, so we should all know more.",
     est_population: 1,
     image: eight,
@@ -462,7 +462,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "Level 9: Empathy",
+    name: "9: Empathy",
     description: "Life is about learning where and how to shine the light. I am not the main character, I am just the spotlight. What is revealed is what I illuminate.",
     est_population: 0.4,
     image: nine,
