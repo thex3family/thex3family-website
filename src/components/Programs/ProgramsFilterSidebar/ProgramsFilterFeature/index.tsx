@@ -104,8 +104,8 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
       spacing={4}
       alignItems="normal"
       p={{ base: 4, sm: 0 }}
-    // Workaround to not having a dedicated prop to all items open by default
-    // defaultIndex={Object.keys(filterOptions).map((key) => +key)}
+      // Workaround to not having a dedicated prop to all items open by default
+      defaultIndex={[...Object.keys(filterOptions).map((key) => +key), Object.keys(filterOptions).length]}
     >
       <Box
         as="span"
@@ -124,7 +124,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
       {filterOptions.map((filterOption, idx) => {
         return (
           <AccordionItem
-            key={uniqueId("frameworkFilterSidebarItem")}
+            key={uniqueId("frameworkFilterSidebarItemFeature")}
             background={filterPanelBg}
             borderRadius="base"
             // Remove border color from global style
@@ -168,52 +168,52 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
 
                   {filterOption.title === "Perspectives" ? (
                     <StyledSelect
-                    className="react-select-container"
-                    classNamePrefix="react-select"
-                    mt={6}
-                    options={filterOption.items.map(item => ({
-                      label: item.title,
-                      value: item.filterKey
-                    }))}
-                    onChange={(selectedOptions) => {
-                      // When all selections are cleared, selectedOptions is null or an empty array
-                      if (!selectedOptions || selectedOptions.length === 0) {
-                        filterOption.items.forEach(item => {
-                          if (restProps.filters[item.filterKey]) {
-                            trackCustomEvent({
-                              eventCategory: "ProgramFilterSidebar",
-                              eventAction: `${filterOption.title} deselected`,
-                              eventName: item.filterKey,
-                            });
-                            updateFilterOption(item.filterKey);
-                          }
-                        });
-                      } else {
-                        // selectedOptions contains an array of selected option objects
-                        const filterKeys = selectedOptions.map(option => option.value);
-                  
-                        filterKeys.forEach(filterKey => {
-                          trackCustomEvent({
-                            eventCategory: "ProgramFilterSidebar",
-                            eventAction: `${filterOption.title} selected`,
-                            eventName: `${filterKey} ${!restProps.filters[filterKey]}`,
-                          });
-                  
-                          updateFilterOption(filterKey);
-                        });
-                      }
-                    }}
-                    value={filterOption.items
-                      .filter(item => restProps.filters[item.filterKey])
-                      .map(item => ({
+                      className="react-select-container"
+                      classNamePrefix="react-select"
+                      mt={6}
+                      options={filterOption.items.map(item => ({
                         label: item.title,
                         value: item.filterKey
-                      }))
-                    }
-                    placeholder="Select Perspectives"
-                    isMulti
-                    isSearchable={false}
-                  />
+                      }))}
+                      onChange={(selectedOptions) => {
+                        // When all selections are cleared, selectedOptions is null or an empty array
+                        if (!selectedOptions || selectedOptions.length === 0) {
+                          filterOption.items.forEach(item => {
+                            if (restProps.filters[item.filterKey]) {
+                              trackCustomEvent({
+                                eventCategory: "ProgramFilterSidebar",
+                                eventAction: `${filterOption.title} deselected`,
+                                eventName: item.filterKey,
+                              });
+                              updateFilterOption(item.filterKey);
+                            }
+                          });
+                        } else {
+                          // selectedOptions contains an array of selected option objects
+                          const filterKeys = selectedOptions.map(option => option.value);
+
+                          filterKeys.forEach(filterKey => {
+                            trackCustomEvent({
+                              eventCategory: "ProgramFilterSidebar",
+                              eventAction: `${filterOption.title} selected`,
+                              eventName: `${filterKey} ${!restProps.filters[filterKey]}`,
+                            });
+
+                            updateFilterOption(filterKey);
+                          });
+                        }
+                      }}
+                      value={filterOption.items
+                        .filter(item => restProps.filters[item.filterKey])
+                        .map(item => ({
+                          label: item.title,
+                          value: item.filterKey
+                        }))
+                      }
+                      placeholder="Select Perspectives"
+                      isMulti
+                      isSearchable={false}
+                    />
                   ) :
                     (filterOption.items.map((item, itemIdx) => {
                       const LabelIcon = item.icon
@@ -368,7 +368,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
       })}
 
       <AccordionItem
-        key={uniqueId("frameworkFilterSidebarItem")}
+        key={uniqueId("frameworkFilterSidebarItemTag")}
         background={filterPanelBg}
         borderRadius="base"
         // Remove border color from global style
