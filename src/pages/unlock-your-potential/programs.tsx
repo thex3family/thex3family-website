@@ -462,7 +462,7 @@ const TutorialPage = ({
 
           <FrameworkTable
             filters={filters}
-            frameworkData={frameworkData}
+            frameworkData={filteredTutorials}
             filteredTutorials={filteredTutorials}
             setModalOpen={setModalOpen}
             trackCustomEvent={trackCustomEvent}
