@@ -138,7 +138,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
                 acc += 1
               }
               return acc
-            }, 0)}
+            }, selectedTags.length)}
             )
           </FilterTab>
         </TabList>
