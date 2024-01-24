@@ -14,15 +14,9 @@ const hashCode = (string) => {
 
 // Theme variables from Theme.js
 const colors = [
-  "tagBlue",
-  "tagOrange",
-  "tagGreen",
-  "tagRed",
-  "tagTurquoise",
-  "tagGray",
-  "tagYellow",
-  "tagMint",
-  "tagPink",
+  "tag1",
+  "tag2",
+  "tag3",
 ] as const
 
 export interface IProps {

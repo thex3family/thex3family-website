@@ -4,12 +4,13 @@ import { FaBook, FaDiscord, FaGlobe, FaTools, FaTwitter, FaUsers } from "react-i
 import { MdExpandLess, MdExpandMore } from "react-icons/md"
 import Select from "react-select"
 import {
+  Badge,
+  chakra,
+  forwardRef,
   Box,
   calc,
-  chakra,
   Flex,
   FlexProps,
-  forwardRef,
   Icon,
   keyframes,
   SimpleGrid,
@@ -19,9 +20,20 @@ import {
   Td,
   Th,
   Tr,
+  useToken,
 } from "@chakra-ui/react"
 
-import { ChildOnlyProp } from "@/lib/types"
+import Emoji from "@/components/Emoji"
+
+import TutorialTags from "@/components/TutorialTags"
+
+import { Button, ButtonLink } from "@/components/Buttons"
+
+import { getSkillTranslationId } from "@/components/TutorialMetadata"
+
+import { getLocaleTimestamp, INVALID_DATETIME } from "@/lib/utils/time"
+
+import { ChildOnlyProp, Lang } from "@/lib/types"
 
 import { useFrameworkTable } from "@/components/Framework/FrameworkTable/useFrameworkTable"
 import { FrameworkMoreInfo } from "@/components/Framework/FrameworkTable/FrameworkMoreInfo"
@@ -30,15 +42,16 @@ import {
   WarningProductGlyphIcon,
 } from "@/components/icons/staking"
 import { Image } from "@/components/Image"
-import InlineLink, { LinkProps } from "@/components/Link"
+import InlineLink, { LinkProps, BaseLink } from "@/components/Link"
 import Text from "@/components/OldText"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
 import { FrameworkData } from "@/data/framework/framework-data"
 
-import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
+import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 import Tooltip from "@/components/Tooltip"
+import { ITutorial } from "@/pages/unlock-your-potential/programs"
 
 const Container = (props: TableProps) => (
   <Table
@@ -81,6 +94,7 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     bg="background.base"
     borderBottom="1px"
     borderColor="primary.base"
+    justifyContent="flex-end"
     templateColumns={{
       base: "auto",
       sm: "60% auto 0% 0% 5%",
@@ -90,12 +104,15 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     p={2}
     position="sticky"
     top={{
-      base: calc(NAV_BAR_PX_HEIGHT).add("4rem").toString(),
-      lg: NAV_BAR_PX_HEIGHT,
+      base: calc(SECONDARY_NAV_BAR_PX_HEIGHT).add("4rem").toString(),
+      lg: SECONDARY_NAV_BAR_PX_HEIGHT,
     }}
     zIndex={1}
     sx={{
       th: {
+        width: "100%",
+        display: "flex", // Apply flexbox layout to the <th>
+        justifyContent: "flex-end", // Justify content to the end
         p: 0,
         borderBottom: "none",
         color: "currentColor",
@@ -108,9 +125,7 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
           display: { base: "flex", sm: "revert" },
           alignItems: "center",
           gap: 4,
-        },
-        "&:nth-of-type(3), &:nth-of-type(4)": {
-          hideBelow: "md",
+          width: "200px"
         },
       },
     }}
@@ -144,7 +159,7 @@ const Framework = forwardRef<ChildOnlyProp, "tr">((props, ref) => (
 const ChakraSelect = chakra((props: { className?: string }) => (
   <Select {...props} />
 ))
-const StyledSelect = (props) => (
+export const StyledSelect = (props) => (
   <ChakraSelect
     w="full"
     sx={{
@@ -187,6 +202,9 @@ const StyledSelect = (props) => (
               ".react-select__indicator": {
                 color: "background.base",
               },
+            },
+            ".react-select__placeholder": { // Change placeholder color on hover/focus
+              color: "background.base",
             },
           },
         },
@@ -318,10 +336,14 @@ const thirdCol = "thirdCol"
 export interface FrameworkTableProps {
   filters: Record<string, boolean>
   frameworkData: FrameworkData[]
+  filteredTutorials: ITutorial[] // Add the type definition for Tutorial if not already defined
+  setModalOpen: (open: boolean) => void
+  trackCustomEvent: typeof trackCustomEvent;
+  locale: string
 }
 
-const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
-  const { t } = useTranslation("page-understand-the-framework")
+const FrameworkTable = ({ filters, frameworkData, filteredTutorials, setModalOpen, trackCustomEvent, locale }: FrameworkTableProps) => {
+  const { t } = useTranslation("page-programs")
   const {
     featureDropdownItems,
     filteredFeatureDropdownItems,
@@ -337,35 +359,56 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
     frameworkCardData,
   } = useFrameworkTable({ filters, t, frameworkData })
 
+  const CardGrid = ({ children }: ChildOnlyProp) => (
+    <Grid
+      templateColumns="repeat(auto-fill, minmax(min(100%, 280px), 1fr))"
+      gap={1}
+      pt={2}
+    >
+      {children}
+    </Grid>
+  )
+
+  const published = (locale: string, published: string) => {
+    const localeTimestamp = getLocaleTimestamp(locale as Lang, published)
+    return localeTimestamp !== INVALID_DATETIME ? (
+      <span>
+        {localeTimestamp}
+      </span>
+    ) : null
+  }
+
+  const cardBoxShadow = useToken("colors", "cardBoxShadow")
+
   return (
     <Container>
       <FrameworkContentHeader>
         <Th>
           {filteredFrameworks.length === frameworkCardData.length ? (
             <Text as="span">
-              {t("page-understand-the-framework-showing-all")} (
+              {t("page-programs:page-programs-showing-all")} (
               <strong>{frameworkCardData.length}</strong>)
             </Text>
           ) : (
             <Text as="span">
-              {t("page-understand-the-framework-showing")}{" "}
+              {t("page-programs:page-programs-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkCardData.length}
               </strong>{" "}
-              {t("page-understand-the-framework-frameworks")}
+              {t("page-programs:page-programs-programs")}
             </Text>
           )}
         </Th>
         <Th>
           <Text as="span" hideFrom="sm" fontSize="md" whiteSpace="nowrap">
-            {t("page-understand-the-framework-choose-perspectives")}
+            {t("page-programs:page-programs-sort-by")}
           </Text>
           <StyledSelect
             className="react-select-container"
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understand-the-framework-choose-to-compare"),
+                label: t("page-programs:page-programs-sort-by"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -376,13 +419,13 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             isSearchable={false}
           />
         </Th>
-        <Th>
+        {/* <Th>
           <StyledSelect
             className="react-select-container"
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understand-the-framework-choose-to-compare"),
+                label: t("page-programs:page-programs-sort-by"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -399,7 +442,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understand-the-framework-choose-to-compare"),
+                label: t("page-programs:page-programs-sort-by"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -409,178 +452,161 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             defaultValue={thirdFeatureSelect}
             isSearchable={false}
           />
-        </Th>
+        </Th> */}
       </FrameworkContentHeader>
-      {filteredFrameworks.map((framework, idx) => {
-
-        // Assuming featureDropdownItems is an array of DropdownOption objects
-        // and wallet is an object representing the wallet properties
-
-        function findLastTrueLabel(items, filterKey, wallet) {
-          const matchingLabels = items
-            .filter(item => item.category === filterKey)
-            .map(item => ({ label: item.label, filterKey: item.filterKey, description: item.description }))
-            .filter(item => wallet[item.filterKey]);
-
-          return matchingLabels[matchingLabels.length - 1];
-        }
-
-        // Usage
-        const firstLastTrueLabel = findLastTrueLabel(featureDropdownItems, firstFeatureSelect.filterKey, framework);
-        const secondLastTrueLabel = findLastTrueLabel(featureDropdownItems, secondFeatureSelect.filterKey, framework);
-        const thirdLastTrueLabel = findLastTrueLabel(featureDropdownItems, thirdFeatureSelect.filterKey, framework);
-
-        return (
-          <FrameworkContainer key={framework.key}>
-            <Framework
+      {filteredTutorials.length !== 0 && (
+        <CardGrid>
+          {filteredTutorials.map((tutorial) => {
+            const comingSoon = !!tutorial.to;
+            return (
+              <Flex
+                as={comingSoon ? BaseLink : 'div'} // Use 'div' if there's no link
+                textDecoration="none"
+                flexDirection="column"
+                justifyContent="space-between"
+                fontWeight="normal"
+                color="text"
+                border="1px solid"
+                borderColor="var(--x3-colors-primary-base)"
+                padding={8}
+                h="full"
+                w="full"
+                position="relative"
+                _hover={{
+                  textDecoration: comingSoon ? "none" : undefined,
+                  borderRadius: comingSoon ? "base" : undefined,
+                  boxShadow: comingSoon ? "0 0 1px var(--x3-colors-primary-base)" : undefined,
+                  bg: comingSoon ? "tableBackgroundHover" : undefined,
+                }}
+                key={tutorial.to}
+                to={comingSoon ? tutorial.to : undefined}
+                cursor={comingSoon ? 'pointer' : 'not-allowed'}
+                hideArrow
+              >
+                {!tutorial.to && ( // Conditionally render the "Coming Soon" tag if there's no link
+                  <Badge
+                    position="absolute" // Absolutely position the "Coming Soon" tag
+                    top={2}
+                    right={2}
+                    px={2}
+                    py={1}
+                    colorScheme="gray"
+                    fontSize="xs"
+                  >
+                    Coming Soon
+                  </Badge>
+                )}
+                <Flex
+                  justifyContent="space-between"
+                  alignItems="flex-start"
+                  flexDirection={{ base: "column" }}
+                  gap={6}
+                >
+                  <Flex gap={2}>
+                    <Badge variant="secondary">
+                      {t(getSkillTranslationId(tutorial.frameworkLevel!))}
+                    </Badge>
+                    <Badge variant="secondary">
+                      {tutorial.programType}
+                    </Badge>
+                  </Flex>
+                  <Text
+                    noOfLines={2}
+                    color="text"
+                    fontWeight="semibold"
+                    fontSize="2xl"
+                  >
+                    {tutorial.title}
+                  </Text>
+                </Flex>
+                <Text noOfLines={3} color="text200">{tutorial.description}</Text>
+                <div>
+                  <Flex direction="column" align="start" fontSize="sm" color="text200" textTransform="uppercase" mb={6}>
+                    {/* <Flex align="center" mb={1}>
+                          <Emoji text=":wave:" fontSize="sm" me={2} />
+                          {tutorial.author}
+                        </Flex> */}
+                    <Flex align="center" mb={2}>
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                      <Emoji text=":star:" fontSize="sm" me={1} />
+                    </Flex>
+                    {/* <Flex align="center" mb={1}>
+                          <Emoji text=":heart:" fontSize="sm" me={2} />
+                          10 Likes
+                        </Flex> */}
+                    <Flex align="center" mb={1}>
+                      <Emoji text=":globe_showing_americas:" fontSize="sm" me={2} />
+                      {tutorial.location}
+                    </Flex>
+                    {/* {tutorial.timeToRead && (
+                          <Flex align="center" mb={1}>
+                            <Emoji text=":stopwatch:" fontSize="sm" me={2} />
+                            {tutorial.timeToRead} {t("page-programs:page-programs-read-time")}
+                          </Flex>
+                        )} */}
+                    {/* {published(locale!, tutorial.published ?? "") && (
+                          <Flex align="center" mb={1}>
+                            <Emoji text=":calendar:" fontSize="sm" me={2} />
+                            {published(locale!, tutorial.published ?? "")}
+                          </Flex>
+                        )} */}
+                  </Flex>
+                  <Flex flexWrap="wrap" w="full">
+                    <TutorialTags tags={tutorial.tags?.slice(0, 2) ?? []} />
+                  </Flex>
+                </div>
+              </Flex>
+            )
+          })}
+          <Flex
+            textDecoration="none"
+            flexDirection="column"
+            justifyContent="center"
+            fontWeight="normal"
+            color="text"
+            // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
+            border="1px solid"
+            borderColor="var(--x3-colors-primary-base)"
+            padding={8}
+            h="full"
+            w="full"
+            _hover={{
+              textDecoration: "none",
+              borderRadius: "base",
+              boxShadow: "0 0 1px var(--x3-colors-primary-base)",
+              // bg: "tableBackgroundHover",
+            }}
+          >
+            <Button
+              variant="outline"
+              color="text"
+              borderColor="text"
+              _hover={{
+                color: "primary.base",
+                borderColor: "primary.base",
+                boxShadow: cardBoxShadow,
+              }}
+              _active={{
+                bg: "secondaryButtonBackgroundActive",
+              }}
+              py={2}
+              px={3}
               onClick={() => {
-                updateMoreInfo(framework.key)
-                // Log "more info" event only on expanding
-                framework.moreInfo &&
-                  trackCustomEvent({
-                    eventCategory: "FrameworkMoreInfo",
-                    eventAction: `More info framework`,
-                    eventName: `More info ${framework.name}`,
-                  })
+                setModalOpen(true)
+                trackCustomEvent({
+                  eventCategory: "tutorials tags",
+                  eventAction: "click",
+                  eventName: "submit",
+                })
               }}
             >
-              <Td lineHeight="revert">
-                <FlexInfo>
-                  <Box>
-                    <Image
-                      src={framework.image}
-                      alt=""
-                      objectFit="contain"
-                      boxSize="56px"
-                    />
-                  </Box>
-                  <Box>
-                    <Text>{framework.name}</Text>
-                    <Text
-                      hideBelow="sm"
-                      color="text200"
-                      fontSize="0.7rem"
-                      lineHeight="0.85rem"
-                    >
-                      {framework.description}
-                    </Text>
-                    {/* <Box mt={4}>
-                      <Flex gap="0.8rem">
-                        <SocialLink // knowledge
-                          to={framework.knowledge}
-                          hideArrow
-                          customEventOptions={{
-                            eventCategory: "FrameworkExternalLinkList",
-                            eventAction: `Go to level`,
-                            eventName: `Knowledge: ${framework.name} ${idx}`,
-                            eventValue: JSON.stringify(filters),
-                          }}
-                        >
-                          <Icon
-                            as={FaBook}
-                            color="#6FAAC3"
-                            fontSize="2xl"
-                          />
-                        </SocialLink>
-                        <SocialLink // tools
-                          to={framework.tools}
-                          hideArrow
-                          customEventOptions={{
-                            eventCategory: "FrameworkExternalLinkList",
-                            eventAction: `Go to level`,
-                            eventName: `Tools: ${framework.name} ${idx}`,
-                            eventValue: JSON.stringify(filters),
-                          }}
-                        >
-                          <Icon
-                            as={FaTools}
-                            color="#E03D3E"
-                            fontSize="2xl"
-                          />
-                        </SocialLink>
-                        <SocialLink // community
-                          to={framework.community}
-                          hideArrow
-                          customEventOptions={{
-                            eventCategory: "FrameworkExternalLinkList",
-                            eventAction: `Go to level`,
-                            eventName: `Community: ${framework.name} ${idx}`,
-                            eventValue: JSON.stringify(filters),
-                          }}
-                        >
-                          <Icon
-                            as={FaUsers}
-                            color="#EDBE00"
-                            fontSize="2xl"
-                          />
-                        </SocialLink>
-                      </Flex>
-                    </Box> */}
-                  </Box>
-                </FlexInfo>
-              </Td>
-              <Td>
-                <FlexInfoCenter className={firstCol}>
-                  <Tooltip
-                    content={
-                      <Text lineHeight={1.2}>
-                        {firstLastTrueLabel.description}
-                      </Text>
-                    }
-                  >
-                    {firstLastTrueLabel ? firstLastTrueLabel.label : "N/A"}
-                  </Tooltip>
-                </FlexInfoCenter>
-              </Td>
-              <Td>
-                <FlexInfoCenter className={secondCol}>
-                  <Tooltip
-                    content={
-                      <Text lineHeight={1.2}>
-                        {secondLastTrueLabel.description}
-                      </Text>
-                    }
-                  >
-                    {secondLastTrueLabel ? secondLastTrueLabel.label : "N/A"}
-                  </Tooltip>
-                </FlexInfoCenter>
-              </Td>
-              <Td>
-                <FlexInfoCenter className={thirdCol}>
-                  <Tooltip
-                    content={
-                      <Text lineHeight={1.2}>
-                        {thirdLastTrueLabel.description}
-                      </Text>
-                    }
-                  >
-                    {thirdLastTrueLabel ? thirdLastTrueLabel.label : "N/A"}
-                  </Tooltip>
-                </FlexInfoCenter>
-              </Td>
-              <Td>
-                <FlexInfoCenter>
-                  <Box>
-                    <Icon
-                      as={framework.moreInfo ? MdExpandLess : MdExpandMore}
-                      color="primary.base"
-                      fontSize="2xl"
-                    />
-                  </Box>
-                </FlexInfoCenter>
-              </Td>
-            </Framework>
-            {/* {framework.moreInfo && (
-              <FrameworkMoreInfo
-                framework={framework}
-                filters={filters}
-                idx={idx}
-                featureDropdownItems={featureDropdownItems}
-              />
-            )} */}
-          </FrameworkContainer>
-        )
-      })}
+              {t("page-programs:page-programs-submit-button")}
+            </Button>
+          </Flex>
+        </CardGrid>)}
     </Container>
   )
 }

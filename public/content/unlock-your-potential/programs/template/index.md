@@ -4,6 +4,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 author: Conrad Lin
 tags: ["productivity"]
 programType: knowledge
+location: article
 frameworkLevel: LEVEL_4
 published: 2023-09-15
 lang: en

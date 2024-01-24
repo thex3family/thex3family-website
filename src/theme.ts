@@ -122,15 +122,6 @@ const baseColors = {
   fail300,
   fail200,
   fail100,
-  tagBlue: primaryLight100,
-  tagOrange: primaryDark100,
-  tagGreen: success100,
-  tagRed: fail100,
-  tagTurquoise: turquoise,
-  tagGray: white700,
-  tagYellow: yellow,
-  tagMint: mint,
-  tagPink: pink,
   warning: primaryDark100,
   warningLink: primaryDark700,
   warningLinkHover: primaryDark900,
@@ -229,7 +220,6 @@ const lightColors = {
   warning: primaryDark100,
   warningLink: primaryDark700,
   warningLinkHover: primaryDark900,
-  tagMint: mint,
   mainnet: success200,
   mainnetBorder: black50,
   beaconchain: turquoise,
@@ -272,6 +262,9 @@ const lightColors = {
   sliderBtnColor: white,
   sliderBtnBgDisabled: "#E7E7E7",
   sliderBtnColorDisabled: "#737373",
+  tag1: primaryLight100,
+  tag2: primaryLight200,
+  tag3: primaryLight300,
 }
 
 // TODO replace random variables w/ baseColor variables
@@ -349,7 +342,6 @@ const darkColors = {
   warning: primaryDark100,
   warningLink: primaryDark700,
   warningLinkHover: primaryDark900,
-  tagMint: mint,
   mainnet: "#222222",
   mainnetBorder: success300,
   beaconchain: "#222222",
@@ -394,6 +386,9 @@ const darkColors = {
   sliderBtnColor: white,
   sliderBtnBgDisabled: "#404040",
   sliderBtnColorDisabled: "#737373",
+  tag1: primaryDark100,
+  tag2: primaryDark200,
+  tag3: primaryDark300,
 }
 
 const lightThemeColors = Object.assign({}, baseColors, lightColors)
