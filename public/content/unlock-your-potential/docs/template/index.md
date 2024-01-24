@@ -24,7 +24,7 @@ If referencing another concept, be sure to explain it or suggest a link for the 
 
 Feel free to suggest sub-pages: if a topic starts to sprawl we can create sub-pages to make the reading experience better. If there's a way for a user to put what you've taught into practice, try and funnel them into doing that. 
 
-## Related Progorams
+## Related Programs
 
 Programs that utilize this first principle.
 
