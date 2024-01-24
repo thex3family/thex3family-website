@@ -454,9 +454,9 @@ const FrameworkTable = ({ filters, frameworkData, filteredTutorials, setModalOpe
           />
         </Th> */}
       </FrameworkContentHeader>
-      {filteredTutorials.length !== 0 && (
+      {frameworkData.length !== 0 && (
         <CardGrid>
-          {filteredTutorials.map((tutorial) => {
+          {frameworkData.map((tutorial) => {
             const comingSoon = !!tutorial.to;
             return (
               <Flex
