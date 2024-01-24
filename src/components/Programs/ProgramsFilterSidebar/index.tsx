@@ -185,6 +185,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
             setFilters={setFilters}
             selectedPersona={selectedPersona}
             setSelectedPersona={setSelectedPersona}
+            setSelectedTags={setSelectedTags}
           />
         </TabPanel>
         <TabPanel>
