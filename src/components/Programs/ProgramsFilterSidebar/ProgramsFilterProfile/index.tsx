@@ -21,8 +21,9 @@ const FrameworkFilterProfile = ({
   setFilters,
   selectedPersona,
   setSelectedPersona,
+  setSelectedTags
 }) => {
-  const { personas } = useFrameworkFilterProfile()
+  const { personas } = useFrameworkFilterProfile(setSelectedTags)
 
   const getContainerBg = (idx: number) =>
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -68,6 +69,7 @@ const FrameworkFilterProfile = ({
             onClick={() => {
               if (idx === selectedPersona) {
                 resetFilters()
+                setSelectedTags([]); // Clear tags when resetting filters
                 trackCustomEvent({
                   eventCategory: "UserPersona",
                   eventAction: `${persona.title}`,
@@ -76,6 +78,7 @@ const FrameworkFilterProfile = ({
               } else {
                 setSelectedPersona(idx)
                 setFilters(persona.presetFilters)
+                setSelectedTags(persona.presetFilters.tags); // Set the tags for the selected persona
                 trackCustomEvent({
                   eventCategory: "UserPersona",
                   eventAction: `${persona.title}`,

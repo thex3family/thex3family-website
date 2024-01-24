@@ -11,19 +11,20 @@ interface Personas {
   description: string
   featureHighlight: { label: string; icon: JSX.Element }[]
   presetFilters: {
-    perspective_3_option_1: boolean
-    perspective_3_option_2: boolean
-    perspective_3_option_3: boolean
-    perspective_3_option_4: boolean
-    perspective_3_option_5: boolean
-    perspective_3_option_6: boolean
-    perspective_3_option_7: boolean
-    perspective_3_option_8: boolean
-    perspective_3_option_9: boolean
+    LEVEL_1: boolean
+    LEVEL_2: boolean
+    LEVEL_3: boolean
+    LEVEL_4: boolean
+    LEVEL_5: boolean
+    LEVEL_6: boolean
+    LEVEL_7: boolean
+    LEVEL_8: boolean
+    LEVEL_9: boolean
+    tags: string[];
   }
 }
 
-export const useFrameworkFilterProfile = () => {
+export const useFrameworkFilterProfile = (setSelectedTags) => {
   const { t } = useTranslation("page-programs")
 
   const filterLabels = {
@@ -41,15 +42,16 @@ export const useFrameworkFilterProfile = () => {
         // filterLabels.one,
       ],
       presetFilters: {
-        perspective_3_option_1: true,
-        perspective_3_option_2: true,
-        perspective_3_option_3: false,
-        perspective_3_option_4: false,
-        perspective_3_option_5: false,
-        perspective_3_option_6: false,
-        perspective_3_option_7: false,
-        perspective_3_option_8: false,
-        perspective_3_option_9: false,
+        LEVEL_1: false,
+        LEVEL_2: false,
+        LEVEL_3: true,
+        LEVEL_4: true,
+        LEVEL_5: false,
+        LEVEL_6: false,
+        LEVEL_7: false,
+        LEVEL_8: false,
+        LEVEL_9: false,
+        tags: ["gamification"]
       },
     },
     {
@@ -59,15 +61,16 @@ export const useFrameworkFilterProfile = () => {
         // filterLabels.one,
       ],
       presetFilters: {
-        perspective_3_option_1: false,
-        perspective_3_option_2: false,
-        perspective_3_option_3: true,
-        perspective_3_option_4: true,
-        perspective_3_option_5: true,
-        perspective_3_option_6: true,
-        perspective_3_option_7: false,
-        perspective_3_option_8: false,
-        perspective_3_option_9: false,
+        LEVEL_1: false,
+        LEVEL_2: false,
+        LEVEL_3: false,
+        LEVEL_4: false,
+        LEVEL_5: false,
+        LEVEL_6: false,
+        LEVEL_7: false,
+        LEVEL_8: false,
+        LEVEL_9: false,
+        tags: ["relationships"]
       },
     },
     {
@@ -78,15 +81,16 @@ export const useFrameworkFilterProfile = () => {
           // filterLabels.one,
         ],
       presetFilters: {
-        perspective_3_option_1: false,
-        perspective_3_option_2: false,
-        perspective_3_option_3: false,
-        perspective_3_option_4: false,
-        perspective_3_option_5: true,
-        perspective_3_option_6: true,
-        perspective_3_option_7: false,
-        perspective_3_option_8: false,
-        perspective_3_option_9: false,
+        LEVEL_1: false,
+        LEVEL_2: false,
+        LEVEL_3: false,
+        LEVEL_4: false,
+        LEVEL_5: false,
+        LEVEL_6: false,
+        LEVEL_7: false,
+        LEVEL_8: false,
+        LEVEL_9: false,
+        tags: []
       },
     },
     {
@@ -97,15 +101,16 @@ export const useFrameworkFilterProfile = () => {
           // filterLabels.one,
         ],
       presetFilters: {
-        perspective_3_option_1: false,
-        perspective_3_option_2: false,
-        perspective_3_option_3: false,
-        perspective_3_option_4: false,
-        perspective_3_option_5: true,
-        perspective_3_option_6: true,
-        perspective_3_option_7: false,
-        perspective_3_option_8: false,
-        perspective_3_option_9: false,
+        LEVEL_1: false,
+        LEVEL_2: false,
+        LEVEL_3: true,
+        LEVEL_4: true,
+        LEVEL_5: true,
+        LEVEL_6: false,
+        LEVEL_7: false,
+        LEVEL_8: false,
+        LEVEL_9: false,
+        tags: []
       },
     },
   ]
