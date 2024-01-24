@@ -104,7 +104,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
       alignItems="normal"
       p={{ base: 4, sm: 0 }}
       // Workaround to not having a dedicated prop to all items open by default
-      defaultIndex={Object.keys(filterOptions).map((key) => +key)}
+      // defaultIndex={Object.keys(filterOptions).map((key) => +key)}
     >
       <Box
         as="span"
@@ -116,105 +116,9 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
         textAlign="center"
         color="secondary"
       >
-        <Translation id="page-understand-the-framework:page-understand-the-framework-filters-description" />
+        <Translation id="page-programs:page-programs-filters-description" />
       </Box>
 
-      <AccordionItem
-        key={uniqueId("frameworkFilterSidebarItem")}
-        background={filterPanelBg}
-        borderRadius="base"
-        // Remove border color from global style
-        borderColor="transparent"
-        p={6}
-      >
-        {({ isExpanded }) => (
-          <>
-            <Heading
-              as="h3"
-              color="primary.base"
-              borderBottom={isExpanded ? "1px" : "none"}
-              borderColor="currentColor"
-              fontSize="lg"
-              fontWeight={600}
-              lineHeight={1.4}
-              py={1}
-              px={4}
-              borderRadius={1}
-              _hover={{ color: "primary.hover" }}
-            >
-              <AccordionButton
-                color="inherit"
-                fontWeight="inherit"
-                fontSize="inherit"
-                p={0}
-                textAlign="initial"
-                _hover={{ background: "transparent" }}
-              >
-                <Box as="span" flex={1}>
-                  Tags
-                </Box>
-                <AccordionIcon
-                  color="primary.base"
-                  boxSize={9}
-                  _hover={{ color: "primary.hover" }}
-                />
-              </AccordionButton>
-            </Heading>
-            <AccordionPanel as={List} p={0} m={0}>
-              {/* Tags */}
-              <Flex
-                justifyContent="center"
-                mt={6}
-                mb={4}
-                flexDirection={{ base: "column", md: "initial" }}
-              >
-                <Flex
-                  flexWrap="wrap"
-                  alignItems="center"
-                  gap={2}
-                  w="full"
-                  pl={3}
-                >
-                  {Object.entries(allTags).map(([tagName, tagCount], idx) => {
-                    const name = `${tagName} (${tagCount})`
-                    const isActive = selectedTags.includes(tagName)
-                    return (
-                      <FilterTag
-                        key={idx}
-                        onClick={() => handleTagSelect(tagName)}
-                        {...{ name, isActive }}
-                      />
-                    )
-                  })}
-                  {selectedTags.length > 0 && (
-                    <Button
-                      color="primary.base"
-                      textDecoration="underline"
-                      bg="none"
-                      border="none"
-                      cursor="pointer"
-                      p={0}
-                      _hover={{
-                        bg: "none",
-                      }}
-                      onClick={() => {
-                        setSelectedTags([])
-                        trackCustomEvent({
-                          eventCategory: "tutorial tags",
-                          eventAction: "click",
-                          eventName: "clear",
-                        })
-                      }}
-                    >
-                      <Translation id="page-programs:page-programs-tags-reset" />
-                    </Button>
-                  )}
-                </Flex>
-              </Flex>
-            </AccordionPanel>
-          </>
-        )}
-      </AccordionItem>
 
       {filterOptions.map((filterOption, idx) => {
         return (
@@ -331,7 +235,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                               />
                             )}
                           </GridItem>
-                          <GridItem
+                          {/* <GridItem
                             as="span"
                             color="text200"
                             fontSize="0.9rem"
@@ -339,7 +243,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                             colStart={2}
                           >
                             {item.description}
-                          </GridItem>
+                          </GridItem> */}
                         </SimpleGrid>
                         {item.options.length > 0 && item.showOptions && (
                           <HStack mt={3.5} spacing={2}>
@@ -410,6 +314,104 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
           </AccordionItem>
         )
       })}
+
+      <AccordionItem
+        key={uniqueId("frameworkFilterSidebarItem")}
+        background={filterPanelBg}
+        borderRadius="base"
+        // Remove border color from global style
+        borderColor="transparent"
+        p={6}
+      >
+        {({ isExpanded }) => (
+          <>
+            <Heading
+              as="h3"
+              color="primary.base"
+              borderBottom={isExpanded ? "1px" : "none"}
+              borderColor="currentColor"
+              fontSize="lg"
+              fontWeight={600}
+              lineHeight={1.4}
+              py={1}
+              px={4}
+              borderRadius={1}
+              _hover={{ color: "primary.hover" }}
+            >
+              <AccordionButton
+                color="inherit"
+                fontWeight="inherit"
+                fontSize="inherit"
+                p={0}
+                textAlign="initial"
+                _hover={{ background: "transparent" }}
+              >
+                <Box as="span" flex={1}>
+                  Tags
+                </Box>
+                <AccordionIcon
+                  color="primary.base"
+                  boxSize={9}
+                  _hover={{ color: "primary.hover" }}
+                />
+              </AccordionButton>
+            </Heading>
+            <AccordionPanel as={List} p={0} m={0}>
+              {/* Tags */}
+              <Flex
+                justifyContent="center"
+                mt={6}
+                mb={4}
+                flexDirection={{ base: "column", md: "initial" }}
+              >
+                <Flex
+                  flexWrap="wrap"
+                  alignItems="center"
+                  gap={2}
+                  w="full"
+                  pl={3}
+                >
+                  {Object.entries(allTags).map(([tagName, tagCount], idx) => {
+                    const name = `${tagName} (${tagCount})`
+                    const isActive = selectedTags.includes(tagName)
+                    return (
+                      <FilterTag
+                        key={idx}
+                        onClick={() => handleTagSelect(tagName)}
+                        {...{ name, isActive }}
+                      />
+                    )
+                  })}
+                  {selectedTags.length > 0 && (
+                    <Button
+                      color="primary.base"
+                      textDecoration="underline"
+                      bg="none"
+                      border="none"
+                      cursor="pointer"
+                      p={0}
+                      _hover={{
+                        bg: "none",
+                      }}
+                      onClick={() => {
+                        setSelectedTags([])
+                        trackCustomEvent({
+                          eventCategory: "tutorial tags",
+                          eventAction: "click",
+                          eventName: "clear",
+                        })
+                      }}
+                    >
+                      <Translation id="page-programs:page-programs-tags-reset" />
+                    </Button>
+                  )}
+                </Flex>
+              </Flex>
+            </AccordionPanel>
+          </>
+        )}
+      </AccordionItem>
+
     </Accordion>
   )
 }

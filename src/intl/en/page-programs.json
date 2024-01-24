@@ -22,11 +22,25 @@
   "page-programs-intermediate": "Intermediate",
   "page-programs-advanced": "Advanced",
 
+  "page-programs-profile-filters": "Profiles",
+  "page-programs-advanced-filters": "Filters",
+
+  "page-programs-reset-filters": "Reset All Filters",
   "page-programs-filter-error": "No programs with all your chosen filters (yet).",
   "page-programs-try-removing-filters": "Try removing a filter or two, or add to our repository!",
   "page-programs-tags-reset": "Reset Tags",
   "page-programs-submit-button": "Submit Program",
 
+  "page-programs-filters-description": "Focus On The Relevant Programs You Need.",
+  
+  "page-programs-profile-1-title": "Lack Of Motivaton",
+  "page-programs-profile-1-description": "I can't seem to concentrate on the things I need to do.",
+  "page-programs-profile-2-title": "Frustrated At Others",
+  "page-programs-profile-2-description": "I don't understand why others can't just see it my way.",
+  "page-programs-profile-3-title": "Feeling Helpless",
+  "page-programs-profile-3-description": "I lack confidence in myself and my capability.",
+  "page-programs-profile-4-title": "Not Achieving My Goals",
+  "page-programs-profile-4-description": "I fall short of being able to achieve what I want to do.",
 
   "page-tutorials-env-banner": "Don't commit <code>.env</code>! Please make sure never to share or expose your <code>.env</code> file with anyone, as you are compromising your secrets in doing so. If you are using version control, add your <code>.env</code> to a <a href=\"https://git-scm.com/docs/gitignore\">gitignore</a> file."
 }

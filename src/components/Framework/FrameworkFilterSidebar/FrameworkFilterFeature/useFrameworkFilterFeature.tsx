@@ -30,7 +30,7 @@ export const useFrameworkFilterFeature = ({
   filters,
   updateFilterOptions,
 }: Omit<FrameworkFilterFeatureProps, "updateFilterOption">) => {
-  const { t } = useTranslation("page-find-wallet")
+  const { t } = useTranslation("page-understand-the-framework")
   const frameworkData = []
   const { featureDropdownItems, perspectiveDropdownItems } = useFrameworkTable({ filters, t, frameworkData })
   const [filterOptions, setFilterOptions] = useState<FilterOptionType[]>([perspectiveDropdownItems[2]].map((perspectiveItem) => ({

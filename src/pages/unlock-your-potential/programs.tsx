@@ -25,7 +25,7 @@ import {
   useTheme,
 } from "@chakra-ui/react"
 
-import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
+import { NAV_BAR_PX_HEIGHT, SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 import { BasePageProps, ChildOnlyProp, Lang } from "@/lib/types"
 
@@ -246,9 +246,9 @@ const TutorialPage = ({
   return (
     <Flex as={MainArticle} direction="column" position="relative" w="full">
       <PageMetadata
-        title={t("page-knowledge:page-tutorials-meta-title")}
+        title={t("common:programs-title")}
         description={t(
-          "page-knowledge:page-tutorials-meta-description"
+          "common:programs-description"
         )}
       />
 
@@ -371,13 +371,13 @@ const TutorialPage = ({
             }}
           >
             <Box>
-              <Text>{t("page-understand-the-framework-filters")}</Text>
+              <Text>{t("common:filters")}</Text>
               <Text fontSize="sm" lineHeight="14px" color="body.medium">
                 {Object.values(filters).reduce(
                   (acc, filter) => (filter ? acc + 1 : acc),
                   0
                 )}{" "}
-                {t("page-understand-the-framework-active")}
+                {t("common:active")}
               </Text>
             </Box>
           </Button>
@@ -398,6 +398,11 @@ const TutorialPage = ({
                 position="absolute"
                 inset={2}
                 overflow="auto"
+                allTags={allTags}
+                selectedTags={selectedTags}
+                handleTagSelect={handleTagSelect}
+                setSelectedTags={setSelectedTags}
+                trackCustomEvent={trackCustomEvent}
                 {...{
                   filters,
                   resetFrameworkFilter,
@@ -418,7 +423,7 @@ const TutorialPage = ({
         <Show above="lg">
           <FrameworkFilterSidebar
             maxW="330px"
-            top={NAV_BAR_PX_HEIGHT}
+            top={SECONDARY_NAV_BAR_PX_HEIGHT}
             allTags={allTags}
             selectedTags={selectedTags}
             handleTagSelect={handleTagSelect}

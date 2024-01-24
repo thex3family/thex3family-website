@@ -68,4 +68,5 @@ export const BEACONCHA_IN_URL = "https://beaconcha.in/"
 export const ETHERSCAN_API_URL = "https://api.etherscan.io"
 
 export const NAV_BAR_PX_HEIGHT = "75px"
+export const SECONDARY_NAV_BAR_PX_HEIGHT = "134px"
 export const FROM_QUERY = "from"

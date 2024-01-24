@@ -208,13 +208,13 @@ const FindWalletPage = () => {
             }}
           >
             <Box>
-              <Text>{t("page-understand-the-framework-filters")}</Text>
+              <Text>{t("common:filters")}</Text>
               <Text fontSize="sm" lineHeight="14px" color="body.medium">
                 {Object.values(filters).reduce(
                   (acc, filter) => (filter ? acc + 1 : acc),
                   0
                 )}{" "}
-                {t("page-understand-the-framework-active")}
+                {t("common:active")}
               </Text>
             </Box>
           </Button>
