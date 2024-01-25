@@ -9,7 +9,6 @@ import { BasePageProps, QuizStatus } from "@/lib/types"
 
 import { ButtonLink } from "@/components/Buttons"
 import FeedbackCard from "@/components/FeedbackCard"
-import { HubHero } from "@/components/Hero"
 import MainArticle from "@/components/MainArticle"
 import PageMetadata from "@/components/PageMetadata"
 import QuizWidget from "@/components/Quiz/QuizWidget"
@@ -40,7 +39,7 @@ const handleGHAdd = () =>
   })
 
 export const getStaticProps = (async ({ locale }) => {
-  const requiredNamespaces = getRequiredNamespacesForPage("/quizzes")
+  const requiredNamespaces = getRequiredNamespacesForPage("/understand-yourself/quizzes")
 
   const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[1])
 
@@ -149,12 +148,12 @@ const QuizzesHubPage: NextPage<
         <Flex direction={{ base: "column-reverse", lg: "row" }} columnGap="20">
           <Stack spacing="10" flex="1">
             <Box>
-              <QuizzesList
+              {/* <QuizzesList
                 content={understand_yourself_quizzes}
                 headingId={t("common:unlock-your-potential-title")}
                 descriptionId={t("common:unlock-your-potential-description")}
                 {...commonQuizListProps}
-              />
+              /> */}
               <QuizzesList
                 content={live_your_best_life_quizzes}
                 headingId={t("common:live-your-best-life-title")}

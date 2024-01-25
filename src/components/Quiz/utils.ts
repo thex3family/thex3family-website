@@ -33,15 +33,15 @@ export const getNextQuiz = (currentQuiz?: string) => {
 }
 
 export const shareOnTwitter = ({ score, total }: QuizShareStats): void => {
-  const url = "https://ethereum.org/quizzes"
-  const hashtags = ["ethereumquiz", "ethereum", "quiz"]
+  const url = "https://the.x3.family/understand-yourself/quizzes"
+  const hashtags = ["thex3family", "liveyourbestlife", "quiz"]
   const tweet =
     score > 0
       ? `${encodeURI(
-          `I took Ethereum quizzes on ethereum.org and overall scored ${score} out of ${total}! Try it yourself at ${url}`
+          `I took quizzes on the.x3.family and overall scored ${score} out of ${total}! Try it yourself at ${url}`
         )}`
       : `${encodeURI(
-          `How well do you know Ethereum? Check out these Ethereum quizzes on ethereum.org: ${url}`
+          `How well do you know how to live a better life? Check out these quizzes on the.x3.family: ${url}`
         )}`
 
   window.open(
