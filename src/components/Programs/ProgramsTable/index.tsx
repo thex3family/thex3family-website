@@ -494,10 +494,10 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                     right={2}
                     px={2}
                     py={1}
-                    colorScheme="gray"
-                    fontSize="xs"
+                    colorScheme="white"
+                    fontSize="lg"
                   >
-                    Coming Soon
+                    🚧
                   </Badge>
                 )}
                 <Flex
@@ -551,7 +551,9 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                         text={
                           tutorial.location === 'virtual' ? ":globe_with_meridians:" :
                             tutorial.location === 'physical' ? ":round_pushpin:" :
-                              ":eyes:" // Default case for all other types of locations
+                              tutorial.location === 'system' ? ":gear:" :
+                                tutorial.location === 'app' ? ":mobile_phone:" :
+                                  ":eyes:" // Default case for all other types of locations
                         }
                         fontSize="sm"
                         me={2}
