@@ -54,6 +54,7 @@ const getRequiredNamespacesForPath = (path: string) => {
   if (path === "/") {
     primaryNamespace = "page-index"
   }
+  
 
   if (path.startsWith("/glossary")) {
     requiredNamespaces = [...requiredNamespaces, "glossary"]
@@ -71,8 +72,8 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-languages"
   }
 
-  if (path.startsWith("/live-your-best-life/about-us")) {
-    primaryNamespace = "page-about-us"
+  if (path.startsWith("/understand-yourself/understand-the-framework")) {
+    primaryNamespace = "page-understand-the-framework"
   }
 
   if (path.startsWith("/unlock-your-potential/programs")) {
@@ -80,15 +81,17 @@ const getRequiredNamespacesForPath = (path: string) => {
     requiredNamespaces = [...requiredNamespaces, "page-understand-the-framework", "glossary"]
   }
 
-  if (path.startsWith("/understand-yourself/understand-the-framework")) {
-    primaryNamespace = "page-understand-the-framework"
+  if (path.startsWith("/live-your-best-life/about-us")) {
+    primaryNamespace = "page-about-us"
   }
+
+
 
   // Quizzes
   // Note: Add any URL paths that have quizzes here
   if (
     path.startsWith("/live-your-best-life/about-us") ||
-    path.startsWith("/quizzes")
+    path.startsWith("/understand-yourself/quizzes")
   ) {
     requiredNamespaces = [...requiredNamespaces, "quizzes"]
   }
