@@ -60,15 +60,6 @@ import {
 } from "@/lib/utils/translations"
 
 import { fetchTxCount } from "@/lib/api/fetchTxCount"
-import developers from "@/public/developers-eth-blocks.png"
-import community from "@/public/enterprise.png"
-import diffEthAndBtc from "@/public/eth.png"
-import criminalActivity from "@/public/finance_transparent.png"
-import ethCoin from "@/public/impact_transparent.png"
-import whatAreSmartContracts from "@/public/infrastructure_transparent.png"
-import whoRunsEthereum from "@/public/run-a-node/ethereum-inside.png"
-import stats from "@/public/upgrades/newrings.png"
-import hero from "@/public/what-is-ethereum.png"
 import MainHero from "@/components/MainHero"
 
 import comrades from "@/public/comrades.png"

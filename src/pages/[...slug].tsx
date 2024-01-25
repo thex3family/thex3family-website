@@ -26,7 +26,7 @@ import type {
 import mdComponents from "@/components/MdComponents"
 import PageMetadata from "@/components/PageMetadata"
 
-import { getCrowdinContributors } from "@/lib/utils/crowdin"
+// import { getCrowdinContributors } from "@/lib/utils/crowdin"
 import { dateToString } from "@/lib/utils/date"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getLastModifiedDate } from "@/lib/utils/gh"
@@ -37,20 +37,12 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import {
   docsComponents,
   DocsLayout,
-  roadmapComponents,
-  RoadmapLayout,
-  stakingComponents,
-  StakingLayout,
   staticComponents,
   StaticLayout,
   TutorialLayout,
   tutorialsComponents,
-  upgradeComponents,
-  UpgradeLayout,
   mainComponents,
   MainLayout,
-  useCasesComponents,
-  UseCasesLayout,
 } from "@/layouts"
 import rehypeHeadingIds from "@/lib/rehype/rehypeHeadingIds"
 import rehypeImg from "@/lib/rehype/rehypeImg"
@@ -62,10 +54,6 @@ interface Params extends ParsedUrlQuery {
 
 export const layoutMapping = {
   static: StaticLayout,
-  "use-cases": UseCasesLayout,
-  staking: StakingLayout,
-  roadmap: RoadmapLayout,
-  upgrade: UpgradeLayout,
   main: MainLayout,
   docs: DocsLayout,
   programs: TutorialLayout,
@@ -73,10 +61,6 @@ export const layoutMapping = {
 
 const componentsMapping = {
   static: staticComponents,
-  "use-cases": useCasesComponents,
-  staking: stakingComponents,
-  roadmap: roadmapComponents,
-  upgrade: upgradeComponents,
   main: mainComponents,
   docs: docsComponents,
   programs: tutorialsComponents,
@@ -165,9 +149,9 @@ export const getStaticProps = (async (context) => {
     }
   }
 
-  const crowdinContributors = ["docs", "programs"].includes(layout)
-    ? getCrowdinContributors(mdPath, locale as Lang)
-    : []
+  // const crowdinContributors = ["docs", "programs"].includes(layout)
+  //   ? getCrowdinContributors(mdPath, locale as Lang)
+  //   : []
 
   const requiredNamespaces = getRequiredNamespacesForPage(slug, layout)
 
@@ -183,7 +167,7 @@ export const getStaticProps = (async (context) => {
       layout,
       timeToRead: Math.round(timeToRead.minutes),
       tocItems,
-      crowdinContributors,
+      //crowdinContributors,
     },
   }
 }) satisfies GetStaticProps<Props, Params>
@@ -214,7 +198,7 @@ ContentPage.getLayout = (page) => {
     layout,
     timeToRead,
     tocItems,
-    crowdinContributors,
+    //crowdinContributors,
   } = page.props
 
   const layoutProps = {
@@ -223,7 +207,7 @@ ContentPage.getLayout = (page) => {
     lastUpdatedDate,
     timeToRead,
     tocItems,
-    crowdinContributors,
+    //crowdinContributors,
   }
   const Layout = layoutMapping[layout]
 

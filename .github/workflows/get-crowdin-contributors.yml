@@ -55,7 +55,7 @@ jobs:
           echo "This PR was automatically created to update Crowdin contributors." > pr_body.txt
           echo "This workflows runs every Sunday at 00:00 (UTC)." >> pr_body.txt
           echo "" >> pr_body.txt
-          echo "Thank you to everyone contributing to translate ethereum.org ❤️" >> pr_body.txt
+          echo "Thank you to everyone contributing to translate the.x3.family ❤️" >> pr_body.txt
 
       - name: Create Pull Request
         run: |

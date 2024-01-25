@@ -1,6 +1,6 @@
-name: Suggest a glossary term
-description: Suggest a new ethereum.org glossary term
-title: Suggest a glossary term
+name: Contribute To Our Glossary
+description: Add, update, delete glossary terms for the.x3.family
+title: Contribute To Our Glossary
 labels: ["feature :sparkles:", "content :fountain_pen:"]
 body:
   - type: checkboxes
@@ -12,7 +12,7 @@ body:
           required: true
         - label: This term/definition is not a product advertisement or contain other promotional content
           required: true
-        - label: This term/definition is directly relevant to Ethereum
+        - label: This term/definition is directly relevant to the Co-x3 Family Foundation
           required: true
     validations:
       required: true
@@ -36,10 +36,10 @@ body:
     validations:
       required: false
   - type: textarea
-    id: glossary_terms_ethereumdotorg_links
+    id: glossary_terms_links
     attributes:
-      label: Ethereum.org links
-      description: If appropriate/available, please suggest an internal ethereum.org link that would expand someones learning of this term
+      label: the.x3.family links
+      description: If appropriate/available, please suggest an internal the.x3.family link that would expand someones learning of this term
   - type: textarea
     id: glossary_term_additional_context
     attributes:

@@ -1,6 +1,6 @@
 {
-  "short_name": "x3.family",
-  "name": "x3.family",
+  "short_name": "the.x3.family",
+  "name": "the.x3.family",
   "icons": [
     {
       "src": "/assets/manifest-app-icon.svg",
@@ -26,30 +26,30 @@
   "theme_color": "#fff",
   "shortcuts": [
     {
-      "name": "ethereum.org Developer Hub",
-      "short_name": "Developer Hub",
-      "description": "Documentation, tutorials, and tools for developers building on Ethereum.",
-      "url": "/developers",
+      "name": "The Better Life Framework",
+      "short_name": "The Better Life Framework",
+      "description": "Get a deeper understanding of yourself and others.",
+      "url": "/understand-yourself/understand-the-framework",
       "icons": [
         {
           "src": "/assets/manifest-app-icon-192.png",
           "sizes": "192x192"
         }
       ]
-    }
+    },
   ],
-  "description": "Ethereum is a global, decentralized platform for money and new kinds of applications. On Ethereum, you can write code that controls money, and build applications accessible anywhere in the world.",
+  "description": "The Co-x3 Family Foundation is a non-profit organization that helps students, creatives, and retirees unlock their potential, make positive impact, and live their best life.",
   "screenshots": [
     {
       "src": "/assets/manifest-homepage-screenshot.png",
       "type": "image/png",
-      "sizes": "2048x1734",
+      "sizes": "2048x1319",
       "form_factor": "wide"
     },
     {
       "src": "/assets/manifest-homepage-screenshot-mobile.png",
       "type": "image/png",
-      "sizes": "1290x2195",
+      "sizes": "922x1590",
       "form_factor": "narrow"
     }
   ]

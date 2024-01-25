@@ -3,20 +3,13 @@ import { initReactI18next } from "react-i18next"
 
 export const baseLocales = {
   en: { title: "English", left: "En" },
-  zh: { title: "中国人", left: "Zh" },
-  ru: { title: "Русский", left: "Ru" },
-  uk: { title: "українська", left: "Uk" },
 }
 
 // Only i18n files named in this array are being exposed to Storybook. Add filenames as necessary.
 const ns = [
   "common",
   "glossary",
-  "page-about",
   "page-index",
-  "page-learn",
-  "page-upgrades",
-  "page-unlock-your-potential",
 ]
 const supportedLngs = Object.keys(baseLocales)
 

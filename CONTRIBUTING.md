@@ -1,8 +1,7 @@
-<h1 align="center" style="margin-top: 1em; margin-bottom: 2em;">
-  <p><a href="https://ethereum.org"><img alt="ethereum logo" src="./eth-transparent.png" alt="ethereum.org" width="125"></a></p>
-  <p>👋 Contributing to ethereum.org</p>
-</h1>
+<div align="center" style="margin-top: 1em; margin-bottom: 3em;">
+  <a href="https://the.x3.family"><img alt="thex3family logo" src="./public/assets/main-logo(white).png" alt="the.x3.family" width="125"></a>
+</div>
 
-### Thank you for your interest in contributing!
+### Contributing To The Co-x3 Family Foundation
 
-Please see [our contributing guide on ethereum.org](https://ethereum.org/en/contributing/) and [our GitHub repo homepage](https://github.com/ethereum/ethereum-org-website#how-to-contribute) for the latest information on how to contribute!
+Thank you for your interest in contributing! Please see [our contributing guide on [the.x3.family](https://the.x3.family/contribute/) and [our GitHub repo homepage](https://github.com/thex3family/thex3family-website#how-to-contribute) for the latest information on how to contribute!

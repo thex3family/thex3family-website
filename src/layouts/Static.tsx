@@ -7,11 +7,8 @@ import type { MdPageContent, StaticFrontmatter } from "@/lib/interfaces"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import Callout from "@/components/Callout"
 import Contributors from "@/components/Contributors"
-import EnergyConsumptionChart from "@/components/EnergyConsumptionChart"
 import FeedbackCard from "@/components/FeedbackCard"
 import GlossaryDefinition from "@/components/Glossary/GlossaryDefinition"
-import { HubHero } from "@/components/Hero"
-import NetworkUpgradeSummary from "@/components/History/NetworkUpgradeSummary"
 import Link from "@/components/Link"
 import Logo from "@/components/Logo"
 import MainArticle from "@/components/MainArticle"
@@ -27,14 +24,11 @@ import Text from "@/components/OldText"
 import SocialListItem from "@/components/SocialListItem"
 import TableOfContents from "@/components/TableOfContents"
 import Translation from "@/components/Translation"
-import TranslationChartImage from "@/components/TranslationChartImage"
 import UpcomingEventsList from "@/components/UpcomingEventsList"
 
 import { getEditPath } from "@/lib/utils/editPath"
 import { getLocaleTimestamp } from "@/lib/utils/time"
 import { isLangRightToLeft } from "@/lib/utils/translations"
-
-import GuideHeroImage from "@/public/heroes/guides-hub-hero.jpg"
 
 const Heading1 = (props: HeadingProps) => (
   <MdHeading1 fontSize={{ base: "2.5rem", md: "5xl" }} {...props} />
@@ -63,22 +57,19 @@ export const staticComponents = {
   li: ListItem,
   Callout,
   Contributors,
-  EnergyConsumptionChart,
   GlossaryDefinition,
   Icon,
   Link,
   Logo,
   MatomoOptOut,
   MeetupList,
-  NetworkUpgradeSummary,
   SocialListItem,
-  TranslationChartImage,
   UpcomingEventsList,
 }
 
 interface IProps
   extends ChildOnlyProp,
-    Pick<MdPageContent, "slug" | "tocItems" | "lastUpdatedDate"> {
+  Pick<MdPageContent, "slug" | "tocItems" | "lastUpdatedDate"> {
   frontmatter: StaticFrontmatter
 }
 export const StaticLayout: React.FC<IProps> = ({
@@ -103,26 +94,14 @@ export const StaticLayout: React.FC<IProps> = ({
         pt={{ base: 8, lg: 16 }}
       >
         <Box>
-          {slug === "/guides/" ? (
-            <HubHero
-              heroImg={GuideHeroImage}
-              header={frontmatter.title}
-              title={""}
-              description={frontmatter.description}
-            />
-          ) : (
-            <>
-              <Breadcrumbs slug={slug} mb="8" />
-              <Text
-                color="text200"
-                dir={isLangRightToLeft(locale as Lang) ? "rtl" : "ltr"}
-              >
-                <Translation id="page-last-updated" />:{" "}
-                {getLocaleTimestamp(locale as Lang, lastUpdatedDate!)}
-              </Text>
-            </>
-          )}
-
+          <Breadcrumbs slug={slug} mb="8" />
+          <Text
+            color="text200"
+            dir={isLangRightToLeft(locale as Lang) ? "rtl" : "ltr"}
+          >
+            <Translation id="page-last-updated" />:{" "}
+            {getLocaleTimestamp(locale as Lang, lastUpdatedDate!)}
+          </Text>
           <Box
             as={MainArticle}
             maxW="container.md"

@@ -48,26 +48,12 @@ const PageMetadata: React.FC<IProps> = ({
    * Set canonical URL w/ language path to avoid duplicate content
    * If English, remove language path
    * Remove trailing slash
-   * @example ethereum.org/about/ -> ethereum.org/about
-   * @example ethereum.org/pt-br/web3/ -> ethereum.org/pt-br/web3
    */
   const url = new URL(join(locale === DEFAULT_LOCALE ? "" : locale!, path), SITE_URL).href.replace(/\/$/, "")
   const canonical = canonicalUrl || url
 
   /* Set fallback ogImage based on path */
   let ogImage = "/home/hero.png"
-
-  if (slug.includes("developers")) {
-    ogImage = "/enterprise-eth.png"
-  }
-
-  if (slug.includes("dapps")) {
-    ogImage = "/doge-computer.png"
-  }
-
-  if (slug.includes("roadmap")) {
-    ogImage = "/upgrades/upgrade_doge.png"
-  }
 
   if (image) {
     ogImage = image

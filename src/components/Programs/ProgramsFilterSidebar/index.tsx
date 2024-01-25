@@ -107,7 +107,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
       }}
       {...tabsProps}
     >
-      <Box position="sticky" top={top ?? 0}>
+      <Box position="sticky" top={top ?? 0} zIndex={99}>
         <TabList
           borderBottom="1px solid"
           borderBottomColor="primary.base"

@@ -15,7 +15,6 @@ import {
 import type { ChildOnlyProp, Lang } from "@/lib/types"
 import type { MdPageContent, UpgradeFrontmatter } from "@/lib/interfaces"
 
-import BeaconChainActions from "@/components/BeaconChainActions"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import type { List as ButtonDropdownList } from "@/components/ButtonDropdown"
 import FeedbackCard from "@/components/FeedbackCard"
@@ -28,10 +27,7 @@ import {
   MobileButtonDropdown,
   Page
 } from "@/components/MdComponents"
-import MergeArticleList from "@/components/MergeArticleList"
-import MergeInfographic from "@/components/MergeInfographic"
 import OldHeading from "@/components/OldHeading"
-import UpgradeStatus from "@/components/UpgradeStatus"
 
 import { getEditPath } from "@/lib/utils/editPath"
 import { getSummaryPoints } from "@/lib/utils/getSummaryPoints"
@@ -128,10 +124,6 @@ export const LastUpdated = (props: ChildOnlyProp) => (
 
 // Main layout components
 export const mainComponents = {
-  MergeArticleList,
-  MergeInfographic,
-  UpgradeStatus,
-  BeaconChainActions,
 }
 
 interface IProps
@@ -223,6 +215,10 @@ export const MainLayout: React.FC<IProps> = ({
         {
           text: t("understand-the-framework-title"),
           to: "/understand-yourself/understand-the-framework/",
+        },
+        {
+          text: t("the-4a-model-title"),
+          to: "/understand-yourself/the-4a-model/",
         },
         {
           text: t("test-your-understanding-title"),

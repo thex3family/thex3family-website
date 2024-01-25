@@ -55,44 +55,8 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-index"
   }
 
-  if (path === "/contribute/translation-program/acknowledgements") {
-    primaryNamespace = "page-contributing-translation-program-acknowledgements"
-  }
-
-  if (path === "/contribute/translation-program/contributors") {
-    primaryNamespace = "page-contributing-translation-program-contributors"
-    requiredNamespaces = [
-      ...requiredNamespaces,
-      "page-languages",
-    ]
-  }
-
-  if (path.startsWith("/community")) {
-    primaryNamespace = "page-community"
-  }
-
-  if (path.startsWith("/dapps")) {
-    primaryNamespace = "page-dapps"
-  }
-
-  if (path.startsWith("/energy-consumption")) {
-    primaryNamespace = "page-what-is-ethereum"
-    requiredNamespaces = [
-      ...requiredNamespaces,
-      "page-about",
-    ]
-  }
-
-  if (path.startsWith("/eth")) {
-    primaryNamespace = "page-eth"
-  }
-
   if (path.startsWith("/glossary")) {
     requiredNamespaces = [...requiredNamespaces, "glossary"]
-  }
-
-  if (path.startsWith("/history")) {
-    primaryNamespace = "page-history"
   }
 
   if (path.startsWith("/unlock-your-potential")) {
@@ -107,24 +71,8 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-languages"
   }
 
-  if (path.startsWith("/roadmap/vision")) {
-    primaryNamespace = "page-roadmap-vision"
-    requiredNamespaces = [
-      ...requiredNamespaces,
-      "page-upgrades-index",
-    ]
-  }
-
   if (path.startsWith("/live-your-best-life/about-us")) {
     primaryNamespace = "page-about-us"
-  }
-
-  if (path === "bug-bounty") {
-    primaryNamespace = "page-bug-bounty"
-  }
-
-  if (path === "run-a-node") {
-    primaryNamespace = "page-run-a-node"
   }
 
   if (path.startsWith("/unlock-your-potential/programs")) {
@@ -134,10 +82,6 @@ const getRequiredNamespacesForPath = (path: string) => {
 
   if (path.startsWith("/understand-yourself/understand-the-framework")) {
     primaryNamespace = "page-understand-the-framework"
-  }
-
-  if (path.startsWith("/layer-2")) {
-    primaryNamespace = "page-layer-2"
   }
 
   // Quizzes
@@ -163,30 +107,6 @@ const getRequiredNamespacesForLayout = (layout?: string) => {
 
   if (layout === "docs") {
     requiredNamespaces = [...requiredNamespaces, "page-docs"]
-  }
-
-  if (layout === "use-cases") {
-    requiredNamespaces = [
-      ...requiredNamespaces,
-      "template-usecase",
-      "quizzes",
-    ]
-  }
-
-  if (layout === "upgrade") {
-    requiredNamespaces = [
-      ...requiredNamespaces,
-      "page-upgrades",
-      "page-upgrades-index",
-    ]
-  }
-  
-  if (layout === "main") {
-    requiredNamespaces = [
-      ...requiredNamespaces,
-      "page-upgrades",
-      "page-upgrades-index",
-    ]
   }
 
   if (layout === "program") {

@@ -1,0 +1,17 @@
+# This is the source file for documentation nav links
+# Each `id` value should map to an equivalent key in src/intl/${lang}.json file
+
+# To display item as a collapsable directory vs. a link
+# use the `path` property (of the directory) vs. the `to` property
+- id: page-docs-nav-overview-title
+  to: /unlock-your-potential/docs
+- id: page-docs-nav-principles-title
+  path: /unlock-your-potential/docs/
+  items:
+    - id: page-docs-nav-flow-state-title
+      to: /unlock-your-potential/docs/flow-state
+- id: page-docs-nav-resources-title
+  path: /unlock-your-potential/docs/
+  items:
+    - id: page-docs-nav-template-title
+      to: /unlock-your-potential/docs/template

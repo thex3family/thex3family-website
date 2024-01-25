@@ -9,7 +9,7 @@ import { DeveloperDocsLink } from "@/lib/interfaces"
 
 import { BaseLink, LinkProps } from "@/components/Link"
 
-import docLinks from "@/data/developer-docs-links.yaml"
+import docLinks from "@/data/docs-links.yaml"
 
 import {
   dropdownIconContainerVariant,

@@ -100,7 +100,7 @@ const TutorialMetadata = ({
         )}
         <Box>
           <Emoji fontSize="sm" me={2} text=":stopwatch:" />
-          {timeToRead} {t("comp-tutorial-metadata-minute-read")} minute read
+          {timeToRead} {t("comp-programs-metadata-minute-read")}
         </Box>
       </HStack>
       <HStack
@@ -131,7 +131,7 @@ const TutorialMetadata = ({
                   <Text
                     as={Translation}
                     textTransform="uppercase"
-                    id="comp-tutorial-metadata-tip-author"
+                    id="comp-programs-metadata-tip-author"
                   />{" "}
                   {address} {isCopied && <Translation id="copied" />}
                   {isCopied && (

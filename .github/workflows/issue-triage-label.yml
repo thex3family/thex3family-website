@@ -1,4 +1,4 @@
-name: Label issues for triage
+name: Label Issues For Triage
 on:
   issues:
     types:

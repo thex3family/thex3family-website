@@ -40,7 +40,7 @@ The presence of clear goals provides direction and structure, while immediate fe
 
 The balance between challenge and skill is crucial; too easy a task leads to boredom, while an overly challenging task can result in anxiety.
 
-## Psychological and Neurological Underpinnings
+## Psychology and Neurology
 
 From a psychological and neurological perspective, flow state is associated with the activation and interaction of various neurotransmitters in the brain.
 

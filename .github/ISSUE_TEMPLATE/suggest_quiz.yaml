@@ -1,12 +1,12 @@
-name: Suggest quiz
-description: Add, update, delete questions for a quiz on ethereum.osg
-title: Add/Update/Delete quiz question
+name: Contribute To Our Quizzes
+description: Add, update, delete questions for a quiz on the.x3.family
+title: Contribute To Our Quizzes
 labels: ["feature :sparkles", "quiz :books:"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before suggesting additions, updates, or deletions of quiz content, make sure you've read our [contributing guidelines for quizzes](https://ethereum.org/en/contributing/quizzes/).
+        Before suggesting additions, updates, or deletions of quiz content, make sure you've read our [contributing guidelines for quizzes](https:/the.x3.family/make-positive-impact/contribute/quizzes).
   - type: input
     id: page
     attributes:

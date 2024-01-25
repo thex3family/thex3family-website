@@ -9,11 +9,6 @@
   # Default build command.
   command = "yarn build"
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "https://esp.ethereum.foundation"
-
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 

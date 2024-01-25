@@ -19,7 +19,7 @@ import Translation from "@/components/Translation"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import docLinks from "@/data/developer-docs-links.yaml"
+import docLinks from "@/data/docs-links.yaml"
 
 const TextDiv: React.FC<FlexProps> = ({ children, ...props }) => (
   <Flex

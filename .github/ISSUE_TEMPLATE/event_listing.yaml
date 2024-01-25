@@ -1,5 +1,5 @@
 name: Event listing
-description: Request an Ethereum event for listing
+description: Request a Co-x3 Family Foundation event for listing
 title: Event listing
 labels: ["event :calendar:"]
 body:
@@ -54,12 +54,12 @@ body:
     attributes:
       value: |
         **Note:**
-        Events will be only added on the "Upcoming events" table if all fields above are completed, pending approval
+        Events will be only added on the "Upcoming Events" table if all fields above are completed, pending approval
   - type: markdown
     attributes:
       value: |
         **Want to contribute?**
-        We love contributions from the Ethereum community! Please comment on an issue if you're interested in helping out with a PR.
+        We love contributions from the community! Please comment on an issue if you're interested in helping out with a PR.
   - type: checkboxes
     id: event_listing_work_on
     attributes:
