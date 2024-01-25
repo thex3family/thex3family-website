@@ -8,6 +8,6 @@ export const useSurvey = (feedbackSubmitted: boolean) => {
   const url = SITE_URL + asPath
   return useMemo((): string | null => {
     if (!feedbackSubmitted) return null
-    return `https://iwokuhuz.paperform.co//?url=${url}`
+    return `https://ask.x3.family/thex3family-website-feedback//?url=${url}`
   }, [feedbackSubmitted, url])
 }
