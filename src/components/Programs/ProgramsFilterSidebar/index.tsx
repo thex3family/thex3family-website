@@ -13,8 +13,8 @@ import {
   useTheme,
 } from "@chakra-ui/react"
 
-import FrameworkFilterProfile from "@/components/Programs/ProgramsFilterSidebar/ProgramsFilterFeature"
-import FrameworkFilterPersonas from "@/components/Programs/ProgramsFilterSidebar/ProgramsFilterProfile"
+import ProgramsFilterFeature from "@/components/Programs/ProgramsFilterSidebar/ProgramsFilterFeature"
+import ProgramsFilterPersonas from "@/components/Programs/ProgramsFilterSidebar/ProgramsFilterProfile"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
@@ -50,7 +50,6 @@ const FilterTab = ({
 )
 
 interface FrameworkFilterSidebarProps extends Omit<TabsProps, "children"> {
-  allTags: { [key: string]: number };
   selectedTags: string[];
   handleTagSelect: (tagName: string) => void;
   setSelectedTags: React.Dispatch<React.SetStateAction<string[]>>;
@@ -180,7 +179,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
         }}
       >
         <TabPanel>
-          <FrameworkFilterPersonas
+          <ProgramsFilterPersonas
             resetFilters={resetFilters}
             setFilters={setFilters}
             selectedPersona={selectedPersona}
@@ -189,7 +188,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
           />
         </TabPanel>
         <TabPanel>
-          <FrameworkFilterProfile
+          <ProgramsFilterFeature
             resetFrameworkFilter={resetFrameworkFilter}
             filters={filters}
             updateFilterOption={updateFilterOption}

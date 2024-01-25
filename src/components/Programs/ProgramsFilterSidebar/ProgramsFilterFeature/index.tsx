@@ -438,7 +438,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                   w="full"
                   pl={3}
                 >
-                  {Object.entries(allTags).map(([tagName, tagCount], idx) => {
+                  {allTags && Object.entries(allTags).map(([tagName, tagCount], idx) => {
                     const name = `${tagName} (${tagCount})`
                     const isActive = selectedTags.includes(tagName)
                     return (

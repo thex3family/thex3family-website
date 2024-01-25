@@ -3,9 +3,8 @@ import { useEffect, useState } from "react"
 import { useTranslation } from "next-i18next"
 import { Icon } from "@chakra-ui/react"
 
-import { useFrameworkTable } from "../../ProgramsTable/useProgramsTable"
-
 import { FrameworkFilterFeatureProps } from "."
+import ProgramsDropdownItems from "../../ProgramsTable/ProgramsDropdownItems"
 
 type FilterOptionType = {
   title: string
@@ -31,8 +30,8 @@ export const useFrameworkFilterFeature = ({
   updateFilterOptions,
 }: Omit<FrameworkFilterFeatureProps, "updateFilterOption">) => {
   const { t } = useTranslation(["page-programs", "page-understand-the-framework"])
-  const frameworkData = []
-  const { featureDropdownItems, perspectiveDropdownItems } = useFrameworkTable({ filters, t, frameworkData })
+  const { featureDropdownItems, perspectiveDropdownItems } = ProgramsDropdownItems({ t });
+
   const [filterOptions, setFilterOptions] = useState<FilterOptionType[]>(perspectiveDropdownItems.map((perspectiveItem) => ({
     title: perspectiveItem.label,
     items: featureDropdownItems
