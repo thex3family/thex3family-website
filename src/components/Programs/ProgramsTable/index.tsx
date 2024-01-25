@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ReactNode, useEffect } from "react"
 import { useTranslation } from "next-i18next"
 import { FaBook, FaDiscord, FaGlobe, FaTools, FaTwitter, FaUsers } from "react-icons/fa"
 import { MdExpandLess, MdExpandMore } from "react-icons/md"
@@ -52,6 +52,7 @@ import { FrameworkData } from "@/data/framework/framework-data"
 import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 import Tooltip from "@/components/Tooltip"
 import { ITutorial } from "@/pages/unlock-your-potential/programs"
+import { getSortedTutorialTagsForLang } from "@/lib/utils/tutorial"
 
 const Container = (props: TableProps) => (
   <Table
@@ -341,19 +342,10 @@ export interface FrameworkTableProps {
   locale: string
 }
 
-const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, trackCustomEvent, locale }) => {
+const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setModalOpen, trackCustomEvent, locale }) => {
   const { t } = useTranslation("page-programs")
   const {
-    featureDropdownItems,
-    filteredFeatureDropdownItems,
     filteredFrameworks,
-    setFirstFeatureSelect,
-    setSecondFeatureSelect,
-    setThirdFeatureSelect,
-    updateDropdown,
-    firstFeatureSelect,
-    secondFeatureSelect,
-    thirdFeatureSelect,
     updateSortOrder,
   } = useFrameworkTable({
     filters,
@@ -361,6 +353,12 @@ const FrameworkTable = ({ filters, frameworkData, selectedTags, setModalOpen, tr
     frameworkData,
     t: t,
   });
+
+  // Use an effect to update allTags when filteredFrameworks changes
+  useEffect(() => {
+    const newAllTags = getSortedTutorialTagsForLang(filteredFrameworks);
+    setAllTags(newAllTags);
+  }, [filteredFrameworks]);
 
   const CardGrid = ({ children }: ChildOnlyProp) => (
     <Grid

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, useRef } from "react"
+import { useEffect, useMemo, useState, useRef, useCallback } from "react"
 import { GetStaticProps, InferGetServerSidePropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
@@ -149,10 +149,7 @@ const TutorialPage = ({
     [internalTutorials, locale]
   )
 
-  const allTags = useMemo(
-    () => getSortedTutorialTagsForLang(filteredTutorialsByLang),
-    [filteredTutorialsByLang]
-  )
+  const [allTags, setAllTags] = useState(() => getSortedTutorialTagsForLang(filteredTutorialsByLang));
 
   const { t } = useTranslation(["page-programs"])
 
@@ -445,6 +442,7 @@ const TutorialPage = ({
           <FrameworkTable
             filters={filters}
             frameworkData={filteredTutorialsByLang}
+            setAllTags={setAllTags}
             selectedTags={selectedTags}
             setModalOpen={setModalOpen}
             trackCustomEvent={trackCustomEvent}
