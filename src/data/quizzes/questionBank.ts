@@ -88,22 +88,22 @@ const questionBank: QuestionBank = {
       {
         id: "a004-a",
         label: "a004-a-label",
-        explanation: "a004-explanation",
+        explanation: "a004-a-explanation",
       },
       {
         id: "a004-b",
         label: "a004-b-label",
-        explanation: "a004-explanation",
+        explanation: "a004-b-explanation",
       },
       {
         id: "a004-c",
         label: "a004-c-label",
-        explanation: "a004-explanation",
+        explanation: "a004-c-explanation",
       },
       {
         id: "a004-d",
         label: "a004-d-label",
-        explanation: "a004-explanation",
+        explanation: "a004-d-explanation",
       },
     ],
     correctAnswerId: "a004-d",

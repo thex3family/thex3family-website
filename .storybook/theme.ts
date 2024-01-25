@@ -1,7 +1,7 @@
 import { create } from "@storybook/theming"
 
 // @ts-ignore
-import brandImage from "./preview-logo.svg"
+import brandImage from "./co-x3-icon.svg"
 
 export default create({
   base: "dark",
@@ -10,9 +10,9 @@ export default create({
   appBorderColor: "white",
   appBorderRadius: 4,
 
-  brandTitle: "Ethereum.org",
+  brandTitle: "the.x3.family",
   brandImage,
-  brandUrl: "https://www.ethereum.org",
+  brandUrl: "https://the.x3.family",
 
   barSelectedColor: "#ff7324",
 

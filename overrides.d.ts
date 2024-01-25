@@ -1,4 +1,4 @@
-declare module "*developer-docs-links.yaml" {
+declare module "*docs-links.yaml" {
   import { DeveloperDocsLink } from "./src/types"
   const content: Array<DeveloperDocsLink>
   export default content

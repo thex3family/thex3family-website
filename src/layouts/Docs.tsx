@@ -23,7 +23,7 @@ import CallToContribute from "@/components/CallToContribute"
 import Card from "@/components/Card"
 import Codeblock from "@/components/Codeblock"
 import CrowdinContributors from "@/components/CrowdinContributors"
-import DeveloperDocsLinks from "@/components/DeveloperDocsLinks"
+import DeveloperDocsLinks from "@/components/DocsLinks"
 import DocsNav from "@/components/DocsNav"
 import Emoji from "@/components/Emoji"
 import FeedbackCard from "@/components/FeedbackCard"
@@ -39,7 +39,6 @@ import {
   Heading4 as MdHeading4,
   Paragraph,
 } from "@/components/MdComponents"
-import RollupProductDevDoc from "@/components/RollupProductDevDoc"
 import SideNav from "@/components/SideNav"
 import SideNavMobile from "@/components/SideNavMobile"
 import { mdxTableComponents } from "@/components/Table"
@@ -200,7 +199,6 @@ export const docsComponents = {
   Emoji,
   GlossaryTooltip,
   InfoBanner,
-  RollupProductDevDoc,
   YouTube,
 }
 
@@ -242,7 +240,6 @@ export const DocsLayout = ({
         <SideNav path={relativePath} />
         <Content>
           <H1 id="top">{frontmatter.title}</H1>
-          <text>{frontmatter.description}</text>
           {useGitHubContributors ? (
             <GitHubContributors
               relativePath={relativePath}

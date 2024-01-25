@@ -1,10 +1,7 @@
 import { Box, useColorModeValue } from "@chakra-ui/react"
 
-const EthVideo = () => {
-  const src = useColorModeValue(
-    "ethereum-hero-light.mp4",
-    "ethereum-hero-dark.mp4"
-  )
+const LogoVideo = () => {
+  const src = "animated-logo.mp4"
 
   return (
     <Box>
@@ -22,4 +19,4 @@ const EthVideo = () => {
   )
 }
 
-export default EthVideo
+export default LogoVideo

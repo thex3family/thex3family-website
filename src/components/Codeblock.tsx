@@ -250,7 +250,6 @@ const Codeblock: React.FC<IProps> = ({
 
   return (
     /* Overwrites codeblocks inheriting RTL styling in Right-To-Left script languages (e.g. Arabic) */
-    /* Context: https://github.com/ethereum/ethereum-org-website/issues/6202 */
     <Box position="relative" dir="ltr">
       <Box
         borderRadius="base"

@@ -50,24 +50,7 @@ import SimpleDomainRegistryContent from "!!raw-loader!@/data/SimpleDomainRegistr
 import SimpleTokenContent from "!!raw-loader!@/data/SimpleToken.sol"
 import SimpleWalletContent from "!!raw-loader!@/data/SimpleWallet.sol"
 import { fetchCommunityEvents } from "@/lib/api/calendarEvents"
-import { fetchNodes } from "@/lib/api/fetchNodes"
-import { fetchTotalEthStaked } from "@/lib/api/fetchTotalEthStaked"
-import { fetchTotalValueLocked } from "@/lib/api/fetchTotalValueLocked"
-import { fetchTxCount } from "@/lib/api/fetchTxCount"
-import devfixed from "@/public/developers-eth-blocks.png"
-import dogefixed from "@/public/doge-computer.png"
-import enterprise from "@/public/enterprise-eth.png"
-import ethfixed from "@/public/eth.png"
-import finance from "@/public/finance_transparent.png"
-import future from "@/public/future_transparent.png"
-import hackathon from "@/public/hackathon_transparent.png"
 import hero from "@/public/home/hero.png"
-import impact from "@/public/impact_transparent.png"
-import infrastructure from "@/public/infrastructure_transparent.png"
-import infrastructurefixed from "@/public/infrastructure_transparent.png"
-import merge from "@/public/upgrades/merge.png"
-import robotfixed from "@/public/wallet-cropped.png"
-import ethereum from "@/public/what-is-ethereum.png"
 
 
 import understand_yourself from "@/public/understand_yourself.png"
@@ -87,8 +70,6 @@ import understand_the_framework from "@/public/understand_the_framework.png"
 import knowledge from "@/public/knowledge.png"
 import tools from "@/public/tools.png"
 import community from "@/public/community.png"
-
-
 
 const SectionHeading = (props: HeadingProps) => (
   <Heading
@@ -203,10 +184,6 @@ const ButtonLinkRow = (props: ChildOnlyProp) => (
 
 
 const cachedFetchCommunityEvents = runOnlyOnce(fetchCommunityEvents)
-// const cachedFetchTotalEthStaked = runOnlyOnce(fetchTotalEthStaked)
-// const cachedFetchNodes = runOnlyOnce(fetchNodes)
-// const cachedFetchTotalValueLocked = runOnlyOnce(fetchTotalValueLocked)
-// const cachedFetchTxCount = runOnlyOnce(fetchTxCount)
 
 type Props = BasePageProps & {
   communityEvents: CommunityEventsReturnType
