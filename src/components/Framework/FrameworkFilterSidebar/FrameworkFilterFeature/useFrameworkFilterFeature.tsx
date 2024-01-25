@@ -6,6 +6,7 @@ import { Icon } from "@chakra-ui/react"
 import { useFrameworkTable } from "../../FrameworkTable/useFrameworkTable"
 
 import { FrameworkFilterFeatureProps } from "."
+import FrameworkDropdownItems from "../../FrameworkTable/FrameworkDropdownItems"
 
 type FilterOptionType = {
   title: string
@@ -31,8 +32,9 @@ export const useFrameworkFilterFeature = ({
   updateFilterOptions,
 }: Omit<FrameworkFilterFeatureProps, "updateFilterOption">) => {
   const { t } = useTranslation("page-understand-the-framework")
-  const frameworkData = []
-  const { featureDropdownItems, perspectiveDropdownItems } = useFrameworkTable({ filters, t, frameworkData })
+
+  const { featureDropdownItems, perspectiveDropdownItems } = FrameworkDropdownItems({ t });
+
   const [filterOptions, setFilterOptions] = useState<FilterOptionType[]>([perspectiveDropdownItems[2]].map((perspectiveItem) => ({
     title: perspectiveItem.label,
     items: featureDropdownItems
