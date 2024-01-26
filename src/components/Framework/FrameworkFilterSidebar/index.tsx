@@ -123,7 +123,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
           </FilterTab>
           <FilterTab eventName="show feature filters">
             {t("page-understand-the-framework-perspective-filters")} (
-            {Object.values(filters).reduce((acc, filter) => {
+            {Object.values(filters).reduce<number>((acc, filter) => { // Explicitly type the accumulator as number
               if (filter) {
                 acc += 1
               }
