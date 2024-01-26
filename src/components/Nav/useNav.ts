@@ -23,7 +23,7 @@ export const useNav = ({ path }: { path: string }) => {
       items: [
         {
           text: t("better-life-framework-title"),
-          to: "/understand-yourself/",
+          to: "/understand-yourself",
         },
         {
           text: t("understand-the-framework-title"),
