@@ -29,14 +29,12 @@ import { BasePageProps, ChildOnlyProp, Lang } from "@/lib/types"
 
 import BannerNotification from "@/components/BannerNotification"
 import { Button, ButtonLink } from "@/components/Buttons"
-import Emoji from "@/components/Emoji"
 import FeedbackCard from "@/components/FeedbackCard"
 import { FilterBurgerIcon } from "@/components/icons/FilterBurgerIcon"
 import InlineLink, { BaseLink } from "@/components/Link"
 import MainArticle from "@/components/MainArticle"
 import MainHero from "@/components/MainHero"
 import Modal from "@/components/Modal"
-import OldHeading from "@/components/OldHeading"
 import Text from "@/components/OldText"
 import PageMetadata from "@/components/PageMetadata"
 import FrameworkFilterSidebar from "@/components/Programs/ProgramsFilterSidebar"
@@ -446,56 +444,6 @@ const TutorialPage = ({
             trackCustomEvent={trackCustomEvent}
             locale={locale}
           />
-
-          {filteredTutorials.length === 0 && (
-            <Box
-              // boxShadow={tableBoxShadow}
-              w={"full"}
-            >
-              <Flex
-                justifyContent="center"
-                pb={{ base: 4, md: 8 }}
-                pt={{ base: 4, md: "initial" }}
-                px={{ base: 0, md: "initial" }}
-                flexDirection={{ base: "column", md: "initial" }}
-              >
-              </Flex>
-              <Box mt={0} textAlign="center" padding={12}>
-                <Emoji text=":crying_face:" fontSize="5xl" mb={8} mt={8} />
-                <OldHeading>
-                  <Translation id="page-programs:page-programs-filter-error" />
-                </OldHeading>
-                <Text>
-                  <Translation id="page-programs:page-programs-try-removing-filters" />
-                </Text>
-                <Button
-                  variant="outline"
-                  color="text"
-                  borderColor="text"
-                  _hover={{
-                    color: "primary.base",
-                    borderColor: "primary.base",
-                    boxShadow: cardBoxShadow,
-                  }}
-                  _active={{
-                    bg: "secondaryButtonBackgroundActive",
-                  }}
-                  py={2}
-                  px={3}
-                  onClick={() => {
-                    setModalOpen(true)
-                    trackCustomEvent({
-                      eventCategory: "tutorials tags",
-                      eventAction: "click",
-                      eventName: "submit",
-                    })
-                  }}
-                >
-                  <Translation id="page-programs:page-programs-submit-button" />
-                </Button>
-              </Box>
-            </Box>
-          )}
         </Box>
       </Flex>
       <Box>
