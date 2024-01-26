@@ -24,10 +24,7 @@ import {
 import { BasePageProps, ChildOnlyProp } from "@/lib/types"
 
 import BannerNotification from "@/components/BannerNotification"
-import Breadcrumbs from "@/components/Breadcrumbs"
 import { Button } from "@/components/Buttons"
-import WalletFilterSidebar from "@/components/FindWallet/WalletFilterSidebar"
-import WalletTable from "@/components/FindWallet/WalletTable"
 import FrameworkFilterSidebar from "@/components/Framework/FrameworkFilterSidebar"
 import FrameworkTable from "@/components/Framework/FrameworkTable"
 import { FilterBurgerIcon } from "@/components/icons/wallets/FilterBurgerIcon"
@@ -43,7 +40,6 @@ import { trackCustomEvent } from "@/lib/utils/matomo"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import frameworkData from "@/data/framework/framework-data"
-import walletData from "@/data/wallets/wallet-data"
 
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
