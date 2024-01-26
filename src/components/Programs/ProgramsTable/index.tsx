@@ -477,6 +477,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                 }}
                 key={tutorial.title}
                 to={comingSoon ? tutorial.to : undefined}
+                target={comingSoon ? "_blank" : undefined}
                 cursor={comingSoon ? 'pointer' : 'not-allowed'}
                 hideArrow
               >

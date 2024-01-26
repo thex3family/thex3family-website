@@ -1,18 +1,22 @@
 ---
 title: Who We Support
-description: Learn about the diverse groups Co-x3 supports and how our unique frameworks facilitate growth at every life stage.
+description: Learn about the diverse groups Co-x3 supports and how our unique framework facilitate growth at every life stage.
 lang: en
 template: main
 image: /students.png
 alt: 
-summaryPoint1: The groups that we serve come directly from our own pain points.
-summaryPoint2: We started with Students, Creatives, and Retirees.
-summaryPoint3: Now, we also support Individuals, Educators, and Leaders.
+summaryPoint1: Our solutions were built to solve real challenges in our lives.
+summaryPoint2: We started by supporting students, creatives, and retirees.
+summaryPoint3: Now, we extend our support to both individuals and organizations.
 ---
 
 ## Who We Support
 
-Co-x3's story began with a simple desire: to understand ourselves and better our lives and those of our family and friends. Our passion for productivity, growth, and learning has blossomed into a global movement hoping to impact billions. Watch the short 5 minute video below to learn why it all started. 👇
+We all tackle personal challenges in our lives, and as we resolve them, we try to support our family and friends. Many of us realized that our challenges were common to many people around the world. This realization sparked an idea: Why not extend these solutions to a wider community?
+
+The best way to help others is to help yourself first, as many of the solutions you build will inevitably help someone like like you. So, we support people like ourselves, as we understand your challenges and want to help you on your growth journey.
+
+Watch the short 5-minute video by our founder to hear a personal story of why Co-x3 means so much to us. 👇
 
 <YouTube id="_sMI_xarYa0" />
 
@@ -20,19 +24,19 @@ Co-x3's story began with a simple desire: to understand ourselves and better our
 
 Our organization is tailored to resonate with and uplift the following personas whose journeys we understand intimately:
 
-| Groups     | How We Support                                                              |
+| Personas     | How We Support                                                              |
 |------------|--------------------------------------------------------------------------|
-| Students   | We know what's its like to go through education without having a clear idea of what we can do with our lives. We want to help you find your life's purpose.     |
-| Creatives  | We know how to help you manifest your craft and succeed with growing your passions. |
-| Retirees   | We want to help you succeed with your adventurers post retirement and ignite your passion.   |
+| Students   | We empathize with not fitting in to the mold, and not knowing what we should do with our lives.  |
+| Creatives  | We understand that chasing your passion isn't easy, and there's often no clear map towards success. |
+| Retirees   | We know how difficult it can be to re-discover yourself and your passions as you enter retirement.  |
 
 
 ## Expanding Our Impact
 
-As we grew, we have expanded our scope to support different groups beyond individuals.
+As our movement grew, we now extend our support towards both individuals and organizations.
 
-| Group      | How We Support                                                           |
+| Groups      | How We Support                                                           |
 |------------|--------------------------------------------------------------------------|
-| Individuals | We help individuals worldwide gain a deep understanding of human dynamics, fostering fulfilling relationships and leading their best lives. |
-| Educators   | We assist educators in nurturing emotional intelligence and personal development in students, right from the early stages of education. |
-| Leaders     | We equip leaders with the skills to understand and manage complex team dynamics, fostering empathy and productivity in the workplace. |
+| Individuals | Understand yourself, unlock your potential, make positive impact, and live your best life. |
+| Educators   | Help your students foster emotional self-awareness and guide them to think about thinking. |
+| Leaders     | Create a healthy, productive workplace where your team members feel heard and understood. |
