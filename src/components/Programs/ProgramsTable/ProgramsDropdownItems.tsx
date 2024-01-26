@@ -9,7 +9,7 @@ interface DropdownItemsProps {
   t: (key: string) => string;
 }
 
-const ProgramsDropdownItems: React.FC<DropdownItemsProps> = ({ t }) => {
+const ProgramsDropdownItems = ({ t }: DropdownItemsProps) => {
   const featureDropdownItems: Array<DropdownOption> = [
     ...Array.from({ length: 9 }, (_, index) => ({
         label: t(`page-understand-the-framework:page-understand-the-framework-level-${index + 1}-title`),
