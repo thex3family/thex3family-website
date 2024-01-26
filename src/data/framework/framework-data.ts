@@ -1,14 +1,14 @@
 import { StaticImageData } from "next/image"
 
-import one from "@/public/framework/one.png"
-import two from "@/public/framework/two.png"
-import three from "@/public/framework/three.png"
-import four from "@/public/framework/four.png"
-import five from "@/public/framework/five.png"
-import six from "@/public/framework/six.png"
-import seven from "@/public/framework/seven.png"
 import eight from "@/public/framework/eight.png"
+import five from "@/public/framework/five.png"
+import four from "@/public/framework/four.png"
 import nine from "@/public/framework/nine.png"
+import one from "@/public/framework/one.png"
+import seven from "@/public/framework/seven.png"
+import six from "@/public/framework/six.png"
+import three from "@/public/framework/three.png"
+import two from "@/public/framework/two.png"
 
 export interface FrameworkData {
   last_updated: string

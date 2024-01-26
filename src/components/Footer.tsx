@@ -2,7 +2,7 @@
 import React from "react"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { FaGithub, FaYoutube, FaTwitter, FaInstagram, FaTiktok, FaCircle } from "react-icons/fa"
+import { FaCircle,FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
   Box,
   Flex,

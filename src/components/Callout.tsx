@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next"
-import { useColorMode, Center, Flex, type FlexProps } from "@chakra-ui/react"
+import { Center, Flex, type FlexProps,useColorMode } from "@chakra-ui/react"
 
 import type { TranslationKey } from "@/lib/types"
 

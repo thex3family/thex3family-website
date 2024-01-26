@@ -3,8 +3,8 @@ import { CompletedQuizzes, type Lang, QuizShareStats } from "@/lib/types"
 import { getLocaleForNumberFormat } from "@/lib/utils/translations"
 
 import allQuizzesData, {
-  understand_yourself_quizzes,
   live_your_best_life_quizzes,
+  understand_yourself_quizzes,
 } from "@/data/quizzes"
 
 import {

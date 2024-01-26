@@ -1,4 +1,5 @@
-import { calc, Flex, Icon, type FlexProps, type HeadingProps } from "@chakra-ui/react"
+import { FaGithub } from "react-icons/fa"
+import { calc, Flex, type FlexProps, type HeadingProps,Icon } from "@chakra-ui/react"
 
 import type { ToCItem } from "@/lib/types"
 
@@ -9,8 +10,8 @@ import ButtonDropdown, {
 import OldHeading from "@/components/OldHeading"
 import Translation from "@/components/Translation"
 import UpgradeTableOfContents from "@/components/UpgradeTableOfContents"
+
 import { ButtonLink } from "../Buttons"
-import { FaGithub } from "react-icons/fa"
 
 export const H2 = (props: HeadingProps) => (
   <OldHeading

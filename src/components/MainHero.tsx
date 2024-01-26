@@ -1,8 +1,10 @@
-import { Container, HeroContainer, LastUpdated, MoreContent, SummaryPoint, Title, TitleCard } from "@/layouts"
-import Breadcrumbs from "@/components/Breadcrumbs"
-import { Image } from "@/components/Image"
 import { MdExpandMore } from "react-icons/md"
 import { Box, Icon, List, } from "@chakra-ui/react"
+
+import Breadcrumbs from "@/components/Breadcrumbs"
+import { Image } from "@/components/Image"
+
+import { Container, HeroContainer, LastUpdated, MoreContent, SummaryPoint, Title, TitleCard } from "@/layouts"
 
 interface MainHeroProps {
     pathname: string;

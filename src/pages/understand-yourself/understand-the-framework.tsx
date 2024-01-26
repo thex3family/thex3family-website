@@ -28,9 +28,12 @@ import Breadcrumbs from "@/components/Breadcrumbs"
 import { Button } from "@/components/Buttons"
 import WalletFilterSidebar from "@/components/FindWallet/WalletFilterSidebar"
 import WalletTable from "@/components/FindWallet/WalletTable"
+import FrameworkFilterSidebar from "@/components/Framework/FrameworkFilterSidebar"
+import FrameworkTable from "@/components/Framework/FrameworkTable"
 import { FilterBurgerIcon } from "@/components/icons/wallets/FilterBurgerIcon"
 import { Image } from "@/components/Image"
 import MainArticle from "@/components/MainArticle"
+import MainHero from "@/components/MainHero"
 import OldHeading from "@/components/OldHeading"
 import PageMetadata from "@/components/PageMetadata"
 
@@ -39,18 +42,13 @@ import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { trackCustomEvent } from "@/lib/utils/matomo"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import walletData from "@/data/wallets/wallet-data"
-
 import frameworkData from "@/data/framework/framework-data"
-import FrameworkFilterSidebar from "@/components/Framework/FrameworkFilterSidebar"
-import FrameworkTable from "@/components/Framework/FrameworkTable"
+import walletData from "@/data/wallets/wallet-data"
 
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
-import FindWalletHeroImage from "@/public/wallets/find-wallet-hero.png"
-import MainHero from "@/components/MainHero"
-
 import understand_the_framework from "@/public/understand_the_framework.png"
+import FindWalletHeroImage from "@/public/wallets/find-wallet-hero.png"
 
 const Subtitle = ({ children }: ChildOnlyProp) => (
   <Text

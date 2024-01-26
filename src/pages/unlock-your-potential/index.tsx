@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
 import { GetStaticProps } from "next"
+import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import {
@@ -19,6 +20,7 @@ import Card, { IProps as ICardProps } from "@/components/Card"
 import FeedbackCard from "@/components/FeedbackCard"
 import InlineLink from "@/components/Link"
 import MainArticle from "@/components/MainArticle"
+import MainHero from "@/components/MainHero"
 import OldHeading from "@/components/OldHeading"
 import Text from "@/components/OldText"
 import PageMetadata from "@/components/PageMetadata"
@@ -28,10 +30,8 @@ import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import { useRouter } from "next/router"
-import MainHero from "@/components/MainHero"
-import unlock_your_potential from "@/public/unlock_your_potential.png"
 import make_positive_impact from "@/public/make_positive_impact.png"
+import unlock_your_potential from "@/public/unlock_your_potential.png"
 
 const Page = (props: ChildOnlyProp) => (
   <Flex

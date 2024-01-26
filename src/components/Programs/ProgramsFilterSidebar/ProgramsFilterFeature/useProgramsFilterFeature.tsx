@@ -3,8 +3,9 @@ import { useEffect, useState } from "react"
 import { useTranslation } from "next-i18next"
 import { Icon } from "@chakra-ui/react"
 
-import { FrameworkFilterFeatureProps } from "."
 import ProgramsDropdownItems from "../../ProgramsTable/ProgramsDropdownItems"
+
+import { FrameworkFilterFeatureProps } from "."
 
 type FilterOptionType = {
   title: string

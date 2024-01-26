@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react"
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next"
+import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { FaGithub } from "react-icons/fa"
@@ -10,6 +11,7 @@ import { BasePageProps, QuizStatus } from "@/lib/types"
 import { ButtonLink } from "@/components/Buttons"
 import FeedbackCard from "@/components/FeedbackCard"
 import MainArticle from "@/components/MainArticle"
+import MainHero from "@/components/MainHero"
 import PageMetadata from "@/components/PageMetadata"
 import QuizWidget from "@/components/Quiz/QuizWidget"
 import QuizzesList from "@/components/Quiz/QuizzesList"
@@ -23,13 +25,11 @@ import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { trackCustomEvent } from "@/lib/utils/matomo"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import { understand_yourself_quizzes, live_your_best_life_quizzes } from "@/data/quizzes"
+import { live_your_best_life_quizzes,understand_yourself_quizzes } from "@/data/quizzes"
 
 import { INITIAL_QUIZ } from "@/lib/constants"
 
-import { useRouter } from "next/router"
 import understand_yourself from "@/public/understand_yourself.png"
-import MainHero from "@/components/MainHero"
 
 const handleGHAdd = () =>
   trackCustomEvent({

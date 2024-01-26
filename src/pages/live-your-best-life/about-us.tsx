@@ -40,6 +40,7 @@ import FeedbackCard from "@/components/FeedbackCard"
 import { Image, type ImageProps } from "@/components/Image"
 import InlineLink from "@/components/Link"
 import MainArticle from "@/components/MainArticle"
+import MainHero from "@/components/MainHero"
 import OldHeading from "@/components/OldHeading"
 import Text from "@/components/OldText"
 import PageMetadata from "@/components/PageMetadata"
@@ -60,13 +61,10 @@ import {
 } from "@/lib/utils/translations"
 
 import { fetchTxCount } from "@/lib/api/fetchTxCount"
-import MainHero from "@/components/MainHero"
-
-import comrades from "@/public/comrades.png"
 import community_gathering from "@/public/community_gathering.png"
-
-import vision from "@/public/vision.png"
+import comrades from "@/public/comrades.png"
 import mission from "@/public/mission.png"
+import vision from "@/public/vision.png"
 
 const Slogan = (props: ChildOnlyProp) => (
   <Text

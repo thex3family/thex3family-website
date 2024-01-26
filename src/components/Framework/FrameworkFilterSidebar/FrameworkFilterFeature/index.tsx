@@ -20,10 +20,11 @@ import {
   VStack,
 } from "@chakra-ui/react"
 
+import Translation from "@/components/Translation"
+
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
 import { useFrameworkFilterFeature } from "./useFrameworkFilterFeature"
-import Translation from "@/components/Translation"
 
 const FilterToggle = ({
   ariaLabel,

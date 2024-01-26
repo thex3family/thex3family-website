@@ -20,7 +20,7 @@ import { CompletedQuizzes, QuizShareStats } from "@/lib/types"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import { understand_yourself_quizzes, live_your_best_life_quizzes } from "../../data/quizzes"
+import { live_your_best_life_quizzes,understand_yourself_quizzes } from "../../data/quizzes"
 import { Button } from "../Buttons"
 import { TrophyIcon } from "../icons/quiz"
 import Translation from "../Translation"
