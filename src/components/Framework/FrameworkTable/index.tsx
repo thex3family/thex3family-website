@@ -25,7 +25,6 @@ import { ChildOnlyProp } from "@/lib/types"
 
 import { FrameworkMoreInfo } from "@/components/Framework/FrameworkTable/FrameworkMoreInfo"
 import { useFrameworkTable } from "@/components/Framework/FrameworkTable/useFrameworkTable"
-
 import { Image } from "@/components/Image"
 import InlineLink, { LinkProps } from "@/components/Link"
 import Text from "@/components/OldText"
