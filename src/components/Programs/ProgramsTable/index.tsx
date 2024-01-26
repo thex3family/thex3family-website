@@ -28,7 +28,7 @@ import { ChildOnlyProp, Lang } from "@/lib/types"
 import { Button, ButtonLink } from "@/components/Buttons"
 import Emoji from "@/components/Emoji"
 import { Image } from "@/components/Image"
-import InlineLink, { BaseLink,LinkProps } from "@/components/Link"
+import InlineLink, { BaseLink, LinkProps } from "@/components/Link"
 import Text from "@/components/OldText"
 import { FrameworkMoreInfo } from "@/components/Programs/ProgramsTable/ProgramsMoreInfo"
 import { useFrameworkTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
@@ -45,6 +45,7 @@ import { FrameworkData } from "@/data/framework/framework-data"
 import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 import { ITutorial } from "@/pages/unlock-your-potential/programs"
+import OldHeading from "@/components/OldHeading"
 
 const Container = (props: TableProps) => (
   <Table
@@ -450,7 +451,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
           />
         </Th> */}
       </FrameworkContentHeader>
-      {filteredFrameworks.length !== 0 && (
+      {filteredFrameworks.length !== 0 ? (
         <CardGrid>
           {filteredFrameworks.map((tutorial) => {
             const comingSoon = !!tutorial.to;
@@ -612,7 +613,55 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
               {t("page-programs:page-programs-submit-button")}
             </Button>
           </Flex>
-        </CardGrid>)}
+        </CardGrid>)
+        : (
+          <Box
+            // boxShadow={tableBoxShadow}
+            w={"full"}
+          >
+            <Flex
+              justifyContent="center"
+              pb={{ base: 4, md: 8 }}
+              pt={{ base: 4, md: "initial" }}
+              px={{ base: 0, md: "initial" }}
+              flexDirection={{ base: "column", md: "initial" }}
+            >
+            </Flex>
+            <Box mt={0} textAlign="center" padding={12}>
+              <Emoji text=":crying_face:" fontSize="5xl" mb={8} mt={8} />
+              <OldHeading>
+                {t("page-programs:page-programs-filter-error")}
+              </OldHeading>
+              <Text>
+                {t("page-programs:page-programs-try-removing-filters")}
+              </Text>
+              <Button
+                variant="outline"
+                color="text"
+                borderColor="text"
+                _hover={{
+                  color: "primary.base",
+                  borderColor: "primary.base",
+                  boxShadow: cardBoxShadow,
+                }}
+                _active={{
+                  bg: "secondaryButtonBackgroundActive",
+                }}
+                py={2}
+                px={3}
+                onClick={() => {
+                  setModalOpen(true)
+                  trackCustomEvent({
+                    eventCategory: "tutorials tags",
+                    eventAction: "click",
+                    eventName: "submit",
+                  })
+                }}
+              >
+                {t("page-programs:page-programs-submit-button")}
+              </Button>
+            </Box>
+          </Box>)}
     </Container>
   )
 }
