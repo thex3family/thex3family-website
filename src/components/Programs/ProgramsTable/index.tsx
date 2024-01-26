@@ -98,7 +98,7 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     p={2}
     position="sticky"
     top={{
-      base: calc(SECONDARY_NAV_BAR_PX_HEIGHT).add("4rem").toString(),
+      base: calc(SECONDARY_NAV_BAR_PX_HEIGHT).add("1rem").toString(),
       lg: SECONDARY_NAV_BAR_PX_HEIGHT,
     }}
     zIndex={1}

@@ -341,7 +341,7 @@ const TutorialPage = ({
           >
             <Box>
               <Text>{t("common:filters")}</Text>
-              <Text fontSize="sm" lineHeight="14px" color="body.medium">
+              <Text fontSize="sm" lineHeight="14px" color="body.medium" mt={-5} mb={3}>
                 {Object.values(filters).reduce<number>(
                   (acc, filter) => (filter ? acc + 1 : acc),
                   0
