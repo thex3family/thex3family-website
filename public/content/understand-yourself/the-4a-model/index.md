@@ -28,7 +28,7 @@ There is no standard time it takes to go through each stage - it depends on the 
 | **How It Feels**         | Emotionally reactive and self-protective                  | Guilty about reaction and still feeling negative                                          | Hesitant but trying to understand / empathize.                      | Ready for change and growth                     |
 | **Behavior**             | Avoidant and defensive                                    | Acknowledging reaction but rationalizing behavior                    | Open to new perspectives. | Proactively seeking and applying advice          |
 | **Examples**             | "How could they do this to me!"                     | "That probably wasn't the best way to handle it but it was justified." |  "Maybe it isn't as I thought it was."                                       | "What can I do to move forward?"                                                |
-| **Helpful Questions**    | How do I protect myself?                                  | How do I feel about the situation?                                          | How did I get ito this situation?             | What are some things I can do?            |
+| **Helpful Questions**    | How do I protect myself?                                  | How do I feel about the situation?                                          | How did I get into this situation?             | What are some things I can do?            |
 
 
 
