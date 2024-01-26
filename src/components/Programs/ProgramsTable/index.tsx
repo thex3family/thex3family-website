@@ -27,16 +27,17 @@ import { ChildOnlyProp, Lang } from "@/lib/types"
 
 import { Button, ButtonLink } from "@/components/Buttons"
 import Emoji from "@/components/Emoji"
-import {
-  GreenCheckProductGlyphIcon,
-  WarningProductGlyphIcon,
-} from "@/components/icons/staking"
+
 import { Image } from "@/components/Image"
+
 import InlineLink, { BaseLink,LinkProps } from "@/components/Link"
 import Text from "@/components/OldText"
+
 import { FrameworkMoreInfo } from "@/components/Programs/ProgramsTable/ProgramsMoreInfo"
 import { useFrameworkTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
+
 import Tooltip from "@/components/Tooltip"
+
 import { getSkillTranslationId } from "@/components/TutorialMetadata"
 import TutorialTags from "@/components/TutorialTags"
 
