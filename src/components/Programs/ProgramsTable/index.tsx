@@ -519,7 +519,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                     {tutorial.title}
                   </Text>
                 </Flex>
-                <Text noOfLines={3} color="text200">{tutorial.description}</Text>
+                <Text noOfLines={2} color="text200">{tutorial.description}</Text>
                 <div>
                   <Flex direction="column" align="start" fontSize="sm" color="text200" textTransform="uppercase" mb={6}>
                     {/* <Flex align="center" mb={1}>

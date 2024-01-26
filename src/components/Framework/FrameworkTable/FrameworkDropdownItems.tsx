@@ -9,7 +9,7 @@ interface FrameworkDropdownItemsProps {
   t: (key: string) => string;
 }
 
-const FrameworkDropdownItems: React.FC<FrameworkDropdownItemsProps> = ({ t }) => {
+const FrameworkDropdownItems = ({ t }: FrameworkDropdownItemsProps) => {
   const featureDropdownItems: Array<DropdownOption> = [
     ...Array.from({ length: 4 }, (_, perspectiveIndex) => (
       Array.from({ length: 9 }, (_, optionIndex) => ({
