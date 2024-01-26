@@ -98,8 +98,10 @@ const glyphPathVariants = {
     transition: { duration: 0.4 },
   },
   open: {
-    d: [hamburgerSvg, glyphSvg, glyphSvg, glyphSvg, closeSvg],
-    transition: { duration: 1.2 },
+    // d: [hamburgerSvg, glyphSvg, glyphSvg, glyphSvg, closeSvg],
+    // transition: { duration: 1.2 },
+    d: [hamburgerSvg, closeSvg],
+    transition: { duration: .4 },
   },
 }
 
