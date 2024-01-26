@@ -26,7 +26,17 @@ Feel free to suggest sub-pages: if a topic starts to sprawl we can create sub-pa
 
 ## Related Programs
 
-Programs that utilize this first principle.
+### [Knowledge](/unlock-your-potential/programs?filters=knowledge)
+
+- Programs that utilize this first principle.
+
+### [Tools](/unlock-your-potential/programs?filters=tools)
+
+- Programs that utilize this first principle.
+
+### [Community](/unlock-your-potential/programs?filters=community)
+
+- Programs that utilize this first principle.
 
 ## References
 

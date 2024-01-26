@@ -33,11 +33,14 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
 
       // programs
       "/unlock-your-potential/programs/template",
+      "/unlock-your-potential/programs/level-up-podcast",
+      "/unlock-your-potential/programs/talks-by-co-x3",
 
       // docs
       "/unlock-your-potential/docs",
       "/unlock-your-potential/docs/template",
       "/unlock-your-potential/docs/flow-state",
+      "/unlock-your-potential/docs/pain",
 
 
     // make-positive-impact

@@ -10,6 +10,8 @@
   items:
     - id: page-docs-nav-flow-state-title
       to: /unlock-your-potential/docs/flow-state
+    - id: page-docs-nav-pain-title
+      to: /unlock-your-potential/docs/pain
 - id: page-docs-nav-resources-title
   path: /unlock-your-potential/docs/
   items:

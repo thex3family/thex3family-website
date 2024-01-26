@@ -50,7 +50,10 @@ Additionally, there's a notable shift in brainwave patterns during flow, particu
 
 ## Related Programs
 
-### Tools
+### [Knowledge](/unlock-your-potential/programs?filters=knowledge)
+Coming Soon.
+
+### [Tools](/unlock-your-potential/programs?filters=tools)
 You can achieve flow state by using the Success Plan found in the Gamify Your Life, Be Intentional, or L-CTRL Systems.
 
 It works by providing you the following while working on a task:
@@ -58,7 +61,7 @@ It works by providing you the following while working on a task:
 - Understanding of what you will achieve (the key result / outcomes)
 - How challenging a task is (difficulty)
 
-### Community
+### [Community](/unlock-your-potential/programs?filters=community)
 You can also maximize chances to get into the flow state by joining [Our Family Without Borders](https://www.ourfamilywithoutborders.com/for/founders).
 
 ## References

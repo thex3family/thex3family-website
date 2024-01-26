@@ -306,6 +306,12 @@ const DevelopersPage = () => {
             <Text>
               <Translation id="page-docs:page-docs-nav-flow-state-description" />
             </Text>
+            <InlineLink to="/unlock-your-potential/docs/pain">
+              <Translation id="page-docs:page-docs-nav-pain-title" />
+            </InlineLink>
+            <Text>
+              <Translation id="page-docs:page-docs-nav-pain-description" />
+            </Text>
           </Column>
           <RightColumn>
             <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
