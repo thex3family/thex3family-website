@@ -132,7 +132,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
           </FilterTab>
           <FilterTab eventName="show feature filters">
             {t("page-programs-advanced-filters")} (
-            {Object.values(filters).reduce((acc, filter) => {
+            {Object.values(filters).reduce<number>((acc, filter) => {
               if (filter) {
                 acc += 1
               }
