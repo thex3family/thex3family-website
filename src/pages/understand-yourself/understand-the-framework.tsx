@@ -27,7 +27,7 @@ import BannerNotification from "@/components/BannerNotification"
 import { Button } from "@/components/Buttons"
 import FrameworkFilterSidebar from "@/components/Framework/FrameworkFilterSidebar"
 import FrameworkTable from "@/components/Framework/FrameworkTable"
-import { FilterBurgerIcon } from "@/components/icons/wallets/FilterBurgerIcon"
+import { FilterBurgerIcon } from "@/components/icons/FilterBurgerIcon"
 import { Image } from "@/components/Image"
 import MainArticle from "@/components/MainArticle"
 import MainHero from "@/components/MainHero"
@@ -44,7 +44,6 @@ import frameworkData from "@/data/framework/framework-data"
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 import understand_the_framework from "@/public/understand_the_framework.png"
-import FindWalletHeroImage from "@/public/wallets/find-wallet-hero.png"
 
 const Subtitle = ({ children }: ChildOnlyProp) => (
   <Text
@@ -84,7 +83,7 @@ export const getStaticProps = (async ({ locale }) => {
 const FindWalletPage = () => {
   const { pathname } = useRouter()
   const theme = useTheme()
-  const { t } = useTranslation(["page-wallets-find-wallet", "common"])
+  const { t } = useTranslation(["page-understand-the-framework", "common"])
   const resetFrameworkFilter = useRef(() => {})
   const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure()
   const [filters, setFilters] = useState(filterDefault)
