@@ -92,13 +92,13 @@
   },
   {
     "url": "https://our.x3.family",
-    "title": "Circle Community",
+    "title": "Discord Server",
     "description": "Meaningful asynchronous conversations in an online community forum.",
     "author": "Conrad Lin",
     "authorURL": "https://www.conradlin.com",
-    "tags": ["forum", "co-working", "events"],
+    "tags": ["conversations", "co-working", "events"],
     "programType": "community",
-    "frameworkLevel": "LEVEL_4",
+    "frameworkLevel": "ALL",
     "lang": "en",
     "location": "virtual",
     "publishDate": ""

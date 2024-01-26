@@ -414,6 +414,12 @@ const HomePage = ({
         </ContentBox>
       </GrayContainer>
       {/* Banner 1 */}
+      
+      <Box pb={4}>
+            <SectionHeading mt={12} mb={8} fontFamily="heading" textAlign="center">
+              <Translation id="page-index:page-index-banner-header" />
+            </SectionHeading>
+          </Box>
       <MainSectionContainer containerBg="homeBoxGreen">
         <Row isReversed>
           <FeatureContent>
@@ -524,7 +530,8 @@ const HomePage = ({
           <Box py={4} px={{ base: 4, sm: 8 }} width="full">
             <StyledTitleCardList
               content={codeExamples}
-              clickHandler={toggleCodeExample}
+              //clickHandler={toggleCodeExample}
+              clickHandler={() => window.open('/unlock-your-potential/programs')}
               headerKey="page-index:page-index-banner-5-code-examples"
               isCode
               border="1px"
@@ -547,7 +554,7 @@ const HomePage = ({
               </ButtonLink>
             </ButtonLinkRow>
           </FeatureContent>
-          <StyledCodeModal
+          {/* <StyledCodeModal
             isOpen={isModalOpen}
             setIsOpen={setModalOpen}
             title={codeExamples[activeCode].title}
@@ -578,7 +585,7 @@ const HomePage = ({
             >
               {codeExamples[activeCode].code}
             </Codeblock>
-          </StyledCodeModal>
+          </StyledCodeModal> */}
         </Row>
       </MainSectionContainer>
       {/* Stats Section */}

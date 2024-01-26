@@ -453,7 +453,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
       </FrameworkContentHeader>
       {filteredFrameworks.length !== 0 ? (
         <CardGrid>
-          {filteredFrameworks.map((tutorial) => {
+          {filteredFrameworks.map((tutorial, idx) => {
             const comingSoon = !!tutorial.to;
             return (
               <Flex
@@ -475,24 +475,27 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                   boxShadow: comingSoon ? "0 0 1px var(--x3-colors-primary-base)" : undefined,
                   bg: comingSoon ? "tableBackgroundHover" : undefined,
                 }}
-                key={tutorial.to}
+                key={tutorial.title}
                 to={comingSoon ? tutorial.to : undefined}
                 cursor={comingSoon ? 'pointer' : 'not-allowed'}
                 hideArrow
               >
-                {!tutorial.to && ( // Conditionally render the "Coming Soon" tag if there's no link
                   <Badge
                     position="absolute" // Absolutely position the "Coming Soon" tag
                     top={2}
                     right={2}
-                    px={2}
-                    py={1}
                     colorScheme="white"
-                    fontSize="lg"
+                    fontSize="xl"
+                    _after={{
+                      ms: 0.5,
+                      me: "0.3rem",
+                      display: comingSoon ? "inline-block" : "none",
+                      content: `"↗"`,
+                      fontStyle: "normal",
+                    }}
                   >
-                    🚧
+                    {comingSoon ? '' : '🚧'} 
                   </Badge>
-                )}
                 <Flex
                   justifyContent="space-between"
                   alignItems="flex-start"

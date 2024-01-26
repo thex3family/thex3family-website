@@ -1,11 +1,11 @@
 ---
 title: "Level Up Podcast"
-description: In a podcast conversation (45 mins - 1 hour), we want to help our community members understand where they are in their life journey, and make actionable plans for the future.
+description: We help one of our community members understand where they are in their life journey, and make actionable plans for the future.
 author: Conrad Lin
-tags: ["planning"]
+tags: ["growth"]
 programType: knowledge
 location: podcast
-frameworkLevel: LEVEL_3
+frameworkLevel: ALL
 published: 2024-01-26
 lang: en
 ---

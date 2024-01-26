@@ -1,11 +1,11 @@
 ---
 title: "Talks By Co-x3"
-description: We want to help empower individuals at various stages of personal development by creating tailored programs for schools, companies, etc.
+description: Bespoke speaking engagements for schools, companies, to empower individuals at various stages of personal development. 
 author: Conrad Lin
-tags: ["planning"]
+tags: ["speaking engagement"]
 programType: knowledge
-location: talks
-frameworkLevel: LEVEL_3
+location: Physical or Virtual
+frameworkLevel: ALL
 published: 2024-01-26
 lang: en
 ---
