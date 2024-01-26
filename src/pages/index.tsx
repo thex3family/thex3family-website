@@ -355,6 +355,11 @@ const HomePage = ({
               <SectionDecription>
                 <Translation id="page-index:page-index-get-started-description" />
               </SectionDecription>
+              <ButtonLinkRow>
+              <ButtonLink to="/live-your-best-life/about-us/" variant={"secondary"}>
+                <Translation id="common:learn-more" />
+              </ButtonLink>
+            </ButtonLinkRow>
             </Box>
             <ImageContainer>
               <Image
