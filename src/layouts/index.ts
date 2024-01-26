@@ -1,5 +1,5 @@
 export * from "./Docs"
+export * from "./Main"
+export * from "./Programs"
 export * from "./RootLayout"
 export * from "./Static"
-export * from "./Programs"
-export * from "./Main"

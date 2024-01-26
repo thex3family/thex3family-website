@@ -37,12 +37,12 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import {
   docsComponents,
   DocsLayout,
+  mainComponents,
+  MainLayout,
   staticComponents,
   StaticLayout,
   TutorialLayout,
   tutorialsComponents,
-  mainComponents,
-  MainLayout,
 } from "@/layouts"
 import rehypeHeadingIds from "@/lib/rehype/rehypeHeadingIds"
 import rehypeImg from "@/lib/rehype/rehypeImg"

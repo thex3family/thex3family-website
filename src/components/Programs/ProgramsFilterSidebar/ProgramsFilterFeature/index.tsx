@@ -1,5 +1,6 @@
 import React, { MutableRefObject } from "react"
 import { uniqueId } from "lodash"
+import { useRouter } from "next/router"
 import { BsToggleOff, BsToggleOn } from "react-icons/bs"
 import {
   Accordion,
@@ -8,8 +9,11 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
+  Button,
+  chakra,
   Checkbox,
   Flex,
+  forwardRef,
   GridItem,
   Heading,
   HStack,
@@ -19,17 +23,15 @@ import {
   Text,
   useColorModeValue,
   VStack,
-  chakra,
-  forwardRef,
-  Button,
 } from "@chakra-ui/react"
+
+import Translation from "@/components/Translation"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import { useFrameworkFilterFeature } from "./useProgramsFilterFeature"
-import Translation from "@/components/Translation"
 import { StyledSelect } from "../../ProgramsTable"
-import { useRouter } from "next/router"
+
+import { useFrameworkFilterFeature } from "./useProgramsFilterFeature"
 
 const FilterToggle = ({
   ariaLabel,

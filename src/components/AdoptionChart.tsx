@@ -1,8 +1,9 @@
 import { useTranslation } from "next-i18next"
 import { Box, type BoxProps, Flex, useColorMode } from "@chakra-ui/react"
-import Translation from "@/components/Translation"
 
 import type { ChildOnlyProp } from "@/lib/types"
+
+import Translation from "@/components/Translation"
 
 const Column = ({ children }: ChildOnlyProp) => (
   <Flex

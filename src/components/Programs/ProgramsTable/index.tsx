@@ -5,12 +5,12 @@ import { MdExpandLess, MdExpandMore } from "react-icons/md"
 import Select from "react-select"
 import {
   Badge,
-  chakra,
-  forwardRef,
   Box,
   calc,
+  chakra,
   Flex,
   FlexProps,
+  forwardRef,
   Icon,
   keyframes,
   SimpleGrid,
@@ -23,36 +23,32 @@ import {
   useToken,
 } from "@chakra-ui/react"
 
-import Emoji from "@/components/Emoji"
-
-import TutorialTags from "@/components/TutorialTags"
-
-import { Button, ButtonLink } from "@/components/Buttons"
-
-import { getSkillTranslationId } from "@/components/TutorialMetadata"
-
-import { getLocaleTimestamp, INVALID_DATETIME } from "@/lib/utils/time"
-
 import { ChildOnlyProp, Lang } from "@/lib/types"
 
-import { useFrameworkTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
-import { FrameworkMoreInfo } from "@/components/Programs/ProgramsTable/ProgramsMoreInfo"
+import { Button, ButtonLink } from "@/components/Buttons"
+import Emoji from "@/components/Emoji"
 import {
   GreenCheckProductGlyphIcon,
   WarningProductGlyphIcon,
 } from "@/components/icons/staking"
 import { Image } from "@/components/Image"
-import InlineLink, { LinkProps, BaseLink } from "@/components/Link"
+import InlineLink, { BaseLink,LinkProps } from "@/components/Link"
 import Text from "@/components/OldText"
+import { FrameworkMoreInfo } from "@/components/Programs/ProgramsTable/ProgramsMoreInfo"
+import { useFrameworkTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
+import Tooltip from "@/components/Tooltip"
+import { getSkillTranslationId } from "@/components/TutorialMetadata"
+import TutorialTags from "@/components/TutorialTags"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
+import { getLocaleTimestamp, INVALID_DATETIME } from "@/lib/utils/time"
+import { getSortedTutorialTagsForLang } from "@/lib/utils/tutorial"
 
 import { FrameworkData } from "@/data/framework/framework-data"
 
 import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
-import Tooltip from "@/components/Tooltip"
+
 import { ITutorial } from "@/pages/unlock-your-potential/programs"
-import { getSortedTutorialTagsForLang } from "@/lib/utils/tutorial"
 
 const Container = (props: TableProps) => (
   <Table

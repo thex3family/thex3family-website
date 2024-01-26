@@ -3,10 +3,10 @@ import { useEffect, useState } from "react"
 import { useTranslation } from "next-i18next"
 import { Icon } from "@chakra-ui/react"
 
+import FrameworkDropdownItems from "../../FrameworkTable/FrameworkDropdownItems"
 import { useFrameworkTable } from "../../FrameworkTable/useFrameworkTable"
 
 import { FrameworkFilterFeatureProps } from "."
-import FrameworkDropdownItems from "../../FrameworkTable/FrameworkDropdownItems"
 
 type FilterOptionType = {
   title: string

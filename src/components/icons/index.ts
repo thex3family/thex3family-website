@@ -1,16 +1,16 @@
 // General Icons
-import { HomeIcon } from "./HomeIcon"
+import { BulletPointIcon } from "./BulletPointIcon"
 import { FeedbackGlyphIcon } from "./FeedbackGlyphIcon"
 import { FeedbackThumbsUpIcon } from "./FeedbackThumbsUpIcon"
 import { HighlightDarkIcon } from "./HighlightDarkIcon"
 import { HighlightIcon } from "./HighlightIcon"
-import { BulletPointIcon } from "./BulletPointIcon"
+import { HomeIcon } from "./HomeIcon"
 
 export {
-  HomeIcon,
+  BulletPointIcon,
   FeedbackGlyphIcon,
   FeedbackThumbsUpIcon,
   HighlightDarkIcon,
   HighlightIcon,
-  BulletPointIcon,
+  HomeIcon,
 }

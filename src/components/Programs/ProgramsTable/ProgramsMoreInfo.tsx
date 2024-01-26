@@ -3,8 +3,8 @@ import { Box, SimpleGrid, Text, VStack } from "@chakra-ui/react"
 
 import { ButtonLink } from "../../Buttons"
 
-import { DropdownOption } from "./useProgramsTable"
 import { FrameworkMoreInfoCategory } from "./ProgramsMoreInfoCategory"
+import { DropdownOption } from "./useProgramsTable"
 
 interface FrameworkMoreInfoProps {
   framework: Record<string, any>

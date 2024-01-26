@@ -2,11 +2,11 @@ import * as React from "react"
 import { Center, Flex, SimpleGrid, VStack } from "@chakra-ui/react"
 import { Meta, StoryObj } from "@storybook/react"
 
-import { HomeIcon } from "./HomeIcon"
 import { FeedbackGlyphIcon } from "./FeedbackGlyphIcon"
 import { FeedbackThumbsUpIcon } from "./FeedbackThumbsUpIcon"
 import { HighlightDarkIcon } from "./HighlightDarkIcon"
 import { HighlightIcon } from "./HighlightIcon"
+import { HomeIcon } from "./HomeIcon"
 import {
   CorrectIcon,
   IncorrectIcon,

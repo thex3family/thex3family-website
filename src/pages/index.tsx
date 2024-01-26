@@ -50,26 +50,20 @@ import SimpleDomainRegistryContent from "!!raw-loader!@/data/SimpleDomainRegistr
 import SimpleTokenContent from "!!raw-loader!@/data/SimpleToken.sol"
 import SimpleWalletContent from "!!raw-loader!@/data/SimpleWallet.sol"
 import { fetchCommunityEvents } from "@/lib/api/calendarEvents"
+import community from "@/public/community.png"
+import community_gathering from "@/public/community_gathering.png"
+import contribute from "@/public/contribute.png"
+import creatives from "@/public/creatives.png"
 import hero from "@/public/home/hero.png"
-
-
+import knowledge from "@/public/knowledge.png"
+import live_your_best_life from "@/public/live_your_best_life.png"
+import make_positive_impact from "@/public/make_positive_impact.png"
+import retirees from "@/public/retirees.png"
+import students from "@/public/students.png"
+import tools from "@/public/tools.png"
+import understand_the_framework from "@/public/understand_the_framework.png"
 import understand_yourself from "@/public/understand_yourself.png"
 import unlock_your_potential from "@/public/unlock_your_potential.png"
-import make_positive_impact from "@/public/make_positive_impact.png"
-import live_your_best_life from "@/public/live_your_best_life.png"
-
-import students from "@/public/students.png"
-import creatives from "@/public/creatives.png"
-import retirees from "@/public/retirees.png"
-
-import community_gathering from "@/public/community_gathering.png"
-
-import contribute from "@/public/contribute.png"
-
-import understand_the_framework from "@/public/understand_the_framework.png"
-import knowledge from "@/public/knowledge.png"
-import tools from "@/public/tools.png"
-import community from "@/public/community.png"
 
 const SectionHeading = (props: HeadingProps) => (
   <Heading

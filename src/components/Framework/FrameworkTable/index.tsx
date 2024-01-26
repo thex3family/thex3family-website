@@ -23,8 +23,8 @@ import {
 
 import { ChildOnlyProp } from "@/lib/types"
 
-import { useFrameworkTable } from "@/components/Framework/FrameworkTable/useFrameworkTable"
 import { FrameworkMoreInfo } from "@/components/Framework/FrameworkTable/FrameworkMoreInfo"
+import { useFrameworkTable } from "@/components/Framework/FrameworkTable/useFrameworkTable"
 import {
   GreenCheckProductGlyphIcon,
   WarningProductGlyphIcon,
@@ -32,13 +32,13 @@ import {
 import { Image } from "@/components/Image"
 import InlineLink, { LinkProps } from "@/components/Link"
 import Text from "@/components/OldText"
+import Tooltip from "@/components/Tooltip"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
 import { FrameworkData } from "@/data/framework/framework-data"
 
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
-import Tooltip from "@/components/Tooltip"
 
 const Container = (props: TableProps) => (
   <Table

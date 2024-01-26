@@ -1,6 +1,8 @@
 import React from 'react';
 import { Icon } from "@chakra-ui/react";
+
 import { BulletPointIcon } from "@/components/icons";
+
 import { DropdownOption } from "./useFrameworkTable";
 
 interface FrameworkDropdownItemsProps {
