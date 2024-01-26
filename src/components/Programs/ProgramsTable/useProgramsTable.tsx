@@ -72,9 +72,22 @@ export const useFrameworkTable = ({
       return featureMatchWithinCategories && tagsMatch;
     });
   
-    // Sort the frameworks if sortOrder is set to 'alphabetical'
+    // Sort the frameworks based on sortOrder, handling potentially undefined frameworkLevel
+    // and sorting programType by 'knowledge', 'action', and then 'community'
     if (sortOrder === 'alphabetical') {
       frameworksToProcess.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortOrder === 'default') {
+      frameworksToProcess.sort((a, b) => {
+        const levelA = a.frameworkLevel || '';
+        const levelB = b.frameworkLevel || '';
+        const levelComparison = levelA.localeCompare(levelB);
+        if (levelComparison !== 0) return levelComparison;
+
+        const typeOrder = { 'knowledge': 1, 'action': 2, 'community': 3 };
+        const typeA = typeOrder[a.programType] || 4;
+        const typeB = typeOrder[b.programType] || 4;
+        return typeA - typeB;
+      });
     }
 
     return frameworksToProcess;
