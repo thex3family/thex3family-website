@@ -467,10 +467,8 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                   bg: comingSoon ? "tableBackgroundHover" : undefined,
                 }}
                 key={tutorial.title}
-                to={comingSoon ? tutorial.to : undefined}
-                target={comingSoon ? "_blank" : undefined}
+                {...(comingSoon ? { to: tutorial.to, target: "_blank", hideArrow: true } : {})}
                 cursor={comingSoon ? 'pointer' : 'not-allowed'}
-                hideArrow
               >
                   <Badge
                     position="absolute" // Absolutely position the "Coming Soon" tag
