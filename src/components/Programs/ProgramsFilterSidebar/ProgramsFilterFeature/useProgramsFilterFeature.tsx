@@ -28,8 +28,7 @@ type FilterOptionType = {
 export const useFrameworkFilterFeature = ({
   resetFrameworkFilter,
   filters,
-  updateFilterOptions,
-}: Omit<FrameworkFilterFeatureProps, "updateFilterOption">) => {
+  updateFilterOptions,}) => {
   const { t } = useTranslation(["page-programs", "page-understand-the-framework"])
   const { featureDropdownItems, perspectiveDropdownItems } = ProgramsDropdownItems({ t });
 
