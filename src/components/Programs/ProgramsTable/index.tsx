@@ -39,13 +39,9 @@ import TutorialTags from "@/components/TutorialTags"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 import { getLocaleTimestamp, INVALID_DATETIME } from "@/lib/utils/time"
-import { getSortedTutorialTagsForLang } from "@/lib/utils/tutorial"
-
-import { FrameworkData } from "@/data/framework/framework-data"
+import { getSortedTutorialTagsForLang, ITutorial } from "@/lib/utils/tutorial"
 
 import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
-
-import { ITutorial } from "@/pages/unlock-your-potential/programs"
 
 const Container = (props: TableProps) => (
   <Table

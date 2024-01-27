@@ -196,7 +196,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                         // When all selections are cleared, selectedOptions is null or an empty array
                         if (!selectedOptions || selectedOptions.length === 0) {
                           filterOption.items.forEach(item => {
-                            if (restProps.filters[item.filterKey]) {
+                            if (item.filterKey && restProps.filters[item.filterKey]) {
                               trackCustomEvent({
                                 eventCategory: "ProgramFilterSidebar",
                                 eventAction: `${filterOption.title} deselected`,
@@ -221,13 +221,13 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                         }
                       }}
                       value={filterOption.items
-                        .filter(item => restProps.filters[item.filterKey])
+                        .filter(item => item.filterKey && restProps.filters[item.filterKey])
                         .map(item => ({
                           label: item.title,
-                          value: item.filterKey
+                          value: item.filterKey // Assuming filterKey is always a string if defined
                         }))
                       }
-                      placeholder="Select Perspectives"
+                      placeholder="All Perspectives"
                       isMulti
                       isSearchable={false}
                     />
