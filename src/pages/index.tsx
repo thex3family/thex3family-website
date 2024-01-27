@@ -198,7 +198,7 @@ export const getStaticProps = (async ({ locale }) => {
   const requiredNamespaces = getRequiredNamespacesForPage("/")
 
   // check if the translated page content file exists for locale
-  const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[0])
+  const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[1])
 
   // load last deploy date to pass to Footer in RootLayout
   const lastDeployDate = getLastDeployDate()
