@@ -18,27 +18,27 @@ We are in the process of developing a user-friendly platform to effortlessly mat
 
 ## What Can I Do? {#what-contribute}
 
-| Level        | Task                               | Description                                           | Difficulty        |
+| Perspective        | Task                               | Description                                           | Difficulty        |
 |--------------|------------------------------------|-------------------------------------------------------|-------------------|
-| All Levels   | Get A Co-x3 Subscription           | Access exclusive content.                             | ⭐               |
+| All   | Get A Co-x3 Subscription           | Access exclusive content.                             | ⭐               |
 |              | Share Feedback                     | Provide your thoughts and suggestions.                | ⭐                |
 |              | Like and Subscribe                 | Support us on social platforms.                       | ⭐               |
-| Level 3+     | Post In Community Channels         | Engage in community discussions.                      | ⭐               |
+| 3+     | Post In Community Channels         | Engage in community discussions.                      | ⭐               |
 |              | Bug Identification                 | Identify and report website issues.                   | ⭐               |
 |              | Translation Services               | Help translate our content.                           | ⭐⭐             |
 |              | Guests On LVL-UP Podcast           | Join our podcast for a 1-on-1 consulting session.     | ⭐⭐             |
-| Level 4+     | Suggest Knowledge                  | Add insights to our knowledge base.                   | ⭐               |
+| 4+     | Suggest Knowledge                  | Add insights to our knowledge base.                   | ⭐               |
 |              | [Improve Glossary Terms](/make-positive-impact/contribute/glossary)             | Add or edit glossary terms.                            | ⭐               |
 |              | Share On Social Media              | Promote us on social media.                           | ⭐               |
 |              | Website Design Contributions       | Improve our website design.                           | ⭐⭐⭐           |
 |              | Host Local Meetups                 | Organize meetups for comrades.                        | ⭐⭐             |
-| Level 5+     | Suggest Tools                      | Recommend personal growth tools.                      | ⭐               |
+| 5+     | Suggest Tools                      | Recommend personal growth tools.                      | ⭐               |
 |              | Better Life Framework Research             | Enhance our Better Life Framework research.                   | ⭐⭐             |
 |              | [Quiz Creation / Improvement](/make-positive-impact/contribute/quizzes)                      | Create quizzes for the Co-x3 Foundation.              | ⭐⭐             |
-| Level 6+     | Suggest Community Experiences      | Lead community initiatives.                           | ⭐⭐⭐           |
-| Level 7+     | Scholarship Sponsorship            | Sponsor member access to resources.                   | ⭐                |
-| Level 8+     | Submit Research                    | Contribute to community research papers.              | ⭐⭐⭐           |
-| Level 9+     | Ambassador Program                 | Be our ambassador at events and social gatherings.    | ⭐⭐⭐           |
+| 6+     | Suggest Community Experiences      | Lead community initiatives.                           | ⭐⭐⭐           |
+| 7+     | Scholarship Sponsorship            | Sponsor member access to resources.                   | ⭐                |
+| 8+     | Submit Research                    | Contribute to community research papers.              | ⭐⭐⭐           |
+| 9+     | Ambassador Program                 | Be our ambassador at events and social gatherings.    | ⭐⭐⭐           |
 
 _Any questions?_ 🤔 Reach out in our [community](https://our.x3.family/)
 
