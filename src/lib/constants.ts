@@ -21,7 +21,7 @@ export const SITE_URL = "https://the.x3.family"
 export const DISCORD_PATH = "/discord/"
 export const EDIT_CONTENT_URL = `https://github.com/thex3family/thex3family-website/tree/dev/`
 export const MAIN_CONTENT_ID = "main-content"
-export const WEBSITE_EMAIL = "website@ethereum.org"
+export const WEBSITE_EMAIL = "support@co-x3.com"
 
 // Config
 export const CONTENT_IMAGES_MAX_WIDTH = 800
