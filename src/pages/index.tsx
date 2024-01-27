@@ -340,6 +340,7 @@ const HomePage = ({
           <Flex
             alignItems="center"
             flexDirection={{ base: "column-reverse", md: "row" }}
+            gap={{ base: 4 }}
             mt={{ md: 4 }}
             mb={{ md: 12 }}
           >
@@ -349,9 +350,11 @@ const HomePage = ({
               p={{ sm: 8, lg: 24 }}
               boxSize="full"
             >
-              <SectionHeading fontFamily="inherit" mb={6}>
+            <Box mb={6}>
+              <SectionHeading fontFamily="inherit">
                 <Translation id="page-index:page-index-get-started" />
               </SectionHeading>
+              </Box>
               <SectionDecription>
                 <Translation id="page-index:page-index-get-started-description" />
               </SectionDecription>
