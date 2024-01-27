@@ -296,7 +296,7 @@ export const MainLayout: React.FC<IProps> = ({
         </ContentContainer>
         <MobileButton>
           <Flex align="center" gap={2} w="full">
-            <MobileButtonDropdown list={dropdownLinks} flex="1" />
+            {dropdownLinks && <MobileButtonDropdown list={dropdownLinks} flex="1" />}
             <ButtonLink
               leftIcon={<Icon as={FaGithub} />}
               href={absoluteEditPath}

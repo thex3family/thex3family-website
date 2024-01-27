@@ -26,7 +26,7 @@ import type {
 import mdComponents from "@/components/MdComponents"
 import PageMetadata from "@/components/PageMetadata"
 
-// import { getCrowdinContributors } from "@/lib/utils/crowdin"
+import { getCrowdinContributors } from "@/lib/utils/crowdin"
 import { dateToString } from "@/lib/utils/date"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getLastModifiedDate } from "@/lib/utils/gh"
@@ -149,9 +149,9 @@ export const getStaticProps = (async (context) => {
     }
   }
 
-  // const crowdinContributors = ["docs", "programs"].includes(layout)
-  //   ? getCrowdinContributors(mdPath, locale as Lang)
-  //   : []
+  const crowdinContributors = ["docs", "programs"].includes(layout)
+    ? getCrowdinContributors(mdPath, locale as Lang)
+    : []
 
   const requiredNamespaces = getRequiredNamespacesForPage(slug, layout)
 
@@ -167,7 +167,7 @@ export const getStaticProps = (async (context) => {
       layout,
       timeToRead: Math.round(timeToRead.minutes),
       tocItems,
-      //crowdinContributors,
+      crowdinContributors,
     },
   }
 }) satisfies GetStaticProps<Props, Params>
@@ -198,7 +198,7 @@ ContentPage.getLayout = (page) => {
     layout,
     timeToRead,
     tocItems,
-    //crowdinContributors,
+    crowdinContributors,
   } = page.props
 
   const layoutProps = {
@@ -207,7 +207,7 @@ ContentPage.getLayout = (page) => {
     lastUpdatedDate,
     timeToRead,
     tocItems,
-    //crowdinContributors,
+    crowdinContributors,
   }
   const Layout = layoutMapping[layout]
 

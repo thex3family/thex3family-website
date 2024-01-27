@@ -34,7 +34,7 @@ export const StyledButtonDropdown = ({
 )
 
 type LeftNavBarProps = FlexProps & {
-  dropdownLinks?: ButtonDropdownList
+  dropdownLinks?: ButtonDropdownList | null
   maxDepth?: number
   tocItems: ToCItem[]
   editPath: string

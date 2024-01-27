@@ -1,0 +1,7 @@
+{
+  "excludedNames": ["thex3family"],
+  "excludedUsernames": [
+    "thex3family",
+  ],
+  "excludedPhrases": ["aco", "acc_", "lqs", "ssb_"]
+}
