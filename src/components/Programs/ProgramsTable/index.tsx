@@ -1,7 +1,5 @@
 import { ReactNode, useEffect } from "react"
 import { useTranslation } from "next-i18next"
-import { FaBook, FaDiscord, FaGlobe, FaTools, FaTwitter, FaUsers } from "react-icons/fa"
-import { MdExpandLess, MdExpandMore } from "react-icons/md"
 import Select from "react-select"
 import {
   Badge,
@@ -25,15 +23,12 @@ import {
 
 import { ChildOnlyProp, Lang } from "@/lib/types"
 
-import { Button, ButtonLink } from "@/components/Buttons"
+import { Button } from "@/components/Buttons"
 import Emoji from "@/components/Emoji"
-import { Image } from "@/components/Image"
 import InlineLink, { BaseLink, LinkProps } from "@/components/Link"
 import OldHeading from "@/components/OldHeading"
 import Text from "@/components/OldText"
-import { FrameworkMoreInfo } from "@/components/Programs/ProgramsTable/ProgramsMoreInfo"
 import { useFrameworkTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
-import Tooltip from "@/components/Tooltip"
 import { getSkillTranslationId } from "@/components/TutorialMetadata"
 import TutorialTags from "@/components/TutorialTags"
 

@@ -110,7 +110,12 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
     updateFilterOptions(filterKeys, true); // Assuming you want to set each filter to true
   }, [filters]);
 
-  const { filterOptions, setShowOptions } = useFrameworkFilterFeature(restProps)
+  const rest = {
+    resetFrameworkFilter: restProps.resetFrameworkFilter,
+    filters: restProps.filters,
+    updateFilterOptions,
+  };
+  const { filterOptions, setShowOptions } = useFrameworkFilterFeature(rest)
 
   const filterPanelBg = useColorModeValue("chakra-subtle-bg", "black400")
   return (
