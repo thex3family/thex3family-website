@@ -38,7 +38,7 @@ const HomeHero = ({ heroImg }: HomeHeroProps) => {
               {t("page-index:page-index-title")}
             </Heading>
             <Text size="xl">{t("page-index:page-index-description")}</Text>
-            <ButtonLink href="/live-your-best-life/understand-yourself">
+            <ButtonLink href="/live-your-best-life/about-us">
               {t("common:get-started")}
             </ButtonLink>
           </VStack>
