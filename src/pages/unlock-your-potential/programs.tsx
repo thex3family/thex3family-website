@@ -52,6 +52,7 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import {
   filterTutorialsByLang,
   getSortedTutorialTagsForLang,
+  ITutorial,
 } from "@/lib/utils/tutorial"
 
 import externalTutorials from "@/data/externalPrograms.json"
@@ -88,36 +89,6 @@ export const getStaticProps = (async ({ locale }) => {
   }
 }) satisfies GetStaticProps<Props>
 
-export interface IExternalTutorial {
-  url: string
-  title: string
-  description: string
-  author: string
-  authorURL: string
-  tags: Array<string>
-  programType: string
-  location: string
-  frameworkLevel?: Skill
-  timeToRead?: string
-  lang: string
-  publishDate: string
-}
-
-export interface ITutorial {
-  to: string
-  title: string
-  description: string
-  author: string
-  tags?: Array<string>
-  programType: string
-  location: string
-  frameworkLevel?: Skill
-  timeToRead?: number | null
-  published?: string | null
-  lang: string
-  isExternal: boolean
-}
-
 const published = (locale: string, published: string) => {
   const localeTimestamp = getLocaleTimestamp(locale as Lang, published)
   return localeTimestamp !== INVALID_DATETIME ? (
@@ -150,9 +121,6 @@ const TutorialPage = ({
   const { t } = useTranslation(["page-programs"])
 
   const [isModalOpen, setModalOpen] = useState(false)
-  const [filteredTutorials, setFilteredTutorials] = useState(
-    filteredTutorialsByLang
-  )
 
   // Add this state for tag selection
   const [selectedTags, setSelectedTags] = useState<Array<string>>([]);

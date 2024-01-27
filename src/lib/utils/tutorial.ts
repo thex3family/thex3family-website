@@ -1,8 +1,36 @@
 import { Lang } from "@/lib/types"
 
-import { Program, Skill } from "@/components/TutorialMetadata"
+import { Skill } from "@/components/TutorialMetadata"
 
-import { IExternalTutorial, ITutorial } from "@/pages/developers/tutorials"
+export interface IExternalTutorial {
+  url: string
+  title: string
+  description: string
+  author: string
+  authorURL: string
+  tags: Array<string>
+  programType: string
+  location: string
+  frameworkLevel: string
+  timeToRead?: string
+  lang: string
+  publishDate: string
+}
+
+export interface ITutorial {
+  to: string
+  title: string
+  description: string
+  author: string
+  tags?: Array<string>
+  programType: string
+  location: string
+  frameworkLevel?: Skill
+  timeToRead?: number | null
+  published?: string | null
+  lang: string
+  isExternal: boolean
+}
 
 // Take all tutorials, and return a list of tutorials for a specific locale
 export const filterTutorialsByLang = (
@@ -38,7 +66,7 @@ export const filterTutorialsByLang = (
       tags: tutorial.tags.map((tag) => tag.toLowerCase().trim()),
       programType: tutorial.programType,
       location: tutorial.location,
-      frameworkLevel: tutorial.frameworkLevel as Skill,
+      frameworkLevel: tutorial?.frameworkLevel as Skill,
       timeToRead: Number(tutorial.timeToRead),
       published: tutorial.publishDate ? new Date(tutorial.publishDate).toISOString() : null,
       lang: tutorial.lang || "en",
