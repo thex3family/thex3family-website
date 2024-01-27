@@ -47,14 +47,14 @@ const getRequiredNamespacesForPath = (path: string) => {
   let primaryNamespace: string | undefined // the primary namespace for the page
   let requiredNamespaces: string[] = [] // any additional namespaces required for the page
 
-  if (path === "assets") {
-    primaryNamespace = "page-assets"
-  }
 
   if (path === "/") {
     primaryNamespace = "page-index"
   }
   
+  if (path.startsWith("/visual-identity")) {
+    primaryNamespace = "page-visual-identity"
+  }
 
   if (path.startsWith("/glossary")) {
     requiredNamespaces = [...requiredNamespaces, "glossary"]

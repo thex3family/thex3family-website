@@ -16,7 +16,7 @@ const HomeHero = ({ heroImg }: HomeHeroProps) => {
       <Box h={440}>
         <Image
           src={heroImg}
-          alt={t("page-index:page-index-hero-image-alt")}
+          alt={t("common:hero-image-alt")}
           sizes="100vw"
           w="full"
           h="full"

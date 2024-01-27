@@ -30,7 +30,7 @@ const AssetDownload = ({
   svgUrl,
   ...props
 }: AssetDownloadProps) => {
-  const { t } = useTranslation(["page-assets"])
+  const { t } = useTranslation(["page-visual-identity"])
   const matomoHandler = () => {
     trackCustomEvent({
       eventCategory: "asset download button",
@@ -59,12 +59,12 @@ const AssetDownload = ({
       </Box>
       <Flex gap={5} mt={4}>
         <ButtonLink href={imgSrc} onClick={matomoHandler} target="_blank">
-          {t("page-assets-download-download")} (
+          {t("page-visual-identity:page-visual-identity-downwload-button")} (
           {extname(imgSrc).slice(1).toUpperCase()})
         </ButtonLink>
         {svgUrl && (
           <ButtonLink href={svgUrl} onClick={matomoHandler} target="_blank">
-            {t("page-assets-download-download")} (SVG)
+            {t("page-visual-identity:page-visual-identity-downwload-button")} (SVG)
           </ButtonLink>
         )}
       </Flex>

@@ -4,6 +4,9 @@
   
   "about-website": "About x3.family",
 
+  "hero-image-title": "the.x3.family hero",
+  "hero-image-alt": "Illustration of a group of people on a green meadow with pine trees, with mountains in the distance and a branch of pink blossoms overhead.",
+
   "vision-title": "Our Vision",
   "vision-description": "To build a global self-actualized community of co-creators and collaborators tackling global challenges and unleashing breakthroughs together.",
   
@@ -138,6 +141,10 @@
 
   "contact-title": "Contact",
   "cookie-policy-title": "Cookie Policy",
+
+  "visual-identity-title": "Visual Identity",
+  "visual-identity-description": "Our style, brand, and design guide to living a better life.",
+  "visual-identity-image-alt": "The Co-x3 Logo",
 
   "docs-title": "Documentation",
 
