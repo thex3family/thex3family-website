@@ -216,12 +216,9 @@ The Foundation may update this Privacy Policy from time to time and inform you o
 For more information on applicable privacy regulations, you may refer
 to:
 
-- EU General Data Protection Regulation:
-  <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG>
-- Swiss Federal Act on Data Protection:
-  <https://www.admin.ch/opc/en/classified-compilation/19920153/index.html>
-- Swiss Ordinance to the Federal Act on Data Protection:
-  <https://www.admin.ch/opc/en/classified-compilation/19930159/index.html>
+- [EU General Data Protection Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG)
+- [Swiss Federal Act on Data Protection:](https://www.admin.ch/opc/en/classified-compilation/19920153/index.html)
+- [Swiss Ordinance to the Federal Act on Data Protection:](https://www.admin.ch/opc/en/classified-compilation/19930159/index.html)
 
 Please do not hesitate to contact us if you have any questions regarding
 this Privacy Policy by contacting us at [support@co-x3.com](mailto:support@co-x3.com).
