@@ -9,7 +9,7 @@ const locales = BUILD_LOCALES
 /** @type {import('next-i18next').UserConfig} */
 module.exports = {
   i18n: {
-    defaultLocale: ["en"],
+    defaultLocale: "en",
     // supported locales defined in `i18n.config.json`
     locales,
   },
