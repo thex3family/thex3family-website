@@ -201,7 +201,16 @@ export const getStaticProps = (async ({ locale }) => {
   const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[0])
 
   // load last deploy date to pass to Footer in RootLayout
-  const lastDeployDate = getLastDeployDate()
+  const lastDeployDate = getLastDeployDate()  
+  
+  // Log the props before returning them
+  console.log({
+    translations: await serverSideTranslations(locale!, requiredNamespaces),
+    communityEvents,
+    contentNotTranslated,
+    lastDeployDate,
+    metricResults,
+  });
 
   return {
     props: {
