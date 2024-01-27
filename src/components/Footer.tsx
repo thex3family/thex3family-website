@@ -2,7 +2,7 @@
 import React from "react"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { FaCircle,FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaDiscord,FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
   Box,
   Flex,
@@ -23,7 +23,7 @@ import { getLocaleTimestamp } from "@/lib/utils/time"
 
 const socialLinks = [
   {
-    icon: FaCircle,
+    icon: FaDiscord,
     to: "https://our.x3.family/",
     ariaLabel: "Community",
     color: "#7289da",
@@ -31,8 +31,8 @@ const socialLinks = [
   {
     icon: FaYoutube,
     to: "https://www.youtube.com/c/thex3family",
-    ariaLabel: "Twitter",
-    color: "#1DA1F2",
+    ariaLabel: "YouTube",
+    color: "#FF0000",
   },
   {
     icon: FaInstagram,
@@ -44,7 +44,7 @@ const socialLinks = [
     icon: FaTiktok,
     to: "https://www.tiktok.com/@thex3family",
     ariaLabel: "TikTok",
-    color: "#ff0050",
+    color: "#00f2ea",
   },
   {
     icon: FaGithub,
