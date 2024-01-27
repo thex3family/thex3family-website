@@ -29,6 +29,7 @@ import { Button, ButtonLink } from "@/components/Buttons"
 import Emoji from "@/components/Emoji"
 import { Image } from "@/components/Image"
 import InlineLink, { BaseLink, LinkProps } from "@/components/Link"
+import OldHeading from "@/components/OldHeading"
 import Text from "@/components/OldText"
 import { FrameworkMoreInfo } from "@/components/Programs/ProgramsTable/ProgramsMoreInfo"
 import { useFrameworkTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
@@ -45,7 +46,6 @@ import { FrameworkData } from "@/data/framework/framework-data"
 import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 import { ITutorial } from "@/pages/unlock-your-potential/programs"
-import OldHeading from "@/components/OldHeading"
 
 const Container = (props: TableProps) => (
   <Table

@@ -14,7 +14,7 @@ export const filterTutorialsByLang = (
     const lang = tutorial?.lang || "en"
 
     return {
-      to: tutorial.to || "",
+      to: (tutorial.to || "").replace(/\\/g, "/"), // Replace backslashes with forward slashes
       title: tutorial?.title || "",
       description: tutorial?.description || "",
       author: tutorial?.author || "",
