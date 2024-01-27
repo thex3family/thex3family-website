@@ -62,6 +62,7 @@ interface FrameworkFilterSidebarProps extends Omit<TabsProps, "children"> {
   setSelectedPersona: React.Dispatch<React.SetStateAction<number>>
   updateFilterOption: (key: any) => void
   updateFilterOptions: (keys: any, value: any) => void
+  allTags: { [key: string]: number };
 }
 
 const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
