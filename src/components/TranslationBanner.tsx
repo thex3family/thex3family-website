@@ -80,11 +80,12 @@ const TranslationBanner: React.FC<IProps> = ({
           </Flex>
           <p>{t(bodyTextId)}</p>
           <Flex
+            mt={4}
             align={{ base: "flex-start", sm: "center" }}
             flexDirection={{ base: "column", sm: "row" }}
           >
             <Box>
-              <ButtonLink to="/contributing/translation-program/">
+              <ButtonLink to="/contribute">
                 {t("translation-banner-button-translate-page")}
               </ButtonLink>
             </Box>
