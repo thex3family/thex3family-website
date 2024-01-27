@@ -11,12 +11,11 @@ import { Skill } from "@/components/TutorialMetadata"
 
 import { dateToString } from "@/lib/utils/date"
 import { getFallbackEnglishPath, removeEnglishPrefix } from "@/lib/utils/i18n"
+import { ITutorial } from "@/lib/utils/tutorial"
 
 import { CONTENT_DIR, DEFAULT_LOCALE, LOCALES_CODES } from "@/lib/constants"
 
 import { toPosixPath } from "./relativePath"
-
-import { ITutorial } from "@/pages/unlock-your-potential/programs"
 
 const CURRENT_CONTENT_DIR = join(process.cwd(), CONTENT_DIR)
 

@@ -4,8 +4,6 @@ description: Unveiling the mysteries of flow state and its practical application
 lang: en
 ---
 
-<Divider />
-
 ## Introduction
 
 Flow state, often described as being 'in the zone', is a mental state where a person performing an activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment. But how can one reliably access this powerful state?
