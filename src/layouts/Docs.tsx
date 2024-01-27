@@ -223,8 +223,6 @@ export const DocsLayout = ({
   const { asPath: relativePath } = useRouter()
   const absoluteEditPath = getEditPath(relativePath)
 
-  console.log(relativePath);
-
   const gitHubLastEdit = useClientSideGitHubLastEdit(relativePath)
   const intlLastEdit = "data" in gitHubLastEdit ? gitHubLastEdit.data! : ""
   const useGitHubContributors =
