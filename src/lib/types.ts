@@ -19,7 +19,7 @@ import type { CallToActionProps } from "@/components/Hero/CallToAction"
 
 import { layoutMapping } from "@/pages/[...slug]"
 
-export type ChildOnlyProp = { children?: ReactNode }
+export type ChildOnlyProp = { children?: ReactNode, id?: string }
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement<P>) => ReactNode
