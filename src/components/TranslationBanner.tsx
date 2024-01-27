@@ -85,7 +85,7 @@ const TranslationBanner: React.FC<IProps> = ({
             flexDirection={{ base: "column", sm: "row" }}
           >
             <Box>
-              <ButtonLink to="/contribute">
+              <ButtonLink to="/make-positive-impact/contribute">
                 {t("translation-banner-button-translate-page")}
               </ButtonLink>
             </Box>
