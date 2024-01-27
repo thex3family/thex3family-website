@@ -90,6 +90,8 @@ export const useFrameworkTable = ({
       });
     }
 
+    console.log(filters);
+
     return frameworksToProcess;
   }, [frameworkData, selectedTags, filters, sortOrder]);
 

@@ -10,6 +10,7 @@ const primaryLight = green
 const primaryDark = red
 const success = "#109e62"
 const fail = "#b80000"
+const orange = "#ff7324"
 
 // old
 const turquoise = "#ccfcff"

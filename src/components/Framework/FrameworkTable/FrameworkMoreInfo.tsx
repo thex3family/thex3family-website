@@ -19,32 +19,7 @@ export const FrameworkMoreInfo = ({
   idx,
   featureDropdownItems,
 }: FrameworkMoreInfoProps) => {
-  const { t } = useTranslation("page-find-wallet")
-  const frameworkHasFilter = (filterKey) => {
-    return framework[filterKey] === true
-  }
-  // Cast as Number because TypeScript warned about sorting implicitly by true/false
-  const orderedFeatureDropdownItems = featureDropdownItems.sort(
-    (a, b) =>
-      Number(frameworkHasFilter(b.filterKey)) -
-      Number(frameworkHasFilter(a.filterKey))
-  )
-
-  const frameworkInfoSections = [
-    { headingLabel: t("page-find-wallet-features"), sectionName: "feature" },
-    { headingLabel: t("page-find-wallet-security"), sectionName: "security" },
-    {
-      headingLabel:
-        t("page-find-wallet-buy-crypto") +
-        " / " +
-        t("page-find-wallet-sell-for-fiat"),
-      sectionName: "trade_and_buy",
-    },
-    {
-      headingLabel: t("page-find-wallet-smart-contract"),
-      sectionName: "smart_contract",
-    },
-  ]
+  const { t } = useTranslation("page-understand-the-framework")
 
   return (
     <Box>
@@ -58,18 +33,12 @@ export const FrameworkMoreInfo = ({
           />
         </Box>
         <Box>
-          {frameworkInfoSections.map((section, idx) => (
-            <FrameworkMoreInfoCategory
-              key={idx}
-              framework={framework}
-              orderedFeatureDropdownItems={orderedFeatureDropdownItems}
-              {...section}
-            />
-          ))}
+          <FrameworkMoreInfoCategory
+            framework={framework}
+          />
           <VStack
             as={Text}
-            color="text300"
-            fontSize="sm"
+            fontSize="xs"
             justifyContent="space-between"
             wrap="wrap"
             alignItems="flex-start"
@@ -77,7 +46,7 @@ export const FrameworkMoreInfo = ({
             spacing={4}
           >
             <ButtonLink
-              to={framework.url}
+              to={`/unlock-your-potential/programs?filters=LEVEL_${framework.name}`}
               customEventOptions={{
                 eventCategory: "FrameworkExternalLinkList",
                 eventAction: `Go to framework`,
@@ -85,12 +54,11 @@ export const FrameworkMoreInfo = ({
                 eventValue: JSON.stringify(filters),
               }}
             >
-              {`${t("page-find-wallet-check-out")} ${framework.name}`}
+              {t("page-understand-the-framework-check-out")} {t(`page-understand-the-framework-level-${framework.name}-title`)}
             </ButtonLink>
-            <Text as="i">
-              {`${framework.name} ${t("page-find-wallet-info-updated-on")} ${
-                framework.last_updated
-              }`}
+            <Text>
+              {`${t("page-understand-the-framework-info-updated-on")} ${framework.last_updated
+                }.`}
             </Text>
           </VStack>
         </Box>

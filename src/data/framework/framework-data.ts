@@ -13,7 +13,6 @@ import two from "@/public/framework/two.png"
 export interface FrameworkData {
   last_updated: string
   name: string
-  description: string
   est_population: number
   image: StaticImageData
   brand_color: string
@@ -62,11 +61,10 @@ export interface FrameworkData {
 const frameworkData: FrameworkData[] = [
   {
     last_updated: "Jan 15 2024",
-    name: "1: Survive",
-    description: "Life is about dealing with my needs and feeling good by getting what I need.",
+    name: "1",
     est_population: 100,
     image: one,
-    brand_color: "#ffffff",
+    brand_color: "#E03D3E",
     languages_supported: [
       "en",
     ],
@@ -112,11 +110,10 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "2: Connect",
-    description: "Life is about pleasing others (or the gods) so that they give us what we need.",
+    name: "2",
     est_population: 99.6,
     image: two,
-    brand_color: "#ffffff",
+    brand_color: "#ff7324",
     languages_supported: [
       "en",
     ],
@@ -162,11 +159,10 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "3: Control",
-    description: "Life is about getting what I want by taking or creating advantages for myself. I'm the main character.",
+    name: "3",
     est_population: 92,
     image: three,
-    brand_color: "#ffffff",
+    brand_color: "#EDBE00",
     languages_supported: [
       "en",
     ],
@@ -212,11 +208,10 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "4: Belong",
-    description: "Life is about knowing what's right and what's wrong and making sure others do the right thing, too.",
+    name: "4",
     est_population: 40,
     image: four,
-    brand_color: "#ffffff",
+    brand_color: "#13AA78",
     languages_supported: [
       "en",
     ],
@@ -262,11 +257,10 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "5: Systems",
-    description: "Life is about knowing how to make good things happen, keeping the benefits, and always improving.",
+    name: "5",
     est_population: 28,
     image: five,
-    brand_color: "#ffffff",
+    brand_color: "#6FAAC3",
     languages_supported: [
       "en",
     ],
@@ -312,11 +306,10 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "6: Let Go",
-    description: "Life is about being free to be whoever we are. If we stopped telling others what to do, we would have peace.",
+    name: "6",
     est_population: 15,
     image: six,
-    brand_color: "#ffffff",
+    brand_color: "#4908B0",
     languages_supported: [
       "en",
     ],
@@ -362,11 +355,10 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "7: Boundaries",
-    description: "Life is about drawing boundaries, saying no is for the best. Who I am and what I want changes often.",
+    name: "7",
     est_population: 5,
     image: seven,
-    brand_color: "#ffffff",
+    brand_color: "#ffe5f9",
     languages_supported: [
       "en",
     ],
@@ -412,11 +404,10 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "8: Curiosity",
-    description: "Life is an experiment. All we can do is the best that we know, so we should all know more.",
+    name: "8",
     est_population: 1,
     image: eight,
-    brand_color: "#ffffff",
+    brand_color: "#E5FFEB",
     languages_supported: [
       "en",
     ],
@@ -462,8 +453,7 @@ const frameworkData: FrameworkData[] = [
   },
   {
     last_updated: "Jan 15 2024",
-    name: "9: Empathy",
-    description: "Life is about learning where and how to shine the light. I am not the main character, I am just the spotlight. What is revealed is what I illuminate.",
+    name: "9",
     est_population: 0.4,
     image: nine,
     brand_color: "#ffffff",

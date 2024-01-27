@@ -451,14 +451,14 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                     />
                   </Box>
                   <Box>
-                    <Text>{framework.name}</Text>
+                    <Text>{t(`page-understand-the-framework-level-${framework.name}-title`)}</Text>
                     <Text
                       hideBelow="sm"
                       color="text200"
                       fontSize="0.7rem"
                       lineHeight="0.85rem"
                     >
-                      {framework.description}
+                      {t(`page-understand-the-framework-level-${framework.name}-description`)}
                     </Text>
                     {/* <Box mt={4}>
                       <Flex gap="0.8rem">
@@ -566,14 +566,14 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                 </FlexInfoCenter>
               </Td>
             </Framework>
-            {/* {framework.moreInfo && (
+            {framework.moreInfo && (
               <FrameworkMoreInfo
                 framework={framework}
                 filters={filters}
                 idx={idx}
                 featureDropdownItems={featureDropdownItems}
               />
-            )} */}
+            )}
           </FrameworkContainer>
         )
       })}
