@@ -36,7 +36,7 @@ We integrated foundational theories in psychological and personal development to
 
 ### Core Concepts
 
-1. **Framework Levels = Thinking About Thinking**
+1. **Framework = Thinking About Thinking**
 
    Better Life Framework encourages you to think about your own thinking patterns, enhancing self-awareness. Understand how you think differently in different stages of your growth and development can have immense benefits.
 
