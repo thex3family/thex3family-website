@@ -163,6 +163,10 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           text: t("languages-title"),
         },
         {
+          to: "/visual-identity/",
+          text: t("visual-identity-title"),
+        },
+        {
           to: "/privacy-policy/",
           text: t("privacy-policy-title"),
         },

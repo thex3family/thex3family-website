@@ -14,7 +14,7 @@ const AssetDownloadArtist = ({
   artistName,
   artistUrl,
 }: AssetDownloadArtistProps) => {
-  const { t } = useTranslation("page-assets")
+  const { t } = useTranslation("page-visual-identity")
   return (
     <Flex
       mb="4"
@@ -27,7 +27,7 @@ const AssetDownloadArtist = ({
     >
       <Flex me="2" fontSize="md" textColor="text300">
         <Emoji text=":artist_palette:" me="2" fontSize="2xl" />
-        {t("page-assets-download-artist")}
+        {t("page-visual-identity:page-visual-identity-artist-title")}
       </Flex>
       {artistUrl && <Link to={artistUrl}>{artistName}</Link>}
       {!artistUrl && <Text m="0">{artistName}</Text>}
