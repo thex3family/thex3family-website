@@ -42,7 +42,6 @@ export async function fetchCommunityEvents(): Promise<CommunityEventsReturnType>
           date: event.start.dateTime || "", // Set to null if undefined (full day event)
           title: event.summary,
           calendarLink: event.htmlLink,
-          pastEventLink: event.location,
         }
       })
       .filter((event) => event.date !== ""); // Filter out events with null dates if needed
