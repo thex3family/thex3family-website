@@ -30,34 +30,31 @@ export const FrameworkMoreInfoCategory = ({
       >
         What It Feels Like
       </Heading>
-      <Flex gap={2} wrap="wrap">
-        <HStack
-          spacing="0.2rem"
-          fontSize="0.9rem"
-          lineHeight={1}
-          p="0.2rem"
-          mx={1}
-          width="200px"
-          sx={{
-            p: {
-              color: "text",
-              flex: "none",
-              mb: 0,
+      <Flex gap={2}
+      wrap="wrap"
+        fontSize="0.9rem"
+        lineHeight={1}
+        p="0.2rem"
+        mx={1}
+        pr={10}
+        sx={{
+          p: {
+            color: "text",
+            mb: 0,
+          },
+          "span + p": {
+            textDecor: "none",
+          },
+          "p + div, div + div": {
+            svg: {
+              width: 6,
+              fill: "secondary",
+              pe: 2,
             },
-            "span + p": {
-              textDecor: "none",
-            },
-            "p + div, div + div": {
-              svg: {
-                width: 6,
-                fill: "secondary",
-                pe: 2,
-              },
-            },
-          }}
-        >
-          <p>{t(`page-understand-the-framework-level-${framework.name}-unlock`)}</p>
-        </HStack>
+          },
+        }}
+      >
+        <p>{t(`page-understand-the-framework-level-${framework.name}-unlock`)}</p>
       </Flex>
     </Box>
   )
