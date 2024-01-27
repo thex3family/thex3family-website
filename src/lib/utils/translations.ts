@@ -48,7 +48,7 @@ const getRequiredNamespacesForPath = (path: string) => {
   let requiredNamespaces: string[] = [] // any additional namespaces required for the page
 
 
-  if (path.startsWith("/")) {
+  if (path === "/") {
     primaryNamespace = "page-index"
   }
   
