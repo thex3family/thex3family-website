@@ -66,7 +66,7 @@ Better Life Framework is ideal for anyone wanting to live a better life and posi
 
 ### Have Other Ideas For The Framework?
 
-We are eager to extend the reach and impact of Better Life Framework, and we're excited about exploring new partnerships and opportunities. If you see potential for Better Life Framework in areas beyond what's described above, [we want to hear from you](#).
+We are eager to extend the reach and impact of Better Life Framework, and we're excited about exploring new partnerships and opportunities. If you see potential for Better Life Framework in areas beyond what's described above, [we want to hear from you](mailto:partnerships@co-x3.com).
 
 ## How Do I Use The Framework?
 

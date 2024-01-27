@@ -39,8 +39,6 @@ export const FrameworkMoreInfo = ({
           <VStack
             as={Text}
             fontSize="xs"
-            justifyContent="space-between"
-            wrap="wrap"
             alignItems="flex-start"
             my={8}
             spacing={4}
