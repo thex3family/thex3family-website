@@ -204,13 +204,13 @@ export const getStaticProps = (async ({ locale }) => {
   const lastDeployDate = getLastDeployDate()  
   
   // Log the props before returning them
-  console.log({
-    translations: await serverSideTranslations(locale!, requiredNamespaces),
-    communityEvents,
-    contentNotTranslated,
-    lastDeployDate,
-    metricResults,
-  });
+  // console.log({
+  //   translations: await serverSideTranslations(locale!, requiredNamespaces),
+  //   communityEvents,
+  //   contentNotTranslated,
+  //   lastDeployDate,
+  //   metricResults,
+  // });
 
   return {
     props: {

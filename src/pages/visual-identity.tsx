@@ -28,6 +28,9 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import logoBlack from "@/public/assets/main-logo(black).png"
 import logoWhite from "@/public/assets/main-logo(white).png"
+
+import icon from "@/public/assets/icon-1000.png"
+
 import hero from "@/public/home/hero.png"
 
 const Row = (props: SimpleGridProps) => (
@@ -120,8 +123,8 @@ const AssetsPage = () => {
             title={t("common:hero-image-title")}
             alt={t("common:hero-image-alt")}
             image={hero}
-            artistName="Conrad Lin"
-            artistUrl="https://conradlin.com/"
+            artistName="Fung"
+            artistUrl="https://www.kyoarashi.com/"
           />
         </Row>
         
@@ -147,38 +150,36 @@ const AssetsPage = () => {
             artistName="William Tempest"
             artistUrl="https://cargocollective.com/willtempest"
           />
-        </Row>
+        </Row>*/}
         
-        <H2 id="brand">{t("page-assets-ethereum-brand-assets")}</H2>
-        <H3>{t("page-assets-page-assets-transparent-background")}</H3>
+        <H2 id="brand">{t("page-visual-identity:page-visual-identity-brand-title")}</H2>
+        <H3>{t("page-visual-identity:page-visual-identity-transparent-background-title")}</H3>
         <Row>
           <AssetDownload
-            title={t("page-assets-eth-diamond-purple")}
-            alt={t("page-assets-eth-diamond-purple")}
-            image={logoBlack}
-            svgUrl="/assets/svgs/eth-diamond-purple.svg"
+            title={t("common:icon-image-title")}
+            alt={t("common:icon-image-alt")}
+            image={icon}
+            svgUrl="/assets/svg/icon.svg"
+            artistName="Chia Yee Hui"
+            artistUrl="https://www.linkedin.com/in/yeechia"
           />
           <AssetDownload
-            title={t("page-assets-eth-diamond-colored")}
-            alt={t("page-assets-eth-diamond-colored")}
+            title={t("common:main-logo-black-image-title")}
+            alt={t("common:main-logo-black-image-alt")}
+            image={logoBlack}
+            svgUrl="/assets/svg/main-logo(black).svg"
+            artistName="Chia Yee Hui"
+            artistUrl="https://www.linkedin.com/in/yeechia"
+          />
+          <AssetDownload
+            title={t("common:main-logo-white-image-title")}
+            alt={t("common:main-logo-white-image-alt")}
             image={logoWhite}
-            svgUrl="/assets/svgs/eth-glyph-colored.svg"
+            svgUrl="/assets/svg/main-logo(white).svg"
+            artistName="Chia Yee Hui"
+            artistUrl="https://www.linkedin.com/in/yeechia"
           />
         </Row>
-        <Row>
-          <AssetDownload
-            title={t("page-assets-eth-logo-portrait-gray")}
-            alt={t("page-assets-eth-logo-portrait-gray")}
-            image={logoBlack}
-            svgUrl="/assets/svgs/ethereum-logo-portrait-black.svg  "
-          />
-          <AssetDownload
-            title={t("page-assets-eth-logo-landscape-gray")}
-            alt={t("page-assets-eth-logo-landscape-gray")}
-            image={logoBlack}
-            svgUrl="/assets/svgs/ethereum-logo-landscape-black.svg"
-          />
-        </Row> */}
       </Box>
       <FeedbackCard />
     </Flex>
