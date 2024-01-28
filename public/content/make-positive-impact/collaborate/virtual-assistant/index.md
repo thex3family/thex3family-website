@@ -7,6 +7,8 @@ lang: en
 hideEditButton: true
 ---
 
+# Virtual Assistant
+
 ## About The Role
 
 We're looking for a highly organized and proactive Virtual Assistant who thrives on systematization and creating best practices. This role is crucial in supporting our team in saving time, increasing efficiency, and contributing to the growth of our organization.

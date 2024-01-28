@@ -7,6 +7,8 @@ lang: en
 hideEditButton: true
 ---
 
+# Growth Manager
+
 ## About The Role
 
 We are seeking an ambitious and innovative Growth Manager to lead our revenue and growth initiatives. This role will not only focus on analyzing and maximizing revenue from our products but also on crafting and managing donation campaigns to fuel our community projects. Your strategic insights and hands-on approach will be essential in driving sustainable growth for our organization. 

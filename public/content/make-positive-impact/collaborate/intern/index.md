@@ -7,6 +7,8 @@ lang: en
 hideEditButton: true
 ---
 
+# Intern
+
 ## About The Role
 
 We are excited to offer a General Internship position for enthusiastic individuals looking to learn, grow, and make a meaningful impact. This is an unparalleled opportunity to explore different roles within our community, work closely with industry experts, and build a diverse skillset. Interns will be involved in a variety of projects and will have the flexibility to specialize in a chosen field as they gain experience. 

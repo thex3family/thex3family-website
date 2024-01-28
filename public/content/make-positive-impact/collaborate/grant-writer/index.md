@@ -7,6 +7,8 @@ lang: en
 hideEditButton: true
 ---
 
+# Grant Writer
+
 ## About The Role
 
 We are seeking a highly skilled and motivated Grant Writer to join our dynamic team. This role plays an essential part in securing funding for our programs and initiatives, thus enabling us to continue empowering our community to unlock their potential and live better lives. The ideal candidate will excel in crafting compelling proposals and narratives to attract grants and sponsorships, both for specific projects and general organizational support.

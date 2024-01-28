@@ -7,6 +7,8 @@ lang: en
 hideEditButton: true
 ---
 
+# Video Editor
+
 ## About The Role
 
 We are seeking a talented and versatile Video Editor who can craft engaging visual content tailored to platforms such as YouTube, TikTok, and Instagram. Specializing in both short and long-form videos, motion graphics, and sound design, this role plays a pivotal part in sharing our message with as many people as possible.
