@@ -1,4 +1,13 @@
 {
+  "icon-image-title": "Co-x3 Icon",
+  "icon-image-alt": "A circular icon divided in half: the left side is black, and the right side has 3 colored segments - blue, red, and yellow, with a white play symbol in the center.",
+  
+  "main-logo-black-image-title": "Co-x3 Main Logo (Black)",
+  "main-logo-black-image-alt": "Co-x3 spelled out in black lettering, with the O as the circular icon symbolizing the knowledge, tools, and community. The x3 is encapsulated in a chat bubble.",
+
+  "main-logo-white-image-title": "Co-x3 Main Logo (White)",
+  "main-logo-white-image-alt": "Co-x3 spelled out in white lettering, with the O as the circular icon symbolizing the knowledge, tools, and community. The x3 is encapsulated in a chat bubble.",
+
   "active": "Active",
   "filters": "Filters",
   
