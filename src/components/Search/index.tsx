@@ -52,7 +52,7 @@ const Search = forwardRef<Props, "button">(
     const appId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || ""
     const apiKey = process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_KEY || ""
     const indexName =
-      process.env.NEXT_PUBLIC_ALGOLIA_BASE_SEARCH_INDEX_NAME || "ethereumorg"
+      process.env.NEXT_PUBLIC_ALGOLIA_BASE_SEARCH_INDEX_NAME || "thex3family-website"
 
     const breakpointToken: ThemeTypings["breakpoints"] = "xl"
 
