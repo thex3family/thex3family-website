@@ -252,7 +252,7 @@ const MobileNavMenu: React.FC<IProps> = ({
             py={0}
             mt="auto"
           >
-            <FooterItem
+            {/* <FooterItem
               onClick={() => {
                 // Workaround to ensure the input for the search modal can have focus
                 toggleMenu()
@@ -261,7 +261,7 @@ const MobileNavMenu: React.FC<IProps> = ({
             >
               <Icon as={MdSearch} />
               <FooterItemText>{t("search")}</FooterItemText>
-            </FooterItem>
+            </FooterItem> */}
             <FooterItem onClick={toggleTheme}>
               <Icon as={isDarkTheme ? MdWbSunny : MdBrightness2} />
               <FooterItemText>

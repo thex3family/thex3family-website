@@ -74,7 +74,7 @@ const Nav: FC<IProps> = ({ path }) => {
               justifyContent="space-between"
               gap={{ base: 2, xl: 4 }}
             >
-              <Search {...searchModalDisclosure} />
+              {/* <Search {...searchModalDisclosure} /> */}
               {/* Mobile */}
               <MobileNavMenu
                 {...mobileNavProps}
