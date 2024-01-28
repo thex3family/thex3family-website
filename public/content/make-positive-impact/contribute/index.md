@@ -20,7 +20,7 @@ _We are in the process of developing a user-friendly platform to effortlessly ma
 
 | Perspective        | Task                               | Description                                           | Difficulty        |
 |--------------|------------------------------------|-------------------------------------------------------|-------------------|
-| All   | Get A Co-x3 Subscription           | Access exclusive content.                             | ⭐               |
+| All   | [Get A Co-x3 Subscription](/make-positive-impact/contribute/subscription)           | Access exclusive content.                             | ⭐               |
 |              | Share Feedback                     | Provide your thoughts and suggestions.                | ⭐                |
 |              | Like and Subscribe                 | Support us on social platforms.                       | ⭐               |
 | 3+     | Post In Community Channels         | Engage in community discussions.                      | ⭐               |
