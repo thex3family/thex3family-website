@@ -26,11 +26,9 @@ import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
+import icon from "@/public/assets/icon-1000.png"
 import logoBlack from "@/public/assets/main-logo(black).png"
 import logoWhite from "@/public/assets/main-logo(white).png"
-
-import icon from "@/public/assets/icon-1000.png"
-
 import hero from "@/public/home/hero.png"
 
 const Row = (props: SimpleGridProps) => (
