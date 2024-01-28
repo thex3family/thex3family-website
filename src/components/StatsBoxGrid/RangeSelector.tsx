@@ -16,7 +16,7 @@ export const RangeSelector: React.FC<IRangeSelectorProps> = ({
   matomo,
 }) => (
   <div>
-    {RANGES.map((range, idx) => (
+    {/* {RANGES.map((range, idx) => (
       <Button
         onClick={() => {
           setState(RANGES[idx])
@@ -43,6 +43,6 @@ export const RangeSelector: React.FC<IRangeSelectorProps> = ({
       >
         {range}
       </Button>
-    ))}
+    ))} */}
   </div>
 )

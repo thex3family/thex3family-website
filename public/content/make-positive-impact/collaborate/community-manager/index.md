@@ -7,6 +7,8 @@ lang: en
 hideEditButton: true
 ---
 
+# Community Manager
+
 ## About The Role
 
 We are seeking a creative and strategic Community Manager who excels at crafting viral engaging content and growing online communities. This role is key in connecting with our community members across the world, building brand awareness, and promoting our mission.

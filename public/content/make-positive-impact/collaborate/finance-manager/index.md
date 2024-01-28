@@ -7,6 +7,8 @@ lang: en
 hideEditButton: true
 ---
 
+# Finance Manager
+
 ## About The Role
 
 We are seeking a dedicated and analytical Finance Manager to oversee our financial operations, including cost management, bookkeeping, and reporting compliance. Your expertise in financial planning and management will be pivotal in ensuring the financial sustainability and integrity of our non-profit organization. 

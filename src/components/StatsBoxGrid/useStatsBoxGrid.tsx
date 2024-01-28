@@ -72,17 +72,17 @@ export const useStatsBoxGrid = ({
 
   const [totalEtherStaked, setTotalEtherStaked] = useState<State>({
     data: [],
-    value: "100,000+",
+    value: "100k+",
     hasError: false,
   })
   const [txs, setTxs] = useState<State>({
     data: [],
-    value: "50,000+",
+    value: "50k+",
     hasError: false,
   })
   const [valueLocked, setValueLocked] = useState<State>({
     data: [],
-    value: "1,000+",
+    value: "1k+",
     hasError: false,
   })
   const [nodes, setNodes] = useState<State>({
