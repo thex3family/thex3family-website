@@ -14,7 +14,7 @@ summaryPoint3: Get recognized and rewarded for your contributions.
 
 Your contributions, regardless of their size, are immensely valuable to us. Whether you have a few minutes or several hours, there's a place for you here. Participation in even small, one-off tasks can make a significant impact.
 
-We are in the process of developing a user-friendly platform to effortlessly match you with tasks that align with your skills and interests. Meanwhile, please explore the list of standard tasks below to find something that resonates with you.
+_We are in the process of developing a user-friendly platform to effortlessly match you with tasks that align with your skills and interests. Meanwhile, please explore the list of standard tasks below to find something that resonates with you._
 
 ## What Can I Do? {#what-contribute}
 
