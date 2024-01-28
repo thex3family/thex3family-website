@@ -9,14 +9,15 @@ import {
   Icon,
   List,
   ListItem,
+  SimpleGrid,
   Text,
-  useToken,
-  SimpleGrid
-} from "@chakra-ui/react"
+  useToken} from "@chakra-ui/react"
 
 import type { ChildOnlyProp, Lang } from "@/lib/types"
 import type { MdPageContent, UpgradeFrontmatter } from "@/lib/interfaces"
 
+import BasicActionCard from "@/components/ActionCard/BasicActionCard"
+import FrameworkActionCard from "@/components/ActionCard/FrameworkActionCard"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import type { List as ButtonDropdownList } from "@/components/ButtonDropdown"
 import { ButtonLink } from "@/components/Buttons"
@@ -38,10 +39,6 @@ import { getSummaryPoints } from "@/lib/utils/getSummaryPoints"
 import { getLocaleTimestamp } from "@/lib/utils/time"
 
 import { MAIN_CONTENT_ID } from "@/lib/constants"
-
-
-import BasicActionCard from "@/components/ActionCard/BasicActionCard"
-import FrameworkActionCard from "@/components/ActionCard/FrameworkActionCard"
 
 const CardGrid = (props: ChildOnlyProp) => (
   <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8} {...props} />

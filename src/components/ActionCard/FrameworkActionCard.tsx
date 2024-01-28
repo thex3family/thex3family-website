@@ -10,10 +10,10 @@ import {
 import { ButtonLink } from "@/components/Buttons"
 import { Image } from "@/components/Image"
 
-import understand_yourself from "@/public/understand_yourself.png"
-import understand_the_framework from "@/public/understand_the_framework.png"
-import unlock_your_potential from "@/public/unlock_your_potential.png"
 import make_positive_impact from "@/public/make_positive_impact.png"
+import understand_the_framework from "@/public/understand_the_framework.png"
+import understand_yourself from "@/public/understand_yourself.png"
+import unlock_your_potential from "@/public/unlock_your_potential.png"
 
 interface IProps {
   to: string
