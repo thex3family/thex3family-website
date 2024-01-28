@@ -21,6 +21,7 @@ import type { List as ButtonDropdownList } from "@/components/ButtonDropdown"
 import { ButtonLink } from "@/components/Buttons"
 import FeedbackCard from "@/components/FeedbackCard"
 import { Image } from "@/components/Image"
+import JobBoard from "@/components/JobBoard"
 import LeftNavBar from "@/components/LeftNavBar"
 import { BaseLink } from "@/components/Link"
 import {
@@ -124,6 +125,7 @@ export const LastUpdated = (props: ChildOnlyProp) => (
 
 // Main layout components
 export const mainComponents = {
+  JobBoard
 }
 
 interface IProps

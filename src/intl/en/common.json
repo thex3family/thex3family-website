@@ -13,6 +13,9 @@
   
   "about-website": "About x3.family",
 
+  "no-jobs-available": "Oops! Nothing here. If you feel like there is a role that would fit you, write in to let us know!",
+  "apply": "Apply Now.",
+
   "hero-image-title": "the.x3.family hero",
   "hero-image-alt": "Illustration of a group of people on a green meadow with pine trees, with mountains in the distance and a branch of pink blossoms overhead.",
 
@@ -224,6 +227,15 @@
   "collaborate-description": "We enable our community to make use of their skills and commit regular time towards supporting programs that have benefited their growth journeys.",
   "collaborate-image-alt": "",
   "collaborate-button": "Dedicate Your Time",
+
+  "community-manager-title": "Community Manager",
+  "finance-manager-title": "Finance Manager",
+  "grant-writer-title": "Grant Writer",
+  "growth-manager-title": "Growth Manager",
+  "intern-title": "Intern",
+  "video-editor-title": "Video Editor",
+  "virtual-assistant-title": "Virtual Assistant",
+
   "co-create-title": "Co-Create New Programs",
   "co-create-description": "We support the development of new programs by providing resources and support to creators who want to build solutions for the community.",
   "co-create-image-alt": "",
