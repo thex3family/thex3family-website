@@ -6,37 +6,5 @@
     "localName": "English",
     "langDir": "ltr",
     "dateFormat": "MM/DD/YYYY"
-  },
-  {
-    "code": "hi",
-    "crowdinCode": "hi",
-    "name": "Hindi",
-    "localName": "हिन्दी",
-    "langDir": "ltr",
-    "dateFormat": "MM/DD/YYYY"
-  },
-  {
-    "code": "ja",
-    "crowdinCode": "ja",
-    "name": "Japanese",
-    "localName": "日本語",
-    "langDir": "ltr",
-    "dateFormat": "YYYY/MM/DD"
-  },
-  {
-    "code": "ta",
-    "crowdinCode": "ta",
-    "name": "Tamil",
-    "localName": "தமிழ்",
-    "langDir": "ltr",
-    "dateFormat": "MM/DD/YYYY"
-  },
-  {
-    "code": "zh",
-    "crowdinCode": "zh-CN",
-    "name": "Chinese Simplified",
-    "localName": "简体中文",
-    "langDir": "ltr",
-    "dateFormat": "YYYY-MM-DD"
   }
 ]
