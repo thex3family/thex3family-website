@@ -11,6 +11,7 @@ import {
   ListItem,
   Text,
   useToken,
+  SimpleGrid
 } from "@chakra-ui/react"
 
 import type { ChildOnlyProp, Lang } from "@/lib/types"
@@ -37,6 +38,14 @@ import { getSummaryPoints } from "@/lib/utils/getSummaryPoints"
 import { getLocaleTimestamp } from "@/lib/utils/time"
 
 import { MAIN_CONTENT_ID } from "@/lib/constants"
+
+
+import BasicActionCard from "@/components/ActionCard/BasicActionCard"
+import FrameworkActionCard from "@/components/ActionCard/FrameworkActionCard"
+
+const CardGrid = (props: ChildOnlyProp) => (
+  <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8} {...props} />
+)
 
 // const Page = (props: FlexProps) => <MdPage sx={{}} {...props} />
 
@@ -125,7 +134,10 @@ export const LastUpdated = (props: ChildOnlyProp) => (
 
 // Main layout components
 export const mainComponents = {
-  JobBoard
+  CardGrid,
+  JobBoard,
+  BasicActionCard,
+  FrameworkActionCard,
 }
 
 interface IProps

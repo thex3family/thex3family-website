@@ -18,17 +18,20 @@ Additionally, seeking personal growth through available resources (books, articl
 
 ### Challenges We Tackle
 
-1. **One Size Doesn't Always Fit All**
-
-   What works for one might not suit another. This can be disheartening, because we all strive to support and be supported effectively. We need to learn how to adapt our learnings so they can be readily absorbed by others.
-
-2. **What Worked May Not Keep Working**
-
-   We always hope that we will discover a permanant 'life hack' that will transform our life. The reality is that as we level up, so do our needs and motivations. Our strategies need to evolve over time to stay relevant and effective.
-
-3. **We Feel Like We Are Wasting Our Time**
-
-   Understanding why certain knowledge, tools, or community resources don't align with our current selves can prevent feelings of wasted time and effort. This helps keep up our motivation to pursue our best selves.
+<CardGrid>
+  <BasicActionCard
+    title="One Size Doesn't Fit All, And Why That's OK"
+    description="What works for one might not suit another. This can be disheartening, because we all strive to support and be supported effectively. We need to learn how to adapt our learnings so they can be readily absorbed by others."
+  />
+  <BasicActionCard
+    title="What Worked May Not Keep Working"
+    description="We always hope that we will discover a permanant 'life hack' that will transform our life. The reality is that as we level up, so do our needs and motivations. Our strategies need to evolve over time to stay relevant and effective."
+  />
+  <BasicActionCard
+    title="We Feel Like We Are Wasting Our Time"
+    description="Understanding why certain knowledge, tools, or community resources don't align with our current selves can prevent feelings of wasted time and effort. This helps keep up our motivation to pursue our best selves."
+  />
+</CardGrid>
 
 ## What Is The Better Life Framework?
 
@@ -36,17 +39,20 @@ We integrated foundational theories in psychological and personal development to
 
 ### Core Concepts
 
-1. **Framework = Thinking About Thinking**
-
-   Better Life Framework encourages you to think about your own thinking patterns, enhancing self-awareness. Understand how you think differently in different stages of your growth and development can have immense benefits.
-
-2. **Understand How People Think**
-
-   Better Life Framework helps you understand how your success in one area of life can be effectively leveraged in another. It offers a deeper understanding into why people behave the way they do, fostering empathy and collaboration.
-
-3. **Higher Framework Level Doesn't Mean Better Person**
-
-   You can be happy and successful at any level. Better Life Framework simply offers you an understanding of how to maximize your happiness based on your needs and motivations, and level up whenever you are ready.
+<CardGrid>
+  <BasicActionCard
+    title="Understand Why You Think The Way You Do"
+    description="Understand how experiences shift your perspectives to leverage success from one area of life to another."
+  />
+  <BasicActionCard
+    title="Understand Human Behaviours"
+    description="Gain a deeper understanding into why history repeats itself, and how we can leverage our experiences to work for us."
+  />
+  <BasicActionCard
+    title="Find True Happiness And Fulfillment"
+    description="Learn how to maximize your happiness based on your needs and motivations, and level up whenever you are ready."
+  />
+</CardGrid>
 
 ## Who Is The Framework For?
 
@@ -70,10 +76,29 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 ## How Do I Use The Framework?
 
-1. First, dive into our resources in the sidebar to gain a deep understanding of the growth stages that are most relevant to you.
-2. Next, use your understanding of your life stage to get access to the most relevant resources precisely when you need them, optimizing your journey towards unlocking your potential and avoiding unnecessary delays and detours. We maintain a comprehensive repository of knowledge, tools, and community programs, each carefully categorized by your life perspective.
-3. As you progress towards your best self, give back! As a community of givers, we find that the most joy in life comes from supporting others. We offer many ways to contribute, collaborate, and co-create with us in ways relevant to your perspective - helping you master your understanding and enabling you to support others effectively.
-
+<CardGrid>
+  <FrameworkActionCard
+    image="understand_yourself"
+    title="Know Yourself"
+    description="You don't need to feel so helpless. Your perception of the world is your reality, and the framework will help you figure out where you need to look in order to unlock your potential."
+    to="/understand-yourself/understand-the-framework"
+    buttonText="Explore The Framework"
+  />
+  <FrameworkActionCard
+    image="unlock_your_potential"
+    title="Get The Right Support"
+    description="Leveling up doesn't need to be by chance. Knowing your perspective will help you access relevant programs as you need them, minimizing frustrations and setbacks."
+    to="/unlock-your-potential/programs"
+    buttonText="Check Out Our Programs"
+  />
+  <FrameworkActionCard
+    image="make_positive_impact"
+    title="Help Others Effectively"
+    description="Don't push your solutions on others without knowing where they are. The framework helps you understand your growth journey to share relavant insights at the right time."
+    to="/make-positive-impact"
+    buttonText="I'm Ready To Help"
+  />
+</CardGrid>
 
 ## Additional Reading
 
@@ -81,7 +106,7 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 1. **Papers**
 
-   We publish cutting-edge research and insightful papers in reputable scientific journals.
+   **We publish cutting-edge research and insightful papers in reputable academic journals.**
 
    - Better Life Framework as a Predictive Model for Human Behavior (Q3 2024)
    - Integrating Better Life Framework in Organizational Development (2025)
@@ -89,7 +114,7 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 2. **Books**
 
-   We're authoring essential books in personal and professional development.
+   **We're authoring essential books in personal and professional development.**
 
    - Better Life Framework: A Comprehensive Guide to Self and Interpersonal Understanding (Q3 2024)
    - Empathy in Action: Applying Better Life Framework in Leadership (2025)
@@ -98,7 +123,7 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 3. **References**
 
-   Better Life Framework is based on foundational theories in psychology.
+   **Better Life Framework is based on foundational theories in psychology.**
 
    - Spiral Dynamics (Don Beck, Christopher Cowan, Clare Graves)
    - Developmental Levels (Loevinger & Cook-Greuter, Kohlberg & Kegan)
@@ -107,4 +132,4 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 ### Media
 
-Are you interested in featuring Better Life Framework in your publication or media outlet? We welcome opportunities to share our insights and the impact of our framework with a wider audience. Please [contact us](#) for more information and media inquiries.
+Are you interested in featuring the Better Life Framework    in your publication or media outlet? We welcome opportunities to share our insights and the impact of our framework with a wider audience. Please [contact us](mailto:media@co-x3.com) for more information and media inquiries.
