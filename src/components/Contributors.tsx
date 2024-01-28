@@ -81,6 +81,7 @@ const Contributors = () => {
                   textDecoration="none"
                   _hover={{ textDecoration: "none" }}
                   isExternal
+                  noOfLines={1}
                 >
                   {contributor.name}
                 </LinkOverlay>

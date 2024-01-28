@@ -145,10 +145,6 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           text: t("about-us-title"),
           to: "/live-your-best-life/about-us/",
         },
-        {
-          text: t("careers-title"),
-          to: "https://thex3family.notion.site/Co-x3-Job-Portal-604c3ce23aac4cf394094e0fc0c7692f?pvs=4",
-        },
       ],
     },
     {
