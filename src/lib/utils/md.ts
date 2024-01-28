@@ -7,6 +7,7 @@ import readingTime from "reading-time"
 import type { Frontmatter } from "@/lib/types"
 import type { MdPageContent } from "@/lib/interfaces"
 
+import { Jobs } from "@/components/JobBoard"
 import { Skill } from "@/components/TutorialMetadata"
 
 import { dateToString } from "@/lib/utils/date"
@@ -50,6 +51,14 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     //"/make-positive-impact/contribute/translations",
 
     "/make-positive-impact/collaborate",
+    "/make-positive-impact/collaborate/community-manager",
+    "/make-positive-impact/collaborate/finance-manager",
+    "/make-positive-impact/collaborate/grant-writer",
+    "/make-positive-impact/collaborate/growth-manager",
+    "/make-positive-impact/collaborate/intern",
+    "/make-positive-impact/collaborate/video-editor",
+    "/make-positive-impact/collaborate/virtual-assistant",
+
     "/make-positive-impact/co-create",
 
     // info
@@ -187,3 +196,46 @@ export const getTutorialsData = (locale: string): ITutorial[] => {
 
   return tutorialData
 }
+
+export const getJobsData = (locale: string): Jobs[] => {
+  const basePath = join(
+    CURRENT_CONTENT_DIR,
+    locale !== "en" ? `translations/${locale}` : "",
+    "make-positive-impact/collaborate"
+  );
+  
+  let jobsData: Jobs[] = []
+
+  if (fs.existsSync(basePath)) {
+    const items = fs.readdirSync(basePath);
+
+    jobsData = items
+      .filter((item) => {
+        const itemPath = join(basePath, item);
+        return fs.statSync(itemPath).isDirectory();
+      })
+      .map((dir) => {
+        const filePath = join(basePath, dir, "index.md");
+
+        if (fs.existsSync(filePath)) {
+          const fileContents = fs.readFileSync(filePath, "utf8");
+          const { data } = matter(fileContents);
+          const frontmatter = data as Frontmatter;
+
+          return {
+            to: join(`/${locale}/make-positive-impact/collaborate`, dir),
+            title: frontmatter.title,
+            emoji: frontmatter.emoji,
+            location: frontmatter.location,
+            isExternal: false,
+          } as Jobs; // Type assertion here
+        } else {
+          console.error(`index.md not found in directory: ${dir}`);
+          return null;
+        }
+      })
+      .filter((job): job is Jobs => job !== null); // Type guard here
+  }
+
+  return jobsData;
+};

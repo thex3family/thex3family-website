@@ -102,6 +102,7 @@ const TutorialPage = ({
   internalTutorials,
 }: InferGetServerSidePropsType<typeof getStaticProps>) => {
   const { locale, pathname } = useRouter()
+  console.log(locale);
   const theme = useTheme()
   const { flipForRtl } = useRtlFlip()
   const tableBoxShadow = useToken("colors", "tableBoxShadow")

@@ -20,19 +20,6 @@ In the Co-x3 Family, every contribution is a step towards personal mastery. By c
 
 ## What Can I Do?
 
-| Level        | Task                              | Description                                                 | Difficulty |
-|--------------|-----------------------------------|-------------------------------------------------------------|------------|
-| All Levels   | Career Opportunities              | Explore meaningful careers via our job board.               | ⭐          |
-|              | Co-x3 Guides                      | Coach, mentor, or consult within our community.             | ⭐          |
-| Level 3+     | App Developer                     | Develop and maintain features for our custom apps.          | ⭐⭐        |
-|              | Party Quest Manager               | Organize community events and challenges.                   | ⭐          |
-| Level 4+     | Community Managers                | Lead discussions and events in our community.               | ⭐          |
-|              | Content Manager                   | Curate educational and informative content.                 | ⭐⭐        |
-|              | Metaverse Managers                | Manage virtual spaces for community interaction.            | ⭐          |
-| Level 5+     | Program Managers                  | Oversee and improve community programs.                     | ⭐          |
-| Level 6+     | Retreat Managers                  | Organize retreats to foster deeper connections.             | ⭐⭐⭐      |
-| Level 7+     | Accountability Managers           | Manage accountability partnerships in the community.        | ⭐          |
-| Level 8+     | Research Managers                 | Direct research projects to enhance community knowledge.    | ⭐⭐⭐      |
-| Level 9+     | Host For LVL-UP Podcast           | Inspire members by hosting our podcast.                     | ⭐⭐⭐      |
+<JobBoard locale='en' />
 
 _Any questions?_ 🤔 Reach out in our [community](https://our.x3.family/)
