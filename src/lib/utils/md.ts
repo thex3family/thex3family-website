@@ -46,6 +46,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/make-positive-impact",
 
     "/make-positive-impact/contribute",
+    "/make-positive-impact/contribute/subscription",
     "/make-positive-impact/contribute/glossary",
     "/make-positive-impact/contribute/quizzes",
     //"/make-positive-impact/contribute/translations",
