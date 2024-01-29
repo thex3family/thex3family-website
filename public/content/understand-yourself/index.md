@@ -35,7 +35,7 @@ Additionally, seeking personal growth through available resources (books, articl
 
 ## What Is The Better Life Framework?
 
-We integrated foundational theories in psychological and personal development to facilitate a deeper understanding of oneself and others. It presents nine unique levels, each characterized by distinct experiences and motivations, offering a comprehensive framework for impactful actions that help you live a better life.
+We integrated foundational theories in psychological and personal development to facilitate a deeper understanding of oneself and others. It presents nine unique life perspectives, each characterized by distinct experiences and motivations, offering a comprehensive framework for impactful actions that help you live a better life.
 
 ### Core Concepts
 

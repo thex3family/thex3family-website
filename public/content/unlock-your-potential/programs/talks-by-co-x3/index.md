@@ -19,7 +19,7 @@ Many people are in search of guidance and tools to navigate their journey toward
 
 ## What Does it Do?
 
-We leverage the levels framework to provide participants with a clear understanding of their current stage of growth and the steps necessary to advance to higher levels. Through a series of expert-led talks, interactive seminars, and practical exercises, participants gain valuable insights and skills that enable them to lead more fulfilling lives.
+We leverage the Better Life Framework to provide participants with a clear understanding of their current self and the steps necessary to level up. Through a series of expert-led talks, interactive seminars, and practical exercises, participants gain valuable insights and skills that enable them to lead more fulfilling lives.
 
 By focusing on areas such as goal setting, self-awareness, and positive impact, the program not only fosters individual growth but also contributes to the creation of a more conscious and compassionate global community.
 
