@@ -6,11 +6,14 @@ import type { CommonHeroProps } from "@/lib/types"
 import { ButtonLink } from "@/components/Buttons"
 import { Image } from "@/components/Image"
 import Morpher from "@/components/Morpher"
+import SearchBar from "@/components/SearchBar"
+
 
 export type HomeHeroProps = Pick<CommonHeroProps, "heroImg">
 
 const HomeHero = ({ heroImg }: HomeHeroProps) => {
   const { t } = useTranslation("page-index")
+
   return (
     <Box>
       <Box h={440}>
@@ -38,9 +41,7 @@ const HomeHero = ({ heroImg }: HomeHeroProps) => {
               {t("page-index:page-index-title")}
             </Heading>
             <Text size="xl">{t("page-index:page-index-description")}</Text>
-            <ButtonLink href="/live-your-best-life/about-us">
-              {t("common:get-started")}
-            </ButtonLink>
+            <SearchBar variant="button"/>
           </VStack>
         </Stack>
       </VStack>
