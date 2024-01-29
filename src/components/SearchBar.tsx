@@ -1,6 +1,5 @@
 
 import Image from 'next/image'
-import { useTranslation } from "react-i18next"
 import { Box, useColorMode } from "@chakra-ui/react"
 import { MendableSearchBar } from "@mendable/search"
 
@@ -8,10 +7,9 @@ import icon from "@/public/assets/icon-1000.png"
 
 const mendableAnonKey = process.env.NEXT_PUBLIC_MENDABLE_ANON_KEY || ""
 
-const SearchBar = ({variant}) => {
+const SearchBar = ({t, variant}) => {
 
   const { colorMode } = useColorMode()
-  const { t } = useTranslation("common")
 
   const searchStyle = { darkMode: colorMode === 'dark', accentColor: "primary" }
 

@@ -12,7 +12,7 @@ import SearchBar from "@/components/SearchBar"
 export type HomeHeroProps = Pick<CommonHeroProps, "heroImg">
 
 const HomeHero = ({ heroImg }: HomeHeroProps) => {
-  const { t } = useTranslation("page-index")
+  const { t } = useTranslation("page-index, common")
 
   return (
     <Box>
@@ -41,7 +41,7 @@ const HomeHero = ({ heroImg }: HomeHeroProps) => {
               {t("page-index:page-index-title")}
             </Heading>
             <Text size="xl">{t("page-index:page-index-description")}</Text>
-            <SearchBar variant="button"/>
+            <SearchBar t={t} variant="button"/>
           </VStack>
         </Stack>
       </VStack>

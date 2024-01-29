@@ -77,7 +77,7 @@ const Nav: FC<IProps> = ({ path }) => {
               gap={{ base: 2, xl: 4 }}
             >
               {/* <Search {...searchModalDisclosure} /> */}
-              <SearchBar variant="search" />
+              <SearchBar t={t} variant="search" />
               {/* Mobile */}
               <MobileNavMenu
                 {...mobileNavProps}
