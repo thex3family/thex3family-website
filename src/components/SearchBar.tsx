@@ -21,6 +21,8 @@ const SearchBar = ({t, variant}) => {
 
   const placeholderText = variant === 'button' ? t("common:ask-a-question") : t("common:search-placeholder")
 
+  const shortcutKey = variant === 'button' ? "" : "k"
+
   return (
     <>
       <Box>
@@ -31,6 +33,7 @@ const SearchBar = ({t, variant}) => {
           searchBarStyle={searchBarStyle}
           dialogPlaceholder={t("common:search-dialog-placeholder")}
           welcomeMessage={t("common:search-welcome-message")}
+          cmdShortcutKey={shortcutKey}
           botIcon={<Image src={icon} alt={t("common:icon-image-title")} />}
         />
       </Box>
