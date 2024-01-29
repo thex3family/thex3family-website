@@ -4,6 +4,8 @@ import { useTranslation } from "next-i18next"
 import { MdBrightness2, MdLanguage, MdWbSunny } from "react-icons/md"
 import { Box, Flex, HStack, Icon, useDisclosure } from "@chakra-ui/react"
 
+import SearchBar from "@/components/SearchBar"
+
 import { ButtonLink, IconButton } from "../Buttons"
 import { HomeIcon } from "../icons"
 import { BaseLink } from "../Link"
@@ -48,8 +50,8 @@ const Nav: FC<IProps> = ({ path }) => {
         px={{ base: 4, xl: 8 }}
       >
         <Flex
-          alignItems={{ base: "center", lg: "normal" }}
-          justifyContent={{ base: "space-between", lg: "normal" }}
+          alignItems={{ base: "center", xl: "normal" }}
+          justifyContent={{ base: "space-between", xl: "normal" }}
           width="full"
           maxW="container.2xl"
         >
@@ -65,24 +67,25 @@ const Nav: FC<IProps> = ({ path }) => {
           {/* Desktop */}
           <Flex
             w="full"
-            justifyContent={{ base: "flex-end", lg: "space-between" }}
+            justifyContent={{ base: "flex-end", xl: "space-between" }}
             ms={{ base: 3, xl: 8 }}
           >
-            <Menu hideBelow="lg" path={path} sections={primaryNav} />
+            <Menu hideBelow="xl" path={path} sections={primaryNav} />
             <Flex
               alignItems="center"
               justifyContent="space-between"
               gap={{ base: 2, xl: 4 }}
             >
               {/* <Search {...searchModalDisclosure} /> */}
+              <SearchBar variant="search" />
               {/* Mobile */}
               <MobileNavMenu
                 {...mobileNavProps}
-                hideFrom="lg"
+                hideFrom="xl"
                 toggleSearch={searchModalDisclosure.onOpen}
                 drawerContainerRef={navWrapperRef}
               />
-              <HStack spacing={2} hideBelow="lg">
+              <HStack spacing={2} hideBelow="xl">
                 <IconButton
                   transition="transform 0.5s, color 0.2s"
                   icon={isDarkTheme ? <MdWbSunny /> : <MdBrightness2 />}
@@ -115,7 +118,8 @@ const Nav: FC<IProps> = ({ path }) => {
                     },
                   }}
                 >
-                  {t("languages-title")} {locale!.toUpperCase()}
+                  {t("languages-title")} 
+                  {/* {locale!.toUpperCase()} */}
                 </ButtonLink>
               </HStack>
             </Flex>
@@ -126,7 +130,7 @@ const Nav: FC<IProps> = ({ path }) => {
         <Flex
           as="nav"
           aria-label={t("nav-developers")}
-          display={{ base: "none", lg: "flex" }}
+          display={{ base: "none", md: "flex" }}
           bg="ednBackground"
           borderBottom="1px"
           borderColor="border"

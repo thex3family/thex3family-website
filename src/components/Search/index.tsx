@@ -91,6 +91,7 @@ const Search = forwardRef<Props, "button">(
         </Box>
         <Portal>
           {isOpen && (
+            
             <SearchModal
               apiKey={apiKey}
               appId={appId}
