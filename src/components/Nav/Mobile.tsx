@@ -220,7 +220,7 @@ const MobileNavMenu: React.FC<IProps> = ({
                           <SectionItem key={idx} onClick={handleClick}>
                             <StyledNavLink
                               to={item.to}
-                              isPartiallyActive={item.isPartiallyActive}
+                              isPartiallyActive={false}
                             >
                               {item.text}
                             </StyledNavLink>
