@@ -50,4 +50,4 @@ Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
 - An idea that you have for our growth based on what you know about us
 - How you could add value to our organization based on your skills and experience
 - How many hours can you commit each week
-- Your expected salary
+- Your expected compensation

@@ -51,4 +51,4 @@ Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
 - Your most successful campaign / post and the best practices behind your success
 - How you could add value to our organization based on your skills and experience
 - How many hours can you commit each week
-- Your expected salary
+- Your expected compensation

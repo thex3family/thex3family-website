@@ -1,5 +1,5 @@
 ---
-title: Intern
+title: Intern (Volunteer)
 emoji: 👩‍🎓
 location: Remote
 frameworkLevel: "LEVEL_3"
