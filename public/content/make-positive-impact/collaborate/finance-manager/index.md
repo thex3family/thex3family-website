@@ -51,4 +51,4 @@ In your email, please include the following information:
 - A picture / short video of your workspace
 - How you could add value to our organization based on your skills and experience
 - How many hours can you commit each week
-- Your expected salary
+- Your expected compensation

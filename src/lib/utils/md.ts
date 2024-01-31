@@ -34,13 +34,13 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       // programs
       "/unlock-your-potential/programs/level-up-podcast",
       "/unlock-your-potential/programs/talks-by-co-x3",
+      //"/unlock-your-potential/programs/control",
 
       // docs
       "/unlock-your-potential/docs",
       "/unlock-your-potential/docs/template",
       "/unlock-your-potential/docs/flow-state",
       "/unlock-your-potential/docs/pain",
-
 
     // make-positive-impact
     "/make-positive-impact",
@@ -59,6 +59,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/make-positive-impact/collaborate/intern",
     "/make-positive-impact/collaborate/video-editor",
     "/make-positive-impact/collaborate/virtual-assistant",
+    "/make-positive-impact/collaborate/house-manager",
 
     "/make-positive-impact/co-create",
 

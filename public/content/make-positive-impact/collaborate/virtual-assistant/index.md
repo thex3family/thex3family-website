@@ -51,4 +51,4 @@ Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
 - A picture / short video of your workspace
 - How you could add value to our organization based on your skills and experience
 - How many hours can you commit each day
-- Your expected salary
+- Your expected compensation

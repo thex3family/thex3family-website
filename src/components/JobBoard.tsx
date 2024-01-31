@@ -149,9 +149,7 @@ const JobBoard: React.FC<IProps> = ({ locale }) => {
             <Flex
               textAlign="end"
               alignContent="flex-start"
-              flex="1 1 0"
               me={4}
-              flexWrap="wrap"
             >
               <Text mb={0} opacity={"0.6"}>
                 {meetup.location}
