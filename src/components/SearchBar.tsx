@@ -14,7 +14,7 @@ const SearchBar = ({t, variant}) => {
   const searchStyle = { darkMode: colorMode === 'dark', accentColor: "primary" }
 
   const searchBarStyle = variant === 'button' ? {
-    backgroundColor:  colorMode === 'dark' ? '#E03D3E' : '#13AA78',
+    backgroundColor:  colorMode === 'dark' ? '#EDBE00' : '#13AA78',
     color: colorMode === 'dark' ? '#000000' : '#ffffff',
     showShortcut: false,
   } : {}
