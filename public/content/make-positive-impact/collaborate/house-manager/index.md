@@ -7,7 +7,7 @@ lang: en
 hideEditButton: true
 ---
 
-# Intern
+# House Manager
 
 ## About The Role
 
