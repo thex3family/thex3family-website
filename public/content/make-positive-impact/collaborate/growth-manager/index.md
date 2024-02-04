@@ -37,7 +37,7 @@ We are seeking an ambitious and innovative Growth Manager to lead our revenue an
 
 ## How To Apply
 
-Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
+Send the following to **[careers@x3.family](mailto:careers@x3.family)**
 
 **Subject:** Growth Manager Application - [Your Full Name]
 

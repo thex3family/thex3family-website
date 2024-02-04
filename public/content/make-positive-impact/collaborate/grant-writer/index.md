@@ -38,7 +38,7 @@ We are seeking a highly skilled and motivated Grant Writer to join our dynamic t
 
 ## How To Apply
 
-Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
+Send the following to **[careers@x3.family](mailto:careers@x3.family)**
 
 **Subject:** Grant Writer Application - [Your Full Name]
 

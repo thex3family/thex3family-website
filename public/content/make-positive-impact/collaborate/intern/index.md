@@ -34,7 +34,7 @@ We are excited to offer a General Internship position for enthusiastic individua
 
 ## How To Apply
 
-Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
+Send the following to **[careers@x3.family](mailto:careers@x3.family)**
 
 **Subject:** General Internship Application - [Your Full Name]
 
