@@ -40,6 +40,6 @@ To realize our full potential in this perspective, it's crucial to embrace mindf
 
 ## Is It Time To Level Up?
 
-In this perspective, its easy to accidently be too inclusive and forego our own boundaries, leaving us feeling raw and used. If you're feeling this way, the ['Boundaries' perspective](/unlock-your-potential/programs/guide-4) might be your next step.
+In this perspective, its easy to accidently be too inclusive and forego our own boundaries, leaving us feeling raw and used. If you're feeling this way, the ['Boundaries' perspective](/unlock-your-potential/programs/guide-7) might be your next step.
 
 However, if you are not financially secure, setting boundaries can be difficult. It may be better to temporarily think in a ['Systems' perspective](/unlock-your-potential/programs/guide-5) to ensure you can sustain yourself so you don't have to bend to others' will to secure your wants and can walk away when necessary.
