@@ -1,6 +1,6 @@
 ---
 title: "Perspective 2: Connect"
-description: A comprehensive guide to understand this perspective.
+description: I need to please others so they give me what I need to survive.
 author: Conrad Lin
 tags: ["guide"]
 programType: knowledge

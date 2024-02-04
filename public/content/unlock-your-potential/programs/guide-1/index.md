@@ -1,6 +1,6 @@
 ---
 title: "Perspective 1: Survive"
-description: A comprehensive guide to understand this perspective.
+description: I'm desperately trying to do what I need to survive in this world.
 author: Conrad Lin
 tags: ["guide"]
 programType: knowledge

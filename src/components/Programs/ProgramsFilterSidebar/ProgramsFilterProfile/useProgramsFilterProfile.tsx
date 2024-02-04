@@ -54,25 +54,25 @@ export const useFrameworkFilterProfile = (setSelectedTags) => {
         tags: ["gamification"]
       },
     },
-    {
-      title: t("page-programs:page-programs-profile-2-title"),
-      description: t("page-programs:page-programs-profile-2-description"),
-      featureHighlight: [
-        // filterLabels.one,
-      ],
-      presetFilters: {
-        LEVEL_1: false,
-        LEVEL_2: false,
-        LEVEL_3: false,
-        LEVEL_4: false,
-        LEVEL_5: false,
-        LEVEL_6: false,
-        LEVEL_7: false,
-        LEVEL_8: false,
-        LEVEL_9: false,
-        tags: ["relationships"]
-      },
-    },
+    // {
+    //   title: t("page-programs:page-programs-profile-2-title"),
+    //   description: t("page-programs:page-programs-profile-2-description"),
+    //   featureHighlight: [
+    //     // filterLabels.one,
+    //   ],
+    //   presetFilters: {
+    //     LEVEL_1: false,
+    //     LEVEL_2: false,
+    //     LEVEL_3: false,
+    //     LEVEL_4: false,
+    //     LEVEL_5: false,
+    //     LEVEL_6: false,
+    //     LEVEL_7: false,
+    //     LEVEL_8: false,
+    //     LEVEL_9: false,
+    //     tags: ["relationships"]
+    //   },
+    // },
     // {
     //   title: t("page-programs:page-programs-profile-3-title"),
     //   description: t("page-programs:page-programs-profile-3-description"),

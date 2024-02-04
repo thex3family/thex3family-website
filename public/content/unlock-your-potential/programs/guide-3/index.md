@@ -1,6 +1,6 @@
 ---
 title: "Perspective 3: Control"
-description: A comprehensive guide to understand this perspective.
+description: No one else is going to take care of me better than me, so I need to make sure I get what I want.
 author: Conrad Lin
 tags: ["guide"]
 programType: knowledge
