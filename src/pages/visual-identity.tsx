@@ -30,6 +30,7 @@ import icon from "@/public/assets/icon-1000.png"
 import logoBlack from "@/public/assets/main-logo(black).png"
 import logoWhite from "@/public/assets/main-logo(white).png"
 import hero from "@/public/home/hero.png"
+import heroWinter from "@/public/home/hero(winter).png"
 
 const Row = (props: SimpleGridProps) => (
   <SimpleGrid
@@ -123,6 +124,15 @@ const AssetsPage = () => {
             image={hero}
             artistName="Fung"
             artistUrl="https://www.kyoarashi.com/"
+          />
+        </Row>
+        <Row>
+          <AssetDownload
+            title={t("common:hero-winter-image-title")}
+            alt={t("common:hero-winter-image-alt")}
+            image={heroWinter}
+            artistName="Conrad Lin"
+            artistUrl="https://www.conradlin.com/"
           />
         </Row>
         

@@ -20,8 +20,11 @@
   "no-jobs-available": "Oops! Nothing here. If you feel like there is a role that would fit you, write in to let us know!",
   "apply": "Apply Now.",
 
-  "hero-image-title": "the.x3.family hero",
+  "hero-image-title": "Co-x3 Family Hero",
   "hero-image-alt": "Illustration of a group of people on a green meadow with pine trees, with mountains in the distance and a branch of pink blossoms overhead.",
+  
+  "hero-winter-image-title": "Co-x3 Family Winter Hero",
+  "hero-winter-image-alt": "Illustration of a group of people on a snowy meadow with pine trees, with mountains in the distance and snow falling overhead.",
 
   "vision-title": "Our Vision",
   "vision-description": "To build a global self-actualized community of co-creators and collaborators tackling global challenges and unleashing breakthroughs together.",
