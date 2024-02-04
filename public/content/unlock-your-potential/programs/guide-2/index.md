@@ -22,7 +22,7 @@ This perspective is underpinned by the belief that life is about pleasing others
 
 ## How This Perspective Develops
 
-This perspective develops as we become more aware of the world around us and start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interconnected web of relationships, where our actions can affect others and their reactions, in turn, can affect us. It's a shift from focusing solely on our own self for survival to understanding how we can thrive with a larger community or ecosystem.
+This perspective develops as we become more aware of the world around us and start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interconnected web of relationships, where our actions can affect others and their reactions can affect us. It's a shift from focusing solely on our own self for survival to understanding how we can thrive with a larger community or ecosystem.
 
 ## Historical Context
 
@@ -46,4 +46,6 @@ In such situations, knowing the tricks of communication is key to be able to spe
 
 ## Is It Time To Level Up?
 
-If you're able to get what you need and have satisfied all your basic needs from yourself and others, you're ready to go to the ['Control' perspective](/unlock-your-potential/programs/guide-3). What you'll find is that most people are not here to satisfy your wants, and if you want to get what you want in life, you're going to need to get it yourself.
+If you have satisfied all your basic needs from yourself and others and are now pursuing your wants in life, you're ready to go to the ['Control' perspective](/unlock-your-potential/programs/guide-3). 
+
+What you'll find is that while your tribe might be willing to support your survival needs for their own survival, most people are not here to satisfy your wants and thus you're going to need to pursue it yourself.
