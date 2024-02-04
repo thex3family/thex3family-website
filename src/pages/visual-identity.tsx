@@ -188,6 +188,24 @@ const AssetsPage = () => {
             artistUrl="https://www.linkedin.com/in/yeechia"
           />
         </Row>
+        <iframe
+            style={{ width: '100%', height: '575px', border: '1px solid rgba(0, 0, 0, 0.1)', marginTop: '3rem', marginBottom: '3rem' }}
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnEsBz4tMcyujeP48kWBafy%2FCo-x3-Brand-Design%3Ftype%3Ddesign%26node-id%3D226%253A44%26mode%3Ddesign%26t%3DqQ1Ah3geVaVwq6w8-1"
+            allowFullScreen
+        ></iframe>
+        <H2 id="style">{t("page-visual-identity:page-visual-identity-style-title")}</H2>
+        <H3>{t("page-visual-identity:page-visual-identity-colors-title")}</H3>
+        <iframe
+            style={{ width: '100%', height: '500px', border: '1px solid rgba(0, 0, 0, 0.1)', marginTop: '3rem', marginBottom: '3rem' }}
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnEsBz4tMcyujeP48kWBafy%2FCo-x3-Brand-Design%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DqQ1Ah3geVaVwq6w8-1"
+            allowFullScreen
+        ></iframe>
+        <H3>{t("page-visual-identity:page-visual-identity-fonts-title")}</H3>
+        <iframe
+            style={{ width: '100%', height: '650px', border: '1px solid rgba(0, 0, 0, 0.1)', marginTop: '3rem', marginBottom: '3rem' }}
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnEsBz4tMcyujeP48kWBafy%2FCo-x3-Brand-Design%3Ftype%3Ddesign%26node-id%3D226%253A116%26mode%3Ddesign%26t%3DqQ1Ah3geVaVwq6w8-1"
+            allowFullScreen
+        ></iframe>
       </Box>
       <FeedbackCard />
     </Flex>
