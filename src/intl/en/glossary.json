@@ -1,6 +1,18 @@
 {
   "comrades-term": "Comrades",
   "comrades-definition": "Those who always have the will to help another in times of need.",
+  "501c3-non-profit-term": "501(c)(3) Non Profit",
+  "501c3-non-profit-definition": "An American tax-exempt, charitable organization. Has no shareholders, and must their profits into the business and the community. Financial contributions to such organizations are usually tax-deductible.",
+  "co-creation-term": "Co-Creation",
+  "co-creation-definition": "The act of creating new programs together with other individuals and teams.",
+  "collaboration-term": "Collaboration",
+  "collaboration-definition": "The act of dedicating reoccuring time towards achieving a certain goal.",
+  "contribution-term": "Contribution",
+  "contribution-definition": "The act of giving towards an organization or cause, usually once-off or occasionally.",
+  "community-term": "Community",
+  "community-definition": "A group of people who have shared attitudes, interests, and goals.",
+  "gamification-term": "Gamification",
+  "gamification-definition": "Gamification is the application of game-design elements and game principles in non-game contexts. It aims to engage users and solve problems by using game-like elements such as point scoring, competition, and rules of play.",
   "programs-term": "Programs",
-  "programs-definition": "How we support our comrades. These can be products, events, applications, templates, etc."
+  "programs-definition": "How we support our comrades on their growth journey."
 }
