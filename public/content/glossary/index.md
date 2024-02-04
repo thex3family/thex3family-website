@@ -8,7 +8,7 @@ lang: en
 
 ## \# {#section-numbers}
 
-Nothing Here Yet.
+<GlossaryDefinition term="501c3-non-profit" />
 
 <Divider />
 
@@ -26,7 +26,11 @@ Nothing Here Yet.
 
 ## C {#section-c}
 
+<GlossaryDefinition term="co-creation" />
+<GlossaryDefinition term="collaboration" />
+<GlossaryDefinition term="community" />
 <GlossaryDefinition term="comrades" />
+<GlossaryDefinition term="contribution" />
 
 <Divider />
 
@@ -50,7 +54,7 @@ Nothing Here Yet.
 
 ## G {#section-g}
 
-Nothing Here Yet.
+<GlossaryDefinition term="gamification" />
 
 <Divider />
 

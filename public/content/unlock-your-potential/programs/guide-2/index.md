@@ -30,6 +30,8 @@ The foundations of the 'Connect' perspective can be traced back to the tribal or
 
 The goal was to ensure safety and security, maintaining functional habits and dependable practices that benefitted the group. This was achieved by preserving tribal traditions and engaging in rituals to petition the gods for favors.
 
+A vivid example is found in the rituals of the Incas, who historically offered valuable sacrifices to their gods in hopes of ensuring safety and stability for their community. Similar practices were observed in other ancient civilizations, where offerings, sometimes even including valuables, were made to appease gods or natural forces, such as volcanoes.
+
 ## Strengths and Challenges
 
 A major strength of this perspective lies in our ability to navigate others' emotions to meet our needs. We're particularly effective when these emotions are familiar to us, allowing us to empathize and connect deeply.
