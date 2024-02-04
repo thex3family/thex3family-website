@@ -1,6 +1,6 @@
 ---
 title: House Manager
-emoji: 👩‍🎓
+emoji: 🏡
 location: Osaka, Japan
 frameworkLevel: "LEVEL_5"
 lang: en
@@ -40,7 +40,7 @@ We are seeking a dedicated House Manager to maintain [The Creator's Retreat in O
 
 ## How To Apply
 
-Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
+Send the following to **[careers@x3.family](mailto:careers@x3.family)**
 
 **Subject:** House Manager Application - [Your Full Name]
 

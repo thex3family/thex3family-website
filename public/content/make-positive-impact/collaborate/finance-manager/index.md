@@ -38,7 +38,7 @@ We are seeking a dedicated and analytical Finance Manager to oversee our financi
 
 ## How To Apply
 
-Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
+Send the following to **[careers@x3.family](mailto:careers@x3.family)**
 
 **Subject:** Finance Manager Application - [Your Full Name]
 

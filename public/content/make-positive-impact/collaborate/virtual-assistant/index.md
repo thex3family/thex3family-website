@@ -38,7 +38,7 @@ We're looking for a highly organized and proactive Virtual Assistant who thrives
 
 ## How To Apply
 
-Send the following to **[careers@co-x3.com](mailto:careers@co-x3.com)**
+Send the following to **[careers@x3.family](mailto:careers@x3.family)**
 
 **Subject:** Virtual Assistant Application - [Your Full Name]
 
