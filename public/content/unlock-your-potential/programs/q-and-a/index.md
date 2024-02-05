@@ -23,7 +23,9 @@ Q&A Sessions serve as a bridge between our team and the community. These session
 
 ## How Does It Work?
 
-We broadcast this livestream on YouTube @ The Co-x3 Family Foundation.
+We broadcast this livestream on YouTube:
+
+- @ The Co-x3 Family Foundation.
 
 **Submitting Questions:** You can submit your questions in advance about anything on the website via the survey link located at the bottom right of each page on our website. This ensures your inquiries are directly related to the topics that interest you most. You can also submit your questions during the live event.
 

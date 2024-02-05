@@ -15,9 +15,9 @@ lang: en
 
 Have you ever listened to someone's story and found yourself puzzled, thinking, "How did they make it work?" or "Why did they choose that path?" Success stories often sound inspiring, but they can also feel distant and unattainable. 
 
-Often times, people give advice without empathy of the perspecive that their audience is in, and thus, their message falls on flat ears. It may be motivating to hear, but feel very hard to execute. 
+Often times, people give advice without empathy of the perspective that their audience is in, and thus, their message falls on flat ears. It may be motivating to hear, but feel very hard to execute. 
 
-Now I Understand was created to help you understand the world. By applying the Better Life Framework, we break down these narratives into relatable, actionable insights tailored to your perspective.
+What we really need is someone beside us as we're listening, breaking down these narratives for us into relatable, actionable insights tailored to our perspective.
 
 ## What Does it Do?
 
@@ -27,6 +27,8 @@ We're here to unravel the world's complexities, equipping you with the understan
 
 ## How Does It Work?
 
-We distribute these short form videos through our various social media channels @ The Co-x3 Family Foundation.
+We distribute these short form videos through our various social media channels:
+
+- @ The Co-x3 Family Foundation
 
 Explore our comprehensive collection of videos all in one place here: [Now I Understand](/unlock-your-potential/programs?tags=now%20i%20understand).
