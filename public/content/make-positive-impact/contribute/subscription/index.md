@@ -17,3 +17,5 @@ We share unique and interesting content freely, but with your support we can rel
 As a way to say thank you for supporting us, our patrons get immense value out of their subscription. Unlock access to exclusive new templates, recognition on our wall of love, training to help you level up, behind-the-scenes content, voting power for new content, and much more.
 
 [Join 500+ Patrons](https://toolbox.co-x3.com/support-us)
+
+![Image](./support-us-1.png)

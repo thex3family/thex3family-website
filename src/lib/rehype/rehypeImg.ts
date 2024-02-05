@@ -75,8 +75,8 @@ const getImageSize = (src: string, dir: string) => {
  */
 const setImagePlaceholders = async (images: ImageNode[], srcPath: string): Promise<void> => {
   // Generate kebab-case filename from srcPath, ie: /content/nft => content-nft-data.json
-  const FILENAME = path.join(srcPath, "data.json").replaceAll("/", "-").slice(1)
-
+  //const FILENAME = path.join(srcPath, "data.json").replaceAll("/", "-").slice(1)
+  const FILENAME = "all.json"
   // Make directory for current page if none exists
   if (!fs.existsSync(PLACEHOLDER_IMAGE_DIR)) fs.mkdirSync(PLACEHOLDER_IMAGE_DIR, { recursive: true })
 

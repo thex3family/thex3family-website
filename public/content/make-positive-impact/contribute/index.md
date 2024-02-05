@@ -36,7 +36,7 @@ _We are in the process of developing a user-friendly platform to effortlessly ma
 |              | Better Life Framework Research             | Enhance our Better Life Framework research.                   | ⭐⭐             |
 |              | [Quiz Creation / Improvement](/make-positive-impact/contribute/quizzes)                      | Create quizzes for the Co-x3 Foundation.              | ⭐⭐             |
 | 6+     | Suggest Community Experiences      | Lead community initiatives.                           | ⭐⭐⭐           |
-| 7+     | Scholarship Sponsorship            | Sponsor member access to resources.                   | ⭐                |
+| 7+     | [Donate A Scholarship](/make-positive-impact/contribute/donate)            | Support a member to benefit from our programs.                   | ⭐                |
 | 8+     | Submit Research                    | Contribute to community research papers.              | ⭐⭐⭐           |
 | 9+     | Ambassador Program                 | Be our ambassador at events and social gatherings.    | ⭐⭐⭐           |
 
