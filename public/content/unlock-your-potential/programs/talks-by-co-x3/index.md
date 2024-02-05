@@ -2,7 +2,7 @@
 title: "Talks By Co-x3"
 description: Bespoke speaking engagements for schools, companies, to empower individuals at various stages of personal development. 
 author: Conrad Lin
-tags: ["speaking engagement"]
+tags: ["talks"]
 programType: knowledge
 location: Physical or Virtual
 frameworkLevel: ALL
