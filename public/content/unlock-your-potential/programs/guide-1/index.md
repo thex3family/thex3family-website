@@ -2,7 +2,7 @@
 title: "Perspective 1: Survive"
 description: I'm desperately trying to do what I need to survive in this world.
 author: Conrad Lin
-tags: ["guide"]
+tags: ["understand yourself", "guide"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_1

@@ -2,7 +2,7 @@
 title: "Perspective 9: Empathy"
 description: I understand everyone is on their own journey, and all we can do is love them where they are at.
 author: Conrad Lin
-tags: ["guide"]
+tags: ["understand yourself", "guide"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_9

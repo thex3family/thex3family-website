@@ -2,7 +2,7 @@
 title: "Perspective 4: Belong"
 description: I found what what works for me and my tribe, and everyone should do it too.
 author: Conrad Lin
-tags: ["guide"]
+tags: ["understand yourself", "guide"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_4

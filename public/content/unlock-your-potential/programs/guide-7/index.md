@@ -2,7 +2,7 @@
 title: "Perspective 7: Boundaries"
 description: I accept that people should be free to be themselves, but I need to protect myself from having my boundaries crossed.
 author: Conrad Lin
-tags: ["guide"]
+tags: ["understand yourself", "guide"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_7
