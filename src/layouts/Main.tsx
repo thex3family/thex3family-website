@@ -23,6 +23,7 @@ import type { List as ButtonDropdownList } from "@/components/ButtonDropdown"
 import { ButtonLink } from "@/components/Buttons"
 import FeedbackCard from "@/components/FeedbackCard"
 import { Image } from "@/components/Image"
+import InfoBanner from "@/components/InfoBanner"
 import JobBoard from "@/components/JobBoard"
 import LeftNavBar from "@/components/LeftNavBar"
 import { BaseLink } from "@/components/Link"
@@ -39,7 +40,6 @@ import { getSummaryPoints } from "@/lib/utils/getSummaryPoints"
 import { getLocaleTimestamp } from "@/lib/utils/time"
 
 import { MAIN_CONTENT_ID } from "@/lib/constants"
-import InfoBanner from "@/components/InfoBanner"
 
 const CardGrid = (props: ChildOnlyProp) => (
   <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8} {...props} />
