@@ -2,7 +2,7 @@
 title: "Perspective 6: Let Go"
 description: I am aware that systems don't work on everyone. It might be better if there was no structure.
 author: Conrad Lin
-tags: ["guide"]
+tags: ["understand yourself", "guide"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_6
