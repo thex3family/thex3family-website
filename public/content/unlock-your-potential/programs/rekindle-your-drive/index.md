@@ -2,7 +2,7 @@
 title: "Rekindle Your Drive By Setting Boundaries"
 description: How do we get the motivation to pursue our best selves when we already have and done everything we want?
 author: Conrad Lin
-tags: ["motivation", "discipline", "self-improvement"]
+tags: ["understand yourself", "motivation", "discipline", "self-improvement"]
 programType: knowledge
 location: overview
 frameworkLevel: LEVEL_7

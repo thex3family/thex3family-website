@@ -1,40 +1,30 @@
 ---
 title: "Level Up Podcast"
-description: We help one of our community members understand where they are in their life journey, and make actionable plans for the future.
+description: Conversations to help us level up that we wish we had a decade ago.
 author: Conrad Lin
-tags: ["growth"]
+tags: ["level up podcast", "1-on-1"]
 programType: knowledge
-location: podcast
+location: all podcast platforms
 frameworkLevel: ALL
-published: 2024-01-26
+published: 2024-02-05
 lang: en
 ---
 
 
 ## Why Did We Build This?
 
-In the complex game that is life, many people find themselves stuck on a level they can't seem to beat, overwhelmed by challenges and choices. They lack a systematic approach to navigate through life’s quests, leaving them unable to level up and pursue their best self. With a world full of advice yet lacking actionable plans, there's a glaring need for a tailored, interactive solution that can guide people to optimize the key "stats" of their lives.
+In the complex game that is life, many people find themselves stuck on a level they can't seem to beat, overwhelmed by challenges and choices. They lack a systematic approach to navigate through life’s quests, leaving them unable to level up and pursue their best self. With a world full of advice yet lacking actionable plans, there's a glaring need for a personalized approach to living a better life.
 
 ## What Does it Do?
 
-**Level Up** is a podcast that serves as your personal stat sheet, diving into key life areas like mindset, knowledge, finance, health, relationships, and career. It offers a targeted "systems audit," providing strategies to boost your "stats" and level up in life. 
+The Level Up Podcast is a platform where we invite community members eager to elevate their lives. We delve into their challenges, engaging in empathetic and insightful conversations about their current life stage. Our goal is to facilitate breakthroughs, transforming feelings of helplessness into empowerment and clarity.
 
-You don’t just get theory; you get an actionable game plan to help you live a better life. At the end of each episode, guests will get real-life "quests" and challenges that encourage them to implement positive changes which they will come back onto the show in a period of time and discuss their progress.
-
-Audience members can connect and see themselves with a diverse set of guests that come on this show, with their own unique dragons to slay; and walk away with motivation and tactics to level up.
-
-| Section | Description |
-| --- | --- |
-| Intro | Brief overview of the podcast and what listeners can expect in this episode (by the guest). |
-| Guest Introduction | Introduce the guest and provide context for their "life stats" and the "dungeon" they are preparing for. |
-| The "Save State" | A quick snapshot of where the guest is currently at in their life, their challenges, and their aspirations. |
-| The Stat Audit | Deep dive into the guest's key life "areas" like health, finance, relationships, etc. |
-| Raid Preparation | Discuss actionable steps and systems the guest can implement to improve their "stats" for upcoming challenges. |
-| Gear Up | Recommend resources like books, tools, or habits that can help the guest and listeners level up. |
-| System Building | Build a system that helps them take action on those resources. |
-| Real-Life Quests | Assign challenges or "quests" for the guest (and audience) to undertake before the next episode. |
-| Recap & Outro | Sum up the key takeaways from the episode and give a score. Remind listeners where they can follow you or participate in the community. |
+By turning our consulting sessions into a podcast, we're able to share these transformative dialogues with a wider audience. Listeners can find resonance and inspiration in the diverse stories and experiences of our guests, gaining the personalized insights they need to level up.
 
 ## How Does It Work?
 
-Coming Soon...
+We distribute these podcasts through all major podcast platforms @ The Level Up Podcast as well as on our various social media channels @ The Co-x3 Family Foundation
+
+Explore our comprehensive collection of podcasts all in one place here: [Level Up Podcast](/unlock-your-potential/programs?tags=level%20up%20podcast).
+
+**Be A Guest:** If you want to be on our next episode, reach out to us in the community to let us know.
