@@ -38,6 +38,6 @@ We can live better lives when we can build systems to manage every aspect of our
 
 ## Is It Time To Level Up?
 
-If you're finding success with your systems, that's great. But if you encounter situations where your systems fall short, it might signal a readiness for the ['Let Go' perspective]("/unlock-your-potential/programs/guide-6"), where you will learn how to not be so reliant on your systems.
+If you're finding success with your systems, that's great. But if you encounter situations where your systems fall short, it might signal a readiness for the ['Let Go' perspective](/unlock-your-potential/programs/guide-6), where you will learn how to not be so reliant on your systems.
 
-You might also not be having great success in building your own systems. In this case, moving to the ['Belong' perspective]("/unlock-your-potential/programs/guide-4") may help you learn how others are implementing systems in their communities, and you can build your foundation from them.
+You might also not be having great success in building your own systems. In this case, moving to the ['Belong' perspective](/unlock-your-potential/programs/guide-4) may help you learn how others are implementing systems in their communities, and you can build your foundation from them.
