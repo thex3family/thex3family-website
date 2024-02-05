@@ -87,6 +87,14 @@ export const BaseLink = forwardRef(function Link(
   }
 
   if (isInternalPdf || isExternal) {
+    if (isExternal) {
+      // Parse the URL to handle hash fragments and existing query parameters
+      let urlObject = new URL(href, 'https://example.com'); // Provide a base since 'href' might be relative
+      urlObject.searchParams.append('ref', 'the.x3.family'); // Automatically handles encoding
+    
+      // Reconstruct the href with the new query parameter
+      href = urlObject.href;
+    }
     return (
       <ChakraLink
         isExternal
@@ -103,6 +111,7 @@ export const BaseLink = forwardRef(function Link(
           )
         }
         {...commonProps}
+        href={href}
       >
         {children}
         <VisuallyHidden>(opens in a new tab)</VisuallyHidden>
