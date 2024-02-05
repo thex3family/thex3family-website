@@ -47,6 +47,8 @@ All donations are tax-deductible, ensuring that your generosity is also benefici
 
 [Donate Now](https://donate.stripe.com/7sI5njeq364L5Ww9AA)
 
+*If you'd like to make a donation over $10,000 USD, please [contact our team](mailto:partnerships@x3.family) for bank wire instructions.*
+
 ---
 
 <InfoBanner shouldCenter emoji=":pray:">
