@@ -546,13 +546,13 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                       />
                       {tutorial.location}
                     </Flex>
-                    <Flex align="center" mb={0}>
+                    {/* <Flex align="center" mb={0}>
                       <Emoji text=":star:" fontSize="sm" me={1} />
                       <Emoji text=":star:" fontSize="sm" me={1} />
                       <Emoji text=":star:" fontSize="sm" me={1} />
                       <Emoji text=":star:" fontSize="sm" me={1} />
                       <Emoji text=":star:" fontSize="sm" me={1} />
-                    </Flex>
+                    </Flex> */}
                   </Flex>
                   <Flex flexWrap="wrap" w="full">
                     <TutorialTags tags={tutorial.tags?.slice(0, 2) ?? []} />
