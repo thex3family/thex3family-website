@@ -1,5 +1,5 @@
 ---
-title: Help Yourself By Helping Others
+title: Change The World With Us
 description: Uplift yourself and your commuity by contributing your insights, collaborating on our existing programs, and co-creating new programs together with us.
 lang: en
 template: main

@@ -39,6 +39,7 @@ import { getSummaryPoints } from "@/lib/utils/getSummaryPoints"
 import { getLocaleTimestamp } from "@/lib/utils/time"
 
 import { MAIN_CONTENT_ID } from "@/lib/constants"
+import InfoBanner from "@/components/InfoBanner"
 
 const CardGrid = (props: ChildOnlyProp) => (
   <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8} {...props} />
@@ -135,6 +136,7 @@ export const mainComponents = {
   JobBoard,
   BasicActionCard,
   FrameworkActionCard,
+  InfoBanner
 }
 
 interface IProps
