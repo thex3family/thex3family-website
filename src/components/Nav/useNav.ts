@@ -44,6 +44,16 @@ export const useNav = ({ path }: { path: string }) => {
       ariaLabel: t("programs-menu"),
       items: [
         {
+          text: t("for-title"),
+          items: [
+            {
+              text: t("for-secondary-title"),
+              to: "/for/",
+              isPartiallyActive: false,
+            },
+          ]
+        },
+        {
           text: t("unlock-your-potential-title"),
           items: [
             {
@@ -68,7 +78,7 @@ export const useNav = ({ path }: { path: string }) => {
               to: "/unlock-your-potential/docs/",
             },
           ]
-        }
+        },
       ],
     },
     about: {

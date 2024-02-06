@@ -47,13 +47,13 @@ const Nav: FC<IProps> = ({ path }) => {
         height="4.75rem"
         justifyContent="center"
         py={4}
-        px={{ base: 4, xl: 8 }}
+        px={{ base: 4, lg: 8 }}
       >
         <Flex
-          alignItems={{ base: "center", xl: "normal" }}
-          justifyContent={{ base: "space-between", xl: "normal" }}
+          alignItems={{ base: "center", lg: "normal" }}
+          justifyContent={{ base: "space-between", lg: "normal" }}
           width="full"
-          maxW="container.2xl"
+          maxW="container.2lg"
         >
           <BaseLink
             to="/"
@@ -67,25 +67,25 @@ const Nav: FC<IProps> = ({ path }) => {
           {/* Desktop */}
           <Flex
             w="full"
-            justifyContent={{ base: "flex-end", xl: "space-between" }}
-            ms={{ base: 3, xl: 8 }}
+            justifyContent={{ base: "flex-end", lg: "space-between" }}
+            ms={{ base: 3, lg: 8 }}
           >
-            <Menu hideBelow="xl" path={path} sections={primaryNav} />
+            <Menu hideBelow="lg" path={path} sections={primaryNav} />
             <Flex
               alignItems="center"
               justifyContent="space-between"
-              gap={{ base: 2, xl: 4 }}
+              gap={{ base: 2, lg: 4 }}
             >
               {/* <Search {...searchModalDisclosure} /> */}
               <SearchBar t={t} variant="search" />
               {/* Mobile */}
               <MobileNavMenu
                 {...mobileNavProps}
-                hideFrom="xl"
+                hideFrom="lg"
                 toggleSearch={searchModalDisclosure.onOpen}
                 drawerContainerRef={navWrapperRef}
               />
-              <HStack spacing={2} hideBelow="xl">
+              <HStack spacing={2} hideBelow="lg">
                 <IconButton
                   transition="transform 0.5s, color 0.2s"
                   icon={isDarkTheme ? <MdWbSunny /> : <MdBrightness2 />}
