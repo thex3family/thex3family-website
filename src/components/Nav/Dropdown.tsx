@@ -170,12 +170,16 @@ const Title: React.FC<ITitleProps> = (props) => {
       color="text"
       display="block"
       fontFamily="heading"
-      fontSize="1.3rem"
+      fontSize="1.05rem"
       lineHeight={1.4}
-      mb={2}
+      pb={2}
+      mb={1}
       px={4}
+      borderBottom="1px solid" // Add a bottom border
+      borderColor="gray.200" // Use the appropriate color from your theme
       {...props}
     />
+    
   )
 }
 

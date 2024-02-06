@@ -39,53 +39,70 @@ export const useNav = ({ path }: { path: string }) => {
         }
       ],
     },
-    unlock_your_potential: {
-      text: t("unlock-your-potential-title"),
-      ariaLabel: t("unlock-your-potential-menu"),
+    programs: {
+      text: t("programs-title"),
+      ariaLabel: t("programs-menu"),
       items: [
         {
-          text: t("unlock-your-potential-secondary-title"),
-          to: "/unlock-your-potential/",
-        },
-        {
-          text: t("programs-title"),
-          to: "/unlock-your-potential/programs/",
-        },
-        {
-          text: t("docs-title"),
-          to: "/unlock-your-potential/docs/",
-        },
-      ],
-    },
-    make_positive_impact: {
-      text: t("make-positive-impact-title"),
-      ariaLabel: t("make-positive-impact-menu"),
-      items: [
-        {
-          text: t("make-positive-impact-secondary-title"),
-          to: "/make-positive-impact/",
-        },
-        {
-          text: t("contribute-title"),
-          to: "/make-positive-impact/contribute/",
-        },
-        {
-          text: t("collaborate-title"),
-          to: "/make-positive-impact/collaborate/",
-        },
-        {
-          text: t("co-create-title"),
-          to: "/make-positive-impact/co-create/",
+          text: t("unlock-your-potential-title"),
+          items: [
+            {
+              text: t("unlock-your-potential-secondary-title"),
+              to: "/unlock-your-potential/",
+            },
+            {
+              text: t("knowledge-title"),
+              to: "/unlock-your-potential/programs?filters=knowledge",
+            },
+            {
+              text: t("tools-title"),
+              to: "/unlock-your-potential/programs?filters=tools",
+            },
+            {
+              text: t("community-title"),
+              to: "/unlock-your-potential/programs?filters=community",
+            },
+            {
+              text: t("docs-title"),
+              to: "/unlock-your-potential/docs/",
+            },
+          ]
         }
       ],
     },
-    live_your_best_life: {
-      text: t("live-your-best-life-title"),
-      ariaLabel: t("live-your-best-life-menu"),
+    about: {
+      text: t("about-us-title"),
+      ariaLabel: t("about-us-menu"),
       items: [
         {
-          text: t("about-us-title"),
-          to: "/live-your-best-life/about-us/",
+          text: t("make-positive-impact-title"),
+          items: [
+            {
+              text: t("make-positive-impact-secondary-title"),
+              to: "/make-positive-impact/",
+            },
+            {
+              text: t("contribute-title"),
+              to: "/make-positive-impact/contribute/",
+            },
+            {
+              text: t("collaborate-title"),
+              to: "/make-positive-impact/collaborate/",
+            },
+            {
+              text: t("co-create-title"),
+              to: "/make-positive-impact/co-create/",
+            }
+          ],
+        },
+        {
+          text: t("live-your-best-life-title"),
+          items: [
+            {
+              text: t("about-us-secondary-title"),
+              to: "/live-your-best-life/about-us/",
+            },
+          ],
         },
       ],
     },

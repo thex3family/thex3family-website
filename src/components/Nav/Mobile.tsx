@@ -198,10 +198,13 @@ const MobileNavMenu: React.FC<IProps> = ({
                           <Fragment key={idx}>
                             <Box
                               mt={8}
-                              mb={4}
-                              fontSize="0.9rem"
-                              lineHeight={1}
+                              pb={2}
+                              mb={3}
+                              fontSize="1.05rem"
+                              lineHeight={1.4}
                               color="currentColor"
+                              borderBottom="1px solid" // Add a bottom border
+                              borderColor="gray.200" // Use the appropriate color from your theme
                             >
                               {item.text}
                             </Box>

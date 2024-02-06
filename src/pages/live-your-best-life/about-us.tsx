@@ -304,7 +304,7 @@ const WhatIsEthereumPage = ({
   const heroProps = {
     pathname,
     lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
-    title: t("common:about-us-title"),
+    title: t("common:about-us-secondary-title"),
     description: t("common:about-us-description")
       .split('.')
       .filter(sentence => sentence.trim() !== '')
@@ -322,7 +322,7 @@ const WhatIsEthereumPage = ({
       m="0 auto"
     >
       <PageMetadata
-        title={t("common:about-us-title")}
+        title={t("common:about-us-secondary-title")}
         description={t("common:about-us-description")}
         image="comrades.png"
       />
