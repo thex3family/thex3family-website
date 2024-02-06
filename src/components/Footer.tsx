@@ -101,15 +101,23 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
       ],
     },
     {
-      title: t("unlock-your-potential-title"),
+      title: t("programs-title"),
       links: [
         {
           text: t("unlock-your-potential-secondary-title"),
           to: "/unlock-your-potential/",
         },
         {
-          text: t("programs-title"),
-          to: "/unlock-your-potential/programs/",
+          text: t("knowledge-title"),
+          to: "/unlock-your-potential/programs?filters=knowledge",
+        },
+        {
+          text: t("tools-title"),
+          to: "/unlock-your-potential/programs?filters=tools",
+        },
+        {
+          text: t("community-title"),
+          to: "/unlock-your-potential/programs?filters=community",
         },
         {
           text: t("docs-title"),
@@ -118,7 +126,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
       ],
     },
     {
-      title: t("make-positive-impact-title"),
+      title: t("about-us-title"),
       links: [
         {
           text: t("make-positive-impact-secondary-title"),
@@ -135,15 +143,23 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
         {
           text: t("co-create-title"),
           to: "/make-positive-impact/co-create/",
-        }
-      ],
-    },
-    {
-      title: t("live-your-best-life-title"),
-      links: [
+        },
         {
           text: t("about-us-title"),
           to: "/live-your-best-life/about-us/",
+        },
+      ],
+    },
+    {
+      title: t("popular-sub-pages-title"),
+      links: [
+        {
+          text: t("subscription-title"),
+          to: "/make-positive-impact/contribute/subscription",
+        },
+        {
+          text: t("donate-title"),
+          to: "/make-positive-impact/contribute/donate",
         },
       ],
     },

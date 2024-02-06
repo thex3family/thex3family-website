@@ -1,5 +1,5 @@
 ---
-title: Collaborate
+title: Volunteer and Career Opportunities
 description: We enable our community to make use of their skills and commit regular time towards supporting programs that have benefited their growth journeys.
 lang: en
 template: main
