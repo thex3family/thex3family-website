@@ -49,6 +49,7 @@ export const useNav = ({ path }: { path: string }) => {
             {
               text: t("unlock-your-potential-secondary-title"),
               to: "/unlock-your-potential/",
+              isPartiallyActive: false,
             },
             {
               text: t("knowledge-title"),
@@ -80,6 +81,7 @@ export const useNav = ({ path }: { path: string }) => {
             {
               text: t("make-positive-impact-secondary-title"),
               to: "/make-positive-impact/",
+              isPartiallyActive: false,
             },
             {
               text: t("contribute-title"),
