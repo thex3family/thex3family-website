@@ -149,7 +149,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           to: "/make-positive-impact/co-create/",
         },
         {
-          text: t("about-us-title"),
+          text: t("about-us-secondary-title"),
           to: "/live-your-best-life/about-us/",
         },
       ],
