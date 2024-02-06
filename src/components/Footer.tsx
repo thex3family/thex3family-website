@@ -104,6 +104,10 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
       title: t("programs-title"),
       links: [
         {
+          text: t("for-secondary-title"),
+          to: "/for/",
+        },
+        {
           text: t("unlock-your-potential-secondary-title"),
           to: "/unlock-your-potential/",
         },
@@ -151,7 +155,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
       ],
     },
     {
-      title: t("popular-sub-pages-title"),
+      title: t("popular-pages-title"),
       links: [
         {
           text: t("subscription-title"),
