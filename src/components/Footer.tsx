@@ -195,8 +195,8 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           text: t("cookie-policy-title"),
         },
         {
-          to: "mailto:support@co-x3.com",
-          text: t("contact-title"),
+          to: "/contact-us/",
+          text: t("contact-us-title"),
         },
       ],
     },
@@ -214,7 +214,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           <Translation id="website-last-updated" />:{" "}
           {getLocaleTimestamp(locale as Lang, lastDeployDate!)}
         </Box>
-        <Box my={4}>
+        <Box my={4} display="flex" gap={4}>
           {socialLinks.map((link, idk) => {
             return (
               <BaseLink
@@ -232,7 +232,6 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
                       "color 0.2s ease-in-out, transform 0.2s ease-in-out",
                   }}
                   fontSize="4xl"
-                  ms={4}
                 />
               </BaseLink>
             )
