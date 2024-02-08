@@ -158,7 +158,7 @@
   "privacy-policy-title": "Privacy Policy",
   "terms-of-use-title": "Terms Of Use",
 
-  "contact-title": "Contact",
+  "contact-us-title": "Contact Us",
   "cookie-policy-title": "Cookie Policy",
 
   "visual-identity-title": "Visual Identity",
@@ -169,7 +169,7 @@
 
   "about-us-title": "About Us",
   "about-us-menu": "About Us menu",
-  "about-us-secondary-title": "About The Co-x3 Family Foundation",
+  "about-us-secondary-title": "About The Foundation",
   "about-us-description": "Co-x3 stands for co-creation, collaboration, and community. We're an inclusive family of like-minded forward thinkers from 150+ countries that want to effect positive change in the world.",
   "about-us-image-alt": "",
   
@@ -260,21 +260,22 @@
   "co-create-button": "Partner With Us",
 
   "live-your-best-life-title": "Live Your Best Life",
+  "live-your-best-life-secondary-title": "Life At Co-x3",
   "live-your-best-life-menu": "Live Your Best Life Menu",
   "live-your-best-life-description": "Fulfillment comes by being your best self and contributing to others. Let's help people live better lives, together.",
   "live-your-best-life-image-alt": "Illustration of a woman jumping up, with a plane and bus in the background.",
 
-  "for-title": "Who We Support",
+  "for-title": "Beneficiaries",
   "for-menu": "Who We Support Menu",
-  "for-secondary-title": "For Students, Creatives, Retirees",
+  "for-secondary-title": "Who We Support",
   
-  "students-title": "Students",
+  "students-title": "For Students",
   "students-description": "Youths and young adults who are discovering the path that's meant for them.",
   "students-image-alt": "Illustration of a student standing in an office beside a photocopier and holding a cup, with a whiteboard with sticky notes behind her.",
-  "creatives-title": "Creatives",
+  "creatives-title": "For Creatives",
   "creatives-description": "Creators who are on the journey towards self-actualization and enjoy contributing to others.",
   "creatives-image-alt": "Illustration of a creative seated at a desk in front of a laptop, with a bookshelf behind and a plant to the side, in a room with a large window.",
-  "retirees-title": "Retirees",
+  "retirees-title": "For Retirees",
   "retirees-description": "Second winders who've lived a full life and are embarking on their next adventure.",
   "retirees-image-alt": "Illustration of a retiree standing at a bus stop thinking about their next adventure in life.",
   "careers-title": "Career Opportunties",

@@ -172,7 +172,7 @@ const JobBoard: React.FC<IProps> = ({ locale }) => {
         {!filteredMeetups.length && (
           <InfoBanner emoji=":information_source:">
             <Translation id="common:no-jobs-available" />{" "}
-            <InlineLink to="mailto:careers@co-x3.com">
+            <InlineLink to="mailto:careers@x3.family">
               <Translation id="common:apply" />
             </InlineLink>
           </InfoBanner>
