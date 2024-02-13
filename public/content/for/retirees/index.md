@@ -3,7 +3,7 @@ title: Retirees
 description: Second winders who've lived a full life and are embarking on their next adventure.
 lang: en
 template: main
-image: /students.png
+image: /retirees.png
 alt: Illustration of a retiree standing at a bus stop thinking about their next adventure in life.
 summaryPoint1: It's time to truly explore what you're passionate about.
 summaryPoint2: Discover new paths and unlock your potential in your golden years.

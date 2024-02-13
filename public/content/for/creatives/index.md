@@ -3,7 +3,7 @@ title: Creatives
 description: Creators who are on the journey towards self-actualization and enjoy contributing to others.
 lang: en
 template: main
-image: /students.png
+image: /creatives.png
 alt: Illustration of a creative seated at a desk in front of a laptop, with a bookshelf behind and a plant to the side, in a room with a large window.
 summaryPoint1: Overcome imposter syndrome and self-doubt with the right support.
 summaryPoint2: Learn how to kickstart your creative journey with practical tools.
