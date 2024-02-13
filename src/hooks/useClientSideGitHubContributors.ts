@@ -56,11 +56,11 @@ export const useClientSideGitHubContributors = (
           const entry: Author = {
             name: commit.author.name,
             email: commit.author.email,
-            avatarUrl: '', // Placeholder as avatarUrl is not provided in the example
-            // user: {
-            //   login: '', // Placeholder as login is not provided in the example
-            //   url: '', // Placeholder as html_url for the user is not provided in the example
-            // },
+            avatarUrl: '',
+            user: {
+              login: '',
+              url: '',
+            },
           }
           // Unique authors only
           authorSet.add(JSON.stringify(entry))
