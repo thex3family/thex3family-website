@@ -53,15 +53,15 @@ export const useClientSideGitHubContributors = (
         const authorSet = new Set<string>()
 
         ;[...commits]
-        .filter(({ commit }) => commit.author) // Adjusted to check commit.author instead of top-level author
-        .forEach(({ commit }) => { // Removed destructuring of author from the parameter
+        .filter(({ author }) => author)
+        .forEach(({ author, commit }) => {
           const entry: Author = {
             name: commit.author.name,
             email: commit.author.email,
-            avatarUrl: '',
+            avatarUrl: author.avatar_url,
             user: {
-              login: '',
-              url: '',
+              login: author.login,
+              url: author.html_url,
             },
           }
           // Unique authors only
