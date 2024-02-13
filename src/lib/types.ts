@@ -207,10 +207,10 @@ export type Author = {
   name: string
   email: string
   avatarUrl: string
-  user: {
-    login: string
-    url: string
-  }
+  // user: {
+  //   login: string
+  //   url: string
+  // }
 }
 
 /**
