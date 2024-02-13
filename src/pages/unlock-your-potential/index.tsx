@@ -30,6 +30,8 @@ import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
+import docLinks from "@/data/docs-links.yaml"
+
 import make_positive_impact from "@/public/make_positive_impact.png"
 import unlock_your_potential from "@/public/unlock_your_potential.png"
 
@@ -162,8 +164,8 @@ interface IDevelopersPath {
 const paths: Array<IDevelopersPath> = [
   {
     emoji: ":scroll:",
-    title: <Translation id="common:understand-the-framework-title" />,
-    description: <Translation id="common:understand-the-framework-description" />,
+    title: <Translation id="common:understand-yourself-title" />,
+    description: <Translation id="common:understand-yourself-description" />,
     url: "/understand-yourself/understand-the-framework/",
     button: <Translation id="common:get-started" />,
   },
@@ -208,6 +210,18 @@ const DevelopersPage = () => {
     imageSrc: unlock_your_potential.src, // Assuming understand_yourself is an imported image module
     imageAlt: t("common:unlock-your-potential-image-alt"),
   };
+
+  const principles: string[] = [
+    "breathing-techniques",
+    "flow-state",
+    "meditation",
+    "pain",
+    "sensory-deprivation"
+    // Add more principles as needed
+  ];
+
+  const basePath = "/unlock-your-potential/docs/";
+  const baseTranslation = "page-docs:page-docs-nav-";
 
   return (
     <Page>
@@ -283,47 +297,35 @@ const DevelopersPage = () => {
             <Translation id="page-unlock-your-potential:page-unlock-your-potential-documentation-description" />
           </Subtitle>
         </Content>
-
         <ThreeColumnContent>
-          <Column>
-            <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-docs:page-docs-nav-overview-title" />
-            </OldHeading>
-            <InlineLink to="/unlock-your-potential/docs/">
-              <Translation id="page-docs:page-docs-nav-overview-title" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-docs:page-docs-nav-overview-description" />
-            </Text>
-          </Column>
-          <Column>
-            <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-docs:page-docs-nav-principles-title" />
-            </OldHeading>
-            <InlineLink to="/unlock-your-potential/docs/flow-state">
-              <Translation id="page-docs:page-docs-nav-flow-state-title" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-docs:page-docs-nav-flow-state-description" />
-            </Text>
-            <InlineLink to="/unlock-your-potential/docs/pain">
-              <Translation id="page-docs:page-docs-nav-pain-title" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-docs:page-docs-nav-pain-description" />
-            </Text>
-          </Column>
-          <RightColumn>
-            <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-              <Translation id="page-docs:page-docs-nav-resources-title" />
-            </OldHeading>
-            <InlineLink to="/unlock-your-potential/docs/template">
-              <Translation id="page-docs:page-docs-nav-template-title" />
-            </InlineLink>
-            <Text>
-              <Translation id="page-docs:page-docs-nav-template-description" />
-            </Text>
-          </RightColumn>
+          {docLinks.map((docLink, index) => (
+            <Column key={index}>
+              <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
+                <Translation id={`${baseTranslation}${docLink.id}-title`} />
+              </OldHeading>
+              {docLink.items ? (
+                docLink.items.map((item, itemIndex) => (
+                  <div key={itemIndex}>
+                    <InlineLink to={`${docLink.path}/${item.id}`}>
+                      <Translation id={`${baseTranslation}${item.id}-title`} />
+                    </InlineLink>
+                    <Text>
+                      <Translation id={`${baseTranslation}${item.id}-description`} />
+                    </Text>
+                  </div>
+                ))
+              ) : (
+                <>
+                <InlineLink to={docLink.to}>
+                  <Translation id={`${baseTranslation}${docLink.id}-title`} />
+                </InlineLink>
+                <Text>
+                <Translation id={`${baseTranslation}${docLink.id}-description`} />
+              </Text>
+              </>
+              )}
+            </Column>
+          ))}
         </ThreeColumnContent>
       </GrayContainer>
       <FeedbackCard />

@@ -34,9 +34,9 @@ const Menu: React.FC<IProps> = ({ path, sections, ...props }) => {
             {hasNestedItems ? (
               // Render sections with a title
               <Flex flexDir={direction === "ltr" ? "row" : "row-reverse"}>
-                <Flex flexDir="column" gap={4}>
-                  {section.items.map((section, index) => (
-                    <List m={0} key={index}>
+                {section.items.map((section, index) => (
+                  <Flex flexDir="column" gap={4} key={index}>
+                    <List m={0}>
                       <NavDropdown.Title>{section.text}</NavDropdown.Title>
                       {(section.items || []).map((item, itemIndex) => (
                         <NavDropdown.Item key={itemIndex}>
@@ -46,8 +46,8 @@ const Menu: React.FC<IProps> = ({ path, sections, ...props }) => {
                         </NavDropdown.Item>
                       ))}
                     </List>
-                  ))}
-                </Flex>
+                  </Flex>
+                ))}
               </Flex>
             ) : (
               // Render sections without a title as a flat list

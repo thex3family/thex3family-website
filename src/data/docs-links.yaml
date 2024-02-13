@@ -3,17 +3,17 @@
 
 # To display item as a collapsable directory vs. a link
 # use the `path` property (of the directory) vs. the `to` property
-- id: page-docs-nav-overview-title
+- id: overview
   to: /unlock-your-potential/docs
-- id: page-docs-nav-principles-title
-  path: /unlock-your-potential/docs/
+- id: principles
+  path: /unlock-your-potential/docs
   items:
-    - id: page-docs-nav-flow-state-title
-      to: /unlock-your-potential/docs/flow-state
-    - id: page-docs-nav-pain-title
-      to: /unlock-your-potential/docs/pain
-- id: page-docs-nav-resources-title
-  path: /unlock-your-potential/docs/
+    - id: breathing-techniques
+    - id: flow-state
+    - id: meditation
+    - id: pain
+    - id: sensory-deprivation
+- id: resources
+  path: /unlock-your-potential/docs
   items:
-    - id: page-docs-nav-template-title
-      to: /unlock-your-potential/docs/template
+    - id: template

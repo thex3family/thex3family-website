@@ -2,9 +2,12 @@ import { join } from "path"
 
 import { useEffect, useState } from "react"
 
-import type { Author, FileContributorsState } from "@/lib/types"
+import type { Author, Commit, FileContributorsState } from "@/lib/types"
 
-import { CONTENT_DIR,GITHUB_COMMITS_URL } from "@/lib/constants"
+import {
+  CONTENT_DIR,
+  GITHUB_COMMITS_URL,
+} from "@/lib/constants"
 
 export const gitHubAuthHeaders = {
   headers: new Headers({
@@ -13,42 +16,19 @@ export const gitHubAuthHeaders = {
   }),
 }
 
-const fetchGitHubContributors = async (
-  relativePath: string
-): Promise<FileContributorsState> => {
+const fetchGitHubCommits = async (filePath: string): Promise<Commit[]> => {
   const url = new URL(GITHUB_COMMITS_URL)
-  const filePath = join(CONTENT_DIR, relativePath, "index.md")
   url.searchParams.set("path", filePath)
 
   try {
     const response = await fetch(url, gitHubAuthHeaders)
     if (!response.ok) throw new Error(response.statusText)
-    const commits = await response.json()
-    const authorSet = new Set<string>()
-    commits
-      .filter(({ author }) => author)
-      .forEach(({ author, commit }) => {
-        const entry: Author = {
-          name: commit.author.name,
-          email: commit.author.email,
-          avatarUrl: author.avatar_url,
-          user: {
-            login: author.login,
-            url: author.html_url,
-          },
-        }
-        // Unique authors only
-        authorSet.add(JSON.stringify(entry))
-      })
-    const authors = Array.from(authorSet).map(
-      JSON.parse as (entry: string) => Author
-    )
-    return { loading: false, data: authors }
+    return (await response.json()) as Commit[]
   } catch (error: unknown) {
     if (error instanceof Error) {
       console.error(filePath, error.message)
     }
-    return { loading: false, error }
+    throw error
   }
 }
 /**
@@ -63,7 +43,39 @@ export const useClientSideGitHubContributors = (
   const [state, setState] = useState<FileContributorsState>({ loading: true })
   useEffect(() => {
     ;(async () => {
-      setState(await fetchGitHubContributors(relativePath))
+      const filePath = join(CONTENT_DIR, relativePath, "index.md")
+
+      try {
+        const commits = await fetchGitHubCommits(filePath)
+
+        const authorSet = new Set<string>()
+
+        ;[...commits]
+        .filter(({ commit }) => commit.author) // Adjusted to check commit.author instead of top-level author
+        .forEach(({ commit }) => { // Removed destructuring of author from the parameter
+          const entry: Author = {
+            name: commit.author.name,
+            email: commit.author.email,
+            avatarUrl: '', // Placeholder as avatarUrl is not provided in the example
+            // user: {
+            //   login: '', // Placeholder as login is not provided in the example
+            //   url: '', // Placeholder as html_url for the user is not provided in the example
+            // },
+          }
+          // Unique authors only
+          authorSet.add(JSON.stringify(entry))
+        })
+        const authors = Array.from(authorSet).map(
+          JSON.parse as (entry: string) => Author
+        )
+
+        setState({
+          loading: false,
+          data: authors,
+        })
+      } catch (error: unknown) {
+        setState({ loading: false, error })
+      }
     })()
   }, [relativePath])
   return state

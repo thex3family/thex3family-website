@@ -38,7 +38,7 @@ const TextDiv: React.FC<FlexProps> = ({ children, ...props }) => (
 
 export interface DocsArrayProps {
   to: string
-  id: TranslationKey
+  title: TranslationKey
 }
 
 const CardLink = (props: {
@@ -87,8 +87,9 @@ const CardLink = (props: {
               eventName: isPrev ? "previous" : "next",
             })
           }}
+          noOfLines={1}
         >
-          <Translation id={`page-docs:${docData.id}`} />
+          {docData.title}
         </LinkOverlay>
       </TextDiv>
     </LinkBox>
@@ -108,12 +109,14 @@ const DocsNav: React.FC<IProps> = ({ relativePath }) => {
       if (item.items) {
         // And if item has a 'to' key
         // Add 'to' path and 'id' to docsArray
-        item.to && docsArray.push({ to: item.to, id: item.id })
+        if(!item.path){
+          item.to && docsArray.push({ to: item.to, title: item.title })
+        }
         // Then recursively add sub-items
         getDocs(item.items)
       } else {
         // If object has no further 'items', add and continue
-        docsArray.push({ to: item.to, id: item.id })
+        docsArray.push({ to: item.to, title: item.title })
       }
     }
   }
@@ -130,7 +133,7 @@ const DocsNav: React.FC<IProps> = ({ relativePath }) => {
   }
 
   // Extract previous and next doc based on current index +/- 1
-  const previousDoc = currentIndex - 1 > 0 ? docsArray[currentIndex - 1] : null
+  const previousDoc = currentIndex - 1 >= 0 ? docsArray[currentIndex - 1] : null
   const nextDoc =
     currentIndex + 1 < docsArray.length ? docsArray[currentIndex + 1] : null
 

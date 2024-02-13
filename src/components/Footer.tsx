@@ -108,6 +108,18 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           to: "/for/",
         },
         {
+          text: t("students-title"),
+          to: "/for/students",
+        },
+        {
+          text: t("creatives-title"),
+          to: "/for/creatives",
+        },
+        {
+          text: t("retirees-title"),
+          to: "/for/retirees",
+        },
+        {
           text: t("unlock-your-potential-secondary-title"),
           to: "/unlock-your-potential/",
         },
@@ -147,6 +159,10 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
         {
           text: t("co-create-title"),
           to: "/make-positive-impact/co-create/",
+        },
+        {
+          text: t("live-your-best-life-secondary-title"),
+          to: "/live-your-best-life",
         },
         {
           text: t("about-us-secondary-title"),

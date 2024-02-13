@@ -51,6 +51,18 @@ export const useNav = ({ path }: { path: string }) => {
               to: "/for/",
               isPartiallyActive: false,
             },
+            {
+              text: t("students-title"),
+              to: "/for/students",
+            },
+            {
+              text: t("creatives-title"),
+              to: "/for/creatives",
+            },
+            {
+              text: t("retirees-title"),
+              to: "/for/retirees",
+            },
           ]
         },
         {
@@ -110,6 +122,10 @@ export const useNav = ({ path }: { path: string }) => {
         {
           text: t("live-your-best-life-title"),
           items: [
+            {
+              text: t("live-your-best-life-secondary-title"),
+              to: "/live-your-best-life",
+            },
             {
               text: t("about-us-secondary-title"),
               to: "/live-your-best-life/about-us/",

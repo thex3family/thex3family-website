@@ -58,6 +58,7 @@ export interface DeveloperDocsLink {
   id: TranslationKey
   to: string
   path: string
+  title: TranslationKey
   description: TranslationKey
   items: DeveloperDocsLink[]
 }

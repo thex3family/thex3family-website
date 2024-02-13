@@ -2,7 +2,7 @@
 title: "Perspective 8: Curiosity"
 description: I accept that people will cross my boundaries, so I should do my best to be curious and spend time to understand why.
 author: Conrad Lin
-tags: ["understand yourself", "guide"]
+tags: ["understand yourself", "guide", "retirees"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_8

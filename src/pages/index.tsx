@@ -276,21 +276,21 @@ const HomePage = ({
       alt: t("students-image-alt"),
       title: t("students-title"),
       description: t("students-description"),
-      to: "/for/",
+      to: "/for/students",
     },
     {
       image: creatives,
       alt: t("creatives-image-alt"),
       title: t("creatives-title"),
       description: t("creatives-description"),
-      to: "/for/",
+      to: "/for/creatives",
     },
     {
       image: retirees,
       alt: t("retirees-image-alt"),
       title: t("retirees-title"),
       description: t("retirees-description"),
-      to: "/for/",
+      to: "/for/retirees",
     },
   ]
 
