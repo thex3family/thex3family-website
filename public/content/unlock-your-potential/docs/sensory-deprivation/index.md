@@ -7,7 +7,9 @@ incomplete: true
 
 ## Introduction
 
-Sensory deprivation, a practice of reducing or eliminating stimuli from one or more of the senses, offers a unique pathway to self-awareness and mental clarity. This article delves into how limiting our sensory input can lead to a deeper appreciation of our senses and a heightened state of introspection. Drawing inspiration from notable figures like Hellen Keller, we'll explore the transformative potential of sensory deprivation and its role in personal development.
+Sensory deprivation, a practice of reducing or eliminating stimuli from one or more of the senses, offers a unique pathway to self-awareness and mental clarity. This article delves into how limiting our sensory input can lead to a deeper appreciation of our senses and a heightened state of introspection.
+
+Drawing inspiration from notable figures like Hellen Keller, we'll explore the transformative potential of sensory deprivation and its role in personal development.
 
 ## Prerequisites
 

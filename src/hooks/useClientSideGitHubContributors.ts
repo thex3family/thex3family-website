@@ -48,6 +48,8 @@ export const useClientSideGitHubContributors = (
       try {
         const commits = await fetchGitHubCommits(filePath)
 
+        console.log(commits);
+
         const authorSet = new Set<string>()
 
         ;[...commits]
