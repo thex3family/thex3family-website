@@ -193,11 +193,6 @@ export const TutorialLayout = ({
 
   return (
     <>
-      {!!frontmatter.showPostMergeBanner && (
-        <PostMergeBanner
-          translationString={postMergeBannerTranslationString!}
-        />
-      )}
       <Flex
         w="100%"
         borderBottom={`1px solid ${borderColor}`}
@@ -216,6 +211,7 @@ export const TutorialLayout = ({
             pt={8}
           />
           {children}
+          <StyledDivider /> 
           {useGitHubContributors ? (
             <GitHubContributors
               relativePath={relativePath}

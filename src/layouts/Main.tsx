@@ -21,6 +21,7 @@ import FrameworkActionCard from "@/components/ActionCard/FrameworkActionCard"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import type { List as ButtonDropdownList } from "@/components/ButtonDropdown"
 import { ButtonLink } from "@/components/Buttons"
+import ExpandableCard from "@/components/ExpandableCard"
 import FeedbackCard from "@/components/FeedbackCard"
 import { Image } from "@/components/Image"
 import InfoBanner from "@/components/InfoBanner"
@@ -136,6 +137,7 @@ export const mainComponents = {
   JobBoard,
   BasicActionCard,
   FrameworkActionCard,
+  ExpandableCard,
   InfoBanner
 }
 
@@ -169,6 +171,9 @@ export const MainLayout: React.FC<IProps> = ({
   }
   if (slug.includes("for")) {
     root = "for"
+  }
+  if (slug.includes("live-your-best-life")) {
+    root = "live-your-best-life"
   }
 
   let dropdownLinks: ButtonDropdownList | null = null;
@@ -248,6 +253,34 @@ export const MainLayout: React.FC<IProps> = ({
         {
           text: t("for-title"),
           to: "/for/",
+        },
+        {
+          text: t("students-title"),
+          to: "/for/students",
+        },
+        {
+          text: t("creatives-title"),
+          to: "/for/creatives",
+        },
+        {
+          text: t("retirees-title"),
+          to: "/for/retirees",
+        },
+      ],
+    }
+  }
+  if (root === "live-your-best-life") {
+    dropdownLinks = {
+      text: t("live-your-best-life-title"),
+      ariaLabel: t("live-your-best-life-menu"),
+      items: [
+        {
+          text: t("live-your-best-life-secondary-title"),
+          to: "/live-your-best-life/",
+        },
+        {
+          text: t("about-us-secondary-title"),
+          to: "/live-your-best-life/about-us",
         },
       ],
     }

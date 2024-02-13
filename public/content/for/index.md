@@ -3,14 +3,14 @@ title: Who We Support
 description: Learn about the diverse groups Co-x3 supports and how our unique framework facilitate growth at every life stage.
 lang: en
 template: main
-image: /students.png
+image: /comrades.png
 alt: 
-summaryPoint1: Our solutions were built to solve real challenges in our lives.
+summaryPoint1: Our solutions were built to solve everyday challenges we face.
 summaryPoint2: We started by supporting students, creatives, and retirees.
 summaryPoint3: Now, we extend our support to both individuals and organizations.
 ---
 
-## Who We Support
+## How Did We Choose Who To Support?
 
 We all tackle personal challenges in our lives, and as we resolve them, we try to support our family and friends. Many of us realized that our challenges were common to many people around the world. This realization sparked an idea: Why not extend these solutions to a wider community?
 

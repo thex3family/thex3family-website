@@ -6,8 +6,6 @@ lang: en
 
 This template is designed to help you structure your content when creating pages. Try and stick to this structure as best you can. But if you have an idea that doesn't fit in this template, let us know so we can discuss the best way to incorporate it.
 
-<Divider />
-
 ## Introduction
 
 A short intro that introduces the topic and explains what the reader should learn.
@@ -26,15 +24,9 @@ Feel free to suggest sub-pages: if a topic starts to sprawl we can create sub-pa
 
 ## Related Programs
 
-### [Knowledge](/unlock-your-potential/programs?filters=knowledge)
+<ButtonLink to="/unlock-your-potential/programs?tags=XYZ">See all programs related to XYZ</ButtonLink>
 
-- Programs that utilize this first principle.
-
-### [Tools](/unlock-your-potential/programs?filters=tools)
-
-- Programs that utilize this first principle.
-
-### [Community](/unlock-your-potential/programs?filters=community)
+### Notable Mentions
 
 - Programs that utilize this first principle.
 

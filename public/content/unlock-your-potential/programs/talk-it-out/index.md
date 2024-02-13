@@ -2,7 +2,7 @@
 title: "Talk It Out"
 description: Process your emotions using the 4A Model (Avoidance, Awareness, Acceptance, Action)
 author: Conrad Lin
-tags: ["AI", "chatGPT"]
+tags: ["AI", "chatGPT", "students", "creatives", "retirees"]
 programType: tool
 location: virtual
 frameworkLevel: ALL

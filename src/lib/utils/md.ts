@@ -32,6 +32,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     // unlock-your-potential
 
       // programs
+      "/unlock-your-potential/programs/explained",
       "/unlock-your-potential/programs/level-up-podcast",
       "/unlock-your-potential/programs/talks-by-co-x3",
       "/unlock-your-potential/programs/guide-1",
@@ -53,33 +54,36 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       // docs
       "/unlock-your-potential/docs",
       "/unlock-your-potential/docs/template",
+      "/unlock-your-potential/docs/breathing-techniques",
       "/unlock-your-potential/docs/flow-state",
+      "/unlock-your-potential/docs/meditation",
       "/unlock-your-potential/docs/pain",
+      "/unlock-your-potential/docs/sensory-deprivation",
 
     // make-positive-impact
     "/make-positive-impact",
 
-    "/make-positive-impact/contribute",
-    "/make-positive-impact/contribute/subscription",
-    "/make-positive-impact/contribute/glossary",
-    "/make-positive-impact/contribute/quizzes",
-    "/make-positive-impact/contribute/donate",
-    //"/make-positive-impact/contribute/translations",
+      "/make-positive-impact/contribute",
+      "/make-positive-impact/contribute/subscription",
+      "/make-positive-impact/contribute/glossary",
+      "/make-positive-impact/contribute/quizzes",
+      "/make-positive-impact/contribute/donate",
+      //"/make-positive-impact/contribute/translations",
 
-    "/make-positive-impact/collaborate",
-    "/make-positive-impact/collaborate/community-manager",
-    "/make-positive-impact/collaborate/finance-manager",
-    "/make-positive-impact/collaborate/grant-writer",
-    "/make-positive-impact/collaborate/growth-manager",
-    "/make-positive-impact/collaborate/intern",
-    "/make-positive-impact/collaborate/video-editor",
-    "/make-positive-impact/collaborate/virtual-assistant",
-    "/make-positive-impact/collaborate/house-manager",
-    "/make-positive-impact/collaborate/behavioural-scientist",
+      "/make-positive-impact/collaborate",
+      "/make-positive-impact/collaborate/community-manager",
+      "/make-positive-impact/collaborate/finance-manager",
+      "/make-positive-impact/collaborate/grant-writer",
+      "/make-positive-impact/collaborate/growth-manager",
+      "/make-positive-impact/collaborate/intern",
+      "/make-positive-impact/collaborate/video-editor",
+      "/make-positive-impact/collaborate/virtual-assistant",
+      "/make-positive-impact/collaborate/house-manager",
+      "/make-positive-impact/collaborate/behavioural-scientist",
 
-    "/make-positive-impact/co-create",
+      "/make-positive-impact/co-create",
     
-    //"/live-your-best-life",
+    "/live-your-best-life",
 
     // info
     "/glossary",
@@ -91,9 +95,9 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     // for
 
     "/for",
-    // "/for/students",
-    // "/for/creatives",
-    // "/for/retirees",
+    "/for/students",
+    "/for/creatives",
+    "/for/retirees",
   ]
 
   // Get an array of all files and directories in the passed directory using `fs.readdirSync`

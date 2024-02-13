@@ -58,17 +58,22 @@ We integrated foundational theories in psychological and personal development to
 
 Better Life Framework is ideal for anyone wanting to live a better life and positively influence those around them. Alongside the free resources available on this site, we also offer exclusive customizable programs. These specialized offerings are designed to fast-track your growth, ensuring a valuable and transformative experience tailored for your unique needs.
 
-1. **Individuals**
+### Our Beneficiaries 
 
-   With Better Life Framework, individuals globally can develop a profound understanding of people, enabling them to nurture fulfilling relationships and live their best lives.
-
-2. **Educators**
-
-   By incorporating Better Life Framework into learning curriculums, we can foster emotional intelligence and effective personal development from a young age.
-
-3. **Leaders**
-
-   Better Life Framework empowers leaders to understand complex team dynamics and lead with empathy, creating a productive environment where team members feel understood.
+<CardGrid>
+  <BasicActionCard
+    title="Individuals"
+    description="With Better Life Framework, individuals globally can develop a profound understanding of people, enabling them to nurture fulfilling relationships and live their best lives."
+  />
+  <BasicActionCard
+    title="Educators"
+    description="By incorporating Better Life Framework into learning curriculums, we can foster emotional intelligence and effective personal development from a young age."
+  />
+  <BasicActionCard
+    title="Leaders"
+    description="We empower leaders to understand complex team dynamics and lead with empathy, creating a productive environment where team members feel understood."
+  />
+</CardGrid>
 
 ### Have Other Ideas For The Framework?
 
@@ -104,32 +109,32 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 ### Publications
 
-1. **Papers**
+<ExpandableCard title="Papers" eventCategory="/understand-yourself" eventName="clicked papers" contentPreview="We publish cutting-edge research and insightful papers in reputable academic journals.">
 
-   **We publish cutting-edge research and insightful papers in reputable academic journals.**
+- Better Life Framework as a Predictive Model for Human Behavior (Q3 2024)
+- Integrating Better Life Framework in Organizational Development (2025)
+- Improving EQ and IQ in primary school students with Better Life Framework (2026)
 
-   - Better Life Framework as a Predictive Model for Human Behavior (Q3 2024)
-   - Integrating Better Life Framework in Organizational Development (2025)
-   - Improving EQ and IQ in primary school students with Better Life Framework (2026)
+</ExpandableCard>
 
-2. **Books**
+<ExpandableCard title="Books" eventCategory="/understand-yourself" eventName="clicked books" contentPreview="We're authoring essential books in personal and professional development.">
 
-   **We're authoring essential books in personal and professional development.**
+- Better Life Framework: A Comprehensive Guide to Self and Interpersonal Understanding (Q3 2024)
+- Empathy in Action: Applying Better Life Framework in Leadership (2025)
+- Understanding Yourself At A Young Age: Revolutionizing The Educational System With Better Life Framework (2026)
+- Impacting Billions: The Global Influence of Better Life Framework (2035)
 
-   - Better Life Framework: A Comprehensive Guide to Self and Interpersonal Understanding (Q3 2024)
-   - Empathy in Action: Applying Better Life Framework in Leadership (2025)
-   - Understanding Yourself At A Young Age: Revolutionizing The Educational System With Better Life Framework (2026)
-   - Impacting Billions: The Global Influence of Better Life Framework (2035)
+</ExpandableCard>
 
-3. **References**
+<ExpandableCard title="References" eventCategory="/understand-yourself" eventName="clicked references" contentPreview="Better Life Framework is based on foundational theories in psychology.">
 
-   **Better Life Framework is based on foundational theories in psychology.**
+- Spiral Dynamics (Don Beck, Christopher Cowan, Clare Graves)
+- Developmental Levels (Loevinger & Cook-Greuter, Kohlberg & Kegan)
+- Hierarchy of Needs (Abraham Maslow)
+- Cognitive Development Theory (Jean Piaget)
 
-   - Spiral Dynamics (Don Beck, Christopher Cowan, Clare Graves)
-   - Developmental Levels (Loevinger & Cook-Greuter, Kohlberg & Kegan)
-   - Hierarchy of Needs (Abraham Maslow)
-   - Cognitive Development Theory (Jean Piaget)
+</ExpandableCard>
 
-### Media
+### Media Inquiries
 
-Are you interested in featuring the Better Life Framework    in your publication or media outlet? We welcome opportunities to share our insights and the impact of our framework with a wider audience. Please [contact us](mailto:press@x3.family) for more information and media inquiries.
+Are you interested in featuring the Better Life Framework in your publication or media outlet? We welcome opportunities to share our insights and the impact of our framework with a wider audience. Please [contact us](mailto:press@x3.family) for more information and media inquiries.

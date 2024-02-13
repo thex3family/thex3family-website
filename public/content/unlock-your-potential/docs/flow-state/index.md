@@ -10,7 +10,8 @@ Flow state, often described as being 'in the zone', is a mental state where a pe
 
 ## Prerequisites
 
-Before diving into the nuances of flow state, it's beneficial to have a basic understanding of cognitive psychology and mindfulness. Familiarity with concepts like concentration, motivation, and mental well-being will also enrich your comprehension of flow state.
+- A basic understanding of cognitive psychology and mindfulness.
+- Familiarity with concepts like concentration, motivation, and mental well-being.
 
 ## Understanding Flow State
 
@@ -48,19 +49,16 @@ Additionally, there's a notable shift in brainwave patterns during flow, particu
 
 ## Related Programs
 
-### [Knowledge](/unlock-your-potential/programs?filters=knowledge)
-Coming Soon.
-
-### [Tools](/unlock-your-potential/programs?filters=tools)
-You can achieve flow state by using the Success Plan found in the Gamify Your Life, Be Intentional, or L-CTRL Systems.
+The Success Plan (found in the Gamify Your Life, Be Intentional, or L-CTRL Systems) helps you get into the flow state.
 
 It works by providing you the following while working on a task:
 - Clarity on your why (the goal)
 - Understanding of what you will achieve (the key result / outcomes)
 - How challenging a task is (difficulty)
 
-### [Community](/unlock-your-potential/programs?filters=community)
-You can also maximize chances to get into the flow state by joining [Our Family Without Borders](https://www.ourfamilywithoutborders.com/for/founders).
+You can also maximize chances to get into the flow state by joining [Our Family Without Borders](https://www.ourfamilywithoutborders.com/for/founders) with a curated working environment.
+
+<ButtonLink to="/unlock-your-potential/programs?tags=flow%20state">See all programs related to Flow State</ButtonLink>
 
 ## References
 

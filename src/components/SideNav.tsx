@@ -71,6 +71,18 @@ export interface IPropsNavLink {
 
 const NavLink: React.FC<IPropsNavLink> = ({ item, path, isTopLevel }) => {
   const { t } = useTranslation("page-docs")
+  const basePath = "/unlock-your-potential/docs/";
+  const baseTranslation = "page-docs:page-docs-nav-";
+
+  // I just need to push item.to with the base paths. 
+  // and then probably push a item.title and item.description.
+
+  if (!item.to) {
+    item.to = basePath + item.id;
+  }
+  item.title = t(baseTranslation + item.id + "-title");
+  item.description = t(baseTranslation + item.id + "-description");
+
   const isLinkInPath =
     isTopLevel || path.includes(item.to) || path.includes(item.path)
   const [isOpen, setIsOpen] = useState<boolean>(isLinkInPath)
@@ -88,16 +100,14 @@ const NavLink: React.FC<IPropsNavLink> = ({ item, path, isTopLevel }) => {
     return (
       <Box>
         <LinkContainer>
-          {item.to && (
+          {/* {item.to && (
             <SideNavLink to={item.to} isPartiallyActive={false}>
               {t(item.id)}
             </SideNavLink>
-          )}
-          {!item.to && (
-            <Box w="full" cursor="pointer" onClick={() => setIsOpen(!isOpen)}>
-              {t(item.id)}
-            </Box>
-          )}
+          )} */}
+          <Box w="full" cursor="pointer" onClick={() => setIsOpen(!isOpen)}>
+            {item.title}
+          </Box>
           <Box
             as={motion.div}
             onClick={() => setIsOpen(!isOpen)}
@@ -130,7 +140,7 @@ const NavLink: React.FC<IPropsNavLink> = ({ item, path, isTopLevel }) => {
     <Box>
       <LinkContainer>
         <SideNavLink to={item.to} isPartiallyActive={false}>
-          {t(item.id)}
+          {item.title}
         </SideNavLink>
       </LinkContainer>
     </Box>

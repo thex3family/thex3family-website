@@ -17,7 +17,7 @@ We envision a world where everyone, regardless of their financial background, ha
 
 Everyone needs support at some point. Whether it's due to financial constraints or other challenges, we want our scholarship to be a beacon of hope and a catalyst for positive change. Your contribution as a supporter is not just financial assistance - it's a gesture of kindness and solidarity, enabling someone to embark on a journey of personal development.
 
-[Donate Now](https://donate.stripe.com/7sI5njeq364L5Ww9AA)
+<ButtonLink to="https://donate.stripe.com/7sI5njeq364L5Ww9AA">Donate Now</ButtonLink>
 
 ![Image](./donate-1.png)
 
@@ -27,7 +27,7 @@ Supporting our cause should be a comfortable decision for you. We encourage cont
 
 If you're someone who values kindness, desires to make a positive difference, wishes to give back to the community, or seeks to be part of something larger than yourself, then supporting the Co-x3 Family is an ideal way for you to contribute.
 
-[Donate Now](https://donate.stripe.com/7sI5njeq364L5Ww9AA)
+<ButtonLink to="https://donate.stripe.com/7sI5njeq364L5Ww9AA">Donate Now</ButtonLink>
 
 ## What Is The Impact?
 
@@ -35,7 +35,7 @@ At Co-x3, we believe in making a significant impact in people's lives by offerin
 
 Your support as a donor goes beyond just funding; it's about opening doors for those who are ready to walk through them but are held back by financial constraints. Your contribution ensures equitable access to our life-changing programs, making a direct impact on individuals' journeys towards self-improvement and empowerment.
 
-[Donate Now](https://donate.stripe.com/7sI5njeq364L5Ww9AA)
+<ButtonLink to="https://donate.stripe.com/7sI5njeq364L5Ww9AA">Donate Now</ButtonLink>
 
 ## The Co-x3 Family Scholarship
 
@@ -45,7 +45,7 @@ As a supporter, you’ll receive regular updates, sharing the progress and achie
 
 All donations are tax-deductible, ensuring that your generosity is also beneficial for you.
 
-[Donate Now](https://donate.stripe.com/7sI5njeq364L5Ww9AA)
+<ButtonLink to="https://donate.stripe.com/7sI5njeq364L5Ww9AA">Donate Now</ButtonLink>
 
 *If you'd like to make a donation over $10,000 USD, please [contact our team](mailto:donations@x3.family) for bank wire instructions.*
 
@@ -63,6 +63,6 @@ If you're driven to grow but face financial barriers, the Co-x3 Family Scholarsh
 
 Every month, our community comes together to select the individuals who will benefit from the scholarship that period. They'll be able to view your application and vote accordingly - so make friends in the community!
 
-[Apply Now](mailto:support@x3.family)
+<ButtonLink to="mailto:support@x3.family">Apply Now</ButtonLink>
 
 ![Image](./donate-2.png)

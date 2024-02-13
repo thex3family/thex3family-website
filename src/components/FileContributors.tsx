@@ -151,7 +151,7 @@ const FileContributors: React.FC<FileContributorsProps> = ({
                   @{lastContributor.user.login}
                 </InlineLink>
               )}
-              {!lastContributor.user && <span>{lastContributor.name}</span>},{" "}
+              {!lastContributor.user && <span>{lastContributor.name}</span>} on {" "}
               {getLocaleTimestamp(locale as Lang, lastEdit)}
             </Text>
           </Skeleton>

@@ -1,16 +1,21 @@
 ---
-title: Pain (Seeking Discomfort)
-description: Why does pain faciliate growth and development?
+title: Pain
+description: How does pain faciliate growth and development?
 lang: en
 ---
 
 ## Introduction
 
-'Seeking Discomfort' is the idea that intentionally placing ourselves in challenging situations can catalyze significant personal development. By understanding and embracing discomfort, we can unlock our potential and progress to higher levels of self-awareness and ability.
+Pain, often perceived negatively, is a crucial aspect of our personal growth journey. Pain can be both physical and emotional, and while it's a sensation most try to avoid, it holds immense potential for fostering resilience, adaptability, and inner strength. It's in moments of pain that we are pushed to confront our limitations, fears, and vulnerabilities, which in turn paves the way for personal transformation.
+
+In the realm of personal development, the concept of 'Seeking Discomfort' is increasingly gaining traction. This idea revolves around intentionally placing ourselves in challenging situations that are outside our comfort zones. It's not about seeking pain for pain's sake, but about recognizing that within controlled and purposeful discomfort lies the opportunity for significant growth. 
+
+Whether it's tackling a fear, learning a new skill, or adapting to an unfamiliar environment, these experiences force us to evolve in ways comfort cannot.
 
 ## Prerequisites
 
-Before diving into this topic, it's beneficial to have a basic understanding of personal development theories, particularly those focusing on growth through adversity. Familiarity with concepts like 'comfort zone' and 'growth mindset' would also be advantageous.
+- Basic understanding of personal development theories, particularly those focusing on growth through adversity.
+- Familiarity with concepts like 'comfort zone' and 'growth mindset'.
 
 ## The Concept and Its Origin
 
@@ -23,9 +28,11 @@ Pain can be triggered by various situations, such as:
 - **Cultural Immersion:** Experiencing different ways of living and thinking.
 - **Physical Endeavors:** Engaging in activities that push physical limits.
 
-In all of these situations, we realize that we we need to approach the challenge ahead of us with a different approach, and what used to work doesn't work as well anymore. Without this kind of pain, we may not be as motivated or incentivized to change our perspective on life, because its already working.
+In all of these situations, we realize that we need to approach the challenge ahead of us with a different approach, and what used to work doesn't work as well anymore. Without this kind of pain, we may not be as motivated or incentivized to change our perspective on life, because its already working.
 
-Those who feel pain have the choice to change their perspective or go back to something that they know works well. For example, if you are travelling to another country and you can't seem to comprehend how people can live in a different way that you do (perhaps their washroom habits are different), you have the choice to adapt and do as they do, or jump on a plane ride home ASAP.
+Those who feel pain have the choice to change their perspective or go back to something that they know works well. 
+
+*For example, if you are travelling to another country and you can't seem to comprehend how people can live in a different way that you do (perhaps their washroom habits are different), you have the choice to adapt and do as they do, or jump on a plane ride home ASAP.*
 
 ## Additional Applications
 
@@ -35,17 +42,7 @@ This is why in Buddism for example, the people that actually become buddhas are 
 
 ## Related Programs
 
-### [Knowledge](/unlock-your-potential/programs?filters=knowledge)
-
-- Coming Soon.
-
-### [Tools](/unlock-your-potential/programs?filters=tools)
-
-- Coming Soon.
-
-### [Community](/unlock-your-potential/programs?filters=community)
-
-- Co-x3 Retreats
+<ButtonLink to="/unlock-your-potential/programs?tags=pain">See all programs related to Pain</ButtonLink>
 
 ## References
 
