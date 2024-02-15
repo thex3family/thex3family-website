@@ -30,9 +30,17 @@ There is no standard time it takes to go through each stage - it depends on the 
 | **Examples**             | "How could they do this to me!"                     | "That probably wasn't the best way to handle it but it was justified." |  "Maybe it isn't as I thought it was."                                       | "What can I do to move forward?"                                                |
 | **Helpful Questions**    | How do I protect myself?                                  | How do I feel about the situation?                                          | How did I get into this situation?             | What are some things I can do?            |
 
+## How Can I Apply This Model?
 
+In our search for support during challenging emotional times, we often face the dilemma of not having someone to confide in. Our loved ones, though well-meaning, may lack the necessary emotional bandwidth or be too personally involved to offer the impartial support we need. We often find that they may ask us questions that we're not ready to answer, or make statements that seem dismissive of our reality.
 
-## 1. Avoidance
+So, recognizing that gap, we've created "Talk It Out", a compassionate AI companion designed to help you process your emotions.
+
+<ButtonLink to="/unlock-your-potential/programs/talk-it-out">Check It Out</ButtonLink>
+
+If you want to learn about each A in more detail, read on below.
+
+### 1. Avoidance
 
 In the Avoidance stage, there's a marked unwillingness to engage with the situation, often accompanied by reactive behavior. This stage is characterized by statements like "I don't know why, it just is," leading to feelings of victimization.
 
@@ -42,7 +50,7 @@ Most likely we won't be talking about our experience while we're still triggered
 
 _In this stage, its important to get time and space away from the perceived trigger and start sitting with our feelings._
 
-## 2. Awareness
+### 2. Awareness
 
 During Awareness, we start recognizing our emotional responses to the situation, often focusing on ourselves and still feeling negative about the situation.
 
@@ -52,7 +60,7 @@ It's very common for loved ones to try to solve our problem once they feel like 
 
 _In this stage, you're more likely to seek [knowledge](/unlock-your-potential/programs?filters=knowledge) that understand and process your emotions._
 
-## 3. Acceptance
+### 3. Acceptance
 
 Acceptance involves recognizing that our initial reactions might not be the most constructive and developing empathy for others involved. We have a willingness to change, though often with hesitancy because we are not sure what is the right way to tackle the situation without re-igniting the tension.
 
@@ -62,7 +70,7 @@ The most important thing a loved one can do here is to allow you to tell your st
 
 _In this stage, its useful to use [tools](/unlock-your-potential/programs?filters=tools) to help you to apply new perspectives to the situation._
 
-## 4. Action
+### 4. Action
 
 The Action stage is where we're ready to seek and accept advice, showing openness to solutions and different viewpoints. This stage is characterized by a preference for relatable advice and an active effort to apply learnings. 
 
