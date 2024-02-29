@@ -1,5 +1,5 @@
 ---
-title: "Perspective 3: Control"
+title: "Perspective 3: Winning"
 description: No one else is going to take care of me better than me, so I need to make sure I get what I want.
 author: Conrad Lin
 tags: ["understand yourself", "guide", "students", "creatives"]
@@ -16,7 +16,7 @@ lang: en
 
 ## Introduction
 
-Imagine a world where everyone is playing their own game, trying to win in their own way. That's kind of what life feels like from the 'Control' perspective. It's like being in a big, exciting game where the goal is to look out for ourselves and make the best moves to win. We believe that we need to be our own heroes, and even when others help us, we see it as a win for us.
+Imagine a world where everyone is playing their own game, trying to win in their own way. That's kind of what life feels like from the 'Winning' perspective. It's like being in a big, exciting game where the goal is to look out for ourselves and make the best moves to win. We believe that we need to be our own heroes, and even when others help us, we see it as a win for us.
 
 ## How This Perspective Develops
 
@@ -24,9 +24,9 @@ We start feeling this way when our basic needs – like food and a safe place to
 
 ## Historical Context
 
-The 'Control' perspective can be linked back to mythic, feudal, and exploitative empires that emerged around 10,000 years ago. This era was characterized by a social structure where the pursuit of personal ambitions and desires was paramount. The primary focus was on doing what one wants, taking what one desires, and getting one's way by any means necessary. It was an age where climbing the ranks of power was the mentality of many.
+The 'Winning' perspective can be linked back to mythic, feudal, and exploitative empires that emerged around 10,000 years ago. This era was characterized by a social structure where the pursuit of personal ambitions and desires was paramount. The primary focus was on doing what one wants, taking what one desires, and getting one's way by any means necessary. It was an age where climbing the ranks of power was the mentality of many.
 
-The goal during this time was to obtain power and glory, often to the extent of being worshiped as a hero. Strategies to achieve this varied: aligning oneself with the powers that be when necessary and taking what was wanted by brute force when possible. This period exemplifies the 'Control' perspective, where individuals sought to exert their will and influence over others to achieve their objectives. It showcases the historical roots of our desire for control and power, and how this perspective has been a driving force in shaping societies and cultures throughout human history.
+The goal during this time was to obtain power and glory, often to the extent of being worshiped as a hero. Strategies to achieve this varied: aligning oneself with the powers that be when necessary and taking what was wanted by brute force when possible. This period exemplifies the 'Winning' perspective, where individuals sought to exert their will and influence over others to achieve their objectives. It showcases the historical roots of our desire for winning and power, and how this perspective has been a driving force in shaping societies and cultures throughout human history.
 
 ## Strengths and Challenges
 
@@ -42,6 +42,6 @@ Establish what game you're playing so that you can be clear about what you want 
 
 ## Is It Time To Level Up?
 
-If you're getting what you want, that's awesome! You might start wondering, though, if there's more to life. Maybe you're looking for more meaning, or you find that being part of a group makes life better. If that's how you feel, exploring the ['Belong' perspective](/unlock-your-potential/programs/guide-4) might be your next step.
+If you're getting what you want, that's awesome! You might start wondering, though, if there's more to life. Maybe you're looking for more meaning, or you find that being part of a group makes life better. If that's how you feel, exploring the ['Belonging' perspective](/unlock-your-potential/programs/guide-4) might be your next step.
 
 If things aren't going your way, don't worry. Sometimes, trying to do everything alone doesn't work out. In these times, finding like-minded people can be the key to success. The ['Belong' perspective](/unlock-your-potential/programs/guide-4) can also help here.

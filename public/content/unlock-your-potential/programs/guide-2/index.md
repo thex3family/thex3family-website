@@ -1,5 +1,5 @@
 ---
-title: "Perspective 2: Connect"
+title: "Perspective 2: Dependency"
 description: I need to please others so they give me what I need to survive.
 author: Conrad Lin
 tags: ["understand yourself", "guide"]
@@ -16,17 +16,17 @@ lang: en
 
 ## Introduction
 
-When we step into the world of the 'Connect' perspective, we become acutely aware that others around us – people, animals, and even nature – have their senses, desires, and feelings, much like our own. We start to perceive and respond to these feelings, sometimes even mistaking them as our own. 
+When we step into the world of the 'Dependency' perspective, we become acutely aware that others around us – people, animals, and even nature – have their senses, desires, and feelings, much like our own. We start to perceive and respond to these feelings, sometimes even mistaking them as our own. 
 
 This perspective is underpinned by the belief that life is about pleasing others, from the people in our lives to larger entities like nature or the divine, in order to receive what we need in return.
 
 ## How This Perspective Develops
 
-This perspective develops as we become more aware of the world around us and start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interconnected web of relationships, where our actions can affect others and their reactions can affect us. It's a shift from focusing solely on our own self for survival to understanding how we can thrive with a larger community or ecosystem.
+This perspective develops as we become more aware of the world around us and start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interdependencyed web of relationships, where our actions can affect others and their reactions can affect us. It's a shift from focusing solely on our own self for survival to understanding how we can thrive with a larger community or ecosystem.
 
 ## Historical Context
 
-The foundations of the 'Connect' perspective can be traced back to the tribal order established around 50,000 years ago. During this era, the focus was primarily on keeping the group safe and happy, while also seeking to please the gods.
+The foundations of the 'Dependency' perspective can be traced back to the tribal order established around 50,000 years ago. During this era, the focus was primarily on keeping the group safe and happy, while also seeking to please the gods.
 
 The goal was to ensure safety and security, maintaining functional habits and dependable practices that benefitted the group. This was achieved by preserving tribal traditions and engaging in rituals to petition the gods for favors.
 
@@ -34,7 +34,7 @@ A vivid example is found in the rituals of the Incas, who historically offered v
 
 ## Strengths and Challenges
 
-A major strength of this perspective lies in our ability to navigate others' emotions to meet our needs. We're particularly effective when these emotions are familiar to us, allowing us to empathize and connect deeply.
+A major strength of this perspective lies in our ability to navigate others' emotions to meet our needs. We're particularly effective when these emotions are familiar to us, allowing us to empathize and dependency deeply.
 
 However, challenges arise when we encounter emotions or reactions different from our own. Misunderstandings can occur, leading to unmet needs or misaligned actions. The key challenge is in accurately interpreting and responding to the varied emotional landscapes of those around us.
 
@@ -46,6 +46,6 @@ In such situations, knowing the tricks of communication is key to be able to spe
 
 ## Is It Time To Level Up?
 
-If you have satisfied all your basic needs from yourself and others and are now pursuing your wants in life, you're ready to go to the ['Control' perspective](/unlock-your-potential/programs/guide-3). 
+If you have satisfied all your basic needs from yourself and others and are now pursuing your wants in life, you're ready to go to the ['Winning' perspective](/unlock-your-potential/programs/guide-3). 
 
 What you'll find is that while your tribe might be willing to support your survival needs for their own survival, most people are not here to satisfy your wants and thus you're going to need to pursue it yourself.

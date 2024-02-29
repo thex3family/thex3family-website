@@ -1,5 +1,5 @@
 ---
-title: "Perspective 6: Let Go"
+title: "Perspective 6: Letting Go"
 description: I am aware that systems don't work on everyone. It might be better if there was no structure.
 author: Conrad Lin
 tags: ["understand yourself", "guide", "students", "creatives", "retirees"]
@@ -16,15 +16,15 @@ lang: en
 
 ## Introduction
 
-The 'Let Go' perspective is all about valuing each person's uniqueness and advocating for the freedom to live authentically. We challenge the conventional rules and structures of society that often restrict genuine self-expression. It's a belief in the importance of individual experiences, where no one should impose their views on others. We envision a world of peace and acceptance, where differences are not just tolerated but celebrated.
+The 'Letting Go' perspective is all about valuing each person's uniqueness and advocating for the freedom to live authentically. We challenge the conventional rules and structures of society that often restrict genuine self-expression. It's a belief in the importance of individual experiences, where no one should impose their views on others. We envision a world of peace and acceptance, where differences are not just tolerated but celebrated.
 
 ## How This Perspective Develops
 
-This perspective arises from an awareness that traditional rules and systems may not always accommodate the diverse needs and desires of individuals. It's a realization that diversity is not a deviation but a natural part of human life. The 'Let Go' perspective flourishes when we understand that freedom and respect for individual choices are essential for a harmonious society.
+This perspective arises from an awareness that traditional rules and systems may not always accommodate the diverse needs and desires of individuals. It's a realization that diversity is not a deviation but a natural part of human life. The 'Letting Go' perspective flourishes when we understand that freedom and respect for individual choices are essential for a harmonious society.
 
 ## Historical Context
 
-The 'Let Go' perspective has its roots in social democracies, beginning in the 1800s. This era saw a shift towards inner peace, the expansion of care for others, and the advocacy of human rights. It was marked by a mentality of radical inclusiveness, aiming for consensus, effective communication, and mutually beneficial relations.
+The 'Letting Go' perspective has its roots in social democracies, beginning in the 1800s. This era saw a shift towards inner peace, the expansion of care for others, and the advocacy of human rights. It was marked by a mentality of radical inclusiveness, aiming for consensus, effective communication, and mutually beneficial relations.
 
 The methods were inclusive, giving voice to the powerless, emphasizing group needs, and working to eliminate marginalization. However, this period also witnessed challenges such as inauthenticity, lack of discernment, overemphasis on consensus, and sometimes narcissistic behaviors.
 
@@ -40,6 +40,6 @@ To realize our full potential in this perspective, it's crucial to embrace mindf
 
 ## Is It Time To Level Up?
 
-In this perspective, its easy to accidently be too inclusive and forego our own boundaries, leaving us feeling raw and used. If you're feeling this way, the ['Boundaries' perspective](/unlock-your-potential/programs/guide-7) might be your next step.
+In this perspective, its easy to accidently be too inclusive and forego our own boundaries, leaving us feeling raw and used. If you're feeling this way, the ['Setting Boundaries' perspective](/unlock-your-potential/programs/guide-7) might be your next step.
 
 However, if you are not financially secure, setting boundaries can be difficult. It may be better to temporarily think in a ['Systems' perspective](/unlock-your-potential/programs/guide-5) to ensure you can sustain yourself so you don't have to bend to others' will to secure your wants and can walk away when necessary.

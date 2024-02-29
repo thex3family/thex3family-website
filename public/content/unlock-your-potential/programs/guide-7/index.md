@@ -1,5 +1,5 @@
 ---
-title: "Perspective 7: Boundaries"
+title: "Perspective 7: Setting Boundaries"
 description: I accept that people should be free to be themselves, but I need to protect myself from having my boundaries crossed.
 author: Conrad Lin
 tags: ["understand yourself", "guide", "retirees"]
@@ -16,7 +16,7 @@ lang: en
 
 ## Introduction
 
-Embracing the 'Boundaries' perspective means we value the unique tapestry of who we are while navigating the complexities of human interactions. We champion the freedom of individual expression but also acknowledge the necessity of structure for personal well-being. As we change and grow, so do our boundaries, reflecting our evolving needs and beliefs. Setting boundaries is an act of self-respect and wisdom, ensuring that our interactions are beneficial and that we occasionally say 'no' as an affirmation of our values.
+Embracing the 'Setting Boundaries' perspective means we value the unique tapestry of who we are while navigating the complexities of human interactions. We champion the freedom of individual expression but also acknowledge the necessity of structure for personal well-being. As we change and grow, so do our boundaries, reflecting our evolving needs and beliefs. Setting boundaries is an act of self-respect and wisdom, ensuring that our interactions are beneficial and that we occasionally say 'no' as an affirmation of our values.
 
 ## How This Perspective Develops
 
@@ -24,7 +24,7 @@ We cultivate this perspective as we mature in our understanding that respect for
 
 ## Historical Context
 
-The 'Boundaries' perspective gained prominence in the world-centered social web of the mid-1900s, a period focused on authentic self-expression and the harmonization of internal and external worlds. This era encouraged us to develop our innate potential while acknowledging the collective needs, yet it also confronted us with the challenges of realizing our full selves, navigating existential dilemmas, and the dangers of superficial conformity.
+The 'Setting Boundaries' perspective gained prominence in the world-centered social web of the mid-1900s, a period focused on authentic self-expression and the harmonization of internal and external worlds. This era encouraged us to develop our innate potential while acknowledging the collective needs, yet it also confronted us with the challenges of realizing our full selves, navigating existential dilemmas, and the dangers of superficial conformity.
 
 ## Strengths and Challenges
 
@@ -40,4 +40,4 @@ We unlock our potential when we learn to set and respect boundaries that foster 
 
 If you find yourself frustrated by those who struggle to respect your boundaries, especially those close to you, consider exploring the ['Curiosity' perspective](/unlock-your-potential/programs/guide-8). This shift can provide the patience and understanding needed to navigate complex personal dynamics.
 
-If you're not ready to understand their perspective, consider going to the ['Let Go' perspective](/unlock-your-potential/programs/guide-6), instead.
+If you're not ready to understand their perspective, consider going to the ['Letting Go' perspective](/unlock-your-potential/programs/guide-6), instead.

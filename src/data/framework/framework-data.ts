@@ -158,7 +158,7 @@ const frameworkData: FrameworkData[] = [
     perspective_4_option_9: false,
   },
   {
-    last_updated: "Jan 15 2024",
+    last_updated: "Feb 29 2024",
     name: "3",
     est_population: 92,
     image: three,
@@ -354,7 +354,7 @@ const frameworkData: FrameworkData[] = [
     perspective_4_option_9: false,
   },
   {
-    last_updated: "Jan 15 2024",
+    last_updated: "Feb 29 2024",
     name: "7",
     est_population: 5,
     image: seven,
