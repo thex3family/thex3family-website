@@ -1,6 +1,6 @@
 ---
 title: "Level Up Podcast"
-description: Conversations to help us level up that we wish we had a decade ago.
+description: Empathetic onversations to help us level up that we wish we had a decade ago.
 author: Conrad Lin
 tags: ["level up podcast", "1-on-1"]
 programType: knowledge
@@ -27,10 +27,12 @@ We distribute these podcast episodes through all major podcast platforms (Spotif
 
 - @ The Level Up Podcast 
 
+![Image](./thumbnail.png)
+
 As well as clips on our various social media channels:
 
 - @ The Co-x3 Family Foundation
 
 Explore our comprehensive collection of podcasts all in one place here: [Level Up Podcast](/unlock-your-potential/programs?tags=level%20up%20podcast).
 
-**Be A Guest:** If you want to be on our next episode, reach out to us in the community to let us know.
+**Be A Guest:** If you want to be on our next episode, fill out this [form](https://thex3family.larksuite.com/share/base/form/shrusYAQsZBndhseIOk3lk0Couc).

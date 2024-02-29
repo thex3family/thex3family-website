@@ -24,7 +24,7 @@ Your potential is limitless with unlimited access to knowledge to help you level
 
 Get a front row seat to the transformations we are creating. You'll have the unique advantage of experiencing our programs from the inside, seeing firsthand how we create a lasting impact. 
 
-[Be Your Best Self](/unlock-your-potential)
+<ButtonLink to="/unlock-your-potential">Be Your Best Self</ButtonLink>
 
 ## Make Positive Impact
 
@@ -32,4 +32,4 @@ Better yet, the best way to learn is to teach. As you learn, share your perspect
 
 Once you feel like you are ready, join us in doing good.
 
-[Change The World With Us](/make-positive-impact)
+<ButtonLink to="/make-positive-impact">Change The World With Us</ButtonLink>
