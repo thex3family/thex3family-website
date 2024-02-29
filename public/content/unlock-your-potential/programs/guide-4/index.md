@@ -1,5 +1,5 @@
 ---
-title: "Perspective 4: Belong"
+title: "Perspective 4: Belonging"
 description: I found what what works for me and my tribe, and everyone should do it too.
 author: Conrad Lin
 tags: ["understand yourself", "guide", "students", "creatives", "retirees"]
@@ -16,15 +16,15 @@ lang: en
 
 ## Introduction
 
-The 'Belong' perspective centers on the idea that life is not just about our individual experiences but about being part of something bigger. It's where we find meaning in shared values and beliefs, understanding what's good and bad, and striving to do the right thing for the common good. This perspective emphasizes ensuring others also adhere to these shared principles and values.
+The 'Belonging' perspective centers on the idea that life is not just about our individual experiences but about being part of something bigger. It's where we find meaning in shared values and beliefs, understanding what's good and bad, and striving to do the right thing for the common good. This perspective emphasizes ensuring others also adhere to these shared principles and values.
 
 ## How This Perspective Develops
 
-The 'Belong' perspective evolves when we realize that individual actions and selfishness can lead to discord, or when we find a community that helps us get what we want. It emerges from the understanding that following agreed-upon rules and standards is vital for maintaining harmony and order. This perspective is nurtured by the belief that collective well-being hinges on everyone doing their part and upholding shared values.
+The 'Belonging' perspective evolves when we realize that individual actions and selfishness can lead to discord, or when we find a community that helps us get what we want. It emerges from the understanding that following agreed-upon rules and standards is vital for maintaining harmony and order. This perspective is nurtured by the belief that collective well-being hinges on everyone doing their part and upholding shared values.
 
 ## Historical Context
 
-The historical roots of the 'Belong' perspective can be traced to late mythic empires, nation-states, and religious orders, around 5,000 years old. During these times, the focus was on finding purpose, direction, and ultimate meaning. People believed in doing what was right to achieve good outcomes, with a goal of finding or earning ultimate peace, and winning the battle of good versus evil.
+The historical roots of the 'Belonging' perspective can be traced to late mythic empires, nation-states, and religious orders, around 5,000 years old. During these times, the focus was on finding purpose, direction, and ultimate meaning. People believed in doing what was right to achieve good outcomes, with a goal of finding or earning ultimate peace, and winning the battle of good versus evil.
 
 Methods included strict adherence to rules, not stepping out of line, and controlling oneself and others through faith and discipline. This era also witnessed pathologies like over-identification with roles, fundamentalism, and fascism, reflecting the intense commitment to shared beliefs and practices.
 

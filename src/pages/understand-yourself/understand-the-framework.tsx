@@ -112,7 +112,7 @@ const FindWalletPage = () => {
   
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": February 29, 2024", // This should be dynamic based on your data
     title: t("common:understand-the-framework-title"),
     description: t("common:understand-the-framework-description")
       .split('.')

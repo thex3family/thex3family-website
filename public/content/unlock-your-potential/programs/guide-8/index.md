@@ -42,4 +42,4 @@ Learn how to ask good questions that will create a safe space for others to shar
 
 At the beginning, you'll be asking questions out of curiosity, to figure out why others seem to be so keen on doing things differently than you. As you continue questioning, you may discover that you love the way that others are approaching life, even if you don't see yourself living that way. If you achieve this realization, you are ready for the ['Empathy' perspective](/unlock-your-potential/programs/guide-9).
 
-If you find that you're not able to ask the right questions, but still need to protect yourself, switch to the ['Boundaries' perspective](/unlock-your-potential/programs/guide-8) for self-preservation.
+If you find that you're not able to ask the right questions, but still need to protect yourself, switch to the ['Setting Boundaries' perspective](/unlock-your-potential/programs/guide-8) for self-preservation.
