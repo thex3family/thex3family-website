@@ -12,7 +12,11 @@ We at the Co-x3 Family Foundation are always eager to hear from you. If you are 
 
 ### General Inquiries
 
-For any questions, suggestions, or feedback, reach out to us at [support@x3.family](mailto:support@x3.family). We're always here to help and learn from your experiences.
+For any questions, suggestions, or feedback, reach out to us at [contact@x3.family](mailto:contact@x3.family). We're always here to help and learn from your experiences.
+
+### Support
+
+If you need assistance with any of our programs or services, please reach out to us at [support@x3.family](mailto:support@x3.family). We're always looking for more ways to be helpful!
 
 ### Partnerships
 
@@ -20,7 +24,7 @@ Keen on collaborating with us? We're excited about partnerships that align with 
 
 ### Careers
 
-Join our mission! If you're looking to make a meaningful impact, check out our current openings [here](/make-positive-impact/contribute). To propose a unique role or inquire about career opportunities, email us at [careers@x3.family](mailto:careers@x3.family).
+Join our mission! If you're looking to make a meaningful impact, check out our current openings [here](/make-positive-impact/collaborate). To propose a unique role or inquire about career opportunities, email us at [careers@x3.family](mailto:careers@x3.family).
 
 ### Donor Relations
 
