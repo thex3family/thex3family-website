@@ -14,6 +14,7 @@ import {
   DrawerHeader,
   DrawerOverlay,
   Flex,
+  Heading,
   Hide,
   Show,
   Text,
@@ -24,7 +25,7 @@ import {
 import { BasePageProps, ChildOnlyProp } from "@/lib/types"
 
 import BannerNotification from "@/components/BannerNotification"
-import { Button } from "@/components/Buttons"
+import { Button, ButtonLink } from "@/components/Buttons"
 import FrameworkFilterSidebar from "@/components/Framework/FrameworkFilterSidebar"
 import FrameworkTable from "@/components/Framework/FrameworkTable"
 import { FilterBurgerIcon } from "@/components/icons/FilterBurgerIcon"
@@ -43,7 +44,11 @@ import frameworkData from "@/data/framework/framework-data"
 
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
-import understand_the_framework from "@/public/understand_the_framework.png"
+import better_life_framework from "@/public/better_life_framework.png"
+import Modal from "@/components/Modal"
+import FrameworkActionCard from "@/components/ActionCard/RichActionCard"
+import YouTube from "@/components/YouTube"
+import SearchBar from "@/components/SearchBar"
 
 const Subtitle = ({ children }: ChildOnlyProp) => (
   <Text
@@ -66,7 +71,7 @@ export const getStaticProps = (async ({ locale }) => {
   const lastDeployDate = getLastDeployDate()
 
   const requiredNamespaces = getRequiredNamespacesForPage(
-    "/understand-yourself/understand-the-framework"
+    "/understand-yourself/better-life-framework"
   )
 
   const contentNotTranslated = !existsNamespace(locale!, requiredNamespaces[1])
@@ -80,11 +85,11 @@ export const getStaticProps = (async ({ locale }) => {
   }
 }) satisfies GetStaticProps<BasePageProps>
 
-const FindWalletPage = () => {
+const BetterLifeFrameworkPage = () => {
   const { pathname } = useRouter()
   const theme = useTheme()
-  const { t } = useTranslation(["page-understand-the-framework", "common"])
-  const resetFrameworkFilter = useRef(() => {})
+  const { t } = useTranslation(["page-better-life-framework", "common"])
+  const resetFrameworkFilter = useRef(() => { })
   const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure()
   const [filters, setFilters] = useState(filterDefault)
   const [selectedPersona, setSelectedPersona] = useState(NaN)
@@ -109,31 +114,50 @@ const FindWalletPage = () => {
     setSelectedPersona(NaN)
     setFilters(filterDefault)
   }
-  
+
   const heroProps = {
     pathname,
     lastUpdated: t("common:page-last-updated") + ": February 29, 2024", // This should be dynamic based on your data
-    title: t("common:understand-the-framework-title"),
-    description: t("common:understand-the-framework-description")
+    title: t("common:better-life-framework-title"),
+    description: t("common:better-life-framework-description")
       .split('.')
       .filter(sentence => sentence.trim() !== '')
       .map(sentence => `${sentence.trim()}.`),
-    imageSrc: understand_the_framework.src, // Assuming understand_yourself is an imported image module
-    imageAlt: t("common:understand-the-framework-image-alt"),
+    imageSrc: better_life_framework.src, // Assuming understand_yourself is an imported image module
+    imageAlt: t("common:better-life-framework-image-alt"),
   };
 
   return (
     <Flex as={MainArticle} direction="column" position="relative" w="full">
       <PageMetadata
-        title={t("common:understand-the-framework-title")}
-        description={t("common:understand-the-framework-description")}
+        title={t("common:better-life-framework-title")}
+        description={t("common:better-life-framework-description")}
       />
 
       <BannerNotification shouldShow={true}>
-        {t("common:understand-the-framework-alert")}
+        {t("common:better-life-framework-alert")}
       </BannerNotification>
-
-      <MainHero {...heroProps} />
+      <MainHero {...heroProps}>
+        <Flex
+          borderWidth="1px"
+          borderStyle="solid"
+          borderColor="border"
+          borderRadius="xl"
+          p={4}
+          flexDirection="column"
+          w="full"
+          justifyContent="space-between"
+          mt={2}
+          mb={{ base: 2, md: 6 }}
+          ms={0}
+          me={{ base: 0, md: 2 }}
+        >
+          <Text mb="10px" fontWeight="600">
+            {t("common:better-life-framework-CTA-title")}
+          </Text>
+          <SearchBar t={t} variant="button" />
+        </Flex>
+      </MainHero>
 
       {/* <Flex
         direction={{ base: "column-reverse", sm: "row" }}
@@ -244,7 +268,7 @@ const FindWalletPage = () => {
         </Drawer>
       </Hide>
 
-      <Flex px={{ base: 0, md: 8 }} pt={4} pb={6} gap={6} mt={6} id="start"> 
+      <Flex px={{ base: 0, md: 8 }} pt={4} pb={6} gap={6} mt={6} id="start">
         <Show above="lg">
           <FrameworkFilterSidebar
             w="full"
@@ -292,4 +316,4 @@ const FindWalletPage = () => {
   )
 }
 
-export default FindWalletPage
+export default BetterLifeFrameworkPage

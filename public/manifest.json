@@ -1,6 +1,6 @@
 {
-  "short_name": "the.x3.family",
-  "name": "the.x3.family",
+  "short_name": "The Co-x3 Family Foundation",
+  "name": "The Co-x3 Family Foundation",
   "icons": [
     {
       "src": "/assets/manifest-app-icon.svg",
@@ -29,7 +29,7 @@
       "name": "The Better Life Framework",
       "short_name": "The Better Life Framework",
       "description": "Get a deeper understanding of yourself and others.",
-      "url": "/understand-yourself/understand-the-framework",
+      "url": "/understand-yourself/better-life-framework",
       "icons": [
         {
           "src": "/assets/manifest-app-icon-192.png",

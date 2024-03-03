@@ -19,7 +19,7 @@ export const FrameworkMoreInfo = ({
   idx,
   featureDropdownItems,
 }: FrameworkMoreInfoProps) => {
-  const { t } = useTranslation("page-understand-the-framework")
+  const { t } = useTranslation("page-better-life-framework")
 
   return (
     <Box>
@@ -52,10 +52,10 @@ export const FrameworkMoreInfo = ({
                 eventValue: JSON.stringify(filters),
               }}
             >
-              {t("page-understand-the-framework-check-out")} {t(`page-understand-the-framework-level-${framework.name}-title`)}
+              {t("page-better-life-framework-check-out")} {t(`page-better-life-framework-level-${framework.name}-title`)}
             </ButtonLink>
             <Text>
-              {`${t("page-understand-the-framework-info-updated-on")} ${framework.last_updated
+              {`${t("page-better-life-framework-info-updated-on")} ${framework.last_updated
                 }.`}
             </Text>
           </VStack>

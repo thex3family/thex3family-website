@@ -166,7 +166,7 @@ const paths: Array<IDevelopersPath> = [
     emoji: ":scroll:",
     title: <Translation id="common:understand-yourself-title" />,
     description: <Translation id="common:understand-yourself-description" />,
-    url: "/understand-yourself/understand-the-framework/",
+    url: "/understand-yourself/better-life-framework/",
     button: <Translation id="common:get-started" />,
   },
   {

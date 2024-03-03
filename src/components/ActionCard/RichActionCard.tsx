@@ -11,9 +11,12 @@ import { ButtonLink } from "@/components/Buttons"
 import { Image } from "@/components/Image"
 
 import make_positive_impact from "@/public/make_positive_impact.png"
-import understand_the_framework from "@/public/understand_the_framework.png"
+import better_life_framework from "@/public/better_life_framework.png"
 import understand_yourself from "@/public/understand_yourself.png"
 import unlock_your_potential from "@/public/unlock_your_potential.png"
+import the_4a_model_of_understanding from "@/public/4a_model_of_understanding.png"
+import evolution_of_wants from "@/public/evolution_of_wants.png"
+
 
 interface IProps {
   to: string
@@ -24,7 +27,7 @@ interface IProps {
   buttonText: string
 }
 
-const FrameworkActionCard: React.FC<IProps> = ({
+const RichActionCard: React.FC<IProps> = ({
   to,
   alt,
   image,
@@ -34,9 +37,11 @@ const FrameworkActionCard: React.FC<IProps> = ({
 }) => {
   const images = {
     understand_yourself,
-    understand_the_framework,
+    better_life_framework,
     unlock_your_potential,
     make_positive_impact,
+    the_4a_model_of_understanding,
+    evolution_of_wants
   }
   const imgSrc = images[image] ?? images.understand_yourself
 
@@ -63,4 +68,4 @@ const FrameworkActionCard: React.FC<IProps> = ({
   )
 }
 
-export default FrameworkActionCard
+export default RichActionCard

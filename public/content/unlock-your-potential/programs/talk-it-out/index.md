@@ -19,7 +19,7 @@ Recognizing this gap, we created "Talk It Out" – a sanctuary for emotional exp
 
 ## What Does it Do?
 
-"Talk It Out" is a compassionate AI companion designed to help you process your emotions, by embodying the best practices of the [Co-x3 Family Foundation's 4A Model of Understanding](/understand-yourself/the-4a-model). The chatbot provides a:
+"Talk It Out" is a compassionate AI companion designed to help you process your emotions, by embodying the best practices of the [Co-x3 Family Foundation's 4A Model of Understanding](/understand-yourself/4a-model-of-understanding). The chatbot provides a:
 
 - **Guided Emotional Journey:** Utilizing the 4A Model (Avoidance, Awareness, Acceptance, Action), the chatbot escorts you through a structured emotional healing process.
 - **Empathetic Interaction:** Maintaining a supportive and empathetic tone, it creates a safe space for you to freely express your feelings and thoughts.
@@ -27,7 +27,7 @@ Recognizing this gap, we created "Talk It Out" – a sanctuary for emotional exp
 
 ## How Does It Work?
 
-Anyone who has a paid subscription to ChatGPT plus automatically gets access. 
+Anyone who has a paid membership to ChatGPT plus automatically gets access. 
 https://co-x3.com/talk-it-out
 
 For an immersive conversational experience, try using voice chat with the bot. It adds a conversational dynamic, enhancing the feeling of a real dialogue. To fully benefit from this program, we recommend:

@@ -29,7 +29,7 @@ export const useFrameworkFilterFeature = ({
   resetFrameworkFilter,
   filters,
   updateFilterOptions,}) => {
-  const { t } = useTranslation(["page-programs", "page-understand-the-framework"])
+  const { t } = useTranslation(["page-programs", "page-better-life-framework"])
   const { featureDropdownItems, perspectiveDropdownItems } = ProgramsDropdownItems({ t });
 
   const [filterOptions, setFilterOptions] = useState<FilterOptionType[]>(perspectiveDropdownItems.map((perspectiveItem) => ({

@@ -24,19 +24,19 @@ interface Personas {
 }
 
 export const useFrameworkFilterProfile = () => {
-  const { t } = useTranslation("page-understand-the-framework")
+  const { t } = useTranslation("page-better-life-framework")
 
   const filterLabels = {
     one: {
-      label: t("page-understand-the-framework-perspective-1-option-1-title"),
+      label: t("page-better-life-framework-perspective-1-option-1-title"),
       icon: <BulletPointIcon />,
     },
   }
 
   const personas: Personas[] = [
     {
-      title: t("page-understand-the-framework-profile-1-title"),
-      description: t("page-understand-the-framework-profile-1-description"),
+      title: t("page-better-life-framework-profile-1-title"),
+      description: t("page-better-life-framework-profile-1-description"),
       featureHighlight: [
         // filterLabels.one,
       ],
@@ -53,8 +53,8 @@ export const useFrameworkFilterProfile = () => {
       },
     },
     {
-      title: t("page-understand-the-framework-profile-2-title"),
-      description: t("page-understand-the-framework-profile-2-description"),
+      title: t("page-better-life-framework-profile-2-title"),
+      description: t("page-better-life-framework-profile-2-description"),
       featureHighlight: [
         // filterLabels.one,
       ],
@@ -71,8 +71,8 @@ export const useFrameworkFilterProfile = () => {
       },
     },
     {
-      title: t("page-understand-the-framework-profile-3-title"),
-      description: t("page-understand-the-framework-profile-3-description"),
+      title: t("page-better-life-framework-profile-3-title"),
+      description: t("page-better-life-framework-profile-3-description"),
       featureHighlight: 
         [
           // filterLabels.one,
@@ -90,8 +90,8 @@ export const useFrameworkFilterProfile = () => {
       },
     },
     {
-      title: t("page-understand-the-framework-profile-4-title"),
-      description: t("page-understand-the-framework-profile-4-description"),
+      title: t("page-better-life-framework-profile-4-title"),
+      description: t("page-better-life-framework-profile-4-description"),
       featureHighlight: 
         [
           // filterLabels.one,
@@ -109,8 +109,8 @@ export const useFrameworkFilterProfile = () => {
       },
     },
     {
-      title: t("page-understand-the-framework-profile-5-title"),
-      description: t("page-understand-the-framework-profile-5-description"),
+      title: t("page-better-life-framework-profile-5-title"),
+      description: t("page-better-life-framework-profile-5-description"),
       featureHighlight: 
         [
           // filterLabels.one,

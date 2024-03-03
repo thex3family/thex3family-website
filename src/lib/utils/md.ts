@@ -27,7 +27,8 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
   const temporalAllowedPages = [
     // understand-yourself
     "/understand-yourself",
-    "/understand-yourself/the-4a-model",
+    "/understand-yourself/4a-model-of-understanding",
+    "/understand-yourself/evolution-of-wants",
 
     // unlock-your-potential
 
@@ -64,7 +65,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     "/make-positive-impact",
 
       "/make-positive-impact/contribute",
-      "/make-positive-impact/contribute/subscription",
+      "/make-positive-impact/contribute/membership",
       "/make-positive-impact/contribute/glossary",
       "/make-positive-impact/contribute/quizzes",
       "/make-positive-impact/contribute/donate",

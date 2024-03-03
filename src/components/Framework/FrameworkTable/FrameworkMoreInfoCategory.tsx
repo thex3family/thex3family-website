@@ -15,7 +15,7 @@ interface FrameworkMoreInfoCategoryProps {
 export const FrameworkMoreInfoCategory = ({
   framework,
 }: FrameworkMoreInfoCategoryProps) => {
-  const { t } = useTranslation("page-understand-the-framework")
+  const { t } = useTranslation("page-better-life-framework")
 
   return (
     <Box width="full" mt={12} _first={{ mt: 2 }}>
@@ -54,7 +54,7 @@ export const FrameworkMoreInfoCategory = ({
           },
         }}
       >
-        <p>{t(`page-understand-the-framework-level-${framework.name}-unlock`)}</p>
+        <p>{t(`page-better-life-framework-level-${framework.name}-unlock`)}</p>
       </Flex>
     </Box>
   )

@@ -13,11 +13,12 @@ interface MainHeroProps {
     description: string[];
     imageSrc: string;
     imageAlt: string;
+    children?: React.ReactNode; 
   }
   
-  const MainHero: React.FC<MainHeroProps> = ({ pathname, lastUpdated, title, description, imageSrc, imageAlt }) => {
+  const MainHero: React.FC<MainHeroProps> = ({ pathname, lastUpdated, title, description, imageSrc, imageAlt, children }) => {
     return (
-      <Container>
+      <Container >
         <HeroContainer>
           <TitleCard>
             <Breadcrumbs slug={pathname} startDepth={0} mt={2} mb="8" />
@@ -28,6 +29,7 @@ interface MainHeroProps {
                   <SummaryPoint key={index}>{sentence}</SummaryPoint>
                 ))}
               </List>
+              {children}
             </Box>
             <LastUpdated>{lastUpdated}</LastUpdated>
           </TitleCard>

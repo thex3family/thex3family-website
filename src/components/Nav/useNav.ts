@@ -22,16 +22,20 @@ export const useNav = ({ path }: { path: string }) => {
       ariaLabel: t("understand-yourself-menu"),
       items: [
         {
-          text: t("better-life-framework-title"),
+          text: t("understand-yourself-secondary-title"),
           to: "/understand-yourself",
         },
         {
-          text: t("understand-the-framework-title"),
-          to: "/understand-yourself/understand-the-framework/",
+          text: t("better-life-framework-title"),
+          to: "/understand-yourself/better-life-framework/",
         },
         {
-          text: t("the-4a-model-title"),
-          to: "/understand-yourself/the-4a-model/",
+          text: t("4a-model-of-understanding-title"),
+          to: "/understand-yourself/4a-model-of-understanding",
+        },
+        {
+          text: t("evolution-of-wants-title"),
+          to: "/understand-yourself/evolution-of-wants/",
         },
         {
           text: t("test-your-understanding-title"),

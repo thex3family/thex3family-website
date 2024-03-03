@@ -32,7 +32,7 @@ export enum Skill {
 }
 
 export const getSkillTranslationId = (skill: Skill): TranslationKey =>
-  `page-understand-the-framework:page-understand-the-framework-level-${
+  `page-better-life-framework:page-better-life-framework-level-${
     Skill[skill.toUpperCase() as keyof typeof Skill]+'-title'
   }`
 

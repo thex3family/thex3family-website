@@ -82,7 +82,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
         textAlign="center"
         color="secondary"
       >
-        <Translation id="page-understand-the-framework:page-understand-the-framework-filters-description" />
+        <Translation id="page-better-life-framework:page-better-life-framework-filters-description" />
       </Box>
       {filterOptions.map((filterOption, idx) => {
         return (

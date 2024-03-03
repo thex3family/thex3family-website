@@ -12,9 +12,9 @@ interface DropdownItemsProps {
 const ProgramsDropdownItems = ({ t }: DropdownItemsProps) => {
   const featureDropdownItems: Array<DropdownOption> = [
     ...Array.from({ length: 9 }, (_, index) => ({
-        label: t(`page-understand-the-framework:page-understand-the-framework-level-${index + 1}-title`),
-        value: t(`page-understand-the-framework:page-understand-the-framework-level-${index + 1}-title`),
-        description: t(`page-understand-the-framework:page-understand-the-framework-level-${index + 1}-description`),
+        label: t(`page-better-life-framework:page-better-life-framework-level-${index + 1}-title`),
+        value: t(`page-better-life-framework:page-better-life-framework-level-${index + 1}-title`),
+        description: t(`page-better-life-framework:page-better-life-framework-level-${index + 1}-description`),
         filterKey: `LEVEL_${index + 1}`,
         category: "frameworkLevel",
         icon: BulletPointIcon,
@@ -47,8 +47,8 @@ const ProgramsDropdownItems = ({ t }: DropdownItemsProps) => {
 
   const perspectiveDropdownItems: Array<DropdownOption> = [
     {
-      label: t("page-understand-the-framework:page-understand-the-framework-perspective-filters"),
-      value: t("page-understand-the-framework:page-understand-the-framework-perspective-filters"),
+      label: t("page-better-life-framework:page-better-life-framework-perspective-filters"),
+      value: t("page-better-life-framework:page-better-life-framework-perspective-filters"),
       description: t("common:better-life-framework-description"),
       filterKey: "frameworkLevel",
       category: "frameworkLevel",

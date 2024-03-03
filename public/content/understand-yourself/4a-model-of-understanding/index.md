@@ -3,7 +3,7 @@ title: The 4A Model Of Understanding
 description: How and when are you ready to understand?
 lang: en
 template: main
-image: /understand_yourself.png
+image: /4a_model_of_understanding.png
 alt: 
 summaryPoint1: Encourages constructive questioning for personal growth.
 summaryPoint2: Avoidance > Awareness > Acceptance > Action.
@@ -30,11 +30,11 @@ There is no standard time it takes to go through each stage - it depends on the 
 | **Examples**             | "How could they do this to me!"                     | "That probably wasn't the best way to handle it but it was justified." |  "Maybe it isn't as I thought it was."                                       | "What can I do to move forward?"                                                |
 | **Helpful Questions**    | How do I protect myself?                                  | How do I feel about the situation?                                          | How did I get into this situation?             | What are some things I can do?            |
 
-## How Can I Apply This Model?
+## How Can I Apply This Into My Life?
 
 In our search for support during challenging emotional times, we often face the dilemma of not having someone to confide in. Our loved ones, though well-meaning, may lack the necessary emotional bandwidth or be too personally involved to offer the impartial support we need. We often find that they may ask us questions that we're not ready to answer, or make statements that seem dismissive of our reality.
 
-So, recognizing that gap, we've created "Talk It Out", a compassionate AI companion designed to help you process your emotions.
+So, recognizing that gap, we've created "Talk It Out", an AI companion designed to help you process your emotions.
 
 <ButtonLink to="/unlock-your-potential/programs/talk-it-out">Check It Out</ButtonLink>
 

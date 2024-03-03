@@ -31,7 +31,7 @@ export const useFrameworkFilterFeature = ({
   filters,
   updateFilterOptions,
 }: Omit<FrameworkFilterFeatureProps, "updateFilterOption">) => {
-  const { t } = useTranslation("page-understand-the-framework")
+  const { t } = useTranslation("page-better-life-framework")
 
   const { featureDropdownItems, perspectiveDropdownItems } = FrameworkDropdownItems({ t });
 

@@ -39,7 +39,7 @@ Your support as a donor goes beyond just funding; it's about opening doors for t
 
 ## The Co-x3 Family Scholarship
 
-For every $100 donated, you empower 10 individuals with 30 days of the [Co-x3 Subscription](/make-positive-impact/contribute/subscription), offering them a wealth of resources for personal growth.
+For every $100 donated, you empower 10 individuals with 30 days of the [Co-x3 Membership](/make-positive-impact/contribute/membership), offering them a wealth of resources for personal growth.
 
 As a supporter, you’ll receive regular updates, sharing the progress and achievements of the individuals you’ve helped. We also offer tiered benefits for regular supporters, recognizing and thanking you for your ongoing commitment.
 
@@ -52,7 +52,7 @@ All donations are tax-deductible, ensuring that your generosity is also benefici
 ---
 
 <InfoBanner shouldCenter emoji=":pray:">
-  "I can say without a doubt that it was the best decision of my year to learn about Co-x3 and benefit from the subscription. The resources that are provided are out of this world, and I am loving leveling up with the community." - Israel Parreira
+  "I can say without a doubt that it was the best decision of my year to learn about Co-x3 and benefit from the membership. The resources that are provided are out of this world, and I am loving leveling up with the community." - Israel Parreira
 </InfoBanner>
 
 ---

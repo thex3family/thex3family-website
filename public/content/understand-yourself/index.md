@@ -1,6 +1,6 @@
 ---
-title: The Better Life Framework
-description: Our comprehensive framework deepens your self-awareness and understanding of the world and is designed to ease frustrations and cultivate empathy towards oneself and others - leading you to impactful actions that help you live a better life.
+title: Our Philosophies
+description: Our philosophies deepens your self-awareness and understanding of the world and is designed to ease frustrations and cultivate empathy towards oneself and others - leading you to impactful actions that help you live a better life.
 lang: en
 template: main
 image: /understand_yourself.png
@@ -10,51 +10,83 @@ summaryPoint2: Ease frustrations and cultivate empathy towards oneself and other
 summaryPoint3: Take impactful actions that help you live a better life.
 ---
 
-## Why Create A Framework?
+## Why Develop A Philosophy?
 
-Understanding ourselves is a complex journey. We often grapple with our feelings and actions, leading to frustrations and misunderstandings when things don't go the way we want them too. And just when we think we've figured ourselves out, we encounter situations where other people act in ways we can't understand.
+Our founder, [Conrad](https://conradl.in), wanted to solve a problem that has troubled him since young. Understanding ourselves is a complex journey. We often grapple with our feelings and actions, leading to frustrations and misunderstandings when things don't go the way we want them too. And just when we think we've figured ourselves out, we encounter situations where other people act in ways we can't understand.
 
 Additionally, seeking personal growth through available resources (books, articles, podcast, etc.) often leads to a realization - they lack personalization. The content we consume might only partially resonate with us, and what we learn can take on new meanings as we gain different perspectives over time.
 
-### Challenges We Tackle
+### Challenges We're Solving
+
+<ExpandableCard title="One Size Doesn't Fit All, And That's OK 👟" eventCategory="/understand-yourself" eventName="clicked challenge 1">
+
+What works for one might not suit another. This can be disheartening, because we all strive to support and be supported effectively. We need to learn how to adapt our learnings so they can be readily absorbed by others.
+
+</ExpandableCard>
+
+<ExpandableCard title="What Worked May Not Keep Working 📉" eventCategory="/understand-yourself" eventName="clicked challenge 2">
+
+We always hope that we will discover a permanant 'life hack' that will transform our life. The reality is that as we level up, so do our needs and motivations. Our strategies need to evolve over time to stay relevant and effective.
+
+</ExpandableCard>
+
+<ExpandableCard title="We Feel Like We Are Wasting Our Time 🤯" eventCategory="/understand-yourself" eventName="clicked challenge 3">
+
+Understanding why certain knowledge, tools, or community resources don't align with our current selves can prevent feelings of wasted time and effort. This helps keep up our motivation to pursue our best selves.
+
+</ExpandableCard>
+
+## How Does A Philosophy Help Me?
+
+You don't need to feel so helpless. Your perception of the world is your reality, and our philosophies will help you figure out where you need to look in order to unlock your potential. Additionally, leveling up doesn't need to be by chance. Knowing your perspective will help you access relevant programs as you need them, minimizing frustrations and setbacks.
+
+<ExpandableCard title="Understand Why You Think The Way You Do" eventCategory="/understand-yourself" eventName="clicked solution 1" contentPreview="Understand how experiences shift your perspectives to leverage success from one area of life to another.">
+
+Some people seem to have the Midas touch, achieving success in varied fields, while others struggle to translate their accomplishments from one domain to another. The key difference lies in their understanding of the the fundamentals of how they became successful, and appropriately applying it to other areas of their lives. Our philosophies help you breakdown the first principles behind success, so you know exactly why it happened, and what you need to do to get similar or better outcomes in the future.
+
+</ExpandableCard>
+
+<ExpandableCard title="Understand Human Behaviours" eventCategory="/understand-yourself" eventName="clicked solution 2" contentPreview="Gain a deeper understanding into why history repeats itself, and how we can leverage our experiences to work for us.">
+
+Human behavior often follows recognizable patterns, and understanding these can be immensely empowering. Learning the intricacies of human thought processes allows you to decode behavioral patterns. This insight not only fosters empathy towards yourself and others but also equips you to influence outcomes more effectively, using your understanding to navigate the world around you.
+
+</ExpandableCard>
+
+<ExpandableCard title="Find True Happiness And Fulfillment" eventCategory="/understand-yourself" eventName="clicked solution 3" contentPreview="Learn how to maximize your happiness based on your needs and motivations, and level up whenever you are ready.">
+
+Happiness and fulfillment are deeply personal experiences, shaped by our individual needs and desires. Philosophy doesn't offer a universal solution but rather guides you in identifying what happiness means to you. It provides strategies for aligning your life with these personal values, leading to a more authentic and satisfying journey of self-discovery and joy.
+
+</ExpandableCard>
+
+## What Are Our Philosophies?
+
+We integrated foundational theories in psychological and personal development to create core philosophies that help facilitate a deeper understanding of oneself and others.
 
 <CardGrid>
-  <BasicActionCard
-    title="One Size Doesn't Fit All, And Why That's OK"
-    description="What works for one might not suit another. This can be disheartening, because we all strive to support and be supported effectively. We need to learn how to adapt our learnings so they can be readily absorbed by others."
+  <RichActionCard
+    image="better_life_framework"
+    title="The Better Life Framework"
+    description="Get a deeper understanding of yourself and others through the nine unique perspectives we all navigate throughout our lives."
+    to="/understand-yourself/better-life-framework"
+    buttonText="Explore"
   />
-  <BasicActionCard
-    title="What Worked May Not Keep Working"
-    description="We always hope that we will discover a permanant 'life hack' that will transform our life. The reality is that as we level up, so do our needs and motivations. Our strategies need to evolve over time to stay relevant and effective."
+  <RichActionCard
+    image="the_4a_model_of_understanding"
+    title="The 4A Model Of Understanding"
+    description="Moving forward requires us to navigate through four distinct stages driven by our emotions before we can take action."
+    to="/understand-yourself/4a-model-of-understanding"
+    buttonText="Explore"
   />
-  <BasicActionCard
-    title="We Feel Like We Are Wasting Our Time"
-    description="Understanding why certain knowledge, tools, or community resources don't align with our current selves can prevent feelings of wasted time and effort. This helps keep up our motivation to pursue our best selves."
+  <RichActionCard
+    image="evolution_of_wants"
+    title="The Evolution Of Wants (& Needs)"
+    description="As we level up in life, our motivations will evolve from having, to doing, to being."
+    to="/understand-yourself/evolution-of-wants"
+    buttonText="Explore"
   />
 </CardGrid>
 
-## What Is The Better Life Framework?
-
-We integrated foundational theories in psychological and personal development to facilitate a deeper understanding of oneself and others. It presents nine unique life perspectives, each characterized by distinct experiences and motivations, offering a comprehensive framework for impactful actions that help you live a better life.
-
-### Core Concepts
-
-<CardGrid>
-  <BasicActionCard
-    title="Understand Why You Think The Way You Do"
-    description="Understand how experiences shift your perspectives to leverage success from one area of life to another."
-  />
-  <BasicActionCard
-    title="Understand Human Behaviours"
-    description="Gain a deeper understanding into why history repeats itself, and how we can leverage our experiences to work for us."
-  />
-  <BasicActionCard
-    title="Find True Happiness And Fulfillment"
-    description="Learn how to maximize your happiness based on your needs and motivations, and level up whenever you are ready."
-  />
-</CardGrid>
-
-## Who Is The Framework For?
+<!-- ## Who Is The Framework For?
 
 Better Life Framework is ideal for anyone wanting to live a better life and positively influence those around them. Alongside the free resources available on this site, we also offer exclusive customizable programs. These specialized offerings are designed to fast-track your growth, ensuring a valuable and transformative experience tailored for your unique needs.
 
@@ -73,37 +105,33 @@ Better Life Framework is ideal for anyone wanting to live a better life and posi
     title="Leaders"
     description="We empower leaders to understand complex team dynamics and lead with empathy, creating a productive environment where team members feel understood."
   />
-</CardGrid>
+</CardGrid> -->
 
-### Have Other Ideas For The Framework?
-
-We are eager to extend the reach and impact of Better Life Framework, and we're excited about exploring new partnerships and opportunities. If you see potential for Better Life Framework in areas beyond what's described above, [we want to hear from you](mailto:partnerships@x3.family).
-
-## How Do I Use The Framework?
+<!-- ## How Do I Use The Framework?
 
 <CardGrid>
-  <FrameworkActionCard
+  <RichActionCard
     image="understand_yourself"
     title="Know Yourself"
     description="You don't need to feel so helpless. Your perception of the world is your reality, and the framework will help you figure out where you need to look in order to unlock your potential."
-    to="/understand-yourself/understand-the-framework"
+    to="/understand-yourself/better-life-framework"
     buttonText="Explore The Framework"
   />
-  <FrameworkActionCard
+  <RichActionCard
     image="unlock_your_potential"
     title="Get The Right Support"
     description="Leveling up doesn't need to be by chance. Knowing your perspective will help you access relevant programs as you need them, minimizing frustrations and setbacks."
     to="/unlock-your-potential/programs"
     buttonText="Check Out Our Programs"
   />
-  <FrameworkActionCard
+  <RichActionCard
     image="make_positive_impact"
     title="Help Others Effectively"
     description="Don't push your solutions on others without knowing where they are. The framework helps you understand your growth journey to share relavant insights at the right time."
     to="/make-positive-impact"
     buttonText="I'm Ready To Help"
   />
-</CardGrid>
+</CardGrid> -->
 
 ## Additional Reading
 
@@ -126,7 +154,7 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 </ExpandableCard>
 
-<ExpandableCard title="References" eventCategory="/understand-yourself" eventName="clicked references" contentPreview="Better Life Framework is based on foundational theories in psychology.">
+<ExpandableCard title="References" eventCategory="/understand-yourself" eventName="clicked references" contentPreview="Our work is based on foundational theories in psychology.">
 
 - Spiral Dynamics (Don Beck, Christopher Cowan, Clare Graves)
 - Developmental Levels (Loevinger & Cook-Greuter, Kohlberg & Kegan)
@@ -137,4 +165,4 @@ We are eager to extend the reach and impact of Better Life Framework, and we're 
 
 ### Media Inquiries
 
-Are you interested in featuring the Better Life Framework in your publication or media outlet? We welcome opportunities to share our insights and the impact of our framework with a wider audience. Please [contact us](mailto:press@x3.family) for more information and media inquiries.
+Are you interested in featuring our philosophies in your publication or media outlet? We welcome opportunities to share our insights and the impact of our framework with a wider audience. Please [contact us](mailto:press@x3.family) for more information and inquiries.
