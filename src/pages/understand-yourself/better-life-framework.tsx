@@ -24,6 +24,7 @@ import {
 
 import { BasePageProps, ChildOnlyProp } from "@/lib/types"
 
+import FrameworkActionCard from "@/components/ActionCard/RichActionCard"
 import BannerNotification from "@/components/BannerNotification"
 import { Button, ButtonLink } from "@/components/Buttons"
 import FrameworkFilterSidebar from "@/components/Framework/FrameworkFilterSidebar"
@@ -32,8 +33,11 @@ import { FilterBurgerIcon } from "@/components/icons/FilterBurgerIcon"
 import { Image } from "@/components/Image"
 import MainArticle from "@/components/MainArticle"
 import MainHero from "@/components/MainHero"
+import Modal from "@/components/Modal"
 import OldHeading from "@/components/OldHeading"
 import PageMetadata from "@/components/PageMetadata"
+import SearchBar from "@/components/SearchBar"
+import YouTube from "@/components/YouTube"
 
 import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
@@ -45,10 +49,6 @@ import frameworkData from "@/data/framework/framework-data"
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 import better_life_framework from "@/public/better_life_framework.png"
-import Modal from "@/components/Modal"
-import FrameworkActionCard from "@/components/ActionCard/RichActionCard"
-import YouTube from "@/components/YouTube"
-import SearchBar from "@/components/SearchBar"
 
 const Subtitle = ({ children }: ChildOnlyProp) => (
   <Text

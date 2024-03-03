@@ -10,12 +10,12 @@ import {
 import { ButtonLink } from "@/components/Buttons"
 import { Image } from "@/components/Image"
 
-import make_positive_impact from "@/public/make_positive_impact.png"
+import the_4a_model_of_understanding from "@/public/4a_model_of_understanding.png"
 import better_life_framework from "@/public/better_life_framework.png"
+import evolution_of_wants from "@/public/evolution_of_wants.png"
+import make_positive_impact from "@/public/make_positive_impact.png"
 import understand_yourself from "@/public/understand_yourself.png"
 import unlock_your_potential from "@/public/unlock_your_potential.png"
-import the_4a_model_of_understanding from "@/public/4a_model_of_understanding.png"
-import evolution_of_wants from "@/public/evolution_of_wants.png"
 
 
 interface IProps {
