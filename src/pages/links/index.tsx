@@ -3,6 +3,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { FaDiscord, FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
     Box,
     chakra,
@@ -29,11 +30,10 @@ import {
     getRequiredNamespacesForPage,
     isLangRightToLeft,
 } from "@/lib/utils/translations"
+
 import community_gathering from "@/public/community_gathering.png"
 import understand_yourself from "@/public/understand_yourself.png"
 import unlock_your_potential from "@/public/unlock_your_potential.png"
-
-import { FaDiscord, FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
 
 const SectionHeading = (props: HeadingProps) => (
     <Heading
