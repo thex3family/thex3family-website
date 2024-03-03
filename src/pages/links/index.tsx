@@ -82,14 +82,14 @@ const GrayContainer = (props: ChildOnlyProp) => (
 
 const MainSectionContainer = (props: {
     children: ReactNode
-    containerBg: FlexProps["bg"]
+    staticBg?: FlexProps["bg"]
     hoverBg?: FlexProps["bg"]
     href?: string;
 }) => (
     <Flex
         alignItems="center"
         justifyContent="space-between"
-        background={props.containerBg}
+        background={props.staticBg}
         _hover={{ bg: props.hoverBg }}
         borderBlock="1px"
         borderColor="text"
@@ -312,7 +312,7 @@ const HomePage = ({
             {socialLinks.map((link, index) => (
                 <MainSectionContainer
                     key={index}
-                    containerBg={`${link.color}1A`} // 20% opacity of the color
+                    staticBg={`${link.color}1A`} // 20% opacity of the color
                     hoverBg={`${link.color}80`} // Full color on hover
                     href={link.to} // Set the destination URL
                 >
