@@ -40,7 +40,7 @@ const HomeHero = ({ heroImg }: HomeHeroProps) => {
             <Heading as="h1" size="2xl">
               {t("page-index:page-index-title")}
             </Heading>
-            <Text size="xl">{t("page-index:page-index-description")}</Text>
+            <Text size="xl">{t("common:site-description")}</Text>
             <SearchBar t={t} variant="button"/>
           </VStack>
         </Stack>

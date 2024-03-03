@@ -50,6 +50,10 @@ const getRequiredNamespacesForPath = (path: string) => {
   if (path === "/") {
     primaryNamespace = "page-index"
   }
+
+  if (path.startsWith("/links")) {
+    primaryNamespace = "page-links"
+  }
   
   if (path.startsWith("/visual-identity")) {
     primaryNamespace = "page-visual-identity"
