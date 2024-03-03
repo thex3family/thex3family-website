@@ -36,6 +36,7 @@ import {
 import community_gathering from "@/public/community_gathering.png"
 import understand_yourself from "@/public/understand_yourself.png"
 import unlock_your_potential from "@/public/unlock_your_potential.png"
+import { BaseLink } from "@/components/Link"
 
 const SectionHeading = (props: HeadingProps) => (
     <Heading
@@ -92,7 +93,7 @@ const StyledActionCard = chakra(ActionCard, {
 })
 
 const GrayContainer = (props: ChildOnlyProp) => (
-    <Box width="full" pb={8} background="grayBackground" {...props} />
+    <Box width="full" background="grayBackground" {...props} />
 )
 
 const MainSectionContainer = (props: {
@@ -114,9 +115,9 @@ const MainSectionContainer = (props: {
         transition="background-color 0.2s" // Add transition for smooth background color change
         fontSize={{ base: "md", sm: "lg" }}
         fontWeight={500}
-        as="a" // Make the Flex component behave as an anchor tag
+        as={BaseLink}// Make the Flex component behave as an anchor tag
+        hideArrow
         target="_blank" // Open the link in a new tab
-        rel="noopener noreferrer" // Security measures for opening new tabs
         style={{ color: 'inherit', textDecoration: 'none' }} // Ensures that the font color does not change
         px={12}
         {...props} // Make sure to spread the rest of the props
@@ -168,19 +169,19 @@ const HomePage = ({
         {
             image: understand_yourself,
             icon: FaBook,
-            title: t("common:better-life-framework-title"),
+            title: "Understand Yourself With The Better Life Framework",
             to: "/understand-yourself/",
         },
         {
             image: understand_yourself,
             icon: FaToolbox,
-            title: t("unlock-your-potential-title"),
+            title: "Unlock Your Potential With Personalized Programs",
             to: "/unlock-your-potential/",
         },
         {
             image: understand_yourself,
             icon: FaHome,
-            title: "Our Family Without Borders",
+            title: "Live With Us @ Our Family Without Borders",
             to: "https://ourfamilywithoutborders.com",
         },
     ]
@@ -267,7 +268,7 @@ const HomePage = ({
                             <SectionDecription>
                                 {header.description}
                             </SectionDecription>
-                            <ButtonLink to={header.to} variant={"secondary"}>
+                            <ButtonLink to={header.to}>
                                 {header.button}
                             </ButtonLink>
                         </Box>
@@ -289,19 +290,20 @@ const HomePage = ({
                                 key={index}
                                 borderWidth="1px"
                                 borderStyle="solid"
-                                borderColor="border"
+                                borderColor="text"
                                 borderRadius="base"
                                 p={4}
                                 flexDirection="column"
-                                width="125px"
+                                width="150px"
                                 textAlign="center"
                                 position="relative"
                                 flexShrink={0}
-                                as="a" // Make the Flex component behave as an anchor tag
+                                as={BaseLink} // Make the Flex component behave as an anchor tag
+                                hideArrow
                                 target="_blank" // Open the link in a new tab
-                                rel="noopener noreferrer" // Security measures for opening new tabs
                                 style={{ color: 'inherit', textDecoration: 'none' }} // Ensures that the font color does not change
                                 href={card.to}
+                                boxShadow={cardBoxShadow}
                                 _hover={{
                                     borderRadius: "base",
                                     boxShadow: "0px 8px 17px rgba(0, 0, 0, 0.15)",
@@ -317,10 +319,7 @@ const HomePage = ({
                         ))}
                     </CardContainer>
                 </ContentBox>
-
-
             </GrayContainer>
-            {/* Banner 1 */}
 
             <Box pb={4}>
                 <SectionHeading mt={12} fontFamily="heading" textAlign="center">
