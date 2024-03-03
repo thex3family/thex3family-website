@@ -61,7 +61,7 @@ const CardContainer = (props: {
     children: ReactNode
 }) => (
     <Flex
-        justifyContent={{ base: "flex-start", md: "center" }} // Start alignment on small screens, center on medium and up
+        justifyContent={{ base: "flex-start" }} // Start alignment on small screens, center on medium and up
         overflowX="auto" // Enable horizontal scrolling
         gap={8}
         p={4}
@@ -75,19 +75,6 @@ const CardContainer = (props: {
 const ContentBox = (props: ChildOnlyProp) => (
     <Box py={4} px={{ base: 4, lg: 8 }} {...props} />
 )
-
-const StyledActionCard = chakra(ActionCard, {
-    baseStyle: {
-        width: "100%", // Make sure the card takes the full width of the grid column
-        maxWidth: "32%", // Set a fixed width for the cards
-        background: "background.base",
-        borderRadius: "sm",
-        border: "1px",
-        borderColor: "text",
-        margin: 0,
-        fontSize: { base: "sm", md: "md", lg: "lg", xl: "xl" },
-    },
-})
 
 const GrayContainer = (props: ChildOnlyProp) => (
     <Box width="full" background="grayBackground" {...props} />
@@ -237,7 +224,8 @@ const HomePage = ({
             alignItems="center"
             dir={dir}
             width="full"
-            pb="60px"
+            maxWidth="xl"
+            mx="auto"
         >
             <PageMetadata
                 title={t("page-links:page-links-meta-title")}
@@ -253,8 +241,6 @@ const HomePage = ({
                     >
                         <Box
                             flex="0 0 50%"
-                            maxW={{ lg: "75%" }}
-                            px={{ sm: 8, lg: 24 }}
                             boxSize="full"
                         >
                             <Box mb={6}>

@@ -35,8 +35,10 @@ export const RootLayout = ({
     isUntranslatedContributingPage ||
     asPath.includes(`/cookie-policy/`) ||
     asPath.includes(`/privacy-policy/`) ||
-    asPath.includes(`/terms-of-use/`) ||
-    asPath.includes(`/style-guide/`)
+    asPath.includes(`/terms-of-use/`)
+
+  const noFooter =
+  asPath.includes(`/links/`)
 
   const isPageLanguageEnglish = locale === DEFAULT_LOCALE
 
@@ -65,7 +67,7 @@ export const RootLayout = ({
 
       {children}
 
-      <Footer lastDeployDate={lastDeployDate} />
+      {!noFooter ?? <Footer lastDeployDate={lastDeployDate} />}
       <FeedbackWidget />
     </Container>
   )
