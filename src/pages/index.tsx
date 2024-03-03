@@ -338,7 +338,7 @@ const HomePage = ({
     >
       <PageMetadata
         title={t("page-index:page-index-meta-title")}
-        description={t("page-index:page-index-meta-description")}
+        description={t("common:site-description")}
       />
       <Box w="full">
         <HomeHero heroImg={hero} />

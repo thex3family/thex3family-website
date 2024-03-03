@@ -2,7 +2,7 @@
 import React from "react"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { FaDiscord,FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaDiscord, FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
   Box,
   Flex,
@@ -20,6 +20,7 @@ import { BaseLink } from "@/components/Link"
 import Translation from "@/components/Translation"
 
 import { getLocaleTimestamp } from "@/lib/utils/time"
+import { ButtonLink } from "./Buttons"
 
 const socialLinks = [
   {
@@ -224,17 +225,12 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
 
   return (
     <Box as="footer" p="1rem 2rem">
-      <Flex
-        fontSize="sm"
-        justify="space-between"
-        alignItems="center"
-        flexWrap="wrap"
-      >
         <Box color="text200">
           <Translation id="website-last-updated" />:{" "}
           {getLocaleTimestamp(locale as Lang, lastDeployDate!)}
         </Box>
-        <Box my={4} display="flex" gap={4}>
+        <Box my={4} display="flex" gap={4}
+          alignItems="center">
           {socialLinks.map((link, idk) => {
             return (
               <BaseLink
@@ -256,8 +252,10 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
               </BaseLink>
             )
           })}
+          <ButtonLink to="/links" variant={"secondary"} mb={1}>
+            See More
+          </ButtonLink>
         </Box>
-      </Flex>
       <SimpleGrid
         gap={4}
         justifyContent="space-between"
@@ -265,6 +263,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           base: "auto",
           sm: "repeat(2, auto)",
           md: "repeat(3, auto)",
+          lg: "repeat(4, auto)",
           xl: "repeat(6, auto)",
         }}
       >
