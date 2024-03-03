@@ -3,7 +3,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaDiscord, FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaBook, FaDiscord, FaGithub, FaHome, FaInstagram, FaTiktok, FaToolbox, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
     Box,
     chakra,
@@ -12,7 +12,9 @@ import {
     Heading,
     HeadingProps,
     Icon,
+    SimpleGrid,
     SimpleGridProps,
+    Text,
     useToken,
 } from "@chakra-ui/react"
 
@@ -59,22 +61,18 @@ const ImageContainer = (props: FlexProps & { children: ReactNode }) => (
 
 const CardContainer = (props: {
     children: ReactNode
-    minChildWidth: SimpleGridProps["minChildWidth"]
 }) => (
     <Flex
-        flexWrap="wrap"
+        justifyContent={{ base: "flex-start", md: "center" }} // Start alignment on small screens, center on medium and up
+        overflowX="auto" // Enable horizontal scrolling
         gap={8}
-        p={{ lg: 4 }}
+        p={4}
         width="full"
-        sx={{
-            "& > *": {
-                minW: props.minChildWidth,
-            },
-        }}
+        flexWrap="nowrap" // Prevent wrapping of flex items
     >
         {props.children}
     </Flex>
-)
+);
 
 const ContentBox = (props: ChildOnlyProp) => (
     <Box py={4} px={{ base: 4, lg: 8 }} {...props} />
@@ -82,16 +80,19 @@ const ContentBox = (props: ChildOnlyProp) => (
 
 const StyledActionCard = chakra(ActionCard, {
     baseStyle: {
+        width: "100%", // Make sure the card takes the full width of the grid column
+        maxWidth: "32%", // Set a fixed width for the cards
         background: "background.base",
         borderRadius: "sm",
         border: "1px",
         borderColor: "text",
         margin: 0,
+        fontSize: { base: "sm", md: "md", lg: "lg", xl: "xl" },
     },
 })
 
 const GrayContainer = (props: ChildOnlyProp) => (
-    <Box width="full" pb={16} background="grayBackground" {...props} />
+    <Box width="full" pb={8} background="grayBackground" {...props} />
 )
 
 const MainSectionContainer = (props: {
@@ -166,18 +167,22 @@ const HomePage = ({
     const cards = [
         {
             image: understand_yourself,
-            title: t("understand-yourself-title"),
-            description: t("understand-yourself-description"),
-            alt: t("understand-yourself-image-alt"),
+            icon: FaBook,
+            title: t("common:better-life-framework-title"),
             to: "/understand-yourself/",
-          },
-          {
-            image: unlock_your_potential,
+        },
+        {
+            image: understand_yourself,
+            icon: FaToolbox,
             title: t("unlock-your-potential-title"),
-            description: t("unlock-your-potential-description"),
-            alt: t("unlock-your-potential-image-alt"),
             to: "/unlock-your-potential/",
-          },
+        },
+        {
+            image: understand_yourself,
+            icon: FaHome,
+            title: "Our Family Without Borders",
+            to: "https://ourfamilywithoutborders.com",
+        },
     ]
 
     const socialLinks = [
@@ -270,27 +275,45 @@ const HomePage = ({
                             <Image
                                 src={header.image}
                                 alt={t("page-index:page-index-get-started-image-alt")}
-                                height={300}
-                                backgroundSize="cover"
-                                background="no-repeat 50px"
+                                height={125}
                             />
                         </ImageContainer>
                     </Flex>
-                    <Box py={4} textAlign="center">
-                    </Box>
-                    <CardContainer minChildWidth={{ lg: "480px" }}>
-                        {cards.map((card, idx) => (
-                            <StyledActionCard
-                                key={idx}
-                                boxShadow={cardBoxShadow}
-                                m={0}
-                                title={card.title}
-                                description={card.description}
-                                alt={card.alt}
-                                to={card.to}
-                                image={card.image}
-                                imageWidth={320}
-                            />
+
+                    <Text size="sm" mt={8} mb={4} fontWeight="600" textAlign="center">
+                        Popular Links
+                    </Text>
+                    <CardContainer>
+                        {cards.map((card, index) => (
+                            <Flex
+                                key={index}
+                                borderWidth="1px"
+                                borderStyle="solid"
+                                borderColor="border"
+                                borderRadius="base"
+                                p={4}
+                                flexDirection="column"
+                                width="125px"
+                                textAlign="center"
+                                position="relative"
+                                flexShrink={0}
+                                as="a" // Make the Flex component behave as an anchor tag
+                                target="_blank" // Open the link in a new tab
+                                rel="noopener noreferrer" // Security measures for opening new tabs
+                                style={{ color: 'inherit', textDecoration: 'none' }} // Ensures that the font color does not change
+                                href={card.to}
+                                _hover={{
+                                    borderRadius: "base",
+                                    boxShadow: "0px 8px 17px rgba(0, 0, 0, 0.15)",
+                                    transition: "transform 0.1s",
+                                    transform: "scale(1.02)",
+                                }}
+                            >
+                                <Icon as={card.icon} boxSize={4} position="absolute" top={-2} left="50%" transform="translateX(-50%)" />
+                                <Text size="md" mt={3} mb={2} fontWeight="500">
+                                    {card.title}
+                                </Text>
+                            </Flex>
                         ))}
                     </CardContainer>
                 </ContentBox>
@@ -301,7 +324,7 @@ const HomePage = ({
 
             <Box pb={4}>
                 <SectionHeading mt={12} fontFamily="heading" textAlign="center">
-                {t("page-links:page-links-connect-title")}
+                    {t("page-links:page-links-connect-title")}
                 </SectionHeading>
             </Box>
             {socialLinks.map((link, index) => (
@@ -311,7 +334,7 @@ const HomePage = ({
                     hoverBg={`${link.color}80`} // Full color on hover
                     href={link.to} // Set the destination URL
                 >
-                    <Icon as={link.icon} mr={2} fontSize="3xl"/>{link.title}<Icon as={link.icon} ml={2} fontSize="3xl"/>
+                    <Icon as={link.icon} mr={2} fontSize="3xl" />{link.title}<Icon as={link.icon} ml={2} fontSize="3xl" />
                 </MainSectionContainer>
             ))}
         </Flex>
