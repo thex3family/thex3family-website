@@ -29,7 +29,7 @@ import { live_your_best_life_quizzes,understand_yourself_quizzes } from "@/data/
 
 import { INITIAL_QUIZ } from "@/lib/constants"
 
-import understand_yourself from "@/public/understand_yourself.png"
+import test_your_understanding from "@/public/test_your_understanding.png"
 
 const handleGHAdd = () =>
   trackCustomEvent({
@@ -77,14 +77,14 @@ const QuizzesHubPage: NextPage<
 
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": March 02, 2024", // This should be dynamic based on your data
     title: t("common:test-your-understanding-title"),
     description: t("common:test-your-understanding-description")
       .split('.')
       .filter(sentence => sentence.trim() !== '')
       .map(sentence => `${sentence.trim()}.`),
-    imageSrc: understand_yourself.src, // Assuming understand_yourself is an imported image module
-    imageAlt: t("common:understand-yourself-image-alt"),
+    imageSrc: test_your_understanding.src, // Assuming understand_yourself is an imported image module
+    imageAlt: t("common:test-your-understanding-image-alt"),
   };
   
   return (

@@ -14,7 +14,7 @@ summaryPoint3: Your support means the 🌎 to us, and keeps this project going.
 
 We share unique and interesting content freely, but with your support we can release quality content regularly, work on impactful projects, and provide meaningful and customized perks to supporters who identify strongly with our mission.
 
-As a way to say thank you for supporting us, our patrons get immense value out of their subscription. Unlock access to exclusive new templates, recognition on our wall of love, training to help you level up, behind-the-scenes content, voting power for new content, and much more.
+As a way to say thank you for supporting us, our patrons get immense value out of their membership. Unlock access to exclusive new templates, recognition on our wall of love, training to help you level up, behind-the-scenes content, voting power for new content, and much more.
 
 [Join 500+ Patrons](https://toolbox.co-x3.com/support-us)
 

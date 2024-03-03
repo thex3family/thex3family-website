@@ -17,7 +17,7 @@ import type { ChildOnlyProp, Lang } from "@/lib/types"
 import type { MdPageContent, UpgradeFrontmatter } from "@/lib/interfaces"
 
 import BasicActionCard from "@/components/ActionCard/BasicActionCard"
-import FrameworkActionCard from "@/components/ActionCard/FrameworkActionCard"
+import RichActionCard from "@/components/ActionCard/RichActionCard"
 import Breadcrumbs from "@/components/Breadcrumbs"
 import type { List as ButtonDropdownList } from "@/components/ButtonDropdown"
 import { ButtonLink } from "@/components/Buttons"
@@ -73,8 +73,7 @@ export const HeroContainer = (props: ChildOnlyProp) => (
     direction={{ base: "column-reverse", lg: "row" }}
     bg="mainGradient"
     boxShadow="inset 0px -1px 0px rgba(0, 0, 0, 0.1)"
-    minH="608px"
-    maxH={{ base: "full", lg: "608px" }}
+    h={{ base: "full", lg: "700px" }}
     w="full"
     overflow="hidden"
     {...props}
@@ -136,7 +135,7 @@ export const mainComponents = {
   CardGrid,
   JobBoard,
   BasicActionCard,
-  FrameworkActionCard,
+  RichActionCard,
   ExpandableCard,
   InfoBanner
 }
@@ -227,16 +226,20 @@ export const MainLayout: React.FC<IProps> = ({
       ariaLabel: t("understand-yourself-menu"),
       items: [
         {
-          text: t("better-life-framework-title"),
+          text: t("understand-yourself-secondary-title"),
           to: "/understand-yourself/",
         },
         {
-          text: t("understand-the-framework-title"),
-          to: "/understand-yourself/understand-the-framework/",
+          text: t("better-life-framework-title"),
+          to: "/understand-yourself/better-life-framework/",
         },
         {
-          text: t("the-4a-model-title"),
-          to: "/understand-yourself/the-4a-model/",
+          text: t("4a-model-of-understanding-title"),
+          to: "/understand-yourself/4a-model-of-understanding/",
+        },
+        {
+          text: t("evolution-of-wants-title"),
+          to: "/understand-yourself/evolution-of-wants/",
         },
         {
           text: t("test-your-understanding-title"),

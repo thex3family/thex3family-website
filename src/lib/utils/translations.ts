@@ -71,13 +71,13 @@ const getRequiredNamespacesForPath = (path: string) => {
     primaryNamespace = "page-languages"
   }
 
-  if (path.startsWith("/understand-yourself/understand-the-framework")) {
-    primaryNamespace = "page-understand-the-framework"
+  if (path.startsWith("/understand-yourself/better-life-framework")) {
+    primaryNamespace = "page-better-life-framework"
   }
 
   if (path.startsWith("/unlock-your-potential/programs")) {
     primaryNamespace = "page-programs"
-    requiredNamespaces = [...requiredNamespaces, "page-understand-the-framework", "glossary"]
+    requiredNamespaces = [...requiredNamespaces, "page-better-life-framework", "glossary"]
   }
 
   if (path.startsWith("/live-your-best-life/about-us")) {

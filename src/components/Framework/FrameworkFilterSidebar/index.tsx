@@ -18,7 +18,7 @@ import FrameworkFilterPersonas from "@/components/Framework/FrameworkFilterSideb
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import { FiltersType } from "@/pages/understand-yourself/understand-the-framework"
+import { FiltersType } from "@/pages/understand-yourself/better-life-framework"
 
 const FilterTab = ({
   eventName,
@@ -73,7 +73,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
   ...tabsProps
 }) => {
   const theme = useTheme()
-  const { t } = useTranslation("page-understand-the-framework")
+  const { t } = useTranslation("page-better-life-framework")
 
   return (
     <Tabs
@@ -119,10 +119,10 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
           }}
         >
           <FilterTab eventName="show user personas">
-            {t("page-understand-the-framework-profile-filters")}
+            {t("page-better-life-framework-profile-filters")}
           </FilterTab>
           <FilterTab eventName="show feature filters">
-            {t("page-understand-the-framework-perspective-filters")} (
+            {t("page-better-life-framework-perspective-filters")} (
             {Object.values(filters).reduce<number>((acc, filter) => { // Explicitly type the accumulator as number
               if (filter) {
                 acc += 1
@@ -157,7 +157,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
         }}
       >
         <Icon as={BsArrowCounterclockwise} aria-hidden="true" fontSize="sm" />
-        {t("page-understand-the-framework-reset-filters").toUpperCase()}
+        {t("page-better-life-framework-reset-filters").toUpperCase()}
       </Center>
       <TabPanels
         m={0}

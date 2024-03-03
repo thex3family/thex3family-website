@@ -18,7 +18,7 @@ import ProgramsFilterPersonas from "@/components/Programs/ProgramsFilterSidebar/
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import { FiltersType } from "@/pages/understand-yourself/understand-the-framework"
+import { FiltersType } from "@/pages/understand-yourself/better-life-framework"
 
 const FilterTab = ({
   eventName,

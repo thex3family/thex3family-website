@@ -317,7 +317,7 @@ export interface FrameworkTableProps {
 }
 
 const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
-  const { t } = useTranslation("page-understand-the-framework")
+  const { t } = useTranslation("page-better-life-framework")
   const {
     featureDropdownItems,
     filteredFeatureDropdownItems,
@@ -339,29 +339,29 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
         <Th>
           {filteredFrameworks.length === frameworkCardData.length ? (
             <Text as="span">
-              {t("page-understand-the-framework-showing-all")} (
+              {t("page-better-life-framework-showing-all")} (
               <strong>{frameworkCardData.length}</strong>)
             </Text>
           ) : (
             <Text as="span">
-              {t("page-understand-the-framework-showing")}{" "}
+              {t("page-better-life-framework-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkCardData.length}
               </strong>{" "}
-              {t("page-understand-the-framework-frameworks")}
+              {t("page-better-life-framework-frameworks")}
             </Text>
           )}
         </Th>
         <Th>
           <Text as="span" hideFrom="sm" fontSize="md" whiteSpace="nowrap">
-            {t("page-understand-the-framework-choose-perspectives")}
+            {t("page-better-life-framework-choose-perspectives")}
           </Text>
           <StyledSelect
             className="react-select-container"
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understand-the-framework-choose-to-compare"),
+                label: t("page-better-life-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -378,7 +378,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understand-the-framework-choose-to-compare"),
+                label: t("page-better-life-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -395,7 +395,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             classNamePrefix="react-select"
             options={[
               {
-                label: t("page-understand-the-framework-choose-to-compare"),
+                label: t("page-better-life-framework-choose-to-compare"),
                 options: [...filteredFeatureDropdownItems],
               },
             ]}
@@ -451,14 +451,14 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                     />
                   </Box>
                   <Box>
-                    <Text>{t(`page-understand-the-framework-level-${framework.name}-title`)}</Text>
+                    <Text>{t(`page-better-life-framework-level-${framework.name}-title`)}</Text>
                     <Text
                       hideBelow="sm"
                       color="text200"
                       fontSize="0.7rem"
                       lineHeight="0.85rem"
                     >
-                      {t(`page-understand-the-framework-level-${framework.name}-description`)}
+                      {t(`page-better-life-framework-level-${framework.name}-description`)}
                     </Text>
                     {/* <Box mt={4}>
                       <Flex gap="0.8rem">

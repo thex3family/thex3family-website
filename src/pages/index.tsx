@@ -61,7 +61,7 @@ import make_positive_impact from "@/public/make_positive_impact.png"
 import retirees from "@/public/retirees.png"
 import students from "@/public/students.png"
 import tools from "@/public/tools.png"
-import understand_the_framework from "@/public/understand_the_framework.png"
+import better_life_framework from "@/public/better_life_framework.png"
 import understand_yourself from "@/public/understand_yourself.png"
 import unlock_your_potential from "@/public/unlock_your_potential.png"
 
@@ -450,15 +450,15 @@ const HomePage = ({
               <ButtonLink to="/understand-yourself/">
                 <Translation id="page-index:page-index-banner-1-button" />
               </ButtonLink>
-              <ButtonLink to="/understand-yourself/understand-the-framework/" variant="outline">
+              <ButtonLink to="/understand-yourself/better-life-framework/" variant="outline">
                 <Translation id="page-index:page-index-banner-1-secondary-button" />
               </ButtonLink>
             </ButtonLinkRow>
           </FeatureContent>
           <ImageContainer ps={{ lg: 8 }}>
             <Image
-              src={understand_the_framework}
-              alt={t("common:understand-the-framework-image-alt")}
+              src={better_life_framework}
+              alt={t("common:better-life-framework-image-alt")}
               width={700}
             />
           </ImageContainer>

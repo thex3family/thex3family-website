@@ -181,21 +181,25 @@
   "understand-yourself-description": "How well do you understand why you do what you do and have clarity on where you are at in your growth journey?",
   "understand-yourself-image-alt": "Illustration of a woman reading an iPad in a cozy chair with a drink beside her, surrounded by a lamp, plants, and a cityscape outside the window.",
   
-  "better-life-framework-title": "The Better Life Framework",
-  "better-life-framework-description": "Our comprehensive framework deepens your self-awareness and understanding of the world and is designed to ease frustrations and cultivate empathy towards oneself and others - leading you to impactful actions that help you live a better life.",
-  "better-life-framework-image-alt": "Illustration of a man in a light sweater, eyes closed, hands open in a balancing gesture, with abstract shapes and 'Next Stop: Life' in the backdrop.",
+  "understand-yourself-secondary-title": "Our Philosophies",
+  "understand-yourself-secondary-description": "Our philosophies deepens your self-awareness and understanding of the world and is designed to ease frustrations and cultivate empathy towards oneself and others - leading you to impactful actions that help you live a better life.",
   
-  "understand-the-framework-title": "Understand The Framework",
-  "understand-the-framework-description": "Get a deeper understanding of yourself and others. Explore and read through the descriptions of each perspective. Our perspectives on the world changes based on our perceptions.",
-  "understand-the-framework-alert": "The Better Life Framework is constantly developing and is subject to improvements over time. Let us know if you have any suggestions!",
-  "understand-the-framework-image-alt": "Illustration of a man standing in front of a station, with the station sign 'Better Life' above his head.",
+  "better-life-framework-title": "The Better Life Framework",
+  "better-life-framework-description": "Get a deeper understanding of yourself and others. Explore and read through the descriptions of each perspective. Our reality changes based on our perceptions.",
+  "better-life-framework-image-alt": "Illustration of a man standing in front of a station, with the station sign 'Better Life' above his head.",
+  "better-life-framework-alert": "The Better Life Framework is constantly developing and is subject to improvements over time. Let us know if you have any suggestions!",
+  "better-life-framework-CTA-title": "Understand Your Perspective With The Co-x3 AI Assistant",
 
-  "the-4a-model-title": "The 4A Model Of Understanding",
-  "the-4a-model-description": "How and when are you ready to understand?",
-  "the-4a-model-image-alt": "",
+  "4a-model-of-understanding-title": "The 4A Model Of Understanding",
+  "4a-model-of-understanding-description": "How and when are you ready to understand?",
+  "4a-model-of-understanding-image-alt": "",
+
+  "evolution-of-wants-title": "The Evolution Of Wants",
+  "evolution-of-wants-description": "How our wants evolve from having, to doing, to being.",
+  "evolution-of-wants-image-alt": "",
 
   "test-your-understanding-title": "Test Your Understanding",
-  "test-your-understanding-description": "Find out how much you've learned. Get a high score and top the leaderboards.",
+  "test-your-understanding-description": "Find out how much you've learned. Get a high score and top the leaderboards. Add new quizzes based on what you've learned",
   "test-your-understanding-image-alt": "",
 
   "unlock-your-potential-title": "Unlock Your Potential",
@@ -241,7 +245,7 @@
   "collaborate-image-alt": "",
   "collaborate-button": "Dedicate Your Time",
 
-  "subscription-title": "Co-x3 Subscription",
+  "membership-title": "Co-x3 Membership",
   "donate-title": "Donate A Scholarship",
 
   "community-manager-title": "Community Manager",

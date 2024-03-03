@@ -24,7 +24,7 @@ Now, we invite you to focus on yourself – to explore, learn, and grow in ways 
 
 Start your journey by understanding yourself better with the [Better Life Framework](/understand-yourself). Its important for you to figure out what is driving you now, so that you know how to orientate yourself to achieve what you actually want in life.
 
-<ButtonLink to="/understand-yourself/understand-the-framework">Take The Quiz</ButtonLink>
+<ButtonLink to="/understand-yourself/better-life-framework">Take The Quiz</ButtonLink>
 
 ### Unlock Your Potential
 
