@@ -2,11 +2,11 @@
 title: "Level Up With Us"
 description: Meaningful conversations about topics that we've seen different perspectives of.
 author: Conrad Lin
-tags: ["level up with us podcast"]
+tags: ["level up with us"]
 programType: knowledge
 location: all podcast platforms
 frameworkLevel: ALL
-published: 2024-02-29
+published: 2024-03-03
 lang: en
 ---
 
@@ -23,14 +23,14 @@ Every week, we dive into a new topic, dissecting and discussing it through the n
 
 We distribute these podcast episodes through all major podcast platforms (Spotify, Apple Podcasts, etc.):
 
-- @ Level Up With Us Podcast 
+- Spotify @ [Level Up With Us Podcast](https://podcasters.spotify.com/pod/show/level-up-with-us)
 
 ![Image](./thumbnail.png)
 
 As well as clips on our various social media channels:
 
-- @ The Co-x3 Family Foundation
+- @ [The Co-x3 Family Foundation](/links)
 
-Explore our comprehensive collection of podcasts all in one place here: [Level Up With Us Podcast](/unlock-your-potential/programs?tags=level%20up%20with%20us%20podcast).
+Explore our comprehensive collection of podcasts all in one place here: [Level Up With Us](/unlock-your-potential/programs?tags=level%20up%20with%20us).
 
 **Be A Guest:** If you want to be featured on our next episode, fill out this [form](https://thex3family.larksuite.com/share/base/form/shrusYAQsZBndhseIOk3lk0Couc).
