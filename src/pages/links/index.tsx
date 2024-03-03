@@ -12,8 +12,6 @@ import {
     Heading,
     HeadingProps,
     Icon,
-    SimpleGrid,
-    SimpleGridProps,
     Text,
     useToken,
 } from "@chakra-ui/react"
@@ -23,6 +21,7 @@ import { BasePageProps, ChildOnlyProp, Lang } from "@/lib/types"
 import ActionCard from "@/components/ActionCard"
 import ButtonLink from "@/components/Buttons/ButtonLink"
 import { Image } from "@/components/Image"
+import { BaseLink } from "@/components/Link"
 import MainArticle from "@/components/MainArticle"
 import PageMetadata from "@/components/PageMetadata"
 
@@ -35,8 +34,6 @@ import {
 
 import community_gathering from "@/public/community_gathering.png"
 import understand_yourself from "@/public/understand_yourself.png"
-import unlock_your_potential from "@/public/unlock_your_potential.png"
-import { BaseLink } from "@/components/Link"
 
 const SectionHeading = (props: HeadingProps) => (
     <Heading
