@@ -186,42 +186,42 @@ const HomePage = ({
             to: "https://our.x3.family/",
             ariaLabel: "Community",
             color: "#7289da",
-            title: "Chat With Us In Our Community"
+            title: "Join The Community"
         },
         {
             icon: FaYoutube,
             to: "https://www.youtube.com/c/thex3family",
             ariaLabel: "YouTube",
             color: "#FF0000",
-            title: "Watch Our Content On YouTube"
+            title: "Watch Our Content"
         },
         {
             icon: FaInstagram,
             to: "https://www.instagram.com/thex3family",
             ariaLabel: "Instagram",
             color: "#833AB4",
-            title: "See Our Daily Life On Our Instagram"
+            title: "A Day In Our Life"
         },
         {
             icon: FaTiktok,
             to: "https://www.tiktok.com/@thex3family",
             ariaLabel: "TikTok",
             color: "#00f2ea",
-            title: "Get Quick Learnings On Our TikTok"
+            title: "Get Quick Learnings"
         },
         {
             icon: FaGithub,
             to: "https://github.com/thex3family",
             ariaLabel: "GitHub",
             color: "#2b3137",
-            title: "Build Together With Us On Our GitHub"
+            title: "Build With Us"
         },
         {
             icon: FaTwitter,
             to: "https://twitter.com/thex3family",
             ariaLabel: "Twitter",
             color: "#1DA1F2",
-            title: "Chat With Us On Our Twitter"
+            title: "Tweet At Us"
         },
     ]
 

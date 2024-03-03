@@ -231,7 +231,8 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           {getLocaleTimestamp(locale as Lang, lastDeployDate!)}
         </Box>
         <Box my={4} display="flex" gap={4}
-          alignItems="center">
+          alignItems="center"
+          flexWrap="wrap">
           {socialLinks.map((link, idk) => {
             return (
               <BaseLink
@@ -253,8 +254,8 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
               </BaseLink>
             )
           })}
-          <ButtonLink to="/links" variant={"secondary"} mb={1}>
-            See More
+          <ButtonLink to="/links" style={{ color: 'grey', borderColor: 'grey' }} variant={"secondary"} mb={1}>
+            More
           </ButtonLink>
         </Box>
       <SimpleGrid
