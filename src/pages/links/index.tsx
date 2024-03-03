@@ -301,7 +301,7 @@ const HomePage = ({
 
             <Box pb={4}>
                 <SectionHeading mt={12} fontFamily="heading" textAlign="center">
-                    Let's Connect!
+                {t("page-links:page-links-connect-title")}
                 </SectionHeading>
             </Box>
             {socialLinks.map((link, index) => (
