@@ -37,9 +37,6 @@ export const RootLayout = ({
     asPath.includes(`/privacy-policy/`) ||
     asPath.includes(`/terms-of-use/`)
 
-  const noFooter =
-  asPath.includes(`/links/`)
-
   const isPageLanguageEnglish = locale === DEFAULT_LOCALE
 
   const shouldShowTranslationBanner =
@@ -67,7 +64,7 @@ export const RootLayout = ({
 
       {children}
 
-      {!noFooter ?? <Footer lastDeployDate={lastDeployDate} />}
+      <Footer lastDeployDate={lastDeployDate} />
       <FeedbackWidget />
     </Container>
   )
