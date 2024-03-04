@@ -17,7 +17,7 @@ In the complex game that is life, many people find themselves stuck on a level w
 
 ## What Does it Do?
 
-The Level Up Podcast is a 1-on-1 consulting session where we invite community members who are eager to elevate their lives. We delve into their challenges, engaging in empathetic and insightful conversations about their current life stage. Our goal is to facilitate breakthroughs, transforming feelings of helplessness into empowerment and clarity.
+Level Up With Conrad is a 1-on-1 consulting session where we invite community members who are eager to elevate their lives. We delve into their challenges, engaging in empathetic and insightful conversations about their current life stage. Our goal is to facilitate breakthroughs, transforming feelings of helplessness into empowerment and clarity.
 
 We've turned our consulting sessions into a podcast to share these transformative dialogues with a wider audience. Listeners can find resonance and inspiration in the diverse stories and experiences of our guests, gaining the personalized insights they need to level up.
 
@@ -25,7 +25,7 @@ We've turned our consulting sessions into a podcast to share these transformativ
 
 We distribute these podcast episodes through all major podcast platforms:
 
-- Spotify @ [Level Up With Conrad](https://podcasters.spotify.com/pod/show/levelupwithconrad)
+- @ [Level Up With Conrad](https://podcasters.spotify.com/pod/show/levelupwithconrad)
 
 ![Image](./thumbnail.png)
 
