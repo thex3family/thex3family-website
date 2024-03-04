@@ -1,6 +1,7 @@
-import { Flex, Icon, Text } from "@chakra-ui/react";
-import { BaseLink } from "@/components/Link"
 import { IconType } from "react-icons";
+import { Flex, Icon, Text } from "@chakra-ui/react";
+
+import { BaseLink } from "@/components/Link"
 
 type CardProps = {
   icon: IconType;

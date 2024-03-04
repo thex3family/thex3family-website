@@ -9,6 +9,8 @@ import {
 
 import { BasePageProps, Lang } from "@/lib/types"
 
+import Links from "@/components/Links"
+
 import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import {
@@ -16,10 +18,9 @@ import {
     isLangRightToLeft,
 } from "@/lib/utils/translations"
 
+import icon from "@/public/assets/icon-1000.png"
 import community_gathering from "@/public/community_gathering.png"
 import understand_yourself from "@/public/understand_yourself.png"
-import Links from "@/components/Links"
-import icon from "@/public/assets/icon-1000.png"
 
 type Props = BasePageProps & {
 }

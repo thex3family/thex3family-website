@@ -1,7 +1,5 @@
 import { ReactNode } from "react"
-import ButtonLink from "@/components/Buttons/ButtonLink"
-import { Image } from "@/components/Image"
-import { ChildOnlyProp } from "@/lib/types"
+import { StaticImageData } from "next/image"
 import {
     Box,
     Flex,
@@ -10,7 +8,10 @@ import {
     HeadingProps,
 } from "@chakra-ui/react"
 
-import { StaticImageData } from "next/image"
+import { ChildOnlyProp } from "@/lib/types"
+
+import ButtonLink from "@/components/Buttons/ButtonLink"
+import { Image } from "@/components/Image"
 
 type HeaderProps = {
   title: string;

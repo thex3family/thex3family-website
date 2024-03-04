@@ -1,10 +1,11 @@
+import { ReactNode } from "react"
+import { IconType } from "react-icons";
 import {
     Flex,
     FlexProps,
     Icon,
 } from "@chakra-ui/react"
-import { IconType } from "react-icons";
-import { ReactNode } from "react"
+
 import { BaseLink } from "@/components/Link"
 
 type SocialLinkProps = {
