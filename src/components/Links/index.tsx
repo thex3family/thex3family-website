@@ -20,6 +20,7 @@ import { StaticImageData } from "next/image"
 // Define the types for the data you expect to receive
 type LinkPageProps = {
     headerData: {
+        metaTitle?: string;
         title: string;
         description: string;
         buttonLabel: string;
@@ -45,7 +46,7 @@ type LinkPageProps = {
 
 
 const ContentBox = (props: ChildOnlyProp) => (
-    <Box py={4} px={{ base: 4, lg: 8 }} {...props} />
+    <Box pt={6} px={{ base: 4, lg: 8 }} {...props} />
 )
 
 const GrayContainer = (props: ChildOnlyProp) => (
@@ -78,7 +79,7 @@ const SectionHeading = (props: HeadingProps) => (
     />
 )
 
-const LinksPage: React.FC<LinkPageProps> = ({ headerData, cardsData, socialLinksData, dir }) => {
+const Links: React.FC<LinkPageProps> = ({ headerData, cardsData, socialLinksData, dir }) => {
 
     return (
         <Flex
@@ -91,7 +92,7 @@ const LinksPage: React.FC<LinkPageProps> = ({ headerData, cardsData, socialLinks
             mx="auto"
         >
             <PageMetadata
-                title={headerData.title}
+                title={headerData.metaTitle ? headerData.metaTitle : headerData.title}
                 description={headerData.description}
             />
             <GrayContainer>
@@ -121,4 +122,4 @@ const LinksPage: React.FC<LinkPageProps> = ({ headerData, cardsData, socialLinks
     );
 };
 
-export default LinksPage;
+export default Links;
