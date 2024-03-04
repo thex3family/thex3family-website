@@ -19,8 +19,6 @@ import {
 } from "@/lib/utils/translations"
 
 import icon from "@/public/assets/icon-1000.png"
-import community_gathering from "@/public/community_gathering.png"
-import understand_yourself from "@/public/understand_yourself.png"
 
 type Props = BasePageProps & {
 }
@@ -67,21 +65,18 @@ const LinksPage = ({
 
     const cardsData = [
         {
-            image: understand_yourself,
             icon: FaBook,
             title: "Understand Yourself With The Better Life Framework",
             to: "/understand-yourself/",
             boxShadow: cardBoxShadow
         },
         {
-            image: understand_yourself,
             icon: FaToolbox,
             title: "Unlock Your Potential With Personalized Programs",
             to: "/unlock-your-potential/",
             boxShadow: cardBoxShadow
         },
         {
-            image: understand_yourself,
             icon: FaHome,
             title: "Live With Us @ Our Family Without Borders",
             to: "https://ourfamilywithoutborders.com",
