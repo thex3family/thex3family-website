@@ -2,7 +2,7 @@
 import React from "react"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { FaDiscord, FaGithub, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
   Box,
   Flex,
@@ -37,28 +37,10 @@ const socialLinks = [
     color: "#FF0000",
   },
   {
-    icon: FaInstagram,
-    to: "https://www.instagram.com/thex3family",
-    ariaLabel: "Instagram",
-    color: "#833AB4",
-  },
-  {
-    icon: FaTiktok,
-    to: "https://www.tiktok.com/@thex3family",
-    ariaLabel: "TikTok",
-    color: "#00f2ea",
-  },
-  {
-    icon: FaGithub,
-    to: "https://github.com/thex3family",
-    ariaLabel: "GitHub",
-    color: "#333",
-  },
-  {
-    icon: FaTwitter,
-    to: "https://twitter.com/thex3family",
-    ariaLabel: "Twitter",
-    color: "#1DA1F2",
+      icon: FaLinkedin,
+      to: "https://www.linkedin.com/company/thex3family",
+      ariaLabel: "LinkedIn",
+      color: "#0077B5",
   },
 ]
 export interface LinkSection {
