@@ -1,21 +1,23 @@
 import { ReactNode } from "react"
 import React from 'react';
-import { Header } from './Header';
-import { Card } from './CardCTA';
-import { SocialLink } from './SocialLink';
+import { StaticImageData } from "next/image"
 import { IconType } from "react-icons";
 import {
     Box,
     Flex,
-    Text,
     Heading,
     HeadingProps,
+    Text,
 } from "@chakra-ui/react"
+
+import { ChildOnlyProp } from "@/lib/types"
+
 import MainArticle from "@/components/MainArticle"
 import PageMetadata from "@/components/PageMetadata"
 
-import { ChildOnlyProp } from "@/lib/types"
-import { StaticImageData } from "next/image"
+import { Card } from './CardCTA';
+import { Header } from './Header';
+import { SocialLink } from './SocialLink';
 
 // Define the types for the data you expect to receive
 type LinkPageProps = {
