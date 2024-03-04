@@ -121,10 +121,10 @@ const LinksPage = ({
         },
         {
             icon: FaBookOpen,
-            to: "https://www.conradlin.com/blog/",
+            to: "https://www.conradlin.com/blog",
             ariaLabel: "Instagram",
             color: "#000000",
-            title: "My Personal Sharing Space"
+            title: "My Personal Blog"
         },
     ]
 

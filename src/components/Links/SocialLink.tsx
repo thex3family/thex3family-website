@@ -25,6 +25,7 @@ const MainSectionContainer = (props: {
     <Flex
         alignItems="center"
         justifyContent="space-between"
+        textAlign="center"
         background={props.staticBg}
         _hover={{ bg: props.hoverBg }}
         borderBlock="1px"
@@ -39,7 +40,7 @@ const MainSectionContainer = (props: {
         hideArrow
         target="_blank" // Open the link in a new tab
         style={{ color: 'inherit', textDecoration: 'none' }} // Ensures that the font color does not change
-        px={12}
+        px={{base: 6, lg: 12}}
         {...props} // Make sure to spread the rest of the props
     >
         {props.children}

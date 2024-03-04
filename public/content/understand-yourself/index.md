@@ -80,7 +80,7 @@ We integrated foundational theories in psychological and personal development to
   <RichActionCard
     image="evolution_of_wants"
     title="The Evolution Of Wants (& Needs)"
-    description="As we level up in life, our motivations will evolve from having, to doing, to being."
+    description="As we level up in life, our motivations will evolve from having, to doing, to being. Balance your wants to live a fulfilled life."
     to="/understand-yourself/evolution-of-wants"
     buttonText="Explore"
   />
