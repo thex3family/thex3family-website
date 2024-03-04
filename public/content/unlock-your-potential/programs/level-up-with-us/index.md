@@ -23,7 +23,7 @@ Every week, we dive into a new topic, dissecting and discussing it through the n
 
 We distribute these podcast episodes through all major podcast platforms (Spotify, Apple Podcasts, etc.):
 
-- Spotify @ [Level Up With Us Podcast](https://podcasters.spotify.com/pod/show/level-up-with-us)
+- @ [Level Up With Us Podcast](https://podcasters.spotify.com/pod/show/level-up-with-us)
 
 ![Image](./thumbnail.png)
 
