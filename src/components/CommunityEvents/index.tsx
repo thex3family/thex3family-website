@@ -99,6 +99,7 @@ const CommunityEvents = ({ events }: CommunityEventsProps) => {
         sm: "2rem 0 0",
         lg: "2rem 2rem 0",
       }}
+      id="events"
     >
       <Center w={{ base: "100%", lg: "40%" }}>
         <Box pe={8} ps={{ base: 8, lg: 0 }}>
