@@ -92,6 +92,7 @@ const Links: React.FC<LinkPageProps> = ({ headerData, cardsData, socialLinksData
             width="full"
             maxWidth="xl"
             mx="auto"
+            pb="30px"
         >
             <PageMetadata
                 title={headerData.metaTitle ? headerData.metaTitle : headerData.title}
