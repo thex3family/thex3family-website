@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaBook, FaBookOpen, FaInstagram, FaLightbulb, FaRocket, FaTiktok, FaYoutube } from "react-icons/fa"
+import { FaBook, FaBookOpen, FaInstagram, FaLightbulb, FaLinkedin, FaRocket, FaTiktok, FaYoutube } from "react-icons/fa"
 import {
     useToken,
 } from "@chakra-ui/react"
@@ -52,7 +52,7 @@ const LinksPage = ({
 
     const headerData = {
         title: "Conrad Lin",
-        description: "I Help People Level Up.",
+        description: "I Help People Level Up | Author Of The Better Life Framework • Founder Of The Co-x3 Family Foundation",
         imageSrc: conrad,
         imageAlt: t("common:icon-image-alt"),
         buttonLabel: t("common:learn-more"),
@@ -118,6 +118,13 @@ const LinksPage = ({
             ariaLabel: "TikTok",
             color: "#00f2ea",
             title: "Clips From My Content"
+        },
+        {
+            icon: FaLinkedin,
+            to: "https://www.linkedin.com/in/conradlin/",
+            ariaLabel: "LinkedIn",
+            color: "#0077B5",
+            title: "My Professional Network"
         },
         {
             icon: FaBookOpen,

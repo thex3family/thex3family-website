@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaBook, FaDiscord, FaGithub, FaHome, FaInstagram, FaTiktok, FaToolbox, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaBook, FaDiscord, FaGithub, FaHome, FaInstagram, FaLinkedin, FaTiktok, FaToolbox, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
     useToken,
 } from "@chakra-ui/react"
@@ -78,6 +78,12 @@ const LinksPage = ({
         },
         {
             icon: FaHome,
+            title: "Make Positive Impact By Joining Our Team",
+            to: "/make-positive-impact/collaborate",
+            boxShadow: cardBoxShadow
+        },
+        {
+            icon: FaHome,
             title: "Live With Us @ Our Family Without Borders",
             to: "https://ourfamilywithoutborders.com",
             boxShadow: cardBoxShadow
@@ -112,6 +118,13 @@ const LinksPage = ({
             ariaLabel: "TikTok",
             color: "#00f2ea",
             title: "Get Quick Learnings"
+        },
+        {
+            icon: FaLinkedin,
+            to: "https://www.linkedin.com/company/thex3family",
+            ariaLabel: "LinkedIn",
+            color: "#0077B5",
+            title: "Network With Us"
         },
         {
             icon: FaGithub,
