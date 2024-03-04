@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaBook, FaDiscord, FaGithub, FaHome, FaInstagram, FaTiktok, FaToolbox, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaBook, FaBookOpen, FaInstagram, FaLightbulb, FaRocket, FaTiktok, FaYoutube } from "react-icons/fa"
 import {
     useToken,
 } from "@chakra-ui/react"
@@ -18,7 +18,7 @@ import {
     isLangRightToLeft,
 } from "@/lib/utils/translations"
 
-import icon from "@/public/assets/icon-1000.png"
+import conrad from "@/public/team/conrad.png"
 
 type Props = BasePageProps & {
 }
@@ -51,81 +51,80 @@ const LinksPage = ({
     const dir = isLangRightToLeft(locale as Lang) ? "rtl" : "ltr"
 
     const headerData = {
-        metaTitle: t("page-links:page-links-meta-title"),
-        title: t("common:site-title"),
-        description: t("common:site-description"),
-        imageSrc: icon,
+        title: "Conrad Lin",
+        description: "I’m passionate about helping people level up.",
+        imageSrc: conrad,
         imageAlt: t("common:icon-image-alt"),
         buttonLabel: t("common:learn-more"),
-        buttonTo: "https://the.x3.family",
-        connectTitle: t("page-links:page-links-connect-title")
+        buttonTo: "https://conradlin.com",
+        connectTitle: "🔻 See What I'm Up To 🔻"
     }
 
     const cardBoxShadow = useToken("colors", "cardBoxShadow")
 
     const cardsData = [
         {
+            icon: FaLightbulb,
+            title: "Sign Up For A FREE Consulting Session",
+            to: "https://levelupwithconrad.com",
+            boxShadow: cardBoxShadow
+        },
+        {
             icon: FaBook,
-            title: "Understand Yourself With The Better Life Framework",
+            title: "Understand Yourself With My Book (Free Preview!)",
             to: "/understand-yourself/",
             boxShadow: cardBoxShadow
         },
         {
-            icon: FaToolbox,
-            title: "Unlock Your Potential With Personalized Programs",
-            to: "/unlock-your-potential/",
-            boxShadow: cardBoxShadow
-        },
-        {
-            icon: FaHome,
-            title: "Live With Us @ Our Family Without Borders",
-            to: "https://ourfamilywithoutborders.com",
+            icon: FaRocket,
+            title: "Join Me In Making Positive Impact",
+            to: "/make-positive-impact/",
             boxShadow: cardBoxShadow
         },
     ]
     
     const socialLinksData = [
         {
-            icon: FaDiscord,
-            to: "https://our.x3.family/",
-            ariaLabel: "Community",
-            color: "#7289da",
-            title: "Join The Community"
+            icon: FaYoutube,
+            to: "https://www.youtube.com/playlist?list=PLgDMbYMf0e_qpWHJlpGW6fYI5cYHNK5Ty",
+            ariaLabel: "YouTube",
+            color: "#FF0000",
+            title: "Weekly Podcast: Level Up With Conrad"
         },
         {
             icon: FaYoutube,
-            to: "https://www.youtube.com/c/thex3family",
+            to: "https://www.youtube.com/playlist?list=PLgDMbYMf0e_oMFRliRwjlXHcD7YCkO6NE",
             ariaLabel: "YouTube",
             color: "#FF0000",
-            title: "Watch Our Content"
+            title: "How I'm Living My Best Life Every Day"
+        },
+        {
+            icon: FaYoutube,
+            to: "https://www.youtube.com/@conradlin",
+            ariaLabel: "YouTube",
+            color: "#FF0000",
+            title: "Watch All My Content"
         },
         {
             icon: FaInstagram,
-            to: "https://www.instagram.com/thex3family",
+            to: "https://www.instagram.com/levelupwithconrad",
             ariaLabel: "Instagram",
             color: "#833AB4",
-            title: "A Day In Our Life"
+            title: "Clips and Daily Life"
         },
         {
             icon: FaTiktok,
-            to: "https://www.tiktok.com/@thex3family",
+            to: "https://www.tiktok.com/@conradlin",
             ariaLabel: "TikTok",
             color: "#00f2ea",
-            title: "Get Quick Learnings"
+            title: "Clips From My Content"
         },
         {
-            icon: FaGithub,
-            to: "https://www.github.com/thex3family",
-            ariaLabel: "GitHub",
-            color: "#2b3137",
-            title: "Build With Us"
-        },
-        {
-            icon: FaTwitter,
-            to: "https://www.twitter.com/thex3family",
-            ariaLabel: "Twitter",
-            color: "#1DA1F2",
-            title: "Tweet At Us"
+            icon: FaBookOpen,
+            to: "https://www.conradlin.com/blog/",
+            ariaLabel: "Instagram",
+            color: "#000000",
+            title: "My Personal Sharing Space"
         },
     ]
 
