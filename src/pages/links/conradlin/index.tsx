@@ -52,7 +52,7 @@ const LinksPage = ({
 
     const headerData = {
         title: "Conrad Lin",
-        description: "I’m passionate about helping people level up.",
+        description: "I Help People Level Up.",
         imageSrc: conrad,
         imageAlt: t("common:icon-image-alt"),
         buttonLabel: t("common:learn-more"),
