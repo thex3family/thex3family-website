@@ -1,29 +1,13 @@
-import { ReactNode } from "react"
 import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { FaBook, FaDiscord, FaGithub, FaHome, FaInstagram, FaTiktok, FaToolbox, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
-    Box,
-    chakra,
-    Flex,
-    FlexProps,
-    Heading,
-    HeadingProps,
-    Icon,
-    Text,
     useToken,
 } from "@chakra-ui/react"
 
-import { BasePageProps, ChildOnlyProp, Lang } from "@/lib/types"
-
-import ActionCard from "@/components/ActionCard"
-import ButtonLink from "@/components/Buttons/ButtonLink"
-import { Image } from "@/components/Image"
-import { BaseLink } from "@/components/Link"
-import MainArticle from "@/components/MainArticle"
-import PageMetadata from "@/components/PageMetadata"
+import { BasePageProps, Lang } from "@/lib/types"
 
 import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
@@ -34,81 +18,7 @@ import {
 
 import community_gathering from "@/public/community_gathering.png"
 import understand_yourself from "@/public/understand_yourself.png"
-
-const SectionHeading = (props: HeadingProps) => (
-    <Heading
-        lineHeight={1.4}
-        fontFamily="sans-serif"
-        fontSize={{ base: "2xl", sm: "2rem" }}
-        fontWeight={600}
-        mb={2}
-        {...props}
-    />
-)
-
-const SectionDecription = (props: ChildOnlyProp) => (
-    <Box mb={8} fontSize={{ base: "md", sm: "xl" }} lineHeight={1.4} {...props} />
-)
-
-const ImageContainer = (props: FlexProps & { children: ReactNode }) => (
-    <Flex width="full" height="full"
-        justifyContent="center" // Add this line to center the image horizontally
-        alignItems="center"    // Add this line to center the image vertically
-        {...props} />
-)
-
-const CardContainer = (props: {
-    children: ReactNode
-}) => (
-    <Flex
-        justifyContent={{ base: "flex-start" }} // Start alignment on small screens, center on medium and up
-        overflowX="auto" // Enable horizontal scrolling
-        gap={8}
-        p={4}
-        width="full"
-        flexWrap="nowrap" // Prevent wrapping of flex items
-    >
-        {props.children}
-    </Flex>
-);
-
-const ContentBox = (props: ChildOnlyProp) => (
-    <Box py={4} px={{ base: 4, lg: 8 }} {...props} />
-)
-
-const GrayContainer = (props: ChildOnlyProp) => (
-    <Box width="full" background="grayBackground" {...props} />
-)
-
-const MainSectionContainer = (props: {
-    children: ReactNode
-    staticBg?: FlexProps["bg"]
-    hoverBg?: FlexProps["bg"]
-    href?: string;
-}) => (
-    <Flex
-        alignItems="center"
-        justifyContent="space-between"
-        background={props.staticBg}
-        _hover={{ bg: props.hoverBg }}
-        borderBlock="1px"
-        borderColor="text"
-        height={100}
-        py={{ base: 8, lg: 0 }}
-        width="full"
-        transition="background-color 0.2s" // Add transition for smooth background color change
-        fontSize={{ base: "md", sm: "lg" }}
-        fontWeight={500}
-        as={BaseLink}// Make the Flex component behave as an anchor tag
-        hideArrow
-        target="_blank" // Open the link in a new tab
-        style={{ color: 'inherit', textDecoration: 'none' }} // Ensures that the font color does not change
-        px={12}
-        {...props} // Make sure to spread the rest of the props
-    >
-        {props.children}
-    </Flex>
-);
+import LinksPage from "@/components/Links"
 
 type Props = BasePageProps & {
 }
@@ -140,37 +50,43 @@ const HomePage = ({
     const { locale } = useRouter()
     const dir = isLangRightToLeft(locale as Lang) ? "rtl" : "ltr"
 
-    const header = {
+    const headerData = {
         title: t("common:site-title"),
         description: t("common:site-description"),
-        image: community_gathering,
-        alt: "",
-        button: t("common:learn-more"),
-        to: "https://the.x3.family",
+        imageSrc: community_gathering,
+        imageAlt: "",
+        buttonLabel: t("common:learn-more"),
+        buttonTo: "https://the.x3.family",
+        connectTitle: t("page-links:page-links-connect-title")
     }
 
-    const cards = [
+    const cardBoxShadow = useToken("colors", "cardBoxShadow")
+
+    const cardsData = [
         {
             image: understand_yourself,
             icon: FaBook,
             title: "Understand Yourself With The Better Life Framework",
             to: "/understand-yourself/",
+            boxShadow: cardBoxShadow
         },
         {
             image: understand_yourself,
             icon: FaToolbox,
             title: "Unlock Your Potential With Personalized Programs",
             to: "/unlock-your-potential/",
+            boxShadow: cardBoxShadow
         },
         {
             image: understand_yourself,
             icon: FaHome,
             title: "Live With Us @ Our Family Without Borders",
             to: "https://ourfamilywithoutborders.com",
+            boxShadow: cardBoxShadow
         },
     ]
-
-    const socialLinks = [
+    
+    const socialLinksData = [
         {
             icon: FaDiscord,
             to: "https://our.x3.family/",
@@ -215,111 +131,9 @@ const HomePage = ({
         },
     ]
 
-    const cardBoxShadow = useToken("colors", "cardBoxShadow")
 
     return (
-        <Flex
-            as={MainArticle}
-            flexDirection="column"
-            alignItems="center"
-            dir={dir}
-            width="full"
-            maxWidth="xl"
-            mx="auto"
-        >
-            <PageMetadata
-                title={t("page-links:page-links-meta-title")}
-                description={header.description}
-            />
-            <GrayContainer>
-                <ContentBox>
-                    <Flex
-                        alignItems="center"
-                        flexDirection={{ base: "column-reverse" }}
-                        gap={{ base: 4 }}
-                        textAlign="center"
-                    >
-                        <Box
-                            flex="0 0 50%"
-                            boxSize="full"
-                        >
-                            <Box mb={6}>
-                                <SectionHeading fontFamily="inherit">
-                                    {header.title}
-                                </SectionHeading>
-                            </Box>
-                            <SectionDecription>
-                                {header.description}
-                            </SectionDecription>
-                            <ButtonLink to={header.to}>
-                                {header.button}
-                            </ButtonLink>
-                        </Box>
-                        <ImageContainer>
-                            <Image
-                                src={header.image}
-                                alt={t("page-index:page-index-get-started-image-alt")}
-                                height={125}
-                            />
-                        </ImageContainer>
-                    </Flex>
-
-                    <Text size="sm" mt={8} mb={4} fontWeight="600" textAlign="center">
-                        Popular Links
-                    </Text>
-                    <CardContainer>
-                        {cards.map((card, index) => (
-                            <Flex
-                                key={index}
-                                borderWidth="1px"
-                                borderStyle="solid"
-                                borderColor="text"
-                                borderRadius="base"
-                                p={4}
-                                flexDirection="column"
-                                width="150px"
-                                textAlign="center"
-                                position="relative"
-                                flexShrink={0}
-                                as={BaseLink} // Make the Flex component behave as an anchor tag
-                                hideArrow
-                                target="_blank" // Open the link in a new tab
-                                style={{ color: 'inherit', textDecoration: 'none' }} // Ensures that the font color does not change
-                                href={card.to}
-                                boxShadow={cardBoxShadow}
-                                _hover={{
-                                    borderRadius: "base",
-                                    boxShadow: "0px 8px 17px rgba(0, 0, 0, 0.15)",
-                                    transition: "transform 0.1s",
-                                    transform: "scale(1.02)",
-                                }}
-                            >
-                                <Icon as={card.icon} boxSize={4} position="absolute" top={-2} left="50%" transform="translateX(-50%)" />
-                                <Text size="md" mt={3} mb={2} fontWeight="500">
-                                    {card.title}
-                                </Text>
-                            </Flex>
-                        ))}
-                    </CardContainer>
-                </ContentBox>
-            </GrayContainer>
-
-            <Box pb={4}>
-                <SectionHeading mt={12} fontFamily="heading" textAlign="center">
-                    {t("page-links:page-links-connect-title")}
-                </SectionHeading>
-            </Box>
-            {socialLinks.map((link, index) => (
-                <MainSectionContainer
-                    key={index}
-                    staticBg={`${link.color}1A`} // 20% opacity of the color
-                    hoverBg={`${link.color}80`} // Full color on hover
-                    href={link.to} // Set the destination URL
-                >
-                    <Icon as={link.icon} mr={2} fontSize="3xl" />{link.title}<Icon as={link.icon} ml={2} fontSize="3xl" />
-                </MainSectionContainer>
-            ))}
-        </Flex>
+        <LinksPage headerData={headerData} cardsData={cardsData} socialLinksData={socialLinksData} dir={dir} />
     )
 }
 
