@@ -18,7 +18,8 @@ import {
 
 import community_gathering from "@/public/community_gathering.png"
 import understand_yourself from "@/public/understand_yourself.png"
-import LinksPage from "@/components/Links"
+import Links from "@/components/Links"
+import icon from "@/public/assets/icon-1000.png"
 
 type Props = BasePageProps & {
 }
@@ -44,17 +45,18 @@ export const getStaticProps = (async ({ locale }) => {
     }
 }) satisfies GetStaticProps<Props>
 
-const HomePage = ({
+const LinksPage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
     const { t } = useTranslation(["common", "page-links"])
     const { locale } = useRouter()
     const dir = isLangRightToLeft(locale as Lang) ? "rtl" : "ltr"
 
     const headerData = {
+        metaTitle: t("page-links:page-links-meta-title"),
         title: t("common:site-title"),
         description: t("common:site-description"),
-        imageSrc: community_gathering,
-        imageAlt: "",
+        imageSrc: icon,
+        imageAlt: t("common:icon-image-alt"),
         buttonLabel: t("common:learn-more"),
         buttonTo: "https://the.x3.family",
         connectTitle: t("page-links:page-links-connect-title")
@@ -117,14 +119,14 @@ const HomePage = ({
         },
         {
             icon: FaGithub,
-            to: "https://github.com/thex3family",
+            to: "https://www.github.com/thex3family",
             ariaLabel: "GitHub",
             color: "#2b3137",
             title: "Build With Us"
         },
         {
             icon: FaTwitter,
-            to: "https://twitter.com/thex3family",
+            to: "https://www.twitter.com/thex3family",
             ariaLabel: "Twitter",
             color: "#1DA1F2",
             title: "Tweet At Us"
@@ -133,8 +135,8 @@ const HomePage = ({
 
 
     return (
-        <LinksPage headerData={headerData} cardsData={cardsData} socialLinksData={socialLinksData} dir={dir} />
+        <Links headerData={headerData} cardsData={cardsData} socialLinksData={socialLinksData} dir={dir} />
     )
 }
 
-export default HomePage
+export default LinksPage

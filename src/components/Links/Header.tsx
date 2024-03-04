@@ -54,7 +54,7 @@ export const Header = ({ title, description, buttonLabel, buttonTo, imageSrc, im
       <ButtonLink to={buttonTo}>{buttonLabel}</ButtonLink>
     </Box>
     <ImageContainer>
-      <Image src={imageSrc} alt={imageAlt} height={125} />
+      <Image src={imageSrc} alt={imageAlt} height={100} />
     </ImageContainer>
   </Flex>
 );
