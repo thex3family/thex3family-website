@@ -137,7 +137,7 @@ Better Life Framework is ideal for anyone wanting to live a better life and posi
 
 ### Publications
 
-<ExpandableCard title="Papers" eventCategory="/understand-yourself" eventName="clicked papers" contentPreview="We publish cutting-edge research and insightful papers in reputable academic journals.">
+<ExpandableCard title="Papers" eventCategory="/understand-yourself" eventName="clicked papers" contentPreview="We are publishing cutting-edge research and insightful papers in reputable academic journals.">
 
 - Better Life Framework as a Predictive Model for Human Behavior (Q3 2024)
 - Integrating Better Life Framework in Organizational Development (2025)
