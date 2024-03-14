@@ -22,13 +22,17 @@ The 'Curiosity' perspective recognizes the world as an intricate, ever-evolving 
 
 As we embrace curiosity, we understand that our rules and beliefs are not one-size-fits-all. What works for one may not work for another, and that's okay. This perspective develops from the recognition that life is an experiment filled with trials, errors, and discoveries. We all seek what's best for us, not through imposition but through understanding and mutual respect. We open our minds to try to understand the others' perspective instead of just bluntly shutting them out.
 
+![Image](../../../../framework/8_a.jpg)
+
 ## Historical Context
 
 Emerging in the late 1900s, the 'Curiosity' perspective reflects a time of collective individualism, where the focus shifted to drawing understanding from a multitude of viewpoints. The mentality was trans-rational, embracing experiences without the immediate need to respond or judge. The goal was to find peace in a world full of unanswered questions, and methods included observing, allowing, and protecting personal boundaries, while acknowledging our interconnectedness.
 
 ## Strengths and Challenges
 
-Our strength is our openness to life's vast experiences and our ability to engage with them without preconceived notions. We value inclusiveness and the power of listening to all voices, especially those that have been marginalized.
+Our strength is our openness to life's vast experiences and our ability to engage with them without preconceived notions. We value inclusiveness and the power of listening to all voices, and opening up our eyes to different interpretations of the world.
+
+![Image](../../../../framework/8_b.jpg)
 
 The challenges we might face include dealing with spiritual or existential uncertainty, sometimes feeling ungrounded as we seek to understand an infinite array of perspectives without always finding clear answers.
 

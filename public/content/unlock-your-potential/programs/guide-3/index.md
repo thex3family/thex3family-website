@@ -22,6 +22,8 @@ Imagine a world where everyone is playing their own game, trying to win in their
 
 We start feeling this way when our basic needs – like food and a safe place to live – are taken care of. Then we begin to think about what more we want from life. We start to see that we've got to be there for ourselves because sometimes, even the people who care about us might not understand what we really want. Life becomes like a game of give and take, where we do things for others and expect something back.
 
+![Image](../../../../framework/3_a.jpg)
+
 ## Historical Context
 
 The 'Winning' perspective can be linked back to mythic, feudal, and exploitative empires that emerged around 10,000 years ago. This era was characterized by a social structure where the pursuit of personal ambitions and desires was paramount. The primary focus was on doing what one wants, taking what one desires, and getting one's way by any means necessary. It was an age where climbing the ranks of power was the mentality of many.
@@ -33,6 +35,8 @@ The goal during this time was to obtain power and glory, often to the extent of 
 We're really good at spotting chances to get ahead, especially when the rewards are clear. We shine in situations where we know exactly what we'll gain.
 
 But, this way of seeing the world has its tough sides too. Sometimes, we might feel let down when we don't get back what we hoped for. And we often have to figure out how to fit in with people who don't think the same way about give and take.
+
+![Image](../../../../framework/3_b.jpg)
 
 ## Unlock Your Potential
 

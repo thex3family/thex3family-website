@@ -1,5 +1,7 @@
 import { useTranslation } from "next-i18next"
-import { Box, SimpleGrid, Text, VStack } from "@chakra-ui/react"
+import { Box, Flex, SimpleGrid, Text, VStack } from "@chakra-ui/react"
+
+import { Image } from "@/components/Image"
 
 import { ButtonLink } from "../../Buttons"
 
@@ -33,6 +35,13 @@ export const FrameworkMoreInfo = ({
           />
         </Box>
         <Box>
+          <Flex>
+            <Image
+                  src={framework.illustration}
+                  alt={t("page-index:page-index-get-started-image-alt")}
+                  width={500}
+                />
+          </Flex>
           <FrameworkMoreInfoCategory
             framework={framework}
           />
@@ -45,6 +54,7 @@ export const FrameworkMoreInfo = ({
           >
             <ButtonLink
               to={`/unlock-your-potential/programs?filters=LEVEL_${framework.name}`}
+              target="_blank"
               customEventOptions={{
                 eventCategory: "FrameworkExternalLinkList",
                 eventAction: `Go to framework`,

@@ -24,13 +24,19 @@ This perspective is underpinned by the belief that life is about pleasing others
 
 This perspective develops as we become more aware of the world around us and start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interdependencyed web of relationships, where our actions can affect others and their reactions can affect us. It's a shift from focusing solely on our own self for survival to understanding how we can thrive with a larger community or ecosystem.
 
+![Image](../../../../framework/2_a.jpg)
+
 ## Historical Context
 
 The foundations of the 'Dependency' perspective can be traced back to the tribal order established around 50,000 years ago. During this era, the focus was primarily on keeping the group safe and happy, while also seeking to please the gods.
 
+![Image](../../../../framework/2_b.jpg)
+
 The goal was to ensure safety and security, maintaining functional habits and dependable practices that benefitted the group. This was achieved by preserving tribal traditions and engaging in rituals to petition the gods for favors.
 
 A vivid example is found in the rituals of the Incas, who historically offered valuable sacrifices to their gods in hopes of ensuring safety and stability for their community. Similar practices were observed in other ancient civilizations, where offerings, sometimes even including valuables, were made to appease gods or natural forces, such as volcanoes.
+
+![Image](../../../../framework/2_c.jpg)
 
 ## Strengths and Challenges
 

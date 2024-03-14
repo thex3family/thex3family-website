@@ -26,6 +26,8 @@ Our journey in the 'Survival' perspective is rooted in our most basic sensory ex
 
 As we navigate through life, our focus is primarily on addressing these immediate, physical needs – the need to eat when we're hungry, to rest when we're tired, to seek shelter and warmth, or to respond to our natural curiosities and attractions.
 
+![Image](../../../../framework/1_a.jpg)
+
 ## Historical Context
 
 The 'Survival' perspective is deeply rooted in our ancestral past, tracing back to the era of small survival bands around 100,000 years ago. The primary focus during this period was doing whatever was necessary to survive.

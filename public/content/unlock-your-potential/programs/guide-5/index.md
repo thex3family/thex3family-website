@@ -22,13 +22,21 @@ In the 'Systems' perspective, we come to realize that what is 'good' and 'bad' v
 
 We develop this perspective when we start seeing the complexities and diversities in people’s needs and desires. It's about moving from a simple black-and-white view of the world to recognizing the gray areas. We rely on logic, measurement, and proof to navigate these complexities, aiming to make informed decisions that benefit both ourselves and those around us.
 
+![Image](../../../../framework/5_a.jpg)
+
 ## Historical Context
 
-The roots of the 'Systems' perspective can be traced back to the beginnings of capitalist democracies and market-driven meritocracies around the 1600s. This era was characterized by a focus on scientific reasoning, logical thought, and a view of life as a strategic multiplayer game. The goals were material wealth, the defense of civilization, and continuous improvement and growth. Success was defined by the achievement of measurable objectives and the tangible impacts of one's actions.  
+The roots of the 'Systems' perspective can be traced back to the beginnings of capitalist democracies and market-driven meritocracies around the 1600s. This era was characterized by a focus on scientific reasoning, logical thought, and a view of life as a strategic multiplayer game.
+
+The goals of the game were material wealth, the defense of civilization, and continuous improvement and growth. Success was defined by the achievement of measurable objectives and the tangible impacts of one's actions.  
+
+![Image](../../../../framework/5_c.jpg)
 
 ## Strengths and Challenges
 
 Our strength in this perspective lies in our ability to set clear goals and use strategic planning to achieve them. This logical approach leads to tangible results and continuous improvement.
+
+![Image](../../../../framework/5_b.jpg)
 
 However, we sometimes face challenges when our systems fail or when situations require an emotional or intuitive response. Our focus on efficiency and results can lead to frustration in unpredictable circumstances and might overshadow the importance of emotional intelligence and relationships.
 

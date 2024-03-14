@@ -22,15 +22,20 @@ The 'Letting Go' perspective is all about valuing each person's uniqueness and a
 
 This perspective arises from an awareness that traditional rules and systems may not always accommodate the diverse needs and desires of individuals. It's a realization that diversity is not a deviation but a natural part of human life. The 'Letting Go' perspective flourishes when we understand that freedom and respect for individual choices are essential for a harmonious society.
 
+![Image](../../../../framework/6_a.jpg)
+
 ## Historical Context
 
 The 'Letting Go' perspective has its roots in social democracies, beginning in the 1800s. This era saw a shift towards inner peace, the expansion of care for others, and the advocacy of human rights. It was marked by a mentality of radical inclusiveness, aiming for consensus, effective communication, and mutually beneficial relations.
 
-The methods were inclusive, giving voice to the powerless, emphasizing group needs, and working to eliminate marginalization. However, this period also witnessed challenges such as inauthenticity, lack of discernment, overemphasis on consensus, and sometimes narcissistic behaviors.
+![Image](../../../../framework/6_c.jpg)
 
+The methods were inclusive, giving voice to the powerless, emphasizing group needs, and working to eliminate marginalization. However, this period also witnessed challenges such as inauthenticity, lack of discernment, overemphasis on consensus, and sometimes narcissistic behaviors.
 ## Strengths and Challenges
 
-Our strength in this perspective lies in our commitment to inclusiveness and respect for individuality. We strive for a world where diverse views are heard, and everyone's rights are respected.
+Our strength in this perspective lies in our commitment to inclusiveness and respect for individuality. We strive for a world where diverse views are heard, and everyone's rights are respected. We tend to look within for answers, getting in touch with our inner selves and learning to love ourselves.
+
+![Image](../../../../framework/6_b.jpg)
 
 However, we can face challenges in maintaining authenticity and discernment. Our desire for consensus and inclusiveness can sometimes lead to overlooking practical realities and the need for effective decision-making. There's a risk of becoming so focused on group needs that we neglect personal accountability and clear direction.
 

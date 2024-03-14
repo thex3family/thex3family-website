@@ -22,13 +22,17 @@ In the 'Empathy' perspective, we recognize that the world is too complex to cont
 
 This perspective grows from a recognition of life's unpredictability and the unique experiences that shape each of us. It's a realization that while we may set out with intentions and care, the ultimate outcome can be uncertain. We learn to let go of rigid expectations and embrace the fluidity of life, understanding that we are all constantly evolving and learning from our experiences.
 
+![Image](../../../../framework/9_a.jpg)
+
 ## Historical Context
 
 In a world that's rapidly changing, where social structures are still forming and the collective consciousness is expanding, the 'Empathy' perspective is becoming ever more relevant. It reflects a time when the focus is on observing and understanding the vast ecology of human experiences, honoring and protecting all beings and phenomena without the need to control or respond with judgment.
 
 ## Strengths and Challenges
 
-Our strength is our ability to love and accept people where they are, offering support without trying to change their essence. This perspective fosters deep connections and a profound understanding of the human condition.
+Our strength is our ability to love and accept people where they are, offering support without trying to change their essence. This perspective fosters deep connections and a profound understanding of the human condition. We are able to see the different perspectives we view the world and how our perspective (and reality) can shift depending on where we place our focus.
+
+![Image](../../../../framework/9_b.jpg)
 
 Our challenge is to maintain this depth of empathy without losing ourselves or becoming overwhelmed by the emotional weight of the world. We must learn to shine our light without dimming our own.
 
