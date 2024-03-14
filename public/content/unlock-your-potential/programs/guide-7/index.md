@@ -22,13 +22,17 @@ Embracing the 'Setting Boundaries' perspective means we value the unique tapestr
 
 We cultivate this perspective as we mature in our understanding that respect for individual freedom includes protecting our own space and peace. We learn to discern our limits, from our basic dislikes to our absolute deal-breakers, and communicate them effectively.
 
+![Image](../../../../framework/7_a.jpg)
+
 ## Historical Context
 
 The 'Setting Boundaries' perspective gained prominence in the world-centered social web of the mid-1900s, a period focused on authentic self-expression and the harmonization of internal and external worlds. This era encouraged us to develop our innate potential while acknowledging the collective needs, yet it also confronted us with the challenges of realizing our full selves, navigating existential dilemmas, and the dangers of superficial conformity.
 
 ## Strengths and Challenges
 
-Our primary strength lies in our ability to identify and honor our personal limits, fostering self-respect and earning the respect of others.
+Our primary strength lies in our ability to identify and honor our personal boundaries while understanding others' individualistic tendancies. This builds self-respect and earns the respect of others.
+
+![Image](../../../../framework/7_b.jpg)
 
 Conversely, our challenge is managing relationships where our boundaries are tested or not recognized, leading to potential conflicts and the need to uphold our principles firmly without alienating those important to us.
 

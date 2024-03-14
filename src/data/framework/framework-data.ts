@@ -1,5 +1,14 @@
 import { StaticImageData } from "next/image"
 
+import one_a from "@/public/framework/1_a.jpg"
+import two_a from "@/public/framework/2_a.jpg"
+import three_a from "@/public/framework/3_a.jpg"
+import four_a from "@/public/framework/4_a.jpg"
+import five_a from "@/public/framework/5_a.jpg"
+import six_a from "@/public/framework/6_a.jpg"
+import seven_a from "@/public/framework/7_a.jpg"
+import eight_a from "@/public/framework/8_a.jpg"
+import nine_a from "@/public/framework/9_a.jpg"
 import eight from "@/public/framework/eight.png"
 import five from "@/public/framework/five.png"
 import four from "@/public/framework/four.png"
@@ -15,6 +24,7 @@ export interface FrameworkData {
   name: string
   est_population: number
   image: StaticImageData
+  illustration: StaticImageData
   brand_color: string
   languages_supported: string[]
   knowledge: string
@@ -64,6 +74,7 @@ const frameworkData: FrameworkData[] = [
     name: "1",
     est_population: 100,
     image: one,
+    illustration: one_a,
     brand_color: "#E03D3E",
     languages_supported: [
       "en",
@@ -113,6 +124,7 @@ const frameworkData: FrameworkData[] = [
     name: "2",
     est_population: 99.6,
     image: two,
+    illustration: two_a,
     brand_color: "#ff7324",
     languages_supported: [
       "en",
@@ -162,6 +174,7 @@ const frameworkData: FrameworkData[] = [
     name: "3",
     est_population: 92,
     image: three,
+    illustration: three_a,
     brand_color: "#EDBE00",
     languages_supported: [
       "en",
@@ -211,6 +224,7 @@ const frameworkData: FrameworkData[] = [
     name: "4",
     est_population: 40,
     image: four,
+    illustration: four_a,
     brand_color: "#13AA78",
     languages_supported: [
       "en",
@@ -260,6 +274,7 @@ const frameworkData: FrameworkData[] = [
     name: "5",
     est_population: 28,
     image: five,
+    illustration: five_a,
     brand_color: "#6FAAC3",
     languages_supported: [
       "en",
@@ -309,6 +324,7 @@ const frameworkData: FrameworkData[] = [
     name: "6",
     est_population: 15,
     image: six,
+    illustration: six_a,
     brand_color: "#4908B0",
     languages_supported: [
       "en",
@@ -358,6 +374,7 @@ const frameworkData: FrameworkData[] = [
     name: "7",
     est_population: 5,
     image: seven,
+    illustration: seven_a,
     brand_color: "#ffe5f9",
     languages_supported: [
       "en",
@@ -407,6 +424,7 @@ const frameworkData: FrameworkData[] = [
     name: "8",
     est_population: 1,
     image: eight,
+    illustration: eight_a,
     brand_color: "#E5FFEB",
     languages_supported: [
       "en",
@@ -456,6 +474,7 @@ const frameworkData: FrameworkData[] = [
     name: "9",
     est_population: 0.4,
     image: nine,
+    illustration: nine_a,
     brand_color: "#ffffff",
     languages_supported: [
       "en",
