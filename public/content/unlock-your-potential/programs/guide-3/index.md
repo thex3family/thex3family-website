@@ -16,27 +16,52 @@ lang: en
 
 ## Introduction
 
-Imagine a world where everyone is playing their own game, trying to win in their own way. That's kind of what life feels like from the 'Winning' perspective. It's like being in a big, exciting game where the goal is to look out for ourselves and make the best moves to win. We believe that we need to be our own heroes, and even when others help us, we see it as a win for us.
+Imagine a world where everyone is the main character of their own story, where happily ever after means getting everything that you want in life. That's kind of what life feels like from the 'Winning' perspective. 
+
+It's like being in a big, exciting game where the goal is to look out for ourselves and make the best moves to win. We believe that we need to be our own heroes, and even when others help us, we see it as a win for us.
 
 ## How This Perspective Develops
 
-We start feeling this way when our basic needs – like food and a safe place to live – are taken care of. Then we begin to think about what more we want from life. We start to see that we've got to be there for ourselves because sometimes, even the people who care about us might not understand what we really want. Life becomes like a game of give and take, where we do things for others and expect something back.
+We start feeling this way when our basic needs – like food and a safe place to live – are taken care of. Then we begin to think about what more we want from life.
+
+In the ['Dependency' perspective](/unlock-your-potential/programs/guide-2), we learned that we can get what we need when we interact with others. So, when we develop our wants, it comes with the expectation that our caretakers are also responsible for our wants.
+
+When we realize that the people that give us what we need might have their own wants that don't align with ours, we realize that we have to be there for ourselves and get what we want from other people.
 
 ![Image](../../../../framework/3_a.jpg)
 
+
 ## Historical Context
 
-The 'Winning' perspective can be linked back to mythic, feudal, and exploitative empires that emerged around 10,000 years ago. This era was characterized by a social structure where the pursuit of personal ambitions and desires was paramount. The primary focus was on doing what one wants, taking what one desires, and getting one's way by any means necessary. It was an age where climbing the ranks of power was the mentality of many.
+The 'Winning' perspective can be linked back to mythic, feudal, and exploitative empires that emerged around 10,000 years ago. This era was characterized by a social structure where the pursuit of personal ambitions and desires was paramount. 
 
-The goal during this time was to obtain power and glory, often to the extent of being worshiped as a hero. Strategies to achieve this varied: aligning oneself with the powers that be when necessary and taking what was wanted by brute force when possible. This period exemplifies the 'Winning' perspective, where individuals sought to exert their will and influence over others to achieve their objectives. It showcases the historical roots of our desire for winning and power, and how this perspective has been a driving force in shaping societies and cultures throughout human history.
+The primary focus was on doing what one wants, taking what one desires, and getting one's way by any means necessary. It was an age where climbing the ranks of power was the mentality of many. Individuals sought to exert their will and influence over others to achieve their objectives. 
+
+## Modern Context
+
+We still see the 'Winning' perspective prevailing in the modern day. We live in a world where we are constantly pressured to consume, to chase our wants, and the idea of a good life is marketed to be one of material wealth.
+
+In the workplace, we often use language like "wining the sale", or "beating the competition". We're often benchmarked against our colleagues, and we get sucked into the rat race.
 
 ## Strengths and Challenges
 
-We're really good at spotting chances to get ahead, especially when the rewards are clear. We shine in situations where we know exactly what we'll gain.
+In the 'Winning' perspective, we start experimenting and developing ways to approach interactions to get what we want in the world. Our strength is in thinking about what we want and how to get it from others.
 
-But, this way of seeing the world has its tough sides too. Sometimes, we might feel let down when we don't get back what we hoped for. And we often have to figure out how to fit in with people who don't think the same way about give and take.
+The behaviours we exhibit largely depend on our experiences.
+
+
+| Behaviour | How It Develops | Impact on Outcomes |
+|-----------|-----------------|--------------------------------------|
+| **Giving** | Development often stems from early experiences of empathy and compassion, reinforced by positive feedback when helping others. A nurturing environment that values altruism and community can also encourage this behavior. | Givers prioritize the needs of others and often provide support without expecting anything in return. This selfless approach can foster trust, cooperation, and a strong sense of community. However, if not balanced, it might lead to burnout or being taken advantage of. |
+| **Taking** | This behavior can develop in highly competitive environments where resources are perceived as scarce, or where individual achievement is emphasized over communal well-being. Past experiences of resource scarcity or neglect might also contribute. | Takers focus primarily on their own needs and interests. They often try to gain as much as possible from their interactions with others while contributing little in return. This approach can lead to short-term gains but may damage trust and long-term relationships, potentially leading to isolation and conflict. |
+| **Matching** | Matching behavior often arises from social norms and a desire for equity and fairness. It can be influenced by societal or cultural values that emphasize balance and reciprocal relationships, as well as personal experiences that reward equivalent exchange. | Matchers operate on a principle of fairness and reciprocity. They tend to balance giving and taking, ensuring that their relationships are mutually beneficial. This approach promotes equality and sustainability in relationships but might lack the spontaneity and selflessness seen in givers, leading to transactional interactions. |
+
+
+No matter which of the 3 behaviours we manifest, a challenge that we face is being let down when others don't give us what we want, and difficulties dealing with people who operate differently than us (giver vs a taker).
 
 ![Image](../../../../framework/3_b.jpg)
+
+As we're new to discovering our wants, we also can get influenced with wants that are marketed to us. We often get confused about what we really want, or what society tells us we should want.
 
 ## Unlock Your Potential
 
@@ -48,4 +73,4 @@ Establish what game you're playing so that you can be clear about what you want 
 
 If you're getting what you want, that's awesome! You might start wondering, though, if there's more to life. Maybe you're looking for more meaning, or you find that being part of a group makes life better. If that's how you feel, exploring the ['Belonging' perspective](/unlock-your-potential/programs/guide-4) might be your next step.
 
-If things aren't going your way, don't worry. Sometimes, trying to do everything alone doesn't work out. In these times, finding like-minded people can be the key to success. The ['Belong' perspective](/unlock-your-potential/programs/guide-4) can also help here.
+If things aren't going your way, don't worry. Sometimes, trying to do everything alone doesn't work out. In these times, finding like-minded people can be the key to success. The ['Belonging' perspective](/unlock-your-potential/programs/guide-4) can also help here.
