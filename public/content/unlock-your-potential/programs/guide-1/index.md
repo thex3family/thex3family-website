@@ -34,6 +34,12 @@ The 'Survival' perspective is deeply rooted in our ancestral past, tracing back 
 
 People lived with an impulsive and reactive mentality, fully immersed in the present moment. The overarching goal was to acquire physiological necessities such as food, water, and shelter. The methods for acquiring these necessities were often straightforward and based on ease, including scavenging and utilizing readily available resources.
 
+## Modern Context
+
+In the modern day, we tap into the 'Survival' perspective whenever we have a basic need that is not being fulfilled and we can do something about it ourselves.
+
+Think about the last time you were truly starving, sleep deprived, or had to go to the washroom very badly. All we can do is to react to that situation, and if urgent enough, relieve ourselves at whatever cost. Long term exposure to this perspective can happen in impoverished communities where basic needs are hardly met. 
+
 ## Strengths and Challenges
 
 When we're in the 'Survival' perspective, we have a keen awareness of our physical needs and are usually very good at addressing them. We're often in tune with our bodies and can respond quickly to what we need. This instinctual awareness helps us pursue our basic well-being.
@@ -42,7 +48,7 @@ However, this perspective can also bring challenges. Our focus on immediate need
 
 ## Unlock Your Potential
 
-Embracing the 'Survival' perspective means acknowledging and respecting our basic needs. It's important to recognize that taking care of these needs is a valid and necessary part of life. We can live better when we accept and respond to our instincts in a balanced way, ensuring that while our immediate needs are met, we're also open to growth beyond them.
+Maximizing ourselves in the 'Survival' perspective means acknowledging and respecting our basic needs. It's important to recognize that taking care of these needs is a valid and necessary part of life. We can live better when we accept and respond to our instincts in a balanced way, ensuring that while our immediate needs are met, we're also open to growth beyond them.
 
 ## Is It Time To Level Up?
 
