@@ -16,9 +16,9 @@ lang: en
 
 ## Introduction
 
-When we step into the world of the 'Dependency' perspective, we become acutely aware that others around us – people, animals, and even nature – have their senses, desires, and feelings, much like our own. We start to perceive and respond to these feelings, sometimes even mistaking them as our own. 
+In the 'Dependency' perspective, we become acutely aware that others around us – people, animals, and even nature – have their senses, desires, and feelings, much like our own. We start to perceive and respond to these feelings, sometimes even mistaking them as our own. 
 
-This perspective is underpinned by the belief that life is about pleasing others, from the people in our lives to larger entities like nature or the divine, in order to receive what we need in return.
+We believe that life is about influencing others, from the people in our lives to larger entities like nature or the divine, in order to receive what we need in return to survive.
 
 ## How This Perspective Develops
 
@@ -28,27 +28,37 @@ This perspective develops as we become more aware of the world around us and sta
 
 ## Historical Context
 
-The foundations of the 'Dependency' perspective can be traced back to the tribal order established around 50,000 years ago. During this era, the focus was primarily on keeping the group safe and happy, while also seeking to please the gods.
+The foundations of the 'Dependency' perspective can be traced back to the tribal order established around 50,000 years ago. During this era, the focus was primarily on keeping the group safe and happy. The goal was to ensure safety and security, maintaining functional habits and dependable practices that benefitted the group. 
 
 ![Image](../../../../framework/2_b.jpg)
 
-The goal was to ensure safety and security, maintaining functional habits and dependable practices that benefitted the group. This was achieved by preserving tribal traditions and engaging in rituals to petition the gods for favors.
+We would also engage in rituals to petition the gods for favors, as we perceived them as other entities that we had to please in order to survive. A vivid example is found in the rituals of the Incas, who historically offered valuable sacrifices to their gods in hopes of ensuring safety and stability for their community.
 
-A vivid example is found in the rituals of the Incas, who historically offered valuable sacrifices to their gods in hopes of ensuring safety and stability for their community. Similar practices were observed in other ancient civilizations, where offerings, sometimes even including valuables, were made to appease gods or natural forces, such as volcanoes.
+Similar practices were observed in other ancient civilizations, where offerings, sometimes even including valuables, were made to appease gods or natural forces, such as volcanoes.
 
 ![Image](../../../../framework/2_c.jpg)
 
+## Modern Context
+
+In the modern day, we tap into the 'Dependency' perspective whenever we rely on others to provide for our basic needs. We will do whatever it takes to get what we need from others.
+
+This manifests most in our infancy, where we respond and react to our caretakers to stimulate them to take care of us. This can manifest in behaviours like crying or acting cute, so those interacting with us are motivated to feed, bathe, and house us.
+
+Welfare programs are set up to support those who find it difficult to take care of ourselves due to their circumstances. When we are dependent on these programs, we will act in a way to ensure we continue getting such benefits.
+
 ## Strengths and Challenges
 
-A major strength of this perspective lies in our ability to navigate others' emotions to meet our needs. We're particularly effective when these emotions are familiar to us, allowing us to empathize and dependency deeply.
+A major strength of this perspective lies in our ability to navigate others' emotions to meet our needs. We're particularly effective when these emotions are familiar to us, allowing us to empathize and act accordingly.
 
 However, challenges arise when we encounter emotions or reactions different from our own. Misunderstandings can occur, leading to unmet needs or misaligned actions. The key challenge is in accurately interpreting and responding to the varied emotional landscapes of those around us.
 
 ## Unlock Your Potential
 
-We can live better lives when we learn how to communicate with others to get what we need. You won't always be dealing with people that exhibit emotions the way you do, and thus the solutions that work to satisfy you may not work for them.
+Maximizing ourselves in this perspective means learning how to communicate with others to get what we need. You won't always be dealing with people that exhibit emotions the way you do, and thus the solutions that work to satisfy you may not work for them.
 
-In such situations, knowing the tricks of communication is key to be able to speak properly to get what you need from the situations you find yourself in - even if you don't understand their feelings fully yet.
+In such situations, knowing how to communicate properly to get what you need from the situations you find yourself in - even if you don't understand their feelings fully yet.
+
+<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_2">Check Out Programs For 2: Dependency</ButtonLink>
 
 ## Is It Time To Level Up?
 
