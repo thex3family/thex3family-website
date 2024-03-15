@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image"
 import one_a from "@/public/framework/1_a.jpg"
 import two_a from "@/public/framework/2_a.jpg"
 import three_a from "@/public/framework/3_a.jpg"
-import four_a from "@/public/framework/4_a.jpg"
+import four_b from "@/public/framework/4_b.jpg"
 import five_a from "@/public/framework/5_a.jpg"
 import six_a from "@/public/framework/6_a.jpg"
 import seven_a from "@/public/framework/7_a.jpg"
@@ -224,7 +224,7 @@ const frameworkData: FrameworkData[] = [
     name: "4",
     est_population: 40,
     image: four,
-    illustration: four_a,
+    illustration: four_b,
     brand_color: "#13AA78",
     languages_supported: [
       "en",
