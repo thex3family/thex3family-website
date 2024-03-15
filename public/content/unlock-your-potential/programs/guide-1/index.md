@@ -38,7 +38,7 @@ People lived with an impulsive and reactive mentality, fully immersed in the pre
 
 In the modern day, we tap into the 'Survival' perspective whenever we have a basic need that is not being fulfilled and we can do something about it ourselves.
 
-Think about the last time you were truly starving, sleep deprived, or had to go to the washroom very badly. All we can do is to react to that situation, and if urgent enough, relieve ourselves at whatever cost. Long term exposure to this perspective can happen in impoverished communities where basic needs are hardly met. 
+Think about the last time you were truly starving, sleep-deprived, or had to go to the washroom very badly. All we can do is to react to that situation, and if urgent enough, relieve ourselves at whatever cost. Long-term exposure to this perspective can happen in impoverished communities where basic needs are hardly met. 
 
 ## Strengths and Challenges
 
@@ -48,7 +48,7 @@ However, this perspective can also bring challenges. Our focus on immediate need
 
 ## Unlock Your Potential
 
-Maximizing ourselves in the 'Survival' perspective means acknowledging and respecting our basic needs. It's important to recognize that taking care of these needs is a valid and necessary part of life. We can live better when we accept and respond to our instincts in a balanced way, ensuring that while our immediate needs are met, we're also open to growth beyond them.
+To be your best self in the 'Survival' perspective means acknowledging and respecting our basic needs. It's important to recognize that taking care of these needs is a valid and necessary part of life. We can live better when we accept and respond to our instincts in a balanced way, ensuring that while our immediate needs are met, we're also open to growth beyond them.
 
 <ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_1">Check Out Programs For 1: Survival</ButtonLink>
 
