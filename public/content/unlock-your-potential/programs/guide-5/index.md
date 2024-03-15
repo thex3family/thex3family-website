@@ -16,7 +16,9 @@ lang: en
 
 ## Introduction
 
-In the 'Systems' perspective, we come to realize that what is 'good' and 'bad' varies from person to person, and from one culture to another. What benefits us might not benefit someone else. We believe in making decisions based on facts and analysis to achieve the outcomes that are best for us and our community. This perspective isn't about being forced into a life of service but about understanding how to make positive things happen, keep the benefits, and always strive for improvement.
+In the 'Systems' perspective, we come to realize that what is 'good' and 'bad' varies from person to person, and from one culture to another. What benefits us might not benefit someone else. We believe in making decisions based on facts and analysis to achieve the outcomes that are best for us and our community.
+
+This perspective isn't about being forced into a life of service but about understanding how to make positive things happen, keep the benefits, and always strive for improvement.
 
 ## How This Perspective Develops
 
@@ -28,9 +30,13 @@ We develop this perspective when we start seeing the complexities and diversitie
 
 The roots of the 'Systems' perspective can be traced back to the beginnings of capitalist democracies and market-driven meritocracies around the 1600s. This era was characterized by a focus on scientific reasoning, logical thought, and a view of life as a strategic multiplayer game.
 
-The goals of the game were material wealth, the defense of civilization, and continuous improvement and growth. Success was defined by the achievement of measurable objectives and the tangible impacts of one's actions.  
+The goals of the game were material wealth, the defense of civilization, and continuous improvement and growth. Then, success was defined by the achievement of measurable objectives and the tangible impacts of one's actions.  
 
 ![Image](../../../../framework/5_c.jpg)
+
+## Modern Context
+
+In the modern day, we see the 'Systems' perspective in organizations. Companies exist because they have created a process to make money and create SOPs (standard operating procedures) to ensure the organization can continue to run even with a change in people or management. However, this also has the downside of turning the majority of the workforce into cogs in the system, endlessly spinning to keep the economic machine running.
 
 ## Strengths and Challenges
 
@@ -42,7 +48,7 @@ However, we sometimes face challenges when our systems fail or when situations r
 
 ## Unlock Your Potential
 
-We can live better lives when we can build systems to manage every aspect of our lives. Try to automate as much as you can, but be aware that we cannot automate human emotions or relationships.
+To be your best self in this perspective, build systems to manage every aspect of your life, so you can learn from your experiences - good and bad. Try to automate as much as you can, but be aware that we cannot automate human emotions or relationships.
 
 ## Is It Time To Level Up?
 

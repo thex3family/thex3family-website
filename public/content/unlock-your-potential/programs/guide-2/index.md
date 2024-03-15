@@ -22,7 +22,7 @@ We believe that life is about influencing others, from the people in our lives t
 
 ## How This Perspective Develops
 
-This perspective develops as we become more aware of the world around us and start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interdependencyed web of relationships, where our actions can affect others and their reactions can affect us. It's a shift from focusing solely on our own self for survival to understanding how we can thrive with a larger community or ecosystem.
+This perspective develops as we become more aware of the world around us and start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interdependent web of relationships, where our actions can affect others and their reactions can affect us. It's a shift from focusing solely on our own self for survival to understanding how we can thrive with a larger community or ecosystem.
 
 ![Image](../../../../framework/2_a.jpg)
 
@@ -42,9 +42,9 @@ Similar practices were observed in other ancient civilizations, where offerings,
 
 In the modern day, we tap into the 'Dependency' perspective whenever we rely on others to provide for our basic needs. We will do whatever it takes to get what we need from others.
 
-This manifests most in our infancy, where we respond and react to our caretakers to stimulate them to take care of us. This can manifest in behaviours like crying or acting cute, so those interacting with us are motivated to feed, bathe, and house us.
+This manifests most in our infancy, where we respond and react to our caretakers to stimulate them to take care of us. This can manifest in behaviors like crying or acting cute, so those interacting with us are motivated to feed, bathe, and house us.
 
-Welfare programs are set up to support those who find it difficult to take care of ourselves due to their circumstances. When we are dependent on these programs, we will act in a way to ensure we continue getting such benefits.
+Welfare programs are set up to support those who find it difficult to take care of themselves due to their circumstances. When we are dependent on these programs, we will act in a way to ensure we continue getting such benefits.
 
 ## Strengths and Challenges
 
@@ -54,7 +54,7 @@ However, challenges arise when we encounter emotions or reactions different from
 
 ## Unlock Your Potential
 
-Maximizing ourselves in this perspective means learning how to communicate with others to get what we need. You won't always be dealing with people that exhibit emotions the way you do, and thus the solutions that work to satisfy you may not work for them.
+To be your best self in this perspective means learning how to communicate with others to get what we need. You won't always be dealing with people who exhibit emotions the way you do, and thus the solutions that work to satisfy you may not work for them.
 
 In such situations, knowing how to communicate properly to get what you need from the situations you find yourself in - even if you don't understand their feelings fully yet.
 
