@@ -22,9 +22,11 @@ We believe in the importance of individual experiences, where no one should impo
 
 ## How This Perspective Develops
 
-This perspective arises from an awareness that traditional rules and systems may not always accommodate the diverse needs and desires of individuals. It's a realization that diversity is not a deviation but a natural part of human life. We understand that freedom and respect for individual choices are essential for a harmonious society.
+When we are in the ['Systems' perspective](/unlock-your-potential/programs/guide-5), we have a strong belief that systems can solve every problem in the world. As long as there is a best practice and the structure is clear, everyone will get a fair and equitable result. 
 
-We typically get violently thrown into this perspective when we feel that our systems have failed us, and as a reaction, give up on all forms of systems to look beyond structure.
+However, as we experience a more global society, we start to realize that people are perhaps a lot more different than we imagine, and traditional rules and systems may not always accommodate the diverse needs and desires of individuals. It's a realization that diversity is not a deviation but a natural part of human life. We understand that freedom and respect for individual choices are essential for a harmonious society.
+
+The 'Letting Go' perspective typically develops when we feel that systems have failed us, and as a reaction, give up on all forms of systems to look beyond structure.
 
 ![Image](../../../../framework/6_a.jpg)
 
@@ -40,7 +42,7 @@ The methods were inclusive, giving voice to the powerless, emphasizing group nee
 
 In the modern day, more and more people are getting disillusioned with achieving success in the workplace. This can happen because of a lack of upward mobility, conflict with personal values, and other grievances with the system.
 
-When this happens, we opt to leave the capitalistic societies that permeate our lives and quit our jobs, some even moving to countries like Thailand, Indonesia, etc. to live a simpler life. To reconnect with ourselves, we take up mindfulness practices such as yoga, meditation, breathwork, etc.
+When this happens, we opt to leave the capitalistic societies that permeate our lives and quit our jobs, some even moving to cheaper countries like Thailand, Indonesia, etc. to live a simpler life. To reconnect with ourselves, we take up mindfulness practices such as yoga, meditation, breathwork, etc.
 
 ## Strengths and Challenges
 
@@ -53,6 +55,8 @@ However, we can face challenges in maintaining authenticity and discernment. Our
 ## Unlock Your Potential
 
 To be your best self in this perspective, it's crucial to embrace mindfulness and self-reflection. It's been a long time since we listened to ourselves, and it's time to pay attention to what our inner selves are saying. Freely let go of rigid systems and expectations and find your path through introspection.
+
+<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_6">Check Out Programs For 6: Letting Go</ButtonLink>
 
 ## Is It Time To Level Up?
 

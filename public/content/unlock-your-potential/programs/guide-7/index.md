@@ -18,13 +18,15 @@ lang: en
 
 In the 'Setting Boundaries' perspective, we value who we are and what we care about while navigating the complexities of human interactions. We champion the freedom of individual expression but also acknowledge the necessity of boundaries for personal well-being.
 
-As we change and grow, so do our boundaries, reflecting our evolving needs and beliefs. Setting boundaries is an act of self-respect and wisdom, ensuring that our interactions are sustainable and that we occasionally say 'no' as an affirmation of our values.
+As we change and grow, so do our boundaries, reflecting our evolving needs and beliefs. Setting boundaries is an act of self-respect and wisdom, ensuring that our interactions are sustainable and that we say 'no' when necessary as an affirmation of our values.
 
 ## How This Perspective Develops
 
-We cultivate this perspective as we mature in our understanding that respect for individual freedom includes protecting our own space and peace. We learn to discern our limits, from our basic dislikes to our absolute deal-breakers, and communicate them effectively.
+When we are in the ['Letting Go' perspective](/unlock-your-potential/programs/guide-6), we want to let everyone be who they want to be. However, that comes with drawbacks because as we introspect further and learn more about ourselves, we recognize that we have boundaries that can be intruded upon if we allow others to fully express their freedoms.
 
-It is when we find ourselves in positions of power that we truly shine in this perspective, as we find that our boundaries are being respected.
+We develop the 'Setting Boundaries' perspective as we mature in our understanding that respect for individual freedom includes protecting our own space and peace. We learn to discern our limits, from our basic dislikes to our absolute deal-breakers, and communicate them effectively.
+
+It is when we find ourselves in positions of power that we truly shine in this perspective, as we find that our boundaries are being respected by others.
 
 ![Image](../../../../framework/7_a.jpg)
 
@@ -38,7 +40,7 @@ This era encouraged us to develop our innate potential while acknowledging the c
 
 In the modern day, we can see societal boundaries being set by the government in the form of laws. Criminals who break rules that are set by the government are placed in prisons.
 
-In relationships with a power imbalance, it's tremendously difficult for individuals to exert their boundaries, so we see a rise in third-party institutions that attempt to give power back to the victims.
+In relationships with a power imbalance, it's tremendously difficult for individuals to exert their boundaries, so we see a rise in third-party institutions that attempt to give a voice to the powerless.
 
 ## Strengths and Challenges
 
@@ -51,6 +53,10 @@ Conversely, our challenge is managing relationships where our boundaries are tes
 ## Unlock Your Potential
 
 To be your best self in this perspective, learn to set and respect boundaries that foster your well-being and growth. It's about understanding ourselves to the fullest and encouraging others to do the same, finding harmony that benefits ourselves and the broader community.
+
+We also need to learn how to set boundaries for ourselves as well - to make sure we are disciplined in doing the things that matter to us, even when we don't have external forces pushing us to do so.
+
+<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_7">Check Out Programs For 7: Setting Boundaries</ButtonLink>
 
 ## Is It Time To Level Up?
 

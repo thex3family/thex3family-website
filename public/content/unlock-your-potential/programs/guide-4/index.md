@@ -20,9 +20,9 @@ The 'Belonging' perspective centers on the idea that life is not just about our 
 
 ## How This Perspective Develops
 
-The 'Belonging' perspective develops when we realize that the happiness that we experienced after getting those material goods doesn't last, or is not as fulfilling as winning together as a group.
+When we are in the ['Winning' perspective](/unlock-your-potential/programs/guide-3), we are solely focused on getting what we want by any means necessary, often disregarding long-term social connections in the pursuit of a short-term win. 
 
-This triggers a search for meaning beyond just individual actions and pursuits.
+The 'Belonging' perspective develops when we realize that the happiness that we experienced after getting those material goods doesn't last, or is not as fulfilling as winning together as a group. This triggers a search for meaning beyond just individual actions and pursuits.
 
 ![Image](../../../../framework/4_a.jpg)
 
@@ -54,6 +54,8 @@ However, it can also lead to challenges such as rigidity, intolerance towards di
 ## Unlock Your Potential
 
 To be your best self in this perspective, focus on finding your why and your meaning in life. Find groups to join that resonate with you, and can help you live a remarkably better life. Social groups can enrich your life, but always try to keep an open mind to ensure you are getting what you want from the experience.
+
+<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_4">Check Out Programs For 4: Belonging</ButtonLink>
 
 ## Is It Time To Level Up?
 

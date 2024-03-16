@@ -22,7 +22,9 @@ This perspective isn't about being forced into a life of service but about under
 
 ## How This Perspective Develops
 
-We develop this perspective when we start seeing the complexities and diversities in people’s needs and desires. It's about moving from a simple black-and-white view of the world to recognizing the gray areas. We rely on logic, measurement, and proof to navigate these complexities, aiming to make informed decisions that benefit both ourselves and those around us.
+When we are in the ['Belonging' perspective](/unlock-your-potential/programs/guide-4) and find the social groups that we want to associate with, we focus on us versus them mentality. However, if we encounter some similarities we can't ignore, we may start recognizing that the other side isn't so different from us after all. 
+
+We develop the 'Systems' perspective when we start seeing the complexities and diversities in people’s needs and desires. It's about moving from a simple black-and-white view of the world to recognizing the gray areas. We rely on logic, measurement, and proof to navigate these complexities, aiming to make informed decisions that benefit both ourselves and those around us.
 
 ![Image](../../../../framework/5_a.jpg)
 
@@ -49,6 +51,8 @@ However, we sometimes face challenges when our systems fail or when situations r
 ## Unlock Your Potential
 
 To be your best self in this perspective, build systems to manage every aspect of your life, so you can learn from your experiences - good and bad. Try to automate as much as you can, but be aware that we cannot automate human emotions or relationships.
+
+<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_5">Check Out Programs For 5: Systems</ButtonLink>
 
 ## Is It Time To Level Up?
 

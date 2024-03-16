@@ -22,7 +22,9 @@ We believe that life is about influencing others, from the people in our lives t
 
 ## How This Perspective Develops
 
-This perspective develops as we become more aware of the world around us and start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interdependent web of relationships, where our actions can affect others and their reactions can affect us. It's a shift from focusing solely on our own self for survival to understanding how we can thrive with a larger community or ecosystem.
+When we are in the ['Survival' perspective](/unlock-your-potential/programs/guide-1), we are only able to survive in environments where we can be self-sufficient. As we encounter more adverse conditions, we realize that we need others in other to survive. 
+
+We start to recognize that other beings have feelings and needs similar to ours. We begin to see the world as an interdependent web of relationships, where our actions can affect others and their reactions can affect us. It's a shift from focusing solely on ourselves for survival to understanding how we can thrive with a larger community or ecosystem.
 
 ![Image](../../../../framework/2_a.jpg)
 
@@ -62,6 +64,6 @@ In such situations, knowing how to communicate properly to get what you need fro
 
 ## Is It Time To Level Up?
 
-If you have satisfied all your basic needs from yourself and others and are now pursuing your wants in life, you're ready to go to the ['Winning' perspective](/unlock-your-potential/programs/guide-3). 
+If you have satisfied all your basic needs and now are wondering what's more to life than just surviving, you're ready to go to the ['Winning' perspective](/unlock-your-potential/programs/guide-3). 
 
-What you'll find is that while your tribe might be willing to support your survival needs for their own survival, most people are not here to satisfy your wants and thus you're going to need to pursue it yourself.
+You might also find that while your caretakers might be willing to support your basic needs, they have their wants that may not align with yours. If that's how you feel, explore the ['Winning' perspective](/unlock-your-potential/programs/guide-3) to learn how to pursue your wants.
