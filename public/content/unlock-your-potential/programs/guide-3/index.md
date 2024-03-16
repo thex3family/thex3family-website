@@ -24,9 +24,9 @@ It's like being in a big, exciting game where the goal is to look out for oursel
 
 We start feeling this way when our basic needs – like food and a safe place to live – are taken care of. Then we begin to think about what more we want from life.
 
-In the ['Dependency' perspective](/unlock-your-potential/programs/guide-2), we learned that we can get what we need when we interact with others. So, when we develop our wants, it comes with the expectation that our caretakers are also responsible for our wants.
+When we are in the ['Dependency' perspective](/unlock-your-potential/programs/guide-2), we learn that we can get what we need when we interact with others. So, when we develop our wants, it comes with the expectation that our caretakers are also responsible for our wants.
 
-When we realize that the people that give us what we need might have their own wants that don't align with ours, we realize that we have to be there for ourselves and get what we want from other people.
+We shift into the 'Winning' perspective when we realize that the people who give us what we need might have their wants that don't align with ours. We recognize that we have to be there for ourselves and get what we want from other people instead.
 
 ![Image](../../../../framework/3_a.jpg)
 
@@ -41,13 +41,13 @@ The primary focus was on doing what one wants, taking what one desires, and gett
 
 We still see the 'Winning' perspective prevailing in the modern day. We live in a world where we are constantly pressured to consume, to chase our wants, and the idea of a good life is marketed to be one of material wealth.
 
-In the workplace, we often use language like "wining the sale", or "beating the competition". We're often benchmarked against our colleagues, and we get sucked into the rat race.
+In the workplace, we often use language like "winning the sale", or "beating the competition". We're often benchmarked against our colleagues, and we get sucked into the rat race.
 
 ## Strengths and Challenges
 
 In the 'Winning' perspective, we start experimenting and developing ways to approach interactions to get what we want in the world. Our strength is in thinking about what we want and how to get it from others.
 
-The behaviours we exhibit largely depend on our experiences.
+The behaviors we exhibit largely depend on our experiences.
 
 
 | Behaviour | How It Develops | Impact on Outcomes |
@@ -57,17 +57,19 @@ The behaviours we exhibit largely depend on our experiences.
 | **Matching** | Matching behavior often arises from social norms and a desire for equity and fairness. It can be influenced by societal or cultural values that emphasize balance and reciprocal relationships, as well as personal experiences that reward equivalent exchange. | Matchers operate on a principle of fairness and reciprocity. They tend to balance giving and taking, ensuring that their relationships are mutually beneficial. This approach promotes equality and sustainability in relationships but might lack the spontaneity and selflessness seen in givers, leading to transactional interactions. |
 
 
-No matter which of the 3 behaviours we manifest, a challenge that we face is being let down when others don't give us what we want, and difficulties dealing with people who operate differently than us (giver vs a taker).
+No matter which of the 3 behaviors we manifest, a challenge that we face is being let down when others don't give us what we want, and difficulties dealing with people who operate differently than us (eg. givers vs takers).
 
 ![Image](../../../../framework/3_b.jpg)
 
-As we're new to discovering our wants, we also can get influenced with wants that are marketed to us. We often get confused about what we really want, or what society tells us we should want.
+As we're new to discovering our wants, we also can be influenced by wants that are marketed to us. We often get confused about what we really want, or if its what society tells us we should want.
 
 ## Unlock Your Potential
 
-We can live better lives when we think of life like a game. We can try to collect points and build up our skills. Focus on internal reward metrics versus external ones, because its easier to feel accomplished when the scoreboard is your own.
+We can live better lives when we think of life like a game. We can try to collect points and build up our skills. Focus on internal reward metrics versus external ones, because it's easier to feel accomplished when the scoreboard is your own.
 
-Establish what game you're playing so that you can be clear about what you want from each situation, and don't waste time on things that won't help you. 
+Establish what game you're playing so that you can be clear about what you want from each situation, and don't waste time on pursuits that don't satisfy your wants.
+
+<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_3">Check Out Programs For 3: Winning</ButtonLink>
 
 ## Is It Time To Level Up?
 
