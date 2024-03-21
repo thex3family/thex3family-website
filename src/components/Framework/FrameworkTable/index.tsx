@@ -64,7 +64,7 @@ const Grid = forwardRef<SimpleGridProps, "tr">((props, ref) => (
   <SimpleGrid
     as={Tr}
     ref={ref}
-    templateColumns={{ base: "60% auto 0% 0% 5%", md: "40% auto auto auto 5%" }}
+    templateColumns={{ base: "60% auto 0% 0% 0%", md: "40% auto auto auto 5%" }}
     w="full"
     columnGap={2}
     alignItems="center"
