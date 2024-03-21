@@ -82,15 +82,19 @@ export const useFrameworkTable = ({
     )
   })
 
-  const filteredFeatureDropdownItems = [...perspectiveDropdownItems].filter(
-    (item) => {
-      return (
-        item.label !== firstFeatureSelect.label &&
-        item.label !== secondFeatureSelect.label &&
-        item.label !== thirdFeatureSelect.label
-      )
-    }
-  )
+  // show all the dropdown options to handle mobile
+  
+  const filteredFeatureDropdownItems = [...perspectiveDropdownItems];
+
+  // const filteredFeatureDropdownItems = [...perspectiveDropdownItems].filter(
+  //   (item) => {
+  //     return (
+  //       item.label !== firstFeatureSelect.label &&
+  //       item.label !== secondFeatureSelect.label &&
+  //       item.label !== thirdFeatureSelect.label
+  //     )
+  //   }
+  // )
 
   /**
    *
