@@ -24,7 +24,7 @@ const YouTube = ({ id, start = "0", title = "YouTube" }: YouTubeProps) => {
   const params = new URLSearchParams()
   ;+start > 0 && params.set("start", start)
   return (
-    <Box as="figure" maxW={560} my={8}>
+    <Box as="figure" width="100%" maxW={560} my={8}>
       <LiteYouTubeEmbed
         aspectHeight={9}
         aspectWidth={16}
@@ -32,6 +32,7 @@ const YouTube = ({ id, start = "0", title = "YouTube" }: YouTubeProps) => {
         title={title}
         params={params.toString()}
         noCookie
+        rel='0'
       />
     </Box>
   )

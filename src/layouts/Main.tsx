@@ -73,7 +73,7 @@ export const HeroContainer = (props: ChildOnlyProp) => (
     direction={{ base: "column-reverse", lg: "row" }}
     bg="mainGradient"
     boxShadow="inset 0px -1px 0px rgba(0, 0, 0, 0.1)"
-    h={{ base: "full", lg: "700px" }}
+    h={{ base: "full" }}
     w="full"
     overflow="hidden"
     {...props}
@@ -315,10 +315,10 @@ export const MainLayout: React.FC<IProps> = ({
             // blurDataURL={frontmatter.blurDataURL}
             alt={frontmatter.alt}
             width={816}
-            height={525}
+            height={600}
             style={{ objectFit: "cover", overflow: "visible" }}
             priority
-            flex={{ base: "1 1 100%", md: "none" }}
+            flex={{ base: "1 1 100%", lg: "none" }}
             alignSelf={{ base: "center", md: "flex-end" }}
             maxH={{
               base: "340px",

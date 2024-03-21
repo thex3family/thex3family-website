@@ -125,6 +125,8 @@ const BetterLifeFrameworkPage = () => {
       .map(sentence => `${sentence.trim()}.`),
     imageSrc: better_life_framework.src, // Assuming understand_yourself is an imported image module
     imageAlt: t("common:better-life-framework-image-alt"),
+    youtubeID: "Amd2gFL7dmQ",
+    height: 700,
   };
 
   return (
