@@ -270,7 +270,7 @@ const BetterLifeFrameworkPage = () => {
         </Drawer>
       </Hide>
 
-      <Flex px={{ base: 0, md: 8 }} pt={4} pb={6} gap={6} mt={6} id="start">
+      <Flex px={{ base: 0, md: 8 }} pb={6} gap={6} mt={{ base: 0, lg: 6 }} pt={{ base: 0, lg: 4 }} id="start">
         <Show above="lg">
           <FrameworkFilterSidebar
             w="full"

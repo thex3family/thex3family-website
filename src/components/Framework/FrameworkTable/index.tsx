@@ -86,7 +86,7 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     p={2}
     position="sticky"
     top={{
-      base: calc(NAV_BAR_PX_HEIGHT).add("4rem").toString(),
+      base: calc(NAV_BAR_PX_HEIGHT).add("4.5rem").toString(),
       lg: NAV_BAR_PX_HEIGHT,
     }}
     zIndex={1}
@@ -353,9 +353,6 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
           )}
         </Th>
         <Th>
-          <Text as="span" hideFrom="sm" fontSize="md" whiteSpace="nowrap">
-            {t("page-better-life-framework-choose-perspectives")}
-          </Text>
           <StyledSelect
             className="react-select-container"
             classNamePrefix="react-select"
