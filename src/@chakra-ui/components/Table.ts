@@ -30,14 +30,14 @@ const baseStyle = defineMergeStyles(
       verticalAlign: "bottom",
       ...cellPadding,
     },
-    tr: {
-      "th, td": {
-        _notLast: {
-          borderInlineEnd: "2px",
-          borderInlineEndColor: "background.base",
-        },
-      },
-    },
+    // tr: {
+    //   "th, td": {
+    //     _notLast: {
+    //       borderInlineEnd: "2px",
+    //       borderInlineEndColor: "background.base",
+    //     },
+    //   },
+    // },
     td: {
       ...cellPadding,
     },
