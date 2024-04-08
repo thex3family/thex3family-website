@@ -12,7 +12,7 @@ summaryPoint3: Take impactful actions that help you live a better life.
 
 ## Why Develop A Philosophy?
 
-Our founder, [Conrad](https://conradl.in), wanted to solve a problem that has troubled him since young. Understanding ourselves is a complex journey. We often grapple with our feelings and actions, leading to frustrations and misunderstandings when things don't go the way we want them too. And just when we think we've figured ourselves out, we encounter situations where other people act in ways we can't understand.
+Our founder, [Conrad](https://conradl.in), wanted to solve a problem that had troubled him since he was young. Understanding ourselves is a complex journey. We often grapple with our feelings and actions, leading to frustrations and misunderstandings when things don't go the way we want them to. And just when we think we've figured ourselves out, we encounter situations where other people act in ways we can't understand.
 
 Additionally, seeking personal growth through available resources (books, articles, podcast, etc.) often leads to a realization - they lack personalization. The content we consume might only partially resonate with us, and what we learn can take on new meanings as we gain different perspectives over time.
 
