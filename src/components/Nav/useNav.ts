@@ -78,6 +78,10 @@ export const useNav = ({ path }: { path: string }) => {
               isPartiallyActive: false,
             },
             {
+              text: t("programs-title"),
+              to: "/unlock-your-potential/programs",
+            },
+            {
               text: t("knowledge-title"),
               to: "/unlock-your-potential/programs?filters=knowledge",
             },
