@@ -15,6 +15,7 @@ export interface IExternalTutorial {
   timeToRead?: string
   lang: string
   publishDate: string
+  type: string
 }
 
 export interface ITutorial {
@@ -30,12 +31,14 @@ export interface ITutorial {
   published?: string | null
   lang: string
   isExternal: boolean
+  type: string
 }
 
 // Take all tutorials, and return a list of tutorials for a specific locale
 export const filterTutorialsByLang = (
   internalTutorials: any,
   externalTutorials: Array<IExternalTutorial>,
+  externalContent: Array<IExternalTutorial>,
   locale: Lang
 ): Array<ITutorial> => {
   const internalTutorialsMap = internalTutorials.map((tutorial) => {
@@ -54,6 +57,7 @@ export const filterTutorialsByLang = (
       published: tutorial?.published,
       lang: tutorial?.lang,
       isExternal: false,
+      type: "program"
     }
   })
 
@@ -71,12 +75,32 @@ export const filterTutorialsByLang = (
       published: tutorial.publishDate ? new Date(tutorial.publishDate).toISOString() : null,
       lang: tutorial.lang || "en",
       isExternal: true,
+      type: "program"
+    })
+  )
+
+  const externalContentMap = externalContent.map<ITutorial>(
+    (tutorial: IExternalTutorial) => ({
+      to: tutorial.url,
+      title: tutorial.title,
+      description: tutorial.description,
+      author: tutorial.author,
+      tags: tutorial.tags.map((tag) => tag.toLowerCase().trim()),
+      programType: tutorial.programType,
+      location: tutorial.location,
+      frameworkLevel: tutorial?.frameworkLevel as Skill,
+      timeToRead: Number(tutorial.timeToRead),
+      published: tutorial.publishDate ? new Date(tutorial.publishDate).toISOString() : null,
+      lang: tutorial.lang || "en",
+      isExternal: true,
+      type: "content"
     })
   )
 
   const allTutorials: Array<ITutorial> = [
-    ...externalTutorialsMap,
     ...internalTutorialsMap,
+    ...externalTutorialsMap,
+    ...externalContentMap,
   ]
 
   const filteredTutorials = allTutorials

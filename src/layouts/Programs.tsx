@@ -12,10 +12,9 @@ import {
   useToken,
 } from "@chakra-ui/react"
 
-import type { ChildOnlyProp, TranslationKey } from "@/lib/types"
+import type { ChildOnlyProp } from "@/lib/types"
 import type { MdPageContent, TutorialFrontmatter } from "@/lib/interfaces"
 
-import PostMergeBanner from "@/components/Banners/PostMergeBanner"
 import { ButtonLink } from "@/components/Buttons"
 import CallToContribute from "@/components/CallToContribute"
 import Card from "@/components/Card"
@@ -184,8 +183,6 @@ export const TutorialLayout = ({
   const absoluteEditPath = getEditPath(relativePath)
 
   const borderColor = useToken("colors", "border")
-  const postMergeBannerTranslationString =
-    frontmatter.postMergeBannerTranslation as TranslationKey | null
   const gitHubLastEdit = useClientSideGitHubLastEdit(relativePath)
   const intlLastEdit = "data" in gitHubLastEdit ? gitHubLastEdit.data! : ""
   const useGitHubContributors =

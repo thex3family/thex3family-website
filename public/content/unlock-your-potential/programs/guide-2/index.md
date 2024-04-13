@@ -1,5 +1,5 @@
 ---
-title: "Perspective 2: Dependency"
+title: "Guide To Dependency"
 description: I need to please others so they give me what I need to survive.
 author: Conrad Lin
 tags: ["understand yourself", "guide"]

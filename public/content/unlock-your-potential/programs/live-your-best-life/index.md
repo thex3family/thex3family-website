@@ -26,4 +26,4 @@ These vlogs are more than just stories; they are a testament to how the Better L
 We distribute this series through various social media channels by our co-creators:
 - @ Level Up With Conrad
 
-Explore our comprehensive collection of vlogs all in one place here: [Live Your Best Life](/unlock-your-potential/programs?tags=live%20your%20best%20life).
+Explore our comprehensive collection of vlogs all in one place here: [Live Your Best Life](/unlock-your-potential/programs?view=content&tags=live%20your%20best%20life).

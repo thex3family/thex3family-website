@@ -1,5 +1,5 @@
 ---
-title: "Perspective 4: Belonging"
+title: "Guide To Belonging"
 description: I found what what works for me and my tribe, and everyone should do it too.
 author: Conrad Lin
 tags: ["understand yourself", "guide", "students", "creatives", "retirees"]

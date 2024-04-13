@@ -3,7 +3,7 @@ import { GetStaticProps, InferGetServerSidePropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaGithub } from "react-icons/fa"
+import { FaDiscord, FaGithub } from "react-icons/fa"
 import {
   Badge,
   Box,
@@ -56,7 +56,7 @@ import {
 } from "@/lib/utils/tutorial"
 
 import externalTutorials from "@/data/externalPrograms.json"
-import frameworkData from "@/data/framework/framework-data"
+import externalContent from "@/data/externalContent.json"
 
 import { NAV_BAR_PX_HEIGHT, SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
@@ -111,6 +111,7 @@ const TutorialPage = ({
       filterTutorialsByLang(
         internalTutorials,
         externalTutorials,
+        externalContent,
         locale as Lang
       ),
     [internalTutorials, locale]
@@ -216,7 +217,14 @@ const TutorialPage = ({
           maxH={{ base: 64, md: "initial" }}
           overflowY={{ base: "scroll", md: "initial" }}
         >
-          <Flex
+           <ButtonLink
+              leftIcon={<FaDiscord />}
+              variant="outline"
+              to="https://discordapp.com/channels/653664936903573504/1227984101060116481"
+            >
+              <Translation id="page-programs:page-programs-submit-button" />
+            </ButtonLink>
+          {/* <Flex
             borderWidth="1px"
             borderStyle="solid"
             borderColor="border"
@@ -271,7 +279,7 @@ const TutorialPage = ({
             >
               <Translation id="page-programs:page-programs-pull-request-button" />
             </ButtonLink>
-          </Flex>
+          </Flex> */}
         </Flex>
       </Modal>
 

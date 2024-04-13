@@ -1,5 +1,5 @@
 ---
-title: "Perspective 9: Empathy"
+title: "Guide To Empathy"
 description: I understand everyone is on their own journey, and all we can do is love them where they are at.
 author: Conrad Lin
 tags: ["understand yourself", "guide"]
