@@ -371,29 +371,29 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
   const cardBoxShadow = useToken("colors", "cardBoxShadow")
 
   const router = useRouter();
-  
+
   const { view } = router.query; // Destructure the 'view' query parameter
 
   // State to manage the toggle between list and gallery view
-  const [dataView, setDataView] = useState(view == 'content' ? false : true);
+  const [dataView, setDataView] = useState(view === 'content' ? 'content' : 'program');
 
   // Function to toggle the view state
   const toggleView = () => {
-    const newView = !dataView ? 'program' : 'content';
-    setDataView(!dataView);
+    const newView = dataView === 'content' ? 'program' : 'content';
+    setDataView(newView);
     router.push({
       pathname: router.pathname,
       query: { ...router.query, view: newView },
     }, undefined, { shallow: true });
-    // The 'shallow: true' option will ensure that the page content is not re-fetched
   };
 
   useEffect(() => {
-    const shouldUpdateDataView = (view === 'content' && dataView) || (view === 'program' && !dataView);
-    if (shouldUpdateDataView) {
-      setDataView(view === 'content');
+    // This effect ensures that if the URL's view parameter changes outside of the toggleView function,
+    // the state updates to reflect it.
+    if (view !== dataView) {
+      setDataView(view === 'content' ? 'content' : 'program');
     }
-  }, [view, dataView]);
+  }, [view]);
 
   return (
     <Container>
@@ -478,7 +478,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
           />
         </Th> */}
       </FrameworkContentHeader>
-      {dataView ? filteredFrameworks.length !== 0 ? (
+      {dataView === "program" ? filteredFrameworks.length !== 0 ? (
         <CardGrid>
           {filteredFrameworks.filter(tutorial => tutorial.type === "program").map((tutorial, idx) => {
             const comingSoon = !!tutorial.to;
@@ -690,7 +690,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
               </Button>
             </Box>
           </Box>) : ""}
-      {!dataView ? filteredFrameworks.length !== 0 ? (
+      {dataView === "content" ? filteredFrameworks.length !== 0 ? (
         <Flex pt={2} gap={1} flexDirection="column">
           {filteredFrameworks.filter(tutorial => tutorial.type === "content").map((tutorial, idx) => {
             const comingSoon = !!tutorial.to;
