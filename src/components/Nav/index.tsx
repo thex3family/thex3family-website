@@ -130,7 +130,7 @@ const Nav: FC<IProps> = ({ path }) => {
         <Flex
           as="nav"
           aria-label={t("nav-developers")}
-          display={{ base: "none", md: "flex" }}
+          display={{ base: "none", lg: "flex" }}
           bg="ednBackground"
           borderBottom="1px"
           borderColor="border"

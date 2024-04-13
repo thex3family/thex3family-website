@@ -364,7 +364,7 @@ const TutorialPage = ({
         </Drawer>
       </Hide>
 
-      <Flex px={{ base: 0, md: 8 }} pt={4} pb={6} gap={6} mt={6} id="start">
+      <Flex px={{ base: 0, md: 8 }} mt={{ base: 0, lg: 10 }} pb={6} gap={6} id="start">
         <Show above="lg">
           <FrameworkFilterSidebar
             w="full"

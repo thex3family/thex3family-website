@@ -81,17 +81,18 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     bg="background.base"
     borderBottom="1px"
     borderColor="primary.base"
-    justifyContent="space-between" // Adjust this to space-between
+    justifyContent={{ base: "space-between" }} // Adjust this to space-between
     templateColumns={{
-      base: "1fr auto auto auto auto", // Adjust this to 1fr for the first column and auto for the rest
-      sm: "1fr auto auto auto auto", // Repeat for other breakpoints if necessary
-      md: "1fr auto auto auto auto",
+      base: "auto auto", // Adjust this to 1fr for the first column and auto for the rest
+      sm: "1fr auto auto", // Repeat for other breakpoints if necessary
+      md: "1fr auto auto",
     }}
-    rowGap={{ base: 4, sm: 0 }}
+    rowGap={{ base: 2, sm: 0 }}
     p={2}
     position="sticky"
     top={{
       base: calc(SECONDARY_NAV_BAR_PX_HEIGHT).add("1rem").toString(),
+      md: calc(SECONDARY_NAV_BAR_PX_HEIGHT).add("1rem").toString(),
       lg: SECONDARY_NAV_BAR_PX_HEIGHT,
     }}
     zIndex={1}
@@ -112,11 +113,15 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
           display: { base: "flex", sm: "revert" },
           alignItems: "center",
           gap: 4,
-          width: "200px"
+          width: "200px", 
+
         },
         "&:first-of-type": { // Add this to align the first <th> to the left
-          justifyContent: "flex-start",
+          justifyContent: { base: "flex-start" },
         },
+        "&:nth-of-type(2)": { // Adjust the second <th> for base breakpoint
+          display: { base: "none", sm: "revert" }
+        }
       },
     }}
     {...props}
