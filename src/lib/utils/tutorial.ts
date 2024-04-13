@@ -31,6 +31,7 @@ export interface ITutorial {
   published?: string | null
   lang: string
   isExternal: boolean
+  type?: string
 }
 
 // Take all tutorials, and return a list of tutorials for a specific locale
