@@ -55,8 +55,8 @@ import {
   ITutorial,
 } from "@/lib/utils/tutorial"
 
-import externalTutorials from "@/data/externalPrograms.json"
 import externalContent from "@/data/externalContent.json"
+import externalTutorials from "@/data/externalPrograms.json"
 
 import { NAV_BAR_PX_HEIGHT, SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 

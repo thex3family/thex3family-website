@@ -1,5 +1,7 @@
 import { ReactNode, useEffect, useState } from "react"
+import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
+import { FaEye } from "react-icons/fa"
 import Select from "react-select"
 import {
   Badge,
@@ -37,8 +39,6 @@ import { getLocaleTimestamp, INVALID_DATETIME } from "@/lib/utils/time"
 import { getSortedTutorialTagsForLang, ITutorial } from "@/lib/utils/tutorial"
 
 import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
-import { FaEye } from "react-icons/fa"
-import { useRouter } from "next/router"
 
 const Container = (props: TableProps) => (
   <Table
