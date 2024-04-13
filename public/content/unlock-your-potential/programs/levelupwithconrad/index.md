@@ -33,6 +33,6 @@ As well as clips on our various social media channels:
 
 - @ [Level Up With Conrad](https://conradl.in)
 
-Explore our comprehensive collection of podcasts all in one place here: [Level Up With Conrad](/unlock-your-potential/programs?tags=level%20up%20with%20conrad).
+Explore our comprehensive collection of podcasts all in one place here: [Level Up With Conrad](/unlock-your-potential/programs?view=content&tags=level%20up%20with%20conrad).
 
 **Be A Guest:** If you want to be on our next episode, fill out this [form](https://thex3family.larksuite.com/share/base/form/shrusYAQsZBndhseIOk3lk0Couc).

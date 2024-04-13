@@ -1,5 +1,5 @@
 ---
-title: "Perspective 5: Systems"
+title: "Guide To Systems"
 description: I'm aware that people have different wants, so I'm trying to create a system that would help everyone get what they want.
 author: Conrad Lin
 tags: ["understand yourself", "guide", "students", "creatives", "retirees"]

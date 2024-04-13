@@ -31,4 +31,4 @@ We broadcast this livestream on YouTube:
 
 **Joining Live Sessions:** Tune into our live Q&A sessions to hear your questions addressed in real-time. These sessions are scheduled regularly and are an excellent way to interact directly with our team and the broader community. Subscribe to our [events calendar](https://calendar.google.com/calendar/embed?src=c_d427ef39a3ef05c0e4ddd087ee8e3974e4537a8569f2676d2ef32e2f820d10e9%40group.calendar.google.com) to be notified on the next one!
 
-**Accessing Past Sessions:** Missed a live session? No problem! We archive each question and answer, allowing you to catch up on discussions and insights at your convenience. [Check Out Previous Q&A Sessions](/unlock-your-potential/programs?tags=q&a).
+**Accessing Past Sessions:** Missed a live session? No problem! We archive each question and answer, allowing you to catch up on discussions and insights at your convenience. [Check Out Previous Q&A Sessions](/unlock-your-potential/programs?view=content&tags=q&a).

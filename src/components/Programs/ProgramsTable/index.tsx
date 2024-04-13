@@ -1,4 +1,4 @@
-import { ReactNode, useEffect } from "react"
+import { ReactNode, useEffect, useState } from "react"
 import { useTranslation } from "next-i18next"
 import Select from "react-select"
 import {
@@ -37,6 +37,8 @@ import { getLocaleTimestamp, INVALID_DATETIME } from "@/lib/utils/time"
 import { getSortedTutorialTagsForLang, ITutorial } from "@/lib/utils/tutorial"
 
 import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
+import { FaEye } from "react-icons/fa"
+import { useRouter } from "next/router"
 
 const Container = (props: TableProps) => (
   <Table
@@ -79,11 +81,11 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     bg="background.base"
     borderBottom="1px"
     borderColor="primary.base"
-    justifyContent="flex-end"
+    justifyContent="space-between" // Adjust this to space-between
     templateColumns={{
-      base: "auto",
-      sm: "60% auto 0% 0% 5%",
-      md: "40% auto auto auto 5%",
+      base: "1fr auto auto auto auto", // Adjust this to 1fr for the first column and auto for the rest
+      sm: "1fr auto auto auto auto", // Repeat for other breakpoints if necessary
+      md: "1fr auto auto auto auto",
     }}
     rowGap={{ base: 4, sm: 0 }}
     p={2}
@@ -106,11 +108,14 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
         letterSpacing: "revert",
         textAlign: "revert",
         textTransform: "revert",
-        "&:nth-of-type(2)": {
+        "&:nth-of-type(3)": {
           display: { base: "flex", sm: "revert" },
           alignItems: "center",
           gap: 4,
           width: "200px"
+        },
+        "&:first-of-type": { // Add this to align the first <th> to the left
+          justifyContent: "flex-start",
         },
       },
     }}
@@ -365,9 +370,31 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
 
   const cardBoxShadow = useToken("colors", "cardBoxShadow")
 
+  const router = useRouter();
+  
+  const { view } = router.query; // Destructure the 'view' query parameter
+
+  // State to manage the toggle between list and gallery view
+  const [dataView, setDataView] = useState(view == 'content' ? false : true);
+
+  // Function to toggle the view state
+  const toggleView = () => {
+    setDataView(!dataView);
+    // You can also perform other actions here when the view is toggled
+  };
+
+  useEffect(() => {
+    setDataView(view === 'content' ? false : true);
+  }, [view]);
+
   return (
     <Container>
       <FrameworkContentHeader>
+        <Th>
+          <Button leftIcon={<FaEye />} onClick={toggleView} variant="outline">
+            {dataView ? "View Programs" : "View Content"}
+          </Button>
+        </Th>
         <Th>
           {filteredFrameworks.length === frameworkData.length ? (
             <Text as="span">
@@ -379,8 +406,9 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
               {t("page-programs:page-programs-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkData.length}
-              </strong>{" "}
-              {t("page-programs:page-programs-programs")}
+              </strong>
+              {/* {" "}
+              {t("page-programs:page-programs-programs")} */}
             </Text>
           )}
         </Th>
@@ -442,9 +470,9 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
           />
         </Th> */}
       </FrameworkContentHeader>
-      {filteredFrameworks.length !== 0 ? (
+      {dataView ? filteredFrameworks.length !== 0 ? (
         <CardGrid>
-          {filteredFrameworks.map((tutorial, idx) => {
+          {filteredFrameworks.filter(tutorial => tutorial.type === "program").map((tutorial, idx) => {
             const comingSoon = !!tutorial.to;
             return (
               <Flex
@@ -470,22 +498,22 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                 {...(comingSoon ? { to: tutorial.to, target: "_blank", hideArrow: true } : {})}
                 cursor={comingSoon ? 'pointer' : 'not-allowed'}
               >
-                  <Badge
-                    position="absolute" // Absolutely position the "Coming Soon" tag
-                    top={2}
-                    right={2}
-                    colorScheme="white"
-                    fontSize="xl"
-                    _after={{
-                      ms: 0.5,
-                      me: "0.3rem",
-                      display: comingSoon ? "inline-block" : "none",
-                      content: `"↗"`,
-                      fontStyle: "normal",
-                    }}
-                  >
-                    {comingSoon ? '' : '🚧'} 
-                  </Badge>
+                <Badge
+                  position="absolute" // Absolutely position the "Coming Soon" tag
+                  top={2}
+                  right={2}
+                  colorScheme="white"
+                  fontSize="xl"
+                  _after={{
+                    ms: 0.5,
+                    me: "0.3rem",
+                    display: comingSoon ? "inline-block" : "none",
+                    content: `"↗"`,
+                    fontStyle: "normal",
+                  }}
+                >
+                  {comingSoon ? '' : '🚧'}
+                </Badge>
                 <Flex
                   justifyContent="space-between"
                   alignItems="flex-start"
@@ -501,7 +529,6 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                     </Badge>
                   </Flex>
                   <Text
-                    noOfLines={2}
                     color="text"
                     fontWeight="semibold"
                     fontSize="2xl"
@@ -654,7 +681,175 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                 {t("page-programs:page-programs-submit-button")}
               </Button>
             </Box>
-          </Box>)}
+          </Box>) : ""}
+      {!dataView ? filteredFrameworks.length !== 0 ? (
+        <Flex pt={2} gap={1} flexDirection="column">
+          {filteredFrameworks.filter(tutorial => tutorial.type === "content").map((tutorial, idx) => {
+            const comingSoon = !!tutorial.to;
+            return (
+              <Flex
+                as={comingSoon ? BaseLink : 'div'} // Use 'div' if there's no link
+                textDecoration="none"
+                flexDirection="column"
+                justifyContent="space-between"
+                fontWeight="normal"
+                color="text"
+                border="1px solid"
+                borderColor="var(--x3-colors-primary-base)"
+                padding={8}
+                h="full"
+                w="full"
+                position="relative"
+                _hover={{
+                  textDecoration: comingSoon ? "none" : undefined,
+                  borderRadius: comingSoon ? "base" : undefined,
+                  boxShadow: comingSoon ? "0 0 1px var(--x3-colors-primary-base)" : undefined,
+                  bg: comingSoon ? "tableBackgroundHover" : undefined,
+                }}
+                key={tutorial.title}
+                {...(comingSoon ? { to: tutorial.to, target: "_blank", hideArrow: true } : {})}
+                cursor={comingSoon ? 'pointer' : 'not-allowed'}
+              >
+                <Flex
+                  justifyContent="space-between"
+                  mb={{ base: 8, md: -4 }}
+                  alignItems="flex-start"
+                  flexDirection={{ base: "column", md: "initial" }}
+                >
+                  <Text
+                    color="text"
+                    fontWeight="semibold"
+                    fontSize="2xl"
+                    me={{ base: 0, md: 24 }}
+                  >
+                    {tutorial.title} {comingSoon ? '↗' : '🚧'}
+                  </Text>
+                  <Flex gap={2}>
+                    <Badge variant="secondary">
+                      {t(getSkillTranslationId(tutorial.frameworkLevel!))}
+                    </Badge>
+                    <Badge variant="secondary">
+                      {tutorial.programType}
+                    </Badge>
+                  </Flex>
+                </Flex>
+                <Text color="text200" fontSize="sm" textTransform="uppercase">
+                  <Emoji text=":writing_hand:" fontSize="sm" me={2} />
+                  {tutorial.author}
+                  {/* {tutorial.published ? (
+                  <> • {published(locale!, tutorial.published!)}</>
+                ) : null} */}
+                  {(tutorial.timeToRead ?? 0) > 0 && (
+                    <>
+                      {" "}
+                      •
+                      <Emoji text=":stopwatch:" fontSize="sm" mx={1} />
+                      {tutorial.timeToRead}{" "}
+                      {t("page-programs:comp-programs-metadata-minute-read")}
+                    </>
+                  )}
+                </Text>
+                <Text color="text200">{tutorial.description}</Text>
+                <Flex flexWrap="wrap" w="full">
+                  <TutorialTags tags={tutorial.tags ?? []} />
+                </Flex>
+              </Flex>
+            )
+          })}
+          <Flex
+            textDecoration="none"
+            flexDirection="column"
+            justifyContent="center"
+            fontWeight="normal"
+            color="text"
+            // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
+            border="1px solid"
+            borderColor="var(--x3-colors-primary-base)"
+            padding={8}
+            h="full"
+            w="full"
+            _hover={{
+              textDecoration: "none",
+              borderRadius: "base",
+              boxShadow: "0 0 1px var(--x3-colors-primary-base)",
+              // bg: "tableBackgroundHover",
+            }}
+          >
+            <Button
+              variant="outline"
+              color="text"
+              borderColor="text"
+              _hover={{
+                color: "primary.base",
+                borderColor: "primary.base",
+                boxShadow: cardBoxShadow,
+              }}
+              _active={{
+                bg: "secondaryButtonBackgroundActive",
+              }}
+              py={2}
+              px={3}
+              onClick={() => {
+                setModalOpen(true)
+                trackCustomEvent({
+                  eventCategory: "tutorials tags",
+                  eventAction: "click",
+                  eventName: "submit",
+                })
+              }}
+            >
+              {t("page-programs:page-programs-submit-button")}
+            </Button>
+          </Flex>
+        </Flex>)
+        : (
+          <Box
+            // boxShadow={tableBoxShadow}
+            w={"full"}
+          >
+            <Flex
+              justifyContent="center"
+              pb={{ base: 4, md: 8 }}
+              pt={{ base: 4, md: "initial" }}
+              px={{ base: 0, md: "initial" }}
+              flexDirection={{ base: "column", md: "initial" }}
+            >
+            </Flex>
+            <Box mt={0} textAlign="center" padding={12}>
+              <Emoji text=":crying_face:" fontSize="5xl" mb={8} mt={8} />
+              <OldHeading>
+                {t("page-programs:page-programs-filter-error")}
+              </OldHeading>
+              <Text>
+                {t("page-programs:page-programs-try-removing-filters")}
+              </Text>
+              <Button
+                variant="outline"
+                color="text"
+                borderColor="text"
+                _hover={{
+                  color: "primary.base",
+                  borderColor: "primary.base",
+                  boxShadow: cardBoxShadow,
+                }}
+                _active={{
+                  bg: "secondaryButtonBackgroundActive",
+                }}
+                py={2}
+                px={3}
+                onClick={() => {
+                  setModalOpen(true)
+                  trackCustomEvent({
+                    eventCategory: "tutorials tags",
+                    eventAction: "click",
+                    eventName: "submit",
+                  })
+                }}
+              >
+                {t("page-programs:page-programs-submit-button")}
+              </Button>
+            </Box>
+          </Box>) : ""}
     </Container>
   )
 }

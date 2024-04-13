@@ -31,4 +31,4 @@ We distribute these short form videos through our various social media channels:
 
 - @ The Co-x3 Family Foundation
 
-Explore our comprehensive collection of videos all in one place here: [Now I Understand](/unlock-your-potential/programs?tags=now%20i%20understand).
+Explore our comprehensive collection of videos all in one place here: [Now I Understand](/unlock-your-potential/programs?view=content&tags=now%20i%20understand).

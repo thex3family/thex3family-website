@@ -1,5 +1,5 @@
 {
-  "page-programs-showing-all": "Showing All Programs",
+  "page-programs-showing-all": "Showing All",
   "page-programs-showing": "Showing",
   "page-programs-programs": "Programs",
   "page-programs-sort-by": "Sort By...",
@@ -26,8 +26,8 @@
   "page-programs-try-removing-filters": "Try removing a filter or two, or add to our repository!",
   "page-programs-tags-reset": "Reset Tags",
 
-  "page-programs-submit-button": "Submit Program",
-  "page-programs-submit-description": "To submit a program, you'll need to use GitHub. We welcome you to create an issue or a pull request to submit articles or links to external programs.",
+  "page-programs-submit-button": "Suggest Program",
+  "page-programs-submit-description": "To add a program, interact with us in our community and let us know about your suggestion! We welcome any feedback and improvement that would help us be helpful to your growth journey.",
   "page-programs-new-github": "New to GitHub?",
   "page-programs-new-github-description": "Raise an issue – simply fill in the requested information in the form and paste your program details.",
   "page-programs-raise-issue-button": "Raise Issue",

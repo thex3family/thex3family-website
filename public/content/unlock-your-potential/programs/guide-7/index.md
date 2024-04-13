@@ -1,5 +1,5 @@
 ---
-title: "Perspective 7: Setting Boundaries"
+title: "Guide To Boundaries"
 description: I accept that people should be free to be themselves, but I need to protect myself from having my boundaries crossed.
 author: Conrad Lin
 tags: ["understand yourself", "guide", "retirees"]
