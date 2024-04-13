@@ -15,7 +15,7 @@ export interface IExternalTutorial {
   timeToRead?: string
   lang: string
   publishDate: string
-  type: string
+  type?: string
 }
 
 export interface ITutorial {
