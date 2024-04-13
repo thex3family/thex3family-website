@@ -12,7 +12,7 @@ export interface IExternalTutorial {
   programType: string
   location: string
   frameworkLevel: string
-  timeToRead?: string
+  timeToRead?: number | null
   lang: string
   publishDate: string
   type?: string
