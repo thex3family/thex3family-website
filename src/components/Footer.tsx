@@ -112,6 +112,10 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           to: "/unlock-your-potential/",
         },
         {
+          text: t("programs-title"),
+          to: "/unlock-your-potential/programs",
+        },
+        {
           text: t("knowledge-title"),
           to: "/unlock-your-potential/programs?filters=knowledge",
         },

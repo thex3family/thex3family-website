@@ -379,13 +379,21 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
 
   // Function to toggle the view state
   const toggleView = () => {
+    const newView = !dataView ? 'program' : 'content';
     setDataView(!dataView);
-    // You can also perform other actions here when the view is toggled
+    router.push({
+      pathname: router.pathname,
+      query: { ...router.query, view: newView },
+    }, undefined, { shallow: true });
+    // The 'shallow: true' option will ensure that the page content is not re-fetched
   };
 
   useEffect(() => {
-    setDataView(view === 'content' ? false : true);
-  }, [view]);
+    const shouldUpdateDataView = (view === 'content' && dataView) || (view === 'program' && !dataView);
+    if (shouldUpdateDataView) {
+      setDataView(view === 'content');
+    }
+  }, [view, dataView]);
 
   return (
     <Container>
