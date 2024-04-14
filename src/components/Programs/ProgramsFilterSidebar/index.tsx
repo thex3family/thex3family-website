@@ -119,6 +119,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
               fontSize: "0.9rem",
               letterSpacing: "0.02rem",
               py: "0.9rem",
+              mt: "4px",
               _first: {
                 borderTopStartRadius: "lg",
               },
