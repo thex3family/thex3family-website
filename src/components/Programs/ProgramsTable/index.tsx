@@ -1,7 +1,7 @@
 import { ReactNode, useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { FaEye } from "react-icons/fa"
+import { FaBookOpen, FaTools } from "react-icons/fa"
 import Select from "react-select"
 import {
   Badge,
@@ -83,9 +83,7 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     borderColor="primary.base"
     justifyContent={{ base: "space-between" }} // Adjust this to space-between
     templateColumns={{
-      base: "auto auto", // Adjust this to 1fr for the first column and auto for the rest
-      sm: "1fr auto auto", // Repeat for other breakpoints if necessary
-      md: "1fr auto auto",
+      base: "1fr auto auto", // Adjust this to 1fr for the first column and auto for the rest
     }}
     rowGap={{ base: 2, sm: 0 }}
     p={2}
@@ -113,15 +111,12 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
           display: { base: "flex", sm: "revert" },
           alignItems: "center",
           gap: 4,
-          width: "200px", 
+          width: "200px",
 
         },
         "&:first-of-type": { // Add this to align the first <th> to the left
           justifyContent: { base: "flex-start" },
         },
-        "&:nth-of-type(2)": { // Adjust the second <th> for base breakpoint
-          display: { base: "none", sm: "revert" }
-        }
       },
     }}
     {...props}
@@ -404,18 +399,24 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
     <Container>
       <FrameworkContentHeader>
         <Th>
-          <Button leftIcon={<FaEye />} onClick={toggleView} variant="outline">
-            {dataView ? "View Programs" : "View Content"}
+          <Button
+            onClick={toggleView}
+            variant="outline"
+            leftIcon={dataView === 'program' ? <FaTools size="0.8em" /> : <FaBookOpen size="0.8em" />}
+          >
+            <Box display={{ base: 'none', sm: 'inline' }}>
+              Toggle View
+            </Box>
           </Button>
         </Th>
         <Th>
           {filteredFrameworks.length === frameworkData.length ? (
-            <Text as="span">
+            <Text as="span" fontSize={{ base: 'xs', md: 'sm' }} lineHeight="1.5em">
               {t("page-programs:page-programs-showing-all")} (
               <strong>{frameworkData.length}</strong>)
             </Text>
           ) : (
-            <Text as="span">
+            <Text as="span" fontSize={{ base: 'xs', md: 'sm' }} lineHeight="1.5em">>
               {t("page-programs:page-programs-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkData.length}
