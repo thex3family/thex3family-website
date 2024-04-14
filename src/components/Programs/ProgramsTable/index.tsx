@@ -12,6 +12,7 @@ import {
   FlexProps,
   forwardRef,
   Heading,
+  HeadingProps,
   Icon,
   keyframes,
   SimpleGrid,
