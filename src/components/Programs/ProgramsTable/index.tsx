@@ -1,7 +1,7 @@
 import { ReactNode, useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { FaBookOpen, FaTools } from "react-icons/fa"
+import { FaBookOpen, FaBorderAll, FaEye, FaTools } from "react-icons/fa"
 import Select from "react-select"
 import {
   Badge,
@@ -11,6 +11,7 @@ import {
   Flex,
   FlexProps,
   forwardRef,
+  Heading,
   Icon,
   keyframes,
   SimpleGrid,
@@ -309,6 +310,16 @@ const SocialLink = (props: LinkProps) => (
   />
 )
 
+const H2 = (prop: ChildOnlyProp & HeadingProps) => (
+  <Heading
+    fontSize={{ base: "2xl", md: "3xl" }}
+    lineHeight={1.4}
+    mb={6}
+    mt={12}
+    {...prop}
+  />
+)
+
 // Types
 export interface DropdownOption {
   label: string
@@ -375,11 +386,11 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
   const { view } = router.query; // Destructure the 'view' query parameter
 
   // State to manage the toggle between list and gallery view
-  const [dataView, setDataView] = useState(view === 'content' ? 'content' : 'program');
+  const [dataView, setDataView] = useState(view);
 
   // Function to toggle the view state
   const toggleView = () => {
-    const newView = dataView === 'content' ? 'program' : 'content';
+    const newView = dataView === 'program' ? 'content' : dataView === 'content' ? undefined : 'program';
     setDataView(newView);
     router.push({
       pathname: router.pathname,
@@ -391,9 +402,9 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
     // This effect ensures that if the URL's view parameter changes outside of the toggleView function,
     // the state updates to reflect it.
     if (view !== dataView) {
-      setDataView(view === 'content' ? 'content' : 'program');
+      setDataView(view);
     }
-  }, [view]);
+  }, [view, dataView]);
 
   return (
     <Container>
@@ -402,10 +413,14 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
           <Button
             onClick={toggleView}
             variant="outline"
-            leftIcon={dataView === 'program' ? <FaTools size="0.8em" /> : <FaBookOpen size="0.8em" />}
+            leftIcon={
+              !dataView ? <FaEye size="0.8em" /> :
+                dataView === 'program' ? <FaTools size="0.8em" /> :
+                  <FaBookOpen size="0.8em" />
+            }
           >
             <Box display={{ base: 'none', sm: 'inline' }}>
-              Toggle View
+              {!dataView ? "Programs + Content" : dataView === 'program' ? "Programs" : "Content"}
             </Box>
           </Button>
         </Th>
@@ -416,7 +431,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
               <strong>{frameworkData.length}</strong>)
             </Text>
           ) : (
-            <Text as="span" fontSize={{ base: 'xs', md: 'sm' }} lineHeight="1.5em">>
+            <Text as="span" fontSize={{ base: 'xs', md: 'sm' }} lineHeight="1.5em">
               {t("page-programs:page-programs-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkData.length}
@@ -484,170 +499,173 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
           />
         </Th> */}
       </FrameworkContentHeader>
-      {dataView === "program" ? filteredFrameworks.length !== 0 ? (
-        <CardGrid>
-          {filteredFrameworks.filter(tutorial => tutorial.type === "program").map((tutorial, idx) => {
-            const comingSoon = !!tutorial.to;
-            return (
-              <Flex
-                as={comingSoon ? BaseLink : 'div'} // Use 'div' if there's no link
-                textDecoration="none"
-                flexDirection="column"
-                justifyContent="space-between"
-                fontWeight="normal"
-                color="text"
-                border="1px solid"
-                borderColor="var(--x3-colors-primary-base)"
-                padding={8}
-                h="full"
-                w="full"
-                position="relative"
-                _hover={{
-                  textDecoration: comingSoon ? "none" : undefined,
-                  borderRadius: comingSoon ? "base" : undefined,
-                  boxShadow: comingSoon ? "0 0 1px var(--x3-colors-primary-base)" : undefined,
-                  bg: comingSoon ? "tableBackgroundHover" : undefined,
-                }}
-                key={tutorial.title}
-                {...(comingSoon ? { to: tutorial.to, target: "_blank", hideArrow: true } : {})}
-                cursor={comingSoon ? 'pointer' : 'not-allowed'}
-              >
-                <Badge
-                  position="absolute" // Absolutely position the "Coming Soon" tag
-                  top={2}
-                  right={2}
-                  colorScheme="white"
-                  fontSize="xl"
-                  _after={{
-                    ms: 0.5,
-                    me: "0.3rem",
-                    display: comingSoon ? "inline-block" : "none",
-                    content: `"↗"`,
-                    fontStyle: "normal",
-                  }}
-                >
-                  {comingSoon ? '' : '🚧'}
-                </Badge>
+      {!dataView || dataView === "program" ? filteredFrameworks.length !== 0 ? (
+        <>
+          <CardGrid>
+            {filteredFrameworks.filter(tutorial => tutorial.type === "program").map((tutorial, idx) => {
+              const comingSoon = !!tutorial.to;
+              return (
                 <Flex
+                  as={comingSoon ? BaseLink : 'div'} // Use 'div' if there's no link
+                  textDecoration="none"
+                  flexDirection="column"
                   justifyContent="space-between"
-                  alignItems="flex-start"
-                  flexDirection={{ base: "column" }}
-                  gap={6}
+                  fontWeight="normal"
+                  color="text"
+                  border="1px solid"
+                  borderColor="var(--x3-colors-primary-base)"
+                  padding={8}
+                  h="full"
+                  w="full"
+                  position="relative"
+                  _hover={{
+                    textDecoration: comingSoon ? "none" : undefined,
+                    borderRadius: comingSoon ? "base" : undefined,
+                    boxShadow: comingSoon ? "0 0 1px var(--x3-colors-primary-base)" : undefined,
+                    bg: comingSoon ? "tableBackgroundHover" : undefined,
+                  }}
+                  key={tutorial.title}
+                  {...(comingSoon ? { to: tutorial.to, target: "_blank", hideArrow: true } : {})}
+                  cursor={comingSoon ? 'pointer' : 'not-allowed'}
                 >
-                  <Flex gap={2}>
-                    <Badge variant="secondary">
-                      {t(getSkillTranslationId(tutorial.frameworkLevel!))}
-                    </Badge>
-                    <Badge variant="secondary">
-                      {tutorial.programType}
-                    </Badge>
-                  </Flex>
-                  <Text
-                    color="text"
-                    fontWeight="semibold"
-                    fontSize="2xl"
+                  <Badge
+                    position="absolute" // Absolutely position the "Coming Soon" tag
+                    top={2}
+                    right={2}
+                    colorScheme="white"
+                    fontSize="xl"
+                    _after={{
+                      ms: 0.5,
+                      me: "0.3rem",
+                      display: comingSoon ? "inline-block" : "none",
+                      content: `"↗"`,
+                      fontStyle: "normal",
+                    }}
                   >
-                    {tutorial.title}
-                  </Text>
-                </Flex>
-                <Text noOfLines={2} color="text200">{tutorial.description}</Text>
-                <div>
-                  <Flex direction="column" align="start" fontSize="sm" color="text200" textTransform="uppercase" mb={6}>
-                    {/* <Flex align="center" mb={1}>
+                    {comingSoon ? '' : '🚧'}
+                  </Badge>
+                  <Flex
+                    justifyContent="space-between"
+                    alignItems="flex-start"
+                    flexDirection={{ base: "column" }}
+                    gap={6}
+                  >
+                    <Flex gap={2}>
+                      <Badge variant="secondary">
+                        {t(getSkillTranslationId(tutorial.frameworkLevel!))}
+                      </Badge>
+                      <Badge variant="secondary">
+                        {tutorial.programType}
+                      </Badge>
+                    </Flex>
+                    <Text
+                      color="text"
+                      fontWeight="semibold"
+                      fontSize="2xl"
+                      lineHeight="1.2em"
+                    >
+                      {tutorial.title}
+                    </Text>
+                  </Flex>
+                  <Text noOfLines={2} color="text200">{tutorial.description}</Text>
+                  <div>
+                    <Flex direction="column" align="start" fontSize="sm" color="text200" textTransform="uppercase" mb={6}>
+                      {/* <Flex align="center" mb={1}>
                           <Emoji text=":wave:" fontSize="sm" me={2} />
                           {tutorial.author}
                         </Flex> */}
-                    {/* <Flex align="center" mb={1}>
+                      {/* <Flex align="center" mb={1}>
                           <Emoji text=":heart:" fontSize="sm" me={2} />
                           10 Likes
                         </Flex> */}
-                    {/* {tutorial.timeToRead && (
+                      {/* {tutorial.timeToRead && (
                           <Flex align="center" mb={1}>
                             <Emoji text=":stopwatch:" fontSize="sm" me={2} />
                             {tutorial.timeToRead} {t("page-programs:page-programs-read-time")}
                           </Flex>
                         )} */}
-                    {/* {published(locale!, tutorial.published ?? "") && (
+                      {/* {published(locale!, tutorial.published ?? "") && (
                           <Flex align="center" mb={1}>
                             <Emoji text=":calendar:" fontSize="sm" me={2} />
                             {published(locale!, tutorial.published ?? "")}
                           </Flex>
                         )} */}
-                    <Flex align="center" mb={2}>
-                      <Emoji
-                        text={
-                          tutorial.location === 'virtual' ? ":globe_with_meridians:" :
-                            tutorial.location === 'physical' ? ":round_pushpin:" :
-                              tutorial.location === 'system' ? ":gear:" :
-                                tutorial.location === 'app' ? ":mobile_phone:" :
-                                  ":eyes:" // Default case for all other types of locations
-                        }
-                        fontSize="sm"
-                        me={2}
-                      />
-                      {tutorial.location}
-                    </Flex>
-                    {/* <Flex align="center" mb={0}>
+                      <Flex align="center" mb={2}>
+                        <Emoji
+                          text={
+                            tutorial.location === 'virtual' ? ":globe_with_meridians:" :
+                              tutorial.location === 'physical' ? ":round_pushpin:" :
+                                tutorial.location === 'system' ? ":gear:" :
+                                  tutorial.location === 'app' ? ":mobile_phone:" :
+                                    ":eyes:" // Default case for all other types of locations
+                          }
+                          fontSize="sm"
+                          me={2}
+                        />
+                        {tutorial.location}
+                      </Flex>
+                      {/* <Flex align="center" mb={0}>
                       <Emoji text=":star:" fontSize="sm" me={1} />
                       <Emoji text=":star:" fontSize="sm" me={1} />
                       <Emoji text=":star:" fontSize="sm" me={1} />
                       <Emoji text=":star:" fontSize="sm" me={1} />
                       <Emoji text=":star:" fontSize="sm" me={1} />
                     </Flex> */}
-                  </Flex>
-                  <Flex flexWrap="wrap" w="full">
-                    <TutorialTags tags={tutorial.tags?.slice(0, 2) ?? []} />
-                  </Flex>
-                </div>
-              </Flex>
-            )
-          })}
-          <Flex
-            textDecoration="none"
-            flexDirection="column"
-            justifyContent="center"
-            fontWeight="normal"
-            color="text"
-            // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
-            border="1px solid"
-            borderColor="var(--x3-colors-primary-base)"
-            padding={8}
-            h="full"
-            w="full"
-            _hover={{
-              textDecoration: "none",
-              borderRadius: "base",
-              boxShadow: "0 0 1px var(--x3-colors-primary-base)",
-              // bg: "tableBackgroundHover",
-            }}
-          >
-            <Button
-              variant="outline"
+                    </Flex>
+                    <Flex flexWrap="wrap" w="full">
+                      <TutorialTags tags={tutorial.tags?.slice(0, 2) ?? []} />
+                    </Flex>
+                  </div>
+                </Flex>
+              )
+            })}
+            <Flex
+              textDecoration="none"
+              flexDirection="column"
+              justifyContent="center"
+              fontWeight="normal"
               color="text"
-              borderColor="text"
+              // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
+              border="1px solid"
+              borderColor="var(--x3-colors-primary-base)"
+              padding={8}
+              h="full"
+              w="full"
               _hover={{
-                color: "primary.base",
-                borderColor: "primary.base",
-                boxShadow: cardBoxShadow,
-              }}
-              _active={{
-                bg: "secondaryButtonBackgroundActive",
-              }}
-              py={2}
-              px={3}
-              onClick={() => {
-                setModalOpen(true)
-                trackCustomEvent({
-                  eventCategory: "tutorials tags",
-                  eventAction: "click",
-                  eventName: "submit",
-                })
+                textDecoration: "none",
+                borderRadius: "base",
+                boxShadow: "0 0 1px var(--x3-colors-primary-base)",
+                // bg: "tableBackgroundHover",
               }}
             >
-              {t("page-programs:page-programs-submit-button")}
-            </Button>
-          </Flex>
-        </CardGrid>)
+              <Button
+                variant="outline"
+                color="text"
+                borderColor="text"
+                _hover={{
+                  color: "primary.base",
+                  borderColor: "primary.base",
+                  boxShadow: cardBoxShadow,
+                }}
+                _active={{
+                  bg: "secondaryButtonBackgroundActive",
+                }}
+                py={2}
+                px={3}
+                onClick={() => {
+                  setModalOpen(true)
+                  trackCustomEvent({
+                    eventCategory: "tutorials tags",
+                    eventAction: "click",
+                    eventName: "submit",
+                  })
+                }}
+              >
+                {t("page-programs:page-programs-submit-button")}
+              </Button>
+            </Flex>
+          </CardGrid>
+        </>)
         : (
           <Box
             // boxShadow={tableBoxShadow}
@@ -696,126 +714,134 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
               </Button>
             </Box>
           </Box>) : ""}
-      {dataView === "content" ? filteredFrameworks.length !== 0 ? (
-        <Flex pt={2} gap={1} flexDirection="column">
-          {filteredFrameworks.filter(tutorial => tutorial.type === "content").map((tutorial, idx) => {
-            const comingSoon = !!tutorial.to;
-            return (
-              <Flex
-                as={comingSoon ? BaseLink : 'div'} // Use 'div' if there's no link
-                textDecoration="none"
-                flexDirection="column"
-                justifyContent="space-between"
-                fontWeight="normal"
-                color="text"
-                border="1px solid"
-                borderColor="var(--x3-colors-primary-base)"
-                padding={8}
-                h="full"
-                w="full"
-                position="relative"
-                _hover={{
-                  textDecoration: comingSoon ? "none" : undefined,
-                  borderRadius: comingSoon ? "base" : undefined,
-                  boxShadow: comingSoon ? "0 0 1px var(--x3-colors-primary-base)" : undefined,
-                  bg: comingSoon ? "tableBackgroundHover" : undefined,
-                }}
-                key={tutorial.title}
-                {...(comingSoon ? { to: tutorial.to, target: "_blank", hideArrow: true } : {})}
-                cursor={comingSoon ? 'pointer' : 'not-allowed'}
-              >
+      {!dataView || dataView === "content" ? filteredFrameworks.length !== 0 ? (
+        <>
+          {!dataView ? <H2
+          >
+            Content
+          </H2> : ""}
+          <Flex pt={2} gap={1} flexDirection="column">
+            {filteredFrameworks.filter(tutorial => tutorial.type === "content").map((tutorial, idx) => {
+              const comingSoon = !!tutorial.to;
+              return (
                 <Flex
+                  as={comingSoon ? BaseLink : 'div'} // Use 'div' if there's no link
+                  textDecoration="none"
+                  flexDirection="column"
                   justifyContent="space-between"
-                  mb={{ base: 8, md: -4 }}
-                  alignItems="flex-start"
-                  flexDirection={{ base: "column", md: "initial" }}
+                  fontWeight="normal"
+                  color="text"
+                  border="1px solid"
+                  borderColor="var(--x3-colors-primary-base)"
+                  padding={8}
+                  h="full"
+                  w="full"
+                  position="relative"
+                  _hover={{
+                    textDecoration: comingSoon ? "none" : undefined,
+                    borderRadius: comingSoon ? "base" : undefined,
+                    boxShadow: comingSoon ? "0 0 1px var(--x3-colors-primary-base)" : undefined,
+                    bg: comingSoon ? "tableBackgroundHover" : undefined,
+                  }}
+                  key={tutorial.title}
+                  {...(comingSoon ? { to: tutorial.to, target: "_blank", hideArrow: true } : {})}
+                  cursor={comingSoon ? 'pointer' : 'not-allowed'}
                 >
-                  <Text
-                    color="text"
-                    fontWeight="semibold"
-                    fontSize="2xl"
-                    me={{ base: 0, md: 24 }}
+                  <Flex
+                    justifyContent="space-between"
+                    mb={{ base: 8, md: -4 }}
+                    alignItems="flex-start"
+                    flexDirection={{ base: "column", md: "initial" }}
                   >
-                    {tutorial.title} {comingSoon ? '↗' : '🚧'}
-                  </Text>
-                  <Flex gap={2}>
-                    <Badge variant="secondary">
-                      {t(getSkillTranslationId(tutorial.frameworkLevel!))}
-                    </Badge>
-                    <Badge variant="secondary">
-                      {tutorial.programType}
-                    </Badge>
+                    <Text
+                      color="text"
+                      fontWeight="semibold"
+                      fontSize="2xl"
+                      me={{ base: 0, md: 24 }}
+                      lineHeight="1.2em"
+                    >
+                      {tutorial.title} {comingSoon ? '↗' : '🚧'}
+                    </Text>
+                    <Flex gap={2}>
+                      <Badge variant="secondary">
+                        {t(getSkillTranslationId(tutorial.frameworkLevel!))}
+                      </Badge>
+                      <Badge variant="secondary">
+                        {tutorial.programType}
+                      </Badge>
+                    </Flex>
                   </Flex>
-                </Flex>
-                <Text color="text200" fontSize="sm" textTransform="uppercase">
-                  <Emoji text=":writing_hand:" fontSize="sm" me={2} />
-                  {tutorial.author}
-                  {/* {tutorial.published ? (
+                  <Text color="text200" fontSize="sm" textTransform="uppercase">
+                    <Emoji text=":writing_hand:" fontSize="sm" me={2} />
+                    {tutorial.author}
+                    {/* {tutorial.published ? (
                   <> • {published(locale!, tutorial.published!)}</>
                 ) : null} */}
-                  {(tutorial.timeToRead ?? 0) > 0 && (
-                    <>
-                      {" "}
-                      •
-                      <Emoji text=":stopwatch:" fontSize="sm" mx={1} />
-                      {tutorial.timeToRead}{" "}
-                      {t("page-programs:comp-programs-metadata-minute-read")}
-                    </>
-                  )}
-                </Text>
-                <Text color="text200">{tutorial.description}</Text>
-                <Flex flexWrap="wrap" w="full">
-                  <TutorialTags tags={tutorial.tags ?? []} />
+                    {(tutorial.timeToRead ?? 0) > 0 && (
+                      <>
+                        {" "}
+                        •
+                        <Emoji text=":stopwatch:" fontSize="sm" mx={1} />
+                        {tutorial.timeToRead}{" "}
+                        {t("page-programs:comp-programs-metadata-minute-read")}
+                      </>
+                    )}
+                  </Text>
+                  <Text color="text200">{tutorial.description}</Text>
+                  <Flex flexWrap="wrap" w="full">
+                    <TutorialTags tags={tutorial.tags ?? []} />
+                  </Flex>
                 </Flex>
-              </Flex>
-            )
-          })}
-          <Flex
-            textDecoration="none"
-            flexDirection="column"
-            justifyContent="center"
-            fontWeight="normal"
-            color="text"
-            // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
-            border="1px solid"
-            borderColor="var(--x3-colors-primary-base)"
-            padding={8}
-            h="full"
-            w="full"
-            _hover={{
-              textDecoration: "none",
-              borderRadius: "base",
-              boxShadow: "0 0 1px var(--x3-colors-primary-base)",
-              // bg: "tableBackgroundHover",
-            }}
-          >
-            <Button
-              variant="outline"
+              )
+            })}
+            <Flex
+              textDecoration="none"
+              flexDirection="column"
+              justifyContent="center"
+              fontWeight="normal"
               color="text"
-              borderColor="text"
+              // boxShadow="0px 1px 1px var(--x3-colors-tableItemBoxShadow)"
+              border="1px solid"
+              borderColor="var(--x3-colors-primary-base)"
+              padding={8}
+              h="full"
+              w="full"
               _hover={{
-                color: "primary.base",
-                borderColor: "primary.base",
-                boxShadow: cardBoxShadow,
-              }}
-              _active={{
-                bg: "secondaryButtonBackgroundActive",
-              }}
-              py={2}
-              px={3}
-              onClick={() => {
-                setModalOpen(true)
-                trackCustomEvent({
-                  eventCategory: "tutorials tags",
-                  eventAction: "click",
-                  eventName: "submit",
-                })
+                textDecoration: "none",
+                borderRadius: "base",
+                boxShadow: "0 0 1px var(--x3-colors-primary-base)",
+                // bg: "tableBackgroundHover",
               }}
             >
-              {t("page-programs:page-programs-submit-button")}
-            </Button>
+              <Button
+                variant="outline"
+                color="text"
+                borderColor="text"
+                _hover={{
+                  color: "primary.base",
+                  borderColor: "primary.base",
+                  boxShadow: cardBoxShadow,
+                }}
+                _active={{
+                  bg: "secondaryButtonBackgroundActive",
+                }}
+                py={2}
+                px={3}
+                onClick={() => {
+                  setModalOpen(true)
+                  trackCustomEvent({
+                    eventCategory: "tutorials tags",
+                    eventAction: "click",
+                    eventName: "submit",
+                  })
+                }}
+              >
+                {t("page-programs:page-programs-submit-button")}
+              </Button>
+            </Flex>
           </Flex>
-        </Flex>)
+        </>
+      )
         : (
           <Box
             // boxShadow={tableBoxShadow}
