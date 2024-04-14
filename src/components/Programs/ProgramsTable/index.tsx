@@ -317,6 +317,7 @@ const H2 = (prop: ChildOnlyProp & HeadingProps) => (
     lineHeight={1.4}
     mb={6}
     mt={12}
+    textAlign="center"
     {...prop}
   />
 )
@@ -421,7 +422,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
             }
           >
             <Box display={{ base: 'none', sm: 'inline' }}>
-              {!dataView ? "Programs + Content" : dataView === 'program' ? "Programs" : "Content"}
+            {!dataView ? `${t("page-programs:page-programs-programs")} + ${t("page-programs:page-programs-content")}` : dataView === 'program' ? t("page-programs:page-programs-programs") : t("page-programs:page-programs-content")}
             </Box>
           </Button>
         </Th>
@@ -719,7 +720,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
         <>
           {!dataView ? <H2
           >
-            Content
+             {t("page-programs:page-programs-content")}
           </H2> : ""}
           <Flex pt={2} gap={1} flexDirection="column">
             {filteredFrameworks.filter(tutorial => tutorial.type === "content").map((tutorial, idx) => {
