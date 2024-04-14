@@ -405,7 +405,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
     if (view !== dataView) {
       setDataView(view);
     }
-  }, [view, dataView]);
+  }, [view]);
 
   return (
     <Container>
