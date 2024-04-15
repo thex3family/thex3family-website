@@ -16,6 +16,7 @@ import { Image } from "@/components/Image"
 type HeaderProps = {
   title: string;
   description: string;
+  customDescription: JSX.Element;
   buttonLabel: string;
   buttonTo: string;
   imageSrc: StaticImageData;
@@ -45,13 +46,13 @@ const ImageContainer = (props: FlexProps & { children: ReactNode }) => (
         {...props} />
 )
 
-export const Header = ({ title, description, buttonLabel, buttonTo, imageSrc, imageAlt }: HeaderProps) => (
+export const Header = ({ title, description, customDescription, buttonLabel, buttonTo, imageSrc, imageAlt }: HeaderProps) => (
   <Flex alignItems="center" flexDirection={{ base: "column-reverse" }} gap={{ base: 4 }} textAlign="center" mx="auto" maxWidth="xl">
     <Box flex="0 0 50%" boxSize="full">
       <Box mb={6}>
         <SectionHeading fontFamily="inherit">{title}</SectionHeading>
       </Box>
-      <SectionDecription>{description}</SectionDecription>
+      <SectionDecription>{customDescription ? customDescription : description}</SectionDecription>
       <ButtonLink to={buttonTo}>{buttonLabel}</ButtonLink>
     </Box>
     <ImageContainer>
