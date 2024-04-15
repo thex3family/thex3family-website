@@ -161,8 +161,6 @@ const FileContributors: React.FC<FileContributorsProps> = ({
           <Skeleton isLoaded={!loading} mt={{ base: 4, md: 0 }}>
             <Button
               variant="outline"
-              bg="background.base"
-              border={0}
               onClick={() => {
                 setModalOpen(true)
                 trackCustomEvent({

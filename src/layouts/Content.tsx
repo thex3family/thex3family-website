@@ -55,8 +55,8 @@ const ContentContainer = (props: ChildOnlyProp) => {
       minW={0}
       background="background.base"
       boxShadow={{ base: "none", lg: boxShadow }}
-      m={{ base: "0rem 0rem", lg: "2rem 2rem 6rem" }}
-      p={{ base: "0rem 2rem", lg: 16 }}
+      m={{ base: "2.5rem 0rem", lg: "2rem 2rem 6rem" }}
+      p={{ base: "3rem 2rem", lg: 16 }}
       borderRadius="4px"
       {...props}
       sx={{
@@ -195,8 +195,7 @@ export const TutorialLayout = ({
         borderBottom={`1px solid ${borderColor}`}
         m={{ base: "2rem 0rem", lg: "0 auto" }}
         p={{ base: "0", lg: "0 2rem 0 0" }}
-        background={{ base: "background.base", lg: "mainGradient" }}
-        justifyContent="center" // centers horizontally
+        background={{ base: "background.base", lg: "ednBackground" }}
       >
         <ContentContainer>
           <Heading1>{frontmatter.title}</Heading1>
@@ -224,7 +223,7 @@ export const TutorialLayout = ({
           )}
           <FeedbackCard />
         </ContentContainer>
-        {/* {tocItems && (
+        {tocItems && (
           <TableOfContents
             items={tocItems}
             maxDepth={frontmatter.sidebarDepth!}
@@ -232,7 +231,7 @@ export const TutorialLayout = ({
             hideEditButton={!!frontmatter.hideEditButton}
             pt={16}
           />
-        )} */}
+        )}
       </Flex>
     </>
   )
