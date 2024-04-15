@@ -48,7 +48,19 @@ type LinkPageProps = {
 
 
 const ContentBox = (props: ChildOnlyProp) => (
-    <Box pt={6} px={{ base: 4, lg: 8 }} {...props} />
+    <Flex
+        py={12}
+        px={{ base: 4, lg: 8 }}
+        justifyContent="center"
+        gap={10}
+        flexDirection={{ base: 'column', lg: 'row' }} // Set flex direction based on breakpoints
+        sx={{
+            '& > *': { // Apply styles to all direct children
+                width: { lg: '50%' }, // Set width to 50% on large screens
+                flex: { lg: '0 0 auto' } // Prevent flex items from growing or shrinking on large screens
+            }
+        }}
+        {...props} />
 )
 
 const GrayContainer = (props: ChildOnlyProp) => (
@@ -59,11 +71,13 @@ const CardContainer = (props: {
     children: ReactNode
 }) => (
     <Flex
-        justifyContent={{ base: "flex-start" }}
+        mx="auto"
+        justifyContent="flex-start"
         overflowX="auto" // Enable horizontal scrolling
         gap={8}
         p={4}
         width="full"
+        maxWidth="xl"
         flexWrap="nowrap" // Prevent wrapping of flex items
     >
         {props.children}
@@ -90,7 +104,6 @@ const Links: React.FC<LinkPageProps> = ({ headerData, cardsData, socialLinksData
             alignItems="center"
             dir={dir}
             width="full"
-            maxWidth="xl"
             mx="auto"
             pb="30px"
         >
@@ -101,15 +114,16 @@ const Links: React.FC<LinkPageProps> = ({ headerData, cardsData, socialLinksData
             <GrayContainer>
                 <ContentBox>
                     <Header {...headerData} />
-
-                    <Text size="sm" mt={8} mb={4} fontWeight="600" textAlign="center">
-                        Popular Links
-                    </Text>
-                    <CardContainer>
-                        {cardsData.map((card, index) => (
-                            <Card key={index} {...card} />
-                        ))}
-                    </CardContainer>
+                    <div style={{ alignContent: "center" }}>
+                        <Text size="sm" mb={4} fontWeight="600" textAlign="center">
+                            Popular Links
+                        </Text>
+                        <CardContainer>
+                            {cardsData.map((card, index) => (
+                                <Card key={index} {...card} />
+                            ))}
+                        </CardContainer>
+                    </div>
                 </ContentBox>
             </GrayContainer>
 
