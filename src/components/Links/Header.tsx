@@ -46,7 +46,7 @@ const ImageContainer = (props: FlexProps & { children: ReactNode }) => (
 )
 
 export const Header = ({ title, description, buttonLabel, buttonTo, imageSrc, imageAlt }: HeaderProps) => (
-  <Flex alignItems="center" flexDirection={{ base: "column-reverse" }} gap={{ base: 4 }} textAlign="center">
+  <Flex alignItems="center" flexDirection={{ base: "column-reverse" }} gap={{ base: 4 }} textAlign="center" mx="auto" maxWidth="xl">
     <Box flex="0 0 50%" boxSize="full">
       <Box mb={6}>
         <SectionHeading fontFamily="inherit">{title}</SectionHeading>

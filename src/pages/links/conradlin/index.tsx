@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaBook, FaBookOpen, FaInstagram, FaLightbulb, FaLinkedin, FaRocket, FaTiktok, FaYoutube } from "react-icons/fa"
+import { FaBook, FaBookOpen, FaHome, FaInstagram, FaLightbulb, FaLinkedin, FaRocket, FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa"
 import {
     useToken,
 } from "@chakra-ui/react"
@@ -52,7 +52,11 @@ const LinksPage = ({
 
     const headerData = {
         title: "Conrad Lin",
-        description: "I Help People Level Up | Author Of The Better Life Framework • Founder Of The Co-x3 Family Foundation",
+        description: (
+            <>
+                <b>I Help People Level Up</b> <br /> Author Of The Better Life Framework <br /> Founder Of The Co-x3 Family Foundation
+            </>
+        ),
         imageSrc: conrad,
         imageAlt: t("common:icon-image-alt"),
         buttonLabel: t("common:learn-more"),
@@ -81,29 +85,35 @@ const LinksPage = ({
             to: "/make-positive-impact/",
             boxShadow: cardBoxShadow
         },
+        {
+            icon: FaHome,
+            title: "Live With Me @ Our Family Without Borders",
+            to: "https://ourfamilywithoutborders.com",
+            boxShadow: cardBoxShadow
+        },
     ]
     
     const socialLinksData = [
         {
-            icon: FaYoutube,
-            to: "https://www.youtube.com/playlist?list=PLgDMbYMf0e_qpWHJlpGW6fYI5cYHNK5Ty",
-            ariaLabel: "YouTube",
-            color: "#FF0000",
-            title: "Weekly Podcast: Level Up With Conrad"
+            icon: FaSpotify,
+            to: "https://podcasters.spotify.com/pod/show/levelupwithconrad",
+            ariaLabel: "Podcast",
+            color: "#1DB954",
+            title: "Podcast: Level Up With Conrad"
         },
         {
             icon: FaYoutube,
             to: "https://www.youtube.com/playlist?list=PLgDMbYMf0e_oMFRliRwjlXHcD7YCkO6NE",
             ariaLabel: "YouTube",
             color: "#FF0000",
-            title: "How I'm Living My Best Life Every Day"
+            title: "Vlog: Live Your Best Life"
         },
         {
             icon: FaYoutube,
             to: "https://www.youtube.com/@conradlin",
             ariaLabel: "YouTube",
             color: "#FF0000",
-            title: "Watch All My Content"
+            title: "Watch All My Videos"
         },
         {
             icon: FaInstagram,
