@@ -16,7 +16,7 @@ import { Image } from "@/components/Image"
 type HeaderProps = {
   title: string;
   description: string;
-  customDescription: JSX.Element;
+  customDescription?: JSX.Element;
   buttonLabel: string;
   buttonTo: string;
   imageSrc: StaticImageData;
