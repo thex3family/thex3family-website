@@ -24,7 +24,7 @@ type LinkPageProps = {
     headerData: {
         metaTitle?: string;
         title: string;
-        description: string;
+        description: string | JSX.Element;
         buttonLabel: string;
         buttonTo: string;
         imageSrc: StaticImageData;
