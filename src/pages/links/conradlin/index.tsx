@@ -52,7 +52,8 @@ const LinksPage = ({
 
     const headerData = {
         title: "Conrad Lin",
-        description: (
+        description: "Conrad Lin is an innovative thought leader, renowned for his groundbreaking work in personal and professional development with The Better Life Framework and his passion to help people level up and be their best self.",
+        customDescription: (
             <>
                 <b>I Help People Level Up</b> <br /> Author Of The Better Life Framework <br /> Founder Of The Co-x3 Family Foundation
             </>
