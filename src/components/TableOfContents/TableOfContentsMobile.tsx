@@ -44,6 +44,7 @@ const Mobile: React.FC<IPropsTableOfContentsMobile> = ({ items, maxDepth }) => {
       border="1px"
       borderColor="border"
       borderRadius="4px"
+      mt={6}
       py={2}
       px={4}
     >
