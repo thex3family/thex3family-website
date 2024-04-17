@@ -54,6 +54,12 @@ Unless otherwise marked, (a) all material, data, and information on the Websites
 
 The Foundation name, the terms Co-x3 Family, Better Life Framework, the Foundation logo and all related names, logos, product and service names, designs and slogans are trademarks of the Foundation or its affiliates or licensors. You must not use such marks without the prior written permission of the Foundation. All other names, logos, product and service names, designs and slogans on this Websites are the trademarks of their respective owners.
 
+## Use Of Likeness
+
+By using the Websites you grant the Foundation the irrevocable right and permission to record, film, photograph, or capture your likeness in any media now available or hereafter developed and to use, reproduce, modify, display, broadcast, distribute, create derivative works of, and publicly perform such recordings, films, photographs, or captures, in whole or in part, and in combination with other materials, in perpetuity, in any manner, an unlimited number of times, in any media, for purposes including, but not limited to, advertising, marketing, and promotional activities without additional compensation or prior notice.
+
+You understand and agree that all such recordings, films, photographs, and captures will be the sole property of the Foundation, and you relinquish any rights, claims, or interest you may have in such media or their use.
+
 ## Prohibited Uses
 
 You may use the Websites only for lawful purposes and in accordance with these Terms of Use. You agree not to use the Websites:
@@ -143,4 +149,4 @@ The Terms of Use, our Privacy Policy and terms of conditions for the registratio
 
 ## Your Comments and Concerns
 
-The Websites are operated by the Foundation. All other feedback, comments, requests for technical support and other communications relating to the Websites should be directed to: [support@x3.family](mailto:support@x3.family).
+The Websites are operated by the Foundation. All other feedback, comments, requests for technical support and other communications relating to the Websites should be directed to: [the appropriate contact email](/contact-us).
