@@ -237,7 +237,7 @@
   "make-positive-impact-secondary-title": "Change The World",
 
   "contribute-title": "Contribute To The Family",
-  "contribute-description": "We've created fun, engaging ways for our community to complete meaningful one-off or occassional tasks to support our programs and earn life points.",
+  "contribute-description": "We've created fun, engaging ways for our community to engage in meaningful one-off or occasional contributions to support our programs.",
   "contribute-image-alt": "",
   "contribute-button": "Be An Adventurer",
   "collaborate-title": "Collaboration Opportunities",
@@ -245,8 +245,21 @@
   "collaborate-image-alt": "",
   "collaborate-button": "Dedicate Your Time",
 
-  "membership-title": "Co-x3 Membership",
-  "donate-title": "Donate A Scholarship",
+  
+  "be-an-adventurer-title": "Be An Adventurer",
+  "be-an-adventurer-description": "",
+  "be-an-adventurer-image-alt": "",
+  
+  "be-an-advocate-title": "Be An Advocate",
+  "be-an-advocate-description": "",
+  "be-an-advocate-image-alt": "",
+  
+  "be-a-patron-title": "Be A Patron",
+  "be-a-patron-description": "",
+  "be-a-patron-image-alt": "",
+
+  "membership-title": "Better Life Membership",
+  "donate-title": "Be A Donor",
 
   "community-manager-title": "Community Manager",
   "finance-manager-title": "Finance Manager",

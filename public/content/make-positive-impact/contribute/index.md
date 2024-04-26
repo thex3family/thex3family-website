@@ -1,47 +1,39 @@
 ---
-title: Contribute
-description: We've created fun, engaging ways for our community to complete meaningful one-off or occassional tasks to support our programs and earn life points.
+title: Make A Difference
+description: We've created fun, engaging ways for our community to engage in meaningful one-off or occasional contributions to support our programs.
 lang: en
 template: main
 image: /contribute.png
 alt: 
 summaryPoint1: Helping others can be difficult when we don't know how.
-summaryPoint2: We've created fun, engaging ways for our community to complete meaningful one-off or occassional tasks to support our programs.
-summaryPoint3: Get recognized and rewarded for your contributions.
+summaryPoint2: Mkae positive impact with one-off or occasional contributions.
+summaryPoint3: Get recognized and rewarded for your support to programs.
 ---
 
-## Why Contribute? {#why-contribute}
+## Why Contribute?
 
-Your contributions, regardless of their size, are immensely valuable to us. Whether you have a few minutes or several hours, there's a place for you here. Participation in even small, one-off tasks can make a significant impact.
+Your contributions, regardless of their size, are immensely valuable to us. We are reinventing what giving back to the community means. We are enabling anyone around the world to contribute towards the development and growth of programs that have helped them in their growth journey.
 
-_We are in the process of developing a user-friendly platform to effortlessly match you with tasks that align with your skills and interests. Meanwhile, please explore the list of standard tasks below to find something that resonates with you._
+Whether you have a few minutes or several hours, there's a way for you to contribute.
 
-## What Can I Do? {#what-contribute}
+## Benefits To Contributing
 
-| Perspective        | Task                               | Description                                           | Difficulty        |
-|--------------|------------------------------------|-------------------------------------------------------|-------------------|
-| All   | [Get A Co-x3 Membership](/make-positive-impact/contribute/membership)           | Access exclusive content.                             | ⭐               |
-|              | Share Feedback                     | Provide your thoughts and suggestions.                | ⭐                |
-|              | Like and Subscribe                 | Support us on social platforms.                       | ⭐               |
-| 3+     | Post In Community Channels         | Engage in community discussions.                      | ⭐               |
-|              | Bug Identification                 | Identify and report website issues.                   | ⭐               |
-|              | Translation Services               | Help translate our content.                           | ⭐⭐             |
-|              | Guests On LVL-UP Podcast           | Join our podcast for a 1-on-1 consulting session.     | ⭐⭐             |
-| 4+     | Suggest Knowledge                  | Add insights to our knowledge base.                   | ⭐               |
-|              | [Improve Glossary Terms](/make-positive-impact/contribute/glossary)             | Add or edit glossary terms.                            | ⭐               |
-|              | Share On Social Media              | Promote us on social media.                           | ⭐               |
-|              | Website Design Contributions       | Improve our website design.                           | ⭐⭐⭐           |
-|              | Host Local Meetups                 | Organize meetups for comrades.                        | ⭐⭐             |
-| 5+     | Suggest Tools                      | Recommend personal growth tools.                      | ⭐               |
-|              | Better Life Framework Research             | Enhance our Better Life Framework research.                   | ⭐⭐             |
-|              | [Quiz Creation / Improvement](/make-positive-impact/contribute/quizzes)                      | Create quizzes for the Co-x3 Foundation.              | ⭐⭐             |
-| 6+     | Suggest Community Experiences      | Lead community initiatives.                           | ⭐⭐⭐           |
-| 7+     | [Donate A Scholarship](/make-positive-impact/contribute/donate)            | Support a member to benefit from our programs.                   | ⭐                |
-| 8+     | Submit Research                    | Contribute to community research papers.              | ⭐⭐⭐           |
-| 9+     | Ambassador Program                 | Be our ambassador at events and social gatherings.    | ⭐⭐⭐           |
+### Tangible Benefits
 
-_Any questions?_ 🤔 Reach out in our [community](https://our.x3.family/)
+Contributors get access to meaningful perks to help them improve their lives. You'll get special roles in our community, access to exclusive events, mentors, behind the scenes content, exclusive tools, and more.
 
-## Who Are Our Contributors? {#our-contributors}
+### Intangible Benefits
 
-<Contributors />
+We are committed to showcase and make the efforts you've made visible. Every time you contribute, you will be able to see the impact of the efforts that you've made.
+
+## Contributor vs Collaborator?
+
+We want to give everyone the opportunity to make positive impact without a large commitment, so we've opened up opportunities for quick, ad-hoc contributions. When you want to contribute on a more permanent basis, you can apply to be a [collaborator](/make-positive-impact/collaborate).
+
+## What Are The Ways I Can Contribute?
+
+| Action                                                       | Description                                                                                                                   |
+|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Be An Adventurer](/make-positive-impact/contribute/be-an-adventurer)             | Contribute your time towards programs that help people live better lives. |
+| Be An Advocate              | Contribute by sharing about the foundation and our programs to those in need. |
+| [Be A Patron](/make-positive-impact/contribute/be-a-patron)               | Contribute financially to help the the foundation support more people to live a better life. |
