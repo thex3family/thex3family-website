@@ -1,6 +1,6 @@
 ---
-title: Become A Donor
-description: Accelerate growth and transformation for deserving individuals.
+title: Be A Donor
+description: Accelerate growth and transformation for deserving individuals by contributing to our scholarship fund.
 lang: en
 template: main
 image: /contribute.png
@@ -13,7 +13,7 @@ summaryPoint3: Get regular updates on the progress and success of your beneficia
 ## Why Support?
 
 
-We envision a world where everyone, regardless of their financial background, has the opportunity to grow, learn, and excel.The Co-x3 Family is a supportive community where members uplift and strengthen each other.
+We envision a world where everyone, regardless of their financial background, has the opportunity to grow, learn, and excel. The Co-x3 Family is a supportive community where members uplift and strengthen each other.
 
 Everyone needs support at some point. Whether it's due to financial constraints or other challenges, we want our scholarship to be a beacon of hope and a catalyst for positive change. Your contribution as a supporter is not just financial assistance - it's a gesture of kindness and solidarity, enabling someone to embark on a journey of personal development.
 
@@ -39,7 +39,7 @@ Your support as a donor goes beyond just funding; it's about opening doors for t
 
 ## The Co-x3 Family Scholarship
 
-For every $100 donated, you empower 10 individuals with 30 days of the [Co-x3 Membership](/make-positive-impact/contribute/membership), offering them a wealth of resources for personal growth.
+For every $100 donated, you empower 10 individuals with 30 days of the [Better Life Membership](/make-positive-impact/contribute/membership), offering them a wealth of resources for personal growth.
 
 As a supporter, you’ll receive regular updates, sharing the progress and achievements of the individuals you’ve helped. We also offer tiered benefits for regular supporters, recognizing and thanking you for your ongoing commitment.
 

@@ -1,5 +1,5 @@
 ---
-title: House Manager
+title: House Manager (The Retreat)
 emoji: 🏡
 location: Osaka, Japan
 frameworkLevel: "LEVEL_5"
@@ -13,7 +13,7 @@ hideEditButton: true
 
 This role is for our [Our Family Without Borders](https://www.ourfamilywithoutborders.com/), where we believe that our living environment significantly impacts our growth, learning, and well-being. Our co-living space is more than just a place to stay—it's a community of like-minded individuals on a shared journey of personal and professional development.
 
-We are seeking a dedicated House Manager to maintain [The Creator's Retreat in Osaka, Japan](https://www.ourfamilywithoutborders.com/homes/creators-retreat) as a sanctuary where tenants can thrive. The best fit for this role will be a creative that is excited to play a crucial role in ensuring a harmonious, well-managed living and co-working environment. Compensation is variable, with bonuses for maintaining tenant occupancy and happiness.
+We are seeking a dedicated House Manager to maintain [The Retreat in Osaka, Japan](https://www.ourfamilywithoutborders.com/homes/the-retreat) as a sanctuary where tenants can thrive. The best fit for this role will be a creative that is excited to play a crucial role in ensuring a harmonious, well-managed living and co-working environment. Compensation is variable, with bonuses for maintaining tenant occupancy and happiness.
 
 ## Responsibilities
 

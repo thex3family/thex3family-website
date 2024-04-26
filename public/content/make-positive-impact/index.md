@@ -22,6 +22,6 @@ When you have achieved a certain level of expertise or understanding, it's not j
 
 | Action                                                       | Description                                                                                                                   |
 |--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [Contribute](/make-positive-impact/contribute)               | We've created fun, engaging ways for our community to complete meaningful one-off or occasional tasks to support our programs. |
+| [Contribute](/make-positive-impact/contribute)               | We've created fun, engaging ways for our community to engage in meaningful one-off or occasional contributions to support our programs. |
 | [Collaborate](/make-positive-impact/collaborate)             | We enable our community to make use of their skills and commit regular time towards supporting programs that have benefited their growth. |
 | [Co-Create](/make-positive-impact/co-create)                 | We support the innovation and development of new programs by providing support to creators who want to build solutions for the community. |

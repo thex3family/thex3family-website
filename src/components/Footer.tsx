@@ -167,11 +167,11 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
       links: [
         {
           text: t("membership-title"),
-          to: "/make-positive-impact/contribute/membership",
+          to: "/make-positive-impact/contribute/be-a-patron/membership",
         },
         {
           text: t("donate-title"),
-          to: "/make-positive-impact/contribute/donate",
+          to: "/make-positive-impact/contribute/be-a-patron/donate",
         },
       ],
     },

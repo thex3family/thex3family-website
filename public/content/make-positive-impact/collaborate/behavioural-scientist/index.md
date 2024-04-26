@@ -1,5 +1,5 @@
 ---
-title: Behavioural Scientist (Research Fellow / Professor)
+title: Behavioural Scientist
 emoji: 🤗
 location: Remote
 frameworkLevel: "LEVEL_5"
