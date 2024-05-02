@@ -27,7 +27,7 @@ const CalloutBanner = ({
   children,
   ...props
 }: CalloutBannerProps) => {
-  const { t } = useTranslation("page-staking")
+  const { t } = useTranslation("common")
 
   return (
     <Flex

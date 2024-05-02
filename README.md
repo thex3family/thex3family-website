@@ -11,7 +11,6 @@ This is the repository for [the.x3.family](https://the.x3.family) website, a res
 
 If you’re interested in supporting us, find out [how to contribute](https://the.x3.family/contribute/). We also host online spaces to have meaningful conversations – come share your ideas or just say hi over [in our community](https://our.x3.family/).
 
-
 ## How To Contribute
 
 Contributions of any kind are welcome! We follow the [all-contributors](https://allcontributors.org/docs/en/overview) specification, which means we recognize contributors to an open-source project in a way that rewards every contribution, not just code.
@@ -77,3 +76,16 @@ git push
 - You can [view the history of releases](https://github.com/thex3family/thex3family-website/releases), which include PR highlights
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
+
+Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+The development of this website was inspired by the work of [ethereum.org](https://github.com/ethereum/ethereum-org-website). Before implementing any custom elements, we highly recommend exploring their codebase to gain insights and discover solutions that may be applicable to our website's needs.

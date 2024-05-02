@@ -10,7 +10,6 @@ import { Box, BoxProps, Flex, useColorModeValue } from "@chakra-ui/react"
 
 import CopyToClipboard from "@/components/CopyToClipboard"
 import Emoji from "@/components/Emoji"
-// https://github.com/FormidableLabs/prism-react-renderer/tree/master#custom-language-support
 ;(typeof global !== "undefined" ? global : window).Prism = Prism
 require("prismjs/components/prism-solidity")
 
@@ -193,13 +192,6 @@ const getValidChildrenForCodeblock = (child) => {
       return child
     }
   } catch (e) {
-    /*For now available: code without wrappers like div
-    * example:
-    * <Codeblock codeLanguage="language-js">
-        const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key"){"\n"}
-        web3.eth.getBlockNumber().then(console.log)
-      </Codeblock>
-    * */
     console.error(`Codeblock children is not valid`)
   }
 }

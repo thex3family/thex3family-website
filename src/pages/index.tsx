@@ -45,10 +45,7 @@ import {
 
 import { BASE_TIME_UNIT } from "@/lib/constants"
 
-import CreateWalletContent from "!!raw-loader!@/data/CreateWallet.js"
-import SimpleDomainRegistryContent from "!!raw-loader!@/data/SimpleDomainRegistry.sol"
-import SimpleTokenContent from "!!raw-loader!@/data/SimpleToken.sol"
-import SimpleWalletContent from "!!raw-loader!@/data/SimpleWallet.sol"
+import codeExample from "!!raw-loader!@/data/codeExample.js"
 import { fetchCommunityEvents } from "@/lib/api/calendarEvents"
 import better_life_framework from "@/public/better_life_framework.png"
 import community from "@/public/community.png"
@@ -304,25 +301,25 @@ const HomePage = ({
       title: t("page-index:page-index-banner-5-code-example-title-0"),
       description: t("page-index:page-index-banner-5-code-example-description-0"),
       codeLanguage: "language-solidity",
-      code: SimpleWalletContent,
+      code: codeExample,
     },
     {
       title: t("page-index:page-index-banner-5-code-example-title-1"),
       description: t("page-index:page-index-banner-5-code-example-description-1"),
       codeLanguage: "language-solidity",
-      code: SimpleTokenContent,
+      code: codeExample,
     },
     {
       title: t("page-index:page-index-banner-5-code-example-title-2"),
       description: t("page-index:page-index-banner-5-code-example-description-2"),
       codeLanguage: "language-javascript",
-      code: CreateWalletContent,
+      code: codeExample,
     },
     {
       title: t("page-index:page-index-banner-5-code-example-title-3"),
       description: t("page-index:page-index-banner-5-code-example-description-3"),
       codeLanguage: "language-solidity",
-      code: SimpleDomainRegistryContent,
+      code: codeExample,
     },
   ]
 

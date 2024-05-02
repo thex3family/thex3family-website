@@ -19,19 +19,6 @@ type Crumb = {
   text: string
 }
 
-// Generate crumbs from slug
-// e.g. "/en/eth2/proof-of-stake/" will generate:
-// [
-//   { fullPath: "/en/", text: "HOME" },
-//   { fullPath: "/en/eth2/", text: "ETH2" },
-//   { fullPath: "/en/eth2/proof-of-stake/", text: "PROOF OF STAKE" },
-// ]
-// `startDepth` will trim breadcrumbs
-// e.g. startDepth=1 will generate:
-// [
-//   { fullPath: "/en/eth2/", text: "ETH2" },
-//   { fullPath: "/en/eth2/proof-of-stake/", text: "PROOF OF STAKE" },
-// ]
 const Breadcrumbs = ({
   slug: originalSlug,
   startDepth = 0,

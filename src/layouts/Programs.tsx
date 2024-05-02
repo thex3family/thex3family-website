@@ -21,7 +21,6 @@ import Card from "@/components/Card"
 import Codeblock from "@/components/Codeblock"
 import CrowdinContributors from "@/components/CrowdinContributors"
 import Emoji from "@/components/Emoji"
-import EnvWarningBanner from "@/components/EnvWarningBanner"
 import FeedbackCard from "@/components/FeedbackCard"
 import GitHubContributors from "@/components/GitHubContributors"
 import GlossaryTooltip from "@/components/Glossary/GlossaryTooltip"
@@ -155,7 +154,6 @@ export const tutorialsComponents = {
   CallToContribute,
   Card,
   Emoji,
-  EnvWarningBanner,
   GlossaryTooltip,
   InfoBanner,
   StyledDivider,

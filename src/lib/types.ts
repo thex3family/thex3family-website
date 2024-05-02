@@ -7,11 +7,8 @@ import type { ReactElement, ReactNode } from "react"
 
 import type {
   DocsFrontmatter,
-  RoadmapFrontmatter,
-  StakingFrontmatter,
   StaticFrontmatter,
   TutorialFrontmatter,
-  UpgradeFrontmatter,
   UseCasesFrontmatter,
 } from "@/lib/interfaces"
 
@@ -39,11 +36,8 @@ export type Root = {
 export type BasePageProps = SSRConfig &
   Pick<Root, "contentNotTranslated" | "lastDeployDate">
 
-export type Frontmatter = RoadmapFrontmatter &
-  UpgradeFrontmatter &
+export type Frontmatter = 
   StaticFrontmatter &
-  UseCasesFrontmatter &
-  StakingFrontmatter &
   DocsFrontmatter &
   TutorialFrontmatter
 
@@ -265,7 +259,8 @@ export interface LearningToolsCardGridProps {
   category: Array<LearningTool>
 }
 
-// Staking stats data fetching
+// Stats data fetching
+
 type Data<T> = {
   data: T
 }
