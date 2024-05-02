@@ -35,7 +35,6 @@ import Button from "@/components/Buttons/Button"
 import ButtonLink from "@/components/Buttons/ButtonLink"
 import Callout from "@/components/Callout"
 import Card from "@/components/Card"
-import EnergyConsumptionChart from "@/components/EnergyConsumptionChart"
 import FeedbackCard from "@/components/FeedbackCard"
 import { Image, type ImageProps } from "@/components/Image"
 import InlineLink from "@/components/Link"
@@ -60,7 +59,6 @@ import {
   getRequiredNamespacesForPage,
 } from "@/lib/utils/translations"
 
-import { fetchTxCount } from "@/lib/api/fetchTxCount"
 import community_gathering from "@/public/community_gathering.png"
 import comrades from "@/public/comrades.png"
 import mission from "@/public/mission.png"
