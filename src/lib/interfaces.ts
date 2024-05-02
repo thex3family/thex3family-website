@@ -73,6 +73,7 @@ export interface SharedFrontmatter {
   sidebarDepth?: number
   isOutdated?: boolean
   template?: Layout
+  emoji?: string
 }
 
 export interface StaticFrontmatter extends SharedFrontmatter {
