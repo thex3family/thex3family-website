@@ -17,9 +17,8 @@ type Story = StoryObj<typeof meta>
 export const Breadcrumbs: Story = {
   render: () => (
     <Stack spacing="8">
-      <BreadcrumbsComponent slug="/en/staking/" />
-      <BreadcrumbsComponent slug="/en/staking/solo/" />
-      <BreadcrumbsComponent slug="/en/roadmap/merge/issuance/" />
+      <BreadcrumbsComponent slug="/make-positive-impact/" />
+      <BreadcrumbsComponent slug="/make-positive-impact/contribute" />
     </Stack>
   ),
 }

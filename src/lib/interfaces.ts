@@ -76,7 +76,6 @@ export interface SharedFrontmatter {
 }
 
 export interface StaticFrontmatter extends SharedFrontmatter {
-  postMergeBannerTranslation?: string
   hideEditButton?: boolean
 }
 
@@ -90,44 +89,6 @@ export interface SummaryPointsNumbered {
   summaryPoint2?: string
   summaryPoint3?: string
   summaryPoint4?: string
-}
-
-interface SummaryPoints {
-  summaryPoints: string[]
-}
-
-interface ImageInfo {
-  image: string
-  alt: string
-  blurDataURL: string
-}
-
-export interface UpgradeFrontmatter
-  extends SharedFrontmatter,
-    SummaryPointsNumbered,
-    ImageInfo {}
-
-export interface RoadmapFrontmatter extends SharedFrontmatter, ImageInfo {
-  buttons: {
-    label: string
-    toId?: string
-    to?: string
-    variant?: string
-  }[]
-}
-
-export interface UseCasesFrontmatter
-  extends SharedFrontmatter,
-    SummaryPointsNumbered,
-    ImageInfo {
-  emoji: string
-}
-
-export interface StakingFrontmatter
-  extends SharedFrontmatter,
-    SummaryPoints,
-    ImageInfo {
-  emoji: string
 }
 
 export interface DocsFrontmatter extends SharedFrontmatter {
@@ -145,9 +106,7 @@ export interface TutorialFrontmatter extends SharedFrontmatter {
   frameworkLevel: string
   published: string
   address?: string
-  postMergeBannerTranslation?: string
   hideEditButton?: boolean
-  showPostMergeBanner?: boolean
 }
 
 export interface MdPageContent {

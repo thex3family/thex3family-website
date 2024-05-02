@@ -54,6 +54,7 @@ const Link: React.FC<IPropsTableOfContentsLink> = ({
       color="textTableOfContents"
       fontWeight="normal"
       mb="0.5rem !important"
+      noOfLines={1}
       width={{ base: "100%", lg: "auto" }}
       _hover={{
         ...hoverOrActiveStyle,

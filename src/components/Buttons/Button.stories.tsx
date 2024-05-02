@@ -17,7 +17,7 @@ const meta: Meta<ButtonType> = {
   title: "Atoms / Form / Buttons",
   component: Button,
   args: {
-    children: "What is Ethereum?",
+    children: "What is Co-x3?",
   },
   argTypes: {
     isSecondary: {

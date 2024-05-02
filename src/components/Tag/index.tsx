@@ -9,7 +9,7 @@ import {
   TagRightIcon,
 } from "@chakra-ui/react"
 
-export interface EthTagProps extends TagProps {
+export interface x3TagProps extends TagProps {
   label: string
   isCloseable?: boolean
   leftIcon?: any
@@ -17,7 +17,7 @@ export interface EthTagProps extends TagProps {
   status?: "normal" | "tag" | "success" | "error" | "warning"
 }
 
-const Tag = forwardRef<EthTagProps, typeof ChakraTag>((props, ref) => {
+const Tag = forwardRef<x3TagProps, typeof ChakraTag>((props, ref) => {
   const {
     label,
     isCloseable = false,

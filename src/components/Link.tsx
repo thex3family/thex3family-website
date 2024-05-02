@@ -42,7 +42,7 @@ export type LinkProps = BaseProps & Omit<NextLinkProps, "href">
  * e.g. <Link href="https://example.com/">
  *
  * - PDFs & static files (which open in a new tab)
- * e.g. <Link href="/eth-whitepaper.pdf">
+ * e.g. <Link href="whitepaper.pdf">
  */
 export const BaseLink = forwardRef(function Link(
   {

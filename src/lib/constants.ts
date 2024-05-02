@@ -29,22 +29,18 @@ export const GITHUB_BASE_API =
   "https://api.github.com/repos/thex3family/thex3family-website"
 export const GITHUB_COMMITS_URL = GITHUB_BASE_API + "/commits"
 export const GITHUB_URL = `https://github.com/`
-export const COINGECKO_API_BASE_URL =
-  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category="
-export const COINGECKO_API_URL_PARAMS =
-  "&order=market_cap_desc&per_page=100&page=1&sparkline=false"
 export const BASE_TIME_UNIT = 3600 // 1 hour
 
 // Quiz Hub
 export const PROGRESS_BAR_GAP = "4px"
 export const PASSING_QUIZ_SCORE = 65
 export const USER_STATS_KEY = "quizzes-stats"
-export const INITIAL_QUIZ = "what-is-ethereum"
+export const INITIAL_QUIZ = "quiz-about-us"
 export const TOTAL_QUIZ_QUESTIONS_ANSWERED = 100000
 export const TOTAL_QUIZ_AVERAGE_SCORE = 67.4
 export const TOTAL_QUIZ_RETRY_RATE = 15.6
 
-// Crowdin
+// Crowdin (not setup yet)
 export const CROWDIN_PROJECT_ID = 363359
 export const CROWDIN_API_MAX_LIMIT = 500
 export const FIRST_CROWDIN_CONTRIBUTION_DATE = "2019-07-01T00:00:00+00:00"
@@ -64,8 +60,6 @@ export const languagePathRootRegExp = /^.+\/content\/translations\/[a-z\-]*\//
 // Metrics
 export const DAYS_TO_FETCH = 90
 export const RANGES = ["30d", "90d"] as const
-export const BEACONCHA_IN_URL = "https://beaconcha.in/"
-export const ETHERSCAN_API_URL = "https://api.etherscan.io"
 
 export const NAV_BAR_PX_HEIGHT = "75px"
 export const SECONDARY_NAV_BAR_PX_HEIGHT = "134px"
