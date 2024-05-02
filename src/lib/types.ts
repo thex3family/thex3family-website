@@ -9,7 +9,6 @@ import type {
   DocsFrontmatter,
   StaticFrontmatter,
   TutorialFrontmatter,
-  UseCasesFrontmatter,
 } from "@/lib/interfaces"
 
 import type { CallToActionProps } from "@/components/Hero/CallToAction"
