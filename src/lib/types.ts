@@ -7,9 +7,9 @@ import type { ReactElement, ReactNode } from "react"
 
 import type {
   DocsFrontmatter,
+  MainFrontmatter,
   StaticFrontmatter,
-  TutorialFrontmatter,
-} from "@/lib/interfaces"
+  TutorialFrontmatter} from "@/lib/interfaces"
 
 import type { CallToActionProps } from "@/components/Hero/CallToAction"
 
@@ -38,7 +38,8 @@ export type BasePageProps = SSRConfig &
 export type Frontmatter = 
   StaticFrontmatter &
   DocsFrontmatter &
-  TutorialFrontmatter
+  TutorialFrontmatter &
+  MainFrontmatter
 
 export type LayoutMappingType = typeof layoutMapping
 export type Layout = keyof LayoutMappingType
