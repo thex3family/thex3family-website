@@ -91,6 +91,17 @@ export interface SummaryPointsNumbered {
   summaryPoint4?: string
 }
 
+interface ImageInfo {
+  image: string
+  alt: string
+  blurDataURL: string
+}
+
+export interface MainFrontmatter
+  extends SharedFrontmatter,
+    SummaryPointsNumbered,
+    ImageInfo {}
+
 export interface DocsFrontmatter extends SharedFrontmatter {
   incomplete?: boolean
   hideEditButton?: boolean

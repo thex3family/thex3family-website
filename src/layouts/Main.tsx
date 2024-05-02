@@ -14,7 +14,7 @@ import {
   useToken} from "@chakra-ui/react"
 
 import type { ChildOnlyProp, Lang } from "@/lib/types"
-import type { MdPageContent, UpgradeFrontmatter } from "@/lib/interfaces"
+import type { MdPageContent, MainFrontmatter } from "@/lib/interfaces"
 
 import BasicActionCard from "@/components/ActionCard/BasicActionCard"
 import RichActionCard from "@/components/ActionCard/RichActionCard"
@@ -143,7 +143,7 @@ export const mainComponents = {
 interface IProps
   extends ChildOnlyProp,
   Pick<MdPageContent, "slug" | "tocItems" | "lastUpdatedDate"> {
-  frontmatter: UpgradeFrontmatter
+  frontmatter: MainFrontmatter
 }
 export const MainLayout: React.FC<IProps> = ({
   children,
