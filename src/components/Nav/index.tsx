@@ -9,7 +9,6 @@ import SearchBar from "@/components/SearchBar"
 import { ButtonLink, IconButton } from "../Buttons"
 import { HomeIcon } from "../icons"
 import { BaseLink } from "../Link"
-import Search from "../Search"
 
 import Menu from "./Menu"
 import MobileNavMenu from "./Mobile"
