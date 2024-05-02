@@ -14,7 +14,7 @@ import {
   useToken} from "@chakra-ui/react"
 
 import type { ChildOnlyProp, Lang } from "@/lib/types"
-import type { MdPageContent, MainFrontmatter } from "@/lib/interfaces"
+import type { MainFrontmatter,MdPageContent } from "@/lib/interfaces"
 
 import BasicActionCard from "@/components/ActionCard/BasicActionCard"
 import RichActionCard from "@/components/ActionCard/RichActionCard"
