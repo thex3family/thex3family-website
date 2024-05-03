@@ -5,11 +5,11 @@
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
-This is the repository for [the.x3.family](https://the.x3.family) website, a resource for the Co-x3 Family Foundation. Our mission is to _“To equip students, creatives, and retirees with knowledge to level up every day, tools to put their learning into action, and a community to never struggle alone."_ - read more about what this means [here](https://the.x3.family/contribute/about-us).
+This is the repository for [the.x3.family](https://the.x3.family) website, a resource for the Co-x3 Family Foundation. Our mission is to _“To equip students, creatives, and retirees with knowledge to level up every day, tools to put their learning into action, and a community to never struggle alone."_ - read more about what this means [here](https://the.x3.family/live-your-best-life/about-us).
 
 [the.x3.family](https://the.x3.family) is being improved and changed over time through the contributions of community members who submit content, give feedback, or volunteer their time to manage its evolution. 
 
-If you’re interested in supporting us, find out [how to contribute](https://the.x3.family/contribute/). We also host online spaces to have meaningful conversations – come share your ideas or just say hi over [in our community](https://our.x3.family/).
+If you’re interested in supporting us, find out [how to contribute](https://the.x3.family/make-positive-impact/contribute/). We also host online spaces to have meaningful conversations – come share your ideas or just say hi over [in our community](https://our.x3.family/).
 
 ## How To Contribute
 
