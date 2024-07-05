@@ -12,7 +12,7 @@ summaryPoint3: Finally, we learn that the infinite game is to pursue who we can 
 
 ## Why The Evolution Of Wants?
 
-Have you ever wondered why, after achieving what you thought you wanted, you still feel unfulfilled? Welcome to the journey of evolving wants. It's somethign that we all go through, but we don't have to be so frustrated if we can understand how our wants evolve, and why that's necessary as we level up.
+Have you ever wondered why, after achieving what you thought you wanted, you still feel unfulfilled? Welcome to the journey of evolving wants. It's something that we all go through, but we don't have to be so frustrated if we can understand how our wants evolve, and why that's necessary as we level up.
 
 ## What Is The Evolution Of Wants?
 
