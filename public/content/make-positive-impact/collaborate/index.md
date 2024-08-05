@@ -18,6 +18,8 @@ As you engage in meaningful tasks and projects, you'll encounter opportunities t
 
 In the Co-x3 Family, every contribution is a step towards personal mastery. By collaborating, you're not only helping others but also fortifying your own path of lifelong learning and development.
 
+At Co-x3, Collaborators include our staff members, interns, recurring volunteers, and pro bono consultants - anyone who regularly commits dedicated time to our organization.
+
 ## How Do We Support Our Collaborators?
 
 When you join us as a collaborator, we want to make sure you are supported and merge career and purpose. Every role has access to 3 types of mentors to help them succeed in their role and support their growth journey.
@@ -57,5 +59,11 @@ We need the right gear to succeed. You can't expect to slay a dragon if all you 
 We are actively posting roles on [LinkedIn](https://linkedin.com/company/thex3family/jobs), Handshake, and on our website below.
 
 <JobBoard locale='en' />
+
+## Can't find a volunteer or intern position that’s the right fit?
+
+Submit your application [here](https://form.questionscout.com/66a68e4f01ef84376a16af58) listing the positions closest to your actual interests, then let us know in your cover letter how you can help! 
+
+Got A Question? Email outreach@x3.family so that we can help! This email is the only email handling Collaborator Applications.
 
 _Any questions about the roles?_ 🤔 Reach out in our [community](https://our.x3.family/)
