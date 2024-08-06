@@ -70,11 +70,14 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/make-positive-impact/contribute/be-a-patron",
       "/make-positive-impact/contribute/be-a-patron/donate",
       "/make-positive-impact/contribute/be-a-patron/membership",
+      //"/make-positive-impact/contribute/be-a-patron/corporate",
 
       "/make-positive-impact/contribute/be-an-adventurer",
       "/make-positive-impact/contribute/be-an-adventurer/glossary",
       "/make-positive-impact/contribute/be-an-adventurer/quizzes",
       //"/make-positive-impact/contribute/translations",
+      
+      //"/make-positive-impact/contribute/be-an-advocate",
 
       "/make-positive-impact/collaborate",
       "/make-positive-impact/collaborate/community-manager",
@@ -87,6 +90,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/make-positive-impact/collaborate/retreat-house-manager",
       "/make-positive-impact/collaborate/castle-house-manager",
       "/make-positive-impact/collaborate/behavioural-scientist",
+      "/make-positive-impact/collaborate/hr-collaborator",
 
       "/make-positive-impact/co-create",
     
