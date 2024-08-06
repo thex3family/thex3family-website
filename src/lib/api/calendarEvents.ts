@@ -30,7 +30,7 @@ export async function fetchCommunityEvents(): Promise<CommunityEventsReturnType>
           date: event.start.dateTime,
           title: event.summary,
           calendarLink: event.htmlLink,
-          pastEventLink: event.location,
+          pastEventLink: event.location || null,
         }
       })
     const upcomingEventData = futureEventsReqData
