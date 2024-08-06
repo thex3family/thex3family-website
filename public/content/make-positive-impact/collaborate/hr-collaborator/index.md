@@ -7,17 +7,19 @@ lang: en
 hideEditButton: true
 ---
 
-# Growth Manager
+# HR Collaborator
 
 ## About The Role
 
-Co-x3 Family Foundation, a dynamic and forward-thinking non-profit, invites passionate individuals to be part of our journey in cultivating a worldwide network of enthusiastic learners, innovators, and agents of change. Our core mission revolves around crafting and sharing tools and methodologies that easily integrate fundamental concepts into everyday life. We firmly believe in the power of community collaboration, where learning and growth are amplified by the support of knowledgeable and encouraging peers. In line with our expansion and enhanced impact goals, we are excited to offer an internship focused on collaborator recruitment. This critical role involves talent sourcing, onboarding, training, and contributing to the growth of our volunteer team, propelling our mission ahead.
+Co-x3 Family Foundation, a dynamic and forward-thinking non-profit, invites passionate individuals to be part of our journey in cultivating a worldwide network of enthusiastic learners, innovators, and agents of change. Our core mission revolves around crafting and sharing tools and methodologies that easily integrate fundamental concepts into everyday life.
+
+We firmly believe in the power of community collaboration, where learning and growth are amplified by the support of knowledgeable and encouraging peers. In line with our expansion and enhanced impact goals, we are excited to offer an internship focused on collaborator recruitment. This critical role involves talent sourcing, onboarding, training, and contributing to the growth of our volunteer team, propelling our mission ahead.
 
 The Co-x3 Family Foundation is proud to be a 501(c)3 charitable organization. This program is unpaid and completely remote. We are open to international candidates.
 
 ## Responsibilities
 
-- Collaborator Talent Acquisition: Scout and post collaborator opportunities that resonate with our foundation's mission and ethos.
+- **Collaborator Talent Acquisition:** Scout and post collaborator opportunities that resonate with our foundation's mission and ethos.
 - Collaborator Recruitment and Evaluation: Conduct interviews to assess potential collaborator, focusing on skill compatibility and commitment to our community-oriented values.
 - Collaborator Onboarding: Oversee the onboarding process, ensuring new collaborator are well-integrated and clear about their roles and contributions.
 - Training Program Development: Help create training content and initiatives in line with our foundation’s objectives, aiming to boost collaborator skills and engagement.
@@ -36,4 +38,4 @@ The Co-x3 Family Foundation is proud to be a 501(c)3 charitable organization. Th
 
 ## How To Apply
 
-Apply using this link: https://form.questionscout.com/66a68e4f01ef84376a16af58
+<ButtonLink to="https://form.questionscout.com/66a68e4f01ef84376a16af58">Apply Using This Link</ButtonLink>

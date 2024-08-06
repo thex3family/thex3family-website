@@ -24,7 +24,7 @@ At Co-x3, Collaborators include our staff members, interns, recurring volunteers
 
 When you join us as a collaborator, we want to make sure you are supported and merge career and purpose. Every role has access to 3 types of mentors to help them succeed in their role and support their growth journey.
 
-<ExpandableCard title="Program Details" eventCategory="/make-positive-impact/collaborate" eventName="clicked strategist" contentPreview="The Visionary - Helps you find meaning and direction in your journey of doing good.">
+<ExpandableCard title="Co-Creator 👀" eventCategory="/make-positive-impact/collaborate" eventName="clicked strategist" contentPreview="The Visionary - Helps you find meaning and direction in your journey of doing good.">
 
 Everybody needs a pick-me-up from time to time. We do our best work when we know why and what we are trying to accomplish. If you ever get stuck and demotivated reach out to the co-creator!
 
@@ -34,7 +34,7 @@ Everybody needs a pick-me-up from time to time. We do our best work when we know
 
 </ExpandableCard>
 
-<ExpandableCard title="Benefits" eventCategory="/make-positive-impact/collaborate" eventName="clicked project manager" contentPreview="The Shotcaller - Helps you find the best way to achieve your objectives.">
+<ExpandableCard title="Project Manager  📢" eventCategory="/make-positive-impact/collaborate" eventName="clicked project manager" contentPreview="The Shotcaller - Helps you find the best way to achieve your objectives.">
 
 We might not always know what to do next. While slaying a dragon, we need someone to help us know what the next best move is. If you ever get stuck and frustrated, out to your shotcaller!
 
@@ -60,7 +60,7 @@ We are actively posting roles on [LinkedIn](https://linkedin.com/company/thex3fa
 
 <JobBoard locale='en' />
 
-## Can't find a volunteer or intern position that’s the right fit?
+### Can't find a volunteer or intern position that’s the right fit?
 
 Submit your application [here](https://form.questionscout.com/66a68e4f01ef84376a16af58) listing the positions closest to your actual interests, then let us know in your cover letter how you can help! 
 
