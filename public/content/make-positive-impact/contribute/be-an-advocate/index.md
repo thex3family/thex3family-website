@@ -46,7 +46,7 @@ Yes, we offer a generous commission structure. Get paid a percentage of any paid
 
 Ready to be part of something bigger? Become an advocate, and together, we can build a better future for everyone.
 
-We are currently building up our portal. In the meantime, if you are interested in being an advocate, please send an email to partnerships@x3.family.
+We are currently building up our advocate portal. In the meantime, if you are interested in being an advocate, please send an email to [partnerships@x3.family](mailto:partership@x3.family).
 
 ## FAQs
 
