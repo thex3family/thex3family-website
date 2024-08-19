@@ -12,18 +12,22 @@ summaryPoint3: Your support means the 🌎 to us, and keeps this project going.
 
 ##  What Is The Better Life Membership?
 
-We've designed a subscription that follows and supports you throughout your life, as you navigate the different perspectives of The Better Life Framework. We've built a platform that offers you personalized knowledge, tools, and communnity programs as you need it, when you need it.
+We've designed a subscription that follows and supports you throughout your life, as you navigate the different perspectives of The Better Life Framework. Joining the membership offers you personalized knowledge, tools, and community programs as you need it, when you need it.
 
 ## Why Subscribe?
 
-We share unique and interesting content freely, but with your support we can release quality content regularly, work on impactful projects, and provide meaningful and customized perks to supporters who identify strongly with our mission.
+We share unique and interesting content freely, but with your support, we can release quality content regularly, work on impactful projects, and provide meaningful and customized perks to supporters who identify strongly with our mission.
 
-As a way to say thank you for supporting us, our patrons get immense value out of their membership. Unlock access to exclusive new templates, recognition on our wall of love, training to help you level up, behind-the-scenes content, voting power for new content, and much more.
-
-You can support as much as you want per month, and as you increase your amount, the more benefits you unlock.
+As a way to say thank you for supporting us, our patrons get immense value out of their membership. You can support as much as you want per month, and as you increase your amount, the more benefits you unlock.
 
 <ButtonLink to="https://toolbox.co-x3.com/support-us">Join 500+ Patrons</ButtonLink>
 
-_We're currently revamping the membership program as we revamp the Co-x3 Toolbox - existing subscribers will be grandfathered into the new plans. We hope to release this in May 2024!_
-
 ![Image](./support-us-1.png)
+
+## How Else Can I Get Access?
+
+Investing in the Better Life Membership isn't just a personal decision—it's a professional one too. Consider asking your company to expense this membership as part of their commitment to your personal and professional growth. By supporting this membership, your employer invests in tools, insights, and a community that fosters innovation and well-being.
+
+It's a win-win: you gain access to valuable resources, and your company supports a project that aligns with values of continuous learning and positive impact. If your company is interested in extending these benefits to the entire team, they can secure a discounted rate through a [corporate sponsorship](/make-positive-impact/contribute/be-a-patron/corporate).
+
+We also offer a scholarship for individuals who are driven to grow but struggle due to financial barriers. If this is something you would appreciate, learn more about it [here](/make-positive-impact/contribute/be-a-patron/donate#looking-to-apply-for-the-scholarship%3F).

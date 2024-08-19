@@ -28,6 +28,6 @@ We want people who have leveled due to our programs to help extend it to others 
 |-----------------------------------|--------------------------------------------------|
 | [Better Life Membership](/make-positive-impact/contribute/be-a-patron/membership) | Join as an individual or with your family and get access to special resources and benefits to help you level up and live your best life. |
 | [Donations](/make-positive-impact/contribute/be-a-patron/donate)                     | Make a one-time or recurring donation to help community members get access to the resources they need to level up. Every little bit helps us make a big difference. |
-| Corporate Sponsorship | Partner with us to make a lasting impact through your organization that fulfills your corporate social responsibility (CSR) and help your employees live their best life. |
+| [Corporate Sponsorship](/make-positive-impact/contribute/be-a-patron/corporate) | Partner with us to make a lasting impact through your organization that fulfills your corporate social responsibility (CSR) and help your employees live their best life. |
 
 We are excited about every new member who joins our cause, and we look forward to welcoming you into our family!

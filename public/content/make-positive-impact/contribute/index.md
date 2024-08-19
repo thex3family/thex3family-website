@@ -20,11 +20,11 @@ Whether you have a few minutes or several hours, there's a way for you to contri
 
 ### Tangible Benefits
 
-Contributors get access to meaningful perks to help them improve their lives. You'll get special roles in our community, access to exclusive events, mentors, behind the scenes content, exclusive tools, and more.
+Contributors get access to meaningful perks to help them improve their lives. You'll get special roles in our community, access to exclusive events, mentors, behind-the-scenes content, exclusive tools, and more.
 
 ### Intangible Benefits
 
-We are committed to showcase and make the efforts you've made visible. Every time you contribute, you will be able to see the impact of the efforts that you've made.
+We are committed to showcasing and making the efforts you've made visible. Every time you contribute, you will be able to see the impact of the efforts that you've made.
 
 ## Contributor vs Collaborator?
 
@@ -35,5 +35,5 @@ We want to give everyone the opportunity to make positive impact without a large
 | Action                                                       | Description                                                                                                                   |
 |--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | [Be An Adventurer](/make-positive-impact/contribute/be-an-adventurer)             | Contribute your time towards programs that help people live better lives. |
-| Be An Advocate              | Contribute by sharing about the foundation and our programs to those in need. |
+| [Be An Advocate](/make-positive-impact/contribute/be-an-advocate)              | Contribute by sharing about the foundation and our programs to those in need. |
 | [Be A Patron](/make-positive-impact/contribute/be-a-patron)               | Contribute financially to help the the foundation support more people to live a better life. |

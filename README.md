@@ -26,19 +26,19 @@ More information on the issue creation process, and expectations around creating
 
 - If you're not sure, here's how to [fork the repo](https://help.github.com/en/articles/fork-a-repo).
 
-### 3. Set Up Your Local Environment (optional)
+### 3. Set Up Your Local Environment
 
-If you're ready to contribute and create your PR, it will help to set up a local environment so you can see your changes.
+If you're ready to contribute and create your PR, it will help to set up a [local environment](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git) so you can see your changes. 
 
 ### 4. Make Awesome Changes!
 
-1. Create new branch for your changes
+1. Create new branch for your changes (download [Git](https://git-scm.com/downloads) if you haven't already)
 
 ```sh
 git checkout -b new_branch_name
 ```
 
-2. Start developing!
+2. Start developing (download [Yarn](https://classic.yarnpkg.com/lang/en/docs/install) if you don't have it already)
 
 ```sh
 yarn dev
