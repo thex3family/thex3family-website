@@ -9,7 +9,8 @@ import type {
   DocsFrontmatter,
   MainFrontmatter,
   StaticFrontmatter,
-  TutorialFrontmatter} from "@/lib/interfaces"
+  TutorialFrontmatter,
+  JobsFrontmatter} from "@/lib/interfaces"
 
 import type { CallToActionProps } from "@/components/Hero/CallToAction"
 
@@ -39,7 +40,8 @@ export type Frontmatter =
   StaticFrontmatter &
   DocsFrontmatter &
   TutorialFrontmatter &
-  MainFrontmatter
+  MainFrontmatter &
+  JobsFrontmatter
 
 export type LayoutMappingType = typeof layoutMapping
 export type Layout = keyof LayoutMappingType

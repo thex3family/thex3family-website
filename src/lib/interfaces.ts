@@ -121,6 +121,10 @@ export interface TutorialFrontmatter extends SharedFrontmatter {
   hideEditButton?: boolean
 }
 
+export interface JobsFrontmatter extends SharedFrontmatter {
+  compensation: string
+}
+
 export interface MdPageContent {
   slug: string
   content: string

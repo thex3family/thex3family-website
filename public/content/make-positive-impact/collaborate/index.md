@@ -5,65 +5,53 @@ lang: en
 template: main
 image: /contribute.png
 alt: 
-summaryPoint1: We want to tranform your good intentions into meaningful work.
+summaryPoint1: We want to transform your good intentions into meaningful work.
 summaryPoint2: Utilize your talents to give back to programs that have helped you.
 summaryPoint3: Grow a career that aligns with your passion and purpose.
 ---
 
 ## Why Collaborate?
 
-Collaboration in the Co-x3 Family is not just about giving back; it's a journey of personal growth and skill enhancement. When you contribute to programs that have impacted your life, you do more than just pay it forward. You immerse yourself in an enriching experience that deepens your understanding and broadens your skill set.
+At Co-x3, collaborators are anyone who regularly commits time to our organization (think staff members, interns, recurring volunteers, and pro bono consultants). Collaboration in the Co-x3 Family is not just about giving back; it's a journey of personal growth and skill enhancement. When you contribute to programs that have impacted your life, you do more than just pay it forward. You immerse yourself in an enriching experience that deepens your understanding and broadens your skill set.
 
 As you engage in meaningful tasks and projects, you'll encounter opportunities to learn new skills and refine existing ones. Whether it's through leading a community initiative, managing events, or creating content, each role is a chance to challenge yourself and grow. This hands-on approach allows you to apply what you've learned in real-world scenarios, solidifying your knowledge and gaining invaluable experience.
 
-In the Co-x3 Family, every contribution is a step towards personal mastery. By collaborating, you're not only helping others but also fortifying your own path of lifelong learning and development.
-
-At Co-x3, Collaborators include our staff members, interns, recurring volunteers, and pro bono consultants - anyone who regularly commits dedicated time to our organization.
-
 ## How Do We Support Our Collaborators?
 
-When you join us as a collaborator, we want to make sure you are supported and merge career and purpose. Every role has access to 3 types of mentors to help them succeed in their role and support their growth journey.
-
-<ExpandableCard title="Co-Creator 👀" eventCategory="/make-positive-impact/collaborate" eventName="clicked strategist" contentPreview="The Visionary - Helps you find meaning and direction in your journey of doing good.">
-
-Everybody needs a pick-me-up from time to time. We do our best work when we know why and what we are trying to accomplish. If you ever get stuck and demotivated reach out to the co-creator!
-
-- Communicates passionately about how our work will help people live a better life.
-- Inspires and motivates team members with the purpose and direction of our efforts.
-- Guides project direction with innovative insights to solve the problem in creative ways.
+<ExpandableCard title="⚙️ Access to Cutting-Edge Technology" eventCategory="/make-positive-impact/collaborate" eventName="clicked advanced technology" contentPreview="Stay ahead of the curve with access to the latest tools and technologies.">
+Work with state-of-the-art software and technologies that are driving the future. This experience will keep you at the forefront of innovation, giving you expertise that is highly valued in today’s competitive industries.
 
 </ExpandableCard>
+<ExpandableCard title="🤝 Engage with a Vibrant Community" eventCategory="/make-positive-impact/collaborate" eventName="clicked engaged community" contentPreview="Be part of a community that values your contributions and supports your growth.">
+Experience the immediate impact of your work as you engage with our thriving community. Participate in regular events, discussions, and activities that foster a sense of belonging and make your work truly enjoyable.
 
-<ExpandableCard title="Project Manager  📢" eventCategory="/make-positive-impact/collaborate" eventName="clicked project manager" contentPreview="The Shotcaller - Helps you find the best way to achieve your objectives.">
-
-We might not always know what to do next. While slaying a dragon, we need someone to help us know what the next best move is. If you ever get stuck and frustrated, out to your shotcaller!
-
-- Enhances productivity and efficiency by applying best practices and systems thinking. 
-- Organizes tasks and manages project timelines to make sure everything is on track.
-- Uses domain experience to resolve issues that hinder project progress.
+<YouTube id="jXmQftQizac" />
+</ExpandableCard>
+<ExpandableCard title="🖇️ Build Meaningful Connections" eventCategory="/make-positive-impact/collaborate" eventName="clicked valuable connections" contentPreview="Network with inspiring individuals and accelerate your career.">
+Collaborate with talented and motivated individuals who work with and interact with our foundation, forging connections that open doors to new opportunities. Networking with professionals and like-minded peers can be a catalyst for your career growth and personal development.
 
 </ExpandableCard>
+<ExpandableCard title="👑 Enjoy Exclusive Perks" eventCategory="/make-positive-impact/collaborate" eventName="clicked free perks" contentPreview="Access top-tier resources to elevate your personal and professional life.">
+Benefit from our premium resources designed to help you thrive. We provide the tools, knowledge, and community support you need to become the best version of yourself.
 
-<ExpandableCard title="Team Success Manager 📦" eventCategory="/make-positive-impact/collaborate" eventName="clicked team success" contentPreview="The Quartermaster - Helps you have access the all the resources you need to succeed.">
+</ExpandableCard>
+<ExpandableCard title="🌎 Work From Anywhere, Globally" eventCategory="/make-positive-impact/collaborate" eventName="clicked wfh" contentPreview="Experience the freedom to work from anywhere in the world.">
+Join a global team and enjoy the flexibility to work from any location with reliable Wi-Fi. Whether you're at home or on the go, you can balance work with your lifestyle seamlessly.
 
-We need the right gear to succeed. You can't expect to slay a dragon if all you have is a rusty sword. If you ever get stuck and need additional support, reach out to your quartermaster!
-
-- Ensures necessary tools and resources are available.
-- Supports optimal team performance.
-- Establishes feedback mechanisms for continuous improvement.
+</ExpandableCard>
+<ExpandableCard title="⌚ Flexible Scheduling" eventCategory="/make-positive-impact/collaborate" eventName="clicked flexible schedule" contentPreview="Work on your terms with a schedule that fits your life.">
+We respect your time and work with your week-to-week availability, allowing you to integrate your work commitments with personal activities and other responsibilities effortlessly. You decide when you're most productive, regardless of your time zone.
 
 </ExpandableCard>
 
 ## What Roles Are Available?
 
-We are actively posting roles on [LinkedIn](https://linkedin.com/company/thex3family/jobs), Handshake, and on our website below.
-
 <JobBoard locale='en' />
 
-### Can't find a volunteer or intern position that’s the right fit?
+_We may also crosspost roles on LinkedIn, Handshake, and other job board websites from time to time._
 
-Submit your application [here](https://form.questionscout.com/66a68e4f01ef84376a16af58) listing the positions closest to your actual interests, then let us know in your cover letter how you can help! 
+### Can't find a position that’s the right fit?
 
-Got A Question? Email outreach@x3.family so that we can help! This email is the only email handling Collaborator Applications.
+Submit your application [here](https://ask.x3.family/collaborator-application) and tell us how you’d like to contribute. We’re always looking for passionate individuals eager to make a difference!
 
-_Any questions about the roles?_ 🤔 Reach out in our [community](https://our.x3.family/)
+_Any questions about the roles?_ 🤔 Reach out to us in our [community](https://our.x3.family/)
