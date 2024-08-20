@@ -18,16 +18,16 @@ As you engage in meaningful tasks and projects, you'll encounter opportunities t
 
 ## How Do We Support Our Collaborators?
 
-<ExpandableCard title="⚙️ Access to Cutting-Edge Technology" eventCategory="/make-positive-impact/collaborate" eventName="clicked advanced technology" contentPreview="Stay ahead of the curve with access to the latest tools and technologies.">
+<ExpandableCard title="⚙️ Work With Latest Tech" eventCategory="/make-positive-impact/collaborate" eventName="clicked advanced technology" contentPreview="Stay ahead of the curve with access to the latest tools and technologies.">
 Work with state-of-the-art software and technologies that are driving the future. This experience will keep you at the forefront of innovation, giving you expertise that is highly valued in today’s competitive industries.
 
 </ExpandableCard>
-<ExpandableCard title="🤝 Engage with a Vibrant Community" eventCategory="/make-positive-impact/collaborate" eventName="clicked engaged community" contentPreview="Be part of a community that values your contributions and supports your growth.">
+<ExpandableCard title="🤝 Vibrant Community" eventCategory="/make-positive-impact/collaborate" eventName="clicked engaged community" contentPreview="Engage with a community that values your contributions and supports your growth.">
 Experience the immediate impact of your work as you engage with our thriving community. Participate in regular events, discussions, and activities that foster a sense of belonging and make your work truly enjoyable.
 
 <YouTube id="jXmQftQizac" />
 </ExpandableCard>
-<ExpandableCard title="🖇️ Build Meaningful Connections" eventCategory="/make-positive-impact/collaborate" eventName="clicked valuable connections" contentPreview="Network with inspiring individuals and accelerate your career.">
+<ExpandableCard title="🖇️ Meaningful Connections" eventCategory="/make-positive-impact/collaborate" eventName="clicked valuable connections" contentPreview="Network with inspiring individuals and accelerate your career.">
 Collaborate with talented and motivated individuals who work with and interact with our foundation, forging connections that open doors to new opportunities. Networking with professionals and like-minded peers can be a catalyst for your career growth and personal development.
 
 </ExpandableCard>
@@ -35,7 +35,7 @@ Collaborate with talented and motivated individuals who work with and interact w
 Benefit from our premium resources designed to help you thrive. We provide the tools, knowledge, and community support you need to become the best version of yourself.
 
 </ExpandableCard>
-<ExpandableCard title="🌎 Work From Anywhere, Globally" eventCategory="/make-positive-impact/collaborate" eventName="clicked wfh" contentPreview="Experience the freedom to work from anywhere in the world.">
+<ExpandableCard title="🌎 Work From Anywhere" eventCategory="/make-positive-impact/collaborate" eventName="clicked wfh" contentPreview="Experience the freedom to work from anywhere in the world.">
 Join a global team and enjoy the flexibility to work from any location with reliable Wi-Fi. Whether you're at home or on the go, you can balance work with your lifestyle seamlessly.
 
 </ExpandableCard>
