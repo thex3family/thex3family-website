@@ -2,7 +2,7 @@
 title: Grant Writer
 emoji: 📝
 location: Remote
-frameworkLevel: "LEVEL_4"
+compensation: Unpaid
 lang: en
 hideEditButton: true
 ---
@@ -11,45 +11,32 @@ hideEditButton: true
 
 ## About The Role
 
-We are seeking a highly skilled and motivated Grant Writer to join our dynamic team. This role plays an essential part in securing funding for our programs and initiatives, thus enabling us to continue empowering our community to unlock their potential and live better lives. The ideal candidate will excel in crafting compelling proposals and narratives to attract grants and sponsorships, both for specific projects and general organizational support.
+The Co-x3 Family Foundation is in search of an enthusiastic and skilled Grant Writer to help us continue our mission of providing innovative and sustainable solutions to challenges within communities. This role is essential to our nonprofit in securing the funding necessary to advance our projects and support our community initiatives. You will play a crucial role in researching grant opportunities, writing proposals, and managing submissions.
+
+The Co-x3 Family Foundation is proud to be a 501(c)3 charitable organization. This volunteer position or internship is unpaid and completely remote. We can provide college credit for internships.
+
+We are open to international candidates.
 
 ## Responsibilities
 
-- Research, identify, and qualify funding opportunities from foundation, corporate, and government sources.
-- Develop and write grant proposals, applications, and letters of inquiry, aligning them with the organizational mission and objectives.
-- Collaborate closely with project managers, content creators, and the financial team to gather required information and data.
-- Manage a grant submission calendar to ensure timely submission of all required applications and reports.
-- Develop and maintain relationships with funders and potential partners, including attending meetings, webinars, and industry events.
-- Prepare reports and updates to keep the organization and stakeholders informed about grant activities, timelines, and outcomes.
-- Ensure brand consistency in all materials, reflecting organizational values and mission.
-- Track metrics and analyze the effectiveness of grant applications, using data to improve future proposals.
-- Handle multiple projects simultaneously, maintaining high-quality standards and meeting tight deadlines.
-- Handle confidential information and manage data responsibly.
+- Research and identify grant opportunities relevant to our mission and ongoing projects.
+- Write, edit, and submit compelling grant proposals to potential funders and foundations.
+- Collaborate with teammates to gather detailed information and clear objectives on applications.
+- Maintain a calendar of submissions and deadlines, ensuring timely applications and follow-ups.
+- Assist in the creation and maintenance of a database of past and prospective funding sources.
+- Monitor and report on the status of grants, including compliance with grant conditions and reporting requirements.
 
 ## Qualifications
 
-- Proven experience as a Grant Writer, with a track record of securing significant funding.
-- Exceptional writing, editing, and research skills.
-- Strong understanding of the non-profit sector, including funding trends and grant application processes.
-- Ability to distill complex information into compelling narratives and proposals.
-- Strong communication and collaboration skills.
-- Excellent time management skills and the ability to adapt to rapidly changing priorities.
-- Experience working remotely and in a multicultural team is a plus.
+- Educational background or work experience in English, Communications, Nonprofit Management, Grant Writer, or related fields.
+- Excellent writing, editing, and research skills.
+- Strong organizational abilities and attention to detail.
+- Ability to work independently and meet deadlines.
+- Previous experience in grant writing or non-profit fundraising is a plus, but not required.
+- Genuine interest in non-profit work and dedication to the foundation's objectives.
 
 ## How To Apply
 
-Send the following to **[careers@x3.family](mailto:careers@x3.family)**
+This role provides a remarkable opportunity to develop professional skills in grant writing and non-profit management while contributing to meaningful change. If you are passionate about making a difference and building your expertise in grant writing, we encourage you to apply.
 
-**Subject:** Grant Writer Application - [Your Full Name]
-
-**Attachment:** Your CV in PDF format with the file name in this format: "[Your Full Name] CV.pdf"
-
-**In your email, please include the following information:**
-
-- Why you want to join us
-- Links to or samples of successful grant applications you have written
-- Your top 3 favorite projects that you secured funding for, and why they resonate with you
-- A picture / short video of your digital workspace
-- How you could add value to our organization based on your skills and experience
-- How many hours can you commit each week
-- Your expected compensation
+<ButtonLink to="https://ask.x3.family/collaborator-application?role=grant-writer">Apply Now</ButtonLink>

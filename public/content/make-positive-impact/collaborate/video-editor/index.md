@@ -2,7 +2,7 @@
 title: Video Editor
 emoji: 📽️
 location: Remote
-frameworkLevel: "LEVEL_4"
+compensation: Unpaid
 lang: en
 hideEditButton: true
 ---
@@ -11,44 +11,34 @@ hideEditButton: true
 
 ## About The Role
 
-We are seeking a talented and versatile Video Editor who can craft engaging visual content tailored to platforms such as YouTube, TikTok, and Instagram. Specializing in both short and long-form videos, motion graphics, and sound design, this role plays a pivotal part in sharing our message with as many people as possible.
+At the Co-x3 Family Foundation, we are harnessing the power of storytelling to amplify our message and connect with communities worldwide. We aim to inspire and motivate individuals to lead more intentional and fulfilling lives. As our efforts expand, the role of engaging and creative video content has never been more pivotal. We are seeking a talented Video Editor who is passionate about making a difference and skilled in bringing stories to life through the lens of a camera. This is an exceptional opportunity to contribute to meaningful projects while honing your craft in video editing.
+
+The Co-x3 Family Foundation is proud to be a 501(c)3 charitable organization. This volunteer position or internship is unpaid and completely remote. We can provide college credit for internships.
+
+We are open to international candidates.
 
 ## Responsibilities
 
-- Edit and produce videos for multiple platforms, including YouTube, TikTok, and Instagram, adapting content to suit short and long-form formats.
-- Design and incorporate motion graphics, sound effects, music, and other creative elements to enhance visual storytelling.
-- Collaborate closely with content creators, designers, and marketing team to understand project goals and create compelling content that resonates with our community.
-- Ensure brand consistency through visual and auditory elements, reflecting organizational values and mission.
-- Utilize platform-specific trends and analytics to optimize content for audience engagement.
-- Participate in creative brainstorming sessions, continually contributing fresh ideas and innovative approaches.
-- Handle multiple projects simultaneously, maintaining high-quality standards and meeting tight deadlines.
-- Stay up to date with the latest editing techniques, platform trends, and industry tools.
-- Handle confidential information and manage data responsibly.
+- Assist in the end-to-end production of video shorts, from conceptualization to final editing, ensuring the final products align with the foundation’s mission and values.
+- Film and edit video content using professional editing software, adding graphics, effects, and music to enhance the viewer's experience.
+- Manage and organize video assets, ensuring all content is archived properly and accessible.
+- Collaborate with the marketing and communications team to optimize video content for social media and other digital platforms.
+- Research and stay updated on the latest video editing techniques and trends to ensure our content remains fresh and engaging.
+- Provide support in measuring the impact of video content through analytics and feedback, contributing to strategy adjustments as needed.
 
 ## Qualifications
 
-- Proven experience as a Video Editor, with a focus on YouTube, TikTok, and Instagram content.
-- Strong portfolio demonstrating expertise in short and long-form videos, motion graphics, and sound design.
-- Proficiency in video editing software (e.g., Adobe Premiere Pro, Final Cut Pro) and graphic design tools.
-- Exceptional creativity, attention to detail, and storytelling ability.
-- Strong communication and collaboration skills.
-- Ability to work independently, manage time effectively, and adapt to rapidly changing priorities.
-- Experience working remotely and in a multicultural team is a plus.
+- Educational background or work experience in Film, Media Production, Communications, etc.
+- Experience in video editing and production demonstrated through a portfolio of work.
+- Have access to Premiere Pro software license.
+- Creative thinker with strong storytelling skills.
+- Excellent organizational skills and attention to detail.
+- Ability to work independently and collaboratively in a remote setting.
+- Strong communication skills and the ability to receive and incorporate feedback.
+- A passion for nonprofit work and alignment with the foundation’s mission.
 
 ## How To Apply
 
-Send the following to **[careers@x3.family](mailto:careers@x3.family)**
+This role is perfect for those who would like to apply their video editing skills towards content that will uplift and inspire others, and be a shining beacon of light of what good social media can do for our growth journeys.
 
-**Subject:** Video Editor Application - [Your Full Name]
-
-**Attachment:** Your CV in PDF format with the file name in this format: "[Your Full Name] CV.pdf"
-
-In your email, please include the following information:
-
-- Why you want to join us
-- A link to your portfolio, including examples of short and long-form videos, motion graphics, and sound design
-- Your top 3 favorite video projects that you have edited, and why they resonate with you
-- A picture / short video of your workspace
-- How you could add value to our organization based on your skills and experience
-- How many hours can you commit each week
-- Your expected compensation
+<ButtonLink to="https://ask.x3.family/collaborator-application?role=video-editor">Apply Now</ButtonLink>

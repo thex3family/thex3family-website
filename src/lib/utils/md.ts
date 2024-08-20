@@ -80,7 +80,14 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/make-positive-impact/contribute/be-an-advocate",
 
       "/make-positive-impact/collaborate",
-      // need to add the final roles
+      "/make-positive-impact/collaborate/house-manager-the-castle",
+      "/make-positive-impact/collaborate/house-manager-our-retreat",
+      "/make-positive-impact/collaborate/grant-writer",
+      "/make-positive-impact/collaborate/hr-collaborator",
+      "/make-positive-impact/collaborate/executive-assistant",
+      "/make-positive-impact/collaborate/video-editor",
+      "/make-positive-impact/collaborate/social-media-collaborator",
+      
 
       "/make-positive-impact/co-create",
     
