@@ -80,17 +80,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/make-positive-impact/contribute/be-an-advocate",
 
       "/make-positive-impact/collaborate",
-      "/make-positive-impact/collaborate/community-manager",
-      "/make-positive-impact/collaborate/finance-manager",
-      "/make-positive-impact/collaborate/grant-writer",
-      "/make-positive-impact/collaborate/growth-manager",
-      "/make-positive-impact/collaborate/intern",
-      "/make-positive-impact/collaborate/video-editor",
-      "/make-positive-impact/collaborate/virtual-assistant",
-      "/make-positive-impact/collaborate/retreat-house-manager",
-      "/make-positive-impact/collaborate/castle-house-manager",
-      "/make-positive-impact/collaborate/behavioural-scientist",
-      "/make-positive-impact/collaborate/hr-collaborator",
+      // need to add the final roles
 
       "/make-positive-impact/co-create",
     
@@ -263,6 +253,7 @@ export const getJobsData = (locale: string): Jobs[] => {
             title: frontmatter.title,
             emoji: frontmatter.emoji,
             location: frontmatter.location,
+            compensation: frontmatter.compensation,
             isExternal: false,
           } as Jobs; // Type assertion here
         } else {

@@ -30,6 +30,7 @@ export interface Jobs {
   title: string
   emoji: string
   location: string
+  compensation: string
   isExternal: boolean
 }
 
@@ -52,7 +53,7 @@ const JobBoard: React.FC<IProps> = ({ locale }) => {
     return meetups.filter((meetup) => {
       return (
         meetup.title.toLowerCase().includes(lowercaseQuery) ||
-        meetup.location.toLowerCase().includes(lowercaseQuery)
+        meetup.location.toLowerCase().includes(lowercaseQuery) // should also search by compensation later.
       );
     });
   };
@@ -150,7 +151,11 @@ const JobBoard: React.FC<IProps> = ({ locale }) => {
               textAlign="end"
               alignContent="flex-start"
               me={4}
+              gap={2}
             >
+            <Text mb={0} opacity={"0.6"}>
+              {meetup.compensation}
+            </Text>
               <Text mb={0} opacity={"0.6"}>
                 {meetup.location}
               </Text>
@@ -172,7 +177,7 @@ const JobBoard: React.FC<IProps> = ({ locale }) => {
         {!filteredMeetups.length && (
           <InfoBanner emoji=":information_source:">
             <Translation id="common:no-jobs-available" />{" "}
-            <InlineLink to="mailto:careers@x3.family">
+            <InlineLink to="https://ask.x3.family/collaborator-application">
               <Translation id="common:apply" />
             </InlineLink>
           </InfoBanner>
