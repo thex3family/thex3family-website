@@ -1,13 +1,12 @@
 ---
-title: House Manager (The Castle)
+title: House Manager @ The Castle
 emoji: 🏡
 location: Singapore
-frameworkLevel: "LEVEL_5"
 lang: en
 hideEditButton: true
 ---
 
-# House Manager
+# House Manager @ The Castle
 
 ## About The Role
 
@@ -35,21 +34,11 @@ We are seeking a dedicated House Manager to maintain [The Castle In Singapore](h
 - Ability to handle sensitive issues with tact and discretion.
 - Financial literacy for budgeting and basic accounting tasks.
 - Knowledge of local regulations related to property management and co-living spaces.
-- Tech-savvy, comfortable using property management software and tools.
+- Tech-savvy and comfortable using property management software and tools.
 - Flexibility to handle a variety of tasks and shift focus as needed.
 
 ## How To Apply
 
-Send the following to **[careers@x3.family](mailto:careers@x3.family)**
+This role presents a unique opportunity for friendly, outgoing individuals to live in a unique spacious property in Singapore and facilitate the growth journeys of students, professionals, and entrepreneurs that join our home. 
 
-**Subject:** House Manager Application - [Your Full Name]
-
-**Attachment:** Your CV in PDF format with the file name in this format: "[Your Full Name] CV.pdf"
-
-**In your email, please include the following information:**
-
-- Why you want to join us
-- Your experience in managing properties or similar roles
-- How you can add value to our co-living space
-- How many hours can you commit each week
-- Your expected compensation
+<ButtonLink to="https://ask.x3.family/collaborator-application?role=house-manager-the-castle">Apply Now</ButtonLink>

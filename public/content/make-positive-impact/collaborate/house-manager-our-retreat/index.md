@@ -1,19 +1,18 @@
 ---
-title: House Manager (The Retreat)
+title: House Manager @ Our Retreat
 emoji: 🏡
-location: Osaka, Japan
-frameworkLevel: "LEVEL_5"
+location: Osaka, JP
 lang: en
 hideEditButton: true
 ---
 
-# House Manager
+# House Manager @ Our Retreat
 
 ## About The Role
 
 This role is for our [Our Family Without Borders](https://www.ourfamilywithoutborders.com/), where we believe that our living environment significantly impacts our growth, learning, and well-being. Our co-living space is more than just a place to stay—it's a community of like-minded individuals on a shared journey of personal and professional development.
 
-We are seeking a dedicated House Manager to maintain [The Retreat in Osaka, Japan](https://www.ourfamilywithoutborders.com/homes/the-retreat) as a sanctuary where tenants can thrive. The best fit for this role will be a creative that is excited to play a crucial role in ensuring a harmonious, well-managed living and co-working environment. Compensation is variable, with bonuses for maintaining tenant occupancy and happiness.
+We are seeking a dedicated House Manager to maintain [Our Retreat in Osaka, Japan](https://www.ourfamilywithoutborders.com/homes/our-retreat) as a sanctuary where tenants can thrive. The best fit for this role will be a creative that is excited to play a crucial role in ensuring a harmonious, well-managed living and co-working environment. Compensation is variable, with bonuses for maintaining tenant occupancy and happiness.
 
 ## Responsibilities
 
@@ -35,21 +34,11 @@ We are seeking a dedicated House Manager to maintain [The Retreat in Osaka, Japa
 - Ability to handle sensitive issues with tact and discretion.
 - Financial literacy for budgeting and basic accounting tasks.
 - Knowledge of local regulations related to property management and co-living spaces.
-- Tech-savvy, comfortable using property management software and tools.
+- Tech-savvy and comfortable using property management software and tools.
 - Flexibility to handle a variety of tasks and shift focus as needed.
 
 ## How To Apply
 
-Send the following to **[careers@x3.family](mailto:careers@x3.family)**
+This role presents a unique opportunity for friendly, outgoing individuals to live in beautiful Osaka, Japan and interact with locals and foreigners who love the serene, relaxing environment.
 
-**Subject:** House Manager Application - [Your Full Name]
-
-**Attachment:** Your CV in PDF format with the file name in this format: "[Your Full Name] CV.pdf"
-
-**In your email, please include the following information:**
-
-- Why you want to join us
-- Your experience in managing properties or similar roles
-- How you can add value to our co-living space
-- How many hours can you commit each week
-- Your expected compensation
+<ButtonLink to="https://ask.x3.family/collaborator-application?role=house-manager-our-retreat">Apply Now</ButtonLink>

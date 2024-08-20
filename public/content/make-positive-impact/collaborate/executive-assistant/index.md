@@ -1,17 +1,16 @@
 ---
-title: Virtual Assistant
+title: Executive Assistant
 emoji: 💻
 location: Remote
-frameworkLevel: "LEVEL_5"
 lang: en
 hideEditButton: true
 ---
 
-# Virtual Assistant
+# Executive Assistant
 
 ## About The Role
 
-We're looking for a highly organized and proactive Virtual Assistant who thrives on systematization and creating best practices. This role is crucial in supporting our team in saving time, increasing efficiency, and contributing to the growth of our organization.
+We're looking for a highly organized and proactive Executive Assistant who thrives on systematization and creating best practices. This role is crucial in supporting our team in saving time, increasing efficiency, and contributing to the growth of our organization. 
 
 ## Responsibilities
 
@@ -38,17 +37,6 @@ We're looking for a highly organized and proactive Virtual Assistant who thrives
 
 ## How To Apply
 
-Send the following to **[careers@x3.family](mailto:careers@x3.family)**
+This role is a great opportunity to understand business operations inside and out. Successful candidates in this role will be trained to take on the chief of staff / COO role at the organization.
 
-**Subject:** Virtual Assistant Application - [Your Full Name]
-
-**Attachment:** Your CV in PDF format with the file name in this format: "[Your Full Name] CV.pdf”
-
-**In your email, please include the following information:**
-
-- Why you want to join us
-- Your top 3 tools that you use and how you use them
-- A picture / short video of your workspace
-- How you could add value to our organization based on your skills and experience
-- How many hours can you commit each day
-- Your expected compensation
+<ButtonLink to="https://ask.x3.family/collaborator-application?role=executive-assistant">Apply Now</ButtonLink>
