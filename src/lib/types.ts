@@ -7,10 +7,9 @@ import type { ReactElement, ReactNode } from "react"
 
 import type {
   DocsFrontmatter,
-  MainFrontmatter,
+  JobsFrontmatter,  MainFrontmatter,
   StaticFrontmatter,
-  TutorialFrontmatter,
-  JobsFrontmatter} from "@/lib/interfaces"
+  TutorialFrontmatter} from "@/lib/interfaces"
 
 import type { CallToActionProps } from "@/components/Hero/CallToAction"
 
