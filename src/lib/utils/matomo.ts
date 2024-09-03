@@ -1,6 +1,6 @@
 import { push } from "@socialgouv/matomo-next"
 
-export const MATOMO_LS_KEY = "ethereum-org.matomo-opt-out"
+export const MATOMO_LS_KEY = "thex3family.matomo-opt-out"
 
 export interface MatomoEventOptions {
   eventCategory: string
