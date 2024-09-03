@@ -1,7 +1,9 @@
 import { join } from "path"
 
 import { useRouter } from "next/router"
+import Script from 'next/script'
 import { Container } from "@chakra-ui/react"
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import type { Root } from "@/lib/types"
 
@@ -17,8 +19,6 @@ import { toPosixPath } from "@/lib/utils/relativePath"
 import { DEFAULT_LOCALE } from "@/lib/constants"
 
 import { lightTheme as oldTheme } from "../theme"
-
-import { GoogleTagManager } from '@next/third-parties/google'
 
 export const RootLayout = ({
   children,
@@ -40,6 +40,7 @@ export const RootLayout = ({
     asPath.includes(`/terms-of-use/`)
 
   const isPageLanguageEnglish = locale === DEFAULT_LOCALE
+  const isProduction = process.env.NODE_ENV === 'production'
 
   const shouldShowTranslationBanner =
     (contentIsOutdated || (contentNotTranslated && !isPageLanguageEnglish)) &&
@@ -49,7 +50,13 @@ export const RootLayout = ({
 
   return (
     <Container mx="auto" maxW={oldTheme.variables.maxPageWidth}>
-      <GoogleTagManager gtmId="GTM-PRVPZSB8" />
+      {isProduction && <GoogleTagManager gtmId="GTM-PRVPZSB8" />}
+      {isProduction && (
+        <Script
+          strategy="afterInteractive"
+          src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Vd8FQs"
+        />
+      )}
       <SkipLink />
 
       <Nav path={asPath} />
