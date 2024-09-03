@@ -18,6 +18,8 @@ import { DEFAULT_LOCALE } from "@/lib/constants"
 
 import { lightTheme as oldTheme } from "../theme"
 
+import { GoogleTagManager } from '@next/third-parties/google'
+
 export const RootLayout = ({
   children,
   contentIsOutdated,
@@ -47,6 +49,7 @@ export const RootLayout = ({
 
   return (
     <Container mx="auto" maxW={oldTheme.variables.maxPageWidth}>
+      <GoogleTagManager gtmId="GTM-PRVPZSB8" />
       <SkipLink />
 
       <Nav path={asPath} />
