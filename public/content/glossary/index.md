@@ -14,7 +14,7 @@ lang: en
 
 ## A {#section-a}
 
-Nothing Here Yet.
+<GlossaryDefinition term="agile-framework" />
 
 <Divider />
 
@@ -36,7 +36,8 @@ Nothing Here Yet.
 
 ## D {#section-d}
 
-Nothing Here Yet.
+<GlossaryDefinition term="do-date" />
+<GlossaryDefinition term="due-date" />
 
 <Divider />
 
@@ -54,7 +55,9 @@ Nothing Here Yet.
 
 ## G {#section-g}
 
+<GlossaryDefinition term="goals" />
 <GlossaryDefinition term="gamification" />
+<GlossaryDefinition term="growth-mindset" />
 
 <Divider />
 
@@ -72,7 +75,7 @@ Nothing Here Yet.
 
 ## K {#section-k}
 
-Nothing Here Yet.
+<GlossaryDefinition term="key-results" />
 
 <Divider />
 
@@ -103,6 +106,7 @@ Nothing Here Yet.
 ## P {#section-p}
 
 <GlossaryDefinition term="programs" />
+<GlossaryDefinition term="projects" />
 
 <Divider />
 
@@ -120,7 +124,7 @@ Nothing Here Yet.
 
 ## T {#section-t}
 
-Nothing Here Yet.
+<GlossaryDefinition term="tasks" />
 
 <Divider />
 
