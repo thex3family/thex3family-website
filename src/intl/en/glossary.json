@@ -1,4 +1,6 @@
 {
+  "agile-framework-term": "Agile Framework",
+  "agile-framework-definition": "Agile Framework is a people-focused, results-focused approach to software development. It’s centered around adaptive planning, self-organization, and short delivery times. We have applied this concept to personal growth, as it’s flexible, fast, and aims for continuous improvements.",
   "comrades-term": "Comrades",
   "comrades-definition": "Those who always have the will to help another in times of need.",
   "501c3-non-profit-term": "501(c)(3) Non Profit",
@@ -11,8 +13,23 @@
   "contribution-definition": "The act of giving towards an organization or cause, usually once-off or occasionally.",
   "community-term": "Community",
   "community-definition": "A group of people who have shared attitudes, interests, and goals.",
+  "do-date-term": "Do Date",
+  "do-date-definition": "The day(s) that you plan to do the work. Self-imposed deadlines.",
+  "due-date-term": "Due Date",
+  "due-date-definition": "The hard deadline that is imposed by others to get the work done.",
+  "key-results-term": "Key Results",
+  "key-results-definition": "Key Results are the outcomes that are S.M.A.R.T. - specific measurable attainable, relevant, time-bound. These measure your success towards your goals. These outcomes are generally not in your direct control.",
   "gamification-term": "Gamification",
   "gamification-definition": "Gamification is the application of game-design elements and game principles in non-game contexts. It aims to engage users and solve problems by using game-like elements such as point scoring, competition, and rules of play.",
+  "goals-term": "Goals",
+  "goals-definition": "Goals are abstract, ambitious statements that share why you are pursuing any action downstream. The intention of the goal is to inspire you. If you are familiar with OKRs, you will know this as Objectives.",
+  "growth-mindset-term": "Growth Mindset",
+  "growth-mindset-definition": "In a growth mindset, people believe that their most basic abilities can be developed through dedication and hard work—brains and talent are just the starting point. This view creates a love of learning and a resilience that is essential for great accomplishment.",
   "programs-term": "Programs",
-  "programs-definition": "How we support our comrades on their growth journey."
+  "programs-definition": "How we support our comrades on their growth journey.",
+  "projects-term": "Projects",
+  "projects-definition": "Projects are the experiments that you will conduct to achieve the key results. You will continuously attempt new ways of tackling the problem with different solutions.",
+  "tasks-term": "Tasks",
+  "tasks-definition": "Tasks are the actionable steps to complete a project. We also sometimes refer to them as quests."
+  
 }
