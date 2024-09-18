@@ -199,6 +199,10 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
           text: t("terms-of-use-title"),
         },
         {
+          to: "/mobile-terms-of-service/",
+          text: t("mobile-terms-of-service-title"),
+        },
+        {
           to: "/cookie-policy/",
           text: t("cookie-policy-title"),
         },
