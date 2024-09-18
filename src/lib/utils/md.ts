@@ -96,6 +96,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
     // info
     "/glossary",
     "/privacy-policy",
+    "/mobile-terms-of-service",
     "/terms-of-use",
     "/cookie-policy",
     "/contact-us",
