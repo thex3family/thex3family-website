@@ -126,20 +126,6 @@ const getCrowdinCode = (code: string): string =>
  */
 const BUCKET_NAMES: Array<string> = [
   "Homepage",
-  "Use Ethereum Pages",
-  "Use Case Pages",
-  "Upgrades",
-  "Community Pages",
-  "Docs - Foundational Pages",
-  "Docs - Tech Stack Pages",
-  "Whitepaper",
-  "Docs - Advanced Pages",
-  "Learn Pages",
-  "Research Documentation",
-  "Contributing",
-  "Developer Tutorials I",
-  "Developer Tutorials II",
-  "Developer Tutorials III",
 ]
 
 // Initialize trackers object for summary

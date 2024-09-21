@@ -71,7 +71,7 @@ export interface IPropsNavLink {
 
 const NavLink: React.FC<IPropsNavLink> = ({ item, path, isTopLevel }) => {
   const { t } = useTranslation("page-docs")
-  const basePath = "/unlock-your-potential/docs/";
+  const basePath = "/unlock-your-potential/principles/";
   const baseTranslation = "page-docs:page-docs-nav-";
 
   // I just need to push item.to with the base paths. 

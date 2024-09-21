@@ -95,7 +95,7 @@ export const useNav = ({ path }: { path: string }) => {
             },
             {
               text: t("docs-title"),
-              to: "/unlock-your-potential/docs/",
+              to: "/unlock-your-potential/principles/",
             },
           ]
         },
@@ -156,7 +156,7 @@ export const useNav = ({ path }: { path: string }) => {
     },
     {
       text: t("docs-title"),
-      to: "/unlock-your-potential/docs/",
+      to: "/unlock-your-potential/principles/",
     },
   ]
 
