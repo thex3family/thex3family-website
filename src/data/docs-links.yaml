@@ -4,9 +4,9 @@
 # To display item as a collapsable directory vs. a link
 # use the `path` property (of the directory) vs. the `to` property
 - id: overview
-  to: /unlock-your-potential/docs
+  to: /unlock-your-potential/principles
 - id: principles
-  path: /unlock-your-potential/docs
+  path: /unlock-your-potential/principles
   items:
     - id: breathing-techniques
     - id: empathy
@@ -16,6 +16,6 @@
     - id: pareto-principle-80-20-rule
     - id: sensory-deprivation
 - id: resources
-  path: /unlock-your-potential/docs
+  path: /unlock-your-potential/principles
   items:
     - id: template

@@ -129,7 +129,7 @@ const Footer: React.FC<IProps> = ({ lastDeployDate }) => {
         },
         {
           text: t("docs-title"),
-          to: "/unlock-your-potential/docs/",
+          to: "/unlock-your-potential/principles/",
         },
       ],
     },

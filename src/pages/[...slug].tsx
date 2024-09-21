@@ -137,7 +137,7 @@ export const getStaticProps = (async (context) => {
   let layout = (frontmatter.template as Layout) ?? "static"
 
   if (!frontmatter.template) {
-    if (params.slug.includes("docs")) {
+    if (params.slug.includes("principles")) {
       layout = "docs"
     }
 
