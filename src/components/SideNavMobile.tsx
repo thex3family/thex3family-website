@@ -1,11 +1,8 @@
-import React, { ReactNode, useState } from "react"
+import React, { ReactNode, useEffect, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { useTranslation } from "next-i18next"
 import { MdExpandMore } from "react-icons/md"
 import { Box, Center, HStack, Icon } from "@chakra-ui/react"
-
-import type { TranslationKey } from "@/lib/types"
-import { DeveloperDocsLink } from "@/lib/interfaces"
 
 import { BaseLink, LinkProps } from "@/components/Link"
 
@@ -15,25 +12,6 @@ import {
   dropdownIconContainerVariant,
   IPropsNavLink as INavLinkProps,
 } from "./SideNav"
-
-// Traverse all links to find page id
-const getPageTitleId = (
-  to: string,
-  links: Array<DeveloperDocsLink>
-): TranslationKey => {
-  for (const link of links) {
-    if (link.to === to) {
-      return link.id
-    }
-    if (link.items) {
-      let pageTitle = getPageTitleId(to, link.items)
-      if (pageTitle) {
-        return pageTitle
-      }
-    }
-  }
-  return "" as TranslationKey
-}
 
 const innerLinksVariants = {
   open: {
@@ -84,27 +62,45 @@ const SideNavLink = ({ children, ...props }: LinkProps) => {
 }
 
 export interface IPropsNavLink extends INavLinkProps {
-  toggle: () => void
+  closeSideNavMobile: () => void
 }
 
-const NavLink: React.FC<IPropsNavLink> = ({ item, path, toggle }) => {
+const NavLink: React.FC<IPropsNavLink> = ({ item, path, closeSideNavMobile, isTopLevel }) => {
   const { t } = useTranslation("page-docs")
-  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const basePath = "/unlock-your-potential/principles/";
+  const baseTranslation = "page-docs:page-docs-nav-";
+
+  if (!item.to) {
+    item.to = basePath + item.id;
+  }
+  item.title = t(baseTranslation + item.id + "-title");
+  item.description = t(baseTranslation + item.id + "-description");
+
+  const isLinkInPath =
+    isTopLevel || path.includes(item.to) || path.includes(item.path)
+  const [isOpen, setIsOpen] = useState<boolean>(isLinkInPath)
+
+  useEffect(() => {
+    // Only set on items that contain a link
+    // Otherwise items w/ `path` would re-open every path change
+    if (item.to) {
+      const shouldOpen = path.includes(item.to) || path.includes(item.path)
+      setIsOpen(shouldOpen)
+    }
+  }, [path, item.path, item.to])
 
   if (item.items) {
     return (
       <Box>
         <LinkContainer>
-          {item.to && (
+          {/* {item.to && (
             <SideNavLink to={item.to} isPartiallyActive={false}>
               {t(item.id)}
             </SideNavLink>
-          )}
-          {!item.to && (
-            <Box w="full" cursor="pointer" onClick={() => setIsOpen(!isOpen)}>
-              {t(item.id)}
-            </Box>
-          )}
+          )} */}
+          <Box w="full" cursor="pointer" onClick={() => setIsOpen(!isOpen)}>
+            {t(item.title)}
+          </Box>
           <Box
             as={motion.div}
             cursor="pointer"
@@ -127,17 +123,17 @@ const NavLink: React.FC<IPropsNavLink> = ({ item, path, toggle }) => {
           initial="closed"
         >
           {item.items.map((childItem, idx) => (
-            <NavLink item={childItem} path={path} key={idx} toggle={toggle} />
+            <NavLink item={childItem} path={path} key={idx} closeSideNavMobile={closeSideNavMobile} />
           ))}
         </Box>
       </Box>
     )
   }
   return (
-    <Box onClick={toggle}>
+    <Box onClick={closeSideNavMobile}>
       <LinkContainer>
         <SideNavLink to={item.to} isPartiallyActive={false}>
-          {t(item.id)}
+          {item.title}
         </SideNavLink>
       </LinkContainer>
     </Box>
@@ -153,10 +149,6 @@ const SideNavMobile: React.FC<IProps> = ({ path }) => {
   const { t } = useTranslation("page-docs")
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
-
-  // Add trailing slash to path for docLinks match
-  const pageTitleId =
-    getPageTitleId(path + "/", docLinks) || ("Change page" as TranslationKey)
 
   return (
     <Box
@@ -181,7 +173,7 @@ const SideNavMobile: React.FC<IProps> = ({ path }) => {
         borderBottomColor="border"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Box me={2}>{t(pageTitleId)}</Box>
+        <Box me={2}>Navigation</Box>
         <Box
           as={motion.div}
           cursor="pointer"
@@ -223,7 +215,10 @@ const SideNavMobile: React.FC<IProps> = ({ path }) => {
                 item={item}
                 path={path}
                 key={idx}
-                toggle={() => setIsOpen(false)}
+                closeSideNavMobile={() =>
+                  setIsOpen(false)
+                }
+                isTopLevel
               />
             ))}
           </Box>

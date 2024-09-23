@@ -23,7 +23,6 @@ These vlogs are more than just stories; they are a testament to how the Better L
 
 ## How Does It Work?
 
-We distribute this series through various social media channels by our co-creators:
-- @ Level Up With Conrad
+We distribute this highly impactful series through The Better Life Membership.
 
-Explore our comprehensive collection of vlogs all in one place here: [Live Your Best Life](/unlock-your-potential/programs?view=content&tags=live%20your%20best%20life).
+Explore our comprehensive collection of episodes all in one place here: [Live Your Best Life](https://shop.x3.family/supporters/videos/series/2240).

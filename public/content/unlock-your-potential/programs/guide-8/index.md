@@ -22,7 +22,7 @@ In this perspective, we value creating safe spaces where we can try new things, 
 
 ## How This Perspective Develops
 
-When we are in the ['Setting Boundaries' perspective](/unlock-your-potential/programs/guide-7), we believe that if everyone understood themselves and set appropriate boundaries, we would have harmony and balance in the world. However, some people in the world will continuously refuse to accept our boundaries, even when the consequences are laid out for them.
+When we are in the ['Boundaries' perspective](/unlock-your-potential/programs/guide-7), we believe that if everyone understood themselves and set appropriate boundaries, we would have harmony and balance in the world. However, some people in the world will continuously refuse to accept our boundaries, even when the consequences are laid out for them.
 
 We start off feeling frustrated, and lamenting that if only they were able to follow the rules, life would be better for everyone. There would be no crime, and the world would be a better place. When we're busy and have things to do, we don't have time to deal with bad actors and just say NO to them and move on, choosing to associate with people who will respect our boundaries instead.
 
@@ -60,4 +60,4 @@ In general, avoid WHY questions - most people haven't understood themselves deep
 
 At the beginning, you'll be asking questions out of curiosity, to figure out why others seem to be so keen on doing things differently than you. As you continue questioning, you may discover that you love the way that others are approaching life, even if you don't see yourself living that way. If you achieve this realization, you are ready for the ['Empathy' perspective](/unlock-your-potential/programs/guide-9).
 
-If you find that you're not able to ask the right questions, but still need to protect yourself, switch to the ['Setting Boundaries' perspective](/unlock-your-potential/programs/guide-7) for self-preservation.
+If you find that you're not able to ask the right questions, but still need to protect yourself, switch to the ['Boundaries' perspective](/unlock-your-potential/programs/guide-7) for self-preservation.

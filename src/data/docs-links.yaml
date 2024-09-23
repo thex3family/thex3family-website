@@ -2,7 +2,7 @@
 # Each `id` value should map to an equivalent key in src/intl/${lang}.json file
 
 # To display item as a collapsable directory vs. a link
-# use the `path` property (of the directory) vs. the `to` property
+# use the `path` property (of the directory) vs. the `to` property. We use /principles for all paths for now until we have proper folder management
 - id: overview
   to: /unlock-your-potential/principles
 - id: principles
