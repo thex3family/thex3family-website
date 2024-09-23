@@ -146,7 +146,7 @@ export interface IProps {
 
 // TODO consolidate into SideNav
 const SideNavMobile: React.FC<IProps> = ({ path }) => {
-  const { t } = useTranslation("page-docs")
+  const { t } = useTranslation("common")
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -173,7 +173,7 @@ const SideNavMobile: React.FC<IProps> = ({ path }) => {
         borderBottomColor="border"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Box me={2}>Navigation</Box>
+        <Box me={2}>{t("nav-docs")}</Box>
         <Box
           as={motion.div}
           cursor="pointer"
