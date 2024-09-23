@@ -16,7 +16,7 @@ lang: en
 
 ## Introduction
 
-In the 'Setting Boundaries' perspective, we value who we are and what we care about while navigating the complexities of human interactions. We champion the freedom of individual expression but also acknowledge the necessity of boundaries for personal well-being.
+In the 'Boundaries' perspective, we value who we are and what we care about while navigating the complexities of human interactions. We champion the freedom of individual expression but also acknowledge the necessity of boundaries for personal well-being.
 
 As we change and grow, so do our boundaries, reflecting our evolving needs and beliefs. Setting boundaries is an act of self-respect and wisdom, ensuring that our interactions are sustainable and that we say 'no' when necessary as an affirmation of our values.
 
@@ -24,7 +24,7 @@ As we change and grow, so do our boundaries, reflecting our evolving needs and b
 
 When we are in the ['Letting Go' perspective](/unlock-your-potential/programs/guide-6), we want to let everyone be who they want to be. However, that comes with drawbacks because as we introspect further and learn more about ourselves, we recognize that we have boundaries that can be intruded upon if we allow others to fully express their freedoms.
 
-We develop the 'Setting Boundaries' perspective as we mature in our understanding that respect for individual freedom includes protecting our own space and peace. We learn to discern our limits, from our basic dislikes to our absolute deal-breakers, and communicate them effectively.
+We develop the 'Boundaries' perspective as we mature in our understanding that respect for individual freedom includes protecting our own space and peace. We learn to discern our limits, from our basic dislikes to our absolute deal-breakers, and communicate them effectively.
 
 It is when we find ourselves in positions of power that we truly shine in this perspective, as we find that our boundaries are being respected by others.
 
@@ -32,7 +32,7 @@ It is when we find ourselves in positions of power that we truly shine in this p
 
 ## Historical Context
 
-The 'Setting Boundaries' perspective gained prominence in the world-centered social web of the mid-1900s, a period focused on authentic self-expression and the harmonization of internal and external worlds.
+The 'Boundaries' perspective gained prominence in the world-centered social web of the mid-1900s, a period focused on authentic self-expression and the harmonization of internal and external worlds.
 
 This era encouraged us to develop our innate potential while acknowledging the collective needs, yet it also confronted us with the challenges of realizing our full selves, navigating existential dilemmas, and the dangers of superficial conformity.
 
@@ -56,7 +56,7 @@ To be your best self in this perspective, learn to set and respect boundaries th
 
 We also need to learn how to set boundaries for ourselves as well - to make sure we are disciplined in doing the things that matter to us, even when we don't have external forces pushing us to do so.
 
-<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_7">Check Out Programs For 7: Setting Boundaries</ButtonLink>
+<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_7">Check Out Programs For 7: Boundaries</ButtonLink>
 
 ## Is It Time To Level Up?
 

@@ -60,6 +60,6 @@ To be your best self in this perspective, it's crucial to embrace mindfulness an
 
 ## Is It Time To Level Up?
 
-In this perspective, it's easy to accidentally be too inclusive and forego our boundaries, leaving us feeling raw and used. If you're feeling this way, the ['Setting Boundaries' perspective](/unlock-your-potential/programs/guide-7) might be your next step.
+In this perspective, it's easy to accidentally be too inclusive and forego our boundaries, leaving us feeling raw and used. If you're feeling this way, the ['Boundaries' perspective](/unlock-your-potential/programs/guide-7) might be your next step.
 
 However, if you are not financially secure, setting boundaries can be difficult. It may be better to temporarily think from a ['Systems' perspective](/unlock-your-potential/programs/guide-5) to ensure you can sustain yourself so you don't have to bend to others' will to secure your wants and can walk away when necessary.
