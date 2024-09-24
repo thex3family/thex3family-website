@@ -1,6 +1,11 @@
 {
+  "page-docs-nav-program-principles-title": "Program Principles",
+  "page-docs-nav-program-principles-description": "Your guide to the first principles behind our programs.",
+  "page-docs-nav-what-are-first-principles-title": "What Are First Principles?",
+  "page-docs-nav-what-are-first-principles-description": "A detailed exploration of the concept of first principles, how they differ from conventional thinking, and why Co-x3 uses them as the foundation for its programs.",
+  "page-docs-nav-how-do-I-submit-first-principles-title": "How Do I Submit First Principles?",
+  "page-docs-nav-how-do-I-submit-first-principles-description": "Our preferred page structure for first principles.",
   "page-docs-nav-overview-title": "Overview",
-  "page-docs-nav-overview-description": "Your guide to the principles behind our programs.",
   "page-docs-nav-principles-title": "Principles",
   "page-docs-nav-breathing-techniques-title": "Breathing Techniques",
   "page-docs-nav-breathing-techniques-description": "How does breathing affect your focus and well-being?",
@@ -16,9 +21,6 @@
   "page-docs-nav-sensory-deprivation-description": "What does depriving yourself of your senses do?",
   "page-docs-nav-empathy-title": "Empathy",
   "page-docs-nav-empathy-description": "Understand why we can't ever really feel what another person is feeling, and what true empathy is all about.",
-  "page-docs-nav-resources-title": "Resources",
-  "page-docs-nav-template-title": "Template",
-  "page-docs-nav-template-description": "Our preferred documentation structure.",
 
   "page-docs-calltocontribute-desc-1": "If you're an expert on the topic and want to contribute, edit this page and sprinkle it with your wisdom.",
   "page-docs-calltocontribute-desc-2": "You'll be credited and you'll be helping comrades who are interested in this topic!",

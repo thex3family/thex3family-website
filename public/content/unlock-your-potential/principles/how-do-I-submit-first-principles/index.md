@@ -1,6 +1,6 @@
 ---
-title: Documentation Template
-description: Our preferred documentation structure.
+title: New Principle Template
+description: Our preferred page structure for a new principle.
 lang: en
 ---
 
