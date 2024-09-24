@@ -58,7 +58,7 @@ const CardLink = (props: {
       alignItems="center"
       mt={4}
       w="262px"
-      h="82px"
+      h="auto"
       bg="background.base"
       border="1px"
       borderColor="border"
@@ -80,6 +80,7 @@ const CardLink = (props: {
           href={docData.to}
           textAlign={isPrev ? "start" : "end"}
           rel={isPrev ? "prev" : "next"}
+          lineHeight="1.5"
           onClick={() => {
             trackCustomEvent({
               eventCategory: "next/previous article DocsNav",
@@ -87,7 +88,7 @@ const CardLink = (props: {
               eventName: isPrev ? "previous" : "next",
             })
           }}
-          noOfLines={1}
+          //noOfLines={1}
         >
           {docData.title}
         </LinkOverlay>

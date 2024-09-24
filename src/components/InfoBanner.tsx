@@ -28,6 +28,7 @@ const InfoBanner = ({
     <LightMode>
       <Flex
         align="center"
+        my="4"
         p="6"
         borderRadius="sm"
         maxW={shouldCenter ? "55rem" : "100%"}

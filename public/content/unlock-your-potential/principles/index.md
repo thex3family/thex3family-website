@@ -1,18 +1,37 @@
 ---
 title: Program Principles
-description: Introducing the documentation behind all of the programs supported by Co-x3.
+description: Introducing the first principles behind all of the programs supported by Co-x3.
 lang: en
-incomplete: true
+incomplete: false
 ---
 
-## Why Build Documentation?
+Everyone is offering the latest hack or quick fix to improve your life, but have you ever stopped to ask: **How do they actually work?** And more importantly, **how can you apply them in a way that sticks**—so that these ideas become a natural part of your everyday life?
 
-Everyone out there is proposing their latest hack or trick to help you improve your life. We want to help you understand the principles behind the programs we share so you have a detailed understanding of how exactly the programs work to improve your life.
+At Co-x3, we take a different approach. Rather than surface-level solutions, we’re committed to **distilling first principles** from established knowledge, ensuring that our programs are designed to create **meaningful, lasting change**.
 
-By offering a transparent view into our processes, we empower you to not only trust but also comprehend the mechanisms that will assist in your journey towards personal growth and development. 
+Here, you'll find a growing repository of first principles that we've analysed. By providing a **transparent look into our methodology**, we aim to empower you not only to trust the programs we offer but also to fully **understand the core mechanisms** driving your personal growth. When you grasp these principles, you gain the **freedom to apply them** to your unique situation, in ways that best serve your goals.
+
+## What Are First Principles?
+
+Simply put, **first principles** are the foundational truths — ideas that cannot be reduced any further. When we break complex problems down to their simplest, most essential parts, we can **rebuild solutions** from the ground up, in ways that are logical, clear, and more effective.
+
+
+Reasoning from first principles is essential because reasoning by analogy—basing decisions on how things are typically done—can often lead to errors. For example, if we assumed that all productivity techniques work the same for everyone simply because they are popular (reasoning by analogy), we could overlook more fundamental factors like individual working styles or environments.
+
+By **reasoning from first principles**, we strip away assumptions and instead focus on universal truths. This approach leads to **more effective solutions** that adapt to different people and situations.
+
+### Example: Habit Stacking
+
+Take **habit stacking**, for instance—a strategy made popular by James Clear’s book *Atomic Habits*. The first principle behind this concept is that **linking new behaviors to existing habits** makes them easier to implement consistently. This foundational truth helps us design habit-building resources that integrate habit stacking, ensuring our programs are built on proven methods.
+
+Thus, any habit-building resources we share will always have that principle baked in, along with others like **small wins** and **visible progress**.
+
+---
+
+<ButtonLink to="unlock-your-potential/principles/what-are-first-principles">Learn More About First Principles</ButtonLink>
 
 ## Help Us Build This Repository!
 
-Our documentation is an in-depth guide to understanding and leveraging the principles and methodologies that underpin the Co-x3 Family Foundation's programs. 
+This repository is a comprehensive guide to the principles and methodologies behind Co-x3's programs. But it’s not just a one-way street — we believe in the **power of collaboration** and that knowledge is best built together.
 
-This is a collaborative effort that thrives on community input. We encourage you to suggest new topics, contribute content, and share examples that you find beneficial.
+We invite you to be part of this process. Whether it’s suggesting new principles, sharing insights, or contributing real-life examples of how first principles have impacted your life, your input will help us continue to **improve and expand** this resource.
