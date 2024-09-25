@@ -5,8 +5,6 @@ import { Icon } from "@chakra-ui/react"
 
 import ProgramsDropdownItems from "../../ProgramsTable/ProgramsDropdownItems"
 
-import { FrameworkFilterFeatureProps } from "."
-
 type FilterOptionType = {
   title: string
   items: Array<{
@@ -25,8 +23,8 @@ type FilterOptionType = {
   }>
 }
 
-export const useFrameworkFilterFeature = ({
-  resetFrameworkFilter,
+export const useProgramsFilterFeature = ({
+  resetProgramsFilter,
   filters,
   updateFilterOptions,}) => {
   const { t } = useTranslation(["page-programs", "page-better-life-framework"])
@@ -70,8 +68,8 @@ export const useFrameworkFilterFeature = ({
         }
       }
     }
-    resetFrameworkFilter.current = resetFilters
-  }, [filterOptions, resetFrameworkFilter])
+    resetProgramsFilter.current = resetFilters
+  }, [filterOptions, resetProgramsFilter])
 
   return {
     setShowOptions,

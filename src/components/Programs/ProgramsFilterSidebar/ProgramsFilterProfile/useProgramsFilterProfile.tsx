@@ -24,7 +24,7 @@ interface Personas {
   }
 }
 
-export const useFrameworkFilterProfile = (setSelectedTags) => {
+export const useProgramsFilterProfile = (setSelectedTags) => {
   const { t } = useTranslation("page-programs")
 
   const filterLabels = {

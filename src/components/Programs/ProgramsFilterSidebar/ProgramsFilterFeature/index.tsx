@@ -31,7 +31,7 @@ import { trackCustomEvent } from "@/lib/utils/matomo"
 
 import { StyledSelect } from "../../ProgramsTable"
 
-import { useFrameworkFilterFeature } from "./useProgramsFilterFeature"
+import { useProgramsFilterFeature } from "./useProgramsFilterFeature"
 
 const FilterToggle = ({
   ariaLabel,
@@ -75,19 +75,19 @@ const FilterTag = forwardRef<{ isActive: boolean; name: string }, "button">(
   }
 )
 
-export interface FrameworkFilterFeatureProps {
+export interface ProgramsFilterFeatureProps {
   allTags: { [key: string]: number };
   selectedTags: string[];
   handleTagSelect: (tagName: string) => void;
   setSelectedTags: React.Dispatch<React.SetStateAction<string[]>>;
   trackCustomEvent: typeof trackCustomEvent;
-  resetFrameworkFilter: MutableRefObject<() => void>
+  resetProgramsFilter: MutableRefObject<() => void>
   filters: Record<string, boolean>
   updateFilterOption: (key: any) => void
   updateFilterOptions: (key: any, value: any) => void
 }
 
-const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
+const ProgramsFilterFeature: React.FC<ProgramsFilterFeatureProps> = ({
   allTags,
   selectedTags,
   handleTagSelect,
@@ -122,11 +122,11 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
   }, [tags, setSelectedTags]);
 
   const rest = {
-    resetFrameworkFilter: restProps.resetFrameworkFilter,
+    resetProgramsFilter: restProps.resetProgramsFilter,
     filters: restProps.filters,
     updateFilterOptions,
   };
-  const { filterOptions, setShowOptions } = useFrameworkFilterFeature(rest)
+  const { filterOptions, setShowOptions } = useProgramsFilterFeature(rest)
 
   const filterPanelBg = useColorModeValue("chakra-subtle-bg", "black400")
   return (
@@ -157,7 +157,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
       {filterOptions.map((filterOption, idx) => {
         return (
           <AccordionItem
-            key={uniqueId("frameworkFilterSidebarItemFeature")}
+            key={uniqueId("programsFilterSidebarItemFeature")}
             background={filterPanelBg}
             borderRadius="base"
             // Remove border color from global style
@@ -261,7 +261,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                           _last={{ border: "none" }}
                         >
                           <SimpleGrid
-                            key={uniqueId("frameworkFilterSidebarItemPanel")}
+                            key={uniqueId("programsFilterSidebarItemPanel")}
                             templateColumns="28px auto 34px"
                             alignItems="center"
                             columnGap={2.5}
@@ -270,7 +270,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                               item.filterKey
                                 ? () => {
                                   trackCustomEvent({
-                                    eventCategory: "FrameworkFilterSidebar",
+                                    eventCategory: "ProgramsFilterSidebar",
                                     eventAction: `${filterOption.title}`,
                                     eventName: `${item.filterKey} ${!restProps
                                       .filters[item.filterKey!]}`,
@@ -284,7 +284,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                                     !item.showOptions
                                   )
                                   trackCustomEvent({
-                                    eventCategory: "FrameworkFilterSidebar",
+                                    eventCategory: "ProgramsFilterSidebar",
                                     eventAction: `${filterOption.title}`,
                                     eventName: `Toggle ${item.title
                                       } ${!item.showOptions}`,
@@ -364,7 +364,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
                                   }
 
                                   trackCustomEvent({
-                                    eventCategory: "FrameworkFilterSidebar",
+                                    eventCategory: "ProgramsFilterSidebar",
                                     eventAction: `${filterOption.title}`,
                                     eventName: `${option.filterKey} ${!restProps
                                       .filters[option.filterKey!]}`,
@@ -401,7 +401,7 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
       })}
 
       <AccordionItem
-        key={uniqueId("frameworkFilterSidebarItemTag")}
+        key={uniqueId("programsFilterSidebarItemTag")}
         background={filterPanelBg}
         borderRadius="base"
         // Remove border color from global style
@@ -501,4 +501,4 @@ const FrameworkFilterFeature: React.FC<FrameworkFilterFeatureProps> = ({
   )
 }
 
-export default FrameworkFilterFeature
+export default ProgramsFilterFeature

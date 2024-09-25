@@ -37,8 +37,8 @@ import MainHero from "@/components/MainHero"
 import Modal from "@/components/Modal"
 import Text from "@/components/OldText"
 import PageMetadata from "@/components/PageMetadata"
-import FrameworkFilterSidebar from "@/components/Programs/ProgramsFilterSidebar"
-import FrameworkTable from "@/components/Programs/ProgramsTable"
+import ProgramsFilterSidebar from "@/components/Programs/ProgramsFilterSidebar"
+import ProgramsTable from "@/components/Programs/ProgramsTable"
 import Translation from "@/components/Translation"
 import { getSkillTranslationId, Skill } from "@/components/TutorialMetadata"
 import TutorialTags from "@/components/TutorialTags"
@@ -98,7 +98,7 @@ const published = (locale: string, published: string) => {
   ) : null
 }
 
-const TutorialPage = ({
+const ProgramsPage = ({
   internalTutorials,
 }: InferGetServerSidePropsType<typeof getStaticProps>) => {
   const { locale, pathname } = useRouter()
@@ -149,10 +149,10 @@ const TutorialPage = ({
     </Grid>
   )
 
-  // framework stuff
+  // programs stuff
 
-  const resetFrameworkFilter = useRef(() => { })
-  const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure()
+  const resetProgramsFilter = useRef(() => { })
+  const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure({defaultIsOpen: true})
   const [filters, setFilters] = useState(filterDefault)
   const [selectedPersona, setSelectedPersona] = useState(NaN)
 
@@ -180,7 +180,7 @@ const TutorialPage = ({
 
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": January 24, 2024", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": September 25, 2024", // This should be dynamic based on your data
     title: t("common:programs-title"),
     description: t("common:programs-description")
       .split('.')
@@ -283,7 +283,8 @@ const TutorialPage = ({
         </Flex>
       </Modal>
 
-      <Hide above="lg">
+      {/* Show on all sizes so we can have the popup to pre-filter programs on first open*/}
+      <Show>
         <Box
           display={{ base: "block", lg: "none" }}
           position="sticky"
@@ -339,7 +340,7 @@ const TutorialPage = ({
               <DrawerCloseButton />
             </DrawerHeader>
             <DrawerBody position="relative">
-              <FrameworkFilterSidebar
+              <ProgramsFilterSidebar
                 position="absolute"
                 inset={2}
                 overflow="auto"
@@ -350,7 +351,7 @@ const TutorialPage = ({
                 trackCustomEvent={trackCustomEvent}
                 {...{
                   filters,
-                  resetFrameworkFilter,
+                  resetProgramsFilter,
                   updateFilterOption,
                   updateFilterOptions,
                   resetFilters,
@@ -362,11 +363,11 @@ const TutorialPage = ({
             </DrawerBody>
           </DrawerContent>
         </Drawer>
-      </Hide>
+      </Show>
 
       <Flex px={{ base: 0, md: 8 }} mt={{ base: 0, lg: 10 }} pb={6} gap={6} id="start">
         <Show above="lg">
-          <FrameworkFilterSidebar
+          <ProgramsFilterSidebar
             w="full"
             maxW="330px"
             top={SECONDARY_NAV_BAR_PX_HEIGHT}
@@ -377,7 +378,7 @@ const TutorialPage = ({
             trackCustomEvent={trackCustomEvent}
             {...{
               filters,
-              resetFrameworkFilter,
+              resetProgramsFilter,
               updateFilterOption,
               updateFilterOptions,
               resetFilters,
@@ -411,9 +412,9 @@ const TutorialPage = ({
           }}
         >
 
-          <FrameworkTable
+          <ProgramsTable
             filters={filters}
-            frameworkData={filteredTutorialsByLang}
+            programsData={filteredTutorialsByLang}
             setAllTags={setAllTags}
             selectedTags={selectedTags}
             setModalOpen={setModalOpen}
@@ -429,4 +430,4 @@ const TutorialPage = ({
   )
 }
 
-export default TutorialPage
+export default ProgramsPage

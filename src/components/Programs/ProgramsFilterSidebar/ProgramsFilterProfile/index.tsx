@@ -14,16 +14,16 @@ import Translation from "@/components/Translation"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import { useFrameworkFilterProfile } from "./useProgramsFilterProfile"
+import { useProgramsFilterProfile } from "./useProgramsFilterProfile"
 
-const FrameworkFilterProfile = ({
+const ProgramsFilterProfile = ({
   resetFilters,
   setFilters,
   selectedPersona,
   setSelectedPersona,
   setSelectedTags
 }) => {
-  const { personas } = useFrameworkFilterProfile(setSelectedTags)
+  const { personas } = useProgramsFilterProfile(setSelectedTags)
 
   const getContainerBg = (idx: number) =>
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -189,4 +189,4 @@ const FrameworkFilterProfile = ({
   )
 }
 
-export default FrameworkFilterProfile
+export default ProgramsFilterProfile
