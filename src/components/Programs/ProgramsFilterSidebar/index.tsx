@@ -30,8 +30,8 @@ const FilterTab = ({
   <Tab
     onClick={() => {
       trackCustomEvent({
-        eventCategory: "FrameworkFilterSidebar",
-        eventAction: `FrameworkFilterSidebar tab clicked`,
+        eventCategory: "ProgramsFilterSidebar",
+        eventAction: `ProgramsFilterSidebar tab clicked`,
         eventName,
       })
     }}
@@ -49,14 +49,14 @@ const FilterTab = ({
   />
 )
 
-interface FrameworkFilterSidebarProps extends Omit<TabsProps, "children"> {
+interface ProgramsFilterSidebarProps extends Omit<TabsProps, "children"> {
   allTags: { [key: string]: number };
   selectedTags: string[];
   handleTagSelect: (tagName: string) => void;
   setSelectedTags: React.Dispatch<React.SetStateAction<string[]>>;
   trackCustomEvent: typeof trackCustomEvent;
   filters: FiltersType
-  resetFrameworkFilter: React.MutableRefObject<() => void>
+  resetProgramsFilter: React.MutableRefObject<() => void>
   resetFilters: () => void
   setFilters: React.Dispatch<React.SetStateAction<FiltersType>>
   selectedPersona: number
@@ -65,14 +65,14 @@ interface FrameworkFilterSidebarProps extends Omit<TabsProps, "children"> {
   updateFilterOptions: (keys: any, value: any) => void
 }
 
-const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
+const ProgramsFilterSidebar: React.FC<ProgramsFilterSidebarProps> = ({
   allTags,
   selectedTags,
   handleTagSelect,
   setSelectedTags,
   trackCustomEvent,
   filters,
-  resetFrameworkFilter,
+  resetProgramsFilter,
   resetFilters,
   setFilters,
   selectedPersona,
@@ -159,10 +159,10 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
         }}
         onClick={() => {
           resetFilters()
-          resetFrameworkFilter.current()
+          resetProgramsFilter.current()
           trackCustomEvent({
-            eventCategory: "FrameworkFilterReset",
-            eventAction: `FrameworkFilterReset clicked`,
+            eventCategory: "ProgramsFilterReset",
+            eventAction: `ProgramsFilterReset clicked`,
             eventName: `reset filters`,
           })
         }}
@@ -191,7 +191,7 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
         </TabPanel>
         <TabPanel>
           <ProgramsFilterFeature
-            resetFrameworkFilter={resetFrameworkFilter}
+            resetProgramsFilter={resetProgramsFilter}
             filters={filters}
             updateFilterOption={updateFilterOption}
             updateFilterOptions={updateFilterOptions}
@@ -207,6 +207,6 @@ const FrameworkFilterSidebar: React.FC<FrameworkFilterSidebarProps> = ({
   )
 }
 
-FrameworkFilterSidebar.displayName = "FrameworkFilterSidebar"
+ProgramsFilterSidebar.displayName = "ProgramsFilterSidebar"
 
-export default FrameworkFilterSidebar
+export default ProgramsFilterSidebar

@@ -32,7 +32,7 @@ import Emoji from "@/components/Emoji"
 import InlineLink, { BaseLink, LinkProps } from "@/components/Link"
 import OldHeading from "@/components/OldHeading"
 import Text from "@/components/OldText"
-import { useFrameworkTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
+import { useProgramsTable } from "@/components/Programs/ProgramsTable/useProgramsTable"
 import { getSkillTranslationId } from "@/components/TutorialMetadata"
 import TutorialTags from "@/components/TutorialTags"
 
@@ -57,7 +57,7 @@ const Container = (props: TableProps) => (
   />
 )
 
-const FrameworkContainer = (props: ChildOnlyProp) => (
+const ProgramsContainer = (props: ChildOnlyProp) => (
   <Container
     borderBottom="1px"
     borderColor="lightBorder"
@@ -78,7 +78,7 @@ const Grid = forwardRef<SimpleGridProps, "tr">((props, ref) => (
   />
 ))
 
-const FrameworkContentHeader = (props: ChildOnlyProp) => (
+const ProgramsContentHeader = (props: ChildOnlyProp) => (
   <Grid
     bg="background.base"
     borderBottom="1px"
@@ -125,7 +125,7 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
   />
 )
 
-const Framework = forwardRef<ChildOnlyProp, "tr">((props, ref) => (
+const Programs = forwardRef<ChildOnlyProp, "tr">((props, ref) => (
   <Grid
     ref={ref}
     cursor="pointer"
@@ -336,31 +336,31 @@ const firstCol = "firstCol"
 const secondCol = "secondCol"
 const thirdCol = "thirdCol"
 
-export interface FrameworkTableProps {
+export interface ProgramsTableProps {
   filters: Record<string, boolean>
-  frameworkData: ITutorial[]
+  programsData: ITutorial[]
   setModalOpen: (open: boolean) => void
   trackCustomEvent: typeof trackCustomEvent;
   locale: string
 }
 
-const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setModalOpen, trackCustomEvent, locale }) => {
+const ProgramsTable = ({ filters, programsData, setAllTags, selectedTags, setModalOpen, trackCustomEvent, locale }) => {
   const { t } = useTranslation("page-programs")
   const {
-    filteredFrameworks,
+    filteredPrograms,
     updateSortOrder,
-  } = useFrameworkTable({
+  } = useProgramsTable({
     filters,
     selectedTags,
-    frameworkData,
+    programsData,
     t: t,
   });
 
-  // Use an effect to update allTags when filteredFrameworks changes
+  // Use an effect to update allTags when filteredPrograms changes
   useEffect(() => {
-    const newAllTags = getSortedTutorialTagsForLang(filteredFrameworks);
+    const newAllTags = getSortedTutorialTagsForLang(filteredPrograms);
     setAllTags(newAllTags);
-  }, [filteredFrameworks]);
+  }, [filteredPrograms]);
 
   const CardGrid = ({ children }: ChildOnlyProp) => (
     <Grid
@@ -391,52 +391,68 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
   const [dataView, setDataView] = useState(view);
 
   // Function to toggle the view state
-  const toggleView = () => {
-    const newView = dataView === 'program' ? 'content' : dataView === 'content' ? undefined : 'program';
-    setDataView(newView);
+  const toggleView = (viewType: 'program' | 'content' | '') => {
+    setDataView(viewType);
     router.push({
       pathname: router.pathname,
-      query: { ...router.query, view: newView },
+      query: { ...router.query, view: viewType },
     }, undefined, { shallow: true });
   };
-
+  
   useEffect(() => {
     // This effect ensures that if the URL's view parameter changes outside of the toggleView function,
     // the state updates to reflect it.
     if (view !== dataView) {
-      setDataView(view);
+      setDataView(view as 'program' | 'content' | '');
     }
   }, [view]);
 
   return (
     <Container>
-      <FrameworkContentHeader>
-        <Th>
-          <Button
-            onClick={toggleView}
+      <ProgramsContentHeader>
+      <Th>
+          {/* <Button
+            onClick={() => toggleView('')}
             variant="outline"
-            leftIcon={
-              !dataView ? <FaEye size="0.8em" /> :
-                dataView === 'program' ? <FaTools size="0.8em" /> :
-                  <FaBookOpen size="0.8em" />
-            }
+            leftIcon={dataView === '' || dataView == undefined ? <FaEye size="0.8em" /> : undefined}
+            mr={2}
           >
-            <Box display={{ base: 'none', sm: 'inline' }}>
-            {!dataView ? `${t("page-programs:page-programs-programs")} + ${t("page-programs:page-programs-content")}` : dataView === 'program' ? t("page-programs:page-programs-programs") : t("page-programs:page-programs-content")}
+            <Box>
+              All
             </Box>
           </Button>
+          <Button
+            onClick={() => toggleView('program')}
+            variant="outline"
+            leftIcon={dataView === 'program' ? <FaEye size="0.8em" /> : undefined}
+            mr={2}
+          >
+            <Box>
+              {t("page-programs:page-programs-programs")}
+            </Box>
+          </Button>
+          <Button
+            onClick={() => toggleView('content')}
+            variant="outline"
+            leftIcon={dataView === 'content' ? <FaEye size="0.8em" /> : undefined}
+            mr={2}
+          >
+            <Box display={{ base: 'none', sm: 'inline' }}>
+              {t("page-programs:page-programs-content")}
+            </Box>
+          </Button> */}
         </Th>
         <Th>
-          {filteredFrameworks.length === frameworkData.length ? (
+          {filteredPrograms.length === programsData.length ? (
             <Text as="span" fontSize={{ base: 'xs', md: 'sm' }} lineHeight="1.5em">
               {t("page-programs:page-programs-showing-all")} (
-              <strong>{frameworkData.length}</strong>)
+              <strong>{programsData.length}</strong>)
             </Text>
           ) : (
             <Text as="span" fontSize={{ base: 'xs', md: 'sm' }} lineHeight="1.5em">
               {t("page-programs:page-programs-showing")}{" "}
               <strong>
-                {filteredFrameworks.length} / {frameworkData.length}
+                {filteredPrograms.length} / {programsData.length}
               </strong>
               {/* {" "}
               {t("page-programs:page-programs-programs")} */}
@@ -500,11 +516,11 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
             isSearchable={false}
           />
         </Th> */}
-      </FrameworkContentHeader>
-      {!dataView || dataView === "program" ? filteredFrameworks.length !== 0 ? (
+      </ProgramsContentHeader>
+      {!dataView || dataView === "program" ? filteredPrograms.filter(tutorial => tutorial.type === "program").length !== 0 ? (
         <>
           <CardGrid>
-            {filteredFrameworks.filter(tutorial => tutorial.type === "program").map((tutorial, idx) => {
+            {filteredPrograms.filter(tutorial => tutorial.type === "program").map((tutorial, idx) => {
               const comingSoon = !!tutorial.to;
               return (
                 <Flex
@@ -716,14 +732,14 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
               </Button>
             </Box>
           </Box>) : ""}
-      {!dataView || dataView === "content" ? filteredFrameworks.length !== 0 ? (
+      {!dataView || dataView === "content" ? filteredPrograms.filter(tutorial => tutorial.type === "content").length !== 0 ? (
         <>
           {!dataView ? <H2
           >
              {t("page-programs:page-programs-content")}
           </H2> : ""}
           <Flex pt={2} gap={1} flexDirection="column">
-            {filteredFrameworks.filter(tutorial => tutorial.type === "content").map((tutorial, idx) => {
+            {filteredPrograms.filter(tutorial => tutorial.type === "content").map((tutorial, idx) => {
               const comingSoon = !!tutorial.to;
               return (
                 <Flex
@@ -766,7 +782,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                     </Text>
                     <Flex gap={2}>
                       <Badge variant="secondary">
-                        {t(getSkillTranslationId(tutorial.frameworkLevel!))}
+                        {t(getSkillTranslationId(tutorial.programsLevel!))}
                       </Badge>
                       <Badge variant="secondary">
                         {tutorial.programType}
@@ -796,7 +812,7 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
                 </Flex>
               )
             })}
-            <Flex
+            {/* <Flex
               textDecoration="none"
               flexDirection="column"
               justifyContent="center"
@@ -840,60 +856,13 @@ const FrameworkTable = ({ filters, frameworkData, setAllTags, selectedTags, setM
               >
                 {t("page-programs:page-programs-submit-button")}
               </Button>
-            </Flex>
+            </Flex> */}
           </Flex>
         </>
       )
-        : (
-          <Box
-            // boxShadow={tableBoxShadow}
-            w={"full"}
-          >
-            <Flex
-              justifyContent="center"
-              pb={{ base: 4, md: 8 }}
-              pt={{ base: 4, md: "initial" }}
-              px={{ base: 0, md: "initial" }}
-              flexDirection={{ base: "column", md: "initial" }}
-            >
-            </Flex>
-            <Box mt={0} textAlign="center" padding={12}>
-              <Emoji text=":crying_face:" fontSize="5xl" mb={8} mt={8} />
-              <OldHeading>
-                {t("page-programs:page-programs-filter-error")}
-              </OldHeading>
-              <Text>
-                {t("page-programs:page-programs-try-removing-filters")}
-              </Text>
-              <Button
-                variant="outline"
-                color="text"
-                borderColor="text"
-                _hover={{
-                  color: "primary.base",
-                  borderColor: "primary.base",
-                  boxShadow: cardBoxShadow,
-                }}
-                _active={{
-                  bg: "secondaryButtonBackgroundActive",
-                }}
-                py={2}
-                px={3}
-                onClick={() => {
-                  setModalOpen(true)
-                  trackCustomEvent({
-                    eventCategory: "tutorials tags",
-                    eventAction: "click",
-                    eventName: "submit",
-                  })
-                }}
-              >
-                {t("page-programs:page-programs-submit-button")}
-              </Button>
-            </Box>
-          </Box>) : ""}
+        : "" : ""}
     </Container>
   )
 }
 
-export default FrameworkTable
+export default ProgramsTable
