@@ -78,7 +78,7 @@ const ProgramsFilterProfile = ({
               } else {
                 setSelectedPersona(idx)
                 setFilters(persona.presetFilters)
-                setSelectedTags(persona.presetFilters.tags); // Set the tags for the selected persona
+                setSelectedTags(persona.presetTags.tags); // Set the tags for the selected persona
                 trackCustomEvent({
                   eventCategory: "UserPersona",
                   eventAction: `${persona.title}`,
