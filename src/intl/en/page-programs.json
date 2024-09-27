@@ -2,7 +2,7 @@
   "page-programs-showing-all": "Showing All",
   "page-programs-showing": "Showing",
   "page-programs-programs": "Programs",
-  "page-programs-content": "Content",
+  "page-programs-content": "Related Content",
   "page-programs-sort-by": "Sort By...",
   "page-programs-sort-default": "Default Sort (0-9)",
   "page-programs-sort-alphabetical": "Alphabetical Sort (A-Z)",
@@ -39,14 +39,20 @@
 
   "page-programs-filters-description": "What Are You Experiencing?",
   
-  "page-programs-profile-1-title": "Lack Of Motivation",
-  "page-programs-profile-1-description": "I can't seem to concentrate on the things I need to do.",
-  "page-programs-profile-2-title": "Frustrated At Others",
-  "page-programs-profile-2-description": "I don't understand why others can't just see it my way.",
-  "page-programs-profile-3-title": "Feeling Helpless",
-  "page-programs-profile-3-description": "I lack confidence in myself and my capability.",
-  "page-programs-profile-4-title": "Not Achieving My Goals",
-  "page-programs-profile-4-description": "I fall short of being able to achieve what I want to do.",
+"page-programs-profile-1-title": "Searching for Purpose",
+"page-programs-profile-1-description": "I’m unsure of my life’s purpose and need guidance in discovering and aligning my actions with my 'why'.",
+
+"page-programs-profile-2-title": "Lack of Motivation",
+"page-programs-profile-2-description": "I struggle to find the energy or inspiration to work towards my goals or even start tasks.",
+
+"page-programs-profile-3-title": " Out Of Order",
+"page-programs-profile-3-description": "I feel overwhelmed by my responsibilities and need help organizing my life.",
+
+"page-programs-profile-4-title": "Feeling Alone",
+"page-programs-profile-4-description": "I feel detached from the people around me and struggle to make meaningful connections.",
+
+"page-programs-profile-5-title": "Frustrated at Others",
+"page-programs-profile-5-description": "I don’t understand why others can’t just see things my way, and it leads to interpersonal conflicts.",
 
   "page-tutorials-env-banner": "Don't commit <code>.env</code>! Please make sure never to share or expose your <code>.env</code> file with anyone, as you are compromising your secrets in doing so. If you are using version control, add your <code>.env</code> to a <a href=\"https://git-scm.com/docs/gitignore\">gitignore</a> file."
 }

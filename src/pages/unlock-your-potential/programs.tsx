@@ -1,4 +1,4 @@
-import { useCallback,useEffect, useMemo, useRef, useState } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { GetStaticProps, InferGetServerSidePropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
@@ -151,30 +151,80 @@ const ProgramsPage = ({
 
   // programs stuff
 
+  const router = useRouter();
+  const { filters } = router.query;
+  const { tags } = router.query;
+
+  useEffect(() => {
+    // Assuming 'filters' is a comma-separated string of filter keys
+    const filterKeys = typeof filters === 'string' ? filters.split(',') : [];
+  
+    // Update all filter options only if there is a change
+    if (JSON.stringify(filterKeys) !== JSON.stringify(Object.keys(selectedFilters).filter(key => selectedFilters[key]))) {
+      updateFilterOptions(filterKeys, true); // Assuming you want to set each filter to true
+    }
+  }, [filters]);
+
+  useEffect(() => {
+    // Check if 'tags' query parameter exists and is a string
+    if (typeof tags === 'string') {
+      // Decode the URI component and split by comma to get an array of tags
+      const decodedTags = decodeURIComponent(tags).split(',');
+      // Update the selectedTags state only if there is a change
+      if (JSON.stringify(decodedTags) !== JSON.stringify(selectedTags)) {
+        setSelectedTags(decodedTags);
+      }
+    }
+  }, [tags, setSelectedTags]);
+
   const resetProgramsFilter = useRef(() => { })
   const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure({defaultIsOpen: true})
-  const [filters, setFilters] = useState(filterDefault)
+  const [selectedFilters, setSelectedFilters] = useState(filterDefault)
   const [selectedPersona, setSelectedPersona] = useState(NaN)
 
+  // Update URL when selectedFilters or selectedTags change
+  useEffect(() => {
+    const query = { ...router.query };
+
+    const filterKeys = Object.keys(selectedFilters).filter(key => selectedFilters[key]);
+    if (filterKeys.length > 0) {
+      query.filters = filterKeys.join(',');
+    } else {
+      delete query.filters;
+    }
+
+    if (selectedTags.length > 0) {
+      query.tags = selectedTags.join(',');
+    } else {
+      delete query.tags;
+    }
+
+    // Push the new query to the router
+    router.push({
+      pathname: router.pathname,
+      query
+    }, undefined, { shallow: true });
+  }, [selectedFilters, selectedTags]);
+
   const updateFilterOption = (key) => {
-    const updatedFilters = { ...filters }
+    const updatedFilters = { ...selectedFilters }
     updatedFilters[key] = !updatedFilters[key]
-    setFilters(updatedFilters)
+    setSelectedFilters(updatedFilters)
     setSelectedPersona(NaN)
   }
 
   const updateFilterOptions = (keys, value) => {
-    const updatedFilters = { ...filters }
+    const updatedFilters = { ...selectedFilters }
     for (let key of keys) {
       updatedFilters[key] = value
     }
-    setFilters(updatedFilters)
+    setSelectedFilters(updatedFilters)
     setSelectedPersona(NaN)
   }
 
   const resetFilters = () => {
     setSelectedPersona(NaN)
-    setFilters(filterDefault)
+    setSelectedFilters(filterDefault)
     setSelectedTags([])
   }
 
@@ -319,7 +369,7 @@ const ProgramsPage = ({
             <Box>
               <Text>{t("common:filters")}</Text>
               <Text fontSize="sm" lineHeight="14px" color="body.medium" mt={-5} mb={3}>
-                {Object.values(filters).reduce<number>(
+                {Object.values(selectedFilters).reduce<number>(
                   (acc, filter) => (filter ? acc + 1 : acc),
                   0
                 )}{" "}
@@ -350,13 +400,13 @@ const ProgramsPage = ({
                 setSelectedTags={setSelectedTags}
                 trackCustomEvent={trackCustomEvent}
                 {...{
-                  filters,
+                  filters:selectedFilters,
                   resetProgramsFilter,
                   updateFilterOption,
                   updateFilterOptions,
                   resetFilters,
                   selectedPersona,
-                  setFilters,
+                  setFilters:setSelectedFilters,
                   setSelectedPersona,
                 }}
               />
@@ -377,13 +427,13 @@ const ProgramsPage = ({
             setSelectedTags={setSelectedTags}
             trackCustomEvent={trackCustomEvent}
             {...{
-              filters,
+              filters:selectedFilters,
               resetProgramsFilter,
               updateFilterOption,
               updateFilterOptions,
               resetFilters,
               selectedPersona,
-              setFilters,
+              setFilters:setSelectedFilters,
               setSelectedPersona,
             }}
           />
@@ -413,7 +463,7 @@ const ProgramsPage = ({
         >
 
           <ProgramsTable
-            filters={filters}
+            filters={selectedFilters}
             programsData={filteredTutorialsByLang}
             setAllTags={setAllTags}
             selectedTags={selectedTags}

@@ -97,29 +97,6 @@ const ProgramsFilterFeature: React.FC<ProgramsFilterFeatureProps> = ({
   updateFilterOptions,
   ...restProps
 }) => {
-  
-  const router = useRouter();
-  const { filters } = router.query;
-  const { tags } = router.query;
-
-
-  React.useEffect(() => {
-    // Assuming 'filters' is a comma-separated string of filter keys
-    const filterKeys = typeof filters === 'string' ? filters.split(',') : [];
-  
-    // Update all filter options in one line
-    updateFilterOptions(filterKeys, true); // Assuming you want to set each filter to true
-  }, [filters]);
-
-  React.useEffect(() => {
-    // Check if 'tags' query parameter exists and is a string
-    if (typeof tags === 'string') {
-      // Decode the URI component and split by comma to get an array of tags
-      const decodedTags = decodeURIComponent(tags).split(',');
-      // Update the selectedTags state with the array of tags
-      setSelectedTags(decodedTags);
-    }
-  }, [tags, setSelectedTags]);
 
   const rest = {
     resetProgramsFilter: restProps.resetProgramsFilter,
