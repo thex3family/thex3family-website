@@ -354,7 +354,7 @@ const ProgramsPage = ({
                 {Object.values(selectedFilters).reduce<number>(
                   (acc, filter) => (filter ? acc + 1 : acc),
                   0
-                )}{" "}
+                ) + selectedTags.length}{" "}
                 {t("common:active")}
               </Text>
             </Box>
