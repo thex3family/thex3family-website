@@ -43,16 +43,8 @@ import { getSortedTutorialTagsForLang, ITutorial } from "@/lib/utils/tutorial"
 import { SECONDARY_NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 const Container = (props: TableProps) => (
-  <Table
+  <Box
     w="full"
-    sx={{
-      th: {
-        fontWeight: "normal",
-        p: {
-          fontSize: "0.9rem",
-        },
-      },
-    }}
     {...props}
   />
 )
@@ -68,7 +60,6 @@ const ProgramsContainer = (props: ChildOnlyProp) => (
 
 const Grid = forwardRef<SimpleGridProps, "tr">((props, ref) => (
   <SimpleGrid
-    as={Tr}
     ref={ref}
     templateColumns={{ base: "60% auto 0% 0% 5%", md: "40% auto auto auto 5%" }}
     w="full"
@@ -83,9 +74,11 @@ const ProgramsContentHeader = (props: ChildOnlyProp) => (
     bg="background.base"
     borderBottom="1px"
     borderColor="primary.base"
-    justifyContent={{ base: "space-between" }} // Adjust this to space-between
+    textAlign={{ base: "center", sm: "right", md: "left"}}
     templateColumns={{
-      base: "1fr auto auto", // Adjust this to 1fr for the first column and auto for the rest
+      base: "auto",
+      sm: "1fr 1fr",
+      md: "1fr 0.5fr",
     }}
     rowGap={{ base: 2, sm: 0 }}
     p={2}
@@ -97,7 +90,7 @@ const ProgramsContentHeader = (props: ChildOnlyProp) => (
     }}
     zIndex={1}
     sx={{
-      th: {
+      Box: {
         width: "100%",
         display: "flex", // Apply flexbox layout to the <th>
         justifyContent: "flex-end", // Justify content to the end
@@ -107,18 +100,8 @@ const ProgramsContentHeader = (props: ChildOnlyProp) => (
         fontSize: "0.9rem",
         lineHeight: "revert",
         letterSpacing: "revert",
-        textAlign: "revert",
+        textAlign: "center",
         textTransform: "revert",
-        "&:nth-of-type(3)": {
-          display: { base: "flex", sm: "revert" },
-          alignItems: "center",
-          gap: 4,
-          width: "200px",
-
-        },
-        "&:first-of-type": { // Add this to align the first <th> to the left
-          justifyContent: { base: "flex-start" },
-        },
       },
     }}
     {...props}
@@ -127,6 +110,7 @@ const ProgramsContentHeader = (props: ChildOnlyProp) => (
 
 const Programs = forwardRef<ChildOnlyProp, "tr">((props, ref) => (
   <Grid
+    tabIndex={0}
     ref={ref}
     cursor="pointer"
     py="25px"
@@ -144,6 +128,7 @@ const Programs = forwardRef<ChildOnlyProp, "tr">((props, ref) => (
         hideBelow: "md",
       },
     }}
+    templateColumns="auto"
     {...props}
   />
 ))
@@ -155,6 +140,7 @@ export const StyledSelect = (props) => (
   <ChakraSelect
     w="full"
     sx={{
+      textAlign: "center",
       ".react-select": {
         "&__control": {
           bg: "searchBackground",
@@ -410,8 +396,8 @@ const ProgramsTable = ({ filters, programsData, setAllTags, selectedTags, setMod
   return (
     <Container>
       <ProgramsContentHeader>
-      <Th>
-          {/* <Button
+      {/*<Box>
+           <Button
             onClick={() => toggleView('')}
             variant="outline"
             leftIcon={dataView === '' || dataView == undefined ? <FaEye size="0.8em" /> : undefined}
@@ -440,16 +426,16 @@ const ProgramsTable = ({ filters, programsData, setAllTags, selectedTags, setMod
             <Box display={{ base: 'none', sm: 'inline' }}>
               {t("page-programs:page-programs-content")}
             </Box>
-          </Button> */}
-        </Th>
-        <Th>
+          </Button> 
+        </Box>*/}
+        <Box>
           {filteredPrograms.length === programsData.length ? (
-            <Text as="span" fontSize={{ base: 'xs', md: 'sm' }} lineHeight="1.5em">
+            <Text as="span" fontSize={{ base: 'sm' }} lineHeight="1.5em">
               {t("page-programs:page-programs-showing-all")} (
               <strong>{programsData.length}</strong>)
             </Text>
           ) : (
-            <Text as="span" fontSize={{ base: 'xs', md: 'sm' }} lineHeight="1.5em">
+            <Text as="span" fontSize={{ base: 'sm' }} lineHeight="1.5em">
               {t("page-programs:page-programs-showing")}{" "}
               <strong>
                 {filteredPrograms.length} / {programsData.length}
@@ -458,8 +444,8 @@ const ProgramsTable = ({ filters, programsData, setAllTags, selectedTags, setMod
               {t("page-programs:page-programs-programs")} */}
             </Text>
           )}
-        </Th>
-        <Th>
+        </Box>
+        <Box>
           <StyledSelect
             className="react-select-container"
             classNamePrefix="react-select"
@@ -481,7 +467,7 @@ const ProgramsTable = ({ filters, programsData, setAllTags, selectedTags, setMod
             defaultValue={{ label: t("page-programs:page-programs-sort-default"), value: 'default' }} // Set the default option
             isSearchable={false}
           />
-        </Th>
+        </Box>
         {/* <Th>
           <StyledSelect
             className="react-select-container"
