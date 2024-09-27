@@ -2,7 +2,6 @@
 title: Program Principles
 description: Introducing the first principles behind all of the programs supported by Co-x3.
 lang: en
-incomplete: false
 ---
 
 Everyone is offering the latest hack or quick fix to improve your life, but have you ever stopped to ask: **How do they actually work?** And more importantly, **how can you apply them in a way that sticks**—so that these ideas become a natural part of your everyday life?
@@ -22,9 +21,9 @@ By **reasoning from first principles**, we strip away assumptions and instead fo
 
 ### Example: Habit Stacking
 
-Take **habit stacking**, for instance—a strategy made popular by James Clear’s book *Atomic Habits*. The first principle behind this concept is that **linking new behaviors to existing habits** makes them easier to implement consistently. This foundational truth helps us design habit-building resources that integrate habit stacking, ensuring our programs are built on proven methods.
+Take [Habit Stacking](/unlock-your-potential/principles/habit-stacking), for instance—a strategy made popular by James Clear’s book *Atomic Habits*. The first principle behind this concept is that **linking new behaviors to existing habits** makes them easier to implement consistently. This foundational truth helps us design habit-building resources that integrate habit stacking, ensuring our programs are built on proven methods.
 
-Thus, any habit-building resources we share will always have that principle baked in, along with others like **small wins** and **visible progress**.
+Thus, any habit-building resources we share in the [Gamify Your Life](/unlock-your-potential/programs/gamify-your-life) program will always have that principle baked in, along with others like [Celebrate Your Wins](/unlock-your-potential/principles/celebrate-your-wins) and [The Gatcha Effect](/unlock-your-potential/principles/the-gacha-effect).
 
 ---
 

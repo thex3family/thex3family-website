@@ -50,6 +50,8 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/unlock-your-potential/programs/q-and-a",
       "/unlock-your-potential/programs/now-i-understand",
       "/unlock-your-potential/programs/live-your-best-life",
+      "/unlock-your-potential/programs/gamify-your-life",
+      "/unlock-your-potential/programs/be-intentional",
 
       // principles
       "/unlock-your-potential/principles",
@@ -62,6 +64,26 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/unlock-your-potential/principles/sensory-deprivation",
       "/unlock-your-potential/principles/empathy",
       "/unlock-your-potential/principles/pareto-principle-80-20-rule",
+
+      "/unlock-your-potential/principles/visible-progress-fuels-motivation",
+      "/unlock-your-potential/principles/big-results-take-time",
+      "/unlock-your-potential/principles/better-done-than-perfect",
+      "/unlock-your-potential/principles/immersion-drives-engagement",
+      "/unlock-your-potential/principles/visibility-drives-accountability",
+      "/unlock-your-potential/principles/reward-should-match-effort",
+      "/unlock-your-potential/principles/reward-what-matters",
+      "/unlock-your-potential/principles/write-it-or-forget-it",
+      "/unlock-your-potential/principles/quests-you-get-to-do",
+      "/unlock-your-potential/principles/habit-stacking",
+      "/unlock-your-potential/principles/delayed-gratification",
+      "/unlock-your-potential/principles/balance-reduces-burnout",
+      "/unlock-your-potential/principles/perspective-changes-rewards",
+      "/unlock-your-potential/principles/celebrate-your-wins",
+      "/unlock-your-potential/principles/clarity-builds-confidence",
+      "/unlock-your-potential/principles/practice-with-purpose",
+      "/unlock-your-potential/principles/measure-twice-cut-once",
+      "/unlock-your-potential/principles/the-gacha-effect",
+
 
     // make-positive-impact
     "/make-positive-impact",

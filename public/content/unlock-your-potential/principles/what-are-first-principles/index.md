@@ -1,8 +1,7 @@
 ---
 title: What Are First Principles?
-description: A detailed exploration of the concept of first principles, how they differ from conventional thinking, and why Co-x3 uses them as the foundation for its programs.
+description: A detailed exploration of the concept of first principles, and how they differ from conventional thinking.
 lang: en
-incomplete: false
 ---
 
 ## What Are First Principles?
