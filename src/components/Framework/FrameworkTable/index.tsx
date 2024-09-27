@@ -37,16 +37,8 @@ import { FrameworkData } from "@/data/framework/framework-data"
 import { NAV_BAR_PX_HEIGHT } from "@/lib/constants"
 
 const Container = (props: TableProps) => (
-  <Table
+  <Box
     w="full"
-    sx={{
-      th: {
-        fontWeight: "normal",
-        p: {
-          fontSize: "0.9rem",
-        },
-      },
-    }}
     {...props}
   />
 )
@@ -62,9 +54,8 @@ const FrameworkContainer = (props: ChildOnlyProp) => (
 
 const Grid = forwardRef<SimpleGridProps, "tr">((props, ref) => (
   <SimpleGrid
-    as={Tr}
     ref={ref}
-    templateColumns={{ base: "60% auto 0% 0% 0%", md: "40% auto auto auto 5%" }}
+    templateColumns={{ base: "55% auto 0% 0% 0%", md: "40% auto auto 5%", lg: "40% auto auto auto 5%" }}
     w="full"
     columnGap={2}
     alignItems="center"
@@ -77,12 +68,13 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     bg="background.base"
     borderBottom="1px"
     borderColor="primary.base"
+    textAlign={{ base: "center", sm: "center", md: "center"}}
     templateColumns={{
       base: "auto",
-      sm: "60% auto 0% 0% 5%",
-      md: "40% auto auto auto 5%",
+      sm: "60% auto 5%",
+      md: "40% auto auto 5%",
+      lg: "40% auto auto auto 5%",
     }}
-    rowGap={{ base: 4, sm: 0 }}
     p={2}
     position="sticky"
     top={{
@@ -91,23 +83,18 @@ const FrameworkContentHeader = (props: ChildOnlyProp) => (
     }}
     zIndex={1}
     sx={{
-      th: {
+      Box: {
+        width: "100%",
+        display: "flex", // Apply flexbox layout to the <th>
+        justifyContent: "flex-end", // Justify content to the end
         p: 0,
         borderBottom: "none",
         color: "currentColor",
         fontSize: "0.9rem",
         lineHeight: "revert",
         letterSpacing: "revert",
-        textAlign: "revert",
+        textAlign: "center",
         textTransform: "revert",
-        "&:nth-of-type(2)": {
-          display: { base: "flex", sm: "revert" },
-          alignItems: "center",
-          gap: 4,
-        },
-        "&:nth-of-type(3), &:nth-of-type(4)": {
-          hideBelow: "md",
-        },
       },
     }}
     {...props}
@@ -124,12 +111,12 @@ const Framework = forwardRef<ChildOnlyProp, "tr">((props, ref) => (
       p: {
         m: 0,
       },
-      td: {
+      Box: {
         padding: 0,
         borderBottom: "none",
         height: "full",
       },
-      "td:nth-of-type(3), td:nth-of-type(4)": {
+      "box:nth-of-type(3), box:nth-of-type(4)": {
         hideBelow: "md",
       },
     }}
@@ -144,6 +131,7 @@ const StyledSelect = (props) => (
   <ChakraSelect
     w="full"
     sx={{
+      textAlign: "center",
       ".react-select": {
         "&__control": {
           bg: "searchBackground",
@@ -336,14 +324,14 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
   return (
     <Container>
       <FrameworkContentHeader>
-        <Th>
+        <Box mb={{ base: "2", xs: "0" }}>
           {filteredFrameworks.length === frameworkCardData.length ? (
-            <Text as="span">
+            <Text as="span" fontSize={{ base: 'sm' }} lineHeight="1.5em">
               {t("page-better-life-framework-showing-all")} (
               <strong>{frameworkCardData.length}</strong>)
             </Text>
           ) : (
-            <Text as="span">
+            <Text as="span" fontSize={{ base: 'sm' }} lineHeight="1.5em">
               {t("page-better-life-framework-showing")}{" "}
               <strong>
                 {filteredFrameworks.length} / {frameworkCardData.length}
@@ -351,8 +339,8 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
               {t("page-better-life-framework-frameworks")}
             </Text>
           )}
-        </Th>
-        <Th>
+        </Box>
+        <Box>
           <StyledSelect
             className="react-select-container"
             classNamePrefix="react-select"
@@ -368,9 +356,10 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             defaultValue={firstFeatureSelect}
             isSearchable={false}
           />
-        </Th>
-        <Th>
+        </Box>
+        <Box>
           <StyledSelect
+            hideBelow="md"
             className="react-select-container"
             classNamePrefix="react-select"
             options={[
@@ -385,9 +374,10 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             defaultValue={secondFeatureSelect}
             isSearchable={false}
           />
-        </Th>
-        <Th>
+        </Box>
+        <Box>
           <StyledSelect
+            hideBelow="lg"
             className="react-select-container"
             classNamePrefix="react-select"
             options={[
@@ -402,7 +392,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
             defaultValue={thirdFeatureSelect}
             isSearchable={false}
           />
-        </Th>
+        </Box>
       </FrameworkContentHeader>
       {filteredFrameworks.map((framework, idx) => {
 
@@ -437,7 +427,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                   })
               }}
             >
-              <Td lineHeight="revert">
+              <Box lineHeight="revert">
                 <FlexInfo>
                   <Box>
                     <Image
@@ -511,8 +501,8 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                     </Box> */}
                   </Box>
                 </FlexInfo>
-              </Td>
-              <Td>
+              </Box>
+              <Box>
                 <FlexInfoCenter className={firstCol}>
                   <Tooltip
                     content={
@@ -524,8 +514,8 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                     {firstLastTrueLabel ? firstLastTrueLabel.label : "N/A"}
                   </Tooltip>
                 </FlexInfoCenter>
-              </Td>
-              <Td>
+              </Box>
+              <Box hideBelow="md">
                 <FlexInfoCenter className={secondCol}>
                   <Tooltip
                     content={
@@ -537,8 +527,8 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                     {secondLastTrueLabel ? secondLastTrueLabel.label : "N/A"}
                   </Tooltip>
                 </FlexInfoCenter>
-              </Td>
-              <Td>
+              </Box>
+              <Box hideBelow="lg">
                 <FlexInfoCenter className={thirdCol}>
                   <Tooltip
                     content={
@@ -550,8 +540,8 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                     {thirdLastTrueLabel ? thirdLastTrueLabel.label : "N/A"}
                   </Tooltip>
                 </FlexInfoCenter>
-              </Td>
-              <Td>
+              </Box>
+              <Box>
                 <FlexInfoCenter>
                   <Box>
                     <Icon
@@ -561,7 +551,7 @@ const FrameworkTable = ({ filters, frameworkData }: FrameworkTableProps) => {
                     />
                   </Box>
                 </FlexInfoCenter>
-              </Td>
+              </Box>
             </Framework>
             {framework.moreInfo && (
               <FrameworkMoreInfo
