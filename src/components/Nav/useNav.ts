@@ -81,18 +81,18 @@ export const useNav = ({ path }: { path: string }) => {
               text: t("programs-title"),
               to: "/unlock-your-potential/programs",
             },
-            {
-              text: t("knowledge-title"),
-              to: "/unlock-your-potential/programs?filters=knowledge",
-            },
-            {
-              text: t("tools-title"),
-              to: "/unlock-your-potential/programs?filters=tools",
-            },
-            {
-              text: t("community-title"),
-              to: "/unlock-your-potential/programs?filters=community",
-            },
+            // {
+            //   text: t("knowledge-title"),
+            //   to: "/unlock-your-potential/programs?filters=knowledge",
+            // },
+            // {
+            //   text: t("tools-title"),
+            //   to: "/unlock-your-potential/programs?filters=tools",
+            // },
+            // {
+            //   text: t("community-title"),
+            //   to: "/unlock-your-potential/programs?filters=community",
+            // },
             {
               text: t("docs-title"),
               to: "/unlock-your-potential/principles/",
