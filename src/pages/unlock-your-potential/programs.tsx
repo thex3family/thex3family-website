@@ -117,14 +117,19 @@ const ProgramsPage = ({
     [internalTutorials, locale]
   )
 
+  
+  const { t } = useTranslation(["page-programs"]);
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const router = useRouter();
+  const { filters, tags } = router.query;
+
+  // Initialize selectedFilters and selectedTags based on URL parameters
+  const [selectedFilters, setSelectedFilters] = useState({});
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+
   const [allTags, setAllTags] = useState(() => getSortedTutorialTagsForLang(filteredTutorialsByLang));
-
-  const { t } = useTranslation(["page-programs"])
-
-  const [isModalOpen, setModalOpen] = useState(false)
-
-  // Add this state for tag selection
-  const [selectedTags, setSelectedTags] = useState<Array<string>>([]);
 
   // Add this handler for tag selection
   const handleTagSelect = (tagName: string) => {
@@ -140,71 +145,48 @@ const ProgramsPage = ({
     });
   };
 
-  const CardGrid = ({ children }: ChildOnlyProp) => (
-    <Grid
-      templateColumns="repeat(auto-fill, minmax(min(100%, 280px), 1fr))"
-      gap={1}
-    >
-      {children}
-    </Grid>
-  )
-
-  // programs stuff
-
-  const router = useRouter();
-  const { filters } = router.query;
-  const { tags } = router.query;
-
+  // Initialize state based on URL parameters when the component mounts
   useEffect(() => {
-    // Assuming 'filters' is a comma-separated string of filter keys
     const filterKeys = typeof filters === 'string' ? filters.split(',') : [];
-  
-    // Update all filter options only if there is a change
-    if (JSON.stringify(filterKeys) !== JSON.stringify(Object.keys(selectedFilters).filter(key => selectedFilters[key]))) {
-      updateFilterOptions(filterKeys, true); // Assuming you want to set each filter to true
-    }
-  }, [filters]);
+    const initialFilters = filterKeys.reduce((acc, key) => {
+      acc[key] = true;
+      return acc;
+    }, {});
+    setSelectedFilters(initialFilters);
 
-  useEffect(() => {
-    // Check if 'tags' query parameter exists and is a string
     if (typeof tags === 'string') {
-      // Decode the URI component and split by comma to get an array of tags
       const decodedTags = decodeURIComponent(tags).split(',');
-      // Update the selectedTags state only if there is a change
-      if (JSON.stringify(decodedTags) !== JSON.stringify(selectedTags)) {
-        setSelectedTags(decodedTags);
-      }
+      setSelectedTags(decodedTags);
     }
-  }, [tags, setSelectedTags]);
+  }, [filters, tags]);
+
+  // Update URL when selectedFilters or selectedTags change (doesn't work right now because on load, it will just wipe out the filters and tags from the URL)
+  // useEffect(() => {
+  //   const query = { ...router.query };
+
+  //   const filterKeys = Object.keys(selectedFilters).filter(key => selectedFilters[key]);
+  //   if (filterKeys.length > 0) {
+  //     query.filters = filterKeys.join(',');
+  //   } else {
+  //     delete query.filters;
+  //   }
+
+  //   if (selectedTags.length > 0) {
+  //     query.tags = selectedTags.join(',');
+  //   } else {
+  //     delete query.tags;
+  //   }
+
+  //   // Push the new query to the router
+  //   router.push({
+  //     pathname: router.pathname,
+  //     query
+  //   }, undefined, { shallow: true });
+  // }, [selectedFilters, selectedTags]);
 
   const resetProgramsFilter = useRef(() => { })
   const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure({defaultIsOpen: true})
-  const [selectedFilters, setSelectedFilters] = useState(filterDefault)
   const [selectedPersona, setSelectedPersona] = useState(NaN)
-
-  // Update URL when selectedFilters or selectedTags change
-  useEffect(() => {
-    const query = { ...router.query };
-
-    const filterKeys = Object.keys(selectedFilters).filter(key => selectedFilters[key]);
-    if (filterKeys.length > 0) {
-      query.filters = filterKeys.join(',');
-    } else {
-      delete query.filters;
-    }
-
-    if (selectedTags.length > 0) {
-      query.tags = selectedTags.join(',');
-    } else {
-      delete query.tags;
-    }
-
-    // Push the new query to the router
-    router.push({
-      pathname: router.pathname,
-      query
-    }, undefined, { shallow: true });
-  }, [selectedFilters, selectedTags]);
 
   const updateFilterOption = (key) => {
     const updatedFilters = { ...selectedFilters }
