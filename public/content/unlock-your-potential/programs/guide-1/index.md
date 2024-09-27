@@ -2,7 +2,7 @@
 title: "Guide To Survival"
 description: I'm desperately trying to do what I need to survive in this world.
 author: Conrad Lin
-tags: ["understand yourself", "guide"]
+tags: ["understand yourself", "guide", "understand others"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_1

@@ -2,7 +2,7 @@
 title: "Level Up With Us"
 description: Meaningful conversations about topics that we've seen different perspectives of.
 author: Conrad Lin
-tags: ["level up with us"]
+tags: ["level up with us", "growth", "understand others"]
 programType: knowledge
 location: all podcast platforms
 frameworkLevel: ALL
