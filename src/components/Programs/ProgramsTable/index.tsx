@@ -767,7 +767,7 @@ const ProgramsTable = ({ filters, programsData, setAllTags, selectedTags, setMod
                     </Text>
                     <Flex gap={2}>
                       <Badge variant="secondary">
-                        {t(getSkillTranslationId(tutorial.programsLevel!))}
+                        {t(getSkillTranslationId(tutorial.frameworkLevel!))}
                       </Badge>
                       <Badge variant="secondary">
                         {tutorial.programType}
