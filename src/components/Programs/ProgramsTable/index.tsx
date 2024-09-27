@@ -80,7 +80,6 @@ const ProgramsContentHeader = (props: ChildOnlyProp) => (
       sm: "1fr 1fr",
       md: "1fr 0.5fr",
     }}
-    rowGap={{ base: 2, sm: 0 }}
     p={2}
     position="sticky"
     top={{
@@ -428,7 +427,7 @@ const ProgramsTable = ({ filters, programsData, setAllTags, selectedTags, setMod
             </Box>
           </Button> 
         </Box>*/}
-        <Box>
+        <Box mb={{ base: "2", xs: "0" }}>
           {filteredPrograms.length === programsData.length ? (
             <Text as="span" fontSize={{ base: 'sm' }} lineHeight="1.5em">
               {t("page-programs:page-programs-showing-all")} (
