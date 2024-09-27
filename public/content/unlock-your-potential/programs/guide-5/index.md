@@ -2,7 +2,7 @@
 title: "Guide To Systems"
 description: I'm aware that people have different wants, so I'm trying to create a system that would help everyone get what they want.
 author: Conrad Lin
-tags: ["understand yourself", "guide", "students", "creatives", "retirees"]
+tags: ["understand yourself", "guide", "understand others"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_5

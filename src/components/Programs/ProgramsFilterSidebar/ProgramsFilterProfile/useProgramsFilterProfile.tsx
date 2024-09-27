@@ -105,7 +105,7 @@ export const useProgramsFilterProfile = (setSelectedTags) => {
 
         },
         presetTags: {
-          tags: ["guide"]
+          tags: ["understand others"]
         },
     },
   ]

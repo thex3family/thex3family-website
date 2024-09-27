@@ -2,7 +2,7 @@
 title: "Guide To Belonging"
 description: I found what what works for me and my tribe, and everyone should do it too.
 author: Conrad Lin
-tags: ["understand yourself", "guide", "students", "creatives", "retirees"]
+tags: ["understand yourself", "guide", "understand others"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_4

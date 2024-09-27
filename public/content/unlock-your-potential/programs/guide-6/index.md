@@ -2,7 +2,7 @@
 title: "Guide To Letting Go"
 description: I am aware that systems don't work on everyone. It might be better if there was no structure.
 author: Conrad Lin
-tags: ["understand yourself", "guide", "students", "creatives", "retirees"]
+tags: ["understand yourself", "guide", "understand others"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_6

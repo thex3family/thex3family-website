@@ -2,7 +2,7 @@
 title: "Level Up With Conrad"
 description: Empathetic conversations to help us level up that we wish we had a decade ago.
 author: Conrad Lin
-tags: ["level up with conrad", "1-on-1"]
+tags: ["level up with conrad", "1-on-1", purpose, motivation, understand yourself]
 programType: knowledge
 location: all podcast platforms
 frameworkLevel: ALL

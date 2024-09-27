@@ -2,7 +2,7 @@
 title: "Guide To Boundaries"
 description: I accept that people should be free to be themselves, but I need to protect myself from having my boundaries crossed.
 author: Conrad Lin
-tags: ["understand yourself", "guide", "retirees"]
+tags: ["understand yourself", "guide", "understand others"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_7

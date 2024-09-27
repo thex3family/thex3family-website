@@ -2,7 +2,7 @@
 title: "Live Your Best Life"
 description: Follow our wins and failures as we pursue our best life together with the Co-x3 Family Foundation.
 author: Conrad Lin
-tags: ["live your best life"]
+tags: ["live your best life", "motivation", "purpose"]
 programType: knowledge
 location: episodic vlogs 
 frameworkLevel: ALL

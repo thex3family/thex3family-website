@@ -2,7 +2,7 @@
 title: "Guide To Winning"
 description: No one else is going to take care of me better than me, so I need to make sure I get what I want.
 author: Conrad Lin
-tags: ["understand yourself", "guide", "students", "creatives"]
+tags: ["understand yourself", "guide", "understand others"]
 programType: knowledge
 location: article
 frameworkLevel: LEVEL_3
