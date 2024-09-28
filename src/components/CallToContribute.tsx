@@ -27,7 +27,7 @@ const ContentColumn = (props: {
     flexBasis="50%"
     p={4}
     color="text"
-    textAlign={{ base: "center", lg: "start" }}
+    textAlign={{ base: "start" }}
     {...props}
   />
 )
@@ -89,7 +89,7 @@ const CallToContribute: React.FC<IProps> = ({ editPath }) => {
         </DescriptionParagraph>
         <DescriptionParagraph>
           <Translation id="page-docs:page-docs-calltocontribute-desc-3" />{" "}
-          <InlineLink to="/unlock-your-potential/docs/template/">
+          <InlineLink to="/unlock-your-potential/principles/how-do-I-submit-first-principles">
             <Translation id="page-docs:page-docs-calltocontribute-link" />
           </InlineLink>
         </DescriptionParagraph>
