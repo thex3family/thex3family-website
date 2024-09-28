@@ -49,7 +49,7 @@ import codeExample from "!!raw-loader!@/data/codeExample.js"
 import { fetchCommunityEvents } from "@/lib/api/calendarEvents"
 import better_life_framework from "@/public/better_life_framework.png"
 import community from "@/public/community.png"
-import community_gathering from "@/public/community_gathering.png"
+import comrades from "@/public/comrades.png"
 import contribute from "@/public/contribute.png"
 import creatives from "@/public/creatives.png"
 import hero from "@/public/home/hero.png"
@@ -372,7 +372,7 @@ const HomePage = ({
             </Box>
             <ImageContainer>
               <Image
-                src={community_gathering}
+                src={comrades}
                 alt={t("page-index:page-index-get-started-image-alt")}
                 width={720}
                 backgroundSize="cover"
