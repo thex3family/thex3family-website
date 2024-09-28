@@ -16,7 +16,7 @@ const HomeHero = ({ heroImg }: HomeHeroProps) => {
 
   return (
     <Box>
-      <Box h={440}>
+      <Box height={{ base: "150", sm: "250", md: "350", lg: "440"}}>
         <Image
           src={heroImg}
           alt={t("common:hero-image-alt")}
