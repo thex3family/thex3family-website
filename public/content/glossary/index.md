@@ -20,7 +20,7 @@ lang: en
 
 ## B {#section-b}
 
-Nothing Here Yet.
+<GlossaryDefinition term="better-life" />
 
 <Divider />
 
@@ -55,15 +55,15 @@ Nothing Here Yet.
 
 ## G {#section-g}
 
-<GlossaryDefinition term="goals" />
 <GlossaryDefinition term="gamification" />
+<GlossaryDefinition term="goals" />
 <GlossaryDefinition term="growth-mindset" />
 
 <Divider />
 
 ## H {#section-h}
 
-Nothing Here Yet.
+<GlossaryDefinition term="happiness" />
 
 <Divider />
 
@@ -81,7 +81,7 @@ Nothing Here Yet.
 
 ## L {#section-l}
 
-Nothing Here Yet.
+<GlossaryDefinition term="leveling-up" />
 
 <Divider />
 
@@ -105,6 +105,8 @@ Nothing Here Yet.
 
 ## P {#section-p}
 
+<GlossaryDefinition term="perspectives" />
+<GlossaryDefinition term="principles" />
 <GlossaryDefinition term="programs" />
 <GlossaryDefinition term="projects" />
 
