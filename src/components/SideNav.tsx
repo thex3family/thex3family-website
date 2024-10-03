@@ -129,9 +129,11 @@ const NavLink: React.FC<IPropsNavLink> = ({ item, path, isTopLevel }) => {
           variants={innerLinksVariants}
           initial={isOpen ? "open" : "closed"}
         >
-          {item.items.map((childItem, idx) => (
-            <NavLink item={childItem} path={path} key={idx} />
-          ))}
+          {item.items
+            .sort((a, b) => a.id.localeCompare(b.id))
+            .map((childItem, idx) => (
+              <NavLink item={childItem} path={path} key={idx} />
+            ))}
         </Box>
       </Box>
     )
