@@ -185,7 +185,7 @@ const ProgramsPage = ({
   // }, [selectedFilters, selectedTags]);
 
   const resetProgramsFilter = useRef(() => { })
-  const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure({defaultIsOpen: true})
+  const { isOpen: showMobileSidebar, onOpen, onClose } = useDisclosure()
   const [selectedPersona, setSelectedPersona] = useState(NaN)
 
   const updateFilterOption = (key) => {
@@ -315,8 +315,7 @@ const ProgramsPage = ({
         </Flex>
       </Modal>
 
-      {/* Show on all sizes so we can have the popup to pre-filter programs on first open*/}
-      <Show>
+      <Hide above="lg">
         <Box
           display={{ base: "block", lg: "none" }}
           position="sticky"
@@ -395,7 +394,7 @@ const ProgramsPage = ({
             </DrawerBody>
           </DrawerContent>
         </Drawer>
-      </Show>
+      </Hide>
 
       <Flex px={{ base: 0, md: 8 }} mt={{ base: 0, lg: 10 }} pb={6} gap={6} id="start">
         <Show above="lg">
