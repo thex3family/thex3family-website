@@ -21,6 +21,7 @@
     - id: clarity-builds-confidence
     - id: delayed-gratification
     - id: empathy
+    - id: fight-flight-freeze
     - id: flow-state
     - id: habit-stacking
     - id: immersion-drives-engagement
@@ -33,7 +34,9 @@
     - id: quests-you-get-to-do
     - id: reward-should-match-effort
     - id: reward-what-matters
+    - id: self-preservation
     - id: sensory-deprivation
+    - id: short-term-gain-long-term-pain
     - id: the-gacha-effect
     - id: visibility-drives-accountability
     - id: visible-progress-fuels-motivation
