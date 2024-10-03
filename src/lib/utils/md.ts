@@ -60,7 +60,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/unlock-your-potential/principles/breathing-techniques",
       "/unlock-your-potential/principles/flow-state",
       "/unlock-your-potential/principles/meditation",
-      "/unlock-your-potential/principles/pain",
+      "/unlock-your-potential/principles/seek-discomfort",
       "/unlock-your-potential/principles/sensory-deprivation",
       "/unlock-your-potential/principles/empathy",
       "/unlock-your-potential/principles/pareto-principle-80-20-rule",
