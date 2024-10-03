@@ -14,6 +14,7 @@
   path: /unlock-your-potential/principles
   items:
     - id: balance-reduces-burnout
+    - id: basic-needs-are-universal
     - id: better-done-than-perfect
     - id: big-results-take-time
     - id: breathing-techniques
@@ -38,6 +39,7 @@
     - id: sensory-deprivation
     - id: short-term-gain-long-term-pain
     - id: the-gacha-effect
+    - id: together-we-thrive
     - id: visibility-drives-accountability
     - id: visible-progress-fuels-motivation
     - id: write-it-or-forget-it
