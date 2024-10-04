@@ -1,5 +1,5 @@
 ---
-title: New Principle Template
+title: Submitting New Principles
 description: Our preferred page structure for submitting a new principle.
 lang: en
 incomplete: true

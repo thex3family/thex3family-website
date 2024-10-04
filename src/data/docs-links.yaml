@@ -8,8 +8,8 @@
 - id: overview
   path: /unlock-your-potential/principles
   items:
-    - id: what-are-first-principles
-    - id: how-do-I-submit-first-principles
+    - id: first-principles-explained
+    - id: submitting-new-principles
 - id: principles
   path: /unlock-your-potential/principles
   items:
@@ -48,3 +48,4 @@
     - id: systems-thinking
     - id: perfectly-imperfect
     - id: vulnerability-connects-and-heals
+    - id: its-ok-to-say-no

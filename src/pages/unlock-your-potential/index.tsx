@@ -304,7 +304,7 @@ const DevelopersPage = () => {
             </OldHeading>
             <SimpleGrid columns={[1, 1, 2, 3]} spacing={6}>
               {docLink.items ? (
-                docLink.items.map((item, itemIndex) => (
+                docLink.items.sort((a, b) => a.id.localeCompare(b.id)).map((item, itemIndex) => (
                   <Box key={itemIndex}>
                     <InlineLink to={`${docLink.path}/${item.id}`}>
                       <Translation id={`${baseTranslation}${item.id}-title`} />
