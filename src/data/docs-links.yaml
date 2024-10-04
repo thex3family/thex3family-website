@@ -24,6 +24,8 @@
     - id: perspective-changes-rewards
     - id: practice-with-purpose
     - id: write-it-or-forget-it
+    - id: average-of-5
+    - id: i-know-that-i-know-nothing
 - id: specific-principles
   path: /unlock-your-potential/principles
   items:
@@ -47,9 +49,9 @@
     - id: visibility-drives-accountability
     - id: visible-progress-fuels-motivation
     - id: start-with-why
-    - id: average-of-5
     - id: systems-thinking
     - id: perfectly-imperfect
     - id: vulnerability-connects-and-heals
     - id: its-ok-to-say-no
     - id: discipline-comes-from-within
+    - id: ask-dont-assume
