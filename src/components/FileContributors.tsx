@@ -60,9 +60,15 @@ const Contributor = ({ contributor }: { contributor: Author }) => {
         me={2}
       />
       {contributor.user && (
-        <InlineLink to={contributor.user.url}>
-          @{contributor.user.login}
-        </InlineLink>
+        contributor.user.login === "conradlin" ? (
+          <InlineLink to="/links/conradlin" target="_blank">
+            Conrad Lin
+          </InlineLink>
+        ) : (
+          <InlineLink to={contributor.user.url}>
+            @{contributor.user.login}
+          </InlineLink>
+        )
       )}
       {!contributor.user && <span>{contributor.name}</span>}
     </ListItem>
@@ -146,11 +152,17 @@ const FileContributors: React.FC<FileContributorsProps> = ({
           <Skeleton isLoaded={!loading}>
             <Text m={0} color="text200">
               <Translation id="last-edit" />:{" "}
-              {lastContributor.user && (
-                <InlineLink to={lastContributor.user.url}>
-                  @{lastContributor.user.login}
-                </InlineLink>
-              )}
+                {lastContributor.user && (
+                  lastContributor.user.login === "conradlin" ? (
+                    <InlineLink to="/links/conradlin" target="_blank">
+                      Conrad Lin
+                    </InlineLink>
+                  ) : (
+                    <InlineLink to={lastContributor.user.url}>
+                      @{lastContributor.user.login}
+                    </InlineLink>
+                  )
+                )}
               {!lastContributor.user && <span>{lastContributor.name}</span>} on {" "}
               {getLocaleTimestamp(locale as Lang, lastEdit)}
             </Text>
