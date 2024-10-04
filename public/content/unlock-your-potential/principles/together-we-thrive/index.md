@@ -57,6 +57,6 @@ By identifying who or what can provide help before you're in crisis, you ensure 
 
 ## Related Programs
 
-This principle is especially important for **Perspective 2: Dependence**, where we learn that survival is not just an individual pursuit, but rather something that is achieved through the help of others.
+This principle is especially important for **Perspective 2: Dependency**, where we learn that survival is not just an individual pursuit, but rather something that is achieved through the help of others.
 
-<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_2">Explore Programs related to 2: Dependence</ButtonLink>
+<ButtonLink to="/unlock-your-potential/programs?filters=LEVEL_2">Explore Programs related to 2: Dependency</ButtonLink>
