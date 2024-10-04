@@ -297,36 +297,36 @@ const DevelopersPage = () => {
             <Translation id="page-unlock-your-potential:page-unlock-your-potential-documentation-description" />
           </Subtitle>
         </Content>
-        <ThreeColumnContent>
-          {docLinks.map((docLink, index) => (
-            <Column key={index}>
-              <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
-                <Translation id={`${baseTranslation}${docLink.id}-title`} />
-              </OldHeading>
+        {docLinks.map((docLink, index) => (
+          <Content key={index}>
+            <OldHeading as="h3" fontSize={{ base: "xl", md: "2xl" }}>
+              <Translation id={`${baseTranslation}${docLink.id}-title`} />
+            </OldHeading>
+            <SimpleGrid columns={[1, 1, 2, 3]} spacing={6}>
               {docLink.items ? (
                 docLink.items.map((item, itemIndex) => (
-                  <div key={itemIndex}>
+                  <Box key={itemIndex}>
                     <InlineLink to={`${docLink.path}/${item.id}`}>
                       <Translation id={`${baseTranslation}${item.id}-title`} />
                     </InlineLink>
-                    <Text>
+                    <Text  noOfLines={1}>
                       <Translation id={`${baseTranslation}${item.id}-description`} />
                     </Text>
-                  </div>
+                  </Box>
                 ))
               ) : (
-                <>
-                <InlineLink to={docLink.to}>
-                  <Translation id={`${baseTranslation}${docLink.id}-title`} />
-                </InlineLink>
-                <Text>
-                <Translation id={`${baseTranslation}${docLink.id}-description`} />
-              </Text>
-              </>
+                <Box>
+                  <InlineLink to={docLink.to}>
+                    <Translation id={`${baseTranslation}${docLink.id}-title`} />
+                  </InlineLink>
+                  <Text>
+                    <Translation id={`${baseTranslation}${docLink.id}-description`} />
+                  </Text>
+                </Box>
               )}
-            </Column>
-          ))}
-        </ThreeColumnContent>
+            </SimpleGrid>
+          </Content>
+        ))}
       </GrayContainer>
       <FeedbackCard />
     </Page>
