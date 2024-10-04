@@ -3,34 +3,38 @@
 
 # To display item as a collapsable directory vs. a link
 # use the `path` property (of the directory) vs. the `to` property. We use /principles for all paths for now until we have proper folder management
-- id: program-principles 
-  to: /unlock-your-potential/principles
 - id: overview
   path: /unlock-your-potential/principles
   items:
+    - id: 1-program-principles 
+      to: /unlock-your-potential/principles
     - id: first-principles-explained
     - id: submitting-new-principles
-- id: principles
+- id: general-principles
   path: /unlock-your-potential/principles
   items:
     - id: balance-reduces-burnout
-    - id: basic-needs-are-universal
     - id: better-done-than-perfect
-    - id: big-results-take-time
-    - id: breathing-techniques
-    - id: celebrate-your-wins
     - id: clarity-builds-confidence
     - id: delayed-gratification
-    - id: empathy
     - id: fight-flight-freeze
-    - id: flow-state
     - id: habit-stacking
     - id: immersion-drives-engagement
     - id: measure-twice-cut-once
-    - id: meditation
-    - id: pareto-principle-80-20-rule
     - id: perspective-changes-rewards
     - id: practice-with-purpose
+    - id: write-it-or-forget-it
+- id: specific-principles
+  path: /unlock-your-potential/principles
+  items:
+    - id: basic-needs-are-universal
+    - id: big-results-take-time
+    - id: breathing-techniques
+    - id: celebrate-your-wins
+    - id: empathy
+    - id: flow-state
+    - id: meditation
+    - id: pareto-principle-80-20-rule
     - id: quests-you-get-to-do
     - id: reward-should-match-effort
     - id: reward-what-matters
@@ -42,10 +46,10 @@
     - id: together-we-thrive
     - id: visibility-drives-accountability
     - id: visible-progress-fuels-motivation
-    - id: write-it-or-forget-it
     - id: start-with-why
     - id: average-of-5
     - id: systems-thinking
     - id: perfectly-imperfect
     - id: vulnerability-connects-and-heals
     - id: its-ok-to-say-no
+    - id: discipline-comes-from-within

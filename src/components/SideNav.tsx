@@ -64,21 +64,18 @@ const SideNavLink = ({ children, ...props }: LinkProps) => {
 }
 
 export interface IPropsNavLink {
+  basePath?: string
   item: DeveloperDocsLink
   path: string
   isTopLevel?: boolean
 }
 
-const NavLink: React.FC<IPropsNavLink> = ({ item, path, isTopLevel }) => {
+const NavLink: React.FC<IPropsNavLink> = ({ basePath, item, path, isTopLevel }) => {
   const { t } = useTranslation("page-docs")
-  const basePath = "/unlock-your-potential/principles/";
   const baseTranslation = "page-docs:page-docs-nav-";
 
-  // I just need to push item.to with the base paths. 
-  // and then probably push a item.title and item.description.
-
   if (!item.to) {
-    item.to = basePath + item.id;
+    item.to = basePath + "/" + item.id;
   }
   item.title = t(baseTranslation + item.id + "-title");
   item.description = t(baseTranslation + item.id + "-description");
@@ -132,7 +129,7 @@ const NavLink: React.FC<IPropsNavLink> = ({ item, path, isTopLevel }) => {
           {item.items
             .sort((a, b) => a.id.localeCompare(b.id))
             .map((childItem, idx) => (
-              <NavLink item={childItem} path={path} key={idx} />
+              <NavLink basePath={item.path} item={childItem} path={path} key={idx} />
             ))}
         </Box>
       </Box>
@@ -179,7 +176,7 @@ const SideNav = ({ path }: SideNavProps) => {
       aria-label={t("common:nav-developers-docs")}
     >
       {docLinks.map((item, idx) => (
-        <NavLink item={item} path={path} key={idx} isTopLevel />
+        <NavLink basePath={item.path ? item.path : undefined} item={item} path={path} key={idx} isTopLevel />
       ))}
     </Box>
   )

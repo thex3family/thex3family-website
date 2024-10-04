@@ -65,13 +65,12 @@ export interface IPropsNavLink extends INavLinkProps {
   closeSideNavMobile: () => void
 }
 
-const NavLink: React.FC<IPropsNavLink> = ({ item, path, closeSideNavMobile, isTopLevel }) => {
+const NavLink: React.FC<IPropsNavLink> = ({ basePath, item, path, closeSideNavMobile, isTopLevel }) => {
   const { t } = useTranslation("page-docs")
-  const basePath = "/unlock-your-potential/principles/";
   const baseTranslation = "page-docs:page-docs-nav-";
 
   if (!item.to) {
-    item.to = basePath + item.id;
+    item.to = basePath + "/" + item.id;
   }
   item.title = t(baseTranslation + item.id + "-title");
   item.description = t(baseTranslation + item.id + "-description");
@@ -123,7 +122,7 @@ const NavLink: React.FC<IPropsNavLink> = ({ item, path, closeSideNavMobile, isTo
           initial="closed"
         >
           {item.items.map((childItem, idx) => (
-            <NavLink item={childItem} path={path} key={idx} closeSideNavMobile={closeSideNavMobile} />
+            <NavLink basePath={item.path} item={childItem} path={path} key={idx} closeSideNavMobile={closeSideNavMobile} />
           ))}
         </Box>
       </Box>
@@ -212,6 +211,7 @@ const SideNavMobile: React.FC<IProps> = ({ path }) => {
           >
             {docLinks.map((item, idx) => (
               <NavLink
+                basePath={item.path ? item.path : undefined}
                 item={item}
                 path={path}
                 key={idx}
