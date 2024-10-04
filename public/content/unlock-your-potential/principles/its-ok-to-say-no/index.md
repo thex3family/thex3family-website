@@ -12,7 +12,7 @@ In this article, we’ll explore why saying no is a critical skill, how it can h
 
 ## Prerequisites  
 
-You'll resonate with this principle if you've had any of the following experiences:  
+You'll resonate with this principle if you've had any of the following experiences:
 - Feeling overwhelmed by commitments and struggling to balance them all.  
 - Saying yes to things out of guilt or obligation, even when it negatively impacts your well-being.  
 - Struggling to prioritize your own needs or goals over the expectations of others.
