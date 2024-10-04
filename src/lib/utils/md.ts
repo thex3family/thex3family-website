@@ -55,8 +55,8 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
 
       // principles
       "/unlock-your-potential/principles",
-      "/unlock-your-potential/principles/what-are-first-principles",
-      "/unlock-your-potential/principles/how-do-I-submit-first-principles",
+      "/unlock-your-potential/principles/first-principles-explained",
+      "/unlock-your-potential/principles/submitting-new-principles",
       "/unlock-your-potential/principles/breathing-techniques",
       "/unlock-your-potential/principles/flow-state",
       "/unlock-your-potential/principles/meditation",
@@ -93,6 +93,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/unlock-your-potential/principles/systems-thinking",
       "/unlock-your-potential/principles/perfectly-imperfect",
       "/unlock-your-potential/principles/vulnerability-connects-and-heals",
+      "/unlock-your-potential/principles/its-ok-to-say-no",
 
     // make-positive-impact
     "/make-positive-impact",
