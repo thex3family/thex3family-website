@@ -1,6 +1,6 @@
 ---
 title: Perspective Changes Rewards
-description: Discover how your changing perspectives influence what rewards will matter to you.
+description: Your changing perspectives influence what rewards will matter to you.
 lang: en
 ---
 

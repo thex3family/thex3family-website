@@ -1,7 +1,6 @@
 ---
-title: Together We Thrive  
-description: Explore how cooperation and mutual support enhance our chances of survival, showing that we thrive best when we work together.  
-slug: together-we-thrive  
+title: Together We Thrive
+description: Cooperation and mutual support enhance our chances of survival, showing that we thrive when we work together.
 lang: en  
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Seek Discomfort
 description: Discover how embracing discomfort fosters personal growth and development.
-slug: seek-discomfort
 lang: en
 ---
 

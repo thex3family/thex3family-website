@@ -1,6 +1,6 @@
 ---
 title: Discipline Comes From Within
-description: Discover how true discipline comes from taking ownership of our choices and actions, helping us build internal boundaries for long-term success.
+description: True discipline comes from taking ownership of our choices and actions, helping us build internal boundaries for long-term success.
 lang: en  
 ---
 

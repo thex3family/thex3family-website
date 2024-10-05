@@ -1,6 +1,6 @@
 ---
 title: Immersion Drives Engagement
-description: Discover how fully immersing yourself in an experience boosts engagement and success.
+description: Fully immersing yourself in an experience boosts engagement and success with your tasks.
 lang: en
 ---
 

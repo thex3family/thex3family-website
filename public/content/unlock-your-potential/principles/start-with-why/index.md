@@ -1,6 +1,6 @@
 ---
 title: Start With Why
-description: Discover why understanding the deeper purpose behind your actions fuels motivation and leads to getting the success you want.
+description: Understanding the deeper purpose behind your actions fuels motivation and leads to getting the success you want.
 lang: en  
 ---
 

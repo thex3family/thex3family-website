@@ -1,6 +1,6 @@
 ---
 title: Basic Needs Are Universal
-description: Explore how our shared basic needs create a bond between people and foster mutual understanding.
+description: Our shared basic needs create bonds between people and fosters mutual understanding.
 lang: en
 ---
 
