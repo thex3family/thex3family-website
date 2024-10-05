@@ -1,6 +1,6 @@
 ---
 title: Big Results Take Time  
-description: Learn how the planning fallacy causes us to overestimate short-term gains and underestimate long-term success.  
+description: The planning fallacy causes us to overestimate short-term gains and underestimate long-term success.  
 lang: en
 ---
 

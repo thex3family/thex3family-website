@@ -1,6 +1,6 @@
 ---
 title: Short-Term Gain, Long-Term Pain  
-description: Learn how to take short-term actions while being mindful of the long-term consequences they might carry.  
+description: Take short-term actions while being mindful of the long-term consequences they might carry.  
 lang: en  
 ---
 

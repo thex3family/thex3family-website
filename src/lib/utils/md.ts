@@ -62,7 +62,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/unlock-your-potential/principles/meditation",
       "/unlock-your-potential/principles/seek-discomfort",
       "/unlock-your-potential/principles/sensory-deprivation",
-      "/unlock-your-potential/principles/empathy",
+      "/unlock-your-potential/principles/empathy-is-understanding-their-journey",
       "/unlock-your-potential/principles/pareto-principle-80-20-rule",
 
       "/unlock-your-potential/principles/visible-progress-fuels-motivation",
@@ -97,6 +97,7 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/unlock-your-potential/principles/discipline-comes-from-within",
       "/unlock-your-potential/principles/ask-dont-assume",
       "/unlock-your-potential/principles/i-know-that-i-know-nothing",
+      "/unlock-your-potential/principles/love-with-no-expectations",
 
     // make-positive-impact
     "/make-positive-impact",

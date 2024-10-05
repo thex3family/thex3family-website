@@ -1,6 +1,6 @@
 ---
 title: Perfectly Imperfect
-description: Discover the power of accepting and embracing imperfections to truly let go of negative thoughts and take meaningful action.
+description: Use the power of accepting and embracing imperfections to truly let go of negative thoughts and take meaningful action.
 lang: en
 ---
 

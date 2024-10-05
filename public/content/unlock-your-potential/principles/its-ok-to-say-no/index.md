@@ -1,6 +1,6 @@
 ---
 title: It's OK to Say No
-description: Discover why setting boundaries and saying no is a critical skill for prioritizing what truly matters and maintaining your well-being.
+description: Setting boundaries and saying no is a critical skill for prioritizing what truly matters and maintaining your well-being.
 lang: en  
 ---
 

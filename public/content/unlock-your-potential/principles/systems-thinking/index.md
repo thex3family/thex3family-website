@@ -1,6 +1,6 @@
 ---
 title: Systems Thinking  
-description: Learn how systems thinking enables you to replicate success by building best practices and workflows for consistent results.
+description: Replicate successful outcomes by building best practices and workflows.
 lang: en  
 ---
 
