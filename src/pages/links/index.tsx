@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaBook, FaDiscord, FaGithub, FaHome, FaInstagram, FaLinkedin, FaSpotify, FaTiktok, FaToolbox, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaBook, FaDiscord, FaFistRaised, FaGithub, FaHome, FaInstagram, FaLinkedin, FaSpotify, FaTiktok, FaToolbox, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
     useToken,
 } from "@chakra-ui/react"
@@ -73,11 +73,11 @@ const LinksPage = ({
         {
             icon: FaToolbox,
             title: "Unlock Your Potential With Personalized Programs",
-            to: "/unlock-your-potential/",
+            to: "/unlock-your-potential/programs",
             boxShadow: cardBoxShadow
         },
         {
-            icon: FaHome,
+            icon: FaFistRaised,
             title: "Make Positive Impact By Joining Our Team",
             to: "/make-positive-impact/collaborate",
             boxShadow: cardBoxShadow
