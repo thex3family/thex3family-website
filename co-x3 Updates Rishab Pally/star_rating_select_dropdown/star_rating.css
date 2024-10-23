@@ -1,0 +1,17 @@
+.star {
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  overflow: hidden;
+  width: 24px;
+}
+
+.star.filled {
+  color: gold;
+}
+
+.star.partial {
+  display: inline-block;
+  overflow: hidden;
+  direction: ltr;
+}
