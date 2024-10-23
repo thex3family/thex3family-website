@@ -1,5 +1,5 @@
 ---
-title: Be A Donor
+title: Make A Donation
 description: Accelerate growth and transformation for deserving individuals by contributing to our scholarship fund.
 lang: en
 template: main

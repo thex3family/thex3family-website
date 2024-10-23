@@ -20,7 +20,7 @@ We share unique and interesting content freely, but with your support, we can re
 
 As a way to say thank you for supporting us, our patrons get immense value out of their membership. You can support as much as you want per month, and as you increase your amount, the more benefits you unlock.
 
-<ButtonLink to="https://toolbox.co-x3.com/support-us">Join 500+ Patrons</ButtonLink>
+<ButtonLink to="https://shop.x3.family/pages/membership">Become A Member</ButtonLink>
 
 ![Image](./support-us-1.png)
 
