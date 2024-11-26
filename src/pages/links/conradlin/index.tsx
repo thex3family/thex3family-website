@@ -100,7 +100,7 @@ const LinksPage = ({
             to: "https://podcasters.spotify.com/pod/show/levelupwithconrad",
             ariaLabel: "Podcast",
             color: "#1DB954",
-            title: "Podcast: Level Up With Conrad"
+            title: "Level Up With Conrad Podcast"
         },
         {
             icon: FaYoutube,
