@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaBook, FaDiscord, FaFistRaised, FaGithub, FaHome, FaInstagram, FaLinkedin, FaSpotify, FaTiktok, FaToolbox, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaBook, FaCoins, FaDiscord, FaFistRaised, FaGithub, FaHome, FaInstagram, FaLinkedin, FaMusic, FaNewspaper, FaSpotify, FaTiktok, FaToolbox, FaTshirt, FaTwitter, FaYoutube } from "react-icons/fa"
 import {
     useToken,
 } from "@chakra-ui/react"
@@ -83,20 +83,39 @@ const LinksPage = ({
             boxShadow: cardBoxShadow
         },
         {
-            icon: FaHome,
-            title: "Live With Us @ Our Family Without Borders",
-            to: "https://ourfamilywithoutborders.com",
+            icon: FaCoins,
+            title: "Support Our Work By Making A Donation",
+            to: "/make-positive-impact/contribute/be-a-patron/donate",
+            boxShadow: cardBoxShadow
+        },
+        {
+            icon: FaTshirt,
+            title: "Get Merch With Our Line Of Intentional Gear",
+            to: "https://shop.x3.family/pages/merch",
+            boxShadow: cardBoxShadow
+        },
+        {
+            icon: FaMusic,
+            title: "Listen To Our Theme Song: It's Time To Level Up",
+            to: "https://www.youtube.com/watch?v=6311QGaeTrA",
             boxShadow: cardBoxShadow
         },
     ]
     
     const socialLinksData = [
         {
+            icon: FaNewspaper,
+            to: "https://shop.x3.family/supporters",
+            ariaLabel: "Updates",
+            color: "#13AA78",
+            title: "News & Updates (Members Only)"
+        },
+        {
             icon: FaSpotify,
             to: "https://podcasters.spotify.com/pod/show/level-up-with-us",
             ariaLabel: "Podcast",
             color: "#1DB954",
-            title: "Podcast: Level Up With Us"
+            title: "Level Up With Us Podcast"
         },
         {
             icon: FaDiscord,
