@@ -12,7 +12,7 @@ Here, you'll find a growing repository of first principles that we've analysed. 
 
 ## What Are First Principles?
 
-Simply put, **first principles** are the foundational truths — ideas that cannot be reduced any further. When we break complex problems down to their simplest, most essential parts, we can **rebuild solutions** from the ground up, in ways that are logical, clear, and more effective.
+Simply put, **first principles** are the foundational truths—ideas that cannot be reduced any further. When we break complex problems down to their simplest, most essential parts, we can **rebuild solutions** from the ground up, in ways that are logical, clear, and more effective.
 
 Reasoning from first principles is essential because reasoning by analogy—basing decisions on how things are typically done—can often lead to errors. For example, if we assumed that all productivity techniques work the same for everyone simply because they are popular (reasoning by analogy), we could overlook more fundamental factors like individual working styles or environments.
 
@@ -30,6 +30,6 @@ Thus, any habit-building resources we share in the [Gamify Your Life](/unlock-yo
 
 ## Help Us Build This Repository!
 
-This repository is a comprehensive guide to the principles and methodologies behind Co-x3's programs. But it’s not just a one-way street — we believe in the **power of collaboration** and that knowledge is best built together.
+This repository is a comprehensive guide to the principles and methodologies behind Co-x3's programs. But it’s not just a one-way street—we believe in the **power of collaboration** and that knowledge is best built together.
 
 We invite you to be part of this process. Whether it’s suggesting new principles, sharing insights, or contributing real-life examples of how first principles have impacted your life, your input will help us continue to **improve and expand** this resource.

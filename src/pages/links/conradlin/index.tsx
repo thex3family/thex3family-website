@@ -104,7 +104,7 @@ const LinksPage = ({
         },
         {
             icon: FaYoutube,
-            to: "https://www.youtube.com/playlist?list=PLgDMbYMf0e_oMFRliRwjlXHcD7YCkO6NE",
+            to: "https://shop.x3.family/supporters/videos/series/2240",
             ariaLabel: "YouTube",
             color: "#FF0000",
             title: "Vlog: Live Your Best Life"
