@@ -76,8 +76,8 @@ const LinksPage = ({
         },
         {
             icon: FaBook,
-            title: "Understand Yourself With My Book (Free Preview!)",
-            to: "/understand-yourself/",
+            title: "Pre-Order My Upcoming Book",
+            to: "https://shop.x3.family/supporters/posts/96533",
             boxShadow: cardBoxShadow
         },
         {
