@@ -17,7 +17,7 @@ There's a powerful truth in the adage, "seeing is believing." At the Co-x3 Famil
 
 ## What Does it Do?
 
-Through "Live Your Best Life," we chronicle our journey — the ups, the downs, and everything in between — as we apply the philosophies of the Co-x3 Family Foundation to our daily lives.
+Through "Live Your Best Life," we chronicle our journey—the ups, the downs, and everything in between—as we apply the philosophies of the Co-x3 Family Foundation to our daily lives.
 
 These vlogs are more than just stories; they are a testament to how the Better Life Framework shapes and enhances our lives. This series is hosted by members of our community who are making significant strides in their journey, providing inspiration and relatable insights.
 

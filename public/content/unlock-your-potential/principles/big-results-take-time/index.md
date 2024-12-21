@@ -62,7 +62,7 @@ Rather than rushing toward short-term success, prioritize consistency. Consisten
 
 - [Gamify Your Life](/unlock-your-potential/programs/gamify-your-life): This program helps you visualize your progress by transforming it into levels, points, and personal stats. By tracking your daily efforts and achievements through gamification, you can clearly see how your actions accumulate over time. This visibility combats the planning fallacy by making long-term progress tangible and motivating.
 - [Be Intentional](/unlock-your-potential/programs/be-intentional): This program teaches you how to plan intentionally with clear goals in mind. It emphasizes setting realistic expectations, creating actionable plans, and making steady progress toward success. By fostering an intentional approach, you can avoid overestimating short-term gains and stay focused on the bigger picture.
-- [L-CTRL System](https://shop.x3.family/products/l-ctrl-notion-template-pack): In this program, you’ll learn how to take control of your life by establishing systems that ensure continuous improvement, helping you get long term results through consistent daily actions.
+- [L-CTRL](https://shop.x3.family/products/l-ctrl-system-notion-template-pack): In this program, you’ll learn how to take control of your life by establishing systems that ensure continuous improvement, helping you get long term results through consistent daily actions.
 
 ## References and Further Reading
 

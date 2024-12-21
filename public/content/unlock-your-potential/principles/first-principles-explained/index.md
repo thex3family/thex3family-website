@@ -14,16 +14,16 @@ The concept of first principles dates back to ancient philosophy, particularly w
 
 ## Why First Principles Matter
 
-In many cases, people approach personal development and problem-solving by **reasoning by analogy** — relying on past experiences, common advice, or conventional wisdom. While this can sometimes be helpful, it often leads to error because it involves **inherited assumptions** or limitations that may not apply to your unique circumstances.
+In many cases, people approach personal development and problem-solving by **reasoning by analogy**—relying on past experiences, common advice, or conventional wisdom. While this can sometimes be helpful, it often leads to error because it involves **inherited assumptions** or limitations that may not apply to your unique circumstances.
 
-For example, in personal development, people might assume that achieving success requires following popular trends or adopting the same strategies that worked for someone else — whether it’s a specific morning routine or a highly structured productivity method. This kind of reasoning by analogy can trap individuals in conventional thinking, limiting their ability to make real, lasting change in their own lives.
+For example, in personal development, people might assume that achieving success requires following popular trends or adopting the same strategies that worked for someone else—whether it’s a specific morning routine or a highly structured productivity method. This kind of reasoning by analogy can trap individuals in conventional thinking, limiting their ability to make real, lasting change in their own lives.
 
 In contrast, **reasoning from first principles** forces you to ask and understand:  
 *What are the principles that actually make their success possible, and how can we build on them to be appropriate for our growth?* 
 
 ## How We Apply First Principles at Co-x3
 
-At Co-x3, first principles are not just a theoretical concept — they are the **foundation** of every program we create and support. We believe that when you build on fundamentals, you don’t need to memorize complicated techniques or strategies. Instead, the principles are naturally integrated into the tools and resources, ensuring that meaningful change happens as a **byproduct** of using them.
+At Co-x3, first principles are not just a theoretical concept—they are the **foundation** of every program we create and support. We believe that when you build on fundamentals, you don’t need to memorize complicated techniques or strategies. Instead, the principles are naturally integrated into the tools and resources, ensuring that meaningful change happens as a **byproduct** of using them.
 
 A simple way to understand this concept is by thinking about everyday tools, like a hammer. You don’t need to understand the physics behind how a hammer works to effectively drive a nail into a surface. The tool itself has been **designed with precision**, ensuring that it maximizes the energy from your hand and arm to get the job done efficiently.
 
@@ -39,7 +39,7 @@ Now, for the remaining 20% of cases where the problem might be slightly differen
 
 So why is reasoning from first principles better? The main reason is that it **frees you from constraints** imposed by conventional wisdom, which is often filled with inaccuracies, assumptions, or outdated beliefs.
 
-A common example can be found in the advice we receive from our parents. While they often share valuable life lessons, their situations were different — the world they grew up in was different. For example, career advice or strategies for success that worked for them decades ago may not be as effective today due to shifts in technology, economics, or social norms. 
+A common example can be found in the advice we receive from our parents. While they often share valuable life lessons, their situations were different—the world they grew up in was different. For example, career advice or strategies for success that worked for them decades ago may not be as effective today due to shifts in technology, economics, or social norms. 
 
 If we simply **reason by analogy**, we'd apply their solutions to our own lives without questioning the assumptions behind them. This can lead to frustration when their methods don’t work for us. However, if we reason from **first principles**, we can ask: 
 
@@ -48,7 +48,7 @@ If we simply **reason by analogy**, we'd apply their solutions to our own lives 
 By doing this, we can **extract the core truths** and reframe them in ways that make sense for our unique situations today. This frees us from blindly following advice that may no longer be relevant and allows us to develop solutions that are more suited to our lives.
 
 <InfoBanner shouldCenter emoji=":bulb:">
-  At Co-x3, we apply the same thinking to personal development. Instead of relying on conventional self-help trends or what "everyone else" is doing, we continuously seek to strip concepts down to their basic truths. This allows us to develop programs that are adaptable, relevant, and sustainable — customized to help you thrive in your unique circumstances, not someone else’s.
+  At Co-x3, we apply the same thinking to personal development. Instead of relying on conventional self-help trends or what "everyone else" is doing, we continuously seek to strip concepts down to their basic truths. This allows us to develop programs that are adaptable, relevant, and sustainable—customized to help you thrive in your unique circumstances, not someone else’s.
 </InfoBanner>
 
 ## Benefits of First Principles Thinking
