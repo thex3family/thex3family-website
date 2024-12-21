@@ -26,6 +26,8 @@ In 2020, he shared Be Intentional to the world to help people lead their life wi
 
 - [Start With Why](/unlock-your-potential/principles/start-with-why)
 - [Measure Twice, Cut Once](/unlock-your-potential/principles/measure-twice-cut-once)
+- [Set S.M.A.R.T. Goals (aka OKRs)](/unlock-your-potential/principles/smart-goals-aka-okrs)
+- [Work Smarter, Not Harder](/unlock-your-potential/principles/work-smarter-not-harder)
 - ...
 
 ## How Does It Work?
