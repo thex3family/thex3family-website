@@ -138,7 +138,7 @@ const NavLink: React.FC<IPropsNavLink> = ({ basePath, item, path, isTopLevel }) 
   return (
     <Box>
       <LinkContainer>
-        <SideNavLink to={item.to} isPartiallyActive={false}>
+        <SideNavLink to={item.to} isPartiallyActive={false} noOfLines={1}>
           {item.title}
         </SideNavLink>
       </LinkContainer>
