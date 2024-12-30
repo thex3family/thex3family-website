@@ -100,6 +100,8 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
       "/unlock-your-potential/principles/love-with-no-expectations",
       "/unlock-your-potential/principles/smart-goals-aka-okrs",
       "/unlock-your-potential/principles/work-smarter-not-harder",
+      "/unlock-your-potential/principles/master-your-emotions",
+      "/unlock-your-potential/principles/fear-setting",
 
     // make-positive-impact
     "/make-positive-impact",
