@@ -68,4 +68,4 @@ Delayed Gratification plays an important role in all of our programs, as we focu
 
 ## References and Further Reading
 
-1. [Stanford Marshmallow Test Experiment](https://www.simplypsychology.org/marshmallow-test.html) – Learn more about the famous experiment and what it teaches us about self-control and future success.
+1. [Stanford Marshmallow Test Experiment](https://www.simplypsychology.org/marshmallow-test.html): Learn more about the famous experiment and what it teaches us about self-control and future success.

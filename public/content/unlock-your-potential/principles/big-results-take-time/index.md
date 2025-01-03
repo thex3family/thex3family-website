@@ -66,4 +66,4 @@ Rather than rushing toward short-term success, prioritize consistency. Consisten
 
 ## References and Further Reading
 
-1. [Marginal Gains](https://jamesclear.com/marginal-gains) – James Clear’s article on how small, incremental gains compound over time to create significant long-term success.
+1. [Marginal Gains](https://jamesclear.com/marginal-gains): James Clear’s article on how small, incremental gains compound over time to create significant long-term success.

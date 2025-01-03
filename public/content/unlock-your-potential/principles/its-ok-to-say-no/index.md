@@ -37,7 +37,7 @@ Saying no and being clear with your boundaries helps us set more realistic expec
 
 ## How to Practice Saying No  
 
-Here are some practical strategies to apply this principle:
+Here are some practical ways to apply this principle:
 
 ### 1. Understand Our Boundaries
 

@@ -40,7 +40,7 @@ _“Instead of attacking them when something they said didn’t sit right with m
 
 ## How to Apply “Ask, Don’t Assume”  
 
-Here are some practical strategies to apply this principle:
+Here are some practical ways to apply this principle:
 
 ### 1. Ask Open-Ended Questions  
 
@@ -70,5 +70,5 @@ This principle is especially important in **Perspective 8: Curiosity**, where we
 
 ## References and Further Reading  
 
-1. [The Power of Asking Questions](https://hbr.org/2018/05/the-surprising-power-of-questions) – A look into how asking better questions improves communication and understanding.  
-2. [Active Listening: The Key to Better Communication](https://www.verywellmind.com/what-is-active-listening-3024343) – Discover how active listening fosters better connections and reduces misunderstandings.  
+1. [The Power of Asking Questions](https://hbr.org/2018/05/the-surprising-power-of-questions): A look into how asking better questions improves communication and understanding.  
+2. [Active Listening: The Key to Better Communication](https://www.verywellmind.com/what-is-active-listening-3024343): Discover how active listening fosters better connections and reduces misunderstandings.  

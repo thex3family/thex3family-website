@@ -34,7 +34,7 @@ We generally perceive love as the extreme of whichever perspective we are in. If
 
 ## How to Love With No Expectations  
 
-Here are practical strategies to incorporate this principle into your life:
+Here are some practical ways to apply this principle:
 
 ### 1. Recognize Our Expectations  
 

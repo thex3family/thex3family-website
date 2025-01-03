@@ -45,9 +45,9 @@ Framing our empathy around our own experiences can unintentionally diminish the 
 ### 3. **Blocking Genuine Support**  
 By assuming we already know what they’re feeling, we miss opportunities for meaningful conversations that could help us better understand and support them. Asking open questions instead of making assumptions fosters deeper connection.
 
-## How to Practice Empathy to Understand Their Journey
+## How to Practice Empathy
 
-Here are practical strategies to incorporate this principle into your life:
+Here are some practical ways to apply this principle:
 
 ### 1. Ask Open-Ended Questions
 
@@ -75,4 +75,4 @@ This principle is especially important in **Perspective 9: Empathy**, where we f
 
 ## References and Further Reading  
 
-1. [Understanding Empathy](https://www.psychologytoday.com/us/basics/empathy) – A deeper dive into what true empathy means and how it differs from sympathy.  
+1. [Understanding Empathy](https://www.psychologytoday.com/us/basics/empathy): A deeper dive into what true empathy means and how it differs from sympathy.  

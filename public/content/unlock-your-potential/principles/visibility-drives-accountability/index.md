@@ -31,7 +31,7 @@ Sharing your progress publicly adds transparency to your journey. This visibilit
 
 ## How To Make Progress Visible
 
-Here are practical ways to apply this principle:
+Here are some practical ways to apply this principle:
 
 ### 1. Share Your Journey Regularly
 

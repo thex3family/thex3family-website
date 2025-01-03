@@ -70,4 +70,4 @@ Clarity is a core principle in all of our programs because we its only with clar
 
 ## References and Further Reading
 
-1. [3 ways being intentional can change your life](https://youtu.be/57jZikDOI60) – A video from Conrad that explains how to have clarity by being intentional and building your success plan.
+1. [3 ways being intentional can change your life](https://youtu.be/57jZikDOI60): A video from Conrad that explains how to have clarity by being intentional and building your success plan.

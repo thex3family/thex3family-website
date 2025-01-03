@@ -54,4 +54,4 @@ This principle is particularly important when you’re in **Perspective 3: Winni
 
 ## References and Further Reading
 
-1. [The Power Of Small Wins](https://hbr.org/2011/05/the-power-of-small-wins) – Teresa Amabile’s research on the progress principle and how small wins can boost motivation and engagement.
+1. [The Power Of Small Wins](https://hbr.org/2011/05/the-power-of-small-wins): Teresa Amabile’s research on the progress principle and how small wins can boost motivation and engagement.

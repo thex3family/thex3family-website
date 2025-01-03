@@ -118,6 +118,6 @@ This principle is especially relevant to **Perspective 4: Belonging**, where we 
 
 ## References and Further Reading  
 
-1. [Objectives and Key Results (OKRs)](https://www.whatmatters.com/faqs/okr-meaning-definition-example) – A comprehensive guide by John Doerr explaining the meaning, definition, and practical examples of OKRs.  
-2. [Set Goals With OKRs](https://rework.withgoogle.com/en/guides/set-goals-with-okrs) – Google's step-by-step guide to implementing OKRs, including insights into their benefits and best practices.  
-3. [SMART Goals: How to Make Your Goals Achievable](https://www.mindtools.com/pages/article/smart-goals.htm) – An article outlining the S.M.A.R.T. framework, its components, and tips for creating actionable goals.
+1. [Objectives and Key Results (OKRs)](https://www.whatmatters.com/faqs/okr-meaning-definition-example): A comprehensive guide by John Doerr explaining the meaning, definition, and practical examples of OKRs.  
+2. [Set Goals With OKRs](https://rework.withgoogle.com/en/guides/set-goals-with-okrs): Google's step-by-step guide to implementing OKRs, including insights into their benefits and best practices.  
+3. [SMART Goals: How to Make Your Goals Achievable](https://www.mindtools.com/pages/article/smart-goals.htm): An article outlining the S.M.A.R.T. framework, its components, and tips for creating actionable goals.

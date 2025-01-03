@@ -56,7 +56,7 @@ The **Eisenhower Matrix** is a tool that helps you prioritize tasks by dividing 
 
 ## How to Apply The Matrix
 
-Here are some practical ways to incorporate this principle into daily life:
+Here are some practical ways to apply this principle:
 
 ### 1. Create Your To-Do List  
 
@@ -104,6 +104,5 @@ This principle is especially relevant to **Perspective 4: Belonging**, where we 
 
 ## References and Further Reading  
 
-1. [The Eisenhower Matrix](https://www.eisenhower.me/eisenhower-matrix/) – A detailed guide on how to use the Eisenhower Matrix to improve time management and productivity.  
-2. [Time Management Essentials](https://www.mindtools.com/pages/article/newHTE_91.htm) – A practical resource from MindTools offering tips and strategies for effective time management.  
-3. [Why Prioritization Matters](https://hbr.org/2017/07/how-to-prioritize-your-work) – A Harvard Business Review article explaining the importance of prioritization and how it impacts productivity and decision-making.  
+1. [The Eisenhower Matrix](https://slab.com/blog/eisenhower-matrix/): A detailed guide on how to use the Eisenhower Matrix to improve time management and productivity.  
+2. [How TO Get Stuff Done](https://www.forbes.com/sites/hillennevins/2023/01/05/how-to-get-stuff-done-the-eisenhower-matrix-aka-the-urgent-vs-the-important/): A forbes article explaining the importance of prioritization and how it impacts productivity and decision-making.

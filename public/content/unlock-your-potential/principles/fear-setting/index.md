@@ -48,7 +48,7 @@ Reframing inaction as a choice with consequences highlights the risks of staying
 
 ## How to See The Bigger Picture
 
-Here are some practical ways to incorporate this principle into daily life inspired by Tim Ferriss’s **Fear-Setting** framework: 
+Here are some practical ways to apply this principle inspired by Tim Ferriss’s **Fear-Setting** framework: 
 
 ### 1. **State Your "What If"**
 
@@ -123,4 +123,4 @@ This principle is especially relevant to **Perspective 4: Belonging**, where we 
 
 ## References and Further Reading
 
-1. [Fear-Setting by Tim Ferriss](https://tim.blog/2017/05/15/fear-setting/)  
+1. [Fear-Setting by Tim Ferriss](https://tim.blog/2017/05/15/fear-setting/): Tim Ferriss introduces the concept of fear-setting, a powerful exercise to identify, confront, and mitigate fears while making intentional decisions.  

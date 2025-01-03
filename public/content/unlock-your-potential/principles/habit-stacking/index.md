@@ -30,7 +30,7 @@ _For example, if you want to start meditating daily, stack it with your existing
 
 ## How to Use Habit Stacking
 
-Here are some practical steps to implement habit stacking effectively:
+Here are some practical ways to effectively implement habit stacking:
 
 ### 1. Identify a Habit Anchor
 
@@ -67,5 +67,5 @@ Habit stacking plays an important role in all of our programs, as we focus on bu
 
 ## References and Further Reading
 
-1. [Atomic Habits: The Power of Habit Stacking](https://jamesclear.com/habit-stacking) – James Clear’s guide on how habit stacking makes new behaviors easier to build and maintain.
-2. [The Habit Loop](https://jamesclear.com/habit-triggers) – Learn more about the cue-routine-reward loop and how it shapes our behaviors.
+1. [Atomic Habits: The Power of Habit Stacking](https://jamesclear.com/habit-stacking): James Clear’s guide on how habit stacking makes new behaviors easier to build and maintain.
+2. [The Habit Loop](https://jamesclear.com/habit-triggers): Learn more about the cue-routine-reward loop and how it shapes our behaviors.

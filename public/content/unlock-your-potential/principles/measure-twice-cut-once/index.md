@@ -32,7 +32,7 @@ The concept of “cutting once” means reducing the need for rework by getting 
 
 ## How to Apply “Measure Twice, Cut Once”
 
-Here are some practical strategies to apply this principle:
+Here are some practical ways to apply this principle:
 
 ### 1. Gather Knowledge First
 
