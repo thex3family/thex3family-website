@@ -72,4 +72,4 @@ Celebrating your wins is especically impactful for **Perspective 3: Winning**, w
 
 ## References and Further Reading
 
-1. [The Power of Small Wins](https://hbr.org/2011/05/the-power-of-small-wins) – Teresa Amabile’s research on how celebrating small wins fuels motivation and productivity.
+1. [The Power of Small Wins](https://hbr.org/2011/05/the-power-of-small-wins): Teresa Amabile’s research on how celebrating small wins fuels motivation and productivity.

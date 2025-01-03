@@ -37,7 +37,7 @@ Additionally, your rewards evolve as you move through the [**Evolution of Wants*
 
 ## How to Adjust Your Rewards Based on Perspective
 
-Here are some practical strategies to ensure your rewards evolve with you:
+Here are some practical ways to apply this principle:
 
 ### 1. Understand Yourself
 
@@ -70,5 +70,5 @@ This principle of adapting rewards based on perspective is a core differentiator
 
 ## References and Further Reading
 
-1. [Better Life Framework](/understand-yourself/better-life-framework) – Learn how different perspectives shape your motivations and the rewards you value at each stage of life.
-2. [Evolution of Wants](/understand-yourself/evolution-of-wants) – Explore how our desires change as we move from external validation to personal fulfillment, and how this evolution affects rewards we seek.
+1. [Better Life Framework](/understand-yourself/better-life-framework): Learn how different perspectives shape your motivations and the rewards you value at each stage of life.
+2. [Evolution of Wants](/understand-yourself/evolution-of-wants): Explore how our desires change as we move from external validation to personal fulfillment, and how this evolution affects rewards we seek.

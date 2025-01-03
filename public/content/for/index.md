@@ -12,9 +12,11 @@ summaryPoint3: Now, we extend our support to both individuals and organizations.
 
 ## How Did We Choose Who To Support?
 
-We all tackle personal challenges in our lives, and as we resolve them, we try to support our family and friends. Many of us realized that our challenges were common to many people around the world. This realization sparked an idea: Why not extend these solutions to a wider community?
-
-The best way to help others is to help yourself first, as many of the solutions you build will inevitably help someone like like you. So, we support people like ourselves, as we understand your challenges and want to help you on your growth journey.
+We all face challenges, and often it feels like we’re struggling alone. But as we work through our own problems, we start to notice that those around us—our friends and family—are facing similar issues. By coming together, we can create even better solutions.
+ 
+What we’ve learned is simple: the best way to help others is to first help ourselves. When we solve our own problems, we end up helping others on the same journey, whether they’re close by or halfway around the world.
+ 
+That’s why we’re here—to support people like you, because we’ve walked this path ourselves. We understand your challenges and are committed to helping you grow, just as we once hoped someone would help us.
 
 Watch the short 5-minute video by our founder to hear a personal story of why Co-x3 means so much to us. 👇
 

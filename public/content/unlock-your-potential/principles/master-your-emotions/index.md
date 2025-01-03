@@ -53,7 +53,7 @@ By changing the meaning, you change how you feel. This gives you the power to sh
 
 ## How to Master Your Emotions
 
-Here are some practical ways to incorporate this principle into daily life:
+Here are some practical ways to apply this principle:
 
 ### 1. Pause and Identify the Emotion
    - Instead of reacting immediately, take a moment to name what you’re feeling.  
@@ -83,5 +83,5 @@ This principle is especially relevant to **Perspective 4: Belonging**, where we 
 
 ## References and Further Reading
 
-1. [Mastering Your Emotions by Tony Robbins](https://www.tonyrobbins.com/blog/be-the-master-of-your-emotions)  
-2. [What Emotions Are and Why They Matter](https://www.psychologytoday.com/us/basics/emotions)
+1. [Mastering Your Emotions by Tony Robbins](https://www.tonyrobbins.com/blog/be-the-master-of-your-emotions): Tony Robbins provides actionable insights into understanding and managing emotions to enhance personal and professional success.  
+2. [What Emotions Are and Why They Matter](https://www.psychologytoday.com/us/basics/emotions): A comprehensive exploration of the role emotions play in shaping behavior, decision-making, and relationships.  

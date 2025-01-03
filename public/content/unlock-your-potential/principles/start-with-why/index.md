@@ -30,7 +30,7 @@ When we understand our deeper purpose, we’re more likely to stay committed to 
 
 ## How to Start with Why
 
-Here are some practical ways to incorporate this principle into daily life:
+Here are some practical ways to apply this principle:
 
 ### 1. Identify Your Why
 
@@ -62,6 +62,6 @@ This principle is especially relevant to **Perspective 4: Belonging**, where we 
 
 ## References and Further Reading  
 
-1. [Start with Why by Simon Sinek](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action) – The groundbreaking book that introduced this concept and how it applies to leadership and personal growth.
-2. [Objectives and Key Results (OKRs)](https://www.whatmatters.com/faqs/okr-meaning-definition-example) – OKRs (objective, key results) are essentially the WHY and WHAT but applied in organizations.
-3. [3 ways being intentional can change your life](https://youtu.be/57jZikDOI60) – A video from Conrad that explains how to start with why by being intentional.
+1. [Start with Why by Simon Sinek](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action): The groundbreaking book that introduced this concept and how it applies to leadership and personal growth.
+2. [Objectives and Key Results (OKRs)](https://www.whatmatters.com/faqs/okr-meaning-definition-example): OKRs (objective, key results) are essentially the WHY and WHAT but applied in organizations.
+3. [3 ways being intentional can change your life](https://youtu.be/57jZikDOI60): A video from Conrad that explains how to start with why by being intentional.

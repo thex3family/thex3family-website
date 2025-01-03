@@ -31,7 +31,7 @@ Externalizing your tasks into a system makes them actionable and visible. This t
 
 ## How to Implement "Write It or Forget It"
 
-Here are some practical ways to apply this principle in your life:
+Here are some practical ways to apply this principle:
 
 ### 1. Use a Simple Capture Tool
 

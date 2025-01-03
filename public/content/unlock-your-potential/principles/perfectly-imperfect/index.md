@@ -35,7 +35,7 @@ _“By accepting my struggles, I was able to focus on solutions rather than gett
 
 ## How to Embrace Imperfections
 
-Here are some practical strategies to apply this principle:
+Here are some practical ways to apply this principle:
 
 ### 1. Practice Self-Compassion
 
@@ -63,4 +63,4 @@ This principle of embracing imperfections is essential to **Perspective 6: Letti
 
 ## References and Further Reading
 
-1. [4A Model Of Understanding](/understand-yourself/4a-model-of-understanding) – Needing to accept your situation before being able to take effective action is described as the third A in the 4A Model Of Understanding by the Co-x3 Family Foundation. 
+1. [4A Model Of Understanding](/understand-yourself/4a-model-of-understanding): Needing to accept your situation before being able to take effective action is described as the third A in the 4A Model Of Understanding by the Co-x3 Family Foundation. 

@@ -43,7 +43,7 @@ For example, through self-reflection or therapy, we can uncover unknown fears or
 
 ## How to Embrace "I Know That I Know Nothing"
 
-Here are practical strategies to incorporate this principle into your life:
+Here are some practical ways to apply this principle:
 
 ### 1. Be A Beginner
 

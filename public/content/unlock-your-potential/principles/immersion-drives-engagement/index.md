@@ -57,4 +57,4 @@ Immersion plays a vital role in all of our programs, as they encourage deep enga
 
 ## References and Further Reading
 
-1. [Deep Work: Rules for Focused Success in a Distracted World](https://www.goodreads.com/book/show/25744928-deep-work) – Cal Newport’s guide on how deep focus and immersion drive success.
+1. [Deep Work: Rules for Focused Success in a Distracted World](https://www.goodreads.com/book/show/25744928-deep-work): Cal Newport’s guide on how deep focus and immersion drive success.

@@ -45,7 +45,7 @@ The key to reducing burnout is to find a balance between these two extremes. Itâ
 
 ## Strategies to Maintain Balance
 
-Here are some practical strategies to maintain balance and reduce burnout:
+Here are some practical ways to maintain balance and reduce burnout:
 
 ### 1. Schedule Regular Breaks
 

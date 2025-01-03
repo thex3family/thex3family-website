@@ -74,4 +74,4 @@ This principle of intentional practice is crucial for making meaningful progress
 
 ## References and Further Reading
 
-1. [Deliberate Practice: The Key to Success](https://hbr.org/2007/07/the-making-of-an-expert) – Explore how deliberate practice differs from repetition and why it’s crucial for achieving mastery.
+1. [Deliberate Practice: The Key to Success](https://hbr.org/2007/07/the-making-of-an-expert): Explore how deliberate practice differs from repetition and why it’s crucial for achieving mastery.

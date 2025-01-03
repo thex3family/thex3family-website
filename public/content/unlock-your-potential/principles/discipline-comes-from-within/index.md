@@ -34,7 +34,7 @@ By having a clear sense of what’s important, we create an internal system that
 
 ## How to Cultivate Discipline From Within  
 
-Here are some practical strategies to apply this principle:
+Here are some practical ways to apply this principle:
 
 ### 1. Clarify Our Values and Priorities  
 
@@ -62,4 +62,4 @@ This principle is especially important in **Perspective 7: Boundaries**, where m
 
 ## References and Further Reading  
 
-1. [Can’t Hurt Me by David Goggins](https://amzn.to/3ZYaHIS) – Discover how Goggins pushed the limits of discipline through ownership of his life and decisions.
+1. [Can’t Hurt Me by David Goggins](https://amzn.to/3ZYaHIS): Discover how Goggins pushed the limits of discipline through ownership of his life and decisions.
