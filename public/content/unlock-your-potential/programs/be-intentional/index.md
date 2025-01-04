@@ -28,6 +28,14 @@ In 2020, he shared Be Intentional to the world to help people lead their life wi
 - [Measure Twice, Cut Once](/unlock-your-potential/principles/measure-twice-cut-once)
 - [S.M.A.R.T. Goals (aka OKRs)](/unlock-your-potential/principles/smart-goals-aka-okrs)
 - [Work Smarter, Not Harder](/unlock-your-potential/principles/work-smarter-not-harder)
+- [Writing Reveals What Thinking Conceals](/unlock-your-potential/principles/writing-reveals-what-thinking-conceals)
+- [Count Your Blessings Not Your Problems](/unlock-your-potential/principles/count-your-blessings-not-your-problems)
+- [Don’t Make The Same Mistake Twice](/unlock-your-potential/principles/dont-make-the-same-mistake-twice)
+- [Fear Setting](/unlock-your-potential/principles/fear-setting)
+- [Master Your Emotions](/unlock-your-potential/principles/master-your-emotions)
+- [Learn From Those Who've Been Where You Are](/unlock-your-potential/principles/learn-from-those-who-have-been-where-you-are)
+- [Take What's Useful, Discard What Is Not](/unlock-your-potential/principles/take-whats-useful-discard-whats-not)
+- [Love Languages](/unlock-your-potential/principles/love-languages)
 - ...
 
 ## How Does It Work?
