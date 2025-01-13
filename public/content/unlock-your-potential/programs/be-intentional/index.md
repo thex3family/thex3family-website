@@ -36,6 +36,9 @@ In 2020, he shared Be Intentional to the world to help people lead their life wi
 - [Learn From Those Who've Been Where You Are](/unlock-your-potential/principles/learn-from-those-who-have-been-where-you-are)
 - [Take What's Useful, Discard What Is Not](/unlock-your-potential/principles/take-whats-useful-discard-whats-not)
 - [Love Languages](/unlock-your-potential/principles/love-languages)
+- [Nurture Meaningful Relationships](/unlock-your-potential/principles/nurture-meaningful-relationships)
+- [Track Moments That Matter](/unlock-your-potential/principles/track-moments-that-matter)
+- [Use It Or Lose It](/unlock-your-potential/principles/use-it-or-lose-it)
 - ...
 
 ## How Does It Work?
