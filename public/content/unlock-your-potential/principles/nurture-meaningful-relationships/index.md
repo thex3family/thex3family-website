@@ -1,6 +1,6 @@
 ---
 title: Nurture Meaningful Relationships
-description: Learn how to grow meaningful relationships and invest your energy with those that add value to our lives.
+description: Valuable relationships that enrich our well-being require intentional effort and care to cultivate.
 lang: en
 ---
 

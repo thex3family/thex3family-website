@@ -1,6 +1,6 @@
 ---
 title: Use It Or Lose It
-description: Learn why we forget information over time and how to combat it by being intentional in how we make use of our knowledge.
+description: We forget information over time. Combat it by being intentional in how we make use of our knowledge.
 lang: en
 ---
 

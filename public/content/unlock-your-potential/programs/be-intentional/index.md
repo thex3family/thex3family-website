@@ -39,7 +39,8 @@ In 2020, he shared Be Intentional to the world to help people lead their life wi
 - [Nurture Meaningful Relationships](/unlock-your-potential/principles/nurture-meaningful-relationships)
 - [Track Moments That Matter](/unlock-your-potential/principles/track-moments-that-matter)
 - [Use It Or Lose It](/unlock-your-potential/principles/use-it-or-lose-it)
-- ...
+- [Memories Are Fallable](/unlock-your-potential/principles/track-moments-that-matter)
+- [Connect Through Shared Experiences](/unlock-your-potential/principles/connect-through-shared-experiences)
 
 ## How Does It Work?
 
