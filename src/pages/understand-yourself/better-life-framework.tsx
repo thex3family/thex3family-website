@@ -117,7 +117,7 @@ const BetterLifeFrameworkPage = () => {
 
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": February 29, 2024", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": January 25, 2025", // This should be dynamic based on your data
     title: t("common:better-life-framework-title"),
     description: t("common:better-life-framework-description")
       .split('.')
