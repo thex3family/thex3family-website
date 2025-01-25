@@ -53,7 +53,7 @@ Immersion plays a vital role in all of our programs, as they encourage deep enga
 
 ### Notable Mentions
 
-[Gamify Your Life](/unlock-your-potential/programs/gamify-your-life) applies this principle by turning your life into a game, helping you immerse yourself in your favorite fantasy world / game, leveraging existing brain's pathways for focus and motivation.
+- [Gamify Your Life](/unlock-your-potential/programs/gamify-your-life): applies this principle by turning your life into a game, helping you immerse yourself in your favorite fantasy world / game, leveraging existing brain's pathways for focus and motivation.
 
 ## References and Further Reading
 

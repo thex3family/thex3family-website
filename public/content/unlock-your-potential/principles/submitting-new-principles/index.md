@@ -13,7 +13,7 @@ Start with a brief introduction that outlines the principle. Explain the core id
 
 ## Prerequisites
 
-What should someone already know or be familiar with before reading this page? List any prior knowledge, concepts, or skills that would help the reader fully understand the principle.
+List 2-3 relatable experiences that would help the reader recognize if this principle is especially relevant to their situation.
 
 ## [Section Name]
 
