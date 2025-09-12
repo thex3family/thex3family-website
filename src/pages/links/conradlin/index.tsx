@@ -18,7 +18,7 @@ import {
     isLangRightToLeft,
 } from "@/lib/utils/translations"
 
-import conrad from "@/public/team/conrad.png"
+import picture from "@/public/links/conradlin.png"
 
 type Props = BasePageProps & {
 }
@@ -58,7 +58,7 @@ const LinksPage = ({
                 <b>I Help People Level Up</b> <br /> Author Of The Better Life Framework <br /> Founder Of The Co-x3 Family Foundation
             </>
         ),
-        imageSrc: conrad,
+        imageSrc: picture,
         imageAlt: t("common:icon-image-alt"),
         buttonLabel: t("common:learn-more"),
         buttonTo: "https://conradlin.com",
@@ -76,7 +76,7 @@ const LinksPage = ({
         },
         {
             icon: FaBook,
-            title: "Pre-Order My Upcoming Book",
+            title: "Pre-Order My Book About The Better Life Framework",
             to: "https://shop.x3.family/supporters/posts/96533",
             boxShadow: cardBoxShadow
         },
