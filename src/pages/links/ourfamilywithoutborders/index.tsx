@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { FaBook, FaBookOpen, FaHome, FaInstagram, FaLightbulb, FaLinkedin, FaRocket, FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa"
+import { FaBed, FaBook, FaBookOpen, FaHome, FaInfo, FaInstagram, FaLightbulb, FaLinkedin, FaQuestion, FaRocket, FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa"
 import {
     useToken,
 } from "@chakra-ui/react"
@@ -18,7 +18,7 @@ import {
     isLangRightToLeft,
 } from "@/lib/utils/translations"
 
-import picture from "@/public/links/conradlin.png"
+import picture from "@/public/links/ourfamilywithoutborders.png"
 
 type Props = BasePageProps & {
 }
@@ -51,98 +51,84 @@ const LinksPage = ({
     const dir = isLangRightToLeft(locale as Lang) ? "rtl" : "ltr"
 
     const headerData = {
-        title: "Conrad Lin",
-        description: "Conrad Lin is an innovative thought leader, renowned for his groundbreaking work in personal and professional development with The Better Life Framework and his passion to help people level up and be their best self.",
+        title: "Our Family Without Borders",
+        description: "Grow, learn, live with amazing people around the world. A co-living and co-working experience by The Co-x3 Family Foundation.",
         customDescription: (
             <>
-                <b>I Help People Level Up</b> <br /> Author Of The Better Life Framework <br /> Founder Of The Co-x3 Family Foundation
+                Grow, learn, live with amazing people around the world. A co-living and co-working experience by The Co-x3 Family Foundation.
             </>
         ),
         imageSrc: picture,
         imageAlt: t("common:icon-image-alt"),
         buttonLabel: t("common:learn-more"),
-        buttonTo: "https://conradlin.com",
-        connectTitle: "🔻 See What I'm Up To 🔻"
+        buttonTo: "https://ourfamilywithoutborders.com",
+        connectTitle: t("page-links:page-links-connect-title")
     }
 
     const cardBoxShadow = useToken("colors", "cardBoxShadow")
 
     const cardsData = [
         {
-            icon: FaLightbulb,
-            title: "Sign Up For A FREE Consulting Session",
-            to: "https://levelupwithconrad.com",
-            boxShadow: cardBoxShadow
-        },
-        {
-            icon: FaBook,
-            title: "Pre-Order My Book About The Better Life Framework",
-            to: "https://shop.x3.family/supporters/posts/96533",
-            boxShadow: cardBoxShadow
-        },
-        {
-            icon: FaRocket,
-            title: "Join Me In Making Positive Impact",
-            to: "/make-positive-impact/",
-            boxShadow: cardBoxShadow
-        },
-        {
             icon: FaHome,
-            title: "Live With Me @ Our Family Without Borders",
-            to: "https://ourfamilywithoutborders.com",
+            title: "See Our Homes Around The World",
+            to: "https://www.ourfamilywithoutborders.com/homes",
+            boxShadow: cardBoxShadow
+        },
+        {
+            icon: FaBed,
+            title: "Find An Available Room",
+            to: "https://www.ourfamilywithoutborders.com/rooms",
+            boxShadow: cardBoxShadow
+        },
+        {
+            icon: FaInfo,
+            title: "About Our Family Without Borders",
+            to: "https://www.ourfamilywithoutborders.com/about",
+            boxShadow: cardBoxShadow
+        },
+        {
+            icon: FaQuestion,
+            title: "Frequently Asked Questions",
+            to: "https://www.ourfamilywithoutborders.com/faqs",
             boxShadow: cardBoxShadow
         },
     ]
     
     const socialLinksData = [
         {
-            icon: FaSpotify,
-            to: "https://podcasters.spotify.com/pod/show/levelupwithconrad",
-            ariaLabel: "Podcast",
-            color: "#1DB954",
-            title: "Level Up With Conrad Podcast"
-        },
-        {
-            icon: FaYoutube,
-            to: "https://shop.x3.family/supporters/videos/series/2240",
-            ariaLabel: "YouTube",
-            color: "#FF0000",
-            title: "Vlog: Live Your Best Life"
-        },
-        {
-            icon: FaYoutube,
-            to: "https://www.youtube.com/@conradlin",
-            ariaLabel: "YouTube",
-            color: "#FF0000",
-            title: "Watch All My Videos"
-        },
-        {
             icon: FaInstagram,
-            to: "https://www.instagram.com/levelupwithconrad",
+            to: "https://www.instagram.com/ourfamilywithoutborders",
             ariaLabel: "Instagram",
             color: "#833AB4",
-            title: "Clips and Daily Life"
+            title: "Instagram"
+        },
+        {
+            icon: FaBook,
+            to: "https://www.xiaohongshu.com/user/profile/68c3a550000000001901ebaf",
+            ariaLabel: "Xiaohongshu",
+            color: "#FF0000",
+            title: "Xiaohongshu"
         },
         {
             icon: FaTiktok,
-            to: "https://www.tiktok.com/@conradlin",
+            to: "https://www.tiktok.com/@ourfamilywithoutborders",
             ariaLabel: "TikTok",
             color: "#00f2ea",
-            title: "Clips From My Content"
+            title: "TikTok"
         },
         {
             icon: FaLinkedin,
-            to: "https://www.linkedin.com/in/conradlin/",
+            to: "https://www.linkedin.com/company/ourfamilywithoutborders/",
             ariaLabel: "LinkedIn",
             color: "#0077B5",
-            title: "My Professional Network"
+            title: "LinkedIn"
         },
         {
             icon: FaBookOpen,
-            to: "https://www.conradlin.com/blog",
-            ariaLabel: "Instagram",
+            to: "https://www.ourfamilywithoutborders.com/blog",
+            ariaLabel: "Blog",
             color: "#000000",
-            title: "My Personal Blog"
+            title: "Blog"
         },
     ]
 
