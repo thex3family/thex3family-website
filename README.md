@@ -88,7 +88,7 @@ The site is available in English (`en`, the default), Simplified Chinese (`zh`),
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-This work is licensed under a
+Co-x3 content, original material and additions in this repository are licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
@@ -97,4 +97,4 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-Parts of the application code are derived from the open-source ethereum.org website and remain under its MIT license. See [NOTICE.md](NOTICE.md) for what each license covers and the attribution that must stay with the code.
+Files derived from the open-source ethereum.org website remain under its MIT license. See [NOTICE.md](NOTICE.md) for what each license covers and the attribution that must stay with the code.

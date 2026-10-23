@@ -9,10 +9,13 @@ export async function fetchCommunityEvents(): Promise<CommunityEventsReturnType>
   const apiKey = process.env.GOOGLE_API_KEY
   const calendarId = process.env.GOOGLE_CALENDAR_ID
 
-  // Local and preview builds usually have no Google credentials. Production
-  // (VERCEL_ENV=production) still fails below, so a missing key never ships
-  // an empty events list silently.
-  if ((!apiKey || !calendarId) && process.env.VERCEL_ENV !== "production") {
+  // Vercel previews and local builds that opt in with SKIP_COMMUNITY_EVENTS=true
+  // may build without Google credentials. Every other build still fails below,
+  // so a missing key never ships an empty events list silently.
+  const mayBuildWithoutEvents =
+    process.env.VERCEL_ENV === "preview" ||
+    process.env.SKIP_COMMUNITY_EVENTS === "true"
+  if ((!apiKey || !calendarId) && mayBuildWithoutEvents) {
     console.warn(
       "GOOGLE_API_KEY or GOOGLE_CALENDAR_ID is not set; building without community events"
     )
@@ -54,7 +57,7 @@ export async function fetchCommunityEvents(): Promise<CommunityEventsReturnType>
           calendarLink: event.htmlLink,
         }
       })
-      .filter((event) => event.date !== ""); // Filter out events with null dates if needed
+      .filter((event) => event.date !== "") // Filter out events with null dates if needed
 
     return {
       pastEventData,

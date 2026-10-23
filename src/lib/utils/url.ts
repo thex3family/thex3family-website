@@ -1,4 +1,9 @@
-import { DEFAULT_LOCALE, DISCORD_PATH, MAIN_CONTENT_ID } from "@/lib/constants"
+import {
+  DEFAULT_LOCALE,
+  DISCORD_PATH,
+  LOCALES_CODES,
+  MAIN_CONTENT_ID,
+} from "@/lib/constants"
 
 export const isDiscordInvite = (href: string): boolean =>
   href.includes(DISCORD_PATH) && !href.includes("http")
@@ -45,7 +50,8 @@ export const isHash = (href: string): boolean => href.startsWith("#")
  */
 export const localizePath = (path: string, locale?: string | false) => {
   if (!locale || locale === DEFAULT_LOCALE || !path.startsWith("/")) return path
+  // Already localized (in this or another locale), e.g. "/ja/x" rendered on /es
   const firstSegment = path.split(/[/?#]/)[1]
-  if (firstSegment === locale) return path
+  if (LOCALES_CODES.includes(firstSegment)) return path
   return path === "/" ? `/${locale}` : `/${locale}${path}`
 }

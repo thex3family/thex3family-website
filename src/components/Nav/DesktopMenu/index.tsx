@@ -39,14 +39,17 @@ const DesktopMenu = ({ linkSections, ...props }: DesktopMenuProps) => {
   const direction = isLangRightToLeft(locale as Lang) ? "rtl" : "ltr"
 
   return (
-    <Box {...props}>
-      <Root
-        dir={direction}
-        orientation="horizontal"
-        delayDuration={0}
-        value={openSection}
-        onValueChange={setOpenSection}
-      >
+    // asChild: Radix Root would otherwise add a second <nav aria-label="Main">
+    // (untranslated) inside the nav bar's own landmark
+    <Root
+      asChild
+      dir={direction}
+      orientation="horizontal"
+      delayDuration={0}
+      value={openSection}
+      onValueChange={setOpenSection}
+    >
+      <Box {...props}>
         <List asChild>
           <Box as="ul" display="flex" listStyleType="none" m={0} gap={1}>
             {NAV_SECTION_KEYS.map((sectionKey) => {
@@ -121,8 +124,8 @@ const DesktopMenu = ({ linkSections, ...props }: DesktopMenuProps) => {
           </Box>
         </List>
         <Viewport />
-      </Root>
-    </Box>
+      </Box>
+    </Root>
   )
 }
 
