@@ -22,7 +22,6 @@ import { ButtonLink } from "@/components/Buttons"
 import CallToContribute from "@/components/CallToContribute"
 import Card from "@/components/Card"
 import Codeblock from "@/components/Codeblock"
-import CrowdinContributors from "@/components/CrowdinContributors"
 import DeveloperDocsLinks from "@/components/DocsLinks"
 import DocsNav from "@/components/DocsNav"
 import Emoji from "@/components/Emoji"
@@ -49,9 +48,6 @@ import YouTube from "@/components/YouTube"
 import { getEditPath } from "@/lib/utils/editPath"
 
 // Utils
-import { DEFAULT_LOCALE } from "@/lib/constants"
-
-import { useClientSideGitHubLastEdit } from "@/hooks/useClientSideGitHubLastEdit"
 
 const Page = (props: ChildOnlyProp & Pick<FlexProps, "dir">) => (
   <Flex
@@ -120,8 +116,7 @@ const baseSubHeadingStyles: HeadingProps = {
 }
 
 const H3 = (props: HeadingProps) => (
-  <MdHeading3 {...baseSubHeadingStyles} mt={12} 
-  fontSize="xl" {...props} />
+  <MdHeading3 {...baseSubHeadingStyles} mt={12} fontSize="xl" {...props} />
 )
 
 const H4 = (props: HeadingProps) => (
@@ -203,10 +198,7 @@ export const docsComponents = {
 }
 
 interface DocsLayoutProps
-  extends Pick<
-      MdPageContent,
-      "slug" | "tocItems" | "lastUpdatedDate" | "crowdinContributors"
-    >,
+  extends Pick<MdPageContent, "slug" | "tocItems" | "lastUpdatedDate">,
     ChildOnlyProp {
   frontmatter: DocsFrontmatter
 }
@@ -217,16 +209,10 @@ export const DocsLayout = ({
   slug,
   tocItems,
   lastUpdatedDate,
-  crowdinContributors,
 }: DocsLayoutProps) => {
   const isPageIncomplete = !!frontmatter.incomplete
   const { asPath: relativePath } = useRouter()
   const absoluteEditPath = getEditPath(relativePath)
-
-  const gitHubLastEdit = useClientSideGitHubLastEdit(relativePath)
-  const intlLastEdit = "data" in gitHubLastEdit ? gitHubLastEdit.data! : ""
-  const useGitHubContributors =
-    frontmatter.lang === DEFAULT_LOCALE || crowdinContributors.length === 0
 
   return (
     <Page>
@@ -240,18 +226,10 @@ export const DocsLayout = ({
         <SideNav path={relativePath} />
         <Content>
           <H1 id="top">{frontmatter.title}</H1>
-          {useGitHubContributors ? (
-            <GitHubContributors
-              relativePath={relativePath}
-              lastUpdatedDate={lastUpdatedDate!}
-            />
-          ) : (
-            <CrowdinContributors
-              relativePath={relativePath}
-              lastUpdatedDate={intlLastEdit}
-              contributors={crowdinContributors}
-            />
-          )}
+          <GitHubContributors
+            relativePath={relativePath}
+            lastUpdatedDate={lastUpdatedDate!}
+          />
           <TableOfContents
             slug={slug}
             editPath={absoluteEditPath}

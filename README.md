@@ -75,11 +75,20 @@ git push
 - `master` is continually synced to Vercel and will automatically deploy new commits to the.x3.family
 - You can [view the history of releases](https://github.com/thex3family/thex3family-website/releases), which include PR highlights
 
+## Languages And Translations
+
+The site is available in English (`en`, the default), Simplified Chinese (`zh`), Japanese (`ja`) and Spanish (`es`). Each language lives under its own URL prefix (`/zh/...`, `/ja/...`, `/es/...`); English has no prefix. The language picker in the nav keeps the reader on the same page and remembers the choice in the `NEXT_LOCALE` cookie.
+
+- **Interface text** (nav, buttons, page sections) lives in `src/intl/<locale>/<namespace>.json`. Every locale has the same keys as `src/intl/en/`. When you add or change an English string, add it to the other locales too; a missing key falls back to English.
+- **Page content** (markdown) lives in `public/content/<path>/index.md`. A translated page goes in `public/content/translations/<locale>/<path>/index.md` with the same frontmatter and `lang: <locale>`. Until a translation exists, the page shows the English text with a "help us translate" notice.
+- **Adding a language**: add an entry to `i18n.config.json`, copy `src/intl/en/` to `src/intl/<locale>/` and translate it.
+- Links inside the site go through `BaseLink` (`src/components/Link.tsx`) or `localizePath` (`src/lib/utils/url.ts`), which add the locale prefix so prerendered pages link within the reader's language.
+
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-This work is licensed under a
+Co-x3 content, original material and additions in this repository are licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
@@ -88,4 +97,4 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-The development of this website was inspired by the work of [ethereum.org](https://github.com/ethereum/ethereum-org-website). Before implementing any custom elements, we highly recommend exploring their codebase to gain insights and discover solutions that may be applicable to our website's needs.
+Files derived from the open-source ethereum.org website remain under its MIT license. See [NOTICE.md](NOTICE.md) for what each license covers and the attribution that must stay with the code.

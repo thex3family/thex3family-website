@@ -87,7 +87,7 @@ Apply your new solution in practice. First principles thinking doesn’t stop on
 
 When you come up with first principles, consider contributing to our repository! Your insights can help expand our collective understanding and enable others to build better, more personalized solutions.
 
-<ButtonLink to="unlock-your-potential/principles/how-do-I-submit-first-principles">Learn How To Submit First Principles</ButtonLink>
+<ButtonLink to="/unlock-your-potential/principles/how-do-I-submit-first-principles">Learn How To Submit First Principles</ButtonLink>
 
 ## References
 1. [What Are First Principles?](https://fs.blog/first-principles/) - An overview of first principles thinking from Farnam Street.
