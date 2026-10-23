@@ -75,6 +75,15 @@ git push
 - `master` is continually synced to Vercel and will automatically deploy new commits to the.x3.family
 - You can [view the history of releases](https://github.com/thex3family/thex3family-website/releases), which include PR highlights
 
+## Languages And Translations
+
+The site is available in English (`en`, the default), Simplified Chinese (`zh`), Japanese (`ja`) and Spanish (`es`). Each language lives under its own URL prefix (`/zh/...`, `/ja/...`, `/es/...`); English has no prefix. The language picker in the nav keeps the reader on the same page and remembers the choice in the `NEXT_LOCALE` cookie.
+
+- **Interface text** (nav, buttons, page sections) lives in `src/intl/<locale>/<namespace>.json`. Every locale has the same keys as `src/intl/en/`. When you add or change an English string, add it to the other locales too; a missing key falls back to English.
+- **Page content** (markdown) lives in `public/content/<path>/index.md`. A translated page goes in `public/content/translations/<locale>/<path>/index.md` with the same frontmatter and `lang: <locale>`. Until a translation exists, the page shows the English text with a "help us translate" notice.
+- **Adding a language**: add an entry to `i18n.config.json`, copy `src/intl/en/` to `src/intl/<locale>/` and translate it.
+- Links inside the site go through `BaseLink` (`src/components/Link.tsx`) or `localizePath` (`src/lib/utils/url.ts`), which add the locale prefix so prerendered pages link within the reader's language.
+
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
