@@ -106,7 +106,6 @@ export type Direction = "rtl" | "ltr" | "auto"
 
 export type I18nLocale = {
   code: Lang
-  crowdinCode: string
   name: string
   localName: string
   langDir: Direction
@@ -158,29 +157,6 @@ export type StakingPage = "solo" | "saas" | "pools"
 export type FileContributorsState = LoadingState<Author[]>
 
 export type LastUpdatedState = LoadingState<string>
-
-// Crowdin contributors
-export type CrowdinFileId = {
-  id: number
-  path: string
-}
-
-export type CrowdinContributor = {
-  id: number
-  username: string
-  avatarUrl: string
-  totalCosts: number
-}
-
-type FileContributorData = {
-  fileId: string
-  contributors: CrowdinContributor[]
-}
-
-export type LocaleContributions = {
-  lang: string
-  data: FileContributorData[]
-}
 
 // GitHub contributors
 export type Commit = {
@@ -296,29 +272,6 @@ export type MetricDataValue<Data, Value> =
       value: Value
     }
 
-export type EtherscanNodeResponse = {
-  result: {
-    UTCDate: number
-    TotalNodeCount: number
-  }[]
-}
-
-type EtherscanTxCountItem = {
-  unixTimeStamp: string
-  transactionCount: number
-}
-
-export type EtherscanTxCountResponse = {
-  status: string
-  message: string
-  result: EtherscanTxCountItem[]
-}
-
-export type DefiLlamaTVLResponse = {
-  date: string
-  totalLiquidityUSD: number
-}[]
-
 export type MetricReturnData = MetricDataValue<
   TimestampedData<number>[],
   number
@@ -327,12 +280,10 @@ export type MetricReturnData = MetricDataValue<
 export type StatsBoxState = MetricDataValue<TimestampedData<number>[], string>
 
 export type MetricSection =
-  | "totalEthStaked"
-  | "nodeCount"
-  | "totalValueLocked"
-  | "txCount"
-
-export type AllMetricData = Record<MetricSection, MetricReturnData>
+  | "totalImpact"
+  | "viewsToday"
+  | "downloadsToday"
+  | "activeMembers"
 
 export type StatsBoxMetric = {
   title: string
@@ -340,6 +291,4 @@ export type StatsBoxMetric = {
   state: StatsBoxState
   buttonContainer: JSX.Element
   range: string
-  apiUrl: string
-  apiProvider: string
 }

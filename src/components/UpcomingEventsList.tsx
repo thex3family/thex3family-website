@@ -98,7 +98,7 @@ const UpcomingEventsList: React.FC = () => {
     return (
       <InfoBanner emoji=":information_source:">
         <Translation id="page-community-upcoming-events-no-events" />{" "}
-        <InlineLink to="https://github.com/ethereum/ethereum-org-website/blob/dev/src/data/community-events.json">
+        <InlineLink to="https://github.com/thex3family/thex3family-website/blob/dev/src/data/community-events.json">
           <Translation id="page-community:page-community-please-add-to-page" />
         </InlineLink>
       </InfoBanner>

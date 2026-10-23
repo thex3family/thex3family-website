@@ -1,5 +1,3 @@
-import { join } from "path"
-
 import { useRouter } from "next/router"
 import Script from 'next/script'
 import { Container } from "@chakra-ui/react"
@@ -13,8 +11,6 @@ import Nav from "@/components/Nav"
 import { SkipLink } from "@/components/SkipLink"
 import TranslationBanner from "@/components/TranslationBanner"
 import TranslationBannerLegal from "@/components/TranslationBannerLegal"
-
-import { toPosixPath } from "@/lib/utils/relativePath"
 
 import { DEFAULT_LOCALE } from "@/lib/constants"
 
@@ -46,7 +42,8 @@ export const RootLayout = ({
     (contentIsOutdated || (contentNotTranslated && !isPageLanguageEnglish)) &&
     !isLegal
   const shouldShowLegalTranslationBanner = isLegal && !isPageLanguageEnglish
-  const originalPagePath = toPosixPath(join(DEFAULT_LOCALE, asPath))
+  // The same page in English; links add the locale (none for English)
+  const originalPagePath = asPath
 
   return (
     <Container mx="auto" maxW={oldTheme.variables.maxPageWidth}>

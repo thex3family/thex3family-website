@@ -1,4 +1,4 @@
-import { existsSync } from "fs"
+import { statSync } from "fs"
 import { join } from "path"
 
 import { DEFAULT_LOCALE, TRANSLATED_IMAGES_DIR } from "../constants"
@@ -25,5 +25,11 @@ export const getTranslatedImgPath = (originalPath: string, locale: string) =>
     originalPath.split("/content/").slice(1).join("/")
   )
 
-export const checkIfImageIsTranslated = (translatedImgPath: string) =>
-  existsSync(join("public", translatedImgPath))
+// Must be a file: an image outside `/content/` maps to a bare directory, which exists
+export const checkIfImageIsTranslated = (translatedImgPath: string) => {
+  try {
+    return statSync(join("public", translatedImgPath)).isFile()
+  } catch {
+    return false
+  }
+}
