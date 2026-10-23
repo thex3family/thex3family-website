@@ -6,8 +6,8 @@ import TableComponent from ".."
 
 import {
   MdxDemoData,
-  MdxNumericData,
   MdxLongTextData,
+  MdxNumericData,
 } from "./mockMdxData"
 
 type TableType = typeof TableComponent

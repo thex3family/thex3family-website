@@ -1,6 +1,7 @@
 import NextLink from "next/link"
 import { useRouter } from "next/router"
 import { MdChevronRight } from "react-icons/md"
+import { Box, Grid, Icon, type SystemStyleObject } from "@chakra-ui/react"
 import {
   Content,
   Item,
@@ -10,7 +11,6 @@ import {
   Trigger,
   Viewport,
 } from "@radix-ui/react-navigation-menu"
-import { Box, Grid, Icon, type SystemStyleObject } from "@chakra-ui/react"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 import { isHrefActive } from "@/lib/utils/url"

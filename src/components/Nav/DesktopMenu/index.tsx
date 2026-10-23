@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { useRouter } from "next/router"
+import { Box, type BoxProps,Button } from "@chakra-ui/react"
+import { keyframes } from "@emotion/react"
 import {
   Content,
   Item,
@@ -8,12 +10,10 @@ import {
   Trigger,
   Viewport,
 } from "@radix-ui/react-navigation-menu"
-import { keyframes } from "@emotion/react"
-import { Box, Button, type BoxProps } from "@chakra-ui/react"
-
-import { isLangRightToLeft } from "@/lib/utils/translations"
 
 import type { Lang } from "@/lib/types"
+
+import { isLangRightToLeft } from "@/lib/utils/translations"
 
 import { NAV_SECTION_KEYS, type NavSections } from "../types"
 
