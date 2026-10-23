@@ -13,7 +13,7 @@ import {
 } from "@radix-ui/react-navigation-menu"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
-import { isHrefActive } from "@/lib/utils/url"
+import { isHrefActive, localizePath } from "@/lib/utils/url"
 
 import type { Level, NavItem } from "../types"
 
@@ -98,7 +98,8 @@ const SubMenu = ({ lvl, items, sectionKey }: SubMenuProps) => {
                       <NavigationMenuLink asChild active={isActive}>
                         <Box
                           as={NextLink}
-                          href={item.href}
+                          href={localizePath(item.href, locale)}
+                          locale={false}
                           data-active={isActive}
                           aria-current={isActive ? "page" : undefined}
                           sx={entryStyles(hoverBg)}

@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
+import { localizePath } from "@/lib/utils/url"
 
 import { rememberLocale, useLanguagePicker } from "./useLanguagePicker"
 
@@ -58,8 +59,8 @@ const LanguageList = ({ onSelect, source }: LanguageListProps) => {
           <ListItem key={code} m={0}>
             <Flex
               as={NextLink}
-              href={asPath}
-              locale={code}
+              href={localizePath(asPath, code)}
+              locale={false}
               lang={code}
               hrefLang={code}
               aria-current={isCurrent ? "true" : undefined}
@@ -127,7 +128,8 @@ const LanguageList = ({ onSelect, source }: LanguageListProps) => {
       <Box borderTop="1px" borderColor="body.light" px={3} py={2}>
         <Box
           as={NextLink}
-          href="/languages"
+          href={localizePath("/languages", locale)}
+          locale={false}
           fontSize="sm"
           color="primary.base"
           onClick={() => onSelect?.()}

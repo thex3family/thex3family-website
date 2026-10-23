@@ -32,7 +32,7 @@ import {
 } from "@chakra-ui/react"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
-import { isHrefActive } from "@/lib/utils/url"
+import { isHrefActive, localizePath } from "@/lib/utils/url"
 
 import LanguageList from "../LanguagePicker/LanguageList"
 
@@ -75,7 +75,8 @@ const ItemList = ({ items, depth, onNavigate }: ItemListProps) => {
               <ListItem key={item.label} m={0}>
                 <Box
                   as={NextLink}
-                  href={item.href!}
+                  href={localizePath(item.href!, locale)}
+                  locale={false}
                   display="block"
                   px={4}
                   py={3}

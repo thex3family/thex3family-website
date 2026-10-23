@@ -1,4 +1,4 @@
-import { DISCORD_PATH, MAIN_CONTENT_ID } from "@/lib/constants"
+import { DEFAULT_LOCALE, DISCORD_PATH, MAIN_CONTENT_ID } from "@/lib/constants"
 
 export const isDiscordInvite = (href: string): boolean =>
   href.includes(DISCORD_PATH) && !href.includes("http")
@@ -35,3 +35,17 @@ export const isHrefActive = (
 }
 
 export const isHash = (href: string): boolean => href.startsWith("#")
+
+/**
+ * Prefixes an internal path with its locale ("/for" -> "/es/for").
+ *
+ * Next's Link only adds the prefix in the client bundle, so prerendered HTML
+ * links every page to English until hydration. Links pass the result with
+ * `locale={false}`, which Next documents as "href already has the locale".
+ */
+export const localizePath = (path: string, locale?: string | false) => {
+  if (!locale || locale === DEFAULT_LOCALE || !path.startsWith("/")) return path
+  const firstSegment = path.split(/[/?#]/)[1]
+  if (firstSegment === locale) return path
+  return path === "/" ? `/${locale}` : `/${locale}${path}`
+}

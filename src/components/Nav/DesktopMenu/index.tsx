@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useRouter } from "next/router"
-import { Box, type BoxProps,Button } from "@chakra-ui/react"
+import { Box, type BoxProps, Button } from "@chakra-ui/react"
 import { keyframes } from "@emotion/react"
 import {
   Content,
