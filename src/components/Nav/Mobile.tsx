@@ -83,9 +83,12 @@ const ItemList = ({ items, depth, onNavigate }: ItemListProps) => {
                   borderRadius="base"
                   textDecoration="none"
                   color={isActive ? "primary.highContrast" : "body.base"}
-                  bg={isActive ? "primary.lowContrast" : "transparent"}
+                  bg={isActive ? "background.highlight" : "transparent"}
                   aria-current={isActive ? "page" : undefined}
-                  _hover={{ color: "primary.base", textDecoration: "none" }}
+                  _hover={{
+                    color: "primary.highContrast",
+                    textDecoration: "none",
+                  }}
                   onClick={() => {
                     trackCustomEvent({
                       eventCategory: "Mobile navigation menu",
@@ -167,7 +170,7 @@ const FooterButton = ({ children, ...props }: ButtonProps) => (
     fontWeight="normal"
     fontSize="sm"
     color="body.base"
-    _hover={{ color: "primary.base" }}
+    _hover={{ color: "primary.highContrast" }}
     {...props}
   >
     {children}
@@ -252,7 +255,7 @@ const MobileNavMenu = ({
                         py={4}
                         fontSize="xl"
                         fontWeight="bold"
-                        _expanded={{ color: "primary.base" }}
+                        _expanded={{ color: "primary.highContrast" }}
                       >
                         <Box flex="1" textAlign="start">
                           {section.label}

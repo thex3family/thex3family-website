@@ -36,8 +36,8 @@ const LanguagePicker = () => {
           px={2}
           fontWeight="normal"
           color={isOpen ? "primary.highContrast" : "body.base"}
-          bg={isOpen ? "primary.lowContrast" : "transparent"}
-          _hover={{ color: "primary.base" }}
+          bg={isOpen ? "background.highlight" : "transparent"}
+          _hover={{ color: "primary.highContrast" }}
         >
           {t("languages-title")} {locale!.toUpperCase()}
         </Button>

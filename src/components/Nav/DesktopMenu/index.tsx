@@ -66,11 +66,17 @@ const DesktopMenu = ({ linkSections, ...props }: DesktopMenuProps) => {
                         whiteSpace="nowrap"
                         fontWeight="normal"
                         color={isOpen ? "primary.highContrast" : "body.base"}
-                        bg={isOpen ? "primary.lowContrast" : "transparent"}
+                        bg={isOpen ? "background.highlight" : "transparent"}
+                        // Accent rule marks the open section without relying on colour alone
+                        boxShadow={
+                          isOpen
+                            ? "inset 0 -2px 0 0 var(--x3-colors-primary-base)"
+                            : "none"
+                        }
                         borderRadius="base"
                         _hover={{
-                          color: "primary.base",
-                          bg: isOpen ? "primary.lowContrast" : "transparent",
+                          color: "primary.highContrast",
+                          bg: isOpen ? "background.highlight" : "transparent",
                         }}
                         // Bridge the gap to the panel so moving the pointer down keeps it open
                         _after={{

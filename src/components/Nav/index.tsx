@@ -118,7 +118,7 @@ const Nav = ({ path }: IProps) => {
               fontWeight="normal"
               textDecor="none"
               me={8}
-              _hover={{ color: "primary.base" }}
+              _hover={{ color: "primary.highContrast" }}
               _visited={{}}
             >
               {link.text}

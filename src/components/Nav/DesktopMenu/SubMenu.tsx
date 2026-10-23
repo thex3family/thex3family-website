@@ -46,19 +46,19 @@ const entryStyles = (hoverBg: string): SystemStyleObject => ({
   cursor: "pointer",
   _hover: {
     bg: hoverBg,
-    color: "primary.base",
+    color: "primary.highContrast",
     textDecoration: "none",
-    ".nav-item-description": { color: "primary.base" },
+    ".nav-item-description": { color: "primary.highContrast" },
   },
   _focusVisible: {
     outline: "2px solid",
-    outlineColor: "primary.base",
+    outlineColor: "primary.highContrast",
     outlineOffset: "-2px",
   },
   "&[data-active=true], &[data-state=open]": {
     bg: hoverBg,
-    color: "primary.base",
-    ".nav-item-description": { color: "primary.base" },
+    color: "primary.highContrast",
+    ".nav-item-description": { color: "primary.highContrast" },
   },
 })
 

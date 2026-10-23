@@ -72,11 +72,14 @@ const LanguageList = ({ onSelect, source }: LanguageListProps) => {
               borderRadius="base"
               textDecoration="none"
               color={isCurrent ? "primary.highContrast" : "body.base"}
-              bg={isCurrent ? "primary.lowContrast" : "transparent"}
-              _hover={{ bg: "background.highlight", color: "primary.base" }}
+              bg={isCurrent ? "background.highlight" : "transparent"}
+              _hover={{
+                bg: "background.highlight",
+                color: "primary.highContrast",
+              }}
               _focusVisible={{
                 outline: "2px solid",
-                outlineColor: "primary.base",
+                outlineColor: "primary.highContrast",
                 outlineOffset: "-2px",
               }}
               onClick={() => {
@@ -131,7 +134,7 @@ const LanguageList = ({ onSelect, source }: LanguageListProps) => {
           href={localizePath("/languages", locale)}
           locale={false}
           fontSize="sm"
-          color="primary.base"
+          color="primary.highContrast"
           onClick={() => onSelect?.()}
         >
           {t("nav-language-all")}
