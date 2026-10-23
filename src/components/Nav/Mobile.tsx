@@ -20,6 +20,7 @@ import {
   type ButtonProps,
   Drawer,
   DrawerBody,
+  DrawerCloseButton,
   DrawerContent,
   DrawerFooter,
   DrawerOverlay,
@@ -238,6 +239,13 @@ const MobileNavMenu = ({
       >
         <DrawerOverlay bg="modalBackground" />
         <DrawerContent bg="background.base">
+          {/* At phone width the drawer covers the hamburger, so it needs its own close */}
+          <DrawerCloseButton
+            aria-label={t("nav-close-menu")}
+            top={6}
+            insetEnd={4}
+            size="lg"
+          />
           <DrawerBody pt={20} pb={6} px={2}>
             {view === "menu" ? (
               <Accordion allowToggle>
