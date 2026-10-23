@@ -88,4 +88,4 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-The development of this website was inspired by the work of [ethereum.org](https://github.com/ethereum/ethereum-org-website). Before implementing any custom elements, we highly recommend exploring their codebase to gain insights and discover solutions that may be applicable to our website's needs.
+Parts of the application code are derived from the open-source ethereum.org website and remain under its MIT license. See [NOTICE.md](NOTICE.md) for what each license covers and the attribution that must stay with the code.
