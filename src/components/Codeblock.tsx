@@ -11,7 +11,6 @@ import { Box, BoxProps, Flex, useColorModeValue } from "@chakra-ui/react"
 import CopyToClipboard from "@/components/CopyToClipboard"
 import Emoji from "@/components/Emoji"
 ;(typeof global !== "undefined" ? global : window).Prism = Prism
-require("prismjs/components/prism-solidity")
 
 const LINES_BEFORE_COLLAPSABLE = 8
 
@@ -231,9 +230,7 @@ const Codeblock: React.FC<IProps> = ({
   const matches = className?.match(/language-(?<lang>.*)/)
   const language = matches?.groups?.lang || ""
 
-  const shouldShowCopyWidget = ["js", "json", "python", "solidity"].includes(
-    language
-  )
+  const shouldShowCopyWidget = ["js", "json", "python"].includes(language)
   const shouldShowLineNumbers = language !== "bash"
   const totalLines = codeText.split("\n").length
 
