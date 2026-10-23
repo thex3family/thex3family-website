@@ -1,16 +1,16 @@
-import React, { FC, useRef } from "react"
-import { useRouter } from "next/router"
+import { useRef } from "react"
 import { useTranslation } from "next-i18next"
-import { MdBrightness2, MdLanguage, MdWbSunny } from "react-icons/md"
-import { Box, Flex, HStack, Icon, useDisclosure } from "@chakra-ui/react"
+import { MdBrightness2, MdWbSunny } from "react-icons/md"
+import { Box, Flex } from "@chakra-ui/react"
 
+import LanguagePicker from "@/components/LanguagePicker"
 import SearchBar from "@/components/SearchBar"
 
-import { ButtonLink, IconButton } from "../Buttons"
+import { IconButton } from "../Buttons"
 import { HomeIcon } from "../icons"
 import { BaseLink } from "../Link"
 
-import Menu from "./Menu"
+import DesktopMenu from "./DesktopMenu"
 import MobileNavMenu from "./Mobile"
 import { useNav } from "./useNav"
 
@@ -18,39 +18,38 @@ export interface IProps {
   path: string
 }
 
-// TODO display page title on mobile
-const Nav: FC<IProps> = ({ path }) => {
+// Layout follows the ethereum.org nav (MIT, see NOTICE.md): logo, sections
+// with a mega-menu, then search, theme and language on the right
+const Nav = ({ path }: IProps) => {
   const {
-    primaryNav,
-    UnlockYourPotentialSubNav,
+    linkSections,
+    unlockYourPotentialSubNav,
     shouldShowUnlockYourPotentialSubNav,
-    fromPageParameter,
     isDarkTheme,
-    toggleColorMode,
-    mobileNavProps,
+    toggleTheme,
   } = useNav({ path })
-  const { locale } = useRouter()
   const { t } = useTranslation("common")
-  const searchModalDisclosure = useDisclosure()
   const navWrapperRef = useRef(null)
 
   return (
-    <Box position="sticky" top={0} zIndex={100} width="full">
+    <Box position="sticky" top={0} zIndex="sticky" width="full">
       <Flex
         ref={navWrapperRef}
         as="nav"
         aria-label={t("nav-primary")}
+        // The mega-menu panel is positioned against this bar
+        position="relative"
         bg="background.base"
         borderBottom="1px"
-        borderColor="rgba(0, 0, 0, 0.1)"
+        borderColor="body.light"
         height="4.75rem"
         justifyContent="center"
         py={4}
         px={{ base: 4, lg: 8 }}
       >
         <Flex
-          alignItems={{ base: "center", lg: "normal" }}
-          justifyContent={{ base: "space-between", lg: "normal" }}
+          alignItems="center"
+          justifyContent="space-between"
           width="full"
           maxW="container.2lg"
         >
@@ -63,64 +62,38 @@ const Nav: FC<IProps> = ({ path }) => {
           >
             <HomeIcon opacity={0.85} _hover={{ opacity: 1 }} />
           </BaseLink>
-          {/* Desktop */}
           <Flex
             w="full"
+            alignItems="center"
             justifyContent={{ base: "flex-end", lg: "space-between" }}
-            ms={{ base: 3, lg: 8 }}
+            ms={{ base: 3, lg: 6 }}
           >
-            <Menu hideBelow="lg" path={path} sections={primaryNav} />
-            <Flex
-              alignItems="center"
-              justifyContent="space-between"
-              gap={{ base: 2, lg: 4 }}
-            >
-              {/* <Search {...searchModalDisclosure} /> */}
+            <DesktopMenu hideBelow="lg" linkSections={linkSections} />
+            <Flex alignItems="center" gap={{ base: 2, lg: 1 }}>
               <SearchBar t={t} variant="search" />
-              {/* Mobile */}
+              <IconButton
+                hideBelow="lg"
+                transition="transform 0.5s, color 0.2s"
+                icon={isDarkTheme ? <MdWbSunny /> : <MdBrightness2 />}
+                aria-label={t(
+                  isDarkTheme ? "nav-switch-to-light" : "nav-switch-to-dark"
+                )}
+                variant="ghost"
+                isSecondary
+                px={1.5}
+                _hover={{ transform: "rotate(10deg)", color: "primary.hover" }}
+                onClick={toggleTheme}
+              />
+              <Box hideBelow="lg">
+                <LanguagePicker />
+              </Box>
               <MobileNavMenu
-                {...mobileNavProps}
                 hideFrom="lg"
-                toggleSearch={searchModalDisclosure.onOpen}
+                linkSections={linkSections}
+                isDarkTheme={isDarkTheme}
+                toggleTheme={toggleTheme}
                 drawerContainerRef={navWrapperRef}
               />
-              <HStack spacing={2} hideBelow="lg">
-                <IconButton
-                  transition="transform 0.5s, color 0.2s"
-                  icon={isDarkTheme ? <MdWbSunny /> : <MdBrightness2 />}
-                  aria-label={
-                    isDarkTheme
-                      ? "Switch to Light Theme"
-                      : "Switch to Dark Theme"
-                  }
-                  variant="ghost"
-                  isSecondary
-                  px={1.5}
-                  _hover={{
-                    transform: "rotate(10deg)",
-                    color: "primary.hover",
-                  }}
-                  onClick={toggleColorMode}
-                ></IconButton>
-                <ButtonLink
-                  to={`/languages/${fromPageParameter}`}
-                  transition="color 0.2s"
-                  leftIcon={<Icon as={MdLanguage} />}
-                  variant="ghost"
-                  isSecondary
-                  px={1.5}
-                  _hover={{
-                    color: "primary.hover",
-                    "& svg": {
-                      transform: "rotate(10deg)",
-                      transition: "transform 0.5s",
-                    },
-                  }}
-                >
-                  {t("languages-title")} 
-                  {/* {locale!.toUpperCase()} */}
-                </ButtonLink>
-              </HStack>
             </Flex>
           </Flex>
         </Flex>
@@ -128,36 +101,25 @@ const Nav: FC<IProps> = ({ path }) => {
       {shouldShowUnlockYourPotentialSubNav && (
         <Flex
           as="nav"
-          aria-label={t("nav-developers")}
+          aria-label={t("nav-docs")}
           display={{ base: "none", lg: "flex" }}
           bg="ednBackground"
           borderBottom="1px"
           borderColor="border"
-          boxSizing="border-box"
           py={4}
           px={8}
         >
-          {UnlockYourPotentialSubNav.map((link, idx) => (
+          {unlockYourPotentialSubNav.map((link) => (
             <BaseLink
-              key={idx}
+              key={link.to}
               to={link.to}
               isPartiallyActive={link.isPartiallyActive}
               color="text"
               fontWeight="normal"
               textDecor="none"
               me={8}
-              _hover={{
-                color: "primary.base",
-                svg: {
-                  fill: "currentColor",
-                },
-              }}
+              _hover={{ color: "primary.base" }}
               _visited={{}}
-              sx={{
-                svg: {
-                  fill: "currentColor",
-                },
-              }}
             >
               {link.text}
             </BaseLink>
