@@ -208,7 +208,7 @@ export const getStaticProps = (async ({ locale }) => {
   }
 }) satisfies GetStaticProps<Props>
 
-const WhatIsEthereumPage = ({
+const AboutUsPage = ({
   data,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { t } = useTranslation(["page-about-us", "quizzes"])
@@ -328,30 +328,6 @@ const WhatIsEthereumPage = ({
       {/* Main Hero */}
       <MainHero {...heroProps} />
 
-      {/* <Flex
-        align="center"
-        justify="space-between"
-        direction={{ base: "column-reverse", md: "row" }}
-      >
-        <Box as="header">
-          <Title>{t("page-what-is-ethereum-title")}</Title>
-          <Slogan>{t("page-what-is-ethereum-desc")}</Slogan>
-          <Subtitle>{t("page-what-is-ethereum-subtitle")}</Subtitle>
-          <ButtonRow>
-            <Button toId="summary">
-              {t("page-what-is-ethereum-button-lets-start")}
-            </Button>
-          </ButtonRow>
-        </Box>
-        <Hero>
-          <Image
-            src={hero}
-            alt={t("page-what-is-ethereum-alt-img-bazaar")}
-            priority
-          />
-        </Hero>
-      </Flex> */}
-
       <Box
         w="full"
         bg="grayBackground"
@@ -361,32 +337,7 @@ const WhatIsEthereumPage = ({
         }}
       >
         <Section id="start">
-          {/* <TwoColumnContent id="summary">
-            <Width60>
-              <Summary>
-                <Heading
-                  fontSize="1.4rem"
-                  lineHeight={1.4}
-                  color="text300"
-                  mb={6}
-                >
-                  {t("page-what-is-ethereum-summary-title")}
-                </Heading>
-                <Text>{t("page-what-is-ethereum-summary-desc-1")}</Text>
-                <Text>{t("page-what-is-ethereum-summary-desc-2")}</Text>
-                <Text mb={0}>{t("page-what-is-ethereum-summary-desc-3")}</Text>
-              </Summary>
-            </Width60>
-            <Width40 />
-          </TwoColumnContent>
-
-          <br />
-          <br /> */}
-
           <Content>
-            {/* <Column>
-              <H2>{t("page-what-is-ethereum-explore")}</H2>
-            </Column> */}
             <CardContainer>
               <Callout
                 flex="1 1 416px"
@@ -396,11 +347,6 @@ const WhatIsEthereumPage = ({
                 alt={t("common:vision-image-alt")}
                 descriptionKey="common:vision-description"
               >
-                {/* <Box>
-                  <ButtonLink to="/developers/">
-                    {t("page-what-is-ethereum-start-building-btn")}
-                  </ButtonLink>
-                </Box> */}
               </Callout>
               <Callout
                 flex="1 1 416px"
@@ -410,11 +356,6 @@ const WhatIsEthereumPage = ({
                 alt={t("common:mission-image-alt")}
                 descriptionKey="common:mission-description"
               >
-                {/* <Box>
-                  <ButtonLink to="/community/">
-                    {t("page-what-is-ethereum-meet-comm")}
-                  </ButtonLink>
-                </Box> */}
               </Callout>
             </CardContainer>
           </Content>
@@ -625,4 +566,4 @@ const WhatIsEthereumPage = ({
   )
 }
 
-export default WhatIsEthereumPage
+export default AboutUsPage

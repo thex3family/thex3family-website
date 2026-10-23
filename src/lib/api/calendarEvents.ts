@@ -9,6 +9,16 @@ export async function fetchCommunityEvents(): Promise<CommunityEventsReturnType>
   const apiKey = process.env.GOOGLE_API_KEY
   const calendarId = process.env.GOOGLE_CALENDAR_ID
 
+  // Local and preview builds usually have no Google credentials. Production
+  // (VERCEL_ENV=production) still fails below, so a missing key never ships
+  // an empty events list silently.
+  if ((!apiKey || !calendarId) && process.env.VERCEL_ENV !== "production") {
+    console.warn(
+      "GOOGLE_API_KEY or GOOGLE_CALENDAR_ID is not set; building without community events"
+    )
+    return { pastEventData: [], upcomingEventData: [] }
+  }
+
   try {
     const futureEventsReq = await fetch(
       `https://content.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${new Date().toISOString()}&maxResults=3&singleEvents=true&orderby=starttime`

@@ -27,7 +27,6 @@
   - .eslintrc.json
   - .prettierignore
   - .prettierrc
-  - netlify.toml
 
 "translation :earth_africa:":
   - public/content/translations/**/*

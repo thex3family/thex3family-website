@@ -45,9 +45,6 @@ const INCORRECT_PATH_IN_TRANSLATED_MARKDOWN = new RegExp(
 const LINK_TEXT_MISSING_REGEX = new RegExp("(?<![\\S])\\[\\]\\(([^)]+)\\)", "g")
 
 // add <emoji
-// add /developers/docs/scaling/#layer-2-scaling
-// add ../../assets/ethereum-learn.png
-// ../../assets/eth-gif-cat.png
 
 const HTML_TAGS: Array<string> = ["</code", "</p>", "</ul>"]
 const SPELLING_MISTAKES: Array<string> = [

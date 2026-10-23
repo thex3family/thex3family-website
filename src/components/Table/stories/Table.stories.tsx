@@ -6,8 +6,8 @@ import TableComponent from ".."
 
 import {
   MdxDemoData,
-  MdxEnergyConsumpData,
-  MdxTypesOfBridgesData,
+  MdxNumericData,
+  MdxLongTextData,
 } from "./mockMdxData"
 
 type TableType = typeof TableComponent
@@ -46,10 +46,10 @@ export const MockDocContent: Story = {
   render: () => (
     <>
       <TableComponent variant="simple">
-        <MdxEnergyConsumpData />
+        <MdxNumericData />
       </TableComponent>
       <TableComponent>
-        <MdxTypesOfBridgesData />
+        <MdxLongTextData />
       </TableComponent>
     </>
   ),

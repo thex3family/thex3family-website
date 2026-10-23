@@ -18,7 +18,7 @@ import {
   useToken,
 } from "@chakra-ui/react"
 
-import { AllMetricData, BasePageProps, ChildOnlyProp, Lang } from "@/lib/types"
+import { BasePageProps, ChildOnlyProp, Lang } from "@/lib/types"
 import type { CommunityEventsReturnType } from "@/lib/interfaces"
 
 import ActionCard from "@/components/ActionCard"
@@ -178,17 +178,9 @@ const cachedFetchCommunityEvents = runOnlyOnce(fetchCommunityEvents)
 
 type Props = BasePageProps & {
   communityEvents: CommunityEventsReturnType
-  metricResults: AllMetricData
 }
 
 export const getStaticProps = (async ({ locale }) => {
-  const metricResults: AllMetricData = {
-    totalEthStaked: { data: [], value: 0 },
-    nodeCount: { data: [], value: 0 },
-    totalValueLocked: { data: [], value: 0 },
-    txCount: { data: [], value: 0 },
-  }
-
   const communityEvents = await cachedFetchCommunityEvents()
 
   // load i18n required namespaces for the given page
@@ -206,7 +198,6 @@ export const getStaticProps = (async ({ locale }) => {
   //   communityEvents,
   //   contentNotTranslated,
   //   lastDeployDate,
-  //   metricResults,
   // });
 
   return {
@@ -215,7 +206,6 @@ export const getStaticProps = (async ({ locale }) => {
       communityEvents,
       contentNotTranslated,
       lastDeployDate,
-      metricResults,
     },
     // revalidate: BASE_TIME_UNIT * 24,
   }
@@ -223,7 +213,6 @@ export const getStaticProps = (async ({ locale }) => {
 
 const HomePage = ({
   communityEvents,
-  metricResults,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { t } = useTranslation(["common", "page-index"])
   const { locale } = useRouter()
@@ -300,13 +289,13 @@ const HomePage = ({
     {
       title: t("page-index:page-index-banner-5-code-example-title-0"),
       description: t("page-index:page-index-banner-5-code-example-description-0"),
-      codeLanguage: "language-solidity",
+      codeLanguage: "language-javascript",
       code: codeExample,
     },
     {
       title: t("page-index:page-index-banner-5-code-example-title-1"),
       description: t("page-index:page-index-banner-5-code-example-description-1"),
-      codeLanguage: "language-solidity",
+      codeLanguage: "language-javascript",
       code: codeExample,
     },
     {
@@ -318,7 +307,7 @@ const HomePage = ({
     {
       title: t("page-index:page-index-banner-5-code-example-title-3"),
       description: t("page-index:page-index-banner-5-code-example-description-3"),
-      codeLanguage: "language-solidity",
+      codeLanguage: "language-javascript",
       code: codeExample,
     },
   ]
@@ -612,7 +601,7 @@ const HomePage = ({
             <Translation id="page-index:page-index-stats-subtitle" />
           </SectionDecription>
         </ContentBox>
-        <StatsBoxGrid data={metricResults} />
+        <StatsBoxGrid />
       </GrayContainer>
       <Divider mb={16} mt={16} w="10%" height="0.25rem" bgColor="homeDivider" />
       <CommunityEvents events={communityEvents} />

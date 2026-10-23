@@ -148,11 +148,10 @@ export const BodyCopy: Story = {
   render: () => (
     <Box maxW="prose" px="4">
       <Text>
-        Text body normal. Ethereum is open access to digital money and
-        data-friendly services for everyone - no matter your background or
-        location. It&apos;s a community-built technology behind the
-        cryptocurrency ether (ETH) and thousands of applications you can use
-        today!
+        Text body normal. Co-x3 is a family of students, creatives, and retirees
+        who help each other level up every day - no matter your background or
+        location. It&apos;s a community-built home for the knowledge, tools,
+        and friendships that make growth easier!
       </Text>
     </Box>
   ),

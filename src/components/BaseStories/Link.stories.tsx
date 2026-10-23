@@ -24,10 +24,10 @@ type Story = StoryObj<typeof meta>
 
 const MockParagraph = ({ to }: { to?: string }) => (
   <Text>
-    Text body normal. Ethereum is open access to digital money and data-friendly
-    services for everyone &ndash; no matter your background or location.
-    It&apos;s a <Link to={to}>community-built</Link> technology behind the
-    cryptocurrency ether (ETH) and thousands of applications you can use today.
+    Text body normal. Co-x3 is a family of students, creatives, and retirees who
+    help each other level up every day &ndash; no matter your background or
+    location. It&apos;s a <Link to={to}>community-built</Link> home for the
+    knowledge, tools, and friendships that make growth easier.
   </Text>
 )
 
@@ -49,11 +49,10 @@ export const LinkList: Story = {
   render: () => (
     <Stack spacing="6">
       <Text>
-        Text body normal. Ethereum is open access to digital money and
-        data-friendly services for everyone &ndash; no matter your background or
-        location. It&apos;s a community-built technology behind the
-        cryptocurrency ether (ETH) and thousands of applications you can use
-        today.
+        Text body normal. Co-x3 is a family of students, creatives, and retirees
+        who help each other level up every day &ndash; no matter your background
+        or location. It&apos;s a community-built home for the knowledge, tools,
+        and friendships that make growth easier.
       </Text>
       <UnorderedList>
         {Array.from({ length: 9 }).map((_, idx) => (

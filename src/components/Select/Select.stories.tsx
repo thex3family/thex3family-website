@@ -5,9 +5,9 @@ import { Meta, StoryObj } from "@storybook/react"
 import SelectComponent from "./"
 
 const selectData = [
-  { label: "Ethereum", value: "eth" },
-  { label: "Bitcoin", value: "bit" },
-  { label: "Dogecoin", value: "doge" },
+  { label: "Students", value: "students" },
+  { label: "Creatives", value: "creatives" },
+  { label: "Retirees", value: "retirees" },
 ]
 
 type SelectType = typeof SelectComponent

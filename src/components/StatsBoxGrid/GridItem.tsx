@@ -7,17 +7,12 @@ import type { StatsBoxMetric } from "@/lib/types"
 
 import { RANGES } from "@/lib/constants"
 
-import InlineLink from "../Link"
 import OldText from "../OldText"
 import StatErrorMessage from "../StatErrorMessage"
 import Tooltip from "../Tooltip"
 import Translation from "../Translation"
 
 const tooltipContent = (metric: StatsBoxMetric) => (
-  // <div>
-  //   <Translation id="data-provided-by" />{" "}
-  //   <InlineLink to={metric.apiUrl}>{metric.apiProvider}</InlineLink>
-  // </div>
   <div>
     <Translation id="Real-Time Stats Coming Soon." />
   </div>

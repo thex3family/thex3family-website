@@ -19,7 +19,6 @@ import { ButtonLink } from "@/components/Buttons"
 import CallToContribute from "@/components/CallToContribute"
 import Card from "@/components/Card"
 import Codeblock from "@/components/Codeblock"
-import CrowdinContributors from "@/components/CrowdinContributors"
 import Emoji from "@/components/Emoji"
 import FeedbackCard from "@/components/FeedbackCard"
 import GitHubContributors from "@/components/GitHubContributors"
@@ -39,10 +38,6 @@ import TutorialMetadata from "@/components/TutorialMetadata"
 import YouTube from "@/components/YouTube"
 
 import { getEditPath } from "@/lib/utils/editPath"
-
-import { DEFAULT_LOCALE } from "@/lib/constants"
-
-import { useClientSideGitHubLastEdit } from "@/hooks/useClientSideGitHubLastEdit"
 
 const ContentContainer = (props: ChildOnlyProp) => {
   const boxShadow = useToken("colors", "tableBoxShadow")
@@ -161,10 +156,7 @@ export const tutorialsComponents = {
 }
 interface TutorialLayoutProps
   extends ChildOnlyProp,
-    Pick<
-      MdPageContent,
-      "tocItems" | "lastUpdatedDate" | "crowdinContributors"
-    > {
+    Pick<MdPageContent, "tocItems" | "lastUpdatedDate"> {
   frontmatter: TutorialFrontmatter
   timeToRead: number
 }
@@ -175,16 +167,11 @@ export const TutorialLayout = ({
   tocItems,
   timeToRead,
   lastUpdatedDate,
-  crowdinContributors,
 }: TutorialLayoutProps) => {
   const { asPath: relativePath } = useRouter()
   const absoluteEditPath = getEditPath(relativePath)
 
   const borderColor = useToken("colors", "border")
-  const gitHubLastEdit = useClientSideGitHubLastEdit(relativePath)
-  const intlLastEdit = "data" in gitHubLastEdit ? gitHubLastEdit.data! : ""
-  const useGitHubContributors =
-    frontmatter.lang === DEFAULT_LOCALE || crowdinContributors.length === 0
 
   return (
     <>
@@ -206,19 +193,11 @@ export const TutorialLayout = ({
             pt={8}
           />
           {children}
-          <StyledDivider /> 
-          {useGitHubContributors ? (
-            <GitHubContributors
-              relativePath={relativePath}
-              lastUpdatedDate={lastUpdatedDate!}
-            />
-          ) : (
-            <CrowdinContributors
-              relativePath={relativePath}
-              lastUpdatedDate={intlLastEdit}
-              contributors={crowdinContributors}
-            />
-          )}
+          <StyledDivider />
+          <GitHubContributors
+            relativePath={relativePath}
+            lastUpdatedDate={lastUpdatedDate!}
+          />
           <FeedbackCard />
         </ContentContainer>
         {tocItems && (
