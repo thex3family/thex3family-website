@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { FaGithub } from "react-icons/fa"
 import { Box, Flex, Icon, List, Stack, Text, useDisclosure } from "@chakra-ui/react"
 
+import type { Lang } from "@/lib/types"
 import { BasePageProps, QuizStatus } from "@/lib/types"
 
 import { ButtonLink } from "@/components/Buttons"
@@ -23,6 +24,7 @@ import Translation from "@/components/Translation"
 import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { trackCustomEvent } from "@/lib/utils/matomo"
+import { getLocaleTimestamp } from "@/lib/utils/time"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import { live_your_best_life_quizzes,understand_yourself_quizzes } from "@/data/quizzes"
@@ -73,11 +75,11 @@ const QuizzesHubPage: NextPage<
     [onOpen, userStats]
   )
 
-  const { pathname } = useRouter()
+  const { pathname, locale } = useRouter()
 
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": March 02, 2024", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": " + getLocaleTimestamp(locale as Lang, "2024-03-02"),
     title: t("common:test-your-understanding-title"),
     description: t("common:test-your-understanding-description")
       .split('.')

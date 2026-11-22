@@ -212,7 +212,7 @@ const ProgramsPage = ({
 
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": September 25, 2024", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": " + getLocaleTimestamp(locale as Lang, "2024-09-25"),
     title: t("common:programs-title"),
     description: t("common:programs-description")
       .split('.')

@@ -13,6 +13,7 @@
     "preversion": "bash ./src/scripts/updatePublishDate.sh",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "translations:check": "node src/scripts/checkTranslations.mjs",
     "markdown-checker": "ts-node -O '{ \"module\": \"commonjs\" }' src/scripts/markdownChecker.ts"
   },
   "dependencies": {

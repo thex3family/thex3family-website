@@ -4,7 +4,7 @@ import { extname, join } from "path"
 import matter from "gray-matter"
 import readingTime from "reading-time"
 
-import type { Frontmatter } from "@/lib/types"
+import type { Frontmatter, Lang } from "@/lib/types"
 import type { MdPageContent } from "@/lib/interfaces"
 
 import { Jobs } from "@/components/JobBoard"
@@ -199,6 +199,19 @@ const getPostSlugs = (dir: string, files: string[] = []) => {
 
   return files
 }
+
+/**
+ * Locales whose own translation of a markdown page exists (English always).
+ * `slugPath` is the page path without a locale, e.g. "for/students".
+ */
+export const getTranslatedLocales = (slugPath: string): Lang[] =>
+  LOCALES_CODES.filter(
+    (code) =>
+      code === DEFAULT_LOCALE ||
+      fs.existsSync(
+        join(CURRENT_CONTENT_DIR, "translations", code, slugPath, "index.md")
+      )
+  ) as Lang[]
 
 export const getContentBySlug = (slug: string) => {
   // If content is in english, remove en/ prefix so filepath can be read correctly

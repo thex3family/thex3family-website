@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
-import Script from 'next/script'
+import Script from "next/script"
 import { Container } from "@chakra-ui/react"
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from "@next/third-parties/google"
 
 import type { Root } from "@/lib/types"
 
@@ -16,10 +16,13 @@ import { DEFAULT_LOCALE } from "@/lib/constants"
 
 import { lightTheme as oldTheme } from "../theme"
 
+import { PageLocalesContext } from "@/hooks/usePageLocales"
+
 export const RootLayout = ({
   children,
   contentIsOutdated,
   contentNotTranslated,
+  availableLocales,
   lastDeployDate,
 }: Root) => {
   const { locale, asPath } = useRouter()
@@ -36,7 +39,7 @@ export const RootLayout = ({
     asPath.includes(`/terms-of-use/`)
 
   const isPageLanguageEnglish = locale === DEFAULT_LOCALE
-  const isProduction = process.env.NODE_ENV === 'production'
+  const isProduction = process.env.NODE_ENV === "production"
 
   const shouldShowTranslationBanner =
     (contentIsOutdated || (contentNotTranslated && !isPageLanguageEnglish)) &&
@@ -46,33 +49,37 @@ export const RootLayout = ({
   const originalPagePath = asPath
 
   return (
-    <Container mx="auto" maxW={oldTheme.variables.maxPageWidth}>
-      {isProduction && <GoogleTagManager gtmId="GTM-PRVPZSB8" />}
-      {isProduction && (
-        <Script
-          strategy="afterInteractive"
-          src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Vd8FQs"
+    <PageLocalesContext.Provider
+      value={{ availableLocales, contentNotTranslated }}
+    >
+      <Container mx="auto" maxW={oldTheme.variables.maxPageWidth}>
+        {isProduction && <GoogleTagManager gtmId="GTM-PRVPZSB8" />}
+        {isProduction && (
+          <Script
+            strategy="afterInteractive"
+            src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Vd8FQs"
+          />
+        )}
+        <SkipLink />
+
+        <Nav path={asPath} />
+
+        <TranslationBanner
+          shouldShow={shouldShowTranslationBanner}
+          isPageContentEnglish={contentNotTranslated}
+          originalPagePath={originalPagePath}
         />
-      )}
-      <SkipLink />
 
-      <Nav path={asPath} />
+        <TranslationBannerLegal
+          shouldShow={shouldShowLegalTranslationBanner}
+          originalPagePath={originalPagePath}
+        />
 
-      <TranslationBanner
-        shouldShow={shouldShowTranslationBanner}
-        isPageContentEnglish={contentNotTranslated}
-        originalPagePath={originalPagePath}
-      />
+        {children}
 
-      <TranslationBannerLegal
-        shouldShow={shouldShowLegalTranslationBanner}
-        originalPagePath={originalPagePath}
-      />
-
-      {children}
-
-      <Footer lastDeployDate={lastDeployDate} />
-      <FeedbackWidget />
-    </Container>
+        <Footer lastDeployDate={lastDeployDate} />
+        <FeedbackWidget />
+      </Container>
+    </PageLocalesContext.Provider>
   )
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
 import { Box } from "@chakra-ui/react"
 
 import Translation from "@/components/Translation"
@@ -28,6 +29,7 @@ interface IOrderedUpcomingEventType extends ICommunityEventData {
 }
 
 const UpcomingEventsList: React.FC = () => {
+  const { locale } = useRouter()
   const eventsPerLoad = 10
   const [orderedUpcomingEvents, setOrderedUpcomingEvents] = useState<
     Array<IOrderedUpcomingEventType>
@@ -65,10 +67,10 @@ const UpcomingEventsList: React.FC = () => {
     const formattedEvents = orderedEvents.map((event) => {
       const dateRange =
         event.startDate === event.endDate
-          ? dateParse(event.startDate).toLocaleDateString()
-          : `${dateParse(event.startDate).toLocaleDateString()} - ${dateParse(
+          ? dateParse(event.startDate).toLocaleDateString(locale)
+          : `${dateParse(event.startDate).toLocaleDateString(locale)} - ${dateParse(
               event.endDate
-            ).toLocaleDateString()}`
+            ).toLocaleDateString(locale)}`
 
       const details = `${event.sponsor ? "(" + event.sponsor + ")" : ""} ${
         event.description
@@ -82,7 +84,7 @@ const UpcomingEventsList: React.FC = () => {
     })
 
     setOrderedUpcomingEvents(formattedEvents)
-  }, [])
+  }, [locale])
 
   const loadMoreEvents = () => {
     setMaxRange((counter) => counter + eventsPerLoad)

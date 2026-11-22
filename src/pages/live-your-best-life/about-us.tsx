@@ -54,6 +54,7 @@ import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { trackCustomEvent } from "@/lib/utils/matomo"
 import { runOnlyOnce } from "@/lib/utils/runOnlyOnce"
+import { getLocaleTimestamp } from "@/lib/utils/time"
 import {
   getLocaleForNumberFormat,
   getRequiredNamespacesForPage,
@@ -301,7 +302,7 @@ const AboutUsPage = ({
 
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": " + getLocaleTimestamp(locale as Lang, "2024-01-22"),
     title: t("common:about-us-secondary-title"),
     description: t("common:about-us-description")
       .split('.')
