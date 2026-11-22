@@ -1,0 +1,25 @@
+name: Translations
+
+on:
+  pull_request:
+    paths:
+      - "src/intl/**"
+      - "public/content/translations/**"
+      - "public/content/**/index.md"
+      - "i18n.config.json"
+      - "src/scripts/checkTranslations.mjs"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      # Uses only Node built-ins, so no install step
+      - run: node src/scripts/checkTranslations.mjs

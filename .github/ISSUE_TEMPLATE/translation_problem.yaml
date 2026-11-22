@@ -1,0 +1,46 @@
+name: Translation Problem
+description: Report wording that is wrong, unnatural or inconsistent in Chinese, Japanese or Spanish
+title: "Translation: "
+labels: ["translation :earth_africa:"]
+body:
+  - type: dropdown
+    id: translation_language
+    attributes:
+      label: Language
+      options:
+        - Simplified Chinese (zh)
+        - Japanese (ja)
+        - Spanish (es)
+    validations:
+      required: true
+  - type: input
+    id: translation_page
+    attributes:
+      label: Page
+      description: The address of the page, e.g. https://the.x3.family/ja/for/students
+    validations:
+      required: true
+  - type: textarea
+    id: translation_current
+    attributes:
+      label: What it says now
+      description: Copy the wording as it appears on the page
+    validations:
+      required: true
+  - type: textarea
+    id: translation_suggested
+    attributes:
+      label: What it should say
+      description: Your suggested wording, and why if it is not obvious (tone, a term used elsewhere on the site, a regional difference)
+    validations:
+      required: true
+  - type: dropdown
+    id: translation_fluency
+    attributes:
+      label: Your fluency in this language
+      options:
+        - Native speaker
+        - Fluent
+        - Learning
+    validations:
+      required: false

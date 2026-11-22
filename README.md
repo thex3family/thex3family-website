@@ -83,6 +83,17 @@ The site is available in English (`en`, the default), Simplified Chinese (`zh`),
 - **Page content** (markdown) lives in `public/content/<path>/index.md`. A translated page goes in `public/content/translations/<locale>/<path>/index.md` with the same frontmatter and `lang: <locale>`. Until a translation exists, the page shows the English text with a "help us translate" notice.
 - **Adding a language**: add an entry to `i18n.config.json`, copy `src/intl/en/` to `src/intl/<locale>/` and translate it.
 - Links inside the site go through `BaseLink` (`src/components/Link.tsx`) or `localizePath` (`src/lib/utils/url.ts`), which add the locale prefix so prerendered pages link within the reader's language.
+- **Search engines**: every page lists its languages as `hreflang` alternates. A markdown page lists only the languages it has a translation for, and a locale URL that shows English fallback text points its canonical at the English page (`src/lib/utils/seo.ts`).
+- **Dates** are formatted for the reader's language with `getLocaleTimestamp` (`src/lib/utils/time.ts`). Don't write a date into a string.
+
+### How a translation gets in
+
+1. **Draft.** A person or an AI writes the translation in a branch: the JSON strings, a page under `public/content/translations/<locale>/`, or both. Reuse the terms the locale already uses in `src/intl/<locale>/common.json` (the nav and the page should say the same thing).
+2. **Check.** Run `yarn translations:check`. It fails on a missing or extra key, a changed `{{placeholder}}` or HTML tag, a page with no English original, frontmatter keys that differ from English, or a wrong `lang`. The **Translations** workflow runs it on every pull request that touches translations.
+3. **Native review.** Before merging, someone fluent in the language reads the page on the pull request's Vercel preview (`/<locale>/...`) for meaning, tone and consistent terms. AI drafts always get this step. Note in the pull request who reviewed it.
+4. **Merge.** Once checked and reviewed, it goes out with the next deploy of `dev`.
+
+Readers who spot wording that is wrong or unnatural can file a **Translation Problem** issue, which asks for the page, the current wording and a suggestion.
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
