@@ -9,11 +9,15 @@ jobs:
     # this job will only run if the PR has been closed without being merged
     if: github.event.pull_request.merged == false
     runs-on: ubuntu-latest
+    # The default token is read-only in this repo; adding a label needs write
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
-      - uses: actions/github-script@v4
+      - uses: actions/github-script@v7
         with:
           script: |
-            github.issues.addLabels({
+            await github.rest.issues.addLabels({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
