@@ -14,6 +14,8 @@ module.exports = {
     locales,
   },
   // define custom location for intl files, otherwise default to public/locales (https://github.com/i18next/next-i18next#2-translation-content)
+  // untranslated namespaces and keys fall back to English instead of showing raw keys
+  fallbackLng: "en",
   localePath: "./src/intl",
   // see updates to your translation JSON files without having to restart your development server each time
   reloadOnPrerender: true,

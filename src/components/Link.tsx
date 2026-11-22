@@ -89,11 +89,11 @@ export const BaseLink = forwardRef(function Link(
   if (isInternalPdf || isExternal) {
     if (isExternal) {
       // Parse the URL to handle hash fragments and existing query parameters
-      let urlObject = new URL(href, 'https://the.x3.family'); // Provide a base since 'href' might be relative
-      urlObject.searchParams.append('ref', 'the.x3.family'); // Automatically handles encoding
-    
+      let urlObject = new URL(href, "https://the.x3.family") // Provide a base since 'href' might be relative
+      urlObject.searchParams.append("ref", "the.x3.family") // Automatically handles encoding
+
       // Reconstruct the href with the new query parameter
-      href = urlObject.href;
+      href = urlObject.href
     }
     return (
       <ChakraLink
@@ -150,9 +150,11 @@ export const BaseLink = forwardRef(function Link(
     )
   }
 
+  // An explicit `locale` prop (e.g. the languages page) wins over the page's
+  const targetLocale = props.locale === undefined ? locale : props.locale
+
   return (
     <NextLink
-      locale={locale}
       onClick={() =>
         trackCustomEvent(
           customEventOptions ?? {
@@ -164,6 +166,8 @@ export const BaseLink = forwardRef(function Link(
         )
       }
       {...commonProps}
+      href={url.localizePath(href, targetLocale)}
+      locale={false}
     >
       {children}
     </NextLink>

@@ -2,7 +2,6 @@ import { StaticImageData } from "next/image"
 import type { ReactNode } from "react"
 
 import type {
-  CrowdinContributor,
   Frontmatter,
   Lang,
   Layout,
@@ -132,7 +131,6 @@ export interface MdPageContent {
   tocItems: ToCItem[]
   lastUpdatedDate?: string
   contentNotTranslated: boolean
-  crowdinContributors: CrowdinContributor[]
 }
 
 // Local environment framework

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import FocusTrap from "focus-trap-react"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
@@ -88,17 +88,8 @@ const FeedbackWidget = () => {
 
   const surveyUrl = useSurvey(feedbackSubmitted)
 
-  const bottomOffset = useMemo(() => {
-    const pathsWithBottomNav = ["/staking", "/dao", "/defi", "/nft"]
-    const CONDITIONAL_OFFSET = 6.75
-    let offset = 0
-    pathsWithBottomNav.forEach((path) => {
-      if (asPath.includes(path)) {
-        offset = CONDITIONAL_OFFSET
-      }
-    })
-    return offset
-  }, [asPath])
+  // No Co-x3 page has a fixed bottom nav for the widget to clear
+  const bottomOffset = 0
 
   const handleClose = (): void => {
     setIsOpen(false)

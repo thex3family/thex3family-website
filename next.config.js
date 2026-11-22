@@ -40,7 +40,23 @@ module.exports = (phase, { defaultConfig }) => {
   }
 
   if (phase !== PHASE_DEVELOPMENT_SERVER) {
-    nextConfig = { ...nextConfig, experimental }
+    nextConfig = {
+      ...nextConfig,
+      experimental: {
+        ...experimental,
+        // md.ts reads content paths the tracer cannot resolve, so it traces the
+        // whole project into every function, build cache and git history
+        // included. That pushed /api/fetchJobsData past Vercel's 250 MB limit.
+        // Functions only read markdown, never these.
+        outputFileTracingExcludes: {
+          "*": [
+            ".git/**",
+            ".next/cache/**",
+            "public/**/*.{png,jpg,jpeg,gif,webp,avif,svg,ico,mp4,webm,pdf}",
+          ],
+        },
+      },
+    }
   }
 
   return nextConfig

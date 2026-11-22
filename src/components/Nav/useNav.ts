@@ -1,142 +1,146 @@
-import { useState } from "react"
-import { cloneDeep } from "lodash"
 import { useTranslation } from "next-i18next"
 import { useColorMode } from "@chakra-ui/react"
 
 import { trackCustomEvent } from "@/lib/utils/matomo"
 
-import { FROM_QUERY } from "@/lib/constants"
-
-import { IItem, ISections } from "./types"
+import type { NavSections, SubNavLink } from "./types"
 
 export const useNav = ({ path }: { path: string }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { colorMode, toggleColorMode } = useColorMode()
   const { t } = useTranslation("common")
 
   const isDarkTheme = colorMode === "dark"
 
-  const primaryNav: ISections = {
+  const linkSections: NavSections = {
     understand_yourself: {
-      text: t("understand-yourself-title"),
-      ariaLabel: t("understand-yourself-menu"),
+      label: t("understand-yourself-title"),
       items: [
         {
-          text: t("understand-yourself-secondary-title"),
-          to: "/understand-yourself",
+          label: t("understand-yourself-secondary-title"),
+          description: t("nav-understand-yourself-secondary-desc"),
+          href: "/understand-yourself",
+          isPartiallyActive: false,
         },
         {
-          text: t("better-life-framework-title"),
-          to: "/understand-yourself/better-life-framework/",
+          label: t("better-life-framework-title"),
+          description: t("nav-better-life-framework-desc"),
+          href: "/understand-yourself/better-life-framework",
         },
         {
-          text: t("4a-model-of-understanding-title"),
-          to: "/understand-yourself/4a-model-of-understanding",
+          label: t("4a-model-of-understanding-title"),
+          description: t("nav-4a-model-desc"),
+          href: "/understand-yourself/4a-model-of-understanding",
         },
         {
-          text: t("evolution-of-wants-title"),
-          to: "/understand-yourself/evolution-of-wants/",
+          label: t("evolution-of-wants-title"),
+          description: t("nav-evolution-of-wants-desc"),
+          href: "/understand-yourself/evolution-of-wants",
         },
         {
-          text: t("test-your-understanding-title"),
-          to: "/understand-yourself/quizzes/",
-        }
+          label: t("test-your-understanding-title"),
+          description: t("nav-test-your-understanding-desc"),
+          href: "/understand-yourself/quizzes",
+        },
       ],
     },
     programs: {
-      text: t("programs-title"),
-      ariaLabel: t("programs-menu"),
+      label: t("programs-title"),
       items: [
         {
-          text: t("for-title"),
+          label: t("for-title"),
+          description: t("nav-for-desc"),
           items: [
             {
-              text: t("for-secondary-title"),
-              to: "/for/",
+              label: t("for-secondary-title"),
+              description: t("nav-for-secondary-desc"),
+              href: "/for",
               isPartiallyActive: false,
             },
             {
-              text: t("students-title"),
-              to: "/for/students",
+              label: t("students-title"),
+              description: t("nav-students-desc"),
+              href: "/for/students",
             },
             {
-              text: t("creatives-title"),
-              to: "/for/creatives",
+              label: t("creatives-title"),
+              description: t("nav-creatives-desc"),
+              href: "/for/creatives",
             },
             {
-              text: t("retirees-title"),
-              to: "/for/retirees",
+              label: t("retirees-title"),
+              description: t("nav-retirees-desc"),
+              href: "/for/retirees",
             },
-          ]
+          ],
         },
         {
-          text: t("unlock-your-potential-title"),
+          label: t("unlock-your-potential-title"),
+          description: t("nav-unlock-your-potential-desc"),
           items: [
             {
-              text: t("unlock-your-potential-secondary-title"),
-              to: "/unlock-your-potential/",
+              label: t("unlock-your-potential-secondary-title"),
+              description: t("nav-unlock-your-potential-secondary-desc"),
+              href: "/unlock-your-potential",
               isPartiallyActive: false,
             },
             {
-              text: t("programs-title"),
-              to: "/unlock-your-potential/programs",
+              label: t("programs-title"),
+              description: t("nav-programs-desc"),
+              href: "/unlock-your-potential/programs",
             },
-            // {
-            //   text: t("knowledge-title"),
-            //   to: "/unlock-your-potential/programs?filters=knowledge",
-            // },
-            // {
-            //   text: t("tools-title"),
-            //   to: "/unlock-your-potential/programs?filters=tools",
-            // },
-            // {
-            //   text: t("community-title"),
-            //   to: "/unlock-your-potential/programs?filters=community",
-            // },
             {
-              text: t("docs-title"),
-              to: "/unlock-your-potential/principles/",
+              label: t("docs-title"),
+              description: t("nav-docs-desc"),
+              href: "/unlock-your-potential/principles",
             },
-          ]
+          ],
         },
       ],
     },
     about: {
-      text: t("about-us-title"),
-      ariaLabel: t("about-us-menu"),
+      label: t("about-us-title"),
       items: [
         {
-          text: t("make-positive-impact-title"),
+          label: t("make-positive-impact-title"),
+          description: t("nav-make-positive-impact-desc"),
           items: [
             {
-              text: t("make-positive-impact-secondary-title"),
-              to: "/make-positive-impact/",
+              label: t("make-positive-impact-secondary-title"),
+              description: t("nav-make-positive-impact-secondary-desc"),
+              href: "/make-positive-impact",
               isPartiallyActive: false,
             },
             {
-              text: t("contribute-title"),
-              to: "/make-positive-impact/contribute/",
+              label: t("contribute-title"),
+              description: t("nav-contribute-desc"),
+              href: "/make-positive-impact/contribute",
             },
             {
-              text: t("collaborate-title"),
-              to: "/make-positive-impact/collaborate/",
+              label: t("collaborate-title"),
+              description: t("nav-collaborate-desc"),
+              href: "/make-positive-impact/collaborate",
             },
             {
-              text: t("co-create-title"),
-              to: "/make-positive-impact/co-create/",
-            }
+              label: t("co-create-title"),
+              description: t("nav-co-create-desc"),
+              href: "/make-positive-impact/co-create",
+            },
           ],
         },
         {
-          text: t("live-your-best-life-title"),
+          label: t("live-your-best-life-title"),
+          description: t("nav-live-your-best-life-desc"),
           items: [
             {
-              text: t("live-your-best-life-secondary-title"),
-              to: "/live-your-best-life",
+              label: t("live-your-best-life-secondary-title"),
+              description: t("nav-live-your-best-life-secondary-desc"),
+              href: "/live-your-best-life",
+              isPartiallyActive: false,
             },
             {
-              text: t("about-us-secondary-title"),
-              to: "/live-your-best-life/about-us/",
+              label: t("about-us-secondary-title"),
+              description: t("nav-about-us-secondary-desc"),
+              href: "/live-your-best-life/about-us",
             },
           ],
         },
@@ -144,35 +148,27 @@ export const useNav = ({ path }: { path: string }) => {
     },
   }
 
-  const UnlockYourPotentialSubNav: Array<IItem> = [
+  const unlockYourPotentialSubNav: SubNavLink[] = [
     {
       text: t("unlock-your-potential-secondary-title"),
-      to: "/unlock-your-potential/",
+      to: "/unlock-your-potential",
       isPartiallyActive: false,
     },
     {
       text: t("programs-title"),
-      to: "/unlock-your-potential/programs/",
+      to: "/unlock-your-potential/programs",
     },
     {
       text: t("docs-title"),
-      to: "/unlock-your-potential/principles/",
+      to: "/unlock-your-potential/principles",
     },
   ]
 
-  let mobileLinkSections = cloneDeep(primaryNav)
-  const toggleMenu = (): void => {
-    setIsMenuOpen((prev) => !prev)
-  }
+  const shouldShowUnlockYourPotentialSubNav = path.includes(
+    "/unlock-your-potential"
+  )
 
-  const shouldShowUnlockYourPotentialSubNav = path.includes("/unlock-your-potential")
-  const splitPath = path.split("/")
-  const fromPageParameter =
-    splitPath.length > 1 && splitPath[1] !== "languages"
-      ? `?${FROM_QUERY}=/${splitPath.slice(1).join("/")}`
-      : ""
-
-  const changeColorMode = () => {
+  const toggleTheme = () => {
     toggleColorMode()
     trackCustomEvent({
       eventCategory: "nav bar",
@@ -181,22 +177,11 @@ export const useNav = ({ path }: { path: string }) => {
     })
   }
 
-  const mobileNavProps = {
-    isMenuOpen,
-    isDarkTheme,
-    toggleMenu,
-    toggleTheme: changeColorMode,
-    linkSections: mobileLinkSections,
-    fromPageParameter,
-  }
-
   return {
-    toggleColorMode: changeColorMode,
-    isDarkTheme,
-    primaryNav,
-    UnlockYourPotentialSubNav,
+    linkSections,
+    unlockYourPotentialSubNav,
     shouldShowUnlockYourPotentialSubNav,
-    fromPageParameter,
-    mobileNavProps,
+    isDarkTheme,
+    toggleTheme,
   }
 }

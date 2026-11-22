@@ -6,6 +6,10 @@ on:
 jobs:
   label:
     runs-on: ubuntu-latest
+    # The default token is read-only in this repo; adding labels needs write
+    permissions:
+      contents: read
+      pull-requests: write
 
     steps:
       - uses: actions/labeler@v2

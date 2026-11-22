@@ -93,6 +93,7 @@ const TranslationBanner: React.FC<IProps> = ({
               <Box>
                 <ButtonLink
                   to={originalPagePath}
+                  locale={DEFAULT_LOCALE}
                   variant="outline"
                   ms={{ base: 0, sm: 2 }}
                   mt={{ base: 2, sm: 0 }}

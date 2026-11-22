@@ -26,7 +26,7 @@ Thus, any habit-building resources we share in the [Gamify Your Life](/unlock-yo
 
 ---
 
-<ButtonLink to="unlock-your-potential/principles/what-are-first-principles">Learn More About First Principles</ButtonLink>
+<ButtonLink to="/unlock-your-potential/principles/what-are-first-principles">Learn More About First Principles</ButtonLink>
 
 ## Help Us Build This Repository!
 
