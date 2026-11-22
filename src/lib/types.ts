@@ -29,6 +29,8 @@ export type Root = {
   children: ReactNode
   contentIsOutdated: boolean
   contentNotTranslated: boolean
+  /** Locales with this page in their own language; omitted means all */
+  availableLocales?: Lang[]
   lastDeployDate: string
 }
 

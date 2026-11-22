@@ -28,7 +28,11 @@ import PageMetadata from "@/components/PageMetadata"
 import { dateToString } from "@/lib/utils/date"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getLastModifiedDate } from "@/lib/utils/gh"
-import { getContent, getContentBySlug } from "@/lib/utils/md"
+import {
+  getContent,
+  getContentBySlug,
+  getTranslatedLocales,
+} from "@/lib/utils/md"
 import { remapTableOfContents } from "@/lib/utils/toc"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
@@ -96,6 +100,8 @@ export const getStaticProps = (async (context) => {
   const markdown = getContentBySlug(`${locale}/${params.slug.join("/")}`)
   const frontmatter = markdown.frontmatter
   const contentNotTranslated = markdown.contentNotTranslated
+  // Which languages have this page's own text, for hreflang alternates
+  const availableLocales = getTranslatedLocales(params.slug.join("/"))
 
   const mdPath = join("/content", ...params.slug)
   const mdDir = join("public", mdPath)
@@ -159,6 +165,7 @@ export const getStaticProps = (async (context) => {
       lastUpdatedDate,
       lastDeployDate,
       contentNotTranslated,
+      availableLocales,
       layout,
       timeToRead: Math.round(timeToRead.minutes),
       tocItems,

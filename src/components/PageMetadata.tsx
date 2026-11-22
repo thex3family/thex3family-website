@@ -1,10 +1,12 @@
-import { join } from "path"
-
 import Head from "next/head"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 
+import { alternateLinks, localeUrl } from "@/lib/utils/seo"
+
 import { DEFAULT_LOCALE, SITE_URL } from "@/lib/constants"
+
+import { usePageLocales } from "@/hooks/usePageLocales"
 
 type NameMeta = {
   name: string
@@ -35,22 +37,23 @@ const PageMetadata: React.FC<IProps> = ({
 }) => {
   const { locale, asPath } = useRouter()
   const { t } = useTranslation()
+  const { availableLocales, contentNotTranslated } = usePageLocales()
 
   const desc = description || t("site-description")
   const siteTitle = t("site-title")
   const fullTitle = `${title} | ${siteTitle}`
 
-  // Remove any query params (?) or hash links (#)
-  const path = asPath.replace(/[\?\#].*/, "")
-  const slug = path.split("/")
+  // This page's own URL in the current locale (no query, hash or trailing slash)
+  const url = localeUrl(asPath, locale!)
 
   /**
-   * Set canonical URL w/ language path to avoid duplicate content
-   * If English, remove language path
-   * Remove trailing slash
+   * A page showing English text as a fallback is a duplicate of the English
+   * page, so it points search engines there instead of at itself.
    */
-  const url = new URL(join(locale === DEFAULT_LOCALE ? "" : locale!, path), SITE_URL).href.replace(/\/$/, "")
-  const canonical = canonicalUrl || url
+  const isFallback = contentNotTranslated && locale !== DEFAULT_LOCALE
+  const canonical =
+    canonicalUrl || (isFallback ? localeUrl(asPath, DEFAULT_LOCALE) : url)
+  const alternates = alternateLinks(asPath, availableLocales)
 
   /* Set fallback ogImage based on path */
   let ogImage = "/home/hero.png"
@@ -87,7 +90,15 @@ const PageMetadata: React.FC<IProps> = ({
           {...data}
         />
       ))}
-      <link rel="canonical" key={canonical} href={canonical} />
+      <link rel="canonical" key="canonical" href={canonical} />
+      {alternates.map(({ hreflang, href }) => (
+        <link
+          rel="alternate"
+          key={`alternate-${hreflang}`}
+          hrefLang={hreflang}
+          href={href}
+        />
+      ))}
     </Head>
   )
 }
