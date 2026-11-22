@@ -79,7 +79,7 @@ summaryPoint3: 采取有影响力的行动，过上更好的生活。
   />
   <RichActionCard
     image="evolution_of_wants"
-    title="欲望（与需求）的演变"
+    title="需求的演变"
     description="随着我们不断升级，通往圆满人生的道路会让我们的动机从拥有，到做事，再到成为。"
     to="/understand-yourself/evolution-of-wants"
     buttonText="探索"

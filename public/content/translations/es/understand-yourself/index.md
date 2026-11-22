@@ -65,14 +65,14 @@ Integramos teorías fundamentales de la psicología y del desarrollo personal pa
 <CardGrid>
   <RichActionCard
     image="better_life_framework"
-    title="El Marco para una Vida Mejor"
+    title="El Marco de una Vida Mejor"
     description="Comprende mejor a ti mismo y a los demás a través de las nueve perspectivas únicas que todos recorremos a lo largo de la vida."
     to="/understand-yourself/better-life-framework"
     buttonText="Explorar"
   />
   <RichActionCard
     image="the_4a_model_of_understanding"
-    title="El Modelo 4A de la Comprensión"
+    title="El modelo 4A de comprensión"
     description="Avanzar exige atravesar cuatro etapas distintas, impulsadas por nuestras emociones, antes de poder actuar."
     to="/understand-yourself/4a-model-of-understanding"
     buttonText="Explorar"

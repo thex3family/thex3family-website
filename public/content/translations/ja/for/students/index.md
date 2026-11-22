@@ -1,6 +1,6 @@
 ---
 title: 学生
-description: 自分に合った道を見つけようとしている若者や若い大人のための場所です。
+description: 自分に合った道を見つけようとしている若者や若い大人。
 lang: ja
 template: main
 image: /students.png

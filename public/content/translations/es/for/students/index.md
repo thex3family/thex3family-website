@@ -1,6 +1,6 @@
 ---
 title: Estudiantes
-description: Jóvenes y adultos jóvenes que están descubriendo el camino que está hecho para ellos.
+description: Jóvenes y adultos jóvenes que están descubriendo el camino que es para ellos.
 lang: es
 template: main
 image: /students.png
@@ -18,7 +18,7 @@ En Co-x3 Family Foundation entendemos los desafíos y las oportunidades únicos 
 
 ### Entiéndete a ti mismo
 
-Empieza tu camino conociéndote mejor con el [Marco para una Vida Mejor](/understand-yourself). Es importante que descubras qué te impulsa, para que sepas cómo orientarte hacia lo que realmente quieres en la vida.
+Empieza tu camino conociéndote mejor con el [Marco de una Vida Mejor](/understand-yourself). Es importante que descubras qué te impulsa, para que sepas cómo orientarte hacia lo que realmente quieres en la vida.
 
 <ButtonLink to="/understand-yourself/better-life-framework">Haz el cuestionario</ButtonLink>
 

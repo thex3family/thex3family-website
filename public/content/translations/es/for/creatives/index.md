@@ -1,6 +1,6 @@
 ---
 title: Creativos
-description: Creadores que van en camino hacia la autorrealización y disfrutan de contribuir a los demás.
+description: Creadores que van rumbo a la autorrealización y disfrutan contribuir a los demás.
 lang: es
 template: main
 image: /creatives.png
@@ -18,7 +18,7 @@ Los creativos son personas que creen tener algo que ofrecer al mundo y quieren v
 
 ### Entiéndete a ti mismo
 
-Empieza tu camino conociéndote mejor con el [Marco para una Vida Mejor](/understand-yourself). Es importante que descubras qué te impulsa, para que sepas cómo orientarte hacia lo que realmente quieres en la vida.
+Empieza tu camino conociéndote mejor con el [Marco de una Vida Mejor](/understand-yourself). Es importante que descubras qué te impulsa, para que sepas cómo orientarte hacia lo que realmente quieres en la vida.
 
 <ButtonLink to="/understand-yourself/better-life-framework">Haz el cuestionario</ButtonLink>
 

@@ -1,6 +1,6 @@
 ---
 title: クリエイター
-description: 自己実現への道を歩み、他の人の役に立つことを喜びとするクリエイターのための場所です。
+description: 自己実現に向けて歩み、人に貢献することを楽しむクリエイター。
 lang: ja
 template: main
 image: /creatives.png

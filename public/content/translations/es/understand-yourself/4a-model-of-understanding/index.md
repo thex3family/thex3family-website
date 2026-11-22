@@ -1,6 +1,6 @@
 ---
-title: El Modelo 4A de la Comprensión
-description: ¿Cómo y cuándo estás listo para comprender?
+title: El modelo 4A de comprensión
+description: ¿Cómo y cuándo estás listo para entender?
 lang: es
 template: main
 image: /4a_model_of_understanding.png
@@ -10,9 +10,9 @@ summaryPoint2: Evasión > Conciencia > Aceptación > Acción.
 summaryPoint3: Un enfoque estructurado para la autoconciencia y la resolución eficaz de problemas.
 ---
 
-## ¿Por qué el Modelo 4A?
+## ¿Por qué el modelo 4A?
 
-Lo creamos porque nos dimos cuenta de que entendernos mejor con el Marco para una Vida Mejor no significa que estemos listos para actuar. Quizá sepamos por qué pensamos de cierta manera, pero avanzar requiere un avance emocional.
+Lo creamos porque nos dimos cuenta de que entendernos mejor con el Marco de una Vida Mejor no significa que estemos listos para actuar. Quizá sepamos por qué pensamos de cierta manera, pero avanzar requiere un avance emocional.
 
 Entender y procesar las experiencias suele exigir atravesar cuatro etapas distintas, impulsadas por nuestras emociones, a las que llamamos las 4A: Evasión (Avoidance), Conciencia (Awareness), Aceptación (Acceptance) y Acción (Action).
 

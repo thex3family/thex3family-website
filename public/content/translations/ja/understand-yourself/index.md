@@ -79,7 +79,7 @@ summaryPoint3: より良い人生につながる、インパクトのある行�
   />
   <RichActionCard
     image="evolution_of_wants"
-    title="欲求（とニーズ）の進化"
+    title="望み（とニーズ）の進化"
     description="レベルアップするにつれ、充実した人生への道のりで、私たちの動機は「持つ」から「する」、そして「ある」へと進化していきます。"
     to="/understand-yourself/evolution-of-wants"
     buttonText="詳しく見る"

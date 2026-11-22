@@ -1,6 +1,6 @@
 ---
 title: 创作者
-description: 走在自我实现之路上、乐于为他人付出的创造者。
+description: 走在自我实现之路上、乐于为他人付出的创作者。
 lang: zh
 template: main
 image: /creatives.png

@@ -1,6 +1,6 @@
 ---
 title: 退休人士
-description: 阅历丰富、人生圆满，正要踏上下一段冒险的“第二春”一族。
+description: 过了充实的前半生、正要开启下一段冒险的“第二春”人士。
 lang: zh
 template: main
 image: /retirees.png

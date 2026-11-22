@@ -1,6 +1,6 @@
 ---
 title: La evolución de los deseos
-description: Cómo nuestros deseos evolucionan de tener, a hacer y a ser.
+description: Cómo nuestros deseos evolucionan de tener a hacer y a ser.
 lang: es
 template: main
 image: /evolution_of_wants.png

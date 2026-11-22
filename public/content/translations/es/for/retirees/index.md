@@ -1,6 +1,6 @@
 ---
 title: Jubilados
-description: Personas con una vida plena que ahora emprenden su próxima aventura, los "second winders" o de "segundo aire".
+description: Personas con segundo aire que han vivido una vida plena y están por emprender su próxima aventura.
 lang: es
 template: main
 image: /retirees.png
@@ -12,7 +12,7 @@ summaryPoint3: Deja un impacto duradero compartiendo tu sabiduría y tu experien
 
 ## ¿Por qué los jubilados?
 
-Te damos la bienvenida a una comunidad donde celebramos el camino de los viajeros más experimentados de la vida: nuestros queridos jubilados. Con cariño les llamamos "second winders" (personas de segundo aire), porque no solo están en una encrucijada, sino listos para una nueva y emocionante aventura. Sus años de entrega, trabajo duro y sabiduría acumulada los han traído hasta aquí, y ahora es su momento de brillar de nuevo.
+Te damos la bienvenida a una comunidad donde celebramos el camino de los viajeros más experimentados de la vida: nuestros queridos jubilados. Con cariño te llamamos persona de "segundo aire" (second winder), porque no solo estás en una encrucijada, sino listo para una nueva y emocionante aventura. Tus años de entrega, trabajo duro y sabiduría acumulada te han traído hasta aquí, y ahora es tu momento de brillar de nuevo.
 
 En Co-x3 Family Foundation entendemos que la jubilación no es un final, sino un comienzo: de autodescubrimiento, de pasiones que renacen y de sueños por cumplir. Has pasado toda una vida cuidando a otros, aportando en tu trabajo y construyendo un legado.
 
@@ -22,7 +22,7 @@ Ahora te invitamos a enfocarte en ti: a explorar, aprender y crecer como siempre
 
 ### Entiéndete a ti mismo
 
-Empieza tu camino conociéndote mejor con el [Marco para una Vida Mejor](/understand-yourself). Es importante que descubras qué te impulsa ahora, para que sepas cómo orientarte hacia lo que realmente quieres en la vida.
+Empieza tu camino conociéndote mejor con el [Marco de una Vida Mejor](/understand-yourself). Es importante que descubras qué te impulsa ahora, para que sepas cómo orientarte hacia lo que realmente quieres en la vida.
 
 <ButtonLink to="/understand-yourself/better-life-framework">Haz el cuestionario</ButtonLink>
 
