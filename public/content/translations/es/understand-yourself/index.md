@@ -92,18 +92,18 @@ Integramos teorías fundamentales de la psicología y del desarrollo personal pa
 
 <ExpandableCard title="Artículos académicos" eventCategory="/understand-yourself" eventName="clicked papers" contentPreview="Estamos publicando investigaciones de vanguardia y artículos reveladores en revistas académicas de prestigio.">
 
-- Better Life Framework como modelo predictivo del comportamiento humano (Better Life Framework as a Predictive Model for Human Behavior, tercer trimestre de 2024)
-- Integración del Better Life Framework en el desarrollo organizacional (Integrating Better Life Framework in Organizational Development, 2025)
-- Mejora del coeficiente emocional e intelectual en estudiantes de primaria con el Better Life Framework (Improving EQ and IQ in primary school students with Better Life Framework, 2026)
+- El Marco de una Vida Mejor como modelo predictivo del comportamiento humano (Better Life Framework as a Predictive Model for Human Behavior, tercer trimestre de 2024)
+- Integración del Marco de una Vida Mejor en el desarrollo organizacional (Integrating Better Life Framework in Organizational Development, 2025)
+- Mejora del coeficiente emocional e intelectual en estudiantes de primaria con el Marco de una Vida Mejor (Improving EQ and IQ in primary school students with Better Life Framework, 2026)
 
 </ExpandableCard>
 
 <ExpandableCard title="Libros" eventCategory="/understand-yourself" eventName="clicked books" contentPreview="Estamos escribiendo libros esenciales sobre desarrollo personal y profesional.">
 
-- Better Life Framework: guía completa para la comprensión de uno mismo y de los demás (Better Life Framework: A Comprehensive Guide to Self and Interpersonal Understanding, tercer trimestre de 2024)
-- Empatía en acción: aplicar el Better Life Framework en el liderazgo (Empathy in Action: Applying Better Life Framework in Leadership, 2025)
-- Entenderte a ti mismo desde joven: revolucionar el sistema educativo con el Better Life Framework (Understanding Yourself At A Young Age: Revolutionizing The Educational System With Better Life Framework, 2026)
-- Impactar a miles de millones: la influencia global del Better Life Framework (Impacting Billions: The Global Influence of Better Life Framework, 2035)
+- Marco de una Vida Mejor: guía completa para la comprensión de uno mismo y de los demás (Better Life Framework: A Comprehensive Guide to Self and Interpersonal Understanding, tercer trimestre de 2024)
+- Empatía en acción: aplicar el Marco de una Vida Mejor en el liderazgo (Empathy in Action: Applying Better Life Framework in Leadership, 2025)
+- Entenderte a ti mismo desde joven: revolucionar el sistema educativo con el Marco de una Vida Mejor (Understanding Yourself At A Young Age: Revolutionizing The Educational System With Better Life Framework, 2026)
+- Impactar a miles de millones: la influencia global del Marco de una Vida Mejor (Impacting Billions: The Global Influence of Better Life Framework, 2035)
 
 </ExpandableCard>
 
