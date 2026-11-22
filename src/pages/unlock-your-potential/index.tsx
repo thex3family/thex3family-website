@@ -12,6 +12,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react"
 
+import type { Lang } from "@/lib/types"
 import { BasePageProps, ChildOnlyProp } from "@/lib/types"
 
 import ButtonLink from "@/components/Buttons/ButtonLink"
@@ -28,6 +29,7 @@ import Translation from "@/components/Translation"
 
 import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
+import { getLocaleTimestamp } from "@/lib/utils/time"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import docLinks from "@/data/docs-links.yaml"
@@ -197,11 +199,11 @@ const paths: Array<IDevelopersPath> = [
 const DevelopersPage = () => {
   const { t } = useTranslation(["page-unlock-your-potential", "common", "page-docs"])
 
-  const { pathname } = useRouter()
+  const { pathname, locale } = useRouter()
 
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": January 22, 2024", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": " + getLocaleTimestamp(locale as Lang, "2024-01-22"),
     title: t("common:unlock-your-potential-title"),
     description: t("common:unlock-your-potential-description")
       .split('.')

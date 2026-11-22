@@ -22,6 +22,7 @@ import {
   useTheme,
 } from "@chakra-ui/react"
 
+import type { Lang } from "@/lib/types"
 import { BasePageProps, ChildOnlyProp } from "@/lib/types"
 
 import FrameworkActionCard from "@/components/ActionCard/RichActionCard"
@@ -42,6 +43,7 @@ import YouTube from "@/components/YouTube"
 import { existsNamespace } from "@/lib/utils/existsNamespace"
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { trackCustomEvent } from "@/lib/utils/matomo"
+import { getLocaleTimestamp } from "@/lib/utils/time"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import frameworkData from "@/data/framework/framework-data"
@@ -86,7 +88,7 @@ export const getStaticProps = (async ({ locale }) => {
 }) satisfies GetStaticProps<BasePageProps>
 
 const BetterLifeFrameworkPage = () => {
-  const { pathname } = useRouter()
+  const { pathname, locale } = useRouter()
   const theme = useTheme()
   const { t } = useTranslation(["page-better-life-framework", "common"])
   const resetFrameworkFilter = useRef(() => { })
@@ -117,7 +119,7 @@ const BetterLifeFrameworkPage = () => {
 
   const heroProps = {
     pathname,
-    lastUpdated: t("common:page-last-updated") + ": January 25, 2025", // This should be dynamic based on your data
+    lastUpdated: t("common:page-last-updated") + ": " + getLocaleTimestamp(locale as Lang, "2025-01-25"),
     title: t("common:better-life-framework-title"),
     description: t("common:better-life-framework-description")
       .split('.')
